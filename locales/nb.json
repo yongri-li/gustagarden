@@ -1,29 +1,26 @@
 {
-  "404": {
-    "general": {
-      "title": "Vi fant ikke siden",
-      "description": "Beklager, denne siden finnes ikke",
-      "back_to_home": "Gå til forsiden"
-    }
-  },
   "general": {
     "meta": {
       "page": "Side"
     },
+
     "label": {
       "color": "Farge",
       "white": "Hvit",
       "size": "Størrelse"
     },
+
     "breadcrumb": {
       "title": "Tittel",
       "home": "Hjem"
     },
+
     "pagination": {
       "previous_page": "Forrige side",
       "next_page": "Neste side",
       "go_to_page": "Gå til side"
     },
+
     "accessibility": {
       "previous": "Forrige",
       "next": "Neste",
@@ -35,6 +32,7 @@
       "skip_to_content": "Hopp over",
       "close": "Lukk"
     },
+
     "social": {
       "facebook_share": "Del på Facebook",
       "pinterest_pin": "Del på Pinterest",
@@ -43,17 +41,21 @@
       "email_label": "E-post",
       "follow_label": "Følg oss på {{ social_media }}"
     },
+
     "newsletter": {
       "email": "Din e-post",
       "subscribe": "Abonnér ",
       "success": "Du er nå medlem i klubben!"
     },
+
     "faq": {
       "categories": "Kategorier"
     },
+
     "form": {
       "max_characters": "Maks. {{ max_chars }} tegn"
     },
+
     "onboarding": {
       "blog_post_category": "Kategori",
       "blog_post_title": "Artikkel",
@@ -63,6 +65,7 @@
       "product_description": "Skriv en tekst om dette produktet"
     }
   },
+
   "header": {
     "general": {
       "navigation": "Meny",
@@ -71,25 +74,29 @@
       "account": "Profil",
       "cart": "Handlevogn",
       "language": "Språk",
-      "country": "Land\/region"
+      "country": "Land/region"
     }
   },
+
   "footer": {
     "general": {
       "language": "Språk",
-      "country": "Land\/region",
+      "country": "Land/region",
       "we_accept": "Vi aksepterer"
     },
+
     "newsletter": {
       "email": "Din e-post",
       "submit": "Registrer",
       "success": "Du er nå MyStuff klubbmedlem"
     },
+
     "cookie_bar": {
       "accept": "Aksepter",
       "decline": "Avslå"
     }
   },
+
   "cart": {
     "general": {
       "title": "Handlevogn",
@@ -124,6 +131,7 @@
       "edit_order_note": "Endre ordrenotater",
       "order_note_placeholder": "Hvordan kan vi hjelpe deg?"
     },
+
     "shipping_estimator": {
       "estimate_shipping": "Frakt og leveringsalternativer",
       "country": "Land",
@@ -136,6 +144,7 @@
       "multiple_results": "Det er flere leveringsalternativer til din adresse:"
     }
   },
+
   "collection": {
     "general": {
       "filters": "Filtre",
@@ -161,6 +170,7 @@
         "other": "{{ count }} produkter"
       }
     },
+
     "product": {
       "sold_out": "Utsolgt",
       "discount_html": "Spar {{ savings }}",
@@ -174,6 +184,7 @@
       }
     }
   },
+
   "product": {
     "general": {
       "description": "Beskrivelse",
@@ -193,8 +204,9 @@
         "other": "{{ count }} anmeldelser"
       },
       "zoom": "Forstørr",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\">Frakt kalkulert<\/a> i kassen"
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\">Frakt kalkulert</a> i kassen"
     },
+
     "form": {
       "choose_options": "Velg alternativer",
       "quantity": "Antall",
@@ -213,6 +225,7 @@
       }
     }
   },
+
   "store_availability": {
     "general": {
       "view_store_info": "Se butikkinformasjon",
@@ -223,6 +236,7 @@
       "check_other_stores": "Se tilgjengelighet i andre varehus"
     }
   },
+
   "list_collections": {
     "general": {
       "title": "Samlinger",
@@ -235,6 +249,7 @@
       }
     }
   },
+
   "blog": {
     "general": {
       "empty": "Denne bloggen har ingen artikler",
@@ -243,6 +258,7 @@
       "view": "Se"
     }
   },
+
   "article": {
     "general": {
       "share": "Del",
@@ -257,6 +273,7 @@
       },
       "written_by": "Av {{ author }}"
     },
+
     "comments": {
       "leave_comment": "Legg igjen en kommentar",
       "name": "Navn",
@@ -273,10 +290,12 @@
       }
     }
   },
+
   "customer": {
     "general": {
       "title": "Min profil"
     },
+
     "login": {
       "title": "Logg inn",
       "instructions": "Vennligst fyll e-post og passord:",
@@ -287,6 +306,7 @@
       "new_customer": "Ny kunde?",
       "create_account": "Opprett en konto"
     },
+
     "recover_password": {
       "title": "Gjenopprett passord",
       "instructions": "Vennligst skriv inn din e-post:",
@@ -296,6 +316,7 @@
       "success": "En melding er sendt til din e-post med instrukser for å gjenopprette passordet ditt.",
       "submit": "Gjenopprett"
     },
+
     "activate_account": {
       "title": "Aktiver profil",
       "instructions": "Fyll inn passord for å opprette din konto:",
@@ -304,6 +325,7 @@
       "submit": "Aktiver",
       "cancel": "Slett"
     },
+
     "reset_password": {
       "title": "Tilbakestill passord",
       "instructions": "Fyll inn nytt passord for din konto:",
@@ -311,6 +333,7 @@
       "password_confirmation": "Passord bekreftelse",
       "submit": "Nullstill"
     },
+
     "register": {
       "title": "Registrer",
       "instructions": "Vennligst fyll inn felt under:",
@@ -322,6 +345,7 @@
       "already_have_account": "Har du allerede en konto?",
       "login": "Logg inn"
     },
+
     "orders": {
       "title": "Ordre",
       "no_orders": "Du har ikke lagt til noen ordre enda.",
@@ -354,6 +378,7 @@
       "shipping_address": "Leveringsadresse",
       "billing_address": "Faktureringsadresse"
     },
+
     "addresses": {
       "title": "Adresser",
       "no_address": "Du har ikke lagret noen adresser enda",
@@ -377,10 +402,12 @@
       "province": "By",
       "set_default": "Sett som standard"
     },
+
     "logout": {
       "title": "Logg ut"
     }
   },
+
   "search": {
     "general": {
       "title": "Søk",
@@ -396,6 +423,7 @@
       "collections": "Samlinger"
     }
   },
+
   "contact": {
     "form": {
       "name": "Navn",
@@ -405,6 +433,7 @@
       "successfully_sent": "Din e-post har blitt sendt"
     }
   },
+
   "gift_card": {
     "issued": {
       "subtext": "Her er ditt gavekort",
@@ -419,6 +448,7 @@
       "add_to_apple_wallet": "Legg til i Apple Wallet",
       "go_to_store": "Gå til nettbutikken"
     },
+
     "recipient": {
       "checkbox": "Jeg vil sende dette som en gave",
       "email_label": "Mottakerens e-post",
@@ -427,6 +457,7 @@
       "message_label": "Melding (valgfritt)"
     }
   },
+
   "password": {
     "general": {
       "store_owner": "Eier du nettbutikken?",
@@ -434,60 +465,25 @@
       "powered_by": "Powered by",
       "enter_password": "Logg inn med passord"
     },
+
     "password": {
       "label": "Logg inn med et passord",
       "input": "Passord",
       "submit": "Tast inn"
     },
+
     "newsletter": {
       "success": "Du er nå MyStuff Klubbmedlem",
       "email": "Din e-post",
       "submit": "Send meg påminnelser"
     }
   },
-  "pagefly": {
-    "products": {
-      "product": {
-        "regular_price": "Regular price",
-        "sold_out": "Sold out",
-        "unavailable": "Unavailable",
-        "on_sale": "Sale",
-        "quantity": "Quantity",
-        "add_to_cart": "Add to cart",
-        "back_to_collection": "Back to {{ title }}",
-        "view_details": "View details"
-      }
-    },
-    "article": {
-      "tags": "Tags:",
-      "all_topics": "All topics",
-      "by_author": "by {{ author }}",
-      "posted_in": "Posted in",
-      "read_more": "Read more",
-      "back_to_blog": "Back to {{ title }}"
-    },
-    "comments": {
-      "title": "Leave a comment",
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "post": "Post comment",
-      "moderated": "Please note, comments must be approved before they are published",
-      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
-      "success": "Your comment was posted successfully! Thank you!",
-      "comments_with_count": {
-        "one": "{{ count }} comment",
-        "other": "{{ count }} comments"
-      }
-    },
-    "password_page": {
-      "login_form_message": "Enter store using password:",
-      "login_form_password_label": "Password",
-      "login_form_password_placeholder": "Your password",
-      "login_form_submit": "Enter",
-      "signup_form_email_label": "Email",
-      "signup_form_success": "We will send you an email right before we open!",
-      "password_link": "Enter using password"
+
+  "404": {
+    "general": {
+      "title": "Vi fant ikke siden",
+      "description": "Beklager, denne siden finnes ikke",
+      "back_to_home": "Gå til forsiden"
     }
   }
 }

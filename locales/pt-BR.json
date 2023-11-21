@@ -1,29 +1,26 @@
 {
-  "404": {
-    "general": {
-      "title": "Página não encontrada",
-      "description": "Desculpe, essa página não existe.",
-      "back_to_home": "Voltar à página inicial"
-    }
-  },
   "general": {
     "meta": {
       "page": "Página {{ page }}"
     },
+
     "label": {
       "color": "Cor",
       "white": "Branco",
       "size": "Tamanho"
     },
+
     "breadcrumb": {
       "title": "Trilha de navegação",
       "home": "Página Inicial"
     },
+
     "pagination": {
       "previous_page": "Anterior",
       "next_page": "Próxima",
       "go_to_page": "Ir à página {{page}}"
     },
+
     "accessibility": {
       "skip_to_content": "Pular para o conteúdo",
       "close": "Fechar",
@@ -35,6 +32,7 @@
       "show_product": "Mostrar produto {{title}}",
       "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrelas"
     },
+
     "social": {
       "facebook_share": "Compartilhar no Facebook",
       "pinterest_pin": "Incluir como pin no Pinterest",
@@ -43,17 +41,21 @@
       "email_label": "E-mail",
       "follow_label": "Siga-nos em {{ social_media }}"
     },
+
     "newsletter": {
       "email": "Seu e-mail",
       "subscribe": "Assinar",
       "success": "Você foi inscrito em nossa lista de e-mails"
     },
+
     "faq": {
       "categories": "Categorias"
     },
+
     "form": {
       "max_characters": "Máximo de {{ max_chars }} caracteres"
     },
+
     "onboarding": {
       "blog_post_category": "Categoria",
       "blog_post_title": "Artigo",
@@ -63,6 +65,7 @@
       "collection_title": "Coleção"
     }
   },
+
   "header": {
     "general": {
       "navigation": "Navegação",
@@ -71,25 +74,29 @@
       "account": "Conta",
       "cart": "Carrinho",
       "language": "Língua",
-      "country": "País\/Região"
+      "country": "País/Região"
     }
   },
+
   "footer": {
     "general": {
       "language": "Língua",
-      "country": "País\/Região",
+      "country": "País/Região",
       "we_accept": "Aceitamos"
     },
+
     "newsletter": {
       "email": "Seu e-mail",
       "submit": "Registrar",
       "success": "Você foi inscrito em nossa lista de e-mails."
     },
+
     "cookie_bar": {
       "accept": "Aceitar",
       "decline": "Recusar"
     }
   },
+
   "cart": {
     "general": {
       "title": "Carrinho",
@@ -124,6 +131,7 @@
         "other": "{{ count }} itens"
       }
     },
+
     "shipping_estimator": {
       "estimate_shipping": "Calcular frete",
       "country": "País",
@@ -136,6 +144,7 @@
       "error": "Um ou mais erros ocorreram ao calcular o frete:"
     }
   },
+
   "collection": {
     "general": {
       "filters": "Filtros",
@@ -161,6 +170,7 @@
         "other": "{{ count }} produtos"
       }
     },
+
     "product": {
       "sold_out": "Esgotado",
       "discount_html": "Economize {{ savings }}",
@@ -174,6 +184,7 @@
       }
     }
   },
+
   "product": {
     "general": {
       "description": "Descrição",
@@ -195,6 +206,7 @@
         "other": "{{ count }} avaliações"
       }
     },
+
     "form": {
       "choose_options": "Escolher opções",
       "quantity": "Quantidade",
@@ -213,6 +225,7 @@
       }
     }
   },
+
   "store_availability": {
     "general": {
       "view_store_info": "Ver informações sobre a loja",
@@ -223,6 +236,7 @@
       "pick_up_unavailable_at": "Atualmente indisponível para retirada em {{ location_name }}"
     }
   },
+
   "list_collections": {
     "general": {
       "title": "Coleções",
@@ -235,6 +249,7 @@
       }
     }
   },
+
   "blog": {
     "general": {
       "empty": "Esse blog não tem nenhum artigo",
@@ -243,6 +258,7 @@
       "all_posts": "Todos os posts"
     }
   },
+
   "article": {
     "general": {
       "written_by": "Por {{ author }}",
@@ -257,6 +273,7 @@
         "one": "{{ count }} minutos"
       }
     },
+
     "comments": {
       "leave_comment": "Deixar um comentário",
       "moderated": "Todos os comentários são revisados antes de serem publicados.",
@@ -273,10 +290,12 @@
       }
     }
   },
+
   "customer": {
     "general": {
       "title": "Minha conta"
     },
+
     "login": {
       "title": "Login",
       "instructions": "Por favor insira seu e-mail e senha:",
@@ -287,6 +306,7 @@
       "new_customer": "Cliente novo?",
       "create_account": "Criar uma conta"
     },
+
     "recover_password": {
       "title": "Recuperar senha",
       "instructions": "Por favor insira seu e-mail:",
@@ -296,6 +316,7 @@
       "back_to_login": "Voltar ao login",
       "success": "Uma mensagem foi enviada para seu e-mail com instruções para recuperar sua senha."
     },
+
     "activate_account": {
       "title": "Ativar conta",
       "instructions": "Insira uma senha para criar sua conta:",
@@ -304,6 +325,7 @@
       "submit": "Ativar",
       "cancel": "Cancelar"
     },
+
     "reset_password": {
       "title": "Redefinir senha",
       "submit": "Redefinir",
@@ -311,6 +333,7 @@
       "password": "Senha",
       "password_confirmation": "Confirmar senha"
     },
+
     "register": {
       "title": "Criar conta",
       "instructions": "Por favor preencha os campos abaixo:",
@@ -322,6 +345,7 @@
       "already_have_account": "Já tem uma conta?",
       "login": "Login"
     },
+
     "orders": {
       "title": "Pedidos",
       "no_orders": "Você ainda não fez nenhum pedido",
@@ -354,6 +378,7 @@
       "shipping_address": "Endereço de envio",
       "billing_address": "Endereço de faturamento"
     },
+
     "addresses": {
       "title": "Endereços",
       "no_address": "Você ainda não salvou nenhum endereço",
@@ -377,10 +402,12 @@
       "province": "Estado",
       "set_default": "Tornar padrão"
     },
+
     "logout": {
       "title": "Sair"
     }
   },
+
   "search": {
     "general": {
       "title": "Pesquisar",
@@ -396,6 +423,7 @@
       "collections": "Coleções"
     }
   },
+
   "contact": {
     "form": {
       "name": "Nome",
@@ -405,6 +433,7 @@
       "successfully_sent": "Seu e-mail foi enviado com sucesso."
     }
   },
+
   "gift_card": {
     "issued": {
       "subtext": "Aqui está seu cartão-presente!",
@@ -419,6 +448,7 @@
       "add_to_apple_wallet": "Adicionar ao app Wallet da Apple",
       "go_to_store": "Ir à loja"
     },
+
     "recipient": {
       "checkbox": "Quero enviar como presente",
       "email_label": "E-mail do destinatário",
@@ -427,6 +457,7 @@
       "message_label": "Mensagem (opcional)"
     }
   },
+
   "password": {
     "general": {
       "store_owner": "Dono da loja?",
@@ -434,60 +465,25 @@
       "powered_by": "Essa loja terá a tecnologia da",
       "enter_password": "Entrar usando senha"
     },
+
     "password": {
       "label": "Por favor insira a senha para acessar a loja",
       "input": "Senha",
       "submit": "Entrar"
     },
+
     "newsletter": {
       "success": "Você foi adicionado à nossa lista de e-mails",
       "email": "Seu e-mail",
       "submit": "Me avise"
     }
   },
-  "pagefly": {
-    "products": {
-      "product": {
-        "regular_price": "Regular price",
-        "sold_out": "Sold out",
-        "unavailable": "Unavailable",
-        "on_sale": "Sale",
-        "quantity": "Quantity",
-        "add_to_cart": "Add to cart",
-        "back_to_collection": "Back to {{ title }}",
-        "view_details": "View details"
-      }
-    },
-    "article": {
-      "tags": "Tags:",
-      "all_topics": "All topics",
-      "by_author": "by {{ author }}",
-      "posted_in": "Posted in",
-      "read_more": "Read more",
-      "back_to_blog": "Back to {{ title }}"
-    },
-    "comments": {
-      "title": "Leave a comment",
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "post": "Post comment",
-      "moderated": "Please note, comments must be approved before they are published",
-      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
-      "success": "Your comment was posted successfully! Thank you!",
-      "comments_with_count": {
-        "one": "{{ count }} comment",
-        "other": "{{ count }} comments"
-      }
-    },
-    "password_page": {
-      "login_form_message": "Enter store using password:",
-      "login_form_password_label": "Password",
-      "login_form_password_placeholder": "Your password",
-      "login_form_submit": "Enter",
-      "signup_form_email_label": "Email",
-      "signup_form_success": "We will send you an email right before we open!",
-      "password_link": "Enter using password"
+
+  "404": {
+    "general": {
+      "title": "Página não encontrada",
+      "description": "Desculpe, essa página não existe.",
+      "back_to_home": "Voltar à página inicial"
     }
   }
 }
