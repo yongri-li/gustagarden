@@ -128,3 +128,70 @@
  * "photoswipe": v4.1.3. PhotoSwipe is only loaded on demand to power the zoom feature on product page. If the zoom
  * feature is disabled, then this script is never loaded.
  */
+
+
+// js/sections/feature-chart.js
+import { animate as motionAnimate, scroll } from "{{ 'vendor.min.js' | asset_url }}";
+var FeatureChart = class extends HTMLElement {
+  connectedCallback() {
+    this.viewButtonElement = this.querySelector('[data-action="toggle-rows"]');
+    this.featureChartTable = this.querySelector(".feature-chart__table");
+    this.featureChartRows = Array.from(this.featureChartTable.childNodes);
+    this.featureProductRow = this.querySelector(".feature-chart__table-row--product");
+    this.featureChartSticky = this.querySelector(".feature-chart__table-row--sticky");
+    if (this.viewButtonElement) {
+      this.viewButtonElement.addEventListener("click", this._toggleRows.bind(this));
+    }
+    if (this.featureChartSticky) {
+      this.featureChartSticky.style.width = `${this.featureChartTable.scrollWidth}px`;
+      this.featureChartTable.addEventListener("scroll", (event) => {
+        this.featureChartSticky.style.marginLeft = -1 * event.target.scrollLeft + "px";
+      });
+      new ResizeObserver((entries) => {
+        this.featureChartSticky.style.width = `${entries[0].contentRect.width}px`;
+      }).observe(this.featureChartTable);
+      const offset = getComputedStyle(this).scrollPaddingTop;
+      scroll(({ y }) => {
+        if (y.current >= y.targetOffset + this.featureProductRow.clientHeight / 2 && y.progress < 0.85) {
+          this.featureChartSticky.classList.add("is-visible");
+        } else {
+          this.featureChartSticky.classList.remove("is-visible");
+        }
+      }, {
+        target: this.featureChartTable,
+        offset: [`${offset} start`, `end ${offset}`]
+      });
+    }
+  }
+  _toggleRows() {
+    if (this.classList.contains("is-expanded")) {
+      this._hideRows();
+    } else {
+      this._showRows();
+    }
+  }
+  async _showRows() {
+    const fromHeight = this.featureChartTable.clientHeight;
+    this.featureChartRows.forEach((row) => {
+      row.hidden = false;
+    });
+    this.viewButtonElement.querySelector(".feature-chart__toggle-text").innerText = this.viewButtonElement.getAttribute("data-view-less");
+    this.classList.add("is-expanded");
+    await motionAnimate(this.featureChartTable, { height: [`${fromHeight}px`, `${this.featureChartTable.clientHeight}px`] }).finished;
+    this.featureChartTable.style.height = "auto";
+  }
+  async _hideRows() {
+    let fromHeight = this.featureChartTable.clientHeight, toHeight = 0;
+    this.featureChartRows.slice(0, parseInt(this.getAttribute("max-rows"))).forEach((row) => {
+      toHeight += row.clientHeight;
+    });
+    this.viewButtonElement.querySelector(".feature-chart__toggle-text").innerText = this.viewButtonElement.getAttribute("data-view-more");
+    this.classList.remove("is-expanded");
+    await motionAnimate(this.featureChartTable, { height: [`${fromHeight}px`, `${toHeight}px`] }).finished;
+    this.featureChartRows.slice(parseInt(this.getAttribute("max-rows"))).forEach((row) => row.hidden = true);
+    this.featureChartTable.style.height = "auto";
+  }
+};
+if (!window.customElements.get("feature-chart")) {
+  window.customElements.define("feature-chart", FeatureChart);
+}
