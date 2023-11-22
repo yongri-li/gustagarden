@@ -6,13 +6,13 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gg-nl.jpg",
-            "split_image": "shopify:\/\/shop_images\/paul-potato.jpg",
+            "image": "shopify://shop_images/gg-nl.jpg",
+            "split_image": "shopify://shop_images/paul-potato.jpg",
             "text_position": "bottom_left",
             "subheading": "So schmeckt dein Garten",
             "title": "PAUL POTATO",
             "button_1_text": "JETZT ENTDECKEN",
-            "button_1_link": "shopify:\/\/products\/paul-potato-starter",
+            "button_1_link": "shopify://products/paul-potato-starter",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -25,13 +25,13 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/harry-herbs-1.jpg",
-            "split_image": "shopify:\/\/shop_images\/harbs-wand.jpg",
+            "image": "shopify://shop_images/harry-herbs-1.jpg",
+            "split_image": "shopify://shop_images/harbs-wand.jpg",
             "text_position": "bottom_left",
             "subheading": "Kräuter & Micorgreens das ganze Jahr über",
             "title": "HARRY HERBS",
             "button_1_text": "ZUM PRODUKT",
-            "button_1_link": "shopify:\/\/products\/harry-herbs",
+            "button_1_link": "shopify://products/harry-herbs",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -42,10 +42,7 @@
           }
         }
       },
-      "block_order": [
-        "slide-1",
-        "slide-2"
-      ],
+      "block_order": ["slide-1", "slide-2"],
       "settings": {
         "section_height": "small",
         "transition_type": "sweep",
@@ -200,7 +197,7 @@
         "look-1": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200903-GustaGarden-092_mirror_2400x1600_0aec3d19-5bbe-4cb8-8611-7724f02026fe.jpg",
+            "image": "shopify://shop_images/200903-GustaGarden-092_mirror_2400x1600_0aec3d19-5bbe-4cb8-8611-7724f02026fe.jpg",
             "dot_type": "inverted",
             "product_1": "tom-tomato",
             "product_1_horizontal_position": 57,
@@ -220,9 +217,7 @@
           }
         }
       },
-      "block_order": [
-        "look-1"
-      ],
+      "block_order": ["look-1"],
       "settings": {
         "reveal_on_scroll": true,
         "label": "Shop the looks"
@@ -232,12 +227,12 @@
       "type": "image-with-text-block",
       "settings": {
         "reveal_on_scroll": true,
-        "image": "shopify:\/\/shop_images\/PP_Team_ZH2_7338.jpg",
+        "image": "shopify://shop_images/PP_Team_ZH2_7338.jpg",
         "subheading": "INNOVATIVES URBAN GARDENING.",
         "title": "Gusta Garden. So schmeckt dein Garten.",
-        "content": "<p>Unsere Produkte erleichtern den Anbau von Obst und Gemüse in kleinen städtischen Bereichen und bieten ein breites Sortiment an ergänzenden biologischen Düngemitteln, Substraten und Saatgut. Gusta Garden steht für modernes, urbanes Gärtnern im Alpe-Adria-Raum und bietet Lifestyle-orientierten Gärtnern eine vielfältige Auswahl.<\/p>",
+        "content": "<p>Unsere Produkte erleichtern den Anbau von Obst und Gemüse in kleinen städtischen Bereichen und bieten ein breites Sortiment an ergänzenden biologischen Düngemitteln, Substraten und Saatgut. Gusta Garden steht für modernes, urbanes Gärtnern im Alpe-Adria-Raum und bietet Lifestyle-orientierten Gärtnern eine vielfältige Auswahl.</p>",
         "button_text": "MEHR ERFAHREN",
-        "button_link": "shopify:\/\/pages\/contact",
+        "button_link": "shopify://pages/contact",
         "background_type": "boxed",
         "text_position": "overlap_left",
         "text_alignment": "center",
@@ -251,7 +246,7 @@
       "type": "apps",
       "blocks": {
         "9a5d98d0-4826-4472-849b-3c6c8871de77": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
             "star": "#c8dd02",
             "review_type": "product",
@@ -277,9 +272,7 @@
           }
         }
       },
-      "block_order": [
-        "9a5d98d0-4826-4472-849b-3c6c8871de77"
-      ],
+      "block_order": ["9a5d98d0-4826-4472-849b-3c6c8871de77"],
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
@@ -317,10 +310,10 @@
           "type": "values",
           "settings": {
             "product": "balkonhalterung",
-            "value_1": "<p>Yes<\/p>",
-            "value_2": "<p>Yes<\/p>",
-            "value_3": "<p>No<\/p>",
-            "value_4": "<p>No<\/p>",
+            "value_1": "<p>Yes</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>No</p>",
+            "value_4": "<p>No</p>",
             "value_5": "",
             "value_6": "",
             "value_7": "",
@@ -345,10 +338,10 @@
           "type": "values",
           "settings": {
             "product": "",
-            "value_1": "<p>No<\/p>",
-            "value_2": "<p>Yes<\/p>",
-            "value_3": "<p>Yes<\/p>",
-            "value_4": "<p>No<\/p>",
+            "value_1": "<p>No</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>Yes</p>",
+            "value_4": "<p>No</p>",
             "value_5": "",
             "value_6": "",
             "value_7": "",
@@ -379,7 +372,7 @@
         "full_width": true,
         "subheading": "Compare",
         "title": "Product specification",
-        "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.</p>",
         "button_text": "",
         "button_url": "",
         "text_position": "start",

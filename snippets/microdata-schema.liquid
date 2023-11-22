@@ -1,7 +1,7 @@
 {%- comment -%}
-This snippet structures the micro-data using JSON-LD specification. Please note that for Product especially,
-the schema often changes. We try to output as much info as possible, but Google may add new requirements over time,
-or change the format of some info
+  This snippet structures the micro-data using JSON-LD specification. Please note that for Product especially,
+  the schema often changes. We try to output as much info as possible, but Google may add new requirements over time,
+  or change the format of some info
 {%- endcomment -%}
 
 {%- if request.page_type == 'product' -%}
@@ -181,24 +181,27 @@ or change the format of some info
 
 {% if main_entity_microdata != blank %}
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    {{ main_entity_microdata }}
-  }
+    {
+      "@context": "https://schema.org",
+      {{ main_entity_microdata }}
+    }
   </script>
 {% endif %}
 
 {% if breadcrumb_entity_microdata != blank %}
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    {{ breadcrumb_entity_microdata }}
-  }
+    {
+      "@context": "https://schema.org",
+      {{ breadcrumb_entity_microdata }}
+    }
   </script>
 {% endif %}
 
 {%- if request.page_type == 'index' -%}
-  {%- assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" -%}
+  {%- assign potential_action_target = request.origin
+    | append: routes.search_url
+    | append: '?q={search_term_string}'
+  -%}
 
   <script type="application/ld+json">
     {

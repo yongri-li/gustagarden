@@ -35,19 +35,42 @@
 </style>
 
 <section class="section section--flush">
-  <image-with-text-block {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="image-with-text-block image-with-text-block--small image-with-text-block--cover">
+  <image-with-text-block
+    {% if section.settings.reveal_on_scroll %}
+      reveal-on-scroll
+    {% endif %}
+    class="image-with-text-block image-with-text-block--small image-with-text-block--cover">
     <div class="image-with-text-block__image-wrapper">
       {%- if section.settings.image != blank -%}
         {%- if section.settings.reveal_on_scroll -%}
-          {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: reveal: true, loading: 'lazy', widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000', class: 'image-with-text-block__image' -}}
+          {{-
+            section.settings.image
+            | image_url: width: section.settings.image.width
+            | image_tag:
+              reveal: true,
+              loading: 'lazy',
+              widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000',
+              class: 'image-with-text-block__image'
+          -}}
         {%- else -%}
-          {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000', class: 'image-with-text-block__image' -}}
+          {{-
+            section.settings.image
+            | image_url: width: section.settings.image.width
+            | image_tag:
+              loading: 'lazy',
+              widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000',
+              class: 'image-with-text-block__image'
+          -}}
         {%- endif -%}
       {%- else -%}
         {%- capture image_classes -%}image-with-text-block__image image-with-text-block__image--placeholder placeholder-background{%- endcapture -%}
 
         {%- if section.settings.reveal_on_scroll -%}
-          {{- 'lifestyle-1' | placeholder_svg_tag: image_classes | replace: '<svg', '<svg reveal' -}}
+          {{-
+            'lifestyle-1'
+            | placeholder_svg_tag: image_classes
+            | replace: '<svg', '<svg reveal'
+          -}}
         {%- else -%}
           {{- 'lifestyle-1' | placeholder_svg_tag: image_classes -}}
         {%- endif -%}
@@ -55,11 +78,20 @@
     </div>
 
     <div class="container container--flush">
-      {%- assign text_position = section.settings.text_position | split: '_' | last -%}
+      {%- assign text_position = section.settings.text_position
+        | split: '_'
+        | last
+      -%}
 
-      <div {% if section.settings.reveal_on_scroll %}reveal{% endif %} class="image-with-text-block__content image-with-text-block__content--tight content-box content-box--small content-box--text-{{ section.settings.text_alignment}} content-box--{{ text_position }} text-container">
+      <div
+        {% if section.settings.reveal_on_scroll %}
+          reveal
+        {% endif %}
+        class="image-with-text-block__content image-with-text-block__content--tight content-box content-box--small content-box--text-{{ section.settings.text_alignment}} content-box--{{ text_position }} text-container">
         {%- if section.settings.subheading != blank -%}
-          <h2 class="heading heading--small">{{ section.settings.subheading | escape }}</h2>
+          <h2 class="heading heading--small">
+            {{ section.settings.subheading | escape }}
+          </h2>
         {%- endif -%}
 
         {%- if section.settings.content != blank -%}
@@ -68,7 +100,10 @@
 
         {%- assign newsletter_id = 'newsletter-' | append: section.id -%}
 
-        {%- form 'customer', id: newsletter_id, class: 'form newsletter__form' -%}
+        {%- form 'customer',
+          id: newsletter_id,
+          class: 'form newsletter__form'
+        -%}
           {%- if form.posted_successfully? -%}
             <script>
               window.addEventListener('DOMContentLoaded', () => {
@@ -76,33 +111,61 @@
                   history.scrollRestoration = 'manual'; // Prevent the browser to scroll on captcha page
                 }
 
-                document.getElementById('shopify-section-{{ section.id }}').scrollIntoView();
+                document
+                  .getElementById('shopify-section-{{ section.id }}')
+                  .scrollIntoView();
               });
             </script>
 
             <div class="form__banner banner banner--success">
-              <span class="banner__ribbon">{% render 'icon' with 'form-success' %}</span>
-              <p class="banner__content">{{ 'general.newsletter.success' | t }}</p>
+              <span class="banner__ribbon">
+                {%- render 'icon' with 'form-success' -%}
+              </span>
+              <p class="banner__content">
+                {{ 'general.newsletter.success' | t }}
+              </p>
             </div>
           {%- else -%}
             {%- if form.errors -%}
               <div class="form__banner banner banner--error">
-                <span class="banner__ribbon">{% render 'icon' with 'form-error' %}</span>
-                <p class="banner__content">{{ form.errors.messages['email'] }}</p>
+                <span class="banner__ribbon">
+                  {%- render 'icon' with 'form-error' -%}
+                </span>
+                <p class="banner__content">{{ form.errors.messages.email }}</p>
               </div>
             {%- endif -%}
 
-            <input type="hidden" name="contact[tags]" value="newsletter">
-            <input type="hidden" name="contact[context]" value="{{ newsletter_id }}">
+            <input
+              type="hidden"
+              name="contact[tags]"
+              value="newsletter">
+            <input
+              type="hidden"
+              name="contact[context]"
+              value="{{ newsletter_id }}">
 
             <div class="input-row">
               <div class="input">
-                <input type="email" id="newsletter[{{ section.id }}][contact][email]" name="contact[email]" class="input__field" required>
-                <label for="newsletter[{{ section.id }}][contact][email]" class="input__label">{{ 'general.newsletter.email' | t }}</label>
+                <input
+                  type="email"
+                  id="newsletter[{{ section.id }}][contact][email]"
+                  name="contact[email]"
+                  class="input__field"
+                  required>
+                <label
+                  for="newsletter[{{ section.id }}][contact][email]"
+                  class="input__label">
+                  {{- 'general.newsletter.email' | t -}}
+                </label>
               </div>
 
               <div class="input">
-                <button type="submit" is="loader-button" class="button button--primary">{{ 'general.newsletter.subscribe' | t }}</button>
+                <button
+                  type="submit"
+                  is="loader-button"
+                  class="button button--primary">
+                  {{ 'general.newsletter.subscribe' | t }}
+                </button>
               </div>
             </div>
           {%- endif -%}

@@ -1,13 +1,15 @@
-{%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
+{%- if section.settings.background != settings.background
+  and section.settings.background != 'rgba(0,0,0,0)'
+-%}
   {%- assign blends_with_background = false -%}
 {%- else -%}
   {%- assign blends_with_background = true -%}
 {%- endif -%}
 
 {%- comment -%}
-------------------------------------------------------------------------------------------------------------------------
-  CSS
-------------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------
+    CSS
+  ------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 <style>
@@ -34,9 +36,9 @@
 </style>
 
 {%- comment -%}
-------------------------------------------------------------------------------------------------------------------------
-  JavaScript: this section composes several custom elements
-------------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------
+    JavaScript: this section composes several custom elements
+  ------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 <section class="section {% unless blends_with_background or is_boxed %}section--flush{% endunless %}">
@@ -45,20 +47,36 @@
       <native-carousel class="text-with-icons">
         <div class="text-with-icons__list hide-scrollbar">
           {%- for block in section.blocks -%}
-            <native-carousel-item {% unless forloop.first %}hidden{% endunless %} id="block-{{ section.id }}-{{ block.id }}" class="text-with-icons__item" {{ block.shopify_attributes }}>
+            <native-carousel-item
+              {% unless forloop.first %}
+                hidden
+              {% endunless %}
+              id="block-{{ section.id }}-{{ block.id }}"
+              class="text-with-icons__item"
+              {{ block.shopify_attributes }}>
               <div class="text-with-icons__icon-wrapper">
                 {%- if block.settings.custom_icon != blank -%}
                   {% capture custom_icon_width %}{{ block.settings.custom_icon_width | times: 2 }}x{% endcapture %}
-                  <img class="text-with-icons__custom-icon" style="max-width: {{ block.settings.custom_icon_width }}px" width="{{ block.settings.custom_icon.width }}" height="{{ block.settings.custom_icon.height }}" src="{{ block.settings.custom_icon | img_url: custom_icon_width }}" alt="{{ block.settings.custom_icon.alt | escape }}">
+                  <img
+                    class="text-with-icons__custom-icon"
+                    style="max-width: {{ block.settings.custom_icon_width }}px"
+                    width="{{ block.settings.custom_icon.width }}"
+                    height="{{ block.settings.custom_icon.height }}"
+                    src="{{ block.settings.custom_icon | img_url: custom_icon_width }}"
+                    alt="{{ block.settings.custom_icon.alt | escape }}">
                 {%- else -%}
                   {%- render 'icon' with block.settings.icon -%}
                 {%- endif -%}
               </div>
 
-              {%- if block.settings.title != blank or block.settings.content != blank -%}
+              {%- if block.settings.title != blank
+                or block.settings.content != blank
+              -%}
                 <div class="text-with-icons__content-wrapper">
                   {%- if block.settings.title != blank -%}
-                    <p class="heading heading--small">{{ block.settings.title | escape }}</p>
+                    <p class="heading heading--small">
+                      {{ block.settings.title | escape }}
+                    </p>
                   {%- endif -%}
 
                   {%- if block.settings.content != blank -%}
@@ -73,8 +91,17 @@
         {%- if section.blocks.size > 1 -%}
           <page-dots class="text-with-icons__dots dots-nav dots-nav--centered hidden-lap-and-up">
             {%- for block in section.blocks -%}
-              <button class="dots-nav__item tap-area" {% if forloop.first %}aria-current="true"{% endif%}>
-                <span class="visually-hidden">{{ 'general.accessibility.go_to_slide' | t: num: forloop.index }}</span>
+              <button
+                class="dots-nav__item tap-area"
+                {% if forloop.first %}
+                  aria-current="true"
+                {% endif %}>
+                <span class="visually-hidden">
+                  {{-
+                    'general.accessibility.go_to_slide'
+                    | t: num: forloop.index
+                  -}}
+                </span>
               </button>
             {%- endfor -%}
           </page-dots>

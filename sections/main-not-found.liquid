@@ -8,7 +8,11 @@
         <p>{{ '404.general.description' | t }}</p>
 
         <div class="button-wrapper">
-          <a href="{{ routes.root_url }}" class="button button--primary">{{ '404.general.back_to_home' | t }}</a>
+          <a
+            href="{{ routes.root_url }}"
+            class="button button--primary">
+            {{- '404.general.back_to_home' | t -}}
+          </a>
         </div>
       </div>
     </div>

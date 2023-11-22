@@ -2,31 +2,67 @@
   <div class="article">
     <div class="article__main-part">
       {%- if section.settings.show_on_scroll_navigation -%}
-        <blog-post-navigation class="article__nav" {% if blog.next_article %}has-next-article{% endif %} style="--transform: 0.01">
+        <blog-post-navigation
+          class="article__nav"
+          {% if blog.next_article %}
+            has-next-article
+          {% endif %}
+          style="--transform: 0.01">
           <div class="container">
             <div class="article__nav-wrapper">
               {%- if blog.previous_article -%}
-                <a href="{{ blog.previous_article.url }}" class="article__nav-item article__nav-item--prev hidden-phone">
-                  <span class="article__nav-arrow">{%- render 'icon' with 'nav-arrow-left', direction_aware: true -%}</span>
-                  <span class="article__nav-item-title hidden-tablet">{{ blog.previous_article.title }}</span>
+                <a
+                  href="{{ blog.previous_article.url }}"
+                  class="article__nav-item article__nav-item--prev hidden-phone">
+                  <span class="article__nav-arrow">
+                    {%- render 'icon' with 'nav-arrow-left',
+                      direction_aware: true
+                    -%}
+                  </span>
+                  <span class="article__nav-item-title hidden-tablet">
+                    {{- blog.previous_article.title -}}
+                  </span>
                 </a>
               {%- endif -%}
 
               <span class="article__nav-item article__nav-item--current">
                 {% comment %}We provide an estimate of the reading time, based on the fact that average people read 180 words per minute{% endcomment %}
-                {%- assign minutes_to_read = article.content | strip_html | split: ' ' | size | divided_by: 180 | plus: 1 -%}
+                {%- assign minutes_to_read = article.content
+                  | strip_html
+                  | split: ' '
+                  | size
+                  | divided_by: 180
+                  | plus: 1
+                -%}
 
-                <span class="article__nav-item-label text--strong hidden-pocket hidden-lap">{{ 'article.general.reading' | t }}</span>
+                <span class="article__nav-item-label text--strong hidden-pocket hidden-lap">
+                  {{- 'article.general.reading' | t -}}
+                </span>
                 <span class="article__nav-item-title">{{ article.title }}</span>
                 <span class="square-separator square-separator--block"></span>
-                <span class="article__reading-time">{{ 'article.general.reading_time' | t: count: minutes_to_read }}</span>
+                <span class="article__reading-time">
+                  {{-
+                    'article.general.reading_time'
+                    | t: count: minutes_to_read
+                  -}}
+                </span>
               </span>
 
               {%- if blog.next_article -%}
-                <a href="{{ blog.next_article.url }}" class="article__nav-item article__nav-item--next">
-                  <span class="article__nav-item-label text--strong hidden-tablet-and-up">{{ 'article.general.next' | t }}</span>
-                  <span class="article__nav-item-title hidden-tablet">{{ blog.next_article.title }}</span>
-                  <span class="article__nav-arrow tap-area">{%- render 'icon' with 'nav-arrow-right', direction_aware: true -%}</span>
+                <a
+                  href="{{ blog.next_article.url }}"
+                  class="article__nav-item article__nav-item--next">
+                  <span class="article__nav-item-label text--strong hidden-tablet-and-up">
+                    {{- 'article.general.next' | t -}}
+                  </span>
+                  <span class="article__nav-item-title hidden-tablet">
+                    {{- blog.next_article.title -}}
+                  </span>
+                  <span class="article__nav-arrow tap-area">
+                    {%- render 'icon' with 'nav-arrow-right',
+                      direction_aware: true
+                    -%}
+                  </span>
                 </a>
               {%- endif -%}
             </div>
@@ -137,7 +173,9 @@
           {%- endif -%}
 
           <div class="article__content">
-            <div class="rte" {{ block.shopify_attributes }}>
+            <div
+              class="rte"
+              {{ block.shopify_attributes }}>
               {{- article.content -}}
             </div>
           </div>

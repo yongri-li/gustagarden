@@ -1,35 +1,57 @@
-{%- assign heading_font_italic = settings.heading_font | font_modify: 'style', 'italic' -%}
+{%- assign heading_font_italic = settings.heading_font
+  | font_modify: 'style', 'italic'
+-%}
 
 {%- comment -%}
   IMPLEMENTATION NOTE: for the main font we first try the 600 variation if it exists, as it provides a less "bold" look. If
   the semi-bold variation does not exist we try the 500 variation, and if not found we fallback to the "bolder" variation.
 {%- endcomment -%}
 
-{%- assign text_font_italic = settings.text_font | font_modify: 'style', 'italic' -%}
-{%- assign text_font_bold = settings.text_font | font_modify: 'weight', '600' -%}
+{%- assign text_font_italic = settings.text_font
+  | font_modify: 'style', 'italic'
+-%}
+{%- assign text_font_bold = settings.text_font
+  | font_modify: 'weight', '600'
+-%}
 
 {%- unless text_font_bold -%}
-  {%- assign text_font_bold = settings.text_font | font_modify: 'weight', '500' -%}
+  {%- assign text_font_bold = settings.text_font
+    | font_modify: 'weight', '500'
+  -%}
 {%- endunless -%}
 
 {%- unless text_font_bold -%}
-  {%- assign text_font_bold = settings.text_font | font_modify: 'weight', 'bolder' -%}
+  {%- assign text_font_bold = settings.text_font
+    | font_modify: 'weight', 'bolder'
+  -%}
 {%- endunless -%}
 
-{%- assign text_font_bold_italic = text_font_bold | font_modify: 'style', 'italic' -%}
+{%- assign text_font_bold_italic = text_font_bold
+  | font_modify: 'style', 'italic'
+-%}
 
 {%- comment -%}
-We only preload the main variations of the custom fonts rather than all the variations, as per recommendation by Shopify.
-It seems that preloading all the variations upfront can cause performance issue and delay the loading of more important
-other resources, such as CSS or JS
+  We only preload the main variations of the custom fonts rather than all the variations, as per recommendation by Shopify.
+  It seems that preloading all the variations upfront can cause performance issue and delay the loading of more important
+  other resources, such as CSS or JS
 {%- endcomment -%}
 
 {%- unless settings.heading_font.system? -%}
-  <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
+  <link
+    rel="preload"
+    href="{{ settings.heading_font | font_url }}"
+    as="font"
+    type="font/woff2"
+    crossorigin>
 {%- endunless -%}
 
 {%- unless settings.text_font.system? -%}
-  <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
+  <link
+    rel="preload"
+    href="{{ settings.text_font | font_url }}"
+    as="font"
+    type="font/woff2"
+    crossorigin>
 {%- endunless -%}
 
 <style>
@@ -229,5 +251,3 @@ other resources, such as CSS or JS
     }
   }
 </style>
-
-

@@ -10,9 +10,9 @@
 
 <section>
   {%- comment -%}
-  ------------------------------------------------------------------------------------------
-  TOP PART (IMAGE AND BREADCRUMB)
-  ------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------
+    TOP PART (IMAGE AND BREADCRUMB)
+    ------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
   {%- capture breadcrumb -%}
@@ -36,17 +36,51 @@
   {%- endcapture -%}
 
   {%- if collection.image and section.settings.show_collection_image -%}
-    <image-with-text-overlay reveal-on-scroll parallax class="image-overlay image-overlay--{{ section.settings.section_height }}" {% if section.settings.section_height == 'auto' %}style="--image-aspect-ratio: {{ collection.image.aspect_ratio }}"{% endif %}>
-      <div class="image-overlay__image-wrapper" {% if section.settings.section_height == 'auto' %}style="padding-bottom: {{ 100.0 | divided_by: collection.image.aspect_ratio }}%"{% endif %}>
+    <image-with-text-overlay
+      reveal-on-scroll
+      parallax
+      class="image-overlay image-overlay--{{ section.settings.section_height }}"
+      {% if section.settings.section_height == 'auto' %}
+        style="--image-aspect-ratio: {{ collection.image.aspect_ratio }}"
+      {% endif %}>
+      <div
+        class="image-overlay__image-wrapper"
+        {% if section.settings.section_height == 'auto' %}
+          style="padding-bottom: {{ 100.0 | divided_by: collection.image.aspect_ratio }}%"
+        {% endif %}>
         {%- comment -%}Performance note: this image must not be lazyloaded as it contributes to the LCP{%- endcomment -%}
         <picture>
           {%- if section.settings.section_height != 'auto' -%}
-            {{- collection.image | image_url: width: collection.image.width, height: 600, crop: 'center' | image_tag: widths: '400,500,600,700,800,900,1000', media: '(max-width: 740px)' | replace: '<img', '<source' -}}
+            {{-
+              collection.image
+              | image_url:
+                width: collection.image.width,
+                height: 600,
+                crop: 'center'
+              | image_tag:
+                widths: '400,500,600,700,800,900,1000',
+                media: '(max-width: 740px)'
+              | replace: '<img', '<source'
+            -}}
           {%- else -%}
-            {{- collection.image | image_url: width: collection.image.width | image_tag: widths: '400,500,600,700,800,900,1000', media: '(max-width: 740px)' | replace: '<img', '<source' -}}
+            {{-
+              collection.image
+              | image_url: width: collection.image.width
+              | image_tag:
+                widths: '400,500,600,700,800,900,1000',
+                media: '(max-width: 740px)'
+              | replace: '<img', '<source'
+            -}}
           {%- endif -%}
 
-          {{- collection.image | image_url: width: collection.image.width | image_tag: widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600', class: 'image-overlay__image', reveal: true -}}
+          {{-
+            collection.image
+            | image_url: width: collection.image.width
+            | image_tag:
+              widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600',
+              class: 'image-overlay__image',
+              reveal: true
+          -}}
         </picture>
       </div>
 
@@ -61,8 +95,12 @@
               </h1>
             {%- endif -%}
 
-            {%- if section.settings.show_collection_description and collection.description != blank -%}
-              <div class="image-overlay__text-container" reveal>
+            {%- if section.settings.show_collection_description
+              and collection.description != blank
+            -%}
+              <div
+                class="image-overlay__text-container"
+                reveal>
                 {{- collection.description -}}
               </div>
             {%- endif -%}
@@ -80,7 +118,9 @@
             <h1 class="heading h1">{{ collection.title }}</h1>
           {%- endif -%}
 
-          {%- if section.settings.show_collection_description and collection.description != blank -%}
+          {%- if section.settings.show_collection_description
+            and collection.description != blank
+          -%}
             <div>
               {{- collection.description -}}
             </div>
@@ -91,9 +131,9 @@
   {%- endif -%}
 
   {%- comment -%}
-  ------------------------------------------------------------------------------------------
-  QUICK LINKS PART
-  ------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------
+    QUICK LINKS PART
+    ------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
   {%- assign quick_links_menu = section.settings.quick_links -%}
@@ -102,13 +142,21 @@
     <link-bar class="link-bar">
       <div class="container">
         <div class="link-bar__wrapper">
-          <span class="link-bar__title heading heading--small text--subdued">{{ quick_links_menu.title }}</span>
+          <span class="link-bar__title heading heading--small text--subdued">
+            {{- quick_links_menu.title -}}
+          </span>
 
           <div class="link-bar__scroller hide-scrollbar">
-            <ul class="link-bar__linklist list--unstyled" role="list">
+            <ul
+              class="link-bar__linklist list--unstyled"
+              role="list">
               {%- for link in quick_links_menu.links -%}
                 <li class="link-bar__link-item {% if link.active %}link-bar__link-item--selected{% endif %}">
-                  <a href="{{ link.url }}" class="link-bar__link link--animated {% if link.active %}text--underlined{% endif %}">{{ link.title }}</a>
+                  <a
+                    href="{{ link.url }}"
+                    class="link-bar__link link--animated {% if link.active %}text--underlined{% endif %}">
+                    {{- link.title -}}
+                  </a>
                 </li>
               {%- endfor -%}
             </ul>

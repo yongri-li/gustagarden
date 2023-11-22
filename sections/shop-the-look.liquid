@@ -1,6 +1,18 @@
 {%- assign direction = 'ltr' -%}
 {%- case request.locale.iso_code -%}
-  {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
+  {%- when 'ar',
+    'arc',
+    'dv',
+    'fa',
+    'ha',
+    'he',
+    'kwh',
+    'ks',
+    'ku',
+    'ps',
+    'ur',
+    'yi'
+  -%}
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 
@@ -45,36 +57,83 @@
 </style>
 
 <section>
-  <shop-the-look {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="shop-the-look">
+  <shop-the-look
+    {% if section.settings.reveal_on_scroll %}
+      reveal-on-scroll
+    {% endif %}
+    class="shop-the-look">
     <div class="shop-the-look__item-list">
       {%- for block in section.blocks -%}
         {%- capture look_id -%}block-{{ section.id }}-{{ block.id }}{%- endcapture -%}
 
-        <shop-the-look-item {% unless forloop.first %}hidden{% endunless %} id="{{ look_id }}" class="shop-the-look__item" {{ block.shopify_attributes }}>
+        <shop-the-look-item
+          {% unless forloop.first %}
+            hidden
+          {% endunless %}
+          id="{{ look_id }}"
+          class="shop-the-look__item"
+          {{ block.shopify_attributes }}>
           <div class="shop-the-look__image-wrapper">
             {%- if block.settings.image != blank -%}
               {%- capture class_attribute -%}shop-the-look__image {% if block.settings.mobile_image != blank %}hidden-pocket{% endif %}{%- endcapture -%}
 
               {%- if section.settings.reveal_on_scroll and forloop.first -%}
-                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', widths: '500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000', class: class_attribute, reveal: true -}}
+                {{-
+                  block.settings.image
+                  | image_url: width: block.settings.image.width
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000',
+                    class: class_attribute,
+                    reveal: true
+                -}}
               {%- else -%}
-                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', widths: '500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000', class: class_attribute -}}
+                {{-
+                  block.settings.image
+                  | image_url: width: block.settings.image.width
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000',
+                    class: class_attribute
+                -}}
               {%- endif -%}
 
               {%- if block.settings.mobile_image != blank -%}
                 {%- if section.settings.reveal_on_scroll and forloop.first -%}
-                  {{- block.settings.mobile_image | image_url: width: block.settings.mobile_image.width | image_tag: loading: 'lazy', widths: '500,600,700,800,1000,1200,1400,1600', class: 'shop-the-look__image hidden-lap-and-up', reveal: true -}}
+                  {{-
+                    block.settings.mobile_image
+                    | image_url: width: block.settings.mobile_image.width
+                    | image_tag:
+                      loading: 'lazy',
+                      widths: '500,600,700,800,1000,1200,1400,1600',
+                      class: 'shop-the-look__image hidden-lap-and-up',
+                      reveal: true
+                  -}}
                 {%- else -%}
-                  {{- block.settings.mobile_image | image_url: width: block.settings.mobile_image.width | image_tag: loading: 'lazy', widths: '500,600,700,800,1000,1200,1400,1600', class: 'shop-the-look__image hidden-lap-and-up' -}}
+                  {{-
+                    block.settings.mobile_image
+                    | image_url: width: block.settings.mobile_image.width
+                    | image_tag:
+                      loading: 'lazy',
+                      widths: '500,600,700,800,1000,1200,1400,1600',
+                      class: 'shop-the-look__image hidden-lap-and-up'
+                  -}}
                 {%- endif -%}
               {%- endif -%}
             {%- else -%}
               {%- capture collection_image -%}collection-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
               <div class="placeholder-image">
                 {%- if section.settings.reveal_on_scroll and forloop.first -%}
-                  {{- collection_image | placeholder_svg_tag: 'shop-the-look__image shop-the-look__image--placeholder' | replace: '<svg', '<svg reveal' -}}
+                  {{-
+                    collection_image
+                    | placeholder_svg_tag: 'shop-the-look__image shop-the-look__image--placeholder'
+                    | replace: '<svg', '<svg reveal'
+                  -}}
                 {%- else -%}
-                  {{- collection_image | placeholder_svg_tag: 'shop-the-look__image shop-the-look__image--placeholder' -}}
+                  {{-
+                    collection_image
+                    | placeholder_svg_tag: 'shop-the-look__image shop-the-look__image--placeholder'
+                  -}}
                 {%- endif -%}
               </div>
             {%- endif -%}
@@ -84,7 +143,10 @@
           {%- assign product_2 = block.settings.product_2 -%}
           {%- assign product_3 = block.settings.product_3 -%}
 
-          {%- if product_1 == blank and product_2 == blank and product_3 == blank -%}
+          {%- if product_1 == blank
+            and product_2 == blank
+            and product_3 == blank
+          -%}
             {%- assign show_product_placeholder = true -%}
           {%- else -%}
             {%- assign show_product_placeholder = false -%}
@@ -97,52 +159,110 @@
 
             {%- assign product = block.settings[product_option] -%}
 
-            <div id="{{ look_id }}-{{ forloop.index }}" class="shop-the-look__product-wrapper">
+            <div
+              id="{{ look_id }}-{{ forloop.index }}"
+              class="shop-the-look__product-wrapper">
               {%- if show_product_placeholder -%}
-                <button type="button" is="toggle-button" {% if section.settings.reveal_on_scroll or forloop.parentloop.first == false %}reveal{% endif %} class="shop-the-look__dot tap-area hidden-phone" aria-controls="{{ look_id }}-{{ forloop.index }}-product" aria-expanded="false">
-                  <span class="visually-hidden">{{ 'general.accessibility.show_product' | t: title: i }}</span>
+                <button
+                  type="button"
+                  is="toggle-button"
+                  {% if section.settings.reveal_on_scroll
+                    or forloop.parentloop.first == false
+                  %}
+                    reveal
+                  {% endif %}
+                  class="shop-the-look__dot tap-area hidden-phone"
+                  aria-controls="{{ look_id }}-{{ forloop.index }}-product"
+                  aria-expanded="false">
+                  <span class="visually-hidden">
+                    {{- 'general.accessibility.show_product' | t: title: i -}}
+                  </span>
                 </button>
 
-                <button type="button" is="toggle-button" {% if section.settings.reveal_on_scroll or forloop.parentloop.first == false %}reveal{% endif %} class="shop-the-look__dot tap-area hidden-tablet-and-up" aria-controls="{{ look_id }}-{{ forloop.index }}-popover" aria-expanded="false">
-                  <span class="visually-hidden">{{ 'general.accessibility.show_product' | t: title: product.title }}</span>
+                <button
+                  type="button"
+                  is="toggle-button"
+                  {% if section.settings.reveal_on_scroll
+                    or forloop.parentloop.first == false
+                  %}
+                    reveal
+                  {% endif %}
+                  class="shop-the-look__dot tap-area hidden-tablet-and-up"
+                  aria-controls="{{ look_id }}-{{ forloop.index }}-popover"
+                  aria-expanded="false">
+                  <span class="visually-hidden">
+                    {{-
+                      'general.accessibility.show_product'
+                      | t: title: product.title
+                    -}}
+                  </span>
                 </button>
 
                 {%- capture product_image -%}product-{% cycle '1', '2', '3' %}{%- endcapture -%}
 
-                <openable-element id="{{ look_id }}-{{ forloop.index }}-product" class="shop-the-look__product {% if block.settings[product_horizontal_position_option] > 50 %}shop-the-look__product--reverse{% endif %} hidden-phone">
-                  {{- product_image | placeholder_svg_tag: 'shop-the-look__product-image' -}}
+                <openable-element
+                  id="{{ look_id }}-{{ forloop.index }}-product"
+                  class="shop-the-look__product {% if block.settings[product_horizontal_position_option] > 50 %}shop-the-look__product--reverse{% endif %} hidden-phone">
+                  {{-
+                    product_image
+                    | placeholder_svg_tag: 'shop-the-look__product-image'
+                  -}}
 
                   <div class="shop-the-look__product-info">
-                    <span class="shop-the-look__product-vendor heading heading--xsmall">{{ 'general.onboarding.product_vendor' | t }}</span>
-                    <span class="shop-the-look__product-title">{{ 'general.onboarding.product_title' | t }}</span>
+                    <span class="shop-the-look__product-vendor heading heading--xsmall">
+                      {{- 'general.onboarding.product_vendor' | t -}}
+                    </span>
+                    <span class="shop-the-look__product-title">
+                      {{- 'general.onboarding.product_title' | t -}}
+                    </span>
 
                     <div class="shop-the-look__product-bottom-wrapper">
                       <span class="price">
-                        <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                        <span class="visually-hidden">
+                          {{- 'product.general.sale_price' | t -}}
+                        </span>
                         {{- 4500 | money -}}
                       </span>
 
-                      <button type="button" class="shop-the-look__product-link link text--subdued">{{ 'collection.product.add_to_cart' | t }}</button>
+                      <button
+                        type="button"
+                        class="shop-the-look__product-link link text--subdued">
+                        {{ 'collection.product.add_to_cart' | t }}
+                      </button>
                     </div>
                   </div>
                 </openable-element>
 
-                <quick-buy-popover id="{{ look_id }}-{{ forloop.index }}-popover" class="popover popover--quick-buy">
+                <quick-buy-popover
+                  id="{{ look_id }}-{{ forloop.index }}-popover"
+                  class="popover popover--quick-buy">
                   <span class="popover__overlay"></span>
 
                   <header class="popover__header">
                     <div class="quick-buy-product">
-                      {{- product_image | placeholder_svg_tag: 'quick-buy-product__image' -}}
+                      {{-
+                        product_image
+                        | placeholder_svg_tag: 'quick-buy-product__image'
+                      -}}
 
                       <div class="quick-buy-product__info text--small">
                         <div class="product-item-meta">
-                          <span class="product-item-meta__vendor heading heading--xsmall">{{ 'general.onboarding.product_vendor' | t }}</span>
-                          <span class="product-item-meta__title">{{ 'general.onboarding.product_title' | t }}</span>
+                          <span class="product-item-meta__vendor heading heading--xsmall">
+                            {{- 'general.onboarding.product_vendor' | t -}}
+                          </span>
+                          <span class="product-item-meta__title">
+                            {{- 'general.onboarding.product_title' | t -}}
+                          </span>
 
-                          <div class="product-item-meta__price-list-container" role="region" aria-live="polite">
+                          <div
+                            class="product-item-meta__price-list-container"
+                            role="region"
+                            aria-live="polite">
                             <div class="price-list">
                               <span class="price">
-                                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                                <span class="visually-hidden">
+                                  {{- 'product.general.sale_price' | t -}}
+                                </span>
                                 {{- 4500 | money -}}
                               </span>
                             </div>
@@ -151,7 +271,11 @@
                       </div>
                     </div>
 
-                    <button type="button" class="drawer__close-button tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+                    <button
+                      type="button"
+                      class="drawer__close-button tap-area"
+                      data-action="close"
+                      title="{{ 'general.accessibility.close' | t | escape }}">
                       {%- render 'icon' with 'close' -%}
                     </button>
                   </header>
@@ -159,23 +283,68 @@
                   <div class="popover__content popover__content--no-padding">
                     <div class="product-form">
                       <div class="product-form__buy-buttons">
-                        <button id="AddToCart" type="submit" class="product-form__add-button button button--primary button--full">{{ 'product.form.add_to_cart' | t }}</button>
+                        <button
+                          id="AddToCart"
+                          type="submit"
+                          class="product-form__add-button button button--primary button--full">
+                          {{ 'product.form.add_to_cart' | t }}
+                        </button>
                       </div>
                     </div>
                   </div>
                 </quick-buy-popover>
               {%- elsif product != blank -%}
-                <button type="button" is="toggle-button" {% if section.settings.reveal_on_scroll or forloop.parentloop.first == false %}reveal{% endif %} class="shop-the-look__dot tap-area hidden-phone" aria-controls="{{ look_id }}-{{ forloop.index }}-product" aria-expanded="false">
-                  <span class="visually-hidden">{{ 'general.accessibility.show_product' | t: title: product.title }}</span>
+                <button
+                  type="button"
+                  is="toggle-button"
+                  {% if section.settings.reveal_on_scroll
+                    or forloop.parentloop.first == false
+                  %}
+                    reveal
+                  {% endif %}
+                  class="shop-the-look__dot tap-area hidden-phone"
+                  aria-controls="{{ look_id }}-{{ forloop.index }}-product"
+                  aria-expanded="false">
+                  <span class="visually-hidden">
+                    {{-
+                      'general.accessibility.show_product'
+                      | t: title: product.title
+                    -}}
+                  </span>
                 </button>
 
-                <button type="button" is="toggle-button" {% if section.settings.reveal_on_scroll or forloop.parentloop.first == false %}reveal{% endif %} class="shop-the-look__dot tap-area hidden-tablet-and-up" aria-controls="{{ look_id }}-{{ forloop.index }}-popover" aria-expanded="false">
-                  <span class="visually-hidden">{{ 'general.accessibility.show_product' | t: title: product.title }}</span>
+                <button
+                  type="button"
+                  is="toggle-button"
+                  {% if section.settings.reveal_on_scroll
+                    or forloop.parentloop.first == false
+                  %}
+                    reveal
+                  {% endif %}
+                  class="shop-the-look__dot tap-area hidden-tablet-and-up"
+                  aria-controls="{{ look_id }}-{{ forloop.index }}-popover"
+                  aria-expanded="false">
+                  <span class="visually-hidden">
+                    {{-
+                      'general.accessibility.show_product'
+                      | t: title: product.title
+                    -}}
+                  </span>
                 </button>
 
-                <openable-element id="{{ look_id }}-{{ forloop.index }}-product" class="shop-the-look__product {% if block.settings[product_horizontal_position_option] > 50 %}shop-the-look__product--reverse{% endif %} hidden-phone">
+                <openable-element
+                  id="{{ look_id }}-{{ forloop.index }}-product"
+                  class="shop-the-look__product {% if block.settings[product_horizontal_position_option] > 50 %}shop-the-look__product--reverse{% endif %} hidden-phone">
                   {%- if product.featured_media -%}
-                    {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '72px', widths: '72,144,216,288', class: 'shop-the-look__product-image' -}}
+                    {{-
+                      product.featured_media
+                      | image_url: width: product.featured_media.width
+                      | image_tag:
+                        loading: 'lazy',
+                        sizes: '72px',
+                        widths: '72,144,216,288',
+                        class: 'shop-the-look__product-image'
+                    -}}
                   {%- endif -%}
 
                   <div class="shop-the-look__product-info">
@@ -184,24 +353,43 @@
                       {%- assign collection_for_vendor = collections[vendor_handle] -%}
 
                       {%- unless collection_for_vendor.empty? -%}
-                        <a class="shop-the-look__product-vendor heading heading--xsmall" href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
+                        <a
+                          class="shop-the-look__product-vendor heading heading--xsmall"
+                          href="{{ collection_for_vendor.url }}">
+                          {{- product.vendor -}}
+                        </a>
                       {%- else -%}
-                        <a class="shop-the-look__product-vendor heading heading--xsmall" href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a>
+                        <a
+                          class="shop-the-look__product-vendor heading heading--xsmall"
+                          href="{{ product.vendor | url_for_vendor }}">
+                          {{- product.vendor -}}
+                        </a>
                       {%- endunless -%}
                     {%- endif -%}
 
-                    <a href="{{ product.url }}" class="shop-the-look__product-title">{{ product.title }}</a>
+                    <a
+                      href="{{ product.url }}"
+                      class="shop-the-look__product-title">
+                      {{- product.title -}}
+                    </a>
 
                     <div class="shop-the-look__product-bottom-wrapper">
                       {%- if product.price_varies -%}
                         {%- capture price_min -%}{{ product.price_min | money }}{%- endcapture -%}
                         <div class="price">
-                          <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
-                          {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+                          <span class="visually-hidden">
+                            {{- 'product.general.sale_price' | t -}}
+                          </span>
+                          {{-
+                            'collection.product.from_price_html'
+                            | t: price_min: price_min
+                          -}}
                         </div>
                       {%- else -%}
                         <span class="price">
-                          <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                          <span class="visually-hidden">
+                            {{- 'product.general.sale_price' | t -}}
+                          </span>
                           {{- product.price | money -}}
                         </span>
                       {%- endif -%}
@@ -209,13 +397,31 @@
                       {%- if product.available -%}
                         {%- if product.variants.size == 1 -%}
                           {%- capture form_id -%}{{ look_id }}_form_{% increment product_form_index %}{%- endcapture -%}
-                          {%- form 'product', product, id: form_id, is: 'product-form' -%}
-                            <input type="hidden" name="quantity" value="1">
-                            <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
-                            <button type="submit" class="shop-the-look__product-link link text--subdued">{{ 'collection.product.add_to_cart' | t }}</button>
+                          {%- form 'product',
+                            product,
+                            id: form_id,
+                            is: 'product-form'
+                          -%}
+                            <input
+                              type="hidden"
+                              name="quantity"
+                              value="1">
+                            <input
+                              type="hidden"
+                              name="id"
+                              value="{{ product.first_available_variant.id }}">
+                            <button
+                              type="submit"
+                              class="shop-the-look__product-link link text--subdued">
+                              {{ 'collection.product.add_to_cart' | t }}
+                            </button>
                           {%- endform -%}
                         {%- else -%}
-                          <button is="toggle-button" class="shop-the-look__product-link link text--subdued" aria-controls="{{ look_id }}-{{ forloop.index }}-drawer" aria-expanded="false">
+                          <button
+                            is="toggle-button"
+                            class="shop-the-look__product-link link text--subdued"
+                            aria-controls="{{ look_id }}-{{ forloop.index }}-drawer"
+                            aria-expanded="false">
                             {{- 'collection.product.quick_view' | t -}}
                           </button>
                         {%- endif -%}
@@ -224,10 +430,16 @@
                   </div>
                 </openable-element>
 
-                <quick-buy-popover href="{{ product.url }}?view=quick-buy-popover" id="{{ look_id }}-{{ forloop.index }}-popover" class="popover popover--quick-buy"></quick-buy-popover>
+                <quick-buy-popover
+                  href="{{ product.url }}?view=quick-buy-popover"
+                  id="{{ look_id }}-{{ forloop.index }}-popover"
+                  class="popover popover--quick-buy"></quick-buy-popover>
 
                 {%- if product.available and product.variants.size > 1 -%}
-                  <quick-buy-drawer href="{{ product.url }}?view=quick-buy-drawer" id="{{ look_id }}-{{ forloop.index }}-drawer" class="drawer drawer--large drawer--quick-buy"></quick-buy-drawer>
+                  <quick-buy-drawer
+                    href="{{ product.url }}?view=quick-buy-drawer"
+                    id="{{ look_id }}-{{ forloop.index }}-drawer"
+                    class="drawer drawer--large drawer--quick-buy"></quick-buy-drawer>
                 {%- endif -%}
               {%- endif -%}
             </div>
@@ -238,15 +450,27 @@
 
     {%- if section.blocks.size > 1 -%}
       <div class="container">
-        <shop-the-look-nav {% if section.settings.reveal_on_scroll %}reveal{% endif %} class="shop-the-look__nav">
+        <shop-the-look-nav
+          {% if section.settings.reveal_on_scroll %}
+            reveal
+          {% endif %}
+          class="shop-the-look__nav">
           {%- if section.settings.label != blank -%}
-            <span class="shop-the-look__label heading heading--small hidden-pocket">{{ section.settings.label | escape }}</span>
+            <span class="shop-the-look__label heading heading--small hidden-pocket">
+              {{- section.settings.label | escape -}}
+            </span>
           {%- endif -%}
 
           <div class="shop-the-look__prev-next-buttons">
-            <button class="shop-the-look__arrow prev-next-button prev-next-button--prev" data-action="prev">
-              <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
-              {%- include 'icon' with 'nav-arrow-left', direction_aware: true -%}
+            <button
+              class="shop-the-look__arrow prev-next-button prev-next-button--prev"
+              data-action="prev">
+              <span class="visually-hidden">
+                {{- 'general.accessibility.previous' | t -}}
+              </span>
+              {%- include 'icon' with 'nav-arrow-left',
+                direction_aware: true
+              -%}
             </button>
 
             <span class="shop-the-look__counter hidden-pocket">
@@ -254,16 +478,30 @@
                 <span class="shop-the-look__counter-page-base">1</span>
 
                 {%- for i in (1..section.blocks.size) -%}
-                  <span class="shop-the-look__counter-page-transition" {% unless forloop.first %}hidden{% endunless %}>{{ i }}</span>
+                  <span
+                    class="shop-the-look__counter-page-transition"
+                    {% unless forloop.first %}
+                      hidden
+                    {% endunless %}>
+                    {{- i -}}
+                  </span>
                 {%- endfor -%}
               </span>
               <span class="shop-the-look__counter-separator">/</span>
-              <span class="shop-the-look__counter-total">{{ section.blocks.size }}</span>
+              <span class="shop-the-look__counter-total">
+                {{- section.blocks.size -}}
+              </span>
             </span>
 
-            <button class="shop-the-look__arrow prev-next-button prev-next-button--next" data-action="next">
-              <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
-              {%- include 'icon' with 'nav-arrow-right', direction_aware: true -%}
+            <button
+              class="shop-the-look__arrow prev-next-button prev-next-button--next"
+              data-action="next">
+              <span class="visually-hidden">
+                {{- 'general.accessibility.next' | t -}}
+              </span>
+              {%- include 'icon' with 'nav-arrow-right',
+                direction_aware: true
+              -%}
             </button>
           </div>
         </shop-the-look-nav>

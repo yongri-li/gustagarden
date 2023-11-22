@@ -1,9 +1,8 @@
 <style>
+  .bg-custom {
+    background: rgb(var(--background));
+  }
 
-    .bg-custom {
-        background: rgb(var(--background));
-    }
-  
   .feature-chart {
     padding: 0 var(--container-gutter);
     scroll-padding-top: var(--sticky-area-height);
@@ -114,7 +113,9 @@
     background: rgb(var(--background));
     padding-block: var(--spacing-5);
     border-bottom-width: 1px;
-    transition: opacity 0.2s, visibility 0.2s;
+    transition:
+      opacity 0.2s,
+      visibility 0.2s;
     position: fixed;
     top: var(--sticky-area-height);
     border-top-width: 0 !important;
@@ -144,11 +145,17 @@
     }
 
     .feature-chart__table-row {
-      grid-template-columns: repeat(var(--feature-chart-values-columns-count), minmax(140px, 1fr));
+      grid-template-columns: repeat(
+        var(--feature-chart-values-columns-count),
+        minmax(140px, 1fr)
+      );
     }
 
     .feature-chart__table--multi-columns .feature-chart__table-row {
-      grid-template-columns: repeat(var(--feature-chart-values-columns-count), 150px);
+      grid-template-columns: repeat(
+        var(--feature-chart-values-columns-count),
+        150px
+      );
     }
 
     .feature-chart__heading {
@@ -262,7 +269,10 @@
 {%- render 'section-spacing-collapsing' -%}
 
 {%- assign text_position = section.settings.text_position -%}
-{%- assign values_column_count = section.blocks | where: 'type', 'values' | size -%}
+{%- assign values_column_count = section.blocks
+  | where: 'type', 'values'
+  | size
+-%}
 
 {%- comment -%}
   ------------------------------------------------------------------------------------------------------------------------
@@ -347,17 +357,26 @@
     {%- endif -%}
 
     <div class="section-stack__main">
-      {%- assign text_color = section.settings.chart_text_color | default: settings.text_color -%}
+      {%- assign text_color = section.settings.chart_text_color
+        | default: settings.text_color
+      -%}
       {%- assign background_color = section.settings.chart_background -%}
 
-      {%- if background_color == blank or background_color == 'rgba(0,0,0,0)' -%}
-        {%- assign background_color = settings.background | color_mix: text_color, 95 -%}
+      {%- if background_color == blank
+        or background_color == 'rgba(0,0,0,0)'
+      -%}
+        {%- assign background_color = settings.background
+          | color_mix: text_color, 95
+        -%}
       {%- endif -%}
 
       <feature-chart
         max-rows="{{ section.settings.max_rows }}"
-        {% render 'surface', class: 'feature-chart', background: background_color, text_color: text_color %}
-      >
+        {% render 'surface',
+          class: 'feature-chart',
+          background: background_color,
+          text_color: text_color
+        %}>
         {%- assign has_product = false -%}
 
         {%- for block in section.blocks -%}
@@ -368,8 +387,13 @@
         {%- endfor -%}
 
         <div class="feature-chart__table {% if values_column_count > 1 %}feature-chart__table--multi-columns{% endif %} {% if has_product %}feature-chart__table--product{% endif %} divide-y scroll-area">
-          {%- assign headings_block = section.blocks | where: 'type', 'headings' | first -%}
-          {%- assign values_blocks = section.blocks | where: 'type', 'values' -%}
+          {%- assign headings_block = section.blocks
+            | where: 'type', 'headings'
+            | first
+          -%}
+          {%- assign values_blocks = section.blocks
+            | where: 'type', 'values'
+          -%}
           {%- assign outputted_count = 0 -%}
           {%- assign total_rows_count = 0 -%}
 
@@ -479,15 +503,13 @@
                 class="feature-chart__table-row"
                 {% if outputted_count > section.settings.max_rows %}
                   hidden
-                {% endif %}
-              >
+                {% endif %}>
                 {%- if heading_value != blank -%}
                   <div
                     class="feature-chart__heading bold"
                     {% if outputted_count == 0 %}
                       {{- headings_block.shopify_attributes -}}
-                    {% endif %}
-                  >
+                    {% endif %}>
                     {{ heading_value }}
                   </div>
                 {%- endif -%}
@@ -501,8 +523,7 @@
                       class="feature-chart__value prose text-subdued"
                       {% if outputted_count == 0 %}
                         {{- values_blocks[i].shopify_attributes -}}
-                      {% endif %}
-                    >
+                      {% endif %}>
                       {%- if stripped_value == 'FALSE' -%}
                         <svg
                           fill="none"
@@ -510,8 +531,7 @@
                           width="16"
                           height="16"
                           viewBox="0 0 16 16"
-                          style="--icon-height: 16px"
-                        >
+                          style="--icon-height: 16px">
                           <path d="m.94 3.06 12 12 2.12-2.12-12-12L.94 3.06Zm2.12 12 12-12L12.94.94l-12 12 2.12 2.12Z" fill="{{ section.settings.chart_true_false_color | default: section.settings.chart_text_color | default: settings.text_color }}"></path>
                         </svg>
                       {%- elsif stripped_value == 'TRUE' -%}
@@ -521,8 +541,7 @@
                           width="20"
                           height="16"
                           viewBox="0 0 20 16"
-                          style="--icon-height: 16px"
-                        >
+                          style="--icon-height: 16px">
                           <path d="m2 7.6 5.259 5.6L18 2" stroke="{{ section.settings.chart_true_false_color | default: section.settings.chart_text_color | default: settings.text_color }}" stroke-width="3"></path>
                         </svg>
                       {%- else -%}
@@ -542,12 +561,13 @@
               data-action="toggle-rows"
               data-view-more="{{ section.settings.view_all_text | escape }}"
               data-view-less="{{ section.settings.view_less_text | escape }}"
-              class="text-with-icon group"
-            >
+              class="text-with-icon group">
               <span class="feature-chart__toggle-text reversed-link">
                 {{- section.settings.view_all_text | escape -}}
               </span>
-              <span class="circle-chevron group-hover:colors">{%- render 'icon' with 'chevron-bottom-small' -%}</span>
+              <span class="circle-chevron group-hover:colors">
+                {%- render 'icon' with 'chevron-bottom-small' -%}
+              </span>
             </button>
           </div>
         {%- endif -%}

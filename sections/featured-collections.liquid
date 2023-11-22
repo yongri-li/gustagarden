@@ -1,4 +1,6 @@
-{%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
+{%- if section.settings.background != settings.background
+  and section.settings.background != 'rgba(0,0,0,0)'
+-%}
   {%- assign blends_with_background = false -%}
 {%- else -%}
   {%- assign blends_with_background = true -%}
@@ -66,12 +68,21 @@
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
   <div class="section__color-wrapper">
     <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
-      {%- if section.blocks.size > 1 or section.settings.title != blank or section.settings.subheading != blank or section.settings.content != blank -%}
+      {%- if section.blocks.size > 1
+        or section.settings.title != blank
+        or section.settings.subheading != blank
+        or section.settings.content != blank
+      -%}
         <header class="section__header {% if section.settings.content != blank %}section__header--tight{% endif %}">
-          {%- if section.settings.title != blank or section.settings.subheading != blank or section.settings.content != blank -%}
+          {%- if section.settings.title != blank
+            or section.settings.subheading != blank
+            or section.settings.content != blank
+          -%}
             <div class="text-container">
               {%- if section.settings.subheading != blank -%}
-                <h2 class="heading heading--small">{{ section.settings.subheading }}</h2>
+                <h2 class="heading heading--small">
+                  {{ section.settings.subheading }}
+                </h2>
               {%- endif -%}
 
               {%- if section.settings.title != blank -%}
@@ -92,8 +103,17 @@
                     {%- for block in section.blocks -%}
                       {%- capture on_boarding_title -%}{{ 'general.onboarding.collection_title' | t }} {{ forloop.index }}{%- endcapture -%}
 
-                      <button type="button" class="tabs-nav__item heading heading--small" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="block-{{ section.id }}-{{ block.id }}" {{ block.shopify_attributes }}>
-                        {{- block.settings.label | default: block.settings.collection.title | default: on_boarding_title -}}
+                      <button
+                        type="button"
+                        class="tabs-nav__item heading heading--small"
+                        aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+                        aria-controls="block-{{ section.id }}-{{ block.id }}"
+                        {{ block.shopify_attributes }}>
+                        {{-
+                          block.settings.label
+                          | default: block.settings.collection.title
+                          | default: on_boarding_title
+                        -}}
                       </button>
                     {%- endfor -%}
                   </div>
@@ -109,25 +129,56 @@
           {%- assign collection = block.settings.collection -%}
           {%- assign smallest_image_aspect_ratio = 0 -%}
 
-          <product-list {% if settings.stagger_products_apparition %}stagger-apparition{% endif %} {% unless forloop.first %}hidden{% endunless %} id="block-{{ section.id }}-{{ block.id }}" class="product-list product-list--center">
-            <div {% unless section.settings.stack_products %}class="scroller"{% endunless %}>
+          <product-list
+            {% if settings.stagger_products_apparition %}
+              stagger-apparition
+            {% endif %}
+            {% unless forloop.first %}
+              hidden
+            {% endunless %}
+            id="block-{{ section.id }}-{{ block.id }}"
+            class="product-list product-list--center">
+            <div
+              {% unless section.settings.stack_products %}
+                class="scroller"
+              {% endunless %}>
               <div class="product-list__inner {% unless section.settings.stack_products %}product-list__inner--scroller hide-scrollbar{% endunless %}">
-                {%- assign number_of_products_minus_one = section.settings.products_per_row | minus: 1 -%}
-                {%- assign gap_width = 24.0 | divided_by: section.settings.products_per_row | times: number_of_products_minus_one -%}
+                {%- assign number_of_products_minus_one = section.settings.products_per_row
+                  | minus: 1
+                -%}
+                {%- assign gap_width = 24.0
+                  | divided_by: section.settings.products_per_row
+                  | times: number_of_products_minus_one
+                -%}
                 {%- capture sizes_attribute -%}(max-width: 740px) 52vw, calc(min(100vw - 80px, 1520px) / {{ section.settings.products_per_row }} - {{ gap_width | ceil }}px){%- endcapture -%}
 
-                {%- for product in collection.products limit: section.settings.products_count -%}
+                {%- for product in collection.products
+                  limit: section.settings.products_count
+                -%}
                   {%- if product.featured_media -%}
-                    {%- assign smallest_image_aspect_ratio = smallest_image_aspect_ratio | at_least: product.featured_media.aspect_ratio -%}
+                    {%- assign smallest_image_aspect_ratio = smallest_image_aspect_ratio
+                      | at_least: product.featured_media.aspect_ratio
+                    -%}
                   {%- endif -%}
 
-                  {%- render 'product-item', product: product, collection: collection, show_cta: section.settings.show_cta, block: block, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
+                  {%- render 'product-item',
+                    product: product,
+                    collection: collection,
+                    show_cta: section.settings.show_cta,
+                    block: block,
+                    sizes_attribute: sizes_attribute,
+                    reveal: settings.stagger_products_apparition
+                  -%}
                 {%- else -%}
                   {%- assign smallest_image_aspect_ratio = 1 -%}
 
                   {%- for i in (1..section.settings.products_count) -%}
                     {%- capture product_image -%}product-{% cycle '1', '2', '3', '4', '5' %}{% endcapture %}
-                    {%- render 'product-item-placeholder', product_image: product_image, show_cta: section.settings.show_cta, reveal: settings.stagger_products_apparition -%}
+                    {%- render 'product-item-placeholder',
+                      product_image: product_image,
+                      show_cta: section.settings.show_cta,
+                      reveal: settings.stagger_products_apparition
+                    -%}
                   {%- endfor -%}
                 {%- endfor -%}
               </div>
@@ -137,7 +188,10 @@
               {%- if collection.products_count == 0 -%}
                 {%- assign products_shown = section.settings.products_count -%}
               {%- else -%}
-                {%- assign products_shown = collection.products_count | default: section.settings.products_count | at_most: section.settings.products_count -%}
+                {%- assign products_shown = collection.products_count
+                  | default: section.settings.products_count
+                  | at_most: section.settings.products_count
+                -%}
               {%- endif -%}
 
               {%- if products_shown > section.settings.products_per_row -%}
@@ -145,15 +199,29 @@
                   {%- assign smallest_image_aspect_ratio = 1 -%}
                 {%- endif -%}
 
-                <prev-next-buttons class="product-list__prev-next hidden-pocket" style="--smallest-image-aspect-ratio: {{ smallest_image_aspect_ratio }}">
-                  <button class="product-list__arrow prev-next-button prev-next-button--prev" disabled>
-                    <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
-                    {%- include 'icon' with 'nav-arrow-left', block: true, direction_aware: true -%}
+                <prev-next-buttons
+                  class="product-list__prev-next hidden-pocket"
+                  style="--smallest-image-aspect-ratio: {{ smallest_image_aspect_ratio }}">
+                  <button
+                    class="product-list__arrow prev-next-button prev-next-button--prev"
+                    disabled>
+                    <span class="visually-hidden">
+                      {{- 'general.accessibility.previous' | t -}}
+                    </span>
+                    {%- include 'icon' with 'nav-arrow-left',
+                      block: true,
+                      direction_aware: true
+                    -%}
                   </button>
 
                   <button class="product-list__arrow prev-next-button prev-next-button--next">
-                    <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
-                    {%- include 'icon' with 'nav-arrow-right', block: true, direction_aware: true -%}
+                    <span class="visually-hidden">
+                      {{- 'general.accessibility.next' | t -}}
+                    </span>
+                    {%- include 'icon' with 'nav-arrow-right',
+                      block: true,
+                      direction_aware: true
+                    -%}
                   </button>
                 </prev-next-buttons>
               {%- endif -%}
@@ -161,7 +229,11 @@
 
             {%- if block.settings.button_text != blank -%}
               <div class="section__footer">
-                <a class="button button--primary" href="{{ block.settings.button_url | default: collection.url }}">{{ block.settings.button_text }}</a>
+                <a
+                  class="button button--primary"
+                  href="{{ block.settings.button_url | default: collection.url }}">
+                  {{- block.settings.button_text -}}
+                </a>
               </div>
             {%- endif -%}
           </product-list>

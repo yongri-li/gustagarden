@@ -54,20 +54,36 @@
     {%- endif -%}
 
     <div class="container">
-      <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb text--xsmall text--subdued hidden-phone">
-        <ol class="breadcrumb__list" role="list">
+      <nav
+        aria-label="{{ 'general.breadcrumb.title' | t }}"
+        class="breadcrumb text--xsmall text--subdued hidden-phone">
+        <ol
+          class="breadcrumb__list"
+          role="list">
           <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+            <a
+              class="breadcrumb__link"
+              href="{{ routes.root_url }}">
+              {{- 'general.breadcrumb.home' | t -}}
+            </a>
           </li>
 
           {%- if collection -%}
             <li class="breadcrumb__item">
-              <a class="breadcrumb__link" href="{{ collection.url }}">{{- collection.title -}}</a>
+              <a
+                class="breadcrumb__link"
+                href="{{ collection.url }}">
+                {{- collection.title -}}
+              </a>
             </li>
           {%- endif -%}
 
           <li class="breadcrumb__item">
-            <span class="breadcrumb__link" aria-current="page">{{ product.title }}</span>
+            <span
+              class="breadcrumb__link"
+              aria-current="page">
+              {{- product.title -}}
+            </span>
           </li>
         </ol>
       </nav>
@@ -81,8 +97,8 @@
   </section>
 {%- else -%}
   {%- comment -%}
-  The quick shop HTML being very different, we render it here. On mobile and tablet/desktop, the product renders also
-  quite differently, as it is in a drawer on tablet/desktop, and a popover on mobile.
+    The quick shop HTML being very different, we render it here. On mobile and tablet/desktop, the product renders also
+    quite differently, as it is in a drawer on tablet/desktop, and a popover on mobile.
   {%- endcomment -%}
 
   {%- capture quick_buy_product_info -%}
@@ -185,14 +201,22 @@
 
   {%- if template.suffix == 'quick-buy-drawer' -%}
     <quick-buy-drawer class="drawer drawer--large drawer--quick-buy">
-      <cart-notification hidden class="cart-notification cart-notification--drawer"></cart-notification>
+      <cart-notification
+        hidden
+        class="cart-notification cart-notification--drawer"></cart-notification>
 
       <span class="drawer__overlay"></span>
 
       <header class="drawer__header">
-        <p class="drawer__title heading h6">{{ 'product.form.choose_options' | t }}</p>
+        <p class="drawer__title heading h6">
+          {{ 'product.form.choose_options' | t }}
+        </p>
 
-        <button type="button" class="drawer__close-button tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        <button
+          type="button"
+          class="drawer__close-button tap-area"
+          data-action="close"
+          title="{{ 'general.accessibility.close' | t | escape }}">
           {%- render 'icon' with 'close' -%}
         </button>
       </header>
@@ -209,7 +233,11 @@
       <header class="popover__header">
         {{- quick_buy_product_info -}}
 
-        <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+        <button
+          type="button"
+          class="popover__close-button tap-area tap-area--large"
+          data-action="close"
+          title="{{ 'general.accessibility.close' | t | escape }}">
           {%- render 'icon' with 'close' -%}
         </button>
       </header>

@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --codext-primary-bg: #ffca22;
+  --codext-primary-text: #431e05;
+}
+
+body,
+html {
+  /*@apply overflow-x-hidden md:overflow-x-auto;*/
+}
+
+body .htusb-ui-prod-boost-generic-under-form,
+body .htusb-ui-prod-boost-trust-wrapper,
+body .htusb-ui-prod-boost-generic-pricing,
+.ElementsWidget-prefix,
+body .cc-revoke,
+body .grecaptcha-badge {
+  @apply !hidden;
+}
+
+.button.accent,
+input[type='submit'].accent {
+  @apply font-bold text-slate-800;
+}
+
+body .menu-item-badge,
+body .thb-item-count,
+body .announcement-bar,
+body .flickity-nav {
+  @apply bg-primary-400 text-slate-800;
+}
+
+.codext-badge {
+  @apply flex justify-center text-slate-800; /*bg-primary-900 text-primary-200 p-2 rounded-full*/
+}
+
+body #header.transparent--true {
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 0%, 0.48) 0%,
+    hsla(0, 0%, 0%, 0.474) 8.1%,
+    hsla(0, 0%, 0%, 0.457) 15.5%,
+    hsla(0, 0%, 0%, 0.43) 22.5%,
+    hsla(0, 0%, 0%, 0.396) 29%,
+    hsla(0, 0%, 0%, 0.356) 35.3%,
+    hsla(0, 0%, 0%, 0.311) 41.2%,
+    hsla(0, 0%, 0%, 0.264) 47.1%,
+    hsla(0, 0%, 0%, 0.216) 52.9%,
+    hsla(0, 0%, 0%, 0.169) 58.8%,
+    hsla(0, 0%, 0%, 0.124) 64.7%,
+    hsla(0, 0%, 0%, 0.084) 71%,
+    hsla(0, 0%, 0%, 0.05) 77.5%,
+    hsla(0, 0%, 0%, 0.023) 84.5%,
+    hsla(0, 0%, 0%, 0.006) 91.9%,
+    hsla(0, 0%, 0%, 0) 100%
+  );
+}
+
+.thb-item-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.625rem;
+  font-weight: 600;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--codext-primary-bg);
+  color: var(--codext-primary-text);
+  position: absolute;
+  top: -8px;
+  right: -12px;
+}
+
+.back-to-top--handle {
+  fill: black;
+}
+html {
+  @apply !pb-0;
+}
+body {
+  @apply md:!overflow-x-hidden;
+}
+.stripes {
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  animation: animate-stripes 3s linear infinite;
+}
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.remove-spacing p {
+  @apply !pb-0 !mb-0 !text-sm !leading-tight;
+}
+
+.image-hotspots {
+  @apply !overflow-hidden;
+}
+
+input:focus-within {
+  @apply !outline-none;
+}
+
+.shopify-policy__container {
+  margin: 0 !important;
+}

@@ -49,23 +49,56 @@
 </style>
 
 <section class="section {% unless is_boxed %}section--flush{% endunless %}">
-  <div {% if is_boxed %}class="container"{% endif %}>
+  <div
+    {% if is_boxed %}
+      class="container"
+    {% endif %}>
     {%- assign image = section.settings.image -%}
     {%- assign image_aspect_ratio = image.aspect_ratio | default: 2.63 -%}
 
-    <image-with-text-overlay {% if section.settings.reveal_on_scroll %}reveal-on-scroll{% endif %} class="image-overlay image-overlay--{{ section.settings.section_height }}" {% if section.settings.section_height == 'auto' %}style="--image-aspect-ratio: {{ image_aspect_ratio }}"{% endif %}>
-      <div class="image-overlay__image-wrapper" {% if section.settings.section_height == 'auto' %}style="padding-bottom: {{ 100.0 | divided_by: image_aspect_ratio }}%"{% endif %}>
+    <image-with-text-overlay
+      {% if section.settings.reveal_on_scroll %}
+        reveal-on-scroll
+      {% endif %}
+      class="image-overlay image-overlay--{{ section.settings.section_height }}"
+      {% if section.settings.section_height == 'auto' %}
+        style="--image-aspect-ratio: {{ image_aspect_ratio }}"
+      {% endif %}>
+      <div
+        class="image-overlay__image-wrapper"
+        {% if section.settings.section_height == 'auto' %}
+          style="padding-bottom: {{ 100.0 | divided_by: image_aspect_ratio }}%"
+        {% endif %}>
         {%- if image != blank -%}
           {%- if section.settings.reveal_on_scroll -%}
-            {{- image | image_url: width: image.width | image_tag: loading: 'lazy', widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000', reveal: true, class: 'image-overlay__image' -}}
+            {{-
+              image
+              | image_url: width: image.width
+              | image_tag:
+                loading: 'lazy',
+                widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000',
+                reveal: true,
+                class: 'image-overlay__image'
+            -}}
           {%- else -%}
-            {{- image | image_url: width: image.width | image_tag: loading: 'lazy', widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000', class: 'image-overlay__image' -}}
+            {{-
+              image
+              | image_url: width: image.width
+              | image_tag:
+                loading: 'lazy',
+                widths: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000',
+                class: 'image-overlay__image'
+            -}}
           {%- endif -%}
         {%- else -%}
           {%- capture image_classes -%}image-overlay__image image-overlay__image--placeholder image-overlay__image--{{ section.settings.section_height }}{%- endcapture -%}
 
           {%- if section.settings.reveal_on_scroll -%}
-            {{- 'lifestyle-1' | placeholder_svg_tag: image_classes | replace: '<svg', '<svg reveal' -}}
+            {{-
+              'lifestyle-1'
+              | placeholder_svg_tag: image_classes
+              | replace: '<svg', '<svg reveal'
+            -}}
           {%- else -%}
             {{- 'lifestyle-1' | placeholder_svg_tag: image_classes -}}
           {%- endif -%}
@@ -110,7 +143,12 @@
         </div>
       {%- endcapture -%}
 
-      <div {% if is_boxed %}style="width: 100%"{% else %}class="container"{% endif %}>
+      <div
+        {% if is_boxed %}
+          style="width: 100%"
+        {% else %}
+          class="container"
+        {% endif %}>
         {{- section_content -}}
       </div>
     </image-with-text-overlay>

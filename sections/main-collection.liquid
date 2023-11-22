@@ -1,10 +1,17 @@
-{%- assign collection_sort_by = collection.sort_by | default: collection.default_sort_by -%}
+{%- assign collection_sort_by = collection.sort_by
+  | default: collection.default_sort_by
+-%}
 {%- assign active_filters_count = 0 -%}
 
 {%- for filter in collection.filters -%}
   {%- if filter.type == 'list' -%}
-    {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
-  {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
+    {%- assign active_filters_count = active_filters_count
+      | plus: filter.active_values.size
+    -%}
+  {%- elsif filter.type == 'price_range'
+    and filter.min_value.value
+    or filter.max_value.value
+  -%}
     {%- assign active_filters_count = active_filters_count | plus: 1 -%}
   {%- endif -%}
 {%- endfor -%}
@@ -88,24 +95,40 @@
 
 <section>
   <div class="container">
-    <product-facet section-id="{{ section.id }}" class="product-facet">
+    <product-facet
+      section-id="{{ section.id }}"
+      class="product-facet">
       {%- if section.settings.show_filters and collection.filters != empty -%}
         {%- if section.settings.filter_position == 'always_visible' -%}
           <div class="product-facet__aside">
-            <safe-sticky offset="30" class="product-facet__aside-inner">
+            <safe-sticky
+              offset="30"
+              class="product-facet__aside-inner">
               <div class="product-facet__filters-header hidden-pocket">
-                <p class="heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">{{ 'collection.general.filters' | t }}</p>
+                <p class="heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">
+                  {{ 'collection.general.filters' | t }}
+                </p>
               </div>
 
-              {%- render 'facet-filters', filters: collection.filters, filters_position: section.settings.filter_position -%}
+              {%- render 'facet-filters',
+                filters: collection.filters,
+                filters_position: section.settings.filter_position
+              -%}
             </safe-sticky>
           </div>
         {%- else -%}
-          {%- render 'facet-filters', filters: collection.filters, filters_position: section.settings.filter_position -%}
+          {%- render 'facet-filters',
+            filters: collection.filters,
+            filters_position: section.settings.filter_position
+          -%}
         {%- endif -%}
       {%- endif -%}
 
-      <div id="facet-main" class="product-facet__main anchor" role="region" aria-live="polite">
+      <div
+        id="facet-main"
+        class="product-facet__main anchor"
+        role="region"
+        aria-live="polite">
         {%- if section.blocks.size > 0 -%}
           {%- capture promotion_blocks -%}
             <div class="promotion-block-list promotion-block-list--{{ section.settings.promotion_position }}">
@@ -157,17 +180,40 @@
 
         {%- if collection.products_count > 0 -%}
           <div class="product-facet__meta-bar anchor">
-            {%- if section.settings.filter_position == 'drawer' and section.settings.show_filters and collection.filters != empty -%}
-              <button type="submit" is="toggle-button" class="product-facet__meta-bar-item product-facet__meta-bar-item--filter hidden-pocket" aria-controls="facet-filters" aria-expanded="false">
-                {%- render 'icon' with 'filters', inline: true -%} {{- 'collection.general.show_filters' | t -}} {% if active_filters_count > 0 %}<span class="product-facet__active-count bubble-count">{{ active_filters_count }}</span>{% endif %}
+            {%- if section.settings.filter_position == 'drawer'
+              and section.settings.show_filters
+              and collection.filters != empty
+            -%}
+              <button
+                type="submit"
+                is="toggle-button"
+                class="product-facet__meta-bar-item product-facet__meta-bar-item--filter hidden-pocket"
+                aria-controls="facet-filters"
+                aria-expanded="false">
+                {%- render 'icon' with 'filters', inline: true -%}
+                {{- 'collection.general.show_filters' | t -}}
+                {% if active_filters_count > 0 -%}
+                  <span class="product-facet__active-count bubble-count">
+                    {{- active_filters_count -}}
+                  </span>
+                {%- endif %}
               </button>
             {%- endif -%}
 
-            <span class="product-facet__meta-bar-item product-facet__meta-bar-item--count" role="status">{{ 'collection.general.products_count' | t: count: collection.products_count }}</span>
+            <span
+              class="product-facet__meta-bar-item product-facet__meta-bar-item--count"
+              role="status">
+              {{-
+                'collection.general.products_count'
+                | t: count: collection.products_count
+              -}}
+            </span>
 
             {%- if section.settings.show_sort_by -%}
               <div class="product-facet__meta-bar-item product-facet__meta-bar-item--sort">
-                <span class="product-facet__sort-by-title text--subdued hidden-pocket">{{ 'collection.general.sort_by' | t }}</span>
+                <span class="product-facet__sort-by-title text--subdued hidden-pocket">
+                  {{- 'collection.general.sort_by' | t -}}
+                </span>
 
                 <div class="popover-container">
                   {%- for option in collection.sort_options -%}
@@ -177,18 +223,35 @@
                     {%- endif -%}
                   {%- endfor -%}
 
-                  <button type="button" is="toggle-button" class="popover-button hidden-pocket" aria-expanded="false" aria-controls="sort-by-popover">
-                    <span id="sort-by-selected-value" style="pointer-events: none">{{- collection_sort_by_name -}}</span>
+                  <button
+                    type="button"
+                    is="toggle-button"
+                    class="popover-button hidden-pocket"
+                    aria-expanded="false"
+                    aria-controls="sort-by-popover">
+                    <span
+                      id="sort-by-selected-value"
+                      style="pointer-events: none">
+                      {{- collection_sort_by_name -}}
+                    </span>
                     {%- render 'icon' with 'chevron', inline: true -%}
                   </button>
 
-                  <sort-by-popover id="sort-by-popover" class="popover">
+                  <sort-by-popover
+                    id="sort-by-popover"
+                    class="popover">
                     <span class="popover__overlay"></span>
 
                     <header class="popover__header">
-                      <span class="popover__title heading h6">{{- 'collection.general.sort_by' | t -}}</span>
+                      <span class="popover__title heading h6">
+                        {{- 'collection.general.sort_by' | t -}}
+                      </span>
 
-                      <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+                      <button
+                        type="button"
+                        class="popover__close-button tap-area tap-area--large"
+                        data-action="close"
+                        title="{{ 'general.accessibility.close' | t | escape }}">
                         {%- render 'icon' with 'close' -%}
                       </button>
                     </header>
@@ -197,8 +260,19 @@
                       <div class="popover__choice-list">
                         {%- for sort_option in collection.sort_options -%}
                           <label class="popover__choice-item">
-                            <input type="radio" data-bind-value="sort-by-selected-value" class="visually-hidden" {% if sort_option.value == collection_sort_by %}checked="checked"{% endif %} name="sort_by" value="{{ sort_option.value }}" title="{{ sort_option.name }}">
-                            <span class="popover__choice-label">{{ sort_option.name }}</span>
+                            <input
+                              type="radio"
+                              data-bind-value="sort-by-selected-value"
+                              class="visually-hidden"
+                              {% if sort_option.value == collection_sort_by %}
+                                checked="checked"
+                              {% endif %}
+                              name="sort_by"
+                              value="{{ sort_option.value }}"
+                              title="{{ sort_option.name }}">
+                            <span class="popover__choice-label">
+                              {{- sort_option.name -}}
+                            </span>
                           </label>
                         {%- endfor -%}
                       </div>
@@ -215,21 +289,40 @@
             </div>
           {%- endif -%}
 
-          {%- paginate collection.products by section.settings.products_per_page -%}
-            <product-list {% if settings.stagger_products_apparition %}stagger-apparition{% endif %} class="product-facet__product-list product-list anchor">
-              {%- if section.settings.filter_position == 'always_visible' and section.settings.show_filters and collection.filters != empty -%}
+          {%- paginate collection.products
+            by section.settings.products_per_page
+          -%}
+            <product-list
+              {% if settings.stagger_products_apparition %}
+                stagger-apparition
+              {% endif %}
+              class="product-facet__product-list product-list anchor">
+              {%- if section.settings.filter_position == 'always_visible'
+                and section.settings.show_filters
+                and collection.filters != empty
+              -%}
                 {%- assign sidebar_width = 305 -%}
               {% else %}
                 {%- assign sidebar_width = 0 -%}
               {%- endif -%}
 
               <div class="product-list__inner">
-                {%- assign desktop_number_of_products_minus_one = section.settings.desktop_products_per_row | minus: 1 -%}
-                {%- assign gap_width = 24.0 | divided_by: section.settings.desktop_products_per_row | times: desktop_number_of_products_minus_one -%}
+                {%- assign desktop_number_of_products_minus_one = section.settings.desktop_products_per_row
+                  | minus: 1
+                -%}
+                {%- assign gap_width = 24.0
+                  | divided_by: section.settings.desktop_products_per_row
+                  | times: desktop_number_of_products_minus_one
+                -%}
                 {%- capture sizes_attribute -%}(max-width: 740px) calc({{ 100.0 | divided_by: section.settings.mobile_products_per_row | ceil }}vw - 24px), calc((min(100vw - 80px, 1520px) - {{ sidebar_width }}px) / {{ section.settings.desktop_products_per_row }} - {{ gap_width | ceil }}px){%- endcapture -%}
 
                 {%- for product in collection.products -%}
-                  {%- render 'product-item', product: product, collection: collection, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition -%}
+                  {%- render 'product-item',
+                    product: product,
+                    collection: collection,
+                    sizes_attribute: sizes_attribute,
+                    reveal: settings.stagger_products_apparition
+                  -%}
                 {%- endfor -%}
               </div>
             </product-list>
@@ -243,18 +336,31 @@
         {%- else -%}
           <div class="empty-state">
             {%- if collection.all_products_count == 0 -%}
-              <h3 class="heading h4">{{ 'collection.general.empty_title' | t }}</h3>
+              <h3 class="heading h4">
+                {{ 'collection.general.empty_title' | t }}
+              </h3>
               <p>{{ 'collection.general.empty_label' | t }}</p>
 
               <div class="button-wrapper">
-                <a href="{{ routes.all_products_collection_url }}" class="button button--primary">{{ 'collection.general.empty_button' | t }}</a>
+                <a
+                  href="{{ routes.all_products_collection_url }}"
+                  class="button button--primary">
+                  {{- 'collection.general.empty_button' | t -}}
+                </a>
               </div>
             {%- else -%}
-              <h3 class="heading h4">{{ 'collection.general.no_results_title' | t }}</h3>
+              <h3 class="heading h4">
+                {{ 'collection.general.no_results_title' | t }}
+              </h3>
               <p>{{ 'collection.general.no_results_label' | t }}</p>
 
               <div class="button-wrapper">
-                <a href="{{ collection.url }}?sort_by={{ collection_sort_by }}" data-action="clear-filters" class="button button--primary">{{ 'collection.general.no_results_button' | t }}</a>
+                <a
+                  href="{{ collection.url }}?sort_by={{ collection_sort_by }}"
+                  data-action="clear-filters"
+                  class="button button--primary">
+                  {{- 'collection.general.no_results_button' | t -}}
+                </a>
               </div>
             {%- endif -%}
           </div>

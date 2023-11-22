@@ -6,7 +6,7 @@
         "fff5100c-5ff6-462e-9771-01ed6285b80f": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"lb-pdp-benefits\">\n<div>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\/>\n<p>{{ product.metafields.custom.usp1 }}<\/p>\n<\/div>\n<div>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\/>\n<p>{{ product.metafields.custom.usp2 }}<\/p>\n<\/div>\n<div>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\/>\n<p>{{ product.metafields.custom.usp3 }}<\/p>\n<\/div>\n<\/div>\n\n<style>\n.lb-pdp-benefits {\nmargin-top: 0px !important; \nmargin-bottom: 0px !important; \/\nmargin-left: 0px !important;\nmargin-right: 0px !important;\n}\n.lb-pdp-benefits div {\nfont-size: 14px !important; \/* Änderung der Schriftgröße *\/\nline-height: 18px !important; \nmargin-bottom: 9px !important;\ndisplay: flex !important;\nalign-items:center !important;\noverflow: hidden !important;\n}\n.lb-pdp-benefits img {\nmax-width: 24px !important;\nmargin-right: 9px !important;\n}\n.lb-pdp-benefits p {\nwidth: 100%!important;\ndisplay: block!important;\nmargin: 0px!important;\n}\n<\/style>"
+            "liquid": "<div class=\"lb-pdp-benefits\">\n<div>\n<img src=\"https://cdn.shopify.com/s/files/1/0632/3139/3965/files/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"/>\n<p>{{ product.metafields.custom.usp1 }}</p>\n</div>\n<div>\n<img src=\"https://cdn.shopify.com/s/files/1/0632/3139/3965/files/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"/>\n<p>{{ product.metafields.custom.usp2 }}</p>\n</div>\n<div>\n<img src=\"https://cdn.shopify.com/s/files/1/0632/3139/3965/files/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"/>\n<p>{{ product.metafields.custom.usp3 }}</p>\n</div>\n</div>\n\n<style>\n.lb-pdp-benefits {\nmargin-top: 0px !important; \nmargin-bottom: 0px !important; /\nmargin-left: 0px !important;\nmargin-right: 0px !important;\n}\n.lb-pdp-benefits div {\nfont-size: 14px !important; /* Änderung der Schriftgröße */\nline-height: 18px !important; \nmargin-bottom: 9px !important;\ndisplay: flex !important;\nalign-items:center !important;\noverflow: hidden !important;\n}\n.lb-pdp-benefits img {\nmax-width: 24px !important;\nmargin-right: 9px !important;\n}\n.lb-pdp-benefits p {\nwidth: 100%!important;\ndisplay: block!important;\nmargin: 0px!important;\n}\n</style>"
           }
         },
         "variant_picker": {
@@ -21,8 +21,7 @@
         "quantity_selector": {
           "type": "quantity_selector",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "38a03175-609a-40b5-9e4e-055fec879e76": {
           "type": "inventory",
@@ -44,13 +43,13 @@
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"footer__payment-icons h-stack wrap gap-2\" style=\"margin-bottom: 20px; display: flex; flex-wrap: wrap;\">\n  {% assign enabled_payment_types = 'visa,master,american_express,paypal,klarna-pay-later,apple_pay,google_pay,unionpay,amazon,sofort' | remove: ' ' | split: ',' %}\n  {% for type in enabled_payment_types %}\n    <img src=\"{{ type | payment_type_img_url }}\" style=\"margin-right: 0,5px;\" \/>\n  {% endfor %}\n<\/div>"
+            "liquid": "<div class=\"footer__payment-icons h-stack wrap gap-2\" style=\"margin-bottom: 20px; display: flex; flex-wrap: wrap;\">\n  {% assign enabled_payment_types = 'visa,master,american_express,paypal,klarna-pay-later,apple_pay,google_pay,unionpay,amazon,sofort' | remove: ' ' | split: ',' %}\n  {% for type in enabled_payment_types %}\n    <img src=\"{{ type | payment_type_img_url }}\" style=\"margin-right: 0,5px;\" />\n  {% endfor %}\n</div>"
           }
         },
         "723850fb-7702-4722-abf6-463a8b4acbb7": {
           "type": "liquid",
           "settings": {
-            "liquid": "{% assign current_handle = request.path | split: '\/' | last %}\n{% assign desired_product_handle = '7427791225005' %}\n{% assign upsell_product_handle = '7427791290541' %}\n\n{% if current_handle == desired_product_handle %}\n  {% assign upsell_product = all_products[upsell_product_handle] %}\n\n  <div class=\"upsell\">\n    <h3>Empfohlene Produkte<\/h3>\n    \n    {% if upsell_product.available %}\n      <div class=\"upsell-product\">\n        <a href=\"{{ upsell_product.url }}\">\n          <img src=\"{{ upsell_product.featured_image | img_url: '300x300' }}\" alt=\"{{ upsell_product.title }}\">\n          <p>{{ upsell_product.title }}<\/p>\n          <p>{{ upsell_product.price | money }}<\/p>\n        <\/a>\n      <\/div>\n    {% else %}\n      <p>Dieses Produkt ist derzeit nicht verfügbar.<\/p>\n    {% endif %}\n  <\/div>\n{% endif %}"
+            "liquid": "{% assign current_handle = request.path | split: '/' | last %}\n{% assign desired_product_handle = '7427791225005' %}\n{% assign upsell_product_handle = '7427791290541' %}\n\n{% if current_handle == desired_product_handle %}\n  {% assign upsell_product = all_products[upsell_product_handle] %}\n\n  <div class=\"upsell\">\n    <h3>Empfohlene Produkte</h3>\n    \n    {% if upsell_product.available %}\n      <div class=\"upsell-product\">\n        <a href=\"{{ upsell_product.url }}\">\n          <img src=\"{{ upsell_product.featured_image | img_url: '300x300' }}\" alt=\"{{ upsell_product.title }}\">\n          <p>{{ upsell_product.title }}</p>\n          <p>{{ upsell_product.price | money }}</p>\n        </a>\n      </div>\n    {% else %}\n      <p>Dieses Produkt ist derzeit nicht verfügbar.</p>\n    {% endif %}\n  </div>\n{% endif %}"
           }
         }
       },
@@ -91,21 +90,20 @@
         "description": {
           "type": "description",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "0e38ad27-e55b-480b-86a5-4fbad5113a4a": {
           "type": "trust",
           "settings": {
             "icon_1": "picto-customer-support",
             "title_1": "Shipping & Returns",
-            "content_1": "<p>Add text about your shipping policy<\/p>",
+            "content_1": "<p>Add text about your shipping policy</p>",
             "icon_2": "picto-warranty",
             "title_2": "Warranty",
-            "content_2": "<p>Add text about your product warranty<\/p>",
+            "content_2": "<p>Add text about your product warranty</p>",
             "icon_3": "picto-secure-payment",
             "title_3": "Secure Payment",
-            "content_3": "<p>Add text about your payment<\/p>"
+            "content_3": "<p>Add text about your payment</p>"
           }
         }
       },
@@ -114,8 +112,7 @@
         "description",
         "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9": {
       "type": "text-with-icons",
@@ -124,7 +121,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-box",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b.png",
+            "custom_icon": "shopify://shop_images/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b.png",
             "custom_icon_width": 40,
             "title": "ideal für den Balkonoder Terrasse",
             "content": ""
@@ -134,7 +131,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
+            "custom_icon": "shopify://shop_images/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
             "custom_icon_width": 40,
             "title": "stabileRankhilfe",
             "content": ""
@@ -144,7 +141,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f.png",
+            "custom_icon": "shopify://shop_images/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f.png",
             "custom_icon_width": 40,
             "title": "kinderleichter Aufbau",
             "content": ""
@@ -154,7 +151,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-email",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU.png",
+            "custom_icon": "shopify://shop_images/Icon_AustriaEU.png",
             "custom_icon_width": 55,
             "title": "designed in Austriamade in the EU",
             "content": ""
@@ -178,11 +175,11 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200903-GustaGarden-127_Easy-Resize.com.jpg",
+            "image": "shopify://shop_images/200903-GustaGarden-127_Easy-Resize.com.jpg",
             "tab_label": "Item",
             "subheading": "",
             "title": "Nur noch 1x pro Woche gießen",
-            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -232,11 +229,11 @@
         "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T224818.265.png",
+            "image": "shopify://shop_images/Design_ohne_Titel_-_2023-11-15T224818.265.png",
             "tab_label": "Item",
             "subheading": "",
             "title": "Stabile Rankhilfe",
-            "content": "<p>Hochwertige Aluminium-Rohre:<br\/>Die Rankhilfe für Tomatenpflanzen ist in der Höhe variabel und simpel im Aufbau. Die hochwertigen Aluminium Rohre bieten Stabilität und wachsen quasi mit der Pflanze mit.<br\/><br\/>Integrierte Befestigungshaken:<br\/>Hänge einfach von Zeit zu Zeit den Haupttrieb in die integrierten Befestigungshaken ein. So wächst deine Pflanze immer gleichmäßig der Sonne entgegen!<\/p>",
+            "content": "<p>Hochwertige Aluminium-Rohre:<br/>Die Rankhilfe für Tomatenpflanzen ist in der Höhe variabel und simpel im Aufbau. Die hochwertigen Aluminium Rohre bieten Stabilität und wachsen quasi mit der Pflanze mit.<br/><br/>Integrierte Befestigungshaken:<br/>Hänge einfach von Zeit zu Zeit den Haupttrieb in die integrierten Befestigungshaken ein. So wächst deine Pflanze immer gleichmäßig der Sonne entgegen!</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -269,9 +266,7 @@
           }
         }
       },
-      "block_order": [
-        "cb2a5f48-053c-4329-b8e4-4b005913ad6b"
-      ],
+      "block_order": ["cb2a5f48-053c-4329-b8e4-4b005913ad6b"],
       "settings": {
         "reveal_on_scroll": true,
         "subheading": "",
@@ -286,11 +281,11 @@
         "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T230124.609.png",
+            "image": "shopify://shop_images/Design_ohne_Titel_-_2023-11-15T230124.609.png",
             "tab_label": "Item",
             "subheading": "",
             "title": "Erdvolumen exakt abgestimmt",
-            "content": "<p>Der Pflanztopf wurde perfekt auf das Erdvolumen für eine Tomatenpflanze abgestimmt und garantiert somit eine ideale Versorgung mit Nährstoffen.<\/p>",
+            "content": "<p>Der Pflanztopf wurde perfekt auf das Erdvolumen für eine Tomatenpflanze abgestimmt und garantiert somit eine ideale Versorgung mit Nährstoffen.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -317,8 +312,8 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=MO4h1gVj9WU&t=1s",
-        "image": "shopify:\/\/shop_images\/200903-GustaGarden-092_mirror_2400x1600_0aec3d19-5bbe-4cb8-8611-7724f02026fe.jpg",
+        "video_url": "https://www.youtube.com/watch?v=MO4h1gVj9WU&t=1s",
+        "image": "shopify://shop_images/200903-GustaGarden-092_mirror_2400x1600_0aec3d19-5bbe-4cb8-8611-7724f02026fe.jpg",
         "background_type": "full_width",
         "video_size": "auto",
         "autoplay": true,
@@ -375,7 +370,7 @@
       "type": "apps",
       "blocks": {
         "95516f64-80de-44ca-a78c-62098b89477f": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
             "star": "#000000",
             "review_type": "product",
@@ -401,9 +396,7 @@
           }
         }
       },
-      "block_order": [
-        "95516f64-80de-44ca-a78c-62098b89477f"
-      ],
+      "block_order": ["95516f64-80de-44ca-a78c-62098b89477f"],
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
@@ -422,14 +415,14 @@
           "type": "question",
           "settings": {
             "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
           "type": "question",
           "settings": {
             "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2": {
@@ -442,7 +435,7 @@
           "type": "question",
           "settings": {
             "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
           }
         }
       },

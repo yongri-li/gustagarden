@@ -2,8 +2,13 @@
   <div class="lb-swiper-stories-holder">
     {% for block in section.blocks %}
       <a href="{{ block.settings.url }}">
-        <div {% if block.settings.highlight == true %}class="lb-swiper-highlight"{% endif %}>
-          <img src="{{ block.settings.image | img_url: '200x' }}" alt="{{ block.settings.heading }}">
+        <div
+          {% if block.settings.highlight == true %}
+            class="lb-swiper-highlight"
+          {% endif %}>
+          <img
+            src="{{ block.settings.image | img_url: '200x' }}"
+            alt="{{ block.settings.heading }}">
         </div>
         {{ block.settings.heading }}
       </a>

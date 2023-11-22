@@ -1,5 +1,5 @@
 <style>
-  [aria-controls="newsletter-popup"] {
+  [aria-controls='newsletter-popup'] {
     display: block; /* Allows to show the toggle icon in the header if the section is disabled */
   }
 </style>
@@ -16,23 +16,46 @@
 
 {%- assign should_appear_automatically = false -%}
 
-{%- unless section.settings.show_only_on_index and request.page_type != 'index' -%}
+{%- unless section.settings.show_only_on_index
+  and request.page_type != 'index'
+-%}
   {%- unless section.settings.show_only_for_visitors and customer -%}
     {%- assign should_appear_automatically = true -%}
   {%- endunless -%}
 {%- endunless -%}
 
-<modal-content section="{{ section.id }}" {% if section.settings.show_only_once %}only-once{% endif %} {% if should_appear_automatically %}apparition-delay="{{ section.settings.apparition_delay }}"{% endif %} id="newsletter-popup" class="modal">
+<modal-content
+  section="{{ section.id }}"
+  {% if section.settings.show_only_once %}
+    only-once
+  {% endif %}
+  {% if should_appear_automatically %}
+    apparition-delay="{{ section.settings.apparition_delay }}"
+  {% endif %}
+  id="newsletter-popup"
+  class="modal">
   <div class="modal__overlay"></div>
 
   <div class="modal__content">
-    <button type="button" class="modal__close-button tap-area" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+    <button
+      type="button"
+      class="modal__close-button tap-area"
+      data-action="close"
+      title="{{ 'general.accessibility.close' | t | escape }}">
       {%- render 'icon' with 'close' -%}
     </button>
 
     <div class="newsletter-modal {% if section.settings.image_position == 'right' %}newsletter-modal--reverse{% endif %}">
       {%- if section.settings.image != blank -%}
-        {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 100vw, 500px', widths: '300,400,500,600,700,800,900,1000', class: 'newsletter-modal__image' -}}
+        {{-
+          section.settings.image
+          | image_url: width: section.settings.image.width
+          | image_tag:
+            loading: 'lazy',
+            sizes: '(max-width: 740px) 100vw, 500px',
+            widths: '300,400,500,600,700,800,900,1000',
+            class: 'newsletter-modal__image'
+        -}}
       {%- endif -%}
 
       <div class="newsletter-modal__content {% if section.settings.image != blank %}newsletter-modal__content--extra{% endif %} text-container text--center">
@@ -44,7 +67,10 @@
           {{- section.settings.content -}}
         {%- endif -%}
 
-        {%- form 'customer', id: newsletter_id, class: 'form newsletter-modal__form' -%}
+        {%- form 'customer',
+          id: newsletter_id,
+          class: 'form newsletter-modal__form'
+        -%}
           {%- if form.posted_successfully? -%}
             <script>
               window.addEventListener('DOMContentLoaded', () => {
@@ -53,27 +79,53 @@
             </script>
 
             <div class="form__banner banner banner--success">
-              <span class="banner__ribbon">{% render 'icon' with 'form-success' %}</span>
-              <p class="banner__content">{{ 'general.newsletter.success' | t }}</p>
+              <span class="banner__ribbon">
+                {%- render 'icon' with 'form-success' -%}
+              </span>
+              <p class="banner__content">
+                {{ 'general.newsletter.success' | t }}
+              </p>
             </div>
           {%- else -%}
-          {%- if form.errors -%}
-            <div class="form__banner banner banner--error">
-              <span class="banner__ribbon">{% render 'icon' with 'form-error' %}</span>
-              <p class="banner__content">{{ form.errors.messages['email'] }}</p>
-            </div>
-          {%- endif -%}
+            {%- if form.errors -%}
+              <div class="form__banner banner banner--error">
+                <span class="banner__ribbon">
+                  {%- render 'icon' with 'form-error' -%}
+                </span>
+                <p class="banner__content">{{ form.errors.messages.email }}</p>
+              </div>
+            {%- endif -%}
 
-          <input type="hidden" name="contact[tags]" value="newsletter">
-          <input type="hidden" name="contact[context]" value="{{ newsletter_id }}">
+            <input
+              type="hidden"
+              name="contact[tags]"
+              value="newsletter">
+            <input
+              type="hidden"
+              name="contact[context]"
+              value="{{ newsletter_id }}">
 
             <div class="input">
-              <input type="email" id="newsletter[{{ section.id }}][contact][email]" name="contact[email]" class="input__field" required>
-              <label for="newsletter[{{ section.id }}][contact][email]" class="input__label">{{ 'general.newsletter.email' | t }}</label>
+              <input
+                type="email"
+                id="newsletter[{{ section.id }}][contact][email]"
+                name="contact[email]"
+                class="input__field"
+                required>
+              <label
+                for="newsletter[{{ section.id }}][contact][email]"
+                class="input__label">
+                {{- 'general.newsletter.email' | t -}}
+              </label>
             </div>
 
             <div class="input">
-              <button type="submit" is="loader-button" class="button button--primary button--full">{{ 'general.newsletter.subscribe' | t }}</button>
+              <button
+                type="submit"
+                is="loader-button"
+                class="button button--primary button--full">
+                {{ 'general.newsletter.subscribe' | t }}
+              </button>
             </div>
           {%- endif -%}
         {%- endform -%}

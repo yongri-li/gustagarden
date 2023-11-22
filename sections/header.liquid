@@ -1,7 +1,7 @@
 {%- comment -%}
-IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of different layouts. In order to make
-  this code as efficient as possible and avoid as many reflows, we are using a lot of different CSS variables. If you
-  need to touch this code, make sure to do it with EXTRA CARE as it may have some unwanted side effects
+  IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of different layouts. In order to make
+    this code as efficient as possible and avoid as many reflows, we are using a lot of different CSS variables. If you
+    need to touch this code, make sure to do it with EXTRA CARE as it may have some unwanted side effects
 {%- endcomment -%}
 
 <style>
@@ -116,37 +116,84 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
   {%- endif -%}
 </style>
 
-<store-header {% if section.settings.enable_sticky_header %}sticky{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}transparent{% endif %} class="header {% if settings.background == settings.header_background %}header--bordered{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}header--transparent{% endif %}" role="banner">
+<store-header
+  {% if section.settings.enable_sticky_header %}
+    sticky
+  {% endif %}
+  {% if request.page_type == 'index'
+    and section.settings.enable_transparent_header
+  %}
+    transparent
+  {% endif %}
+  class="header {% if settings.background == settings.header_background %}header--bordered{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}header--transparent{% endif %}"
+  role="banner">
   {%- assign menu = section.settings.navigation_menu -%}
 
   <div class="container">
     <div class="header__wrapper">
       <!-- LEFT PART -->
-      <nav class="header__inline-navigation" {% unless section.settings.header_layout == 'logo_center_search_open' %}role="navigation"{% endunless %}>
-        {%- if menu.links.size > 0 and section.settings.header_layout == 'logo_left_navigation_inline' or section.settings.header_layout == 'logo_left_navigation_center' or section.settings.header_layout == 'logo_center_navigation_inline' -%}
+      <nav
+        class="header__inline-navigation"
+        {% unless section.settings.header_layout == 'logo_center_search_open' %}
+          role="navigation"
+        {% endunless %}>
+        {%- if menu.links.size > 0
+          and section.settings.header_layout == 'logo_left_navigation_inline'
+          or section.settings.header_layout == 'logo_left_navigation_center'
+          or section.settings.header_layout == 'logo_center_navigation_inline'
+        -%}
           {%- render 'desktop-menu', menu: menu -%}
         {%- endif -%}
 
         <div class="header__icon-list {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-desk{% endif %}">
           {%- if menu.links.size > 0 -%}
-            <button is="toggle-button" class="header__icon-wrapper tap-area {% unless section.settings.header_layout == 'drawer' %}hidden-desk{% endunless %}" aria-controls="mobile-menu-drawer" aria-expanded="false">
-              <span class="visually-hidden">{{ 'header.general.navigation' | t }}</span>
+            <button
+              is="toggle-button"
+              class="header__icon-wrapper tap-area {% unless section.settings.header_layout == 'drawer' %}hidden-desk{% endunless %}"
+              aria-controls="mobile-menu-drawer"
+              aria-expanded="false">
+              <span class="visually-hidden">
+                {{- 'header.general.navigation' | t -}}
+              </span>
               {%- render 'icon' with 'header-hamburger' -%}
             </button>
           {%- endif -%}
 
-          <a href="{{ routes.search_url }}" is="toggle-link" class="header__icon-wrapper tap-area {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-lap{% endif %} hidden-desk" aria-controls="search-drawer" aria-expanded="false" aria-label="{{ 'search.general.title' | t | escape }}">
+          <a
+            href="{{ routes.search_url }}"
+            is="toggle-link"
+            class="header__icon-wrapper tap-area {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-lap{% endif %} hidden-desk"
+            aria-controls="search-drawer"
+            aria-expanded="false"
+            aria-label="{{ 'search.general.title' | t | escape }}">
             {%- render 'icon' with 'header-search' -%}
           </a>
         </div>
 
         {%- if section.settings.header_layout == 'logo_center_search_open' -%}
           <div class="header__search-bar predictive-search hidden-pocket">
-            <form class="predictive-search__form" action="{{ routes.search_url }}" method="get" role="search">
-              <input type="hidden" name="type" value="product">
+            <form
+              class="predictive-search__form"
+              action="{{ routes.search_url }}"
+              method="get"
+              role="search">
+              <input
+                type="hidden"
+                name="type"
+                value="product">
 
               {%- render 'icon' with 'header-search' -%}
-              <input class="predictive-search__input" is="predictive-search-input" type="text" name="q" autocomplete="off" autocorrect="off" aria-controls="search-drawer" aria-expanded="false" aria-label="{{ 'search.general.title' | t }}" placeholder="{{ 'search.general.search_placeholder' | t }}">
+              <input
+                class="predictive-search__input"
+                is="predictive-search-input"
+                type="text"
+                name="q"
+                autocomplete="off"
+                autocorrect="off"
+                aria-controls="search-drawer"
+                aria-expanded="false"
+                aria-label="{{ 'search.general.title' | t }}"
+                placeholder="{{ 'search.general.search_placeholder' | t }}">
             </form>
           </div>
         {%- endif -%}
@@ -177,33 +224,67 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
 
       <!-- SECONDARY LINKS PART -->
       <div class="header__secondary-links">
-        {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
+        {%- if section.settings.show_country_selector
+          and localization.available_countries.size > 1
+        -%}
           {%- assign country_selector = true -%}
         {%- endif -%}
 
-        {%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
+        {%- if section.settings.show_locale_selector
+          and localization.available_languages.size > 1
+        -%}
           {%- assign locale_selector = true -%}
         {%- endif -%}
 
         {%- if locale_selector or country_selector -%}
-          {%- form 'localization', id: 'header-localization-form', class: 'header__cross-border hidden-pocket' -%}
+          {%- form 'localization',
+            id: 'header-localization-form',
+            class: 'header__cross-border hidden-pocket'
+          -%}
             {%- if country_selector -%}
               <div class="popover-container">
-                <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
-                <span class="visually-hidden">{{ 'header.general.country' | t }}</span>
+                <input
+                  type="hidden"
+                  name="country_code"
+                  value="{{ localization.country.iso_code }}">
+                <span class="visually-hidden">
+                  {{- 'header.general.country' | t -}}
+                </span>
 
-                <button type="button" is="toggle-button" class="popover-button text--small" aria-expanded="false" aria-controls="header-localization-form-currency">
-                  {{- localization.country.name }} ({{ localization.country.currency.iso_code }} {% if localization.country.currency.symbol %}{{ localization.country.currency.symbol }}{%- endif -%})
-                  {%- render 'icon' with 'chevron', width: 9, height: 6, inline: true -%}
+                <button
+                  type="button"
+                  is="toggle-button"
+                  class="popover-button text--small"
+                  aria-expanded="false"
+                  aria-controls="header-localization-form-currency">
+                  {{- localization.country.name }} (
+                  {{- localization.country.currency.iso_code }}
+                  {% if localization.country.currency.symbol -%}
+                    {{- localization.country.currency.symbol }}
+                  {%- endif -%}
+                  )
+                  {%- render 'icon' with 'chevron',
+                    width: 9,
+                    height: 6,
+                    inline: true
+                  -%}
                 </button>
 
-                <popover-content id="header-localization-form-currency" class="popover">
+                <popover-content
+                  id="header-localization-form-currency"
+                  class="popover">
                   <span class="popover__overlay"></span>
 
                   <header class="popover__header">
-                    <span class="popover__title heading h6">{{- 'header.general.country' | t -}}</span>
+                    <span class="popover__title heading h6">
+                      {{- 'header.general.country' | t -}}
+                    </span>
 
-                    <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+                    <button
+                      type="button"
+                      class="popover__close-button tap-area tap-area--large"
+                      data-action="close"
+                      title="{{ 'general.accessibility.close' | t | escape }}">
                       {%- render 'icon' with 'close' -%}
                     </button>
                   </header>
@@ -211,9 +292,23 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
                   <div class="popover__content popover__content--restrict">
                     <div class="popover__choice-list">
                       {%- for country in localization.available_countries -%}
-                        <button type="submit" name="country_code" value="{{ country.iso_code }}" class="popover__choice-item">
-                          <span class="popover__choice-label" {% if country.iso_code == localization.country.iso_code %}aria-current="true"{% endif %}>
-                            {{- country.name }} ({{ country.currency.iso_code }} {% if country.currency.symbol %}{{ country.currency.symbol }}{%- endif -%})
+                        <button
+                          type="submit"
+                          name="country_code"
+                          value="{{ country.iso_code }}"
+                          class="popover__choice-item">
+                          <span
+                            class="popover__choice-label"
+                            {% if country.iso_code
+                                == localization.country.iso_code
+                            %}
+                              aria-current="true"
+                            {% endif %}>
+                            {{- country.name }} ({{ country.currency.iso_code }}
+                            {% if country.currency.symbol -%}
+                              {{- country.currency.symbol }}
+                            {%- endif -%}
+                            )
                           </span>
                         </button>
                       {%- endfor -%}
@@ -225,21 +320,43 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
 
             {%- if locale_selector -%}
               <div class="popover-container">
-                <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
-                <span class="visually-hidden">{{ 'header.general.language' | t }}</span>
+                <input
+                  type="hidden"
+                  name="locale_code"
+                  value="{{ localization.language.iso_code }}">
+                <span class="visually-hidden">
+                  {{- 'header.general.language' | t -}}
+                </span>
 
-                <button type="button" is="toggle-button" class="popover-button text--small" aria-expanded="false" aria-controls="header-localization-form-locale">
+                <button
+                  type="button"
+                  is="toggle-button"
+                  class="popover-button text--small"
+                  aria-expanded="false"
+                  aria-controls="header-localization-form-locale">
                   {{- localization.language.endonym_name | capitalize -}}
-                  {%- render 'icon' with 'chevron', width: 9, height: 6, inline: true -%}
+                  {%- render 'icon' with 'chevron',
+                    width: 9,
+                    height: 6,
+                    inline: true
+                  -%}
                 </button>
 
-                <popover-content id="header-localization-form-locale" class="popover">
+                <popover-content
+                  id="header-localization-form-locale"
+                  class="popover">
                   <span class="popover__overlay"></span>
 
                   <header class="popover__header">
-                    <span class="popover__title heading h6">{{- 'header.general.language' | t -}}</span>
+                    <span class="popover__title heading h6">
+                      {{- 'header.general.language' | t -}}
+                    </span>
 
-                    <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+                    <button
+                      type="button"
+                      class="popover__close-button tap-area tap-area--large"
+                      data-action="close"
+                      title="{{ 'general.accessibility.close' | t | escape }}">
                       {%- render 'icon' with 'close' -%}
                     </button>
                   </header>
@@ -247,8 +364,18 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
                   <div class="popover__content">
                     <div class="popover__choice-list">
                       {%- for language in localization.available_languages -%}
-                        <button type="submit" name="locale_code" value="{{ language.iso_code }}" class="popover__choice-item">
-                          <span class="popover__choice-label" {% if language.iso_code == localization.language.iso_code %}aria-current="true"{% endif %}>
+                        <button
+                          type="submit"
+                          name="locale_code"
+                          value="{{ language.iso_code }}"
+                          class="popover__choice-item">
+                          <span
+                            class="popover__choice-label"
+                            {% if language.iso_code
+                                == localization.language.iso_code
+                            %}
+                              aria-current="true"
+                            {% endif %}>
                             {{- language.endonym_name | capitalize -}}
                           </span>
                         </button>
@@ -263,24 +390,48 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
 
         <div class="header__icon-list">
           {%- comment -%}IMPLEMENTATION NOTE: this icon is hidden by the "popup" section if it is disabled{%- endcomment -%}
-          <button is="toggle-button" class="header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}" aria-controls="newsletter-popup" aria-expanded="false">
-            <span class="visually-hidden">{{ 'header.general.newsletter' | t }}</span>
+          <button
+            is="toggle-button"
+            class="header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}"
+            aria-controls="newsletter-popup"
+            aria-expanded="false">
+            <span class="visually-hidden">
+              {{- 'header.general.newsletter' | t -}}
+            </span>
             {%- render 'icon' with 'header-email' -%}
           </button>
 
           {%- if section.settings.header_layout != 'logo_center_search_open' -%}
-            <a href="{{ routes.search_url }}" is="toggle-link" class="header__icon-wrapper tap-area hidden-pocket hidden-lap {% unless section.settings.show_icons %}hidden-desk{% endunless %}" aria-label="{{ 'search.general.title' | t | escape }}" aria-controls="search-drawer" aria-expanded="false">
+            <a
+              href="{{ routes.search_url }}"
+              is="toggle-link"
+              class="header__icon-wrapper tap-area hidden-pocket hidden-lap {% unless section.settings.show_icons %}hidden-desk{% endunless %}"
+              aria-label="{{ 'search.general.title' | t | escape }}"
+              aria-controls="search-drawer"
+              aria-expanded="false">
               {%- render 'icon' with 'header-search' -%}
             </a>
           {%- endif -%}
 
           {%- if shop.customer_accounts_enabled -%}
-            <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}" aria-label="{% if customer %}{{ 'header.general.account' | t | escape }}{% else %}{{ 'header.general.login' | t | escape }}{% endif %}">
+            <a
+              href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
+              class="header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}"
+              aria-label="{% if customer %}{{ 'header.general.account' | t | escape }}{% else %}{{ 'header.general.login' | t | escape }}{% endif %}">
               {%- render 'icon' with 'header-customer' -%}
             </a>
           {%- endif -%}
 
-          <a href="{{ routes.cart_url }}" {% unless settings.cart_type == 'page' or request.page_type == 'cart' %}is="toggle-link" aria-controls="mini-cart" aria-expanded="false"{% endunless %} class="header__icon-wrapper tap-area {% unless section.settings.show_icons %}hidden-desk{% endunless %}" aria-label="{{ 'header.general.cart' | t | escape }}" data-no-instant>
+          <a
+            href="{{ routes.cart_url }}"
+            {% unless settings.cart_type == 'page'
+              or request.page_type == 'cart'
+            %}
+              is="toggle-link" aria-controls="mini-cart" aria-expanded="false"
+            {% endunless %}
+            class="header__icon-wrapper tap-area {% unless section.settings.show_icons %}hidden-desk{% endunless %}"
+            aria-label="{{ 'header.general.cart' | t | escape }}"
+            data-no-instant>
             {%- case settings.cart_icon -%}
               {%- when 'shopping_bag' -%}
                 {%- render 'icon' with 'header-cart' -%}
@@ -292,12 +443,18 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
                 {%- render 'icon' with 'header-tote-bag' -%}
             {%- endcase -%}
 
-            <cart-count class="header__cart-count header__cart-count--floating bubble-count" aria-hidden="true">{{ cart.item_count }}</cart-count>
+            <cart-count
+              class="header__cart-count header__cart-count--floating bubble-count"
+              aria-hidden="true">
+              {{- cart.item_count -}}
+            </cart-count>
           </a>
         </div>
 
         {%- unless section.settings.show_icons -%}
-          <ul class="header__linklist list--unstyled hidden-pocket hidden-lap" role="list">
+          <ul
+            class="header__linklist list--unstyled hidden-pocket hidden-lap"
+            role="list">
             {%- comment -%}
               <!-- NOTE: There is really not enough space to fit this, so this is commented by default in Liquid -->
               <li  class="header__linklist-item">
@@ -305,9 +462,16 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
               </li>
             {%- endcomment -%}
 
-            {%- if section.settings.header_layout != 'logo_center_search_open' -%}
+            {%- if section.settings.header_layout != 'logo_center_search_open'
+            -%}
               <li class="header__linklist-item">
-                <a href="{{ routes.search_url }}" is="toggle-link" aria-controls="search-drawer" aria-expanded="false">{{ 'search.general.title' | t | escape }}</a>
+                <a
+                  href="{{ routes.search_url }}"
+                  is="toggle-link"
+                  aria-controls="search-drawer"
+                  aria-expanded="false">
+                  {{- 'search.general.title' | t | escape -}}
+                </a>
               </li>
             {%- endif -%}
 
@@ -324,9 +488,17 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
             {%- endif -%}
 
             <li class="header__linklist-item">
-              <a href="{{ routes.cart_url }}" {% unless settings.cart_type == 'page' %}is="toggle-link" aria-controls="mini-cart" aria-expanded="false"{% endunless %} data-no-instant>
+              <a
+                href="{{ routes.cart_url }}"
+                {% unless settings.cart_type == 'page' %}
+                  is="toggle-link" aria-controls="mini-cart"
+                  aria-expanded="false"
+                {% endunless %}
+                data-no-instant>
                 {{- 'header.general.cart' | t | escape -}}
-                <cart-count class="header__cart-count bubble-count">{{ cart.item_count }}</cart-count>
+                <cart-count class="header__cart-count bubble-count">
+                  {{- cart.item_count -}}
+                </cart-count>
               </a>
             </li>
           </ul>
@@ -334,8 +506,12 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
       </div>
     </div>
 
-    {%- if menu.links.size > 0 and section.settings.header_layout == 'logo_center_search_open' -%}
-      <nav class="header__bottom-navigation hidden-pocket hidden-lap" role="navigation">
+    {%- if menu.links.size > 0
+      and section.settings.header_layout == 'logo_center_search_open'
+    -%}
+      <nav
+        class="header__bottom-navigation hidden-pocket hidden-lap"
+        role="navigation">
         {% render 'desktop-menu', menu: menu, bottom_navigation: true %}
       </nav>
     {%- endif -%}
@@ -343,38 +519,52 @@ IMPLEMENTATION NOTE: the header in Focal is pretty complex as it allows a lot of
 </store-header>
 
 {%- comment -%}
-------------------------------------------------------------------------------------
-  CART NOTIFICATION: it is used to show the notification when a product is added in message mode
-------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------
+    CART NOTIFICATION: it is used to show the notification when a product is added in message mode
+  ------------------------------------------------------------------------------------
 {%- endcomment -%}
 
-<cart-notification global hidden class="cart-notification {% unless section.settings.enable_sticky_header %}cart-notification--fixed{% endunless %}"></cart-notification>
+<cart-notification
+  global
+  hidden
+  class="cart-notification {% unless section.settings.enable_sticky_header %}cart-notification--fixed{% endunless %}"></cart-notification>
 
 {%- comment -%}
-------------------------------------------------------------------------------------
-MOBILE MENU DRAWER
-------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------
+  MOBILE MENU DRAWER
+  ------------------------------------------------------------------------------------
 {%- endcomment -%}
 
-{%- assign menu = section.settings.sidebar_navigation_menu | default: section.settings.navigation_menu -%}
+{%- assign menu = section.settings.sidebar_navigation_menu
+  | default: section.settings.navigation_menu
+-%}
 {%- render 'mobile-menu', menu: menu -%}
 
 {%- comment -%}
-------------------------------------------------------------------------------------
-SEARCH DRAWER
-------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------
+  SEARCH DRAWER
+  ------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 {%- render 'predictive-search' -%}
 
 <script>
   (() => {
-    const headerElement = document.getElementById('shopify-section-{{ section.id }}'),
+    const headerElement = document.getElementById(
+        'shopify-section-{{ section.id }}'
+      ),
       headerHeight = headerElement.clientHeight,
-      headerHeightWithoutBottomNav = headerElement.querySelector('.header__wrapper').clientHeight;
+      headerHeightWithoutBottomNav =
+        headerElement.querySelector('.header__wrapper').clientHeight;
 
-    document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
-    document.documentElement.style.setProperty('--header-height-without-bottom-nav', headerHeightWithoutBottomNav + 'px');
+    document.documentElement.style.setProperty(
+      '--header-height',
+      headerHeight + 'px'
+    );
+    document.documentElement.style.setProperty(
+      '--header-height-without-bottom-nav',
+      headerHeightWithoutBottomNav + 'px'
+    );
   })();
 </script>
 

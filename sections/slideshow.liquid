@@ -32,13 +32,19 @@
 </style>
 
 <section class="section section--flush">
-  <slide-show reveal-on-scroll {% if section.settings.autoplay %}auto-play{% endif %} transition-type="{{ section.settings.transition_type | escape }}" class="slideshow slideshow--{{ section.settings.section_height }}">
+  <slide-show
+    reveal-on-scroll
+    {% if section.settings.autoplay %}
+      auto-play
+    {% endif %}
+    transition-type="{{ section.settings.transition_type | escape }}"
+    class="slideshow slideshow--{{ section.settings.section_height }}">
     <div class="slideshow__slide-list">
       {%- for block in section.blocks -%}
         {%- comment -%}
-        ------------------------------------------------------------------------------------------------------------------
-        IMAGE PART
-        ------------------------------------------------------------------------------------------------------------------
+          ------------------------------------------------------------------------------------------------------------------
+          IMAGE PART
+          ------------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
 
         {%- assign image = block.settings.image -%}
@@ -48,11 +54,14 @@
         {%- assign image_aspect_ratio = image.aspect_ratio | default: 2.63 -%}
 
         {%- comment -%}
-        If the image is split and that we want to preserve the ratio, we have to multiply the ratio by 2 (as each image
-        only account for half the screen size)
+          If the image is split and that we want to preserve the ratio, we have to multiply the ratio by 2 (as each image
+          only account for half the screen size)
         {%- endcomment -%}
 
-        {%- if image != blank and split_image != blank and section.settings.section_height == 'auto' -%}
+        {%- if image != blank
+          and split_image != blank
+          and section.settings.section_height == 'auto'
+        -%}
           {%- assign image_aspect_ratio = image_aspect_ratio | times: 2.0 -%}
         {%- endif -%}
 
@@ -154,9 +163,18 @@
           {% endif %}
         {%- endcapture -%}
 
-        <slide-show-item {% if section.settings.transition_type != 'reveal' %}reveal-visibility{% endif %} {{ slide_attributes }}>
-          {%- if block.settings.button_1_link != blank and block.settings.button_1_text == blank and block.settings.button_2_text == blank -%}
-            <a class="slideshow__slide-inner" href="{{ block.settings.button_1_link }}">
+        <slide-show-item
+          {% if section.settings.transition_type != 'reveal' %}
+            reveal-visibility
+          {% endif %}
+          {{ slide_attributes }}>
+          {%- if block.settings.button_1_link != blank
+            and block.settings.button_1_text == blank
+            and block.settings.button_2_text == blank
+          -%}
+            <a
+              class="slideshow__slide-inner"
+              href="{{ block.settings.button_1_link }}">
               {{- slide_content -}}
             </a>
           {%- else -%}
@@ -169,10 +187,24 @@
     </div>
 
     {%- if section.blocks.size > 1 -%}
-      <page-dots {% if section.settings.autoplay %}animation-timer{% endif %} class="slideshow__nav container">
+      <page-dots
+        {% if section.settings.autoplay %}
+          animation-timer
+        {% endif %}
+        class="slideshow__nav container">
         {%- for block in section.blocks -%}
-          <button class="slideshow__progress-bar" aria-controls="block-{{ section.id }}-{{ block.id }}" {% if forloop.first %}aria-current="true"{% endif%}>
-            <span class="visually-hidden">{{ 'general.accessibility.go_to_slide' | t: num: forloop.index }}</span>
+          <button
+            class="slideshow__progress-bar"
+            aria-controls="block-{{ section.id }}-{{ block.id }}"
+            {% if forloop.first %}
+              aria-current="true"
+            {% endif %}>
+            <span class="visually-hidden">
+              {{-
+                'general.accessibility.go_to_slide'
+                | t: num: forloop.index
+              -}}
+            </span>
           </button>
         {%- endfor -%}
       </page-dots>

@@ -24,7 +24,7 @@
         echo color | append: ' ' | append: angle | append: 'deg '
         assign angle = angle | plus: angle_increment
         echo angle | append: 'deg'
-          
+
         unless forloop.last
           echo ', '
         endunless
