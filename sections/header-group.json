@@ -1,1 +1,83 @@
-{"type":"header","name":"Header group","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"message-1":{"type":"message","settings":{"text":"Announce something here","learn_more_text":"Learn more","title":"","content":"","button_text":"","button_link":""}},"dd40b8b5-8312-4198-8038-1efa963cbc05":{"type":"message","settings":{"text":"Announce something here","learn_more_text":"Learn more","title":"","content":"","button_text":"","button_link":""}},"6585e2e8-dbf6-4df9-af7a-d1570dc1a59d":{"type":"message","settings":{"text":"Announce something here","learn_more_text":"Learn more","title":"","content":"","button_text":"","button_link":""}}},"block_order":["message-1","dd40b8b5-8312-4198-8038-1efa963cbc05","6585e2e8-dbf6-4df9-af7a-d1570dc1a59d"],"disabled":true,"settings":{"announcement_bar_position":"non_sticky","announcement_text_size":"normal","autoplay":true,"cycle_speed":5,"background":"#f7aea6","text_color":"#56112a","button_background":"#56112a","button_text_color":"#ffffff"}},"header":{"type":"header","settings":{"enable_sticky_header":true,"logo":"{{ shop.brand.logo }}","logo_max_width":300,"mobile_logo_max_width":100,"navigation_menu":"main-menu","sidebar_navigation_menu":"","header_layout":"logo_left_navigation_center","show_icons":true,"reduce_desktop_padding":true,"show_locale_selector":true,"show_country_selector":true,"enable_transparent_header":false,"transparent_header_text_color":"#ffffff","search_menu":""}}},"order":["announcement-bar","header"]}
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message-1": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here",
+            "learn_more_text": "Learn more",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "dd40b8b5-8312-4198-8038-1efa963cbc05": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here",
+            "learn_more_text": "Learn more",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "6585e2e8-dbf6-4df9-af7a-d1570dc1a59d": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here",
+            "learn_more_text": "Learn more",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "message-1",
+        "dd40b8b5-8312-4198-8038-1efa963cbc05",
+        "6585e2e8-dbf6-4df9-af7a-d1570dc1a59d"
+      ],
+      "disabled": true,
+      "settings": {
+        "announcement_bar_position": "non_sticky",
+        "announcement_text_size": "normal",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#f7aea6",
+        "text_color": "#56112a",
+        "button_background": "#56112a",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "enable_sticky_header": true,
+        "logo": "{{ shop.brand.logo }}",
+        "logo_max_width": 300,
+        "mobile_logo_max_width": 100,
+        "navigation_menu": "main-menu",
+        "sidebar_navigation_menu": "",
+        "header_layout": "logo_left_navigation_center",
+        "show_icons": true,
+        "reduce_desktop_padding": true,
+        "show_locale_selector": true,
+        "show_country_selector": true,
+        "enable_transparent_header": false,
+        "transparent_header_text_color": "#ffffff",
+        "search_menu": ""
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

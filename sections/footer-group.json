@@ -1,1 +1,131 @@
-{"type":"footer","name":"Footer group","sections":{"newsletter":{"type":"newsletter","settings":{"reveal_on_scroll":true,"image":"shopify:\/\/shop_images\/gg-nl.jpg","subheading":"GUSTA GARDEN CLUB","content":"<p>Als Mitglied im Gusta Garden Club profitierst du nicht nur von exklusiven Rabatten, sondern auch von besonderen Vorteilen, Angeboten und Neuigkeiten. Werde jetzt Teil unserer Community und verpasse keine exklusiven Vorteile und Informationen mehr!<\/p>","text_position":"left","text_alignment":"left","text_background":"rgba(0,0,0,0)","text_color":"rgba(0,0,0,0)","button_background":"rgba(0,0,0,0)","button_text_color":"rgba(0,0,0,0)"}},"text-with-icons":{"type":"text-with-icons","blocks":{"item-1":{"type":"item","settings":{"icon":"picto-worldwide","custom_icon":"shopify:\/\/shop_images\/world-bg.png","custom_icon_width":80,"title":"20.000+ Kunden","content":""}},"item-2":{"type":"item","settings":{"icon":"picto-return-box","custom_icon":"shopify:\/\/shop_images\/return-bg.png","custom_icon_width":80,"title":"30 Tage Rückgaberecht","content":""}},"item-3":{"type":"item","settings":{"icon":"picto-delivery-truck","custom_icon":"shopify:\/\/shop_images\/versand-bg.png","custom_icon_width":80,"title":"Versandkostenfrei ab 70€","content":""}},"item-4":{"type":"item","settings":{"icon":"picto-warranty","custom_icon":"shopify:\/\/shop_images\/badge-bg.png","custom_icon_width":80,"title":"EFK ZERTIFIZIERT","content":""}}},"block_order":["item-1","item-2","item-3","item-4"],"settings":{"background":"#c8dd02","text_color":"#1d1d1d"}},"footer":{"type":"footer","blocks":{"eae72dad-69b9-47c3-b9ab-86483058c3d5":{"type":"links","settings":{"menu":"service"}},"c420f209-c679-48bd-bf6b-ee7064be5316":{"type":"links","settings":{"menu":"gusta-garden"}},"links":{"type":"links","settings":{"menu":"footer"}},"95f8a8b7-e78e-4830-801b-4a19692c9380":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/banner-footer_ab3b64b0-b40c-42c8-ab57-9ab7d91d33cc.png","image_width":140}},"social_media":{"type":"social_media","settings":{"title":"FOLGE UNS AUF...","content":""}}},"block_order":["eae72dad-69b9-47c3-b9ab-86483058c3d5","c420f209-c679-48bd-bf6b-ee7064be5316","links","95f8a8b7-e78e-4830-801b-4a19692c9380","social_media"],"settings":{"show_payment_icons":true,"enable_follow_on_shop":true,"show_country_selector":true,"show_locale_selector":true}}},"order":["newsletter","text-with-icons","footer"]}
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/gg-nl.jpg",
+        "subheading": "GUSTA GARDEN CLUB",
+        "content": "<p>Als Mitglied im Gusta Garden Club profitierst du nicht nur von exklusiven Rabatten, sondern auch von besonderen Vorteilen, Angeboten und Neuigkeiten. Werde jetzt Teil unserer Community und verpasse keine exklusiven Vorteile und Informationen mehr!<\/p>",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-worldwide",
+            "custom_icon": "shopify:\/\/shop_images\/world-bg.png",
+            "custom_icon_width": 80,
+            "title": "20.000+ Kunden",
+            "content": ""
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-return-box",
+            "custom_icon": "shopify:\/\/shop_images\/return-bg.png",
+            "custom_icon_width": 80,
+            "title": "30 Tage Rückgaberecht",
+            "content": ""
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify:\/\/shop_images\/versand-bg.png",
+            "custom_icon_width": 80,
+            "title": "Versandkostenfrei ab 70€",
+            "content": ""
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-warranty",
+            "custom_icon": "shopify:\/\/shop_images\/badge-bg.png",
+            "custom_icon_width": 80,
+            "title": "EFK ZERTIFIZIERT",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4"
+      ],
+      "settings": {
+        "background": "#c8dd02",
+        "text_color": "#1d1d1d"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "eae72dad-69b9-47c3-b9ab-86483058c3d5": {
+          "type": "links",
+          "settings": {
+            "menu": "service"
+          }
+        },
+        "c420f209-c679-48bd-bf6b-ee7064be5316": {
+          "type": "links",
+          "settings": {
+            "menu": "gusta-garden"
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer"
+          }
+        },
+        "95f8a8b7-e78e-4830-801b-4a19692c9380": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-footer_ab3b64b0-b40c-42c8-ab57-9ab7d91d33cc.png",
+            "image_width": 140
+          }
+        },
+        "social_media": {
+          "type": "social_media",
+          "settings": {
+            "title": "FOLGE UNS AUF...",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "eae72dad-69b9-47c3-b9ab-86483058c3d5",
+        "c420f209-c679-48bd-bf6b-ee7064be5316",
+        "links",
+        "95f8a8b7-e78e-4830-801b-4a19692c9380",
+        "social_media"
+      ],
+      "settings": {
+        "show_payment_icons": true,
+        "enable_follow_on_shop": true,
+        "show_country_selector": true,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "newsletter",
+    "text-with-icons",
+    "footer"
+  ]
+}
