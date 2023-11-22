@@ -127,23 +127,17 @@
         .mt-4 {
     margin-top: 1rem
 }
-        .block {
-    display: block
-}
         .flex {
     display: flex
 }
-        .h-11 {
-    height: 2.75rem
+        .h-20 {
+    height: 5rem
 }
         .h-40 {
     height: 10rem
 }
-        .h-full {
-    height: 100%
-}
-        .w-28 {
-    width: 7rem
+        .w-20 {
+    width: 5rem
 }
         .w-full {
     width: 100%
@@ -164,19 +158,6 @@
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)))
-}
-        .rounded-lg {
-    border-radius: 0.5rem
-}
-        .border {
-    border-width: 1px
-}
-        .border-solid {
-    border-style: solid
-}
-        .border-neutral-300 {
-    --tw-border-opacity: 1;
-    border-color: rgb(212 212 212 / var(--tw-border-opacity))
 }
         .py-8 {
     padding-top: 2rem;
