@@ -108,7 +108,7 @@
             {%- case media.media_type -%}
               {%- when 'image' -%}
                 <div
-                  class="product__media-image-wrapper aspect-ratio aspect-ratio--natural"
+                  class="product__media-image-wrapper aspect-ratio aspect-ratio--natural overflow-visible"
                   style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }}">
                   {%- assign should_reveal = false -%}
                   {%- assign loading = 'eager' -%}
@@ -144,6 +144,126 @@
                     -}}
                   {%- endif -%}
                 </div>
+
+                {% if section.settings.product_slideshow_title_1 != blank
+                  and forloop.index == 1
+                %}
+                  <div class="absolute bottom-0 h-10 w-full bg-neutral-200 z-20 flex items-center px-5">
+                    {{ section.settings.product_slideshow_title_1 }}
+
+                    {% if section.settings.product_slideshow_tooltip_1 %}
+                      <div class="ml-2 tooltip">
+                        <span class="tooltiptext rounded-sm shadow-lg p-3 bg-gray-100">
+                          {{- section.settings.product_slideshow_tooltip_1 -}}
+                        </span>
+
+                        <div class="font-light">
+                          {%- render 'icon' with 'info' -%}
+                        </div>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+                {% if section.settings.product_slideshow_title_2 != blank
+                  and forloop.index == 2
+                %}
+                  <div class="absolute bottom-0 h-10 w-full bg-neutral-200 z-20 flex items-center px-5">
+                    {{ section.settings.product_slideshow_title_2 }}
+
+                    {% if section.settings.product_slideshow_tooltip_2 %}
+                      <div class="ml-2 tooltip">
+                        <span class="tooltiptext rounded-sm shadow-lg p-3 bg-gray-100">
+                          {{- section.settings.product_slideshow_tooltip_2 -}}
+                        </span>
+
+                        <div class="font-light">
+                          {%- render 'icon' with 'info' -%}
+                        </div>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+                {% if section.settings.product_slideshow_title_3 != blank
+                  and forloop.index == 3
+                %}
+                  <div class="absolute bottom-0 h-10 w-full bg-neutral-200 z-20 flex items-center px-5">
+                    {{ section.settings.product_slideshow_title_3 }}
+
+                    {% if section.settings.product_slideshow_tooltip_3 %}
+                      <div class="ml-2 tooltip">
+                        <span class="tooltiptext rounded-sm shadow-lg p-3 bg-gray-100">
+                          {{- section.settings.product_slideshow_tooltip_3 -}}
+                        </span>
+
+                        <div class="font-light">
+                          {%- render 'icon' with 'info' -%}
+                        </div>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+                {% if section.settings.product_slideshow_title_4 != blank
+                  and forloop.index == 4
+                %}
+                  <div class="absolute bottom-0 h-10 w-full bg-neutral-200 z-20 flex items-center px-5">
+                    {{ section.settings.product_slideshow_title_4 }}
+
+                    {% if section.settings.product_slideshow_tooltip_4 %}
+                      <div class="ml-2 tooltip">
+                        <span class="tooltiptext rounded-sm shadow-lg p-3 bg-gray-100">
+                          {{- section.settings.product_slideshow_tooltip_4 -}}
+                        </span>
+
+                        <div class="font-light">
+                          {%- render 'icon' with 'info' -%}
+                        </div>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+                {% if section.settings.product_slideshow_title_5 != blank
+                  and forloop.index == 5
+                %}
+                  <div class="absolute bottom-0 h-10 w-full bg-neutral-200 z-20 flex items-center px-5">
+                    {{ section.settings.product_slideshow_title_5 }}
+
+                    {% if section.settings.product_slideshow_tooltip_5 %}
+                      <div class="ml-2 tooltip">
+                        <span class="tooltiptext rounded-sm shadow-lg p-3 bg-gray-100">
+                          {{- section.settings.product_slideshow_tooltip_5 -}}
+                        </span>
+
+                        <div class="font-light">
+                          {%- render 'icon' with 'info' -%}
+                        </div>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+                {% if section.settings.product_slideshow_title_6 != blank
+                  and forloop.index == 6
+                %}
+                  <div class="absolute bottom-0 h-10 w-full bg-neutral-200 z-20 flex items-center px-5">
+                    {{ section.settings.product_slideshow_title_6 }}
+
+                    {% if section.settings.product_slideshow_tooltip_6 %}
+                      <div class="ml-2 tooltip">
+                        <span class="tooltiptext rounded-sm shadow-lg p-3 bg-gray-100">
+                          {{- section.settings.product_slideshow_tooltip_6 -}}
+                        </span>
+
+                        <div class="font-light">
+                          {%- render 'icon' with 'info' -%}
+                        </div>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
 
               {%- when 'video' -%}
                 <native-video
