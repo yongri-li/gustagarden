@@ -186,6 +186,10 @@
   margin-left: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -222,8 +226,20 @@
   height: 2.5rem;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .h-40 {
   height: 10rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-full {
@@ -254,6 +270,10 @@
   resize: both;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -266,6 +286,10 @@
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -276,6 +300,12 @@
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -298,12 +328,25 @@
   white-space: nowrap;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
 }
 
 .border {
   border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-neutral-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 212 / var(--tw-border-opacity));
 }
 
 .bg-gray-100 {
@@ -316,11 +359,6 @@
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -328,6 +366,11 @@
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -357,6 +400,11 @@
 
 .italic {
   font-style: italic;
+}
+
+.text-primary-400 {
+  --tw-text-opacity: 1;
+  color: rgb(205 220 71 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -448,7 +496,7 @@ body .thb-item-count,
 body .announcement-bar,
 body .flickity-nav {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 202 34 / var(--tw-bg-opacity));
+  background-color: rgb(205 220 71 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
