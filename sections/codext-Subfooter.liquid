@@ -14,31 +14,19 @@
     </div>
   </div>
 
-  {% if section.blocks != empty %}
-    <div class="h-40 flex flex-col items-center justify-center w-full">
-      <div style="color: {{ section.settings.text_color }}">
-        Wir akzeptieren
-      </div>
-      <div class="flex space-x-4 items-center mt-4">
-        {% for block in section.blocks %}
-          <div class=" w-28 h-11 border border-solid border-neutral-300 rounded-lg">
-            <img
-              src="{{ block.settings.image | img_url: 'master' }}"
-              alt=""
-              width="112"
-              height="44"
-              class="h-full w-full border rounded-lg"
-              loading="eager">
-          </div>
-        {% endfor %}
-      </div>
+  <div class="h-40 flex flex-col items-center justify-center w-full">
+    <div style="color: {{ section.settings.text_color }}">Wir akzeptieren</div>
+    <div class="flex space-x-4 items-center mt-4">
+      {%- for type in shop.enabled_payment_types -%}
+        {{- type | payment_type_svg_tag: class: 'h-20 w-20' -}}
+      {%- endfor -%}
     </div>
-  {% endif %}
+  </div>
 </div>
 
 {% schema %}
 {
-  "name": "Subfooter",
+  "name": "Codext - Subfooter",
   "class": "shopify-section--text-with-icons",
   "disabled_on": {
     "groups": ["header"]
@@ -67,23 +55,9 @@
       "label": "Top Right Text"
     }
   ],
-  "max_blocks": 8,
-  "blocks": [
-    {
-      "type": "item",
-      "name": "Payment Item",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        }
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "Subfooter",
+      "name": "Codext - Subfooter",
       "blocks": []
     }
   ]
