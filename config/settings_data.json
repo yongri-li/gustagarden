@@ -38,12 +38,12 @@
     "product_image_size": "natural",
     "cart_type": "message",
     "cart_show_free_shipping_threshold": true,
-    "social_facebook": "https://www.facebook.com/gustagarden/",
-    "social_pinterest": "https://www.pinterest.at/gustagarden/",
-    "social_instagram": "https://www.instagram.com/gustagarden/",
-    "social_youtube": "https://youtube.com/channel/UCneL6EBBDfVrmP0E7s8FOAA",
-    "social_linkedin": "https://www.linkedin.com/company/gustagarden/",
-    "checkout_logo_image": "shopify://shop_images/gusta_garden_logo_4cf06cfe-77d6-4e80-918f-2364c990aeb8.png",
+    "social_facebook": "https:\/\/www.facebook.com\/gustagarden\/",
+    "social_pinterest": "https:\/\/www.pinterest.at\/gustagarden\/",
+    "social_instagram": "https:\/\/www.instagram.com\/gustagarden\/",
+    "social_youtube": "https:\/\/youtube.com\/channel\/UCneL6EBBDfVrmP0E7s8FOAA",
+    "social_linkedin": "https:\/\/www.linkedin.com\/company\/gustagarden\/",
+    "checkout_logo_image": "shopify:\/\/shop_images\/gusta_garden_logo_4cf06cfe-77d6-4e80-918f-2364c990aeb8.png",
     "checkout_input_background_color_mode": "transparent",
     "checkout_sidebar_background_color": "#f5f5f5",
     "checkout_accent_color": "#c8dd02",
@@ -56,16 +56,18 @@
         "settings": {
           "show_order_note": true,
           "show_checkout_button": true,
-          "empty_button_link": "shopify://collections/all",
+          "empty_button_link": "shopify:\/\/collections\/all",
           "show_recommendations": true,
           "recommendations_title": "You may also like"
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "15316669992541710076": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "star": "#000",
@@ -82,12 +84,13 @@
         }
       },
       "6913107989674730356": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-sessions/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-sessions\/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "10830403595879607806": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-core/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "url_key": "www.gustagarden.com",
@@ -95,7 +98,7 @@
         }
       },
       "16274361319697914395": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-floating/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-floating\/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "widget_id": "XrPK80EZptVa3O1y",
