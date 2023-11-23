@@ -10,10 +10,24 @@
           "settings": {
             "text": "Announce something here"
           }
+        },
+        "debef115-cac6-4fec-a496-4b94895f9d4b": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here"
+          }
+        },
+        "6b3c7712-e06a-40f3-a95c-181ad874235a": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here"
+          }
         }
       },
       "block_order": [
-        "144baaf4-e57d-4ebb-970d-b2c392692484"
+        "144baaf4-e57d-4ebb-970d-b2c392692484",
+        "debef115-cac6-4fec-a496-4b94895f9d4b",
+        "6b3c7712-e06a-40f3-a95c-181ad874235a"
       ],
       "settings": {
         "announcement_bar_position": "non_sticky",
