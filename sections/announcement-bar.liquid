@@ -111,7 +111,7 @@
       });
 
       intervalRotationFn();
-      rotateInterval = setInterval(() => intervalRotationFn(), 2000);
+      rotateInterval = setInterval(() => intervalRotationFn(), {{ section.settings.cycle_speed | times: 1000 }});
     } else {
       if (rotateInterval) clearInterval(rotateInterval);
       announcementBarItems.forEach((item, index) => {
@@ -192,12 +192,6 @@
         }
       ],
       "default": "normal"
-    },
-    {
-      "type": "checkbox",
-      "id": "autoplay",
-      "label": "Auto rotate between messages",
-      "default": true
     },
     {
       "type": "range",
