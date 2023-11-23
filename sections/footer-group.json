@@ -72,15 +72,6 @@
         "text_color": "#1d1d1d"
       }
     },
-    "41b847aa-181b-4776-b97a-ae3d80a89cac": {
-      "type": "codext-Subfooter",
-      "settings": {
-        "text_color": "#000000",
-        "background_color": "#ffffff",
-        "top-left-text": "",
-        "top-right-text": ""
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -130,12 +121,21 @@
         "show_country_selector": true,
         "show_locale_selector": true
       }
+    },
+    "41b847aa-181b-4776-b97a-ae3d80a89cac": {
+      "type": "codext-Subfooter",
+      "settings": {
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "top-left-text": "",
+        "top-right-text": ""
+      }
     }
   },
   "order": [
     "newsletter",
     "text-with-icons",
-    "41b847aa-181b-4776-b97a-ae3d80a89cac",
-    "footer"
+    "footer",
+    "41b847aa-181b-4776-b97a-ae3d80a89cac"
   ]
 }
