@@ -2,22 +2,10 @@
   "type": "header",
   "name": "Header group",
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
+    "7a770b41-856d-41ac-b442-8880908a1e5c": {
+      "type": "codext-Announcement-Bar",
       "blocks": {
-        "message-1": {
-          "type": "message",
-          "settings": {
-            "text": "Announce something here"
-          }
-        },
-        "dd40b8b5-8312-4198-8038-1efa963cbc05": {
-          "type": "message",
-          "settings": {
-            "text": "Announce something here"
-          }
-        },
-        "6585e2e8-dbf6-4df9-af7a-d1570dc1a59d": {
+        "144baaf4-e57d-4ebb-970d-b2c392692484": {
           "type": "message",
           "settings": {
             "text": "Announce something here"
@@ -25,15 +13,11 @@
         }
       },
       "block_order": [
-        "message-1",
-        "dd40b8b5-8312-4198-8038-1efa963cbc05",
-        "6585e2e8-dbf6-4df9-af7a-d1570dc1a59d"
+        "144baaf4-e57d-4ebb-970d-b2c392692484"
       ],
-      "disabled": true,
       "settings": {
         "announcement_bar_position": "non_sticky",
         "announcement_text_size": "normal",
-        "autoplay": true,
         "cycle_speed": 5
       }
     },
@@ -140,7 +124,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "7a770b41-856d-41ac-b442-8880908a1e5c",
     "header"
   ]
 }
