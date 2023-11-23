@@ -1,0 +1,111 @@
+{% schema %}
+{
+  "name": "Codext - FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Why a Raised Garden is Beneficial"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "accordion",
+      "name": "Accordion Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Accordion Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Accordion Content</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Codext - FAQ"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="bg-gray-50">
+  <div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6">{{ section.settings.title }}</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div>
+        {% for block in section.blocks %}
+          <div class="accordion-item bg-white p-4 rounded-lg shadow mt-4">
+            <button
+              class="accordion-button flex justify-between items-center w-full text-left"
+              onclick="this.nextElementSibling.classList.toggle('hidden')">
+              <span
+                ><strong>{{ block.settings.title }}</strong></span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#92D400"
+                viewBox="0 0 32 32"
+                class="w-6 h-6">
+                <!-- SVG content -->
+              </svg>
+            </button>
+            <div class="hidden">
+              {{ block.settings.content }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        {% if section.settings.image_1 %}
+          <img
+            src="{{ section.settings.image_1 | img_url: 'master' }}"
+            class="rounded-lg shadow">
+        {% endif %}
+        {% if section.settings.image_2 %}
+          <img
+            src="{{ section.settings.image_2 | img_url: 'master' }}"
+            class="rounded-lg shadow">
+        {% endif %}
+        {% if section.settings.image_3 %}
+          <img
+            src="{{ section.settings.image_3 | img_url: 'master' }}"
+            class="rounded-lg shadow">
+        {% endif %}
+        {% if section.settings.image_4 %}
+          <img
+            src="{{ section.settings.image_4 | img_url: 'master' }}"
+            class="rounded-lg shadow">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
