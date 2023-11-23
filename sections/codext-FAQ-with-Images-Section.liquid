@@ -57,55 +57,110 @@
 }
 {% endschema %}
 
+<style>
+  .accordion {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #cccccc69;
+  }
+
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+</style>
+
 <section class="bg-gray-50">
   <div class="container mx-auto p-6">
     <h1 class="text-3xl font-bold mb-6">{{ section.settings.title }}</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 items-start">
       <div>
         {% for block in section.blocks %}
-          <div class="accordion-item bg-white p-4 rounded-lg shadow mt-4">
+          <div class="accordion-item bg-white rounded-lg shadow mt-4">
             <button
-              class="accordion-button flex justify-between items-center w-full text-left"
-              onclick="this.nextElementSibling.classList.toggle('hidden')">
-              <span
-                ><strong>{{ block.settings.title }}</strong></span
-              >
+              class="accordion flex justify-between p-4 items-center w-full text-left"
+              onclick="toggleAccordion(this)">
+              <span>{{ block.settings.title }}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="#92D400"
-                viewBox="0 0 32 32"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
                 class="w-6 h-6">
-                <!-- SVG content -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
               </svg>
             </button>
-            <div class="hidden">
-              {{ block.settings.content }}
+            <div class="panel">
+              <div class="p-4">
+                {{ block.settings.content }}
+              </div>
             </div>
           </div>
         {% endfor %}
       </div>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-4 items-start">
         {% if section.settings.image_1 %}
           <img
             src="{{ section.settings.image_1 | img_url: 'master' }}"
+            loading="lazy"
+            width="300"
+            height="240"
             class="rounded-lg shadow">
         {% endif %}
         {% if section.settings.image_2 %}
           <img
             src="{{ section.settings.image_2 | img_url: 'master' }}"
+            loading="lazy"
+            width="300"
+            height="240"
             class="rounded-lg shadow">
         {% endif %}
         {% if section.settings.image_3 %}
           <img
             src="{{ section.settings.image_3 | img_url: 'master' }}"
+            loading="lazy"
+            width="300"
+            height="240"
             class="rounded-lg shadow">
         {% endif %}
         {% if section.settings.image_4 %}
           <img
             src="{{ section.settings.image_4 | img_url: 'master' }}"
+            loading="lazy"
+            width="300"
+            height="240"
             class="rounded-lg shadow">
         {% endif %}
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  const acc = document.getElementsByClassName('accordion');
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', function () {
+      this.classList.toggle('active');
+      const panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  }
+</script>
