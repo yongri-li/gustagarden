@@ -638,7 +638,19 @@ input:focus-within {
   visibility: visible;
 }
 
+.first\:block:first-child {
+  display: block;
+}
+
+.first\:hidden:first-child {
+  display: none;
+}
+
 @media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:gap-0 {
     gap: 0px;
   }
