@@ -8,34 +8,19 @@
         "message-1": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
-            "learn_more_text": "Learn more",
-            "title": "",
-            "content": "",
-            "button_text": "",
-            "button_link": ""
+            "text": "Announce something here"
           }
         },
         "dd40b8b5-8312-4198-8038-1efa963cbc05": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
-            "learn_more_text": "Learn more",
-            "title": "",
-            "content": "",
-            "button_text": "",
-            "button_link": ""
+            "text": "Announce something here"
           }
         },
         "6585e2e8-dbf6-4df9-af7a-d1570dc1a59d": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
-            "learn_more_text": "Learn more",
-            "title": "",
-            "content": "",
-            "button_text": "",
-            "button_link": ""
+            "text": "Announce something here"
           }
         }
       },
@@ -49,15 +34,93 @@
         "announcement_bar_position": "non_sticky",
         "announcement_text_size": "normal",
         "autoplay": true,
-        "cycle_speed": 5,
-        "background": "#f7aea6",
-        "text_color": "#56112a",
-        "button_background": "#56112a",
-        "button_text_color": "#ffffff"
+        "cycle_speed": 5
       }
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "6e4c9176-42a3-4599-8734-b7b8fa4ed08b": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "SHOP",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": "",
+            "image_3_heading": "",
+            "image_3_text": "",
+            "image_3_link": "",
+            "image_4_heading": "",
+            "image_4_text": "",
+            "image_4_link": "",
+            "image_5_heading": "",
+            "image_5_text": "",
+            "image_5_link": "",
+            "image_6_heading": "",
+            "image_6_text": "",
+            "image_6_link": ""
+          }
+        },
+        "d290e4e5-66ec-4afd-a6cb-51edf8829bfb": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Vorteile",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": "",
+            "image_3_heading": "",
+            "image_3_text": "",
+            "image_3_link": "",
+            "image_4_heading": "",
+            "image_4_text": "",
+            "image_4_link": "",
+            "image_5_heading": "",
+            "image_5_text": "",
+            "image_5_link": "",
+            "image_6_heading": "",
+            "image_6_text": "",
+            "image_6_link": ""
+          }
+        },
+        "766eca12-4f3f-41e3-b793-bdec24f151f1": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": "",
+            "image_3_heading": "",
+            "image_3_text": "",
+            "image_3_link": "",
+            "image_4_heading": "",
+            "image_4_text": "",
+            "image_4_link": "",
+            "image_5_heading": "",
+            "image_5_text": "",
+            "image_5_link": "",
+            "image_6_heading": "",
+            "image_6_text": "",
+            "image_6_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "6e4c9176-42a3-4599-8734-b7b8fa4ed08b",
+        "d290e4e5-66ec-4afd-a6cb-51edf8829bfb",
+        "766eca12-4f3f-41e3-b793-bdec24f151f1"
+      ],
       "settings": {
         "enable_sticky_header": true,
         "logo": "{{ shop.brand.logo }}",
@@ -76,5 +139,8 @@
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }
