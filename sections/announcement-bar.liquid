@@ -40,44 +40,25 @@
         auto-play cycle-speed="{{ section.settings.cycle_speed | escape }}"
       {% endif %}
       class="announcement-bar py-2 {% if section.blocks.size > 1 %}announcement-bar--multiple{% endif %}">
-      {% comment %}
-        {%- if section.blocks.size > 1 -%}
-          <button
-            data-action="prev"
-            class="tap-area tap-area--large">
-            <span class="visually-hidden">
-              {{- 'general.accessibility.previous' | t -}}
-            </span>
-            {% render 'icon' with 'nav-arrow-left-small', direction_aware: true %}
-          </button>
-        {%- endif -%}
-      {% endcomment %}
-
       <div class="announcement-bar__list flex justify-center text-[14px] space-x-8 font-semibold">
         {%- for block in section.blocks -%}
           <announcement-bar-item
             class="announcement-bar__item">
+            {% if block.settings.image %}
+              <img
+                class="announcement-bar__image"
+                src="{{ block.settings.image | image_url: '20x20'}}"
+                alt="{{ block.settings.text | escape }}"
+                loading="lazy"
+                width="20"
+                height="20">
+            {% endif %}
             <p>
               {{ block.settings.text | escape }}
             </p>
           </announcement-bar-item>
         {%- endfor -%}
       </div>
-
-      {% comment %}
-        {%- if section.blocks.size > 1 -%}
-          <button
-            data-action="next"
-            class="tap-area tap-area--large">
-            <span class="visually-hidden">
-              {{- 'general.accessibility.next' | t -}}
-            </span>
-            {% render 'icon' with 'nav-arrow-right-small',
-              direction_aware: true
-            %}
-          </button>
-        {%- endif -%}
-      {% endcomment %}
     </announcement-bar>
   </section>
 
