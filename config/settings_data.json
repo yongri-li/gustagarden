@@ -99,7 +99,7 @@
       },
       "16274361319697914395": {
         "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-floating\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "widget_id": "XrPK80EZptVa3O1y",
           "show_all": true,
