@@ -22,7 +22,8 @@
         "144baaf4-e57d-4ebb-970d-b2c392692484": {
           "type": "message",
           "settings": {
-            "text": "Mehr als 500.000 verkaufte Produkte"
+            "text": "Mehr als 500.000 verkaufte Produkte",
+            "image": "shopify:\/\/shop_images\/check.svg"
           }
         }
       },
