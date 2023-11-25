@@ -9,21 +9,22 @@
           "type": "message",
           "settings": {
             "text": "Gratis Versand ab 75€",
-            "image": "shopify:\/\/shop_images\/check.svg"
+            "icon": "check"
           }
         },
         "6b3c7712-e06a-40f3-a95c-181ad874235a": {
           "type": "message",
           "settings": {
             "text": "30 Tage Rückgaberecht",
-            "image": "shopify:\/\/shop_images\/check.svg"
+            "icon": "check"
           }
         },
         "144baaf4-e57d-4ebb-970d-b2c392692484": {
           "type": "message",
           "settings": {
             "text": "Mehr als 500.000 verkaufte Produkte",
-            "image": "shopify:\/\/shop_images\/check.svg"
+            "image": "shopify:\/\/shop_images\/check.svg",
+            "icon": ""
           }
         }
       },
