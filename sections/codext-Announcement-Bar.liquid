@@ -41,6 +41,9 @@
         {%- for block in section.blocks -%}
           <div
             class="announcement-bar__item sm:flex hidden gap-2">
+            {% if block.settings.icon %}
+              {% render 'codext-tabler-icons' with icon: block.settings.icon %}
+            {% endif %}
             {% if block.settings.image %}
               <img
                 class="announcement-bar__image"
@@ -50,7 +53,7 @@
                 width="20"
                 height="20">
 
-              {% endif %}
+            {% endif %}
             <div>
               {{ block.settings.text | escape }}
             </div>
@@ -150,7 +153,13 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
-        }
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon",
+          "description": "Use Tabler icons. See all icons at https://tabler-icons.io/"
+        },
       ]
     }
   ],
