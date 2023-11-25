@@ -471,6 +471,14 @@
   font-style: italic;
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
+.overline {
+  text-decoration-line: overline;
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
@@ -706,8 +714,8 @@ input:focus-within {
 }
 
 @media (min-width: 640px) {
-  .sm\:block {
-    display: block;
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:gap-0 {

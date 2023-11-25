@@ -40,7 +40,7 @@
       <div class="announcement-bar__list flex w-full justify-center text-[14px] space-x-8 font-semibold">
         {%- for block in section.blocks -%}
           <div
-            class="announcement-bar__item sm:block hidden">
+            class="announcement-bar__item sm:flex hidden gap-2">
             {% if block.settings.image %}
               <img
                 class="announcement-bar__image"
@@ -51,9 +51,9 @@
                 height="20">
 
               {% endif %}
-            <p>
+            <div>
               {{ block.settings.text | escape }}
-            </p>
+            </div>
           </div>
         {%- endfor -%}
       </div>
