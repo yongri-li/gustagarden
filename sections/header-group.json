@@ -23,8 +23,7 @@
           "type": "message",
           "settings": {
             "text": "Mehr als 500.000 verkaufte Produkte",
-            "image": "shopify:\/\/shop_images\/check.svg",
-            "icon": ""
+            "icon": "check"
           }
         }
       },
