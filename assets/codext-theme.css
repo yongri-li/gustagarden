@@ -96,34 +96,6 @@
     --tw-backdrop-saturate:  ;
     --tw-backdrop-sepia:  
 }
-        .container {
-    width: 100%
-}
-        @media (min-width: 640px) {
-    .container {
-        max-width: 640px
-    }
-}
-        @media (min-width: 768px) {
-    .container {
-        max-width: 768px
-    }
-}
-        @media (min-width: 1024px) {
-    .container {
-        max-width: 1024px
-    }
-}
-        @media (min-width: 1280px) {
-    .container {
-        max-width: 1280px
-    }
-}
-        @media (min-width: 1536px) {
-    .container {
-        max-width: 1536px
-    }
-}
         .relative {
     position: relative
 }
@@ -196,6 +168,9 @@
 }
         .justify-between {
     justify-content: space-between
+}
+        .gap-2 {
+    gap: 0.5rem
 }
         .gap-4 {
     gap: 1rem
@@ -277,8 +252,8 @@
     transition-duration: 150ms
 }
         @media (min-width: 640px) {
-    .sm\:block {
-        display: block
+    .sm\:flex {
+        display: flex
     }
 }
         @media (min-width: 768px) {
