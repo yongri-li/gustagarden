@@ -395,14 +395,14 @@
         "95516f64-80de-44ca-a78c-62098b89477f": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
-            "star": "#000000",
+            "star": "#c8dd02",
             "review_type": "product",
             "reviews_shown": 20,
             "header_bg_colour": "#4f5358",
             "header_colour": "#ffffff",
             "header_star_colour": "#c8dd02",
             "heading_text_colour": "#0e1311",
-            "heading_font": "helvetica_n4",
+            "heading_font": "poppins_n4",
             "body_text_colour": "#0e1311",
             "badge_icon_colour": "#0e1311",
             "badge_text_colour": "#0e1311",
