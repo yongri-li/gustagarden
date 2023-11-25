@@ -132,6 +132,7 @@
         "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42",
         "5c72b33a-0b55-4151-b0e6-a2d75b4c8771"
       ],
+      "disabled": true,
       "settings": {
         "background-color": "#f2f2f2",
         "max-show": 600,
@@ -181,7 +182,7 @@
         "0974623b-9195-4374-a8ef-bd00104ac8f3"
       ],
       "settings": {
-        "subheading": "GUSTA GARDEN.",
+        "subheading": "",
         "title": "BESTSELLER",
         "content": "",
         "products_count": 8,
