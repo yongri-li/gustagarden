@@ -42,7 +42,7 @@
           <div
             class="announcement-bar__item sm:flex hidden gap-2">
             {% if block.settings.icon %}
-              {% render 'codext-tabler-icons' with icon: block.settings.icon %}
+              {%- render 'codext-icons' with icon: block.settings.icon -%}
             {% endif %}
             {% if block.settings.image %}
               <img
