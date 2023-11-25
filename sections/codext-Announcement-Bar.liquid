@@ -40,9 +40,9 @@
       <div class="announcement-bar__list flex w-full justify-center text-[14px] space-x-8 font-semibold">
         {%- for block in section.blocks -%}
           <div
-            class="announcement-bar__item sm:flex hidden gap-2">
+            class="announcement-bar__item sm:flex hidden gap-2 items-center">
             {% if block.settings.icon %}
-              {%- render 'icon' with block.settings.icon -%}
+              {%- render 'icon' with icon: block.settings.icon, height: 20 -%}
             {% endif %}
             {% if block.settings.image %}
               <img
@@ -75,7 +75,7 @@
 <style>
   @keyframes slideaway {
     from {
-      display: block;
+      display: flex;
     }
     to {
       transform: translateY(40px);
@@ -96,7 +96,7 @@
     const items = document.querySelectorAll('.announcement-bar__item');
     console.log(currentVisibleIndex);
     items.forEach((item, index) => {
-      item.style.display = index === currentVisibleIndex ? 'block' : 'none';
+      item.style.display = index === currentVisibleIndex ? 'flex' : 'none';
     });
     currentVisibleIndex = (currentVisibleIndex + 1) % items.length;
   }
@@ -119,7 +119,7 @@
     } else {
       if (rotateInterval) clearInterval(rotateInterval);
       announcementBarItems.forEach((item, index) => {
-        item.style.display = 'block';
+        item.style.display = 'flex';
       });
     }
   }
