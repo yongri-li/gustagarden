@@ -3,6 +3,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "b3e6ce87-1409-4648-a0ad-7dbc015879b0": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+          }
+        },
         "fff5100c-5ff6-462e-9771-01ed6285b80f": {
           "type": "liquid",
           "settings": {
@@ -55,6 +60,7 @@
         }
       },
       "block_order": [
+        "b3e6ce87-1409-4648-a0ad-7dbc015879b0",
         "fff5100c-5ff6-462e-9771-01ed6285b80f",
         "variant_picker",
         "quantity_selector",
@@ -67,7 +73,7 @@
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": true,
-        "show_product_rating": true,
+        "show_product_rating": false,
         "show_sticky_add_to_cart": true,
         "show_share_buttons": false,
         "help_page": "contact",
