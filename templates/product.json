@@ -396,7 +396,7 @@
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
             "star": "#c8dd02",
-            "review_type": "product",
+            "review_type": "product_current",
             "reviews_shown": 20,
             "header_bg_colour": "#4f5358",
             "header_colour": "#ffffff",
