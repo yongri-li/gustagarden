@@ -129,7 +129,7 @@
         "enable_sticky_header": true,
         "logo": "{{ shop.brand.logo }}",
         "logo_max_width": 300,
-        "mobile_logo_max_width": 100,
+        "mobile_logo_max_width": 125,
         "navigation_menu": "main-menu",
         "sidebar_navigation_menu": "",
         "header_layout": "logo_left_navigation_center",
