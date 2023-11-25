@@ -44,12 +44,13 @@
             {% if block.settings.image %}
               <img
                 class="announcement-bar__image"
-                src="{{ block.settings.image | image_url: '20x20'}}"
+                src="{{ block.settings.image | img_url: '20x' }}"
                 alt="{{ block.settings.text | escape }}"
                 loading="lazy"
                 width="20"
                 height="20">
-            {% endif %}
+
+              {% endif %}
             <p>
               {{ block.settings.text | escape }}
             </p>
