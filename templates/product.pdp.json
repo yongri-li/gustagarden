@@ -246,6 +246,7 @@
         "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1"
       ],
       "custom_css": [
+        "{margin: 0 !important;}",
         ".image-with-text__wrapper {padding: 0 !important;}"
       ],
       "settings": {
