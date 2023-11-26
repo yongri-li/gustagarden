@@ -11,16 +11,20 @@
         "show_only_once": true,
         "image_position": "left",
         "title": "Get 10% off",
-        "content": "<p>Promotions, new products and sales. Directly to your inbox.</p>"
+        "content": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
       }
     },
     "privacy-banner": {
       "type": "privacy-banner",
+      "disabled": true,
       "settings": {
         "cookie_bar_title": "Cookie policy",
-        "cookie_bar_content": "<p>I agree to the processing of my data in accordance with the conditions set out in the policy of Privacy.</p>"
+        "cookie_bar_content": "<p>I agree to the processing of my data in accordance with the conditions set out in the policy of Privacy.<\/p>"
       }
     }
   },
-  "order": ["newsletter-popup", "privacy-banner"]
+  "order": [
+    "newsletter-popup",
+    "privacy-banner"
+  ]
 }
