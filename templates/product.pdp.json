@@ -210,7 +210,8 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1"
       ],
       "custom_css": [
-        ".image-with-text__wrapper {padding: 0!important;}"
+        "{margin: 0 !important;}",
+        ".image-with-text__wrapper {padding: 0 !important;}"
       ],
       "settings": {
         "reveal_on_scroll": false,
