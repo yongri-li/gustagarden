@@ -210,8 +210,8 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1"
       ],
       "settings": {
-        "reveal_on_scroll": true,
-        "background_type": "full_width",
+        "reveal_on_scroll": false,
+        "background_type": "boxed",
         "background_overlap": "text",
         "image_position": "left",
         "text_alignment": "left",
