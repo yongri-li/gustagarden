@@ -222,28 +222,6 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "e869f547-3e9e-4633-bb8c-f96f1bc0a6d8": {
-      "type": "testimonials",
-      "blocks": {
-        "template--16336611082413__e869f547-3e9e-4633-bb8c-f96f1bc0a6d8-testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "content": "Super durchdacht, einfach in der Anwendung",
-            "author": "Nutzerbewertung von Udo K."
-          }
-        }
-      },
-      "block_order": [
-        "template--16336611082413__e869f547-3e9e-4633-bb8c-f96f1bc0a6d8-testimonial-1"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "subheading": "",
-        "title": "",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "1ba95599-fa75-44f7-914b-f9705c642b65": {
       "type": "image-with-text",
       "blocks": {
@@ -274,28 +252,6 @@
         "text_color": "#000000",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "61fffbe2-c90d-4ee8-9fe8-b5f6f7b2b40c": {
-      "type": "testimonials",
-      "blocks": {
-        "cb2a5f48-053c-4329-b8e4-4b005913ad6b": {
-          "type": "testimonial",
-          "settings": {
-            "content": "Funktioniert viel besser als alle anderen Töpfe und sieht auch noch schön aus.",
-            "author": "Nutzerbewertung von Daniel"
-          }
-        }
-      },
-      "block_order": [
-        "cb2a5f48-053c-4329-b8e4-4b005913ad6b"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "subheading": "",
-        "title": "",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
       }
     },
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d": {
@@ -601,9 +557,7 @@
     "product-content",
     "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
-    "e869f547-3e9e-4633-bb8c-f96f1bc0a6d8",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
-    "61fffbe2-c90d-4ee8-9fe8-b5f6f7b2b40c",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
     "c418a397-5659-4b49-890b-a93e490c9842",
