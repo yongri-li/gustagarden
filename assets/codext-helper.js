@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             priceListContainer.parentNode.insertBefore(ratingsElement, priceListContainer);
 
             ratingsElement.style.marginTop = '-15px';
+            ratingsElement.style.marginBottom = '10px';
             ratingsElement.style.display = 'block';
         }
     }
