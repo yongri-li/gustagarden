@@ -209,6 +209,9 @@
       "block_order": [
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1"
       ],
+      "custom_css": [
+        ".image-with-text__wrapper {padding: 0!important;}"
+      ],
       "settings": {
         "reveal_on_scroll": false,
         "background_type": "boxed",
@@ -216,7 +219,7 @@
         "image_position": "left",
         "text_alignment": "left",
         "cycle_speed": 8,
-        "accent_background": "#f7f7f7",
+        "accent_background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
@@ -241,6 +244,9 @@
       "block_order": [
         "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1"
       ],
+      "custom_css": [
+        ".image-with-text__wrapper {padding: 0 !important;}"
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -248,7 +254,7 @@
         "image_position": "right",
         "text_alignment": "left",
         "cycle_speed": 8,
-        "accent_background": "#f7f7f7",
+        "accent_background": "rgba(0,0,0,0)",
         "text_color": "#000000",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
@@ -273,6 +279,9 @@
       "block_order": [
         "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1"
       ],
+      "custom_css": [
+        ".image-with-text__wrapper {padding: 0 !important;}"
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -280,7 +289,7 @@
         "image_position": "left",
         "text_alignment": "left",
         "cycle_speed": 8,
-        "accent_background": "#f7f7f7",
+        "accent_background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
