@@ -108,6 +108,12 @@
           "anchor_to_reviews_widget": false,
           "show_empty_stars": false
         }
+      },
+      "6744518860797519131": {
+        "type": "shopify:\/\/apps\/etranslate-translate\/blocks\/floating-selector\/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
