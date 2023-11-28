@@ -1,6 +1,6 @@
 <div
-  class="container py-8"
-  style="background-color: {{ section.settings.background_color }}">
+  class="container py-8 bg-no-repeat bg-cover bg-center"
+  style="background-color: {{ section.settings.background_color }}; {% if section.settings.background_image != blank %} background-image: url('{{ section.settings.background_image |  image_url: width: 800  }}') {% endif %}">
   <div class="flex justify-between">
     <div
       class="text-lg"
@@ -43,6 +43,11 @@
       "id": "background_color",
       "label": "Background Color",
       "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
     },
     {
       "type": "text",
