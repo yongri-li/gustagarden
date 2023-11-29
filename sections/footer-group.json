@@ -117,10 +117,10 @@
     },
     "41b847aa-181b-4776-b97a-ae3d80a89cac": {
       "type": "codext-Subfooter",
+      "disabled": true,
       "settings": {
         "text_color": "#ffffff",
         "background_color": "#ffffff",
-        "background_image": "shopify:\/\/shop_images\/GustaGarden-Team.jpg",
         "top-left-text": "",
         "top-right-text": ""
       }
