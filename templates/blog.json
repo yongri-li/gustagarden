@@ -1,36 +1,25 @@
 {
   "sections": {
-    "fafcb621-83a2-4f84-a676-08468f810a7a": {
-      "type": "slideshow",
-      "blocks": {
-        "template--16337047978157__fafcb621-83a2-4f84-a676-08468f810a7a-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HH_lp.jpg",
-            "text_position": "bottom_left",
-            "subheading": "",
-            "title": "Anleitungen",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "template--16337047978157__fafcb621-83a2-4f84-a676-08468f810a7a-image-1"
-      ],
+    "7271de26-ba74-415b-b75f-bffeb21f4c63": {
+      "type": "image-with-text-overlay",
       "settings": {
+        "reveal_on_scroll": true,
         "section_height": "small",
-        "transition_type": "sweep",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
+        "image": "shopify:\/\/shop_images\/HH_lp_46a91ed8-4373-45cf-8e9b-70f9d10126fd.jpg",
+        "subheading": "",
+        "title": "Anleitungen",
+        "content": "<p>Hier findest du Schritt-für-Schritt-Anleitungen zu allen Gusta Garden Produkten. Du hast noch weitere Fragen? Viele hilfreiche Antworten findest du in unseren <a href=\"https:\/\/www.gustagarden.com\/faq\/\">FAQs<\/a>. Solltest du auch hier nicht fündig werden, zögere nicht, uns unter <a href=\"mailto:office@gustagarden.com\">office@gustagarden.com<\/a> zu kontaktieren.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "bottom_left",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "main": {
@@ -45,7 +34,7 @@
     }
   },
   "order": [
-    "fafcb621-83a2-4f84-a676-08468f810a7a",
+    "7271de26-ba74-415b-b75f-bffeb21f4c63",
     "main"
   ]
 }
