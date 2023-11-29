@@ -94,14 +94,6 @@
             "menu": "footer"
           }
         },
-        "95f8a8b7-e78e-4830-801b-4a19692c9380": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner-footer_ab3b64b0-b40c-42c8-ab57-9ab7d91d33cc.png",
-            "image_width": 140
-          }
-        },
         "social_media": {
           "type": "social_media",
           "settings": {
@@ -114,7 +106,6 @@
         "eae72dad-69b9-47c3-b9ab-86483058c3d5",
         "c420f209-c679-48bd-bf6b-ee7064be5316",
         "links",
-        "95f8a8b7-e78e-4830-801b-4a19692c9380",
         "social_media"
       ],
       "settings": {
