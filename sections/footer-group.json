@@ -120,6 +120,7 @@
       "settings": {
         "text_color": "#000000",
         "background_color": "#ffffff",
+        "background_image": "shopify:\/\/shop_images\/GustaGarden-Team.jpg",
         "top-left-text": "",
         "top-right-text": ""
       }
