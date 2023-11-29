@@ -17,61 +17,6 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "text-with-icons": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-worldwide",
-            "custom_icon": "shopify:\/\/shop_images\/world-bg.png",
-            "custom_icon_width": 80,
-            "title": "20.000+ Kunden",
-            "content": ""
-          }
-        },
-        "item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-return-box",
-            "custom_icon": "shopify:\/\/shop_images\/return-bg.png",
-            "custom_icon_width": 80,
-            "title": "30 Tage Rückgaberecht",
-            "content": ""
-          }
-        },
-        "item-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-delivery-truck",
-            "custom_icon": "shopify:\/\/shop_images\/versand-bg.png",
-            "custom_icon_width": 80,
-            "title": "Versandkostenfrei ab 70€",
-            "content": ""
-          }
-        },
-        "item-4": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-warranty",
-            "custom_icon": "shopify:\/\/shop_images\/badge-bg.png",
-            "custom_icon_width": 80,
-            "title": "EFK ZERTIFIZIERT",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
-        "item-4"
-      ],
-      "settings": {
-        "background": "#c8dd02",
-        "text_color": "#1d1d1d"
-      }
-    },
     "d04bc233-9b21-408a-b0f0-9214911290ee": {
       "type": "codext-Text-with-Icons",
       "blocks": {
@@ -79,6 +24,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/badge-bg.png",
             "custom_icon_width": 50,
             "title": "20.000+ Kunden",
             "content": ""
@@ -88,6 +34,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/return-bg.png",
             "custom_icon_width": 50,
             "title": "30 Tage Rückgaberecht",
             "content": ""
@@ -97,6 +44,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/versand-bg.png",
             "custom_icon_width": 50,
             "title": "Versandkostenfrei ab 70€",
             "content": ""
@@ -106,6 +54,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/badge-bg.png",
             "custom_icon_width": 50,
             "title": "EFK ZERTIFIZIERT",
             "content": ""
@@ -121,7 +70,7 @@
       "settings": {
         "background": "#c8dd02",
         "text_color": "rgba(0,0,0,0)",
-        "stack_on_mobile": false
+        "stack_on_mobile": true
       }
     },
     "footer": {
@@ -186,7 +135,6 @@
   },
   "order": [
     "newsletter",
-    "text-with-icons",
     "d04bc233-9b21-408a-b0f0-9214911290ee",
     "footer",
     "41b847aa-181b-4776-b97a-ae3d80a89cac"
