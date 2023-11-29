@@ -475,10 +475,10 @@
           "type": "values",
           "settings": {
             "product": "fertigen-systeme",
-            "value_1": "<p>No<\/p>",
-            "value_2": "<p>Yes<\/p>",
-            "value_3": "<p>Yes<\/p>",
-            "value_4": "<p>No<\/p>",
+            "value_1": "<p>❌<\/p>",
+            "value_2": "<p>❌<\/p>",
+            "value_3": "<p>❌<\/p>",
+            "value_4": "<p>❌<\/p>",
             "value_5": ""
           }
         }
