@@ -1,4 +1,51 @@
 {
-  "sections": { "main": { "type": "main-blog", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "fafcb621-83a2-4f84-a676-08468f810a7a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16337047978157__fafcb621-83a2-4f84-a676-08468f810a7a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH_lp.jpg",
+            "text_position": "bottom_left",
+            "subheading": "",
+            "title": "Anleitungen",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--16337047978157__fafcb621-83a2-4f84-a676-08468f810a7a-image-1"
+      ],
+      "settings": {
+        "section_height": "small",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_blog_title": false,
+        "show_tags": true,
+        "show_category": true,
+        "show_excerpt": true,
+        "articles_per_page": 9
+      }
+    }
+  },
+  "order": [
+    "fafcb621-83a2-4f84-a676-08468f810a7a",
+    "main"
+  ]
 }
