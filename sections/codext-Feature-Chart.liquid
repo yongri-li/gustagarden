@@ -1,0 +1,234 @@
+<section class="container mx-auto pb-10">
+  <div class="grid md:grid-cols-12 gap-x-10">
+    <div class="col-span-3">
+      <div>{{ section.settings.subheading }}</div>
+      <h4 class="text-3xl font-bold">{{ section.settings.title }}</h4>
+
+      {{ section.settings.content }}
+    </div>
+
+    <div class="col-span-9 rounded p-10 bg-neutral-100">
+      <table class="w-full">
+        <thead>
+          <tr>
+            <th class="w-20"></th>
+            {% for block in section.blocks %}
+              {% if block.type == 'values' %}
+                <th class="text-center w-80 pb-5">
+                  <div class="flex flex-col items-center">
+                    <img
+                      src="{{ block.settings.product | img_url: '200x200' }}"
+                      alt=""
+                      loading="lazy"
+                      height="200"
+                      width="200"
+                      class="w-40 h-40 mb-2">
+                    <div class="text-xl">
+                      {{ block.settings.product.title }}
+                    </div>
+                    <div class="text-neutral-800 font-normal text-lg">
+                      {{ block.settings.product.price | money }}
+                    </div>
+
+                    <a href="{{ block.settings.product.url }}">
+                      <button class="mt-3 bg-primary px-6 py-3">View</button>
+                    </a>
+                  </div>
+                </th>
+              {% endif %}
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody class="text-lg border-0 border-t border-solid border-neutral-300 w-full">
+          {% for block in section.blocks %}
+            {% if block.type == 'headings' %}
+              {% for setting in block.settings %}
+                {% capture heading_value %}
+                  {% case forloop.index %}
+                    {% when 1 %}{{ block.settings.heading_1 }}
+                    {% when 2 %}{{ block.settings.heading_2 }}
+                    {% when 3 %}{{ block.settings.heading_3 }}
+                    {% when 4 %}{{ block.settings.heading_4 }}
+                    {% when 5 %}{{ block.settings.heading_5 }}
+                  {% endcase %}
+                {% endcapture %}
+
+                {% capture values %}
+                  {% for valBlock in section.blocks %}
+                    {% if valBlock.type == 'values' %}
+                      {% case forloop.parentloop.index %}
+                        {% when 1 %}{{ valBlock.settings.value_1 }}
+                        {% when 2 %}{{ valBlock.settings.value_2 }}
+                        {% when 3 %}{{ valBlock.settings.value_3 }}
+                        {% when 4 %}{{ valBlock.settings.value_4 }}
+                        {% when 5 %}{{ valBlock.settings.value_5 }}
+                      {% endcase %}
+                    {% endif %}
+                  {% endfor %}
+                {% endcapture %}
+
+                {% unless heading_value == blank and values == blank %}
+                  <tr class="border-0 border-t border-solid border-neutral-300">
+                    <td class="font-bold w-40">
+                      {{ heading_value }}
+                    </td>
+
+                    {% liquid
+                      assign values = values | split: '<p>' | join: '' | split: '</p>'
+                    %}
+                    {% for value in values %}
+                      <td class="text-center w-40 py-8">
+                        {{ value }}
+                      </td>
+                    {% endfor %}
+                  </tr>
+                {% endunless %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Codext - Feature chart",
+  "class": "shopify-section--feature-chart",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Compare"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Product specification"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Give your customers useful information about your products and showcase differences between them.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Headings column",
+      "type": "headings",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "A heading without values is hidden automatically."
+        },
+        {
+          "type": "text",
+          "id": "heading_1",
+          "label": "Heading 1"
+        },
+        {
+          "type": "text",
+          "id": "heading_2",
+          "label": "Heading 2"
+        },
+        {
+          "type": "text",
+          "id": "heading_3",
+          "label": "Heading 3"
+        },
+        {
+          "type": "text",
+          "id": "heading_4",
+          "label": "Heading 4"
+        },
+        {
+          "type": "text",
+          "id": "heading_5",
+          "label": "Heading 5"
+        }
+      ]
+    },
+    {
+      "name": "Values column",
+      "type": "values",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product",
+          "info": "Select an optional product to connect metafields or to show product information."
+        },
+        {
+          "type": "richtext",
+          "id": "value_1",
+          "label": "Value 1"
+        },
+        {
+          "type": "richtext",
+          "id": "value_2",
+          "label": "Value 2"
+        },
+        {
+          "type": "richtext",
+          "id": "value_3",
+          "label": "Value 3"
+        },
+        {
+          "type": "richtext",
+          "id": "value_4",
+          "label": "Value 4"
+        },
+        {
+          "type": "richtext",
+          "id": "value_5",
+          "label": "Value 5"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature chart",
+      "blocks": [
+        {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Heading 1",
+            "heading_2": "Heading 2",
+            "heading_3": "Heading 3",
+            "heading_4": "Heading 4"
+          }
+        },
+        {
+          "type": "values",
+          "settings": {
+            "value_1": "<p>Yes</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>No</p>",
+            "value_4": "<p>No</p>"
+          }
+        },
+        {
+          "type": "values",
+          "settings": {
+            "value_1": "<p>No</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>Yes</p>",
+            "value_4": "<p>No</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
