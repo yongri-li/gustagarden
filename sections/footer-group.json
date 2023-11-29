@@ -72,6 +72,58 @@
         "text_color": "#1d1d1d"
       }
     },
+    "d04bc233-9b21-408a-b0f0-9214911290ee": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "sections--16337047781549__d04bc233-9b21-408a-b0f0-9214911290ee-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon_width": 50,
+            "title": "20.000+ Kunden",
+            "content": ""
+          }
+        },
+        "sections--16337047781549__d04bc233-9b21-408a-b0f0-9214911290ee-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon_width": 50,
+            "title": "30 Tage Rückgaberecht",
+            "content": ""
+          }
+        },
+        "sections--16337047781549__d04bc233-9b21-408a-b0f0-9214911290ee-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon_width": 50,
+            "title": "Versandkostenfrei ab 70€",
+            "content": ""
+          }
+        },
+        "sections--16337047781549__d04bc233-9b21-408a-b0f0-9214911290ee-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon_width": 50,
+            "title": "EFK ZERTIFIZIERT",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "sections--16337047781549__d04bc233-9b21-408a-b0f0-9214911290ee-item-1",
+        "sections--16337047781549__d04bc233-9b21-408a-b0f0-9214911290ee-item-2",
+        "sections--16337047781549__d04bc233-9b21-408a-b0f0-9214911290ee-item-3",
+        "sections--16337047781549__d04bc233-9b21-408a-b0f0-9214911290ee-item-4"
+      ],
+      "settings": {
+        "background": "#c8dd02",
+        "text_color": "rgba(0,0,0,0)",
+        "stack_on_mobile": false
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -135,6 +187,7 @@
   "order": [
     "newsletter",
     "text-with-icons",
+    "d04bc233-9b21-408a-b0f0-9214911290ee",
     "footer",
     "41b847aa-181b-4776-b97a-ae3d80a89cac"
   ]

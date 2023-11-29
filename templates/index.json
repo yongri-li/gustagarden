@@ -285,6 +285,58 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
+    },
+    "352dd0af-2157-4bd0-9eac-5c82e5294382": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "template--16337048141997__352dd0af-2157-4bd0-9eac-5c82e5294382-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon_width": 50,
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+          }
+        },
+        "template--16337048141997__352dd0af-2157-4bd0-9eac-5c82e5294382-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon_width": 50,
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.<\/p>"
+          }
+        },
+        "template--16337048141997__352dd0af-2157-4bd0-9eac-5c82e5294382-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon_width": 50,
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely.<\/p>"
+          }
+        },
+        "template--16337048141997__352dd0af-2157-4bd0-9eac-5c82e5294382-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon_width": 50,
+            "title": "Contact us",
+            "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048141997__352dd0af-2157-4bd0-9eac-5c82e5294382-item-1",
+        "template--16337048141997__352dd0af-2157-4bd0-9eac-5c82e5294382-item-2",
+        "template--16337048141997__352dd0af-2157-4bd0-9eac-5c82e5294382-item-3",
+        "template--16337048141997__352dd0af-2157-4bd0-9eac-5c82e5294382-item-4"
+      ],
+      "settings": {
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "stack_on_mobile": true
+      }
     }
   },
   "order": [
@@ -293,6 +345,7 @@
     "featured-collections",
     "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
-    "1700268763cea3d046"
+    "1700268763cea3d046",
+    "352dd0af-2157-4bd0-9eac-5c82e5294382"
   ]
 }
