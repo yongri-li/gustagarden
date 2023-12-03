@@ -18,6 +18,24 @@
         "show_content": true
       }
     },
+    "93cd9ab2-c351-4d92-829b-5e7a41b07d25": {
+      "type": "main-article-gg",
+      "settings": {
+        "index": 1,
+        "page_width": "800",
+        "show_title": true,
+        "show_content": true
+      }
+    },
+    "7f537d98-042a-48d3-9844-caae0931d7c1": {
+      "type": "main-article-gg",
+      "settings": {
+        "index": 2,
+        "page_width": "800",
+        "show_title": true,
+        "show_content": true
+      }
+    },
     "blog-post-prev-next": {
       "type": "blog-post-prev-next",
       "settings": {
@@ -33,6 +51,8 @@
   "order": [
     "blog-post-banner",
     "main",
+    "93cd9ab2-c351-4d92-829b-5e7a41b07d25",
+    "7f537d98-042a-48d3-9844-caae0931d7c1",
     "blog-post-prev-next",
     "blog-post-comments"
   ]
