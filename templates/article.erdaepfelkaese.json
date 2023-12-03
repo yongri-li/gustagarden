@@ -17,6 +17,14 @@
         "show_share_buttons": true
       }
     },
+    "10994b2a-44dc-4d23-b67f-f5f9f7bf9458": {
+      "type": "main-article-gg",
+      "settings": {
+        "page_width": "800",
+        "show_title": true,
+        "show_content": true
+      }
+    },
     "blog-post-prev-next": {
       "type": "blog-post-prev-next",
       "settings": {
@@ -32,6 +40,7 @@
   "order": [
     "blog-post-banner",
     "main",
+    "10994b2a-44dc-4d23-b67f-f5f9f7bf9458",
     "blog-post-prev-next",
     "blog-post-comments"
   ]
