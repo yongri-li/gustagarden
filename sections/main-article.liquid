@@ -176,7 +176,6 @@
             <div
               class="rte"
               {{ block.shopify_attributes }}>
-
               {% assign article_content = article.content
                 | remove: '[hr]'
                 | remove: '[grid]'
@@ -194,7 +193,6 @@
                   {{ article_content[index] }}
                 {%- endif -%}
               {%- endfor -%}
-              
             </div>
           </div>
         </div>
@@ -243,13 +241,14 @@
     {
       "type": "split_content",
       "name": "Split Content",
-      "settings": [{
-        "type": "number",
-        "id": "index",
-        "label": "Index"
-      }
-    ],
+      "settings": [
+        {
+          "type": "number",
+          "id": "index",
+          "label": "Index"
+        }
+      ]
     }
-  ],
+  ]
 }
 {% endschema %}
