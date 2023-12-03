@@ -176,7 +176,9 @@
             <div
               class="rte"
               {{ block.shopify_attributes }}>
-              {{- article.content -}}
+              {%- if show_content -%}
+                {{- article.content -}}
+              {%- endif -%}
             </div>
           </div>
         </div>
@@ -212,6 +214,12 @@
       "type": "checkbox",
       "id": "show_share_buttons",
       "label": "Show share buttons",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_content",
+      "label": "Show content",
       "default": true
     }
   ]
