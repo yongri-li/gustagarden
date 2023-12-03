@@ -59,11 +59,11 @@
   }
 {% endstyle %}
 
-<div class="content-wrapper flex flex-col md:flex-row relative">
-  <div class="page-width-{{ section.settings.page_width }}">
+<div class="container flex flex-col md:flex-row relative">
+  <div class="article__inner page-width-{{ section.settings.page_width }}">
     <div class="relative py-5 md:py-16 bg-white overflow-hidden">
       <div class="relative mx-5">
-        <div class="article_content mx-auto">
+        <div class="article__content mx-auto">
           {% assign article_content = article.content
             | remove: '[hr]'
             | remove: '[grid]'
