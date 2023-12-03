@@ -76,6 +76,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer"
+          }
+        },
         "eae72dad-69b9-47c3-b9ab-86483058c3d5": {
           "type": "links",
           "settings": {
@@ -88,12 +94,6 @@
             "menu": "gusta-garden"
           }
         },
-        "links": {
-          "type": "links",
-          "settings": {
-            "menu": "footer"
-          }
-        },
         "social_media": {
           "type": "social_media",
           "settings": {
@@ -103,9 +103,9 @@
         }
       },
       "block_order": [
+        "links",
         "eae72dad-69b9-47c3-b9ab-86483058c3d5",
         "c420f209-c679-48bd-bf6b-ee7064be5316",
-        "links",
         "social_media"
       ],
       "settings": {
