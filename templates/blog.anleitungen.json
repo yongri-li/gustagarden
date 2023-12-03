@@ -45,7 +45,7 @@
       "settings": {
         "show_blog_title": false,
         "show_tags": false,
-        "show_category": true,
+        "show_category": false,
         "show_excerpt": true,
         "articles_per_page": 9
       }
