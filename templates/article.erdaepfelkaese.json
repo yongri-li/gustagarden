@@ -14,12 +14,14 @@
         "show_on_scroll_navigation": true,
         "show_author": false,
         "show_date": true,
-        "show_share_buttons": true
+        "show_share_buttons": true,
+        "show_content": true
       }
     },
     "10994b2a-44dc-4d23-b67f-f5f9f7bf9458": {
       "type": "main-article-gg",
       "settings": {
+        "index": 1,
         "page_width": "800",
         "show_title": true,
         "show_content": true
