@@ -27,12 +27,21 @@
       "settings": {
         "show_gravatar": true
       }
+    },
+    "74e26238-301c-47d3-84ec-da4cfb4175f3": {
+      "type": "main-article-gg",
+      "settings": {
+        "page_width": "800",
+        "show_title": true,
+        "show_content": true
+      }
     }
   },
   "order": [
     "blog-post-banner",
     "main",
     "blog-post-prev-next",
-    "blog-post-comments"
+    "blog-post-comments",
+    "74e26238-301c-47d3-84ec-da4cfb4175f3"
   ]
 }
