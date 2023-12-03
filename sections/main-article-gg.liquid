@@ -4,6 +4,7 @@
   {%- assign number_of_comments = article.comments_count | plus: 1 -%}
 {% endif %}
 
+
 {% style %}
   .article_content {
     color: #464646 !important;
@@ -59,11 +60,11 @@
   }
 {% endstyle %}
 
-<div class="container flex flex-col md:flex-row relative">
-  <div class="article__inner page-width-{{ section.settings.page_width }}">
+<div class="content-wrapper flex flex-col md:flex-row relative">
+  <div class="page-width-{{ section.settings.page_width }}">
     <div class="relative py-5 md:py-16 bg-white overflow-hidden">
       <div class="relative mx-5">
-        <div class="article__content mx-auto">
+        <div class="article_content mx-auto">
           {% assign article_content = article.content
             | remove: '[hr]'
             | remove: '[grid]'
@@ -82,7 +83,7 @@
 
 {% schema %}
 {
-  "name": "Main article GG",
+  "name": "Blog - Split Conten",
   "class": "main-article-gg",
   "settings": [
     {
@@ -129,7 +130,7 @@
   ],
   "presets": [
     {
-      "name": "Main Article GG"
+      "name": "Blog - Split Content"
     }
   ]
 }
