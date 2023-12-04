@@ -66,8 +66,8 @@
 </style>
 
 <section class="section {% unless blends_with_background %}section--flush{% endunless %}">
-  <div class="section__color-wrapper">
-    <div class="container {% unless blends_with_background %}vertical-breather{% endunless %} article__inner">
+  <div class=" section__color-wrapper container">
+    <div class="article__inner {% unless blends_with_background %}vertical-breather{% endunless %}">
       <div class="article__content">
         <div class="rte">
           {%- if section.blocks.size > 1
@@ -128,7 +128,7 @@
     
           <div class="featured-collections">
             {%- for block in section.blocks -%}
-              {%- assign collection = article.metafields.custom.produkte -%}
+              {%- assign products = article.metafields.custom.produkte.value -%}
               {%- assign smallest_image_aspect_ratio = 0 -%}
     
               <product-list
@@ -154,7 +154,7 @@
                     -%}
                     {%- capture sizes_attribute -%}(max-width: 740px) 52vw, calc(min(100vw - 80px, 1520px) / {{ section.settings.products_per_row }} - {{ gap_width | ceil }}px){%- endcapture -%}
     
-                    {%- for product in collection.products
+                    {%- for product in products
                       limit: section.settings.products_count
                     -%}
                       {%- if product.featured_media -%}
