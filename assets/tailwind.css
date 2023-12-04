@@ -477,6 +477,10 @@
   white-space: nowrap;
 }
 
+.whitespace-pre {
+  white-space: pre;
+}
+
 .whitespace-pre-line {
   white-space: pre-line;
 }

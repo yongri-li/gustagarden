@@ -90,18 +90,20 @@
               {%- endif -%}
             </div>
 
-            {%- if article.tags.size > 0 -%}
-              <div class="article__tags">
-                <span class="article__tags-label heading heading--small">{{ 'article.general.tags' | t }}</span>
+            {%- if section.settings.show_tags? -%}
+              {%- if article.tags.size > 0 -%}
+                <div class="article__tags">
+                  <span class="article__tags-label heading heading--small">{{ 'article.general.tags' | t }}</span>
 
-                <ul class="article__tags-list list--unstyled" role="list">
-                  {%- for tag in article.tags -%}
-                    <li class="article__tags-item" role="listitem">
-                      <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="text--subdued link">{{ tag }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              </div>
+                  <ul class="article__tags-list list--unstyled" role="list">
+                    {%- for tag in article.tags -%}
+                      <li class="article__tags-item" role="listitem">
+                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="text--subdued link">{{ tag }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endif -%}
             {%- endif -%}
 
             {%- if section.settings.show_share_buttons -%}
@@ -192,7 +194,7 @@
                       !px-4
                       ">
                       {%- render 'heroicon-arrow-down-tray' -%}
-                      <span class="no-underline normal-case text-xs">
+                      <span class="no-underline normal-case text-xs whitespace-pre">
                         {%- if file.alt != blank -%}
                           Rezept herunterladen {%comment%}{{ file.alt }}{%endcomment%}
                         {%- else -%}
@@ -244,11 +246,7 @@
                       class="button button--primary !no-underline flex justify-center items-center gap-4">
                       {%- render 'heroicon-arrow-down-tray' -%}
                       <span class="no-underline">
-                        {%- if file.alt != blank -%}
-                          {{ file.alt }}
-                        {%- else -%}
-                          Download
-                        {%- endif -%}
+                        Rezept herunterladen
                       </span>
                     </a>
                   {% endfor %}
@@ -284,6 +282,12 @@
       "type": "checkbox",
       "id": "show_author",
       "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show Tags",
       "default": true
     },
     {
