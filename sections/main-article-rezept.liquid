@@ -172,26 +172,53 @@
             </div>
           {%- endif -%}
 
-          <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
-            {%- if article.metafields.custom.uebersicht != blank -%}
-              <div class="rte flex flex-col gap-3 border-l-0 border-t-0 border-b-0 border-r border-slate-400 border-solid">
-                <h3>Übersicht</h3>
-                {{ article.metafields.custom.uebersicht | metafield_tag }}
-              </div>
-            {%- endif -%}
-            {%- if article.metafields.custom.zutaten != blank -%}
-              <div class="rte flex flex-col gap-3">
-                <h3>Zutaten</h3>
-                {{ article.metafields.custom.zutaten | metafield_tag }}
-              </div>
-            {%- endif -%}
-          </div>
+          <div class="flex flex-col gap-8">
+            <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
+              {%- if article.metafields.custom.uebersicht != blank -%}
+                <div class="rte flex flex-col gap-3 border-l-0 border-t-0 border-b-0 border-r border-slate-400 border-solid">
+                  <h3>Übersicht</h3>
+                  {{ article.metafields.custom.uebersicht | metafield_tag }}
+                </div>
+              {%- endif -%}
+              {%- if article.metafields.custom.zutaten != blank -%}
+                <div class="rte flex flex-col gap-3">
+                  <h3>Zutaten</h3>
+                  {{ article.metafields.custom.zutaten | metafield_tag }}
+                </div>
+              {%- endif -%}
+            </div>
 
-          <div class="article__content">
-            <div
-              class="rte"
-              {{ block.shopify_attributes }}>
-              {{ article.content }}
+            <div class="article__content">
+              <div
+                class="rte"
+                {{ block.shopify_attributes }}>
+                {{ article.content }}
+              </div>
+            </div>
+
+            <div class="article__content">
+              <div
+                class="rte"
+                {{ block.shopify_attributes }}>
+                <h3>Downloads</h3>
+                <div class="flex flex-wrap gap-4">
+                  {% for file in article.metafields.custom.downloads.value %}
+                    <a
+                      href="{{ file.file | file_url }}"
+                      target="_blank"
+                      class="button button--primary !no-underline flex justify-center items-center gap-4">
+                      {%- render 'heroicon-arrow-down-tray' -%}
+                      <span class="no-underline">
+                        {%- if file.alt != blank -%}
+                          {{ file.alt }}
+                        {%- else -%}
+                          Download
+                        {%- endif -%}
+                      </span>
+                    </a>
+                  {% endfor %}
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -362,6 +362,10 @@
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .\!content-center {
   align-content: center !important;
 }
@@ -696,6 +700,10 @@
 
 .no-underline {
   text-decoration-line: none;
+}
+
+.\!no-underline {
+  text-decoration-line: none !important;
 }
 
 .opacity-25 {
