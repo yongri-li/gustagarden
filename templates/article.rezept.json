@@ -15,10 +15,10 @@
       "type": "main-article-rezept",
       "settings": {
         "show_on_scroll_navigation": true,
-        "show_author": true,
-        "show_date": true,
+        "show_author": false,
+        "show_date": false,
         "show_share_buttons": true,
-        "show_content": true
+        "show_content": false
       }
     },
     "46382bc0-a5c0-428d-a85d-70532faa0095": {
