@@ -1,0 +1,18 @@
+{% schema %}
+{
+  "name": "Codext - Blog Author",
+  "presets": [
+    {
+      "name": "Codext - Blog Author"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="bg-gray-50">
+  <div class="container mx-auto p-6">
+    <div>
+      {{ article.metafields.custom.author.author.beschreibung | metafield_tag }}
+    </div>
+  </div>
+</section>
