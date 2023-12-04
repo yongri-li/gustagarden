@@ -223,59 +223,60 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9": {
-      "type": "text-with-icons",
+    "27cb7d27-1b86-4380-9deb-c22a8ae260d5": {
+      "type": "codext-Text-with-Icons",
       "blocks": {
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1": {
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-1": {
           "type": "item",
           "settings": {
             "icon": "picto-box",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b.png",
-            "custom_icon_width": 40,
+            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_fd341798-51ea-4113-ad7d-5060b9a9d7d5.png",
+            "custom_icon_width": 50,
             "title": "ideal für Indoorund Outdoor",
             "content": ""
           }
         },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3": {
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-2": {
           "type": "item",
           "settings": {
-            "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f.png",
-            "custom_icon_width": 40,
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f_82950946-1ae6-4c94-a857-bd0b89b5b67e.png",
+            "custom_icon_width": 50,
             "title": "kinderleichter Aufbau",
             "content": ""
           }
         },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-3": {
           "type": "item",
           "settings": {
-            "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_wicking.png",
-            "custom_icon_width": 40,
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_wicking_1_70d01dc8-a337-4be7-8b90-d431d4d053ad.png",
+            "custom_icon_width": 50,
             "title": "einfache Bewässerung",
             "content": ""
           }
         },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4": {
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-4": {
           "type": "item",
           "settings": {
             "icon": "picto-email",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU.png",
-            "custom_icon_width": 40,
+            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU_07f9d8fb-0197-4274-b601-e0f3b0f43b5b.png",
+            "custom_icon_width": 50,
             "title": "designed in Austriamade in the EU",
             "content": ""
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4"
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-1",
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-2",
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-3",
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-4"
       ],
       "settings": {
         "background": "#c8dd02",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "stack_on_mobile": true
       }
     },
     "93e61ce0-1e10-47b1-a69a-07361399d8ef": {
@@ -588,7 +589,7 @@
     "product-content",
     "9020341f-56b0-42f2-848e-1254c59e5c4d",
     "6713bc99-49a0-4d7d-9f5b-15f3ab3199f6",
-    "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9",
+    "27cb7d27-1b86-4380-9deb-c22a8ae260d5",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
