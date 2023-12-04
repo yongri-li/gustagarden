@@ -52,7 +52,7 @@
       "settings": {
         "index": 2,
         "page_width": "800",
-        "show_title": true,
+        "show_title": false,
         "show_content": true
       }
     },
