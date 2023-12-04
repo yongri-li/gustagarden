@@ -69,48 +69,50 @@
         <div class="container">
           <div class="gallery__list">
             {%- for block in section.blocks -%}
-              <gallery-item
-                class="gallery__item"
-                {{ block.shopify_attributes }}>
-                <figure class="gallery__figure">
-                  {%- if block.settings.image -%}
-                    {%- assign mobile_size = 370
-                      | times: block.settings.image.aspect_ratio
-                      | ceil
-                    -%}
-                    {%- assign tablet_size = 520
-                      | times: block.settings.image.aspect_ratio
-                      | ceil
-                    -%}
-                    {%- assign desktop_size = 600
-                      | times: block.settings.image.aspect_ratio
-                      | ceil
-                    -%}
-                    {%- capture sizes_attribute -%}(max-width: 740px) {{ mobile_size }}px, (max-width: 999px) {{ tablet_size }}px, {{ desktop_size }}px{%- endcapture -%}
+              {%- for bild in article.metafields.custom.bilder.valu -%}
+                <gallery-item
+                  class="gallery__item"
+                  {{ block.shopify_attributes }}>
+                  <figure class="gallery__figure">
+                    {%- if bild -%}
+                      {%- assign mobile_size = 370
+                        | times: bild.aspect_ratio
+                        | ceil
+                      -%}
+                      {%- assign tablet_size = 520
+                        | times: bild.aspect_ratio
+                        | ceil
+                      -%}
+                      {%- assign desktop_size = 600
+                        | times: bild.aspect_ratio
+                        | ceil
+                      -%}
+                      {%- capture sizes_attribute -%}(max-width: 740px) {{ mobile_size }}px, (max-width: 999px) {{ tablet_size }}px, {{ desktop_size }}px{%- endcapture -%}
 
-                    {{
-                      block.settings.image
-                      | image_url: width: block.settings.image.width
-                      | image_tag:
-                        loading: 'lazy',
-                        sizes: sizes_attribute,
-                        widths: '300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000',
-                        class: 'gallery__image'
-                    }}
-                  {%- else -%}
-                    {{-
-                      'image'
-                      | placeholder_svg_tag: 'gallery__image gallery__image placeholder-background'
-                    -}}
-                  {%- endif -%}
+                      {{
+                        bild
+                        | image_url: width: bild.width
+                        | image_tag:
+                          loading: 'lazy',
+                          sizes: sizes_attribute,
+                          widths: '300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000',
+                          class: 'gallery__image'
+                      }}
+                    {%- else -%}
+                      {{-
+                        'image'
+                        | placeholder_svg_tag: 'gallery__image gallery__image placeholder-background'
+                      -}}
+                    {%- endif -%}
 
-                  {%- if block.settings.caption != blank -%}
-                    <figcaption class="gallery__caption rte">
-                      {{- block.settings.caption -}}
-                    </figcaption>
-                  {%- endif -%}
-                </figure>
-              </gallery-item>
+                    {%- if block.settings.caption != blank -%}
+                      <figcaption class="gallery__caption rte">
+                        {{- block.settings.caption -}}
+                      </figcaption>
+                    {%- endif -%}
+                  </figure>
+                </gallery-item>
+              {%- endfor -%}
             {%- endfor -%}
           </div>
         </div>
