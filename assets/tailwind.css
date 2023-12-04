@@ -188,6 +188,11 @@
   margin-right: auto;
 }
 
+.\!my-0 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -222,6 +227,10 @@
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.\!mt-4 {
+  margin-top: 1rem !important;
 }
 
 .block {
@@ -294,6 +303,10 @@
 
 .h-full {
   height: 100%;
+}
+
+.h-\[45vw\] {
+  height: 45vw;
 }
 
 .w-1\/4 {
@@ -589,6 +602,11 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.\!bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -666,12 +684,25 @@
   padding-bottom: 2rem;
 }
 
+.\!py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.\!pb-6 {
+  padding-bottom: 1.5rem !important;
+}
+
+.\!pb-12 {
+  padding-bottom: 3rem !important;
 }
 
 .text-left {
@@ -1074,6 +1105,10 @@ input:focus-within {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[25vw\] {
+    height: 25vw;
   }
 
   .md\:w-auto {

@@ -42,9 +42,6 @@
     right: -28px;
   }
 
-  #shopify-section-{{ section.id }} .gallery__image {
-    height: 20vw
-  }
 </style>
 
 {%- assign size =  article.metafields.custom.bilder | split: ',' | uniq -%}
@@ -113,7 +110,7 @@
                             loading: 'lazy',
                             sizes: sizes_attribute,
                             widths: '300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000',
-                            class: 'gallery__image'
+                            class: 'gallery__image h-[45vw] md:h-[25vw]'
                         }}
                       {%- else -%}
                         {{-

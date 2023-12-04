@@ -6,7 +6,7 @@
   {%- if article.image -%}
     <a
       href="{{ article.url }}"
-      class="article-item__image-container">
+      class="article-item__image-container mb-0">
       {{-
         article.image
         | image_url: width: article.image.width
@@ -14,7 +14,7 @@
           loading: 'lazy',
           sizes: '(max-width: 740px) 81vw, (max-width: 999px) 37vw, 425px',
           sizes: '600,700,800,1000,1200,1400,1600,1800,2000',
-          class: 'article-item__image'
+          class: 'article-item__image !m-0'
       -}}
 
       {%- if use_featured_layout and is_first -%}
@@ -54,9 +54,9 @@
       </a>
     {%- endif -%}
 
-    <h3 class="article-item__title heading {{ heading_size }}">
-      <a href="{{ article.url }}">{{ article.title }}</a>
-    </h3>
+    <div class="article-item__title heading {{ heading_size }}">
+      <a href="{{ article.url }}" class="!no-underline !pt-4">{{ article.title }}</a>
+    </div>
 
     {%- if section.settings.show_excerpt
       and article.excerpt_or_content != blank
