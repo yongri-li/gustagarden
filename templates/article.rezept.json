@@ -17,7 +17,7 @@
         "show_on_scroll_navigation": true,
         "show_author": false,
         "show_date": false,
-        "show_share_buttons": true,
+        "show_share_buttons": false,
         "show_content": false
       }
     },
