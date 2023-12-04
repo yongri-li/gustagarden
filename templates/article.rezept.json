@@ -15,7 +15,7 @@
       "type": "main-article-rezept",
       "settings": {
         "show_on_scroll_navigation": true,
-        "show_author": false,
+        "show_author": true,
         "show_date": true,
         "show_share_buttons": true,
         "show_content": true
