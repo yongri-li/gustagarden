@@ -11,6 +11,7 @@
     "74e26238-301c-47d3-84ec-da4cfb4175f3": {
       "type": "main-article-gg",
       "settings": {
+        "index": 1,
         "page_width": "800",
         "show_title": true,
         "show_content": true
