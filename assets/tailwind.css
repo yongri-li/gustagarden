@@ -705,6 +705,10 @@
   padding-bottom: 3rem !important;
 }
 
+.\!pt-4 {
+  padding-top: 1rem !important;
+}
+
 .text-left {
   text-align: left;
 }
