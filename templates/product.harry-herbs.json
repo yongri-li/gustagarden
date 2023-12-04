@@ -223,6 +223,38 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "08322f0c-3db3-4375-a5b9-634d4b9cb958": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16409074827437__08322f0c-3db3-4375-a5b9-634d4b9cb958-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/erstes-Foto-oben-anzucht.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Lerne HARRY HERBS kennen",
+            "content": "<p>Egal ob mit oder ohne Erde, Anzucht aus Samen, Anbau von Microgreens oder herkömmlichen Kräutern aus dem Supermarkt: der smarte Kräutergarten mit integriertem Wasserreservoir und Anzuchthaube wird garantiert allen Anforderungen gerecht. Das beste daran? HARRY HERBS kann das ganze Jahr sowohl indoor als auch outdoor verwendet werden.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409074827437__08322f0c-3db3-4375-a5b9-634d4b9cb958-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "27cb7d27-1b86-4380-9deb-c22a8ae260d5": {
       "type": "codext-Text-with-Icons",
       "blocks": {
@@ -589,6 +621,7 @@
     "product-content",
     "9020341f-56b0-42f2-848e-1254c59e5c4d",
     "6713bc99-49a0-4d7d-9f5b-15f3ab3199f6",
+    "08322f0c-3db3-4375-a5b9-634d4b9cb958",
     "27cb7d27-1b86-4380-9deb-c22a8ae260d5",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
