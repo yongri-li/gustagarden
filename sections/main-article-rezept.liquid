@@ -177,6 +177,32 @@
                   <div class="text-lg font-bold" >{{ article.metafields.custom.author.value.name }}</div>
                 </div>        
               </div>
+              <div>
+                <div class="flex flex-wrap gap-4">
+                  {% for file in article.metafields.custom.downloads.value %}
+                    <a
+                      href="{{ file.file | file_url }}"
+                      target="_blank"
+                      class="button 
+                      button--primary 
+                      !no-underline 
+                      flex items-center gap-4
+                      w-full
+                      !h-8
+                      !px-4
+                      ">
+                      {%- render 'heroicon-arrow-down-tray' -%}
+                      <span class="no-underline normal-case text-xs">
+                        {%- if file.alt != blank -%}
+                          {{ file.alt }}
+                        {%- else -%}
+                          PDF
+                        {%- endif -%}
+                      </span>
+                    </a>
+                  {% endfor %}
+                </div>
+              </div>
               {{- blog_post_info -}}
             </div>
           {%- endif -%}
