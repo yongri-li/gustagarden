@@ -22,11 +22,6 @@
         "show_content": false
       }
     },
-    "46382bc0-a5c0-428d-a85d-70532faa0095": {
-      "type": "codext-blog-author",
-      "settings": {
-      }
-    },
     "62cb6170-fd1d-4b4b-bb0b-95ecdad69121": {
       "type": "codext-rezept-products",
       "blocks": {
@@ -55,6 +50,11 @@
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "46382bc0-a5c0-428d-a85d-70532faa0095": {
+      "type": "codext-blog-author",
+      "settings": {
       }
     },
     "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1": {
@@ -103,8 +103,8 @@
   "order": [
     "blog-post-banner",
     "main",
-    "46382bc0-a5c0-428d-a85d-70532faa0095",
     "62cb6170-fd1d-4b4b-bb0b-95ecdad69121",
+    "46382bc0-a5c0-428d-a85d-70532faa0095",
     "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1",
     "blog-post-prev-next",
     "blog-post-comments"
