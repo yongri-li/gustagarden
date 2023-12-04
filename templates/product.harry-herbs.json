@@ -144,17 +144,7 @@
             "icon": "picto-box",
             "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b.png",
             "custom_icon_width": 40,
-            "title": "ideal für den Balkonoder Terrasse",
-            "content": ""
-          }
-        },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
-            "custom_icon_width": 40,
-            "title": "stabileRankhilfe",
+            "title": "ideal für Indoorund Outdoor",
             "content": ""
           }
         },
@@ -168,12 +158,22 @@
             "content": ""
           }
         },
+        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_wicking.png",
+            "custom_icon_width": 40,
+            "title": "einfache Bewässerung",
+            "content": ""
+          }
+        },
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4": {
           "type": "item",
           "settings": {
             "icon": "picto-email",
             "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU.png",
-            "custom_icon_width": 55,
+            "custom_icon_width": 40,
             "title": "designed in Austriamade in the EU",
             "content": ""
           }
@@ -181,8 +181,8 @@
       },
       "block_order": [
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3",
+        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4"
       ],
       "settings": {
