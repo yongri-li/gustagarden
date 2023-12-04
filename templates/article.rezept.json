@@ -12,7 +12,7 @@
       }
     },
     "main": {
-      "type": "main-article",
+      "type": "main-article-rezept",
       "settings": {
         "show_on_scroll_navigation": true,
         "show_author": false,
