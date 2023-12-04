@@ -3,7 +3,7 @@
     "blog-post-banner": {
       "type": "blog-post-banner",
       "settings": {
-        "show_category": false,
+        "show_category": true,
         "blog_header_background": "#f5f5f5",
         "blog_header_text_color": "#282828"
       }
