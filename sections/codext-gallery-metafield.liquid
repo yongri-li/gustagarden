@@ -33,7 +33,17 @@
     --prev-next-button-background: var(--text-color);
     --prev-next-button-color: var(--section-background);
 
+    --gallery-image-height: 19vw;
+
     --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+  }
+
+  #shopify-section-{{ section.id }} .gallery__prev-next-buttons {
+    right: -28px;
+  }
+
+  #shopify-section-{{ section.id }} .gallery__image {
+    height: 20vw
   }
 </style>
 
@@ -139,7 +149,7 @@
               </prev-next-buttons>
             {% endif %}
 
-            <div class="gallery__progress-bar-wrapper container">
+            <div class="gallery__progress-bar-wrapper">
               <span
                 class="gallery__progress-bar progress-bar"
                 style="--divider: {{ size.size }}"></span>
