@@ -89,15 +89,6 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
-    "7f537d98-042a-48d3-9844-caae0931d7c1": {
-      "type": "main-article-gg",
-      "settings": {
-        "index": 2,
-        "page_width": "800",
-        "show_title": true,
-        "show_content": true
-      }
-    },
     "blog-post-prev-next": {
       "type": "blog-post-prev-next",
       "settings": {
@@ -108,15 +99,6 @@
       "settings": {
         "show_gravatar": true
       }
-    },
-    "a231bd47-61b2-41cf-8c8a-20f960d0fbc4": {
-      "type": "main-article-gg",
-      "settings": {
-        "index": 3,
-        "page_width": "800",
-        "show_title": true,
-        "show_content": true
-      }
     }
   },
   "order": [
@@ -124,9 +106,7 @@
     "main",
     "93cd9ab2-c351-4d92-829b-5e7a41b07d25",
     "5948fff0-f8d0-4196-8deb-30aa8ff0dcac",
-    "7f537d98-042a-48d3-9844-caae0931d7c1",
     "blog-post-prev-next",
-    "blog-post-comments",
-    "a231bd47-61b2-41cf-8c8a-20f960d0fbc4"
+    "blog-post-comments"
   ]
 }
