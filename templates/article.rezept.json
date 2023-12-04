@@ -29,6 +29,20 @@
     },
     "62cb6170-fd1d-4b4b-bb0b-95ecdad69121": {
       "type": "codext-rezept-products",
+      "blocks": {
+        "e63cfaf2-986f-4e77-a706-fc231879b6c7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "e63cfaf2-986f-4e77-a706-fc231879b6c7"
+      ],
       "settings": {
         "subheading": "",
         "title": "Produkte für dein Rezept",
