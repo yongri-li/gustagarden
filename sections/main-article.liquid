@@ -176,23 +176,7 @@
             <div
               class="rte"
               {{ block.shopify_attributes }}>
-              {% assign article_content = article.content
-                | remove: '[hr]'
-                | remove: '[grid]'
-                | remove: '[col_50]'
-                | remove: '[col_end]'
-                | remove: '[grid_end]'
-                | split: '<span>%-split_content-%</span>'
-              %}
-
-              {{ article_content[0] }}
-
-              {%- for block in section.blocks -%}
-                {%- if block.type == 'split_content' -%}
-                  {%- assign index = block.settings.index | minus: 1 -%}
-                  {{ article_content[index] }}
-                {%- endif -%}
-              {%- endfor -%}
+              {{ article_content }}
             </div>
           </div>
         </div>
