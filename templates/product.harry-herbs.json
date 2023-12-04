@@ -197,7 +197,7 @@
           "type": "item",
           "settings": {
             "image": "shopify:\/\/shop_images\/2022_Giessen_b.jpg",
-            "tab_label": "Item",
+            "tab_label": "",
             "subheading": "",
             "title": "Integriertes Bewässerungssystem",
             "content": "<p>Nie mehr vertrocknete Pflanzen! Dank dem integrierten Wasserspeicher und den Bewässerungsbändern werden deine Samen, Keimlinge und Pflanzen immer automatisch mit der richtigen Wassermenge versorgt.<\/p>",
@@ -208,7 +208,7 @@
         "942bf56f-c601-4510-a726-fc87e6712674": {
           "type": "item",
           "settings": {
-            "tab_label": "Item",
+            "tab_label": "",
             "subheading": "",
             "title": "Praktische Einfüllöffnung mit Wasserstandsanzeige",
             "content": "<p>Durch das Sichtfenster in der Seitenwand lässt sich der Wasserstand sofort erkennen. Über die darüberliegende Einfüllöffnung kann das Wasserreservoir ganz einfach befüllt werden.<\/p>",
