@@ -545,6 +545,10 @@
   border-top-width: 0px;
 }
 
+.border-r-0 {
+  border-right-width: 0px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1084,6 +1088,14 @@ input:focus-within {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:\!grid {
+    display: grid !important;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -1098,6 +1110,10 @@ input:focus-within {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:border-r {
+    border-right-width: 1px;
   }
 
   .md\:py-16 {
