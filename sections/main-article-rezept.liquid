@@ -172,6 +172,21 @@
             </div>
           {%- endif -%}
 
+          <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
+            {%- if article.metafields.custom.uebersicht != blank -%}
+              <div class="rte flex flex-col gap-3 border-l-0 border-t-0 border-b-0 border-r border-slate-400 border-solid">
+                <h3>Übersicht</h3>
+                {{ article.metafields.custom.uebersicht | metafield_tag }}
+              </div>
+            {%- endif -%}
+            {%- if article.metafields.custom.zutaten != blank -%}
+              <div class="rte flex flex-col gap-3">
+                <h3>Zutaten</h3>
+                {{ article.metafields.custom.zutaten | metafield_tag }}
+              </div>
+            {%- endif -%}
+          </div>
+
           <div class="article__content">
             <div
               class="rte"
