@@ -73,6 +73,11 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "blog-post-prev-next": {
+      "type": "blog-post-prev-next",
+      "settings": {
+      }
+    },
     "46382bc0-a5c0-428d-a85d-70532faa0095": {
       "type": "codext-blog-author",
       "settings": {
@@ -109,11 +114,6 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "blog-post-prev-next": {
-      "type": "blog-post-prev-next",
-      "settings": {
-      }
-    },
     "blog-post-comments": {
       "type": "blog-post-comments",
       "settings": {
@@ -126,9 +126,9 @@
     "main",
     "27d37aa7-7f41-47aa-9f84-2247a792667a",
     "62cb6170-fd1d-4b4b-bb0b-95ecdad69121",
+    "blog-post-prev-next",
     "46382bc0-a5c0-428d-a85d-70532faa0095",
     "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1",
-    "blog-post-prev-next",
     "blog-post-comments"
   ]
 }
