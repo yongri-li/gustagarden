@@ -135,6 +135,94 @@
       "settings": {
       }
     },
+    "9020341f-56b0-42f2-848e-1254c59e5c4d": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/Gruppe-444.png",
+            "custom_icon_width": 50,
+            "title": "Pflanztopf",
+            "content": ""
+          }
+        },
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Gruppe-443.png",
+            "custom_icon_width": 50,
+            "title": "Anzucht",
+            "content": ""
+          }
+        },
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/Gruppe-446.png",
+            "custom_icon_width": 50,
+            "title": "Hydroponik",
+            "content": ""
+          }
+        },
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/Gruppe-447.png",
+            "custom_icon_width": 50,
+            "title": "Microgreens",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-1",
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-2",
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-3",
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-4"
+      ],
+      "settings": {
+        "background": "#f3f3f4",
+        "text_color": "#000000",
+        "stack_on_mobile": false
+      }
+    },
+    "6713bc99-49a0-4d7d-9f5b-15f3ab3199f6": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16409074827437__6713bc99-49a0-4d7d-9f5b-15f3ab3199f6-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/220824-Harry-21.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "HARRY HERBS",
+            "content": "<p>vereint 4 verschiedene Anbaumöglichkeiten von Gemüse, Kräuter, Salat und Microgreens in einem Produkt und kann sowohl Indoor als auch Outdoor verwendet werden.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409074827437__6713bc99-49a0-4d7d-9f5b-15f3ab3199f6-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9": {
       "type": "text-with-icons",
       "blocks": {
@@ -498,6 +586,8 @@
   "order": [
     "main",
     "product-content",
+    "9020341f-56b0-42f2-848e-1254c59e5c4d",
+    "6713bc99-49a0-4d7d-9f5b-15f3ab3199f6",
     "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
