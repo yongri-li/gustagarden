@@ -3,7 +3,7 @@
     "blog-post-banner": {
       "type": "blog-post-banner",
       "custom_css": [
-        "img {max-height: 350px;}"
+        "img {max-height: 500px;}"
       ],
       "settings": {
         "show_category": true,
