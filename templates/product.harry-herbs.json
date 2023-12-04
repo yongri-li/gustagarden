@@ -144,17 +144,7 @@
             "icon": "picto-box",
             "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b.png",
             "custom_icon_width": 40,
-            "title": "ideal für den Balkonoder Terrasse",
-            "content": ""
-          }
-        },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
-            "custom_icon_width": 40,
-            "title": "stabileRankhilfe",
+            "title": "ideal für Indoorund Outdoor",
             "content": ""
           }
         },
@@ -168,12 +158,22 @@
             "content": ""
           }
         },
+        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_wicking.png",
+            "custom_icon_width": 40,
+            "title": "einfache Bewässerung",
+            "content": ""
+          }
+        },
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4": {
           "type": "item",
           "settings": {
             "icon": "picto-email",
             "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU.png",
-            "custom_icon_width": 55,
+            "custom_icon_width": 40,
             "title": "designed in Austriamade in the EU",
             "content": ""
           }
@@ -181,8 +181,8 @@
       },
       "block_order": [
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3",
+        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4"
       ],
       "settings": {
@@ -196,11 +196,11 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200903-GustaGarden-127_Easy-Resize.com.jpg",
-            "tab_label": "Item",
+            "image": "shopify:\/\/shop_images\/2022_Giessen_b.jpg",
+            "tab_label": "",
             "subheading": "",
-            "title": "Nur noch 1x pro Woche gießen",
-            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "title": "Integriertes Bewässerungssystem",
+            "content": "<p>Nie mehr vertrocknete Pflanzen! Dank dem integrierten Wasserspeicher und den Bewässerungsbändern werden deine Samen, Keimlinge und Pflanzen immer automatisch mit der richtigen Wassermenge versorgt.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -235,8 +235,8 @@
             "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T224818.265.png",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Stabile Rankhilfe",
-            "content": "<p>Hochwertige Aluminium-Rohre:<br\/>Die Rankhilfe für Tomatenpflanzen ist in der Höhe variabel und simpel im Aufbau. Die hochwertigen Aluminium Rohre bieten Stabilität und wachsen quasi mit der Pflanze mit.<br\/><br\/>Integrierte Befestigungshaken:<br\/>Hänge einfach von Zeit zu Zeit den Haupttrieb in die integrierten Befestigungshaken ein. So wächst deine Pflanze immer gleichmäßig der Sonne entgegen!<\/p>",
+            "title": "Praktische Einfüllöffnung mit Wasserstandsanzeige",
+            "content": "<p>Durch das Sichtfenster in der Seitenwand lässt sich der Wasserstand sofort erkennen. Über die darüberliegende Einfüllöffnung kann das Wasserreservoir ganz einfach befüllt werden.<\/p>",
             "button_text": "",
             "button_link": ""
           }
