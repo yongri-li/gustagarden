@@ -21,6 +21,11 @@
         "show_content": true
       }
     },
+    "46382bc0-a5c0-428d-a85d-70532faa0095": {
+      "type": "codext-blog-author",
+      "settings": {
+      }
+    },
     "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1": {
       "type": "featured-collections",
       "blocks": {
@@ -66,6 +71,7 @@
   "order": [
     "blog-post-banner",
     "main",
+    "46382bc0-a5c0-428d-a85d-70532faa0095",
     "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1",
     "blog-post-prev-next",
     "blog-post-comments"
