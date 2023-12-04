@@ -204,22 +204,10 @@
             "button_text": "",
             "button_link": ""
           }
-        },
-        "942bf56f-c601-4510-a726-fc87e6712674": {
-          "type": "item",
-          "settings": {
-            "tab_label": "",
-            "subheading": "",
-            "title": "Praktische Einfüllöffnung mit Wasserstandsanzeige",
-            "content": "<p>Durch das Sichtfenster in der Seitenwand lässt sich der Wasserstand sofort erkennen. Über die darüberliegende Einfüllöffnung kann das Wasserreservoir ganz einfach befüllt werden.<\/p>",
-            "button_text": "",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
-        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1",
-        "942bf56f-c601-4510-a726-fc87e6712674"
+        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1"
       ],
       "custom_css": [
         "{margin: 0 !important; --vertical-breather: 0;}",
@@ -247,8 +235,8 @@
             "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T224818.265.png",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Stabile Rankhilfe",
-            "content": "<p>Hochwertige Aluminium-Rohre:<br\/>Die Rankhilfe für Tomatenpflanzen ist in der Höhe variabel und simpel im Aufbau. Die hochwertigen Aluminium Rohre bieten Stabilität und wachsen quasi mit der Pflanze mit.<br\/><br\/>Integrierte Befestigungshaken:<br\/>Hänge einfach von Zeit zu Zeit den Haupttrieb in die integrierten Befestigungshaken ein. So wächst deine Pflanze immer gleichmäßig der Sonne entgegen!<\/p>",
+            "title": "Praktische Einfüllöffnung mit Wasserstandsanzeige",
+            "content": "<p>Durch das Sichtfenster in der Seitenwand lässt sich der Wasserstand sofort erkennen. Über die darüberliegende Einfüllöffnung kann das Wasserreservoir ganz einfach befüllt werden.<\/p>",
             "button_text": "",
             "button_link": ""
           }
