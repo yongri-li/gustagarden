@@ -30,7 +30,7 @@
     "currency_code_enabled": false,
     "stagger_products_apparition": true,
     "round_color_swatches": true,
-    "color_swatch_config": "blau:#627d97\ndunkelgrün:#6d7c58\nhellgrau:#b0b1a8\nanthrazit: #77797a",
+    "color_swatch_config": "blau:#627d97\ndunkelgrün:#6d7c58\nhellgrau:#b0b1a8\nanthrazit: #77797a\nweiß: #f4f4f4",
     "show_vendor": false,
     "show_secondary_image": true,
     "show_product_rating": false,
