@@ -260,6 +260,10 @@
   aspect-ratio: 1 / 1;
 }
 
+.\!h-8 {
+  height: 2rem !important;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -290,18 +294,6 @@
 
 .h-full {
   height: 100%;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.\!h-8 {
-  height: 2rem !important;
 }
 
 .w-1\/4 {
@@ -533,8 +525,8 @@
   border-left-width: 0px;
 }
 
-.border-r {
-  border-right-width: 1px;
+.border-r-0 {
+  border-right-width: 0px;
 }
 
 .border-t {
@@ -543,10 +535,6 @@
 
 .border-t-0 {
   border-top-width: 0px;
-}
-
-.border-r-0 {
-  border-right-width: 0px;
 }
 
 .border-solid {
@@ -609,6 +597,10 @@
   background-repeat: no-repeat;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -625,20 +617,9 @@
   padding: 1.5rem;
 }
 
-.p-0 {
-  padding: 0px;
-}
-
-.\!p-0 {
-  padding: 0px !important;
-}
-
-.\!p-2 {
-  padding: 0.5rem !important;
-}
-
-.\!p-4 {
-  padding: 1rem !important;
+.\!px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .px-5 {
@@ -679,11 +660,6 @@
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.\!px-4 {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
 }
 
 .pb-10 {
@@ -1088,10 +1064,6 @@ input:focus-within {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
   .md\:\!grid {
     display: grid !important;
   }
