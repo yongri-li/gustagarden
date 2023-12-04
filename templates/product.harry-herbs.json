@@ -196,18 +196,30 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200903-GustaGarden-127_Easy-Resize.com.jpg",
+            "image": "shopify:\/\/shop_images\/2022_Giessen_b.jpg",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Nur noch 1x pro Woche gießen",
-            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "title": "Integriertes Bewässerungssystem",
+            "content": "<p>Nie mehr vertrocknete Pflanzen! Dank dem integrierten Wasserspeicher und den Bewässerungsbändern werden deine Samen, Keimlinge und Pflanzen immer automatisch mit der richtigen Wassermenge versorgt.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "942bf56f-c601-4510-a726-fc87e6712674": {
+          "type": "item",
+          "settings": {
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Praktische Einfüllöffnung mit Wasserstandsanzeige",
+            "content": "<p>Durch das Sichtfenster in der Seitenwand lässt sich der Wasserstand sofort erkennen. Über die darüberliegende Einfüllöffnung kann das Wasserreservoir ganz einfach befüllt werden.<\/p>",
             "button_text": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1"
+        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1",
+        "942bf56f-c601-4510-a726-fc87e6712674"
       ],
       "custom_css": [
         "{margin: 0 !important; --vertical-breather: 0;}",
