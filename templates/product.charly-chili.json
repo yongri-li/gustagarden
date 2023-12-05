@@ -135,59 +135,60 @@
       "settings": {
       }
     },
-    "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9": {
-      "type": "text-with-icons",
+    "879b3239-f3e7-47a2-98db-5c05eaedfac9": {
+      "type": "codext-Text-with-Icons",
       "blocks": {
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1": {
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-1": {
           "type": "item",
           "settings": {
             "icon": "picto-box",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b.png",
-            "custom_icon_width": 40,
-            "title": "ideal für den Balkonoder Terrasse",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b_1.png",
+            "custom_icon_width": 50,
+            "title": "IDEAL FÜR DEN BALKONODER TERRASSE",
             "content": ""
           }
         },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-2": {
           "type": "item",
           "settings": {
             "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
-            "custom_icon_width": 40,
-            "title": "stabileRankhilfe",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431_cf9a64af-abe8-4ca2-b11e-895eb7480a6f.png",
+            "custom_icon_width": 50,
+            "title": "STABILERANKHILFE",
             "content": ""
           }
         },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3": {
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-3": {
           "type": "item",
           "settings": {
             "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f.png",
-            "custom_icon_width": 40,
-            "title": "kinderleichter Aufbau",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f_1.png",
+            "custom_icon_width": 50,
+            "title": "KINDERLEICHTER AUFBAU",
             "content": ""
           }
         },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4": {
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-4": {
           "type": "item",
           "settings": {
             "icon": "picto-email",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU.png",
-            "custom_icon_width": 55,
-            "title": "designed in Austriamade in the EU",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU_110x_778d681e-ab14-4b14-94a9-e2d666999c14.webp",
+            "custom_icon_width": 50,
+            "title": "DESIGNED IN AUSTRIAMADE IN THE EU",
             "content": ""
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4"
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-1",
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-2",
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-3",
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-4"
       ],
       "settings": {
         "background": "#c8dd02",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "stack_on_mobile": false
       }
     },
     "93e61ce0-1e10-47b1-a69a-07361399d8ef": {
@@ -498,7 +499,7 @@
   "order": [
     "main",
     "product-content",
-    "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9",
+    "879b3239-f3e7-47a2-98db-5c05eaedfac9",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
