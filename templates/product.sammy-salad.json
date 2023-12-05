@@ -152,7 +152,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_Haube-1.png",
             "custom_icon_width": 40,
             "title": "stabileRankhilfe",
             "content": ""
@@ -162,7 +162,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f.png",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_Holz.png",
             "custom_icon_width": 40,
             "title": "kinderleichter Aufbau",
             "content": ""
@@ -196,11 +196,11 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200903-GustaGarden-127_Easy-Resize.com.jpg",
+            "image": "shopify:\/\/shop_images\/2021-10-27_Sammy.31_2.jpg",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Nur noch 1x pro Woche gießen",
-            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "title": "Integriertes Bewässerungssystem",
+            "content": "<p>Das A und O bei Salaten ist das regelmäßige Gießen. Trockenheit ade, keine Chance für Staunässe – SAMMY SALAD’s cleveres System sorgt für das goldene Mittelmaß. Die Zwischenböden bilden den Wassertank mit 15 Liter Wasserkapazität, wodurch deine Pflanzen konstant mit Wasser versorgt und gleichzeitig Staunässe vermieden wird.<br\/><br\/><\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -232,11 +232,11 @@
         "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T224818.265.png",
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-05T101943.559.png",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Stabile Rankhilfe",
-            "content": "<p>Hochwertige Aluminium-Rohre:<br\/>Die Rankhilfe für Tomatenpflanzen ist in der Höhe variabel und simpel im Aufbau. Die hochwertigen Aluminium Rohre bieten Stabilität und wachsen quasi mit der Pflanze mit.<br\/><br\/>Integrierte Befestigungshaken:<br\/>Hänge einfach von Zeit zu Zeit den Haupttrieb in die integrierten Befestigungshaken ein. So wächst deine Pflanze immer gleichmäßig der Sonne entgegen!<\/p>",
+            "title": "Einfüllöffnung mit praktischer Wasserstandsanzeige",
+            "content": "<p>Durch das Sichtfenster in der Seitenwand lässt sich der aktuelle Wasserstand sofort erkennen. Haben deine Pflanzen in den vergangenen Tagen viel Wasser verbraucht, kannst du über die darüberliegende Einfüllöffnung den Wassertank ganz einfach wieder auffüllen.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -268,11 +268,11 @@
         "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T230124.609.png",
-            "tab_label": "Item",
+            "image": "shopify:\/\/shop_images\/2022-02-14_Sammy_545mod.jpg",
+            "tab_label": "",
             "subheading": "",
-            "title": "Erdvolumen exakt abgestimmt",
-            "content": "<p>Der Pflanztopf wurde perfekt auf das Erdvolumen für eine Tomatenpflanze abgestimmt und garantiert somit eine ideale Versorgung mit Nährstoffen.<\/p>",
+            "title": "Individueller Schutz",
+            "content": "<p>Die robuste, abnehmbare Haube schützt dein Gemüse vor Frost und unterstützt das Wachstum. Zusätzlich sorgt es für die idealen Keimbedingungen, sodass du bereits im Feber mit dem Anbau starten und sogar im September noch einmal anpflanzen kannst.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -290,6 +290,38 @@
         "background_type": "full_width",
         "background_overlap": "text",
         "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "708f220c-f99a-4af6-87f5-c3f8e32f4c8b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16409075122349__708f220c-f99a-4af6-87f5-c3f8e32f4c8b-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-05T102630.009.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Individueller Schutz",
+            "content": "<p>Die robuste, abnehmbare Haube schützt dein Gemüse vor Frost und unterstützt das Wachstum. Zusätzlich sorgt es für die idealen Keimbedingungen, sodass du bereits im Feber mit dem Anbau starten und sogar im September noch einmal anpflanzen kannst.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409075122349__708f220c-f99a-4af6-87f5-c3f8e32f4c8b-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
         "text_alignment": "left",
         "cycle_speed": 8,
         "accent_background": "rgba(0,0,0,0)",
@@ -501,6 +533,7 @@
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
+    "708f220c-f99a-4af6-87f5-c3f8e32f4c8b",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
