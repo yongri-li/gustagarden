@@ -46,6 +46,7 @@
         "slide-1",
         "slide-2"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "small",
         "transition_type": "sweep",
