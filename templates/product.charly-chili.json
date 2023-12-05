@@ -196,11 +196,11 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200903-GustaGarden-127_Easy-Resize.com.jpg",
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-05T162828.415.png",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Nur noch 1x pro Woche gießen",
-            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "title": "Perfekte Raumnutzung",
+            "content": "<p>Durch die intelligente Formgebung findet CHARLY CHILI überall Platz.<br\/>Zusätzlich sind alle Komponenten so designed, dass sie während der kalten Jahreszeit einfach und platzsparend aufbewahrt werden können. Mehrere CHARLY CHILIs können ineinander gestapelt werden. Im kommenden Frühling hast du somit alles sofort griff- und einsatzbereit.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -232,11 +232,11 @@
         "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T224818.265.png",
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-05T163018.914.png",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Stabile Rankhilfe",
-            "content": "<p>Hochwertige Aluminium-Rohre:<br\/>Die Rankhilfe für Tomatenpflanzen ist in der Höhe variabel und simpel im Aufbau. Die hochwertigen Aluminium Rohre bieten Stabilität und wachsen quasi mit der Pflanze mit.<br\/><br\/>Integrierte Befestigungshaken:<br\/>Hänge einfach von Zeit zu Zeit den Haupttrieb in die integrierten Befestigungshaken ein. So wächst deine Pflanze immer gleichmäßig der Sonne entgegen!<\/p>",
+            "title": "Innovative Rankhilfe",
+            "content": "<p>Der robuste Rahmen rundet das speziell für Chilis entwickelte Ranksystem perfekt ab. Die reichtragenden Pflanzen werden dadurch optimal im Wachstum unterstützt.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -319,7 +319,7 @@
         "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "tom-tomato-1",
+            "collection": "charly-chili",
             "label": "",
             "button_text": "",
             "button_url": ""
