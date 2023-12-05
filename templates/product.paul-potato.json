@@ -152,9 +152,9 @@
           "type": "item",
           "settings": {
             "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-150x150-square-51e0dda996cb7180f9d27eca0733cf85-5fdf4bf10944c.png",
             "custom_icon_width": 40,
-            "title": "stabileRankhilfe",
+            "title": "kinderleichter Aufbau",
             "content": ""
           }
         },
@@ -162,9 +162,9 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f.png",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_schutz-square-df6ff256902e165e4d1c8e18cbe1cfee-5fdf4cb9d6c93.png",
             "custom_icon_width": 40,
-            "title": "kinderleichter Aufbau",
+            "title": "Schutz vor Schädlingen",
             "content": ""
           }
         },
