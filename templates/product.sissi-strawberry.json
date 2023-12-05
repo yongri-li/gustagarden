@@ -148,16 +148,6 @@
             "content": ""
           }
         },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
-            "custom_icon_width": 40,
-            "title": "stabileRankhilfe",
-            "content": ""
-          }
-        },
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3": {
           "type": "item",
           "settings": {
@@ -165,6 +155,16 @@
             "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f.png",
             "custom_icon_width": 40,
             "title": "kinderleichter Aufbau",
+            "content": ""
+          }
+        },
+        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
+            "custom_icon_width": 40,
+            "title": "stabileRankhilfe",
             "content": ""
           }
         },
@@ -181,13 +181,70 @@
       },
       "block_order": [
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3",
+        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
         "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4"
       ],
+      "disabled": true,
       "settings": {
         "background": "#c8dd02",
         "text_color": "#ffffff"
+      }
+    },
+    "1fb2a724-d606-4972-8d55-62c349b8c12e": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5fda2bf0a8739.png",
+            "custom_icon_width": 50,
+            "title": "ideal für den Balkonoder Terrasse",
+            "content": ""
+          }
+        },
+        "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-150x150-square-51e0dda996cb7180f9d27eca0733cf85-5fda2b83153eb.png",
+            "custom_icon_width": 50,
+            "title": "kinderleichterAufbau",
+            "content": ""
+          }
+        },
+        "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_schutz-square-df6ff256902e165e4d1c8e18cbe1cfee-5fe0ce6413828_1.png",
+            "custom_icon_width": 50,
+            "title": "Schutz vorSchädlingen",
+            "content": ""
+          }
+        },
+        "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-watering.png",
+            "custom_icon_width": 40,
+            "title": "einfache Bewässerung",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-1",
+        "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-2",
+        "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-3",
+        "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-4"
+      ],
+      "settings": {
+        "background": "#c8dd02",
+        "text_color": "#ffffff",
+        "stack_on_mobile": false
       }
     },
     "93e61ce0-1e10-47b1-a69a-07361399d8ef": {
@@ -303,7 +360,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=MO4h1gVj9WU&t=1s",
+        "video_url": "https:\/\/youtu.be\/v9EaaEZEs-Y",
         "image": "shopify:\/\/shop_images\/200903-GustaGarden-092_mirror_2400x1600_0aec3d19-5bbe-4cb8-8611-7724f02026fe.jpg",
         "background_type": "full_width",
         "video_size": "medium",
@@ -319,7 +376,7 @@
         "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "tom-tomato-1",
+            "collection": "sissi-strawberry",
             "label": "",
             "button_text": "",
             "button_url": ""
@@ -330,7 +387,7 @@
         "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1"
       ],
       "settings": {
-        "subheading": "ALLES FÜR DEINEN TOM TOMATO",
+        "subheading": "ALLES FÜR DEINEN SISSI STRAWBERRY",
         "title": "HILFREICHES ZUBEHÖR",
         "content": "",
         "products_count": 4,
@@ -490,7 +547,7 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Darum ist TOM TOMATO die beste Wahl",
+        "title": "Darum ist SISSI STRAWBERRY die beste Wahl",
         "content": ""
       }
     }
@@ -499,6 +556,7 @@
     "main",
     "product-content",
     "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9",
+    "1fb2a724-d606-4972-8d55-62c349b8c12e",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
