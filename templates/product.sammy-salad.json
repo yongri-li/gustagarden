@@ -196,7 +196,6 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2021-10-27_Sammy.31_2.jpg",
             "tab_label": "Item",
             "subheading": "",
             "title": "Integriertes Bewässerungssystem",
@@ -268,7 +267,6 @@
         "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2022-02-14_Sammy_545mod.jpg",
             "tab_label": "",
             "subheading": "",
             "title": "Individueller Schutz",
@@ -316,6 +314,10 @@
       },
       "block_order": [
         "template--16409075122349__708f220c-f99a-4af6-87f5-c3f8e32f4c8b-item-1"
+      ],
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
