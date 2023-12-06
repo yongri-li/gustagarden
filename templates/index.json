@@ -460,10 +460,38 @@
           "settings": {
             "feature_text": "Feature Text"
           }
+        },
+        "e932f583-09bc-445c-b5b4-d31a142319ce": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        },
+        "3aeac826-7d43-43fe-a30b-a399bfa805e4": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        },
+        "0c8eb7ee-f296-4da3-8113-9ead57012057": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        },
+        "7e992b3a-65f3-4dd6-8f26-466c257e8385": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
         }
       },
       "block_order": [
-        "82f8458a-f011-40e9-803a-4fcb47095e2d"
+        "82f8458a-f011-40e9-803a-4fcb47095e2d",
+        "e932f583-09bc-445c-b5b4-d31a142319ce",
+        "3aeac826-7d43-43fe-a30b-a399bfa805e4",
+        "0c8eb7ee-f296-4da3-8113-9ead57012057",
+        "7e992b3a-65f3-4dd6-8f26-466c257e8385"
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/200903-GustaGarden-055_2-scaled.jpg",
