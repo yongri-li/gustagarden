@@ -303,9 +303,9 @@
       "settings": {
         "reveal_on_scroll": true,
         "image": "shopify:\/\/shop_images\/200903-GustaGarden-055_2-scaled.jpg",
-        "subheading": "Subheading",
-        "title": "Image with text block",
-        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
+        "subheading": "Dein Wegweiser für den perfekten Garten",
+        "title": "Anleitungen zu unseren Produkten",
+        "content": "<p>Egal, ob du gerade erst mit dem Gärtnern beginnst oder bereits ein erfahrener Gärtner bist, unsere Anleitungen sind hier, um dir zu helfen, das Beste aus unseren Produkten herauszuholen. In unseren Anleitungen findest du detaillierte Schritt-für-Schritt-Erklärungen, Tipps und Tricks zur effektiven Nutzung unserer Produkte, um deinen Garten in ein blühendes Paradies zu verwandeln.<\/p>",
         "button_text": "ZU DEN ANLEITUNGEN",
         "button_link": "",
         "background_type": "full_width",
