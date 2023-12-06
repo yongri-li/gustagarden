@@ -270,7 +270,7 @@
         "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
         "button_text": "JETZT ENTDECKEN",
         "button_link": "",
-        "background_type": "boxed",
+        "background_type": "full_width",
         "text_position": "overlap_left",
         "text_alignment": "center",
         "text_background": "#c8dd02",
