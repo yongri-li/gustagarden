@@ -505,9 +505,9 @@
       "type": "blog-posts",
       "custom_css": [
         ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center; display: flex; flex-direction: column;}",
-        ".h4 {font-size: 20px;}",
+        ".h4 {font-size: 18px; font-weight: bold;}",
         ".article-item__content {flex-grow: 1;}",
-        ".article-item__title,.article-item__content {padding: 4px !important; display: flex; align-items: center; justify-content: center;}"
+        ".article-item__title,.article-item__content {padding: 10px !important; display: flex; align-items: center; justify-content: center;}"
       ],
       "settings": {
         "blog": "rezepte",
