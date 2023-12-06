@@ -323,6 +323,7 @@
         "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-1": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.png",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
             "title": "HARRY HERBS",
@@ -337,6 +338,7 @@
         "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/SAMMY-SALAD_mit-Schnalle_2hellgrau-1.webp",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
             "title": "SAMMY SALAD",
@@ -351,6 +353,7 @@
         "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-3": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit.webp",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
             "title": "PAUL POTATO",
@@ -365,6 +368,7 @@
         "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-4": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-classic_weiss.webp",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
             "title": "SISSY STRAWBERRY",
@@ -379,6 +383,7 @@
         "cbb188c3-7772-4348-90c2-acfe42f66288": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2021-01-13_Tom_Tomato_grey_1000x1000_d07caf39-b606-4796-9a95-74c14f9997bb.webp",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
             "title": "TOM TOMATO",
@@ -393,6 +398,7 @@
         "05a5ddea-c16e-48c2-9146-498e64049130": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/100620_TOMATO_BUDDY_1-scaled.webp",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
             "title": "TOMATO BUDDY",
@@ -407,6 +413,7 @@
         "4c48c664-8632-4f5c-ae55-5fae386d66ed": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2021-03-03_Charly_Chili_Studio_grau_farbangepasst_qu-1.webp",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
             "title": "CHARLY CHILI",
