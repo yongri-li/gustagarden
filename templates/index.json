@@ -338,7 +338,7 @@
         "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SAMMY-SALAD_mit-Schnalle_2hellgrau-1.webp",
+            "image": "shopify:\/\/shop_images\/sammy-salad.png",
             "image_width": 100,
             "image_border": "#c8dd02",
             "title": "SAMMY SALAD",
@@ -481,20 +481,20 @@
         "cbb9bf79-2511-41a7-a838-f172cc2b7d9d"
       ],
       "custom_css": [
-        ".h5 {font-weight: bold; font-size: 20px; background-color: #c8dd02; color: #fff; padding: 5px;}",
-        ".multi-column__image-wrapper {border: 10px solid #f5f5f5; border-radius: 250px;}"
+        ".h5 {font-weight: bold; font-size: 20px; background-color: #c8dd02; color: #000000; padding: 5px;}",
+        ".multi-column__image-wrapper {border: 20px solid #eaeaea; border-radius: 250px;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
         "stack_items": false,
-        "subheading": "Subheading",
-        "title": "Multi-column",
+        "subheading": "Effizientes Pflanzen und gesundes Wachstum leicht gemacht",
+        "title": "Innovative Garten-Systeme von Gustagarden",
         "content": "",
         "column_alignment": "center",
         "mobile_item_size": "large",
         "desktop_item_size": "large",
         "spacing": "normal",
-        "background": "#ffffff",
+        "background": "#f3f3f4",
         "text_color": "rgba(0,0,0,0)"
       }
     },
