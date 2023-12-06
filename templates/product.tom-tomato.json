@@ -432,6 +432,13 @@
             "title": "Wann ist die beste Anpflanzzeit?",
             "answer": "<p>Wenn du Tomaten aus Samen ziehen möchtest, solltest du bereits im März damit beginnen. Das funktioniert am besten mit unserem <a href=\"https:\/\/www.gustagarden.com\/produkt\/mini-gewaechshaus-inkl-tom-tomato-samen-mix\/\">Mini-Gewächshaus inkl. TOM TOMATO Samen-Mix<\/a>. Hier findest du eine Schritt-für-Schritt Anleitung dazu: <a href=\"https:\/\/www.gustagarden.com\/mini-gewaechshaus-anleitung\/\">Mini-Gewächshaus Anleitung<\/a>. Möchtest du aber junge Tomatenpflanzen einsetzen, dann solltest du die Eisheiligen Mitte Mai abwarten. Auf alle Fälle sollen die Pflanzen keinem Frost mehr ausgesetzt werden.<\/p>"
           }
+        },
+        "5cde79bb-32b2-45a3-95c1-4014a7d9828a": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert das Gießen?",
+            "answer": "<p>Als Erstes vorweg: Achte darauf, nie die Blätter einer Tomatenpflanze zu gießen! Tomaten sind sehr wasserempfindlich, denn nasse Blätter können schnell zu Fäulnis und anderen Krankheiten führen.<br\/>Nach dem Einsetzen solltest du daher nur die Erde rund um deine Pflanze eine Zeit lang von oben bewässern, befülle aber auch den Vorratstank mit 4,5L Wasser. Sobald die Wurzeln in den Wassertank reichen, musst du nur mehr regelmäßig den Tank befüllen. Die Bewässerungsbänder sorgen dafür, dass die Erde im unteren Bereich des Pflanztopfs befeuchtet wird, um eine optimale Aufnahme von Nährstoffen über die Wurzeln zu garantieren.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -439,7 +446,8 @@
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
         "57525d22-ecf5-41cb-bc6d-58029c92d47c",
-        "6e859cf1-cd51-4416-9fb1-1bb436981db0"
+        "6e859cf1-cd51-4416-9fb1-1bb436981db0",
+        "5cde79bb-32b2-45a3-95c1-4014a7d9828a"
       ],
       "settings": {
         "show_navigation": false,
