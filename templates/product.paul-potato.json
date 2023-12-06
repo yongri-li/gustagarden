@@ -425,13 +425,29 @@
             "title": "Was sind frühe, mittlere und späte Pflanzkartoffeln?",
             "answer": "<p>Darunter versteht man die Reifedauer der einzelnen Kartoffelsorten, welche 90 (bei frühen Sorten) bis 160 Tage (bei späten Sorten) betragen kann. Für mehr Infos lies dir dazu doch einfach unseren ausführlichen Blogartikel über <a href=\"https:\/\/www.gustagarden.com\/welche-kartoffelsorten-gibt-es\/\">\"Kartoffelsorten\" <\/a>durch.<\/p>"
           }
+        },
+        "4b715c79-0bfb-4032-94ae-473dbabc4ce3": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Erde verwende ich am besten?",
+            "answer": "<p>Kartoffeln sind Nachtschattengewächse, benötigen also ähnliche Erde wie z.B. Tomaten. Sie sollte leicht sein, denn dann können die Knollen leichter wachsen. Wir haben eine ganz spezielle Kartoffelerde für dich entwickelt, die zusätzlich mit den wichtigsten Nährstoffen versetzt wurde, damit deine Kartoffeln ertragreich wachsen können. Diese ist im Set erhältlich, gemeinsam mit Pflanzkartoffeln und Bio Schafwolldünger – alles was du fürs Anpflanzen benötigst.<\/p>"
+          }
+        },
+        "ca70e3e6-d410-4410-a28d-16134cc73f06": {
+          "type": "question",
+          "settings": {
+            "title": "Wann ist die beste Anpflanzzeit?",
+            "answer": "<p>Du kannst schon Mitte März mit dem Anpflanzen beginnen, wenn du deine Pflanzen vor dem Frost schützt. Dafür würden wir dir aber auf jeden Fall eine <a href=\"https:\/\/www.gustagarden.com\/produkt\/frostschutzhaube\/\">Frostschutzhaube <\/a>empfehlen. Mehr Infos zur Anpflanzzeit findest du <a href=\"https:\/\/www.gustagarden.com\/kartoffeln-pflanzen\/\">hier<\/a>.<\/p>"
+          }
         }
       },
       "block_order": [
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
-        "7a02e348-05eb-4059-9091-1f6b540d03b0"
+        "7a02e348-05eb-4059-9091-1f6b540d03b0",
+        "4b715c79-0bfb-4032-94ae-473dbabc4ce3",
+        "ca70e3e6-d410-4410-a28d-16134cc73f06"
       ],
       "settings": {
         "show_navigation": false,
