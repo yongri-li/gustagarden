@@ -1,0 +1,136 @@
+{%- assign number_of_comments = article.comments_count -%}
+
+{% if comment %}
+  {%- assign number_of_comments = article.comments_count | plus: 1 -%}
+{% endif %}
+
+
+{% style %}
+  .article_content {
+    color: #464646 !important;
+  }
+
+  .article_content ol,
+  .article_content ul:not(.list-none) {
+    margin: 0 0 15px 30px;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+  }
+
+  .article_content ul:not(.list-none) {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  .article_content ol {
+    list-style: decimal;
+    margin-left: 15px;
+  }
+
+  .article_content p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .article_content h1 {
+    /*margin-top: 60px; */
+    margin-bottom: 25px;
+    font-size: 35px;
+  }
+
+  .article_content h2,
+  .article_content .h2 {
+    font-family: 'Gotham';
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .article_content li {
+    margin-bottom: 20px;
+  }
+{% endstyle %}
+
+<div class="content-wrapper flex flex-col md:flex-row relative">
+  <div class="page-width-{{ section.settings.page_width }}">
+    <div class="relative py-5 md:py-16 bg-white overflow-hidden">
+      <div class="relative mx-5">
+        <div class="article__content article_content mx-auto">
+          {% assign article_content = article.content
+            | remove: '[hr]'
+            | remove: '[grid]'
+            | remove: '[col_50]'
+            | remove: '[col_end]'
+            | remove: '[grid_end]'
+            | split: '<span>%-split_content-%</span>'
+          %}
+          {%- assign index = section.settings.index | minus: 1 -%}
+          {{ article_content[index] }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog post - split content",
+  "class": "main-article-gg",
+  "settings": [
+    {
+      "type": "number",
+      "id": "index",
+      "label": "Index"
+    },
+    {
+      "type": "select",
+      "id": "page_width",
+      "label": "Page width",
+      "options": [
+        {
+          "value": "800",
+          "label": "800px"
+        },
+        {
+          "value": "1042",
+          "label": "1042px"
+        },
+        {
+          "value": "1440",
+          "label": "1440px"
+        },
+        {
+          "value": "max",
+          "label": "Max"
+        }
+      ],
+      "default": "800"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show title",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_content",
+      "label": "Show content",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog post - split content"
+    }
+  ]
+}
+{% endschema %}

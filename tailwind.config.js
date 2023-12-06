@@ -14,16 +14,6 @@ module.exports = {
       container: {
         center: true,
       },
-      fontSize: {
-        xs: '0.75rem',
-        sm: '1rem',
-        base: '1.2rem',
-        xl: '1.45rem',
-        '2xl': '1.763rem',
-        '3xl': '2.153rem',
-        '4xl': '2.641rem',
-        '5xl': '3.252rem',
-      },
       borderRadius: {
         none: '0',
         sm: '0.125rem',

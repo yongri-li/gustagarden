@@ -1,5 +1,93 @@
 {
   "sections": {
+    "5a184dd5-83ca-4ad0-94cc-660f16773e6c": {
+      "type": "lb-storie-slider",
+      "blocks": {
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.png",
+            "heading": "Harry Herbs",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-2": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-01-13_Tom_Tomato_grey_1000x1000_d07caf39-b606-4796-9a95-74c14f9997bb.webp",
+            "heading": "Tom Tomato",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-3": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sammy-salad.png",
+            "heading": "Sammy Salad",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "1e4d24a3-ea7e-4f73-898e-0393dd19fa73": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit.webp",
+            "heading": "Paul Potato",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "4d5c1c3f-6709-4725-9a77-814ee320efff": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tomato-buddy.png",
+            "heading": "Tomato Buddy",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "72c2367a-6d36-4652-9231-3bd839481fc6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-03-03_Charly_Chili_Studio_grau_farbangepasst_qu-1.webp",
+            "heading": "Charly Chili",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-classic_weiss.webp",
+            "heading": "Sissi Strawberry",
+            "url": "",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-1",
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-2",
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-3",
+        "1e4d24a3-ea7e-4f73-898e-0393dd19fa73",
+        "4d5c1c3f-6709-4725-9a77-814ee320efff",
+        "72c2367a-6d36-4652-9231-3bd839481fc6",
+        "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42"
+      ],
+      "settings": {
+        "background-color": "#f5f5f5",
+        "max-show": 600,
+        "abgerundete_ecken": 0,
+        "schriftart": "poppins_n4",
+        "schriftfarbe": "#000000",
+        "highlight-color": "#c4258d",
+        "abstand_zwischen_blocken_desktop": 50,
+        "abstand_zwischen_blocken_mobile": 30,
+        "hover-effekt-opacity": 0.8
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -54,113 +142,90 @@
         "background": "rgba(0,0,0,0)"
       }
     },
-    "5a184dd5-83ca-4ad0-94cc-660f16773e6c": {
-      "type": "lb-storie-slider",
+    "b69abf55-57d4-4ff0-b801-10b195ff3d44": {
+      "type": "logo-list",
       "blocks": {
-        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-1": {
-          "type": "block",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-1": {
+          "type": "logo",
           "settings": {
-            "heading": "Linkname",
-            "url": "",
-            "highlight": false
+            "logo": "shopify:\/\/shop_images\/WKO.svg",
+            "link": ""
           }
         },
-        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-2": {
-          "type": "block",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-2": {
+          "type": "logo",
           "settings": {
-            "heading": "Linkname",
-            "url": "",
-            "highlight": false
+            "logo": "shopify:\/\/shop_images\/kick.png",
+            "link": ""
           }
         },
-        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-3": {
-          "type": "block",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-3": {
+          "type": "logo",
           "settings": {
-            "heading": "Linkname",
-            "url": "",
-            "highlight": false
+            "logo": "shopify:\/\/shop_images\/StartupValley-LOGO-neu.png",
+            "link": ""
           }
         },
-        "1e4d24a3-ea7e-4f73-898e-0393dd19fa73": {
-          "type": "block",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-4": {
+          "type": "logo",
           "settings": {
-            "heading": "Linkname",
-            "url": "",
-            "highlight": false
+            "logo": "shopify:\/\/shop_images\/profit-de-logo-300px.png",
+            "link": ""
           }
         },
-        "4d5c1c3f-6709-4725-9a77-814ee320efff": {
-          "type": "block",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-5": {
+          "type": "logo",
           "settings": {
-            "heading": "Linkname",
-            "url": "",
-            "highlight": false
+            "logo": "shopify:\/\/shop_images\/citynews-das-stadtmagazin-fuer-koeln-un-die-region-logo-webseite.png",
+            "link": ""
           }
         },
-        "72c2367a-6d36-4652-9231-3bd839481fc6": {
-          "type": "block",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-6": {
+          "type": "logo",
           "settings": {
-            "heading": "Linkname",
-            "url": "",
-            "highlight": false
-          }
-        },
-        "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": "",
-            "highlight": false
-          }
-        },
-        "5c72b33a-0b55-4151-b0e6-a2d75b4c8771": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": "",
-            "highlight": false
+            "logo": "shopify:\/\/shop_images\/trendhunter.png",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-1",
-        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-2",
-        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-3",
-        "1e4d24a3-ea7e-4f73-898e-0393dd19fa73",
-        "4d5c1c3f-6709-4725-9a77-814ee320efff",
-        "72c2367a-6d36-4652-9231-3bd839481fc6",
-        "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42",
-        "5c72b33a-0b55-4151-b0e6-a2d75b4c8771"
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-1",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-2",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-3",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-4",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-5",
+        "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-6"
       ],
-      "disabled": true,
       "settings": {
-        "background-color": "#f2f2f2",
-        "max-show": 600,
-        "abgerundete_ecken": 50,
-        "schriftart": "sans-serif",
-        "schriftfarbe": "#000000",
-        "highlight-color": "#c4258d",
-        "abstand_zwischen_blocken_desktop": 18,
-        "abstand_zwischen_blocken_mobile": 18,
-        "hover-effekt-opacity": 0.8
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "Bekannt aus:",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": false,
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "#f7f7f7"
       }
     },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
-        "collection-1": {
+        "2ce60ba1-2511-4adb-bf34-fbdb77475ebf": {
           "type": "collection",
           "settings": {
-            "collection": "charly-chili",
+            "collection": "harry-herbs",
             "label": "",
             "button_text": "",
             "button_url": ""
           }
         },
-        "2ce60ba1-2511-4adb-bf34-fbdb77475ebf": {
+        "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "harry-herbs",
+            "collection": "charly-chili",
             "label": "",
             "button_text": "",
             "button_url": ""
@@ -177,8 +242,8 @@
         }
       },
       "block_order": [
-        "collection-1",
         "2ce60ba1-2511-4adb-bf34-fbdb77475ebf",
+        "collection-1",
         "0974623b-9195-4374-a8ef-bd00104ac8f3"
       ],
       "settings": {
@@ -188,9 +253,110 @@
         "products_count": 8,
         "products_per_row": 4,
         "stack_products": false,
-        "show_cta": false,
+        "show_cta": true,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "db41b1c8-3ba6-49c7-9f9a-101378ea5e52": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/200910-GustaGarden-092_1-scaled.jpg",
+        "subheading": "Erleben Sie das Beste von Gusta Garten",
+        "title": "Unsere innovaiven Gartenprodukten",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
+        "button_text": "JETZT ENTDECKEN",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "overlap_left",
+        "text_alignment": "center",
+        "text_background": "#c8dd02",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#484b42",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "d7bf74ef-1988-4d84-ad1a-ade1ea23a898": {
+      "type": "image-with-text-block",
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -160px; }}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/200903-GustaGarden-055_2-scaled.jpg",
+        "subheading": "Subheading",
+        "title": "Image with text block",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
+        "button_text": "ZU DEN ANLEITUNGEN",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "overlap_right",
+        "text_alignment": "center",
+        "text_background": "#484b42",
+        "text_color": "#ffffff",
+        "button_background": "#c8dd02",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "c9245672-de7f-4d0f-b627-c276177ea803": {
+      "type": "featured-collections",
+      "blocks": {
+        "20dd23fc-fd05-402f-a048-fded42900000": {
+          "type": "collection",
+          "settings": {
+            "collection": "chilipflanzen",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "73da5217-5283-4528-9dcd-b8fe84a96fa6": {
+          "type": "collection",
+          "settings": {
+            "collection": "pflanzkartoffeln",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "ec951d0b-38fc-4d68-b8df-b652c9ae61f2": {
+          "type": "collection",
+          "settings": {
+            "collection": "erdbeerpflanzen",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "14ade11a-4536-459c-a470-65a44ff13789": {
+          "type": "collection",
+          "settings": {
+            "collection": "tomatenpflanzen",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "20dd23fc-fd05-402f-a048-fded42900000",
+        "73da5217-5283-4528-9dcd-b8fe84a96fa6",
+        "ec951d0b-38fc-4d68-b8df-b652c9ae61f2",
+        "14ade11a-4536-459c-a470-65a44ff13789"
+      ],
+      "settings": {
+        "subheading": "Qualität & Genuss",
+        "title": "PFLANZEN & PFLANZKARTOFFELN",
+        "content": "<p>Entdecken Sie unsere vielfältige Auswahl an Chilipflanzen, Pflanzkartoffeln, Erdbeerpflanzen und Tomatenpflanzen für Ihren Garten! Von scharfen Chilis bis zu saftigen Tomaten, wir bieten Ihnen die besten Sorten und Pflegetipps, damit Ihr Garten blüht und Ihr Gemüse gedeiht. Beginnen Sie noch heute Ihre eigene Gartenreise mit unseren hochwertigen Pflanzen. Qualität und Genuss direkt aus Ihrem eigenen Garten.<\/p>",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": true,
+        "background": "#ffffff",
+        "text_color": "#000000",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
@@ -201,7 +367,7 @@
         "look-1": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200903-GustaGarden-092_mirror_2400x1600_0aec3d19-5bbe-4cb8-8611-7724f02026fe.jpg",
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_1.png",
             "dot_type": "inverted",
             "product_1": "tom-tomato",
             "product_1_horizontal_position": 57,
@@ -257,7 +423,7 @@
             "star": "#c8dd02",
             "review_type": "product",
             "reviews_shown": 20,
-            "header_bg_colour": "#4f5358",
+            "header_bg_colour": "#484b42",
             "header_colour": "#f7f7f7",
             "header_star_colour": "#c8dd02",
             "heading_text_colour": "#1d1d1d",
@@ -285,14 +451,73 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
+    },
+    "2eae092f-3a33-4ffa-b2ad-6f94cf05c228": {
+      "type": "codext-main-banner",
+      "blocks": {
+        "82f8458a-f011-40e9-803a-4fcb47095e2d": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        },
+        "e932f583-09bc-445c-b5b4-d31a142319ce": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        },
+        "3aeac826-7d43-43fe-a30b-a399bfa805e4": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        },
+        "0c8eb7ee-f296-4da3-8113-9ead57012057": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        },
+        "7e992b3a-65f3-4dd6-8f26-466c257e8385": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        }
+      },
+      "block_order": [
+        "82f8458a-f011-40e9-803a-4fcb47095e2d",
+        "e932f583-09bc-445c-b5b4-d31a142319ce",
+        "3aeac826-7d43-43fe-a30b-a399bfa805e4",
+        "0c8eb7ee-f296-4da3-8113-9ead57012057",
+        "7e992b3a-65f3-4dd6-8f26-466c257e8385"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/200903-GustaGarden-055_2-scaled.jpg",
+        "main_heading": "Finally more",
+        "highlighted_text": "Savings",
+        "sub_heading": "for your household",
+        "first_button_link": "",
+        "first_button_text": "To the balcony power plants",
+        "second_button_link": "",
+        "second_button_text": "To the solar systems",
+        "promo_heading": "NEW: priwatt Solar Your solar system for self-assembly!",
+        "promo_description": "Easily configure, order and install your solar system up to 10 kWp yourself, according to the priwatt DIY principle."
+      }
     }
   },
   "order": [
-    "slideshow",
     "5a184dd5-83ca-4ad0-94cc-660f16773e6c",
+    "slideshow",
+    "b69abf55-57d4-4ff0-b801-10b195ff3d44",
     "featured-collections",
+    "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
+    "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
+    "c9245672-de7f-4d0f-b627-c276177ea803",
     "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
-    "1700268763cea3d046"
+    "1700268763cea3d046",
+    "2eae092f-3a33-4ffa-b2ad-6f94cf05c228"
   ]
 }

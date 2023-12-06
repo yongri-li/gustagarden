@@ -1,0 +1,298 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gg-nl.jpg",
+            "split_image": "shopify:\/\/shop_images\/paul-potato.jpg",
+            "text_position": "bottom_left",
+            "subheading": "So schmeckt dein Garten",
+            "title": "PAUL POTATO",
+            "button_1_text": "JETZT ENTDECKEN",
+            "button_1_link": "shopify:\/\/products\/paul-potato-starter",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#c8dd02",
+            "button_text_color": "#1d1d1d",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/harry-herbs-1.jpg",
+            "split_image": "shopify:\/\/shop_images\/harbs-wand.jpg",
+            "text_position": "bottom_left",
+            "subheading": "Kräuter & Micorgreens das ganze Jahr über",
+            "title": "HARRY HERBS",
+            "button_1_text": "ZUM PRODUKT",
+            "button_1_link": "shopify:\/\/products\/harry-herbs",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#c8dd02",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "section_height": "small",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "5a184dd5-83ca-4ad0-94cc-660f16773e6c": {
+      "type": "lb-storie-slider",
+      "blocks": {
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-1": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-2": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-3": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "1e4d24a3-ea7e-4f73-898e-0393dd19fa73": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "4d5c1c3f-6709-4725-9a77-814ee320efff": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "72c2367a-6d36-4652-9231-3bd839481fc6": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "5c72b33a-0b55-4151-b0e6-a2d75b4c8771": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": "",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-1",
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-2",
+        "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-3",
+        "1e4d24a3-ea7e-4f73-898e-0393dd19fa73",
+        "4d5c1c3f-6709-4725-9a77-814ee320efff",
+        "72c2367a-6d36-4652-9231-3bd839481fc6",
+        "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42",
+        "5c72b33a-0b55-4151-b0e6-a2d75b4c8771"
+      ],
+      "disabled": true,
+      "settings": {
+        "background-color": "#f2f2f2",
+        "max-show": 600,
+        "abgerundete_ecken": 50,
+        "schriftart": "sans-serif",
+        "schriftfarbe": "#000000",
+        "highlight-color": "#c4258d",
+        "abstand_zwischen_blocken_desktop": 18,
+        "abstand_zwischen_blocken_mobile": 18,
+        "hover-effekt-opacity": 0.8
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "charly-chili",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "2ce60ba1-2511-4adb-bf34-fbdb77475ebf": {
+          "type": "collection",
+          "settings": {
+            "collection": "harry-herbs",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "0974623b-9195-4374-a8ef-bd00104ac8f3": {
+          "type": "collection",
+          "settings": {
+            "collection": "paul-potato",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "2ce60ba1-2511-4adb-bf34-fbdb77475ebf",
+        "0974623b-9195-4374-a8ef-bd00104ac8f3"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "BESTSELLER",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look-1": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_1.png",
+            "dot_type": "inverted",
+            "product_1": "tom-tomato",
+            "product_1_horizontal_position": 57,
+            "product_1_vertical_position": 61,
+            "product_1_horizontal_position_mobile": 30,
+            "product_1_vertical_position_mobile": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 46,
+            "product_2_vertical_position": 64,
+            "product_2_horizontal_position_mobile": 50,
+            "product_2_vertical_position_mobile": 50,
+            "product_3": "",
+            "product_3_horizontal_position": 62,
+            "product_3_vertical_position": 50,
+            "product_3_horizontal_position_mobile": 70,
+            "product_3_vertical_position_mobile": 70
+          }
+        }
+      },
+      "block_order": [
+        "look-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "label": "Shop the looks"
+      }
+    },
+    "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/PP_Team_ZH2_7338.jpg",
+        "subheading": "INNOVATIVES URBAN GARDENING.",
+        "title": "Gusta Garden. So schmeckt dein Garten.",
+        "content": "<p>Unsere Produkte erleichtern den Anbau von Obst und Gemüse in kleinen städtischen Bereichen und bieten ein breites Sortiment an ergänzenden biologischen Düngemitteln, Substraten und Saatgut. Gusta Garden steht für modernes, urbanes Gärtnern im Alpe-Adria-Raum und bietet Lifestyle-orientierten Gärtnern eine vielfältige Auswahl.<\/p>",
+        "button_text": "MEHR ERFAHREN",
+        "button_link": "shopify:\/\/pages\/contact",
+        "background_type": "boxed",
+        "text_position": "overlap_left",
+        "text_alignment": "left",
+        "text_background": "#f5f5f5",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1700268763cea3d046": {
+      "type": "apps",
+      "blocks": {
+        "9a5d98d0-4826-4472-849b-3c6c8871de77": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#c8dd02",
+            "review_type": "product",
+            "reviews_shown": 20,
+            "header_bg_colour": "#4f5358",
+            "header_colour": "#f7f7f7",
+            "header_star_colour": "#c8dd02",
+            "heading_text_colour": "#1d1d1d",
+            "heading_font": "poppins_n4",
+            "body_text_colour": "#1d1d1d",
+            "badge_icon_colour": "#c8dd02",
+            "badge_text_colour": "#1d1d1d",
+            "bg_start_colour": "#f5f5f5",
+            "bg_end_colour": "#f5f5f5",
+            "item_border_width": "0px",
+            "item_border_colour": "#000000",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#000000",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
+          }
+        }
+      },
+      "block_order": [
+        "9a5d98d0-4826-4472-849b-3c6c8871de77"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "5a184dd5-83ca-4ad0-94cc-660f16773e6c",
+    "featured-collections",
+    "shop-the-look",
+    "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
+    "1700268763cea3d046"
+  ]
+}

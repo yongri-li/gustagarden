@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "blog-post-banner": {
+      "type": "blog-post-banner",
+      "settings": {
+        "show_category": false,
+        "blog_header_background": "#f5f5f5",
+        "blog_header_text_color": "#282828"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "show_on_scroll_navigation": true,
+        "show_author": false,
+        "show_date": true,
+        "show_share_buttons": true,
+        "show_content": true
+      }
+    },
+    "93cd9ab2-c351-4d92-829b-5e7a41b07d25": {
+      "type": "main-article-gg",
+      "settings": {
+        "index": 1,
+        "page_width": "800",
+        "show_title": true,
+        "show_content": true
+      }
+    },
+    "5948fff0-f8d0-4196-8deb-30aa8ff0dcac": {
+      "type": "promotion-blocks",
+      "blocks": {
+        "template--16406770188461__5948fff0-f8d0-4196-8deb-30aa8ff0dcac-image-1": {
+          "type": "image",
+          "settings": {
+            "highlight": false,
+            "subheading": "Subheading",
+            "title": "Image with text",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "middle_center",
+            "background": "#f7f8fd",
+            "text_color": "#1e316a",
+            "button_background": "#ffffff",
+            "button_text_color": "#1e316a"
+          }
+        },
+        "template--16406770188461__5948fff0-f8d0-4196-8deb-30aa8ff0dcac-quote-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Subheading",
+            "content": "Use this text to share information about your brand with your customers.",
+            "author": "John S.",
+            "background": "#f7f8fd",
+            "text_color": "#1e316a"
+          }
+        },
+        "template--16406770188461__5948fff0-f8d0-4196-8deb-30aa8ff0dcac-image-2": {
+          "type": "image",
+          "settings": {
+            "highlight": false,
+            "subheading": "Subheading",
+            "title": "Image with text",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "middle_center",
+            "background": "#f7f8fd",
+            "text_color": "#1e316a",
+            "button_background": "#ffffff",
+            "button_text_color": "#1e316a"
+          }
+        }
+      },
+      "block_order": [
+        "template--16406770188461__5948fff0-f8d0-4196-8deb-30aa8ff0dcac-image-1",
+        "template--16406770188461__5948fff0-f8d0-4196-8deb-30aa8ff0dcac-quote-1",
+        "template--16406770188461__5948fff0-f8d0-4196-8deb-30aa8ff0dcac-image-2"
+      ],
+      "settings": {
+        "subheading": "Subheading",
+        "title": "Promotion blocks",
+        "section_size": "medium",
+        "stack_on_mobile": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "blog-post-prev-next": {
+      "type": "blog-post-prev-next",
+      "settings": {
+      }
+    },
+    "blog-post-comments": {
+      "type": "blog-post-comments",
+      "settings": {
+        "show_gravatar": true
+      }
+    }
+  },
+  "order": [
+    "blog-post-banner",
+    "main",
+    "93cd9ab2-c351-4d92-829b-5e7a41b07d25",
+    "5948fff0-f8d0-4196-8deb-30aa8ff0dcac",
+    "blog-post-prev-next",
+    "blog-post-comments"
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "b3e6ce87-1409-4648-a0ad-7dbc015879b0": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+          }
+        },
+        "fff5100c-5ff6-462e-9771-01ed6285b80f": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"lb-pdp-benefits\">\n  {% if product.metafields.custom.usp1 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp1 }}<\/p>\n  <\/div>\n  {% endif %}\n  {% if product.metafields.custom.usp2 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp2 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp3 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp3 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp4 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp4 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp5 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp5 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp6 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp6 }}<\/p>\n  <\/div>\n  {% endif %}\n<\/div>\n\n<style>\n  .lb-pdp-benefits {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n    margin-left: 0px !important;\n    margin-right: 0px !important;\n  }\n  .lb-pdp-benefits div {\n    font-size: 14px !important; \/* Change font size *\/\n    line-height: 18px !important;\n    margin-bottom: 9px !important;\n    display: flex !important;\n    align-items: center !important;\n    overflow: hidden !important;\n  }\n  .lb-pdp-benefits img {\n    max-width: 24px !important;\n    margin-right: 9px !important;\n  }\n  .lb-pdp-benefits p {\n    width: 100% !important;\n    display: block !important;\n    margin: 0px !important;\n  }\n<\/style>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "38a03175-609a-40b5-9e4e-055fec879e76": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 58
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"footer__payment-icons h-stack wrap gap-2\" style=\"margin-bottom: 20px; display: flex; flex-wrap: wrap;\">\n  {% assign enabled_payment_types = 'visa,master,american_express,paypal,klarna-pay-later,apple_pay,google_pay,unionpay,amazon,sofort' | remove: ' ' | split: ',' %}\n  {% for type in enabled_payment_types %}\n    <img src=\"{{ type | payment_type_img_url }}\" style=\"margin-right: 0,5px;\" \/>\n  {% endfor %}\n<\/div>"
+          }
+        },
+        "723850fb-7702-4722-abf6-463a8b4acbb7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% assign current_handle = request.path | split: '\/' | last %}\n{% assign desired_product_handle = '7427791225005' %}\n{% assign upsell_product_handle = '7427791290541' %}\n\n{% if current_handle == desired_product_handle %}\n  {% assign upsell_product = all_products[upsell_product_handle] %}\n\n  <div class=\"upsell\">\n    <h3>Empfohlene Produkte<\/h3>\n    \n    {% if upsell_product.available %}\n      <div class=\"upsell-product\">\n        <a href=\"{{ upsell_product.url }}\">\n          <img src=\"{{ upsell_product.featured_image | img_url: '300x300' }}\" alt=\"{{ upsell_product.title }}\">\n          <p>{{ upsell_product.title }}<\/p>\n          <p>{{ upsell_product.price | money }}<\/p>\n        <\/a>\n      <\/div>\n    {% else %}\n      <p>Dieses Produkt ist derzeit nicht verfügbar.<\/p>\n    {% endif %}\n  <\/div>\n{% endif %}"
+          }
+        }
+      },
+      "block_order": [
+        "b3e6ce87-1409-4648-a0ad-7dbc015879b0",
+        "fff5100c-5ff6-462e-9771-01ed6285b80f",
+        "variant_picker",
+        "quantity_selector",
+        "38a03175-609a-40b5-9e4e-055fec879e76",
+        "buy_buttons",
+        "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
+        "723850fb-7702-4722-abf6-463a8b4acbb7"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": true,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "help_page": "contact",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide",
+        "product_slideshow_title_1": "nur noch 1x pro Woche gießen",
+        "product_slideshow_tooltip_1": "Das Rundum-sorglos-Paket für den Anbau von Tomaten bestichtdurch seinen Wassertank, das integrierte Bewässerungssystem und die stabile Rankhilfe. Mit TOM TOMATO haben wir unsere Vision des perfekten Pflanzgefäßes umgesetzt, um dir den erfolgreichen Tomatenanbau zu Hause so einfach wie möglich zu machen.",
+        "product_slideshow_title_2": "",
+        "product_slideshow_tooltip_2": "",
+        "product_slideshow_title_3": "",
+        "product_slideshow_tooltip_3": "",
+        "product_slideshow_title_4": "",
+        "product_slideshow_tooltip_4": "",
+        "product_slideshow_title_5": "",
+        "product_slideshow_tooltip_5": "",
+        "product_slideshow_title_6": "",
+        "product_slideshow_tooltip_6": ""
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Spare im Set!"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a": {
+          "type": "trust",
+          "settings": {
+            "icon_1": "picto-customer-support",
+            "title_1": "Shipping & Returns",
+            "content_1": "<p>Add text about your shipping policy<\/p>",
+            "icon_2": "picto-warranty",
+            "title_2": "Warranty",
+            "content_2": "<p>Add text about your product warranty<\/p>",
+            "icon_3": "picto-secure-payment",
+            "title_3": "Secure Payment",
+            "content_3": "<p>Add text about your payment<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd",
+        "description",
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "879b3239-f3e7-47a2-98db-5c05eaedfac9": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b_1.png",
+            "custom_icon_width": 50,
+            "title": "IDEAL FÜR DEN BALKONODER TERRASSE",
+            "content": ""
+          }
+        },
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431_cf9a64af-abe8-4ca2-b11e-895eb7480a6f.png",
+            "custom_icon_width": 50,
+            "title": "STABILERANKHILFE",
+            "content": ""
+          }
+        },
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f_1.png",
+            "custom_icon_width": 50,
+            "title": "KINDERLEICHTER AUFBAU",
+            "content": ""
+          }
+        },
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU_110x_778d681e-ab14-4b14-94a9-e2d666999c14.webp",
+            "custom_icon_width": 50,
+            "title": "DESIGNED IN AUSTRIAMADE IN THE EU",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-1",
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-2",
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-3",
+        "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-4"
+      ],
+      "settings": {
+        "background": "#c8dd02",
+        "text_color": "#ffffff",
+        "stack_on_mobile": false
+      }
+    },
+    "93e61ce0-1e10-47b1-a69a-07361399d8ef": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-05T163539.129.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Integrierter Vorratstank mit seitlicher Einfüllöffnung",
+            "content": "<p>Durch die optimale Größe des Wassertanks muss dieser nur alle paar Tage wieder mit Wasser aufgefüllt werden. Über die seitliche Öffnung funktioniert das ganz bequem, ohne den Pflanztopf anheben zu müssen.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1"
+      ],
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "boxed",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1ba95599-fa75-44f7-914b-f9705c642b65": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-05T163018.914.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Innovative Rankhilfe",
+            "content": "<p>Der robuste Rahmen rundet das speziell für Chilis entwickelte Ranksystem perfekt ab. Die reichtragenden Pflanzen werden dadurch optimal im Wachstum unterstützt.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1"
+      ],
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d4209e3c-7dcf-4f51-889f-b541d7fbf05d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-05T162828.415_3b5e4905-4472-4dea-9595-ecfa2bb61b15.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Perfekte Raumnutzung",
+            "content": "<p>Durch die intelligente Formgebung findet CHARLY CHILI überall Platz.<br\/>Zusätzlich sind alle Komponenten so designed, dass sie während der kalten Jahreszeit einfach und platzsparend aufbewahrt werden können. Mehrere CHARLY CHILIs können ineinander gestapelt werden. Im kommenden Frühling hast du somit alles sofort griff- und einsatzbereit.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1"
+      ],
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "72b105f6-5697-49c9-898f-fd111a4512ce": {
+      "type": "video",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https:\/\/youtu.be\/iKXpvf7UCpo",
+        "image": "shopify:\/\/shop_images\/2400x1600px_CC.jpg",
+        "background_type": "full_width",
+        "video_size": "medium",
+        "autoplay": true,
+        "show_video_controls": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c418a397-5659-4b49-890b-a93e490c9842": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "charly-chili",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1"
+      ],
+      "settings": {
+        "subheading": "ALLES FÜR DEINEN CHARLY CHILI",
+        "title": "HILFREICHES ZUBEHÖR",
+        "content": "",
+        "products_count": 4,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "21236dfa-d553-4250-b4d6-d2d01535dc19": {
+      "type": "blog-posts",
+      "settings": {
+        "blog": "news",
+        "subheading": "Stay up-to-date",
+        "title": "Blog",
+        "articles_count": 3,
+        "stack_mobile": false,
+        "show_category": false,
+        "show_excerpt": false,
+        "background": "#c8dd02",
+        "text_color": "#ffffff"
+      }
+    },
+    "170008645861baa2bc": {
+      "type": "apps",
+      "blocks": {
+        "95516f64-80de-44ca-a78c-62098b89477f": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#c8dd02",
+            "review_type": "product_current",
+            "reviews_shown": 20,
+            "header_bg_colour": "#4f5358",
+            "header_colour": "#ffffff",
+            "header_star_colour": "#c8dd02",
+            "heading_text_colour": "#0e1311",
+            "heading_font": "poppins_n4",
+            "body_text_colour": "#0e1311",
+            "badge_icon_colour": "#0e1311",
+            "badge_text_colour": "#0e1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "#000000",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#000000",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
+          }
+        }
+      },
+      "block_order": [
+        "95516f64-80de-44ca-a78c-62098b89477f"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
+      "type": "faq",
+      "blocks": {
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert das Anpflanzen in CHARLY CHILI?",
+            "answer": "<p>CHARLY CHILI ist mit wenigen Handgriffen aufgebaut und bereit zum Bepflanzen. Dann musst du nur noch Erde einfüllen und zwei Chilipflanzen einsetzen.<\/p><p>Alle Details dazu findest du in der <a href=\"https:\/\/www.gustagarden.com\/charly-chili-anleitung\/\">CHARLY CHILI Anleitung<\/a>.<\/p>"
+          }
+        },
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Abmessung hat CHARLY CHILI?",
+            "answer": "<p>Aufgebaut hat CHARLY CHILI (inkl. Ranksystem) Abmessungen von 35 x 28 cm mit einer Höhe von 75 cm.<\/p>"
+          }
+        },
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Wo ist der beste Standort für CHARLY CHILI?",
+            "answer": "<p>Chili- und Paprikapflanzen lieben Wärme. Somit fühlt sich dein CHARLY CHILI an einem sonnigen, luftigen Platz, am besten direkt vor einer Hausmauer, am wohlsten.<\/p>"
+          }
+        },
+        "6a8f3f1c-2080-4f32-8f1b-b4501d5563c6": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Erde soll ich verwenden?",
+            "answer": "<p>Damit du mit CHARLY CHILI eine reiche Ernte erhältst, empfehlen wir Chili-\/Paprikaerde. Im Handel findest du vorgemischte Erde, diese ist ideal für den Anbau von Chilis, Paprika, sowie Pfefferoni. Alternativ kannst du natürlich auch Gemüseerde verwenden.<\/p>"
+          }
+        },
+        "b1a5fb50-9368-49c5-b6f0-d85abe679a79": {
+          "type": "question",
+          "settings": {
+            "title": "Wann muss ich Chilis oder Paprika anpflanzen?",
+            "answer": "<p>Wenn du Chilis aus Samen ziehen möchtest, solltest du bereits im März mit unserem <a href=\"https:\/\/www.gustagarden.com\/produkt\/mini-gewaechshaus-inkl-charly-chili-samen-mix\/\">Mini-Gewächshaus inkl. CHARLY CHILI Samen-Mix<\/a> damit beginnen. In unserer <a href=\"https:\/\/www.gustagarden.com\/gewaechshaus-schlossgarten-anleitung\/\">Mini-Gewächshaus Anleitung<\/a> erklären wir dir genau wie das funktioniert. Möchtest du aber junge Chilipflanzen setzen, dann solltest du die Eisheiligen Mitte Mai abwarten. Die Pflanzen dürfen auf keinen Fall Frost ausgesetzt werden.<\/p>"
+          }
+        },
+        "82f48462-8c9c-4223-8554-f1aa6581973e": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert das Gießen?",
+            "answer": "<p>Gieße nach dem Einsetzen deine Chilipflanzen eine Zeit lang von oben und befülle zusätzlich den Tank mit 4,5L Wasser. Sobald die Wurzeln in den Wassertank reichen, musst du nur mehr regelmäßig den Tank auffüllen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "6a8f3f1c-2080-4f32-8f1b-b4501d5563c6",
+        "b1a5fb50-9368-49c5-b6f0-d85abe679a79",
+        "82f48462-8c9c-4223-8554-f1aa6581973e"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339": {
+      "type": "codext-feature-chart",
+      "blocks": {
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Stabilität",
+            "heading_2": "Wassertank",
+            "heading_3": "Langlebigkeit",
+            "heading_4": "UV Stabil",
+            "heading_5": ""
+          }
+        },
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "tom-tomato",
+            "value_1": "<p>✔️<\/p>",
+            "value_2": "<p>✔️<\/p>",
+            "value_3": "<p>✔️<\/p>",
+            "value_4": "<p>✔️<\/p>",
+            "value_5": ""
+          }
+        },
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2": {
+          "type": "values",
+          "settings": {
+            "product": "fertigen-systeme",
+            "value_1": "<p>❌<\/p>",
+            "value_2": "<p>❌<\/p>",
+            "value_3": "<p>❌<\/p>",
+            "value_4": "<p>❌<\/p>",
+            "value_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1",
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1",
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Darum ist  CHARLY CHILI die beste Wahl",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-content",
+    "879b3239-f3e7-47a2-98db-5c05eaedfac9",
+    "93e61ce0-1e10-47b1-a69a-07361399d8ef",
+    "1ba95599-fa75-44f7-914b-f9705c642b65",
+    "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
+    "72b105f6-5697-49c9-898f-fd111a4512ce",
+    "c418a397-5659-4b49-890b-a93e490c9842",
+    "21236dfa-d553-4250-b4d6-d2d01535dc19",
+    "170008645861baa2bc",
+    "c1104d7d-0c9d-4394-ab24-0f86afeb3484",
+    "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339"
+  ]
+}

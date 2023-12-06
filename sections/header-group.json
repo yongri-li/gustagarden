@@ -49,9 +49,9 @@
           "settings": {
             "menu_item": "SHOP",
             "images_position": "right",
-            "image_1_heading": "",
+            "image_1_heading": "BESTSELLER",
             "image_1_text": "",
-            "image_1_link": "",
+            "image_1_link": "shopify:\/\/products\/sammy-salad",
             "image_2_heading": "",
             "image_2_text": "",
             "image_2_link": "",
@@ -72,7 +72,7 @@
         "d290e4e5-66ec-4afd-a6cb-51edf8829bfb": {
           "type": "mega_menu",
           "settings": {
-            "menu_item": "Vorteile",
+            "menu_item": "",
             "images_position": "right",
             "image_1_heading": "",
             "image_1_text": "",

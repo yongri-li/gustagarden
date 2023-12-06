@@ -1,0 +1,166 @@
+{
+  "sections": {
+    "7271de26-ba74-415b-b75f-bffeb21f4c63": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "small",
+        "image": "shopify:\/\/shop_images\/tomatoes-835385_1920.jpg",
+        "subheading": "",
+        "title": "RATGEBER",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "bottom_left",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "ef1964cf-b7f3-4641-9cdd-36dce15f90b0": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<p>In unserem Ratgeber möchten wir dir interessante Informationen, sowie hilfreiche Tipps & Tricks rund um das Thema <strong>Urban Gardening <\/strong>geben. Von <strong>Bepflanzungstipps <\/strong>bis hin zu <strong>alternativen Verwendungsmöglichkeiten <\/strong>findest du hier alles was du brauchst, um selbst PAUL POTATO und co. erfolgreich zu bepflanzen!<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_blog_title": false,
+        "show_tags": false,
+        "show_category": false,
+        "show_excerpt": true,
+        "articles_per_page": 24
+      }
+    },
+    "ff8f5d7c-20e5-4123-8150-26d7fe903827": {
+      "type": "promotion-blocks",
+      "blocks": {
+        "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_20191014_161504_1000x730_d6dbbb76-6742-4228-a40b-16bc0e9629f4.jpg",
+            "highlight": false,
+            "subheading": "",
+            "title": "",
+            "link_text": "REad our story",
+            "link_url": "",
+            "link_style": "button",
+            "text_position": "middle_center",
+            "background": "#000000",
+            "text_color": "#000000",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000"
+          }
+        },
+        "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-quote-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Subheading",
+            "content": "Use this text to share information about your brand with your customers.",
+            "author": "John S.",
+            "background": "#c8dd02",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-image-2",
+        "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-quote-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "section_size": "small",
+        "stack_on_mobile": true,
+        "background": "#c8dd02",
+        "text_color": "#ffffff"
+      }
+    },
+    "04314064-0967-4755-b0f1-a896ce24ccf8": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16337047978157__04314064-0967-4755-b0f1-a896ce24ccf8-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "charly-chili",
+            "image": "shopify:\/\/shop_images\/210530GustaGarden-20_qu-600x600.jpg",
+            "subheading": "",
+            "title": "CHARLY CHILI",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16337047978157__04314064-0967-4755-b0f1-a896ce24ccf8-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "paul-potato",
+            "image": "shopify:\/\/shop_images\/180921-GG-19-Kopie-600x600.jpg",
+            "subheading": "",
+            "title": "PAUL POTATO",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "template--16337047978157__04314064-0967-4755-b0f1-a896ce24ccf8-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "zubehor-amp-dunger",
+            "image": "shopify:\/\/shop_images\/Zubehor_s-2.jpg",
+            "subheading": "",
+            "title": "Zubehör",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--16337047978157__04314064-0967-4755-b0f1-a896ce24ccf8-collection-2",
+        "template--16337047978157__04314064-0967-4755-b0f1-a896ce24ccf8-collection-3",
+        "template--16337047978157__04314064-0967-4755-b0f1-a896ce24ccf8-collection-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "grid",
+        "subheading": "",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "7271de26-ba74-415b-b75f-bffeb21f4c63",
+    "ef1964cf-b7f3-4641-9cdd-36dce15f90b0",
+    "main",
+    "ff8f5d7c-20e5-4123-8150-26d7fe903827",
+    "04314064-0967-4755-b0f1-a896ce24ccf8"
+  ]
+}

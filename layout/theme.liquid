@@ -132,9 +132,10 @@
     <link
       rel="stylesheet"
       href="{{ 'theme.css' | asset_url }}">
-    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
+    
 
     {{ 'codext-theme.css' | asset_url | stylesheet_tag }}
+    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
 
     <script
       src="{{ 'vendor.js' | asset_url }}"
@@ -150,7 +151,8 @@
       defer></script>
 
     {{ content_for_header }}
-  </head>
+  {% render 'gp-head' %}
+</head>
 
   {%- assign feature_classes = '' -%}
 
