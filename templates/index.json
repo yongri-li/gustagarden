@@ -7,7 +7,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.webp",
-            "heading": "Linkname",
+            "heading": "Harry Herbs",
             "url": "",
             "highlight": false
           }
@@ -16,7 +16,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/2021-01-13_Tom_Tomato_grey_1000x1000_d07caf39-b606-4796-9a95-74c14f9997bb.webp",
-            "heading": "Linkname",
+            "heading": "Tom Tomato",
             "url": "",
             "highlight": false
           }
@@ -25,7 +25,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/SAMMY-SALAD_mit-Schnalle_2hellgrau-1.webp",
-            "heading": "Linkname",
+            "heading": "Sammy Salad",
             "url": "",
             "highlight": false
           }
@@ -34,7 +34,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit.webp",
-            "heading": "Linkname",
+            "heading": "Paul Potato",
             "url": "",
             "highlight": false
           }
@@ -43,7 +43,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/100620_TOMATO_BUDDY_1-scaled.webp",
-            "heading": "Linkname",
+            "heading": "Tomato Buddy",
             "url": "",
             "highlight": false
           }
@@ -52,7 +52,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/2021-03-03_Charly_Chili_Studio_grau_farbangepasst_qu-1.webp",
-            "heading": "Linkname",
+            "heading": "Charly Chili",
             "url": "",
             "highlight": false
           }
@@ -61,7 +61,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-classic_weiss.webp",
-            "heading": "Linkname",
+            "heading": "Sissi Strawberry",
             "url": "",
             "highlight": false
           }
@@ -89,7 +89,7 @@
         "background-color": "#f5f5f5",
         "max-show": 600,
         "abgerundete_ecken": 0,
-        "schriftart": "sans-serif",
+        "schriftart": "poppins_n4",
         "schriftfarbe": "#000000",
         "highlight-color": "#c4258d",
         "abstand_zwischen_blocken_desktop": 18,
