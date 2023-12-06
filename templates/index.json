@@ -498,6 +498,40 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look-1": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_1.png",
+            "dot_type": "inverted",
+            "product_1": "tom-tomato",
+            "product_1_horizontal_position": 57,
+            "product_1_vertical_position": 61,
+            "product_1_horizontal_position_mobile": 30,
+            "product_1_vertical_position_mobile": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 46,
+            "product_2_vertical_position": 64,
+            "product_2_horizontal_position_mobile": 50,
+            "product_2_vertical_position_mobile": 50,
+            "product_3": "",
+            "product_3_horizontal_position": 62,
+            "product_3_vertical_position": 50,
+            "product_3_horizontal_position_mobile": 70,
+            "product_3_vertical_position_mobile": 70
+          }
+        }
+      },
+      "block_order": [
+        "look-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "label": "Shop the looks"
+      }
+    },
     "c9245672-de7f-4d0f-b627-c276177ea803": {
       "type": "featured-collections",
       "blocks": {
@@ -578,40 +612,6 @@
         "text_color": "#484b42"
       }
     },
-    "shop-the-look": {
-      "type": "shop-the-look",
-      "blocks": {
-        "look-1": {
-          "type": "look",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_1.png",
-            "dot_type": "inverted",
-            "product_1": "tom-tomato",
-            "product_1_horizontal_position": 57,
-            "product_1_vertical_position": 61,
-            "product_1_horizontal_position_mobile": 30,
-            "product_1_vertical_position_mobile": 30,
-            "product_2": "",
-            "product_2_horizontal_position": 46,
-            "product_2_vertical_position": 64,
-            "product_2_horizontal_position_mobile": 50,
-            "product_2_vertical_position_mobile": 50,
-            "product_3": "",
-            "product_3_horizontal_position": 62,
-            "product_3_vertical_position": 50,
-            "product_3_horizontal_position_mobile": 70,
-            "product_3_vertical_position_mobile": 70
-          }
-        }
-      },
-      "block_order": [
-        "look-1"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "label": "Shop the looks"
-      }
-    },
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72": {
       "type": "image-with-text-block",
       "settings": {
@@ -679,9 +679,9 @@
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
     "7228d659-8353-4918-8a23-d598fbc9e8a3",
+    "shop-the-look",
     "c9245672-de7f-4d0f-b627-c276177ea803",
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57",
-    "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
     "1700268763cea3d046"
   ]
