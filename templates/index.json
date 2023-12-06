@@ -290,15 +290,15 @@
         "subheading": "Subheading",
         "title": "Image with text block",
         "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
-        "button_text": "",
+        "button_text": "ZU DEN ANLEITUNGEN",
         "button_link": "",
         "background_type": "boxed",
         "text_position": "overlap_right",
         "text_alignment": "center",
-        "text_background": "#f7f7f7",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
+        "text_background": "#4f5358",
+        "text_color": "#ffffff",
+        "button_background": "#c8dd02",
+        "button_text_color": "#ffffff"
       }
     },
     "c9245672-de7f-4d0f-b627-c276177ea803": {
