@@ -501,6 +501,26 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "a1d506df-5cf7-43fd-bc66-cbf11398ba57": {
+      "type": "blog-posts",
+      "custom_css": [
+        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center; display: flex; flex-direction: column;}",
+        ".h4 {font-size: 20px;}",
+        ".article-item__content {flex-grow: 1;}",
+        ".article-item__title,.article-item__content {padding: 4px !important; display: flex; align-items: center; justify-content: center;}"
+      ],
+      "settings": {
+        "blog": "rezepte",
+        "subheading": "FRISCH AUS DEINEM GARTEN",
+        "title": "Unsere leckeren Rezepte",
+        "articles_count": 3,
+        "stack_mobile": false,
+        "show_category": false,
+        "show_excerpt": false,
+        "background": "#f5f5f5",
+        "text_color": "#484b42"
+      }
+    },
     "1700268763cea3d046": {
       "type": "apps",
       "blocks": {
@@ -513,18 +533,18 @@
             "header_bg_colour": "#484b42",
             "header_colour": "#f7f7f7",
             "header_star_colour": "#c8dd02",
-            "heading_text_colour": "#1d1d1d",
+            "heading_text_colour": "#484b42",
             "heading_font": "poppins_n4",
-            "body_text_colour": "#1d1d1d",
+            "body_text_colour": "#484b42",
             "badge_icon_colour": "#c8dd02",
-            "badge_text_colour": "#1d1d1d",
+            "badge_text_colour": "#484b42",
             "bg_start_colour": "#f5f5f5",
             "bg_end_colour": "#f5f5f5",
             "item_border_width": "0px",
-            "item_border_colour": "#000000",
+            "item_border_colour": "#484b42",
             "item_border_radius": "0px",
             "item_shadow_size": "10px",
-            "item_shadow_colour": "#000000",
+            "item_shadow_colour": "#484b42",
             "enable_rich_snippets": false,
             "disable_same_customer": false,
             "logo_colour": "var(--logo-inverted)"
@@ -537,26 +557,6 @@
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
-      }
-    },
-    "a1d506df-5cf7-43fd-bc66-cbf11398ba57": {
-      "type": "blog-posts",
-      "custom_css": [
-        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center; display: flex; flex-direction: column;}",
-        ".h4 {font-size: 20px;}",
-        ".article-item__content {flex-grow: 1;}",
-        ".article-item__title,.article-item__content {padding: 4px!important; display: flex; align-items: center; justify-content: center;}"
-      ],
-      "settings": {
-        "blog": "rezepte",
-        "subheading": "FRISCH AUS DEINEM GARTEN",
-        "title": "Unsere leckeren Rezepte",
-        "articles_count": 3,
-        "stack_mobile": false,
-        "show_category": false,
-        "show_excerpt": false,
-        "background": "#f5f5f5",
-        "text_color": "#484b42"
       }
     }
   },
@@ -573,7 +573,7 @@
     "4d9d972c-44d2-44a5-b30f-76111a9b2367",
     "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
-    "1700268763cea3d046",
-    "a1d506df-5cf7-43fd-bc66-cbf11398ba57"
+    "a1d506df-5cf7-43fd-bc66-cbf11398ba57",
+    "1700268763cea3d046"
   ]
 }
