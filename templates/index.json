@@ -197,7 +197,8 @@
         "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-6"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 750px) {{margin-top: -50px; } h3 {color: #484B42; text-transform: uppercase; }}"
+        "h3 {color: #484b42; text-transform: uppercase;}",
+        "@media only screen and (min-width: 750px) {{margin-top: -50px; }}"
       ],
       "settings": {
         "reveal_on_scroll": true,
