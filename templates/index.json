@@ -328,11 +328,11 @@
             "image_border": "#c8dd02",
             "title": "HARRY HERBS",
             "content": "<p><strong>Pflanze dein eigenes Superfood<\/strong><\/p><p>Mit Harry Herbs kannst du Superfood das ganze Jahr über anbauen, drinnen und draußen. Der moderne Kräutertopf bietet verschiedene Anbaumöglichkeiten und ist ideal für Urban Gardening.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/products\/harry-herbs",
+            "link_style": "button",
             "text_alignment": "center",
-            "vertical_alignment": "start"
+            "vertical_alignment": "center"
           }
         },
         "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2": {
