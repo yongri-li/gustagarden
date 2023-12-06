@@ -94,6 +94,13 @@
             "menu": "gusta-garden"
           }
         },
+        "5b00c1b9-c72d-4e64-8d63-62cb64b6976b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-footer.png",
+            "image_width": 150
+          }
+        },
         "social_media": {
           "type": "social_media",
           "settings": {
@@ -106,6 +113,7 @@
         "links",
         "eae72dad-69b9-47c3-b9ab-86483058c3d5",
         "c420f209-c679-48bd-bf6b-ee7064be5316",
+        "5b00c1b9-c72d-4e64-8d63-62cb64b6976b",
         "social_media"
       ],
       "settings": {
