@@ -482,7 +482,7 @@
       ],
       "custom_css": [
         ".h5 {font-weight: bold; font-size: 20px; background-color: #c8dd02; color: #fff; padding: 5px;}",
-        ".multi-column__image-wrapper {border: 10px solid #f5f5f5;}"
+        ".multi-column__image-wrapper {border: 10px solid #f5f5f5; border-radius: 250px;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
