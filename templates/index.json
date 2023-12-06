@@ -542,7 +542,7 @@
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57": {
       "type": "blog-posts",
       "custom_css": [
-        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center;}",
+        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center; display: flex; flex-direction: column;}",
         ".h4 {font-size: 20px;}"
       ],
       "settings": {
