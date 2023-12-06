@@ -542,8 +542,10 @@
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57": {
       "type": "blog-posts",
       "custom_css": [
-        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center;}",
-        ".h4 {font-size: 20px;}"
+        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center; display: flex; flex-direction: column;}",
+        ".h4 {font-size: 20px;}",
+        ".article-item__content {flex-grow: 1;}",
+        ".article-item__title,.article-item__content {padding: 4px!important; display: flex; align-items: center; justify-content: center;}"
       ],
       "settings": {
         "blog": "rezepte",
