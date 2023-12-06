@@ -222,7 +222,7 @@
         "background_type": "boxed",
         "text_position": "overlap_left",
         "text_alignment": "center",
-        "text_background": "rgba(0,0,0,0)",
+        "text_background": "#c8dd02",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
@@ -240,7 +240,7 @@
         "background_type": "boxed",
         "text_position": "overlap_right",
         "text_alignment": "center",
-        "text_background": "rgba(0,0,0,0)",
+        "text_background": "#f7f7f7",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
