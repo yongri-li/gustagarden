@@ -292,7 +292,7 @@
         "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
         "button_text": "ZU DEN ANLEITUNGEN",
         "button_link": "",
-        "background_type": "boxed",
+        "background_type": "full_width",
         "text_position": "overlap_right",
         "text_alignment": "center",
         "text_background": "#4f5358",
