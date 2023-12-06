@@ -520,6 +520,28 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "7fac1597-2b40-477a-bf0c-84f7dd53345d": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify:\/\/shop_images\/soft-verlauf_d7da9589-2112-49f0-8cd1-c068db8b2d38.png",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "shop-the-look": {
       "type": "shop-the-look",
       "blocks": {
@@ -702,6 +724,7 @@
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
     "8b8ebb48-c7c6-43f1-a3bf-073a73b013a8",
     "7228d659-8353-4918-8a23-d598fbc9e8a3",
+    "7fac1597-2b40-477a-bf0c-84f7dd53345d",
     "shop-the-look",
     "c9245672-de7f-4d0f-b627-c276177ea803",
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57",
