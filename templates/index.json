@@ -538,6 +538,23 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
+    },
+    "a1d506df-5cf7-43fd-bc66-cbf11398ba57": {
+      "type": "blog-posts",
+      "custom_css": [
+        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center;}"
+      ],
+      "settings": {
+        "blog": "rezepte",
+        "subheading": "FRISCH AUS DEINEM GARTEN",
+        "title": "Unsere leckeren Rezepte",
+        "articles_count": 3,
+        "stack_mobile": false,
+        "show_category": false,
+        "show_excerpt": false,
+        "background": "#ffffff",
+        "text_color": "#484b42"
+      }
     }
   },
   "order": [
@@ -553,6 +570,7 @@
     "4d9d972c-44d2-44a5-b30f-76111a9b2367",
     "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
-    "1700268763cea3d046"
+    "1700268763cea3d046",
+    "a1d506df-5cf7-43fd-bc66-cbf11398ba57"
   ]
 }
