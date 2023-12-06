@@ -418,12 +418,20 @@
             "title": "Woher bekomme ich Pflanzkartoffeln?",
             "answer": "<p>Natürlich direkt bei uns! Schau doch mal in unserem Shop vorbei: wir haben ganz viele unterschiedliche Sorten für dich ausgewählt. <a href=\"https:\/\/www.gustagarden.com\/produkt-kategorie\/saatgut-und-pflanzen\/pflanzkartoffeln\/\">Hier <\/a>kannst du dir einen Überblick verschaffen und dir deine perfekten Kartoffelsorten direkt aussuchen!<\/p>"
           }
+        },
+        "7a02e348-05eb-4059-9091-1f6b540d03b0": {
+          "type": "question",
+          "settings": {
+            "title": "Was sind frühe, mittlere und späte Pflanzkartoffeln?",
+            "answer": "<p>Darunter versteht man die Reifedauer der einzelnen Kartoffelsorten, welche 90 (bei frühen Sorten) bis 160 Tage (bei späten Sorten) betragen kann. Für mehr Infos lies dir dazu doch einfach unseren ausführlichen Blogartikel über <a href=\"https:\/\/www.gustagarden.com\/welche-kartoffelsorten-gibt-es\/\">\"Kartoffelsorten\" <\/a>durch.<\/p>"
+          }
         }
       },
       "block_order": [
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3"
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "7a02e348-05eb-4059-9091-1f6b540d03b0"
       ],
       "settings": {
         "show_navigation": false,
