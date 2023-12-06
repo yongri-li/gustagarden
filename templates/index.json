@@ -320,7 +320,7 @@
     "8b8ebb48-c7c6-43f1-a3bf-073a73b013a8": {
       "type": "image-with-text-overlay",
       "settings": {
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "section_height": "auto",
         "image": "shopify:\/\/shop_images\/GustaGarden-Team-2048x683.jpg",
         "subheading": "",
