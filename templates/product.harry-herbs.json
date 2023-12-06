@@ -457,46 +457,56 @@
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
       "type": "faq",
       "blocks": {
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1": {
-          "type": "category",
-          "settings": {
-            "title": "Shipping"
-          }
-        },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
           "type": "question",
           "settings": {
-            "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "title": "Wie funktioniert das Anpflanzen in HARRY HERBS?",
+            "answer": "<p>In <a href=\"https:\/\/www.gustagarden.com\/produkt\/harry-herbs\/\">HARRY HERBS<\/a> hast du insgesamt 4 verschiedene Anbaumöglichkeiten. Hier findest du zu jeweiligen Auf- und Anbau-Anleitungen:<\/p><p>1. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-anzucht-anleitung\/\">Anzucht (Zimmergewächshaus)<\/a><br\/>2. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-pflanztopf-anleitung\/\">Pflanztopf<\/a><br\/>3. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-hydroponik-anleitung\/\">Hydroponik (ohne Erde)<\/a><br\/>4. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-microgreens-anleitung\/\">Microgreens<\/a><\/p><p>Außerdem hast du auch 4 verschiedene Möglichkeiten, deinen HARRY HERBS indoor oder outdoor zu platzieren. Die Montage-Anleitungen zu den jeweiligen Möglichkeiten findest du hier:<\/p><p>1. einzeln oder stylisch als Gruppe mit der Wandhalterung an der Wand schweben lassen<br\/>2. praktisch auf jedem Geländer mithilfe der Balkonhalterung aufhängen<br\/>3. im 3er-Pack auf dem modernen Senkrechtgarten aus Lärchenholz dein Zuhause dekorieren<br\/>4. einfach auf dem Wohnzimmertisch, in der Küche, auf der Kommode oder der Fensterbank hinstellen<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
           "type": "question",
           "settings": {
-            "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2": {
-          "type": "category",
-          "settings": {
-            "title": "Other"
+            "title": "Welche Abmessung hat HARRY HERBS?",
+            "answer": "<p><a href=\"https:\/\/www.gustagarden.com\/produkt\/harry-herbs\/\">HARRY HERBS <\/a>hat mit und ohne Anzuchthaube folgende Maße:<br\/><\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
           "type": "question",
           "settings": {
-            "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Wo ist der beste Standort für HARRY HERBS?",
+            "answer": "<p>Je nach Anbaumöglichkeit findest du den optimalen Standort hier:<\/p><p>1. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-anzucht-anleitung\/\">Anzucht (Zimmergewächshaus)<\/a><br\/>2. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-pflanztopf-anleitung\/\">Pflanztopf<\/a><br\/>3. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-hydroponik-anleitung\/\">Hydroponik (ohne Erde)<\/a><br\/>4. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-microgreens-anleitung\/\">Microgreens<\/a><\/p>"
+          }
+        },
+        "e0ea9fb3-85c9-454b-bbb6-d0a699bf6b17": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Erde soll ich verwenden?",
+            "answer": "<p>Je nach Anbaumöglichkeit gibt es auch eine unterschiedliche Basis für den Anbau. Um dir den Anbau in HARRY HERBS so einfach wie möglich zu machen, haben wir vorab viele Produkte getestet. Die Testsieger haben es in unsere Produktreihe für HARRY HERBS Zubehör geschafft:<\/p><p>1. Anzucht: <a href=\"https:\/\/www.gustagarden.com\/produkt\/kokos-quelltoepfe\/\">Kokos-Quelltöpfe<\/a> <br\/>2. Pflanztopf: <a href=\"https:\/\/www.gustagarden.com\/produkt\/kokoserde\/\">Kokoserde, 100% torffrei<\/a><br\/>3. Hydroponik: <a href=\"https:\/\/www.gustagarden.com\/produkt\/hydroponik-set\/\">Hydroponik-Set<\/a><br\/>4. Microgreens: <a href=\"https:\/\/www.gustagarden.com\/produkt\/microgreens-nachfuellset\/\">Microgreens-Set inkl. Samen<\/a><\/p>"
+          }
+        },
+        "480db0c1-1b26-4171-be3c-276353828da1": {
+          "type": "question",
+          "settings": {
+            "title": "Wann muss ich in HARRY HERBS anpflanzen?",
+            "answer": "<p>HARRY HERBS kannst du z.B. in deiner Küche das ganze Jahr lang durchgehend mit frischen Kräutern, Salat und Microgreens bepflanzen. <\/p><p>Falls du deinen HARRY HERBS lieber im Freien (z.B. am Balkon oder der Fensterbank) platzieren möchtest, achte auf die entsprechenden Temperaturen für dein Gemüse, das du angepflanzt hast. Sobald die Temperaturen im Frühling steigen, fühlen sich jede Menge Kräuter und Salatsorten draußen schon pudelwohl. Im Herbst, bevor es frostig wird, solltest du deinen HARRY dann wieder nach drinnen übersiedeln.<\/p>"
+          }
+        },
+        "c868942a-7321-454e-a600-f1a5b412575b": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert das Gießen?",
+            "answer": "<p>Abhängig von der Anbaumöglichkeit hat HARRY HERBS auch ein unterschiedlich großes Wasserreservoir. Alle Details und Tipps zum Thema Gießen findest du in der jeweiligen Anleitung:<\/p><p>1. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-anzucht-anleitung\/\">Anzucht (Zimmergewächshaus)<\/a><br\/>2. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-pflanztopf-anleitung\/\">Pflanztopf<\/a><br\/>3. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-hydroponik-anleitung\/\">Hydroponik (ohne Erde)<\/a><br\/>4. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-microgreens-anleitung\/\">Microgreens<\/a><\/p>"
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3"
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "e0ea9fb3-85c9-454b-bbb6-d0a699bf6b17",
+        "480db0c1-1b26-4171-be3c-276353828da1",
+        "c868942a-7321-454e-a600-f1a5b412575b"
       ],
       "settings": {
         "show_navigation": false,
