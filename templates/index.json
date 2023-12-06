@@ -451,6 +451,32 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
+    },
+    "2eae092f-3a33-4ffa-b2ad-6f94cf05c228": {
+      "type": "codext-main-banner",
+      "blocks": {
+        "82f8458a-f011-40e9-803a-4fcb47095e2d": {
+          "type": "feature",
+          "settings": {
+            "feature_text": "Feature Text"
+          }
+        }
+      },
+      "block_order": [
+        "82f8458a-f011-40e9-803a-4fcb47095e2d"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/200903-GustaGarden-055_2-scaled.jpg",
+        "main_heading": "Finally more",
+        "highlighted_text": "Savings",
+        "sub_heading": "for your household",
+        "first_button_link": "",
+        "first_button_text": "To the balcony power plants",
+        "second_button_link": "",
+        "second_button_text": "To the solar systems",
+        "promo_heading": "NEW: priwatt Solar Your solar system for self-assembly!",
+        "promo_description": "Easily configure, order and install your solar system up to 10 kWp yourself, according to the priwatt DIY principle."
+      }
     }
   },
   "order": [
@@ -463,6 +489,7 @@
     "c9245672-de7f-4d0f-b627-c276177ea803",
     "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
-    "1700268763cea3d046"
+    "1700268763cea3d046",
+    "2eae092f-3a33-4ffa-b2ad-6f94cf05c228"
   ]
 }
