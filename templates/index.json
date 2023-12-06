@@ -317,6 +317,28 @@
         "button_text_color": "#ffffff"
       }
     },
+    "8b8ebb48-c7c6-43f1-a3bf-073a73b013a8": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify:\/\/shop_images\/GustaGarden-Team-2048x683.jpg",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "top_center",
+        "text_color": "#484b42",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "7228d659-8353-4918-8a23-d598fbc9e8a3": {
       "type": "multi-column",
       "blocks": {
@@ -612,25 +634,6 @@
         "text_color": "#484b42"
       }
     },
-    "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72": {
-      "type": "image-with-text-block",
-      "settings": {
-        "reveal_on_scroll": true,
-        "image": "shopify:\/\/shop_images\/PP_Team_ZH2_7338.jpg",
-        "subheading": "INNOVATIVES URBAN GARDENING.",
-        "title": "Gusta Garden. So schmeckt dein Garten.",
-        "content": "<p>Unsere Produkte erleichtern den Anbau von Obst und Gemüse in kleinen städtischen Bereichen und bieten ein breites Sortiment an ergänzenden biologischen Düngemitteln, Substraten und Saatgut. Gusta Garden steht für modernes, urbanes Gärtnern im Alpe-Adria-Raum und bietet Lifestyle-orientierten Gärtnern eine vielfältige Auswahl.<\/p>",
-        "button_text": "MEHR ERFAHREN",
-        "button_link": "shopify:\/\/pages\/contact",
-        "background_type": "boxed",
-        "text_position": "overlap_left",
-        "text_alignment": "left",
-        "text_background": "#f5f5f5",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
     "1700268763cea3d046": {
       "type": "apps",
       "blocks": {
@@ -668,6 +671,25 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
+    },
+    "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/PP_Team_ZH2_7338.jpg",
+        "subheading": "INNOVATIVES URBAN GARDENING.",
+        "title": "Gusta Garden. So schmeckt dein Garten.",
+        "content": "<p>Unsere Produkte erleichtern den Anbau von Obst und Gemüse in kleinen städtischen Bereichen und bieten ein breites Sortiment an ergänzenden biologischen Düngemitteln, Substraten und Saatgut. Gusta Garden steht für modernes, urbanes Gärtnern im Alpe-Adria-Raum und bietet Lifestyle-orientierten Gärtnern eine vielfältige Auswahl.<\/p>",
+        "button_text": "MEHR ERFAHREN",
+        "button_link": "shopify:\/\/pages\/contact",
+        "background_type": "boxed",
+        "text_position": "overlap_left",
+        "text_alignment": "left",
+        "text_background": "#f5f5f5",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -678,11 +700,12 @@
     "fe533a39-048e-4fa1-813f-b0bb91bc1a92",
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
+    "8b8ebb48-c7c6-43f1-a3bf-073a73b013a8",
     "7228d659-8353-4918-8a23-d598fbc9e8a3",
     "shop-the-look",
     "c9245672-de7f-4d0f-b627-c276177ea803",
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57",
-    "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
-    "1700268763cea3d046"
+    "1700268763cea3d046",
+    "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72"
   ]
 }
