@@ -455,46 +455,64 @@
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
       "type": "faq",
       "blocks": {
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1": {
-          "type": "category",
-          "settings": {
-            "title": "Shipping"
-          }
-        },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
           "type": "question",
           "settings": {
-            "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "title": "Wie funktioniert das Anpflanzen in SISSI STRAWBERRY?",
+            "answer": "<p>Erdbeeren in SISSI STRAWBERRY einsetzen ist kinderleicht. Grundsätzlich füllst du jede Etage mit Erde und setzt die jungen Erdbeerpflanzen in die seitlichen Öffnungen ein. Für genauere Infos klicke bitte <a href=\"https:\/\/www.gustagarden.com\/sissi-strawberry-anleitung\/\">hier<\/a>.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
           "type": "question",
           "settings": {
-            "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2": {
-          "type": "category",
-          "settings": {
-            "title": "Other"
+            "title": "Welche Abmessungen hat SISSI STRAWBERRY?",
+            "answer": "<p>SISSI STRAWBERRYs Untersetzer ist der breiteste Teil unseres Erdbeerbaums mit einem Durchmesser von ca. 32cm. Je nach Variante hat SISSI STRAWBERRY eine Höhe zwischen 77cm und 184cm. Mehr zu den Größen findest du auf der jeweiligen Produktseite im <a href=\"https:\/\/www.gustagarden.com\/produkt-kategorie\/sissi-strawberry\/\">Shop<\/a>.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
           "type": "question",
           "settings": {
-            "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Welche Erdbeersorten kann ich anpflanzen, und woher bekomme ich am besten welche?",
+            "answer": "<p>Es eignet sich wirklich jede Sorte für das Anpflanzen in SISSI STRAWBERRY. Innerhalb Österreichs und nach Deutschland liefern wir Erdbeerpflanzen direkt von einer heimischen Gärtnerei zu dir nach Hause. Schau mal hier im <a href=\"https:\/\/www.gustagarden.com\/produkt-kategorie\/saatgut-und-pflanzen\/erdbeerpflanzen\/\">Shop<\/a>.<\/p>"
+          }
+        },
+        "174f7bf5-2a29-4ecf-8739-bd97198ca40c": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Erde verwende ich am besten?",
+            "answer": "<p>Für deine Erdbeeren kannst du entweder eine Beerenerde verwenden, oder einfach Universalerde benutzen.<\/p>"
+          }
+        },
+        "d60753d4-d9e9-48f8-9099-9520e2fbf455": {
+          "type": "question",
+          "settings": {
+            "title": "Wann ist die beste Anpflanzzeit?",
+            "answer": "<p>Wenn du Erdbeeren aus Samen ziehen möchtest, solltest du bereits im März damit beginnen. Das funktioniert am besten mit unserem <a href=\"https:\/\/www.gustagarden.com\/produkt\/mini-gewaechshaus-inkl-erdbeersamen-mix\/\">Mini-Gewächshaus inkl. SISSI STRAWBERRY Samen-Mix<\/a>. Hier findest du eine Schritt-für-Schritt Anleitung dazu: <a href=\"https:\/\/www.gustagarden.com\/mini-gewaechshaus-anleitung\/\">Mini-Gewächshaus Anleitung<\/a>. Die beste Pflanzzeit für Erdbeeren ist Mitte April bis Mitte Juni. Erdbeeren sind winterhart, also musst du nicht jedes Jahr neue pflanzen. Wie du deine Erdbeerpflanzen am besten überwinterst, liest du<a href=\"https:\/\/www.gustagarden.com\/sissiwinter\/\">hier<\/a>.<\/p>"
+          }
+        },
+        "a863944c-9d98-48f7-9de3-e04c2fa7aeb4": {
+          "type": "question",
+          "settings": {
+            "title": "Was mache ich mit SISSI STRAWBERRY im Winter?",
+            "answer": "<p>Erdbeeren sind winterhart, du kannst sie ganz leicht in SISSI STRAWBERRY überwintern. Wie das geht? Das liest du im Blogbeitrag <a href=\"https:\/\/www.gustagarden.com\/sissiwinter\/\">„SISSI STRAWBERRY überwintern“<\/a>.<\/p>"
+          }
+        },
+        "00c78d8e-ac39-49c8-ac33-472dcc65f392": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich andere Pflanzen anbauen?",
+            "answer": "<p>In SISSI STRAWBERRY wachsen viele Pflanzen ganz prächtig, von unterschiedlichen Kräutern bis hin zu Salat. Du kannst hier wirklich kreativ werden! Ein paar Ideen findest du im Blogbeitrag <a href=\"https:\/\/www.gustagarden.com\/alternativ-anbauen\/\">\"Alternative Anpflanzmöglichkeiten\"<\/a>.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3"
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "174f7bf5-2a29-4ecf-8739-bd97198ca40c",
+        "d60753d4-d9e9-48f8-9099-9520e2fbf455",
+        "a863944c-9d98-48f7-9de3-e04c2fa7aeb4",
+        "00c78d8e-ac39-49c8-ac33-472dcc65f392"
       ],
       "settings": {
         "show_navigation": false,
