@@ -275,7 +275,7 @@
         "text_alignment": "center",
         "text_background": "#c8dd02",
         "text_color": "rgba(0,0,0,0)",
-        "button_background": "#4f5358",
+        "button_background": "#484b42",
         "button_text_color": "#ffffff"
       }
     },
@@ -295,7 +295,7 @@
         "background_type": "full_width",
         "text_position": "overlap_right",
         "text_alignment": "center",
-        "text_background": "#4f5358",
+        "text_background": "#484b42",
         "text_color": "#ffffff",
         "button_background": "#c8dd02",
         "button_text_color": "#ffffff"
