@@ -33,6 +33,12 @@
                     {{- block.settings.content -}}
                   </div>
                 {%- endif -%}
+                
+                {%- if block.settings.liquid != blank -%}
+                  <div class="footer__item-content">
+                    {{- block.settings.liquid -}}
+                  </div>
+                {%- endif -%}
 
               {%- when 'links' -%}
                 {%- assign menu = block.settings.menu -%}
@@ -408,6 +414,13 @@
           "id": "content",
           "label": "Content",
           "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>"
+        },
+        {
+          "type": "liquid",
+          "id": "liquid",
+          "label": "Liquid",
+          "info": "Add app snippets or other Liquid code to create advanced customizations.",
+          "default": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>"
         }
       ]
     },
