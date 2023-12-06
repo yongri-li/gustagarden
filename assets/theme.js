@@ -4380,6 +4380,7 @@ var ProductRecommendations = class extends HTMLElement {
     const response = await fetch(
       `${window.themeVariables.routes.productRecommendationsUrl}?product_id=${this.productId}&limit=${this.recommendationsCount}&section_id=${this.sectionId}&intent=${this.intent}`
     );
+
     const div = document.createElement('div');
     div.innerHTML = await response.text();
     const productRecommendationsElement = div.querySelector(

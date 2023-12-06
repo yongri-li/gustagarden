@@ -1,0 +1,51 @@
+<product-recommendations
+  section-id="{{ section.id }}"
+  intent="related"
+  product-id="{{ product.id }}"
+  recommendations-count="1"
+  class="section {% unless blends_with_background %}section--flush{% endunless %}">
+  {%- if recommendations.performed and recommendations.products.size > 0 -%}
+    {% assign recommended_product = recommendations.products.first %}
+
+    <div
+      class="flex rounded-xl px-2 py-4 space-x-4 w-96"
+      style="background-color: {{ settings.background_color }};">
+      <div>
+        <img
+          src="{{ recommended_product.featured_image | img_url: '100x100' }}"
+          height="100"
+          width="100"
+          class="rounded-lg"
+          loading="lazy"
+          alt="{{ recommended_product.featured_image.alt | escape }}">
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <div class="font-bold text-neutral-900">
+          {{ recommended_product.title }}
+        </div>
+
+        <div class="text-neutral-600">
+          {{ recommended_product.price | money }}
+
+          {% if recommended_product.compare_at_price %}
+            <div class="line-through text-primary-400">
+              {{ recommended_product.compare_at_price | money }}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="mt-4">
+          <a
+            href="{{ recommended_product.url }}"
+            class="px-6 py-2 bg-primary-400 text-white">
+            {{ settings.btn_label }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+  {%- endif -%}
+</product-recommendations>
