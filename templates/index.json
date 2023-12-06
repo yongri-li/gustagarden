@@ -543,7 +543,7 @@
       "type": "blog-posts",
       "custom_css": [
         ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center;}",
-        ".h4 {font-size: 20px; color: #484}"
+        ".h4 {font-size: 20px;}"
       ],
       "settings": {
         "blog": "rezepte",
@@ -553,8 +553,8 @@
         "stack_mobile": false,
         "show_category": false,
         "show_excerpt": false,
-        "background": "#484b42",
-        "text_color": "#ffffff"
+        "background": "#f5f5f5",
+        "text_color": "#484b42"
       }
     }
   },
