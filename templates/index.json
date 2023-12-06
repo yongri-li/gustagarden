@@ -330,7 +330,7 @@
             "content": "<p><strong>Pflanze dein eigenes Superfood<\/strong><\/p><p>Mit Harry Herbs kannst du Superfood das ganze Jahr über anbauen, drinnen und draußen. Der moderne Kräutertopf bietet verschiedene Anbaumöglichkeiten und ist ideal für Urban Gardening.<\/p>",
             "link_text": "JETZT KAUFEN",
             "link_url": "shopify:\/\/products\/harry-herbs",
-            "link_style": "button",
+            "link_style": "link",
             "text_alignment": "center",
             "vertical_alignment": "center"
           }
@@ -343,8 +343,8 @@
             "image_border": "#c8dd02",
             "title": "SAMMY SALAD",
             "content": "<p><strong>Das Ganzjahres-Hochbeet<\/strong><\/p><p>Unser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.<\/p>",
-            "link_text": "",
-            "link_url": "",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/collections\/sammy-salad",
             "link_style": "link",
             "text_alignment": "center",
             "vertical_alignment": "start"
@@ -371,10 +371,10 @@
             "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-classic_weiss.webp",
             "image_width": 100,
             "image_border": "#c8dd02",
-            "title": "SISSY STRAWBERRY",
+            "title": "SISSI STRAWBERRY",
             "content": "<p><strong>Erdbeeren auf kleinem Raum<\/strong><\/p><p>Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.<\/p>",
-            "link_text": "",
-            "link_url": "",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/collections\/sissi-strawberry",
             "link_style": "link",
             "text_alignment": "center",
             "vertical_alignment": "start"
@@ -388,8 +388,8 @@
             "image_border": "#c8dd02",
             "title": "TOM TOMATO",
             "content": "<p><strong>Rundum-sorglos-Paket für Tomaten<\/strong><\/p><p>Unser Tom Tomato System bietet einfaches und effizientes Tomatenwachstum auf Balkon, Garten oder Terrasse mit integriertem Bewässerungssystem und stabiler Rankhilfe.<\/p>",
-            "link_text": "",
-            "link_url": "",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/collections\/tom-tomato",
             "link_style": "link",
             "text_alignment": "center",
             "vertical_alignment": "start"
