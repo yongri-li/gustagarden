@@ -210,6 +210,42 @@
         "logo_background": "#f7f7f7"
       }
     },
+    "db41b1c8-3ba6-49c7-9f9a-101378ea5e52": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "Subheading",
+        "title": "Image with text block",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "boxed",
+        "text_position": "overlap_left",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d7bf74ef-1988-4d84-ad1a-ade1ea23a898": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "Subheading",
+        "title": "Image with text block",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "boxed",
+        "text_position": "overlap_right",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -356,6 +392,8 @@
     "5a184dd5-83ca-4ad0-94cc-660f16773e6c",
     "slideshow",
     "b69abf55-57d4-4ff0-b801-10b195ff3d44",
+    "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
+    "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
     "featured-collections",
     "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
