@@ -400,46 +400,56 @@
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
       "type": "faq",
       "blocks": {
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1": {
-          "type": "category",
-          "settings": {
-            "title": "Shipping"
-          }
-        },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
           "type": "question",
           "settings": {
-            "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "title": "Wie funktioniert das Anpflanzen in CHARLY CHILI?",
+            "answer": "<p>CHARLY CHILI ist mit wenigen Handgriffen aufgebaut und bereit zum Bepflanzen. Dann musst du nur noch Erde einfüllen und zwei Chilipflanzen einsetzen.<\/p><p>Alle Details dazu findest du in der <a href=\"https:\/\/www.gustagarden.com\/charly-chili-anleitung\/\">CHARLY CHILI Anleitung<\/a>.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
           "type": "question",
           "settings": {
-            "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2": {
-          "type": "category",
-          "settings": {
-            "title": "Other"
+            "title": "Welche Abmessung hat CHARLY CHILI?",
+            "answer": "<p>Aufgebaut hat CHARLY CHILI (inkl. Ranksystem) Abmessungen von 35 x 28 cm mit einer Höhe von 75 cm.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
           "type": "question",
           "settings": {
-            "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Wo ist der beste Standort für CHARLY CHILI?",
+            "answer": "<p>Chili- und Paprikapflanzen lieben Wärme. Somit fühlt sich dein CHARLY CHILI an einem sonnigen, luftigen Platz, am besten direkt vor einer Hausmauer, am wohlsten.<\/p>"
+          }
+        },
+        "6a8f3f1c-2080-4f32-8f1b-b4501d5563c6": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Erde soll ich verwenden?",
+            "answer": "<p>Damit du mit CHARLY CHILI eine reiche Ernte erhältst, empfehlen wir Chili-\/Paprikaerde. Im Handel findest du vorgemischte Erde, diese ist ideal für den Anbau von Chilis, Paprika, sowie Pfefferoni. Alternativ kannst du natürlich auch Gemüseerde verwenden.<\/p>"
+          }
+        },
+        "b1a5fb50-9368-49c5-b6f0-d85abe679a79": {
+          "type": "question",
+          "settings": {
+            "title": "Wann muss ich Chilis oder Paprika anpflanzen?",
+            "answer": "<p>Wenn du Chilis aus Samen ziehen möchtest, solltest du bereits im März mit unserem <a href=\"https:\/\/www.gustagarden.com\/produkt\/mini-gewaechshaus-inkl-charly-chili-samen-mix\/\">Mini-Gewächshaus inkl. CHARLY CHILI Samen-Mix<\/a> damit beginnen. In unserer <a href=\"https:\/\/www.gustagarden.com\/gewaechshaus-schlossgarten-anleitung\/\">Mini-Gewächshaus Anleitung<\/a> erklären wir dir genau wie das funktioniert. Möchtest du aber junge Chilipflanzen setzen, dann solltest du die Eisheiligen Mitte Mai abwarten. Die Pflanzen dürfen auf keinen Fall Frost ausgesetzt werden.<\/p>"
+          }
+        },
+        "82f48462-8c9c-4223-8554-f1aa6581973e": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert das Gießen?",
+            "answer": "<p>Gieße nach dem Einsetzen deine Chilipflanzen eine Zeit lang von oben und befülle zusätzlich den Tank mit 4,5L Wasser. Sobald die Wurzeln in den Wassertank reichen, musst du nur mehr regelmäßig den Tank auffüllen.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3"
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "6a8f3f1c-2080-4f32-8f1b-b4501d5563c6",
+        "b1a5fb50-9368-49c5-b6f0-d85abe679a79",
+        "82f48462-8c9c-4223-8554-f1aa6581973e"
       ],
       "settings": {
         "show_navigation": false,
