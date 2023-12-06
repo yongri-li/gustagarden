@@ -1,59 +1,5 @@
 {
   "sections": {
-    "slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gg-nl.jpg",
-            "split_image": "shopify:\/\/shop_images\/paul-potato.jpg",
-            "text_position": "bottom_left",
-            "subheading": "So schmeckt dein Garten",
-            "title": "PAUL POTATO",
-            "button_1_text": "JETZT ENTDECKEN",
-            "button_1_link": "shopify:\/\/products\/paul-potato-starter",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#c8dd02",
-            "button_text_color": "#1d1d1d",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "slide-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/harry-herbs-1.jpg",
-            "split_image": "shopify:\/\/shop_images\/harbs-wand.jpg",
-            "text_position": "bottom_left",
-            "subheading": "Kräuter & Micorgreens das ganze Jahr über",
-            "title": "HARRY HERBS",
-            "button_1_text": "ZUM PRODUKT",
-            "button_1_link": "shopify:\/\/products\/harry-herbs",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#c8dd02",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 10
-          }
-        }
-      },
-      "block_order": [
-        "slide-1",
-        "slide-2"
-      ],
-      "settings": {
-        "section_height": "small",
-        "transition_type": "sweep",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "5a184dd5-83ca-4ad0-94cc-660f16773e6c": {
       "type": "lb-storie-slider",
       "blocks": {
@@ -132,7 +78,6 @@
         "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42",
         "5c72b33a-0b55-4151-b0e6-a2d75b4c8771"
       ],
-      "disabled": true,
       "settings": {
         "background-color": "#f2f2f2",
         "max-show": 600,
@@ -143,6 +88,60 @@
         "abstand_zwischen_blocken_desktop": 18,
         "abstand_zwischen_blocken_mobile": 18,
         "hover-effekt-opacity": 0.8
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gg-nl.jpg",
+            "split_image": "shopify:\/\/shop_images\/paul-potato.jpg",
+            "text_position": "bottom_left",
+            "subheading": "So schmeckt dein Garten",
+            "title": "PAUL POTATO",
+            "button_1_text": "JETZT ENTDECKEN",
+            "button_1_link": "shopify:\/\/products\/paul-potato-starter",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#c8dd02",
+            "button_text_color": "#1d1d1d",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/harry-herbs-1.jpg",
+            "split_image": "shopify:\/\/shop_images\/harbs-wand.jpg",
+            "text_position": "bottom_left",
+            "subheading": "Kräuter & Micorgreens das ganze Jahr über",
+            "title": "HARRY HERBS",
+            "button_1_text": "ZUM PRODUKT",
+            "button_1_link": "shopify:\/\/products\/harry-herbs",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#c8dd02",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "section_height": "small",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
       }
     },
     "featured-collections": {
@@ -288,8 +287,8 @@
     }
   },
   "order": [
-    "slideshow",
     "5a184dd5-83ca-4ad0-94cc-660f16773e6c",
+    "slideshow",
     "featured-collections",
     "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
