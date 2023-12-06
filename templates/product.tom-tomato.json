@@ -398,46 +398,48 @@
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
       "type": "faq",
       "blocks": {
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1": {
-          "type": "category",
-          "settings": {
-            "title": "Shipping"
-          }
-        },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
           "type": "question",
           "settings": {
-            "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "title": "Wie funktioniert das Anpflanzen in TOM TOMATO?",
+            "answer": "<p>TOM TOMATO ist mit wenigen Handgriffen aufgebaut und bereit zum Bepflanzen. Du musst nur noch Erde einfüllen und eine Tomatenpflanze einsetzen.<\/p><p>Alle Details dazu findest du in der <a href=\"https:\/\/www.gustagarden.com\/tom-tomato-anleitung\/\">TOM TOMATO Anleitung<\/a>.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
           "type": "question",
           "settings": {
-            "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2": {
-          "type": "category",
-          "settings": {
-            "title": "Other"
+            "title": "Welche Abmessung hat TOM TOMATO?",
+            "answer": "<p>Aufgebaut hat TOM TOMATO (inkl. Rankhilfe) Abmessungen von 35 x 28 cm mit einer Höhe von 135 cm.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
           "type": "question",
           "settings": {
-            "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Wo platziere ich TOM TOMATO?",
+            "answer": "<p>Tomaten benötigen viel Licht und lieben Wärme. Somit sind die optimalsten Bedingungen für eine reiche Tomatenernte: sonnig, warm und <strong>regengeschützt<\/strong>. Besonders gut eignet sich hierfür ein Platz vor einer Hauswand, von der die Wärme zurückgestrahlt wird.<\/p>"
+          }
+        },
+        "57525d22-ecf5-41cb-bc6d-58029c92d47c": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Erde verwende ich am besten?",
+            "answer": "<p>Für eine ertragreiche Ernte empfehlen wir Tomatenerde. Im Handel findest du vorgemischte Tomatenerde, diese ist ideal für den Anbau von Tomaten. Alternativ kannst du natürlich auch Gemüseerde verwenden.<\/p>"
+          }
+        },
+        "6e859cf1-cd51-4416-9fb1-1bb436981db0": {
+          "type": "question",
+          "settings": {
+            "title": "Wann ist die beste Anpflanzzeit?",
+            "answer": "<p>Wenn du Tomaten aus Samen ziehen möchtest, solltest du bereits im März damit beginnen. Das funktioniert am besten mit unserem <a href=\"https:\/\/www.gustagarden.com\/produkt\/mini-gewaechshaus-inkl-tom-tomato-samen-mix\/\">Mini-Gewächshaus inkl. TOM TOMATO Samen-Mix<\/a>. Hier findest du eine Schritt-für-Schritt Anleitung dazu: <a href=\"https:\/\/www.gustagarden.com\/mini-gewaechshaus-anleitung\/\">Mini-Gewächshaus Anleitung<\/a>. Möchtest du aber junge Tomatenpflanzen einsetzen, dann solltest du die Eisheiligen Mitte Mai abwarten. Auf alle Fälle sollen die Pflanzen keinem Frost mehr ausgesetzt werden.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3"
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "57525d22-ecf5-41cb-bc6d-58029c92d47c",
+        "6e859cf1-cd51-4416-9fb1-1bb436981db0"
       ],
       "settings": {
         "show_navigation": false,
