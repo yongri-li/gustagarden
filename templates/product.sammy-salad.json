@@ -431,46 +431,64 @@
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
       "type": "faq",
       "blocks": {
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1": {
-          "type": "category",
-          "settings": {
-            "title": "Shipping"
-          }
-        },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
           "type": "question",
           "settings": {
-            "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "title": "Welche Abmessung hat SAMMY SALAD",
+            "answer": "<p>Aufgebaut hat SAMMY SALAD (inkl. Haube) Abmessungen von 79 x 37,5 cm mit einer Höhe von 95 cm.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
           "type": "question",
           "settings": {
-            "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2": {
-          "type": "category",
-          "settings": {
-            "title": "Other"
+            "title": "Wie funktioniert das Anpflanzen in SAMMY SALAD?",
+            "answer": "<p>SAMMY SALAD ist in wenigen Minuten aufgebaut und bereit zum Bepflanzen. Dafür musst du dein Hochbeet nur noch mit 40 Liter Erde und den Wassertank mit 15 Liter Wasser befüllen. Anschließend hast du die Wahl, ob du in deinem Hochbeet lieber Samen säen oder gleich Jungpflanzen einsetzen möchtest.<\/p><p>Alle Details zum auf- und Anbau findest du in der <a href=\"https:\/\/www.gustagarden.com\/sammy-salad-anleitung\/\">SAMMY SALAD Anleitung<\/a>.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
           "type": "question",
           "settings": {
-            "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Die Beine passen nicht in die Öffnung - was nun?",
+            "answer": "<p>Eventuell passt ein Holzbein nicht perfekt in die Öffnung vom Beinaufsatz. Das kann vorkommen, da es sich bei den Beinen von SAMMY SALAD um ein reines, unbehandeltes Naturprodukt handelt. In diesem Fall kannst du das Bein einfach um 180° drehen und mit dem anderen Ende fest in den Beinaufsatz drücken. Sollte das auch nicht klappen, melde dich bitte per<a href=\"mailto:shop@gustagarden.com\">Mail<\/a>bei uns wir kümmern uns natürlich sofort um Ersatz für dich.<\/p>"
+          }
+        },
+        "e3583631-b522-42a2-b34a-594d63c2fc67": {
+          "type": "question",
+          "settings": {
+            "title": "Wo ist der beste Standort für SAMMY SALAD?",
+            "answer": "<p>Dein Hochbeet kann wirklich überall platziert werden - ganz egal ob auf dem Balkon, der Terrasse oder im Garten. Solltest du bereits im Februar mit der Aussaat von frühen Sorten starten wollen, empfehlen wir dir für optimale Ergebnisse einen Standort vor einer Hausmauer. Dadurch sind die Temperaturen unter der Haube gleich etwas höher und sorgen für bessere Keimung deiner Samen. Dasselbe gilt auch für die Aussaat im Herbst von späten Sorten. <\/p>"
+          }
+        },
+        "84698f37-cebb-42b1-8894-18a798b156a1": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Erde soll ich verwenden?",
+            "answer": "<p>Für das Anpflanzen von jungen Salatsetzlingen eignet sich eine <a href=\"https:\/\/www.gustagarden.com\/produkt\/bio-garten-hochbeeterde\/\">BIO Hochbeeterde<\/a> oder auch eine <a href=\"https:\/\/www.gustagarden.com\/produkt\/bio-tomaten-gemueseerde\/\">BIO Gemüseerde<\/a> bestens.<\/p><p>Solltest du in deinem SAMMY SALAD aber lieber Samen aussäen wollen, empfehlen wir dir die Verwendung von feiner Anzuchterde. Samen benötigen nämlich weit weniger Nährstoffe als Jungpflanzen, daher ist das feine Substrat genau auf die Bedürfnisse von Keimlingen ausgerichtet.<br\/>Befülle dafür deinen SAMMY SALAD mit 2 Schichten Erde:<br\/>1. Schicht (unten) = <a href=\"https:\/\/www.gustagarden.com\/produkt\/bio-garten-hochbeeterde\/\">BIO Hochbeeterde<\/a> (35L)<br\/>2. Schicht (oben) = <a href=\"https:\/\/www.gustagarden.com\/produkt\/bio-anzucht-kraeutererde\/\">BIO Anzucht- & Kräutererde<\/a> (5 L)<\/p>"
+          }
+        },
+        "dab47dd5-a4a8-46bd-8a0a-9900b265a2e9": {
+          "type": "question",
+          "settings": {
+            "title": "Wann muss ich Kräuter-, Salat- oder Gemüse anpflanzen?",
+            "answer": "<p>In SAMMY SALAD kannst du das ganze Jahr Obst-, Gemüse-, Salat- oder Kräutersorten anpflanzen. Dank der Haube ist die Anzucht unter der Haube bereits ab Februar outdoor möglich. Sollte es im Herbst frostig werden, schützt auch hier die Haube dein Gemüse vor Frost. Möchtest du im Winter lieber wärmeliebendes Gemüse vorziehen, kannst du deinen SAMMY SALAD auch indoor (z.B. ohne Beine) verwenden.<\/p><p>Egal ob du lieber Samen aussäen oder gleich Jungpflanzen einsetzen möchtest, achte immer auf die bevorzugten Temperaturen und Jahreszeiten der jeweiligen Sorten. <\/p>"
+          }
+        },
+        "06ee5a77-905f-46b8-b7bf-cba7362cbfa6": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert das Gießen?",
+            "answer": "<p>Gieße nach der Aussaat deine Samen vorsichtig eine Zeit lang von oben und befülle zusätzlich den Tank mit 15L Wasser. Für kleine Pflänzchen mit Wurzeln musst du nur mehr regelmäßig den Tank auffüllen.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3"
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "e3583631-b522-42a2-b34a-594d63c2fc67",
+        "84698f37-cebb-42b1-8894-18a798b156a1",
+        "dab47dd5-a4a8-46bd-8a0a-9900b265a2e9",
+        "06ee5a77-905f-46b8-b7bf-cba7362cbfa6"
       ],
       "settings": {
         "show_navigation": false,
