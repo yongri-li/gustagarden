@@ -197,7 +197,8 @@
         "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-6"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 750px) {{margin-top: -50px; } h3 {font-weight: 800; color: #bcbcbc; text-transform: uppercase; }}"
+        "h3 {color: #484b42; text-transform: uppercase;}",
+        "@media only screen and (min-width: 750px) {{margin-top: -50px; }}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -207,10 +208,10 @@
         "button_link": "",
         "stack_logos": false,
         "background": "#f5f5f5",
-        "text_color": "rgba(0,0,0,0)",
+        "text_color": "#484b42",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
-        "logo_background": "rgba(0,0,0,0)"
+        "logo_background": "#f5f5f5"
       }
     },
     "featured-collections": {
@@ -261,6 +262,18 @@
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "fe533a39-048e-4fa1-813f-b0bb91bc1a92": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<div style=\"border-top: 1px solid #ccc; margin: 20px 0;\"><\/div>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
       }
     },
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52": {
@@ -364,6 +377,77 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "e0381b4a-4d0d-4795-ae34-bd8527612b9c": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<div style=\"border-top: 1px solid #ccc; margin: 20px 0;\"><\/div>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "4d9d972c-44d2-44a5-b30f-76111a9b2367": {
+      "type": "codext-feature-chart",
+      "blocks": {
+        "template--16337048141997__4d9d972c-44d2-44a5-b30f-76111a9b2367-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Pflanztopf",
+            "heading_2": "Anzucht",
+            "heading_3": "Hydroponik",
+            "heading_4": "Microgreens",
+            "heading_5": "Wassertank"
+          }
+        },
+        "template--16337048141997__4d9d972c-44d2-44a5-b30f-76111a9b2367-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "harry-herbs",
+            "value_1": "<p>Ja<\/p>",
+            "value_2": "<p>Ja<\/p>",
+            "value_3": "<p>Ja<\/p>",
+            "value_4": "<p>Ja<\/p>",
+            "value_5": "<p>Ja<\/p>"
+          }
+        },
+        "template--16337048141997__4d9d972c-44d2-44a5-b30f-76111a9b2367-values-2": {
+          "type": "values",
+          "settings": {
+            "product": "tom-tomato",
+            "value_1": "<p>Ja<\/p>",
+            "value_2": "<p>Nein<\/p>",
+            "value_3": "<p>Nein<\/p>",
+            "value_4": "<p>Nein<\/p>",
+            "value_5": "<p>Ja<\/p>"
+          }
+        },
+        "8949f018-3655-463b-a478-ee6f44bb25fe": {
+          "type": "values",
+          "settings": {
+            "product": "charly-chili",
+            "value_1": "<p>Ja<\/p>",
+            "value_2": "<p>Nein<\/p>",
+            "value_3": "<p>Nein<\/p>",
+            "value_4": "<p>Nein<\/p>",
+            "value_5": "<p>Ja<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048141997__4d9d972c-44d2-44a5-b30f-76111a9b2367-headings-1",
+        "template--16337048141997__4d9d972c-44d2-44a5-b30f-76111a9b2367-values-1",
+        "template--16337048141997__4d9d972c-44d2-44a5-b30f-76111a9b2367-values-2",
+        "8949f018-3655-463b-a478-ee6f44bb25fe"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Produktübersicht",
+        "content": ""
+      }
+    },
     "shop-the-look": {
       "type": "shop-the-look",
       "blocks": {
@@ -454,6 +538,24 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
+    },
+    "a1d506df-5cf7-43fd-bc66-cbf11398ba57": {
+      "type": "blog-posts",
+      "custom_css": [
+        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center;}",
+        ".h4 {font-size: 20px;}"
+      ],
+      "settings": {
+        "blog": "rezepte",
+        "subheading": "FRISCH AUS DEINEM GARTEN",
+        "title": "Unsere leckeren Rezepte",
+        "articles_count": 3,
+        "stack_mobile": false,
+        "show_category": false,
+        "show_excerpt": false,
+        "background": "#f5f5f5",
+        "text_color": "#484b42"
+      }
     }
   },
   "order": [
@@ -461,11 +563,15 @@
     "slideshow",
     "b69abf55-57d4-4ff0-b801-10b195ff3d44",
     "featured-collections",
+    "fe533a39-048e-4fa1-813f-b0bb91bc1a92",
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
     "c9245672-de7f-4d0f-b627-c276177ea803",
+    "e0381b4a-4d0d-4795-ae34-bd8527612b9c",
+    "4d9d972c-44d2-44a5-b30f-76111a9b2367",
     "shop-the-look",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
-    "1700268763cea3d046"
+    "1700268763cea3d046",
+    "a1d506df-5cf7-43fd-bc66-cbf11398ba57"
   ]
 }
