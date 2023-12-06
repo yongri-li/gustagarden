@@ -430,46 +430,40 @@
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
       "type": "faq",
       "blocks": {
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1": {
-          "type": "category",
-          "settings": {
-            "title": "Shipping"
-          }
-        },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
           "type": "question",
           "settings": {
-            "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "title": "Was ist der Unterschied zwischen TOM TOMATO und TOMATO BUDDY?",
+            "answer": "<p><a href=\"https:\/\/www.gustagarden.com\/produkt\/tom-tomato\/\">TOM TOMATO<\/a> ist das Rundum-sorglos-Paket für das Anpflanzen von Tomaten. Du erhältst ein Anpflanzsystem, bestehend aus Tomatentopf, Wassertank und Rankhilfe.<\/p><p><a href=\"https:\/\/www.gustagarden.com\/produkt\/tomato-buddy\/\">TOMATO BUDDY<\/a> ist die von uns entwickelte Tomatenrankhilfe, die du in Kombination mit jedem handelsüblichen Pflanzgefäß nutzen kannst.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
           "type": "question",
           "settings": {
-            "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2": {
-          "type": "category",
-          "settings": {
-            "title": "Other"
+            "title": "Wie funktioniert das Anpflanzen mit TOMATO BUDDY?",
+            "answer": "<p>Der Aufbau und das Anpflanzen funktionieren total schnell und unkompliziert. Die einzelnen Elemente müssen nur zusammengesteckt (hier findest du die<a href=\"https:\/\/www.gustagarden.com\/tomato-buddy-anleitung\/\">TOMATO BUDDY Anleitung<\/a>) und in einen leeren Pflanztopf gestellt werden. Fülle Erde ein und pflanze deinen Tomatensetzling. In die integrierten Haken kannst du im Laufe der Zeit die Triebe einhängen.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
           "type": "question",
           "settings": {
-            "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Welche Abmessung hat TOMATO BUDDY?",
+            "answer": "<p>Zusammengesteckt misst TOMATO BUDDY 18 x 18 cm mit einer Höhe von 128 cm.<\/p>"
+          }
+        },
+        "0cebab81-e027-41fb-8e5e-c50003c043d3": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich andere Pflanzen anbauen?",
+            "answer": "<p>Natürlich kannst du unseren TOMATO BUDDY auch für das Stabilisieren von anderen Pflanzen nutzen. Egal ob Gurken oder Bohnen, dein Rankgemüse wird TOMATO BUDDY lieben. Und du sicherlich auch.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3"
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "0cebab81-e027-41fb-8e5e-c50003c043d3"
       ],
       "settings": {
         "show_navigation": false,
