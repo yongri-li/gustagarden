@@ -264,6 +264,7 @@
       "type": "image-with-text-block",
       "settings": {
         "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/200910-GustaGarden-092_1-scaled.jpg",
         "subheading": "Subheading",
         "title": "Image with text block",
         "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
@@ -285,6 +286,7 @@
       ],
       "settings": {
         "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/200903-GustaGarden-055_2-scaled.jpg",
         "subheading": "Subheading",
         "title": "Image with text block",
         "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
