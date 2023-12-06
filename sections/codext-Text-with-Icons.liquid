@@ -45,7 +45,7 @@
   <div class="section__color-wrapper">
     <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
       <native-carousel class="text-with-icons">
-        <div class="{% if section.settings.stack_on_mobile %} grid grid-cols-1 sm:grid-cols-2 gap-y-10 {% endif %} text-with-icons__list hide-scrollbar lg:grid lg:gap-12 lg:justify-center lg:grid-flow-col auto-cols-fr">
+        <div class="{% if section.settings.stack_on_mobile %} grid grid-cols-2 gap-y-10 gap-x-4 {% endif %} px-4 sm:px-0 text-with-icons__list hide-scrollbar lg:grid lg:gap-12 lg:justify-center lg:grid-flow-col auto-cols-fr">
           {%- for block in section.blocks -%}
             <native-carousel-item
               {% unless forloop.first %}
