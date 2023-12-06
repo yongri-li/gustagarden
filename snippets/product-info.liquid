@@ -219,6 +219,11 @@
 
   {%- render 'product-form', product: product, update_url: update_url -%}
 
+  {%- assign save_in_set = section.blocks
+    | where: 'type', 'save-in-set'
+    | first
+  -%}
+
   {%- assign help_page = section.settings.help_page -%}
 
   {%- if section.settings.show_share_buttons or help_page != blank -%}

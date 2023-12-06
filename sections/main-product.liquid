@@ -93,20 +93,6 @@
         {%- render 'product-media', product: product -%}
         {%- render 'product-info', product: product, update_url: true -%}
       </div>
-
-      {%- assign save_in_set = section.blocks
-        | where: 'type', 'save-in-set'
-        | first
-      -%}
-
-      <div>
-        {%- if save_in_set -%}
-          {%- render 'save-in-set',
-            product: product,
-            settings: save_in_set.settings
-          -%}
-        {%- endif -%}
-      </div>
     </div>
   </section>
 {%- else -%}

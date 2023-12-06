@@ -486,6 +486,14 @@
           </div>
         {%- endif -%}
 
+      {%- when 'save-in-set' %}
+        <div>
+          {%- render 'save-in-set',
+            product: product,
+            settings: block.settings
+          -%}
+        </div>
+
         {%- comment -%}
           ----------------------------------------------------------------------------------------------------------------
           QUANTITY SELECTOR
