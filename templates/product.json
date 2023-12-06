@@ -135,61 +135,6 @@
       "settings": {
       }
     },
-    "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9": {
-      "type": "text-with-icons",
-      "blocks": {
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-box",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b.png",
-            "custom_icon_width": 40,
-            "title": "ideal für den Balkonoder Terrasse",
-            "content": ""
-          }
-        },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
-            "custom_icon_width": 40,
-            "title": "stabileRankhilfe",
-            "content": ""
-          }
-        },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f.png",
-            "custom_icon_width": 40,
-            "title": "kinderleichter Aufbau",
-            "content": ""
-          }
-        },
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-email",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU.png",
-            "custom_icon_width": 55,
-            "title": "designed in Austriamade in the EU",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-1",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-2",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-3",
-        "template--16336611082413__c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9-item-4"
-      ],
-      "settings": {
-        "background": "#c8dd02",
-        "text_color": "#ffffff"
-      }
-    },
     "93e61ce0-1e10-47b1-a69a-07361399d8ef": {
       "type": "image-with-text",
       "blocks": {
@@ -296,21 +241,6 @@
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "72b105f6-5697-49c9-898f-fd111a4512ce": {
-      "type": "video",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=MO4h1gVj9WU&t=1s",
-        "image": "shopify:\/\/shop_images\/200903-GustaGarden-092_mirror_2400x1600_0aec3d19-5bbe-4cb8-8611-7724f02026fe.jpg",
-        "background_type": "full_width",
-        "video_size": "medium",
-        "autoplay": true,
-        "show_video_controls": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
       }
     },
     "c418a397-5659-4b49-890b-a93e490c9842": {
@@ -498,11 +428,9 @@
   "order": [
     "main",
     "product-content",
-    "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
-    "72b105f6-5697-49c9-898f-fd111a4512ce",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",
