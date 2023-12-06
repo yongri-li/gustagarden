@@ -439,6 +439,13 @@
             "title": "Wann ist die beste Anpflanzzeit?",
             "answer": "<p>Du kannst schon Mitte März mit dem Anpflanzen beginnen, wenn du deine Pflanzen vor dem Frost schützt. Dafür würden wir dir aber auf jeden Fall eine <a href=\"https:\/\/www.gustagarden.com\/produkt\/frostschutzhaube\/\">Frostschutzhaube <\/a>empfehlen. Mehr Infos zur Anpflanzzeit findest du <a href=\"https:\/\/www.gustagarden.com\/kartoffeln-pflanzen\/\">hier<\/a>.<\/p>"
           }
+        },
+        "13a18b1f-6fd1-4b05-9a4e-6a13cdcf98c7": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich andere Pflanzen anbauen?",
+            "answer": "<p>Natürlich kannst du in PAUL POTATO auch andere Pflanzen anbauen. Um die Fläche optimal zu nutzen kannst du ja z.B. in den unteren Etagen Kartoffeln anpflanzen, aber die oberste Etage als Mini-Hochbeet verwenden. Salat, Radieschen, Kräuter etc. fühlen sich dort total wohl! Sei kreativ!<br\/>Für Inspirationen klick <a href=\"https:\/\/www.gustagarden.com\/alternativ-anbauen\/\">hier<\/a>.<br\/>Natürlich kannst du deinen PAUL POTATO auch nach der Kartoffelsaison komplett neu mit Herbstgemüse bepflanzen, lies dir dazu doch unseren Blogbeitrag <a href=\"https:\/\/www.gustagarden.com\/herbstgemuese-in-paul-potato\/\">\"Herbstgemüse pflanzen\" <\/a>durch.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -447,7 +454,8 @@
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
         "7a02e348-05eb-4059-9091-1f6b540d03b0",
         "4b715c79-0bfb-4032-94ae-473dbabc4ce3",
-        "ca70e3e6-d410-4410-a28d-16134cc73f06"
+        "ca70e3e6-d410-4410-a28d-16134cc73f06",
+        "13a18b1f-6fd1-4b05-9a4e-6a13cdcf98c7"
       ],
       "settings": {
         "show_navigation": false,
