@@ -398,45 +398,31 @@
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
       "type": "faq",
       "blocks": {
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1": {
-          "type": "category",
-          "settings": {
-            "title": "Shipping"
-          }
-        },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
           "type": "question",
           "settings": {
-            "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            "title": "Wie funktioniert das Anpflanzen in PAUL POTATO?",
+            "answer": "<p>Kartoffeln können innerhalb weniger Minuten in <a href=\"https:\/\/www.gustagarden.com\/produkt-kategorie\/paul-potato\/\">PAUL POTATO <\/a>angebaut werden. Die einzelnen Etagen werden einfach bis zur Hälfte mit Erde befüllt. In jede der drei Ecken wird dann eine Knolle gelegt. Darauf kommt noch eine Schicht Erde – das wars. Genauere Details zum Anpflanzen in PAUL POTATO findest du <a href=\"https:\/\/www.gustagarden.com\/paul-potato-anleitung\/\">hier<\/a>.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
           "type": "question",
           "settings": {
-            "title": "How long will it take to get my order?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-          }
-        },
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2": {
-          "type": "category",
-          "settings": {
-            "title": "Other"
+            "title": "Welche Abmessungen hat PAUL POTATO?",
+            "answer": "<p><a href=\"https:\/\/www.gustagarden.com\/produkt\/paul-potato-starter\/\">PAUL POTATO Starter <\/a>benötigt eine Fläche von 44x44cm und hat eine Höhe von ca. 50cm bis ca. 65cm, je nachdem wie viele Etagen du wählst. Mehr Infos zu den Abmessungen findest du auf der jeweiligen Produktseite im <a href=\"https:\/\/www.gustagarden.com\/produkt-kategorie\/paul-potato\/\">Shop<\/a>.<\/p>"
           }
         },
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
           "type": "question",
           "settings": {
-            "title": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            "title": "Woher bekomme ich Pflanzkartoffeln?",
+            "answer": "<p>Natürlich direkt bei uns! Schau doch mal in unserem Shop vorbei: wir haben ganz viele unterschiedliche Sorten für dich ausgewählt. <a href=\"https:\/\/www.gustagarden.com\/produkt-kategorie\/saatgut-und-pflanzen\/pflanzkartoffeln\/\">Hier <\/a>kannst du dir einen Überblick verschaffen und dir deine perfekten Kartoffelsorten direkt aussuchen!<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
-        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-category-2",
         "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3"
       ],
       "settings": {
