@@ -169,18 +169,21 @@
         "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-4": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/profit-de-logo-300px.png",
             "link": ""
           }
         },
         "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-5": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/citynews-das-stadtmagazin-fuer-koeln-un-die-region-logo-webseite.png",
             "link": ""
           }
         },
         "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-6": {
           "type": "logo",
           "settings": {
+            "logo": "shopify:\/\/shop_images\/trendhunter.png",
             "link": ""
           }
         }
@@ -196,7 +199,7 @@
       "settings": {
         "reveal_on_scroll": true,
         "subheading": "",
-        "title": "Bekannt aus",
+        "title": "Bekannt aus:",
         "button_text": "",
         "button_link": "",
         "stack_logos": false,
