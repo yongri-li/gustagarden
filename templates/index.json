@@ -317,6 +317,176 @@
         "button_text_color": "#ffffff"
       }
     },
+    "7228d659-8353-4918-8a23-d598fbc9e8a3": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-1": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "HARRY HERBS",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "SAMMY SALAD",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-3": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "PAUL POTATO",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-4": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "SISSY STRAWBERRY",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "cbb188c3-7772-4348-90c2-acfe42f66288": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "TOM TOMATO",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "05a5ddea-c16e-48c2-9146-498e64049130": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "TOMATO BUDDY",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "4c48c664-8632-4f5c-ae55-5fae386d66ed": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "CHARLY CHILI",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "0346930e-e3d5-40dc-a23f-a2c7cb7cfcb0": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "CURT CUCUMBER",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "0516837d-f9d2-4212-96d7-fc91d6c9d941": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "HERBS BUDDY",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "cbb9bf79-2511-41a7-a838-f172cc2b7d9d": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "BERRY BUDDY",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-1",
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2",
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-3",
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-4",
+        "cbb188c3-7772-4348-90c2-acfe42f66288",
+        "05a5ddea-c16e-48c2-9146-498e64049130",
+        "4c48c664-8632-4f5c-ae55-5fae386d66ed",
+        "0346930e-e3d5-40dc-a23f-a2c7cb7cfcb0",
+        "0516837d-f9d2-4212-96d7-fc91d6c9d941",
+        "cbb9bf79-2511-41a7-a838-f172cc2b7d9d"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "Subheading",
+        "title": "Multi-column",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "c9245672-de7f-4d0f-b627-c276177ea803": {
       "type": "featured-collections",
       "blocks": {
@@ -497,6 +667,7 @@
     "fe533a39-048e-4fa1-813f-b0bb91bc1a92",
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
+    "7228d659-8353-4918-8a23-d598fbc9e8a3",
     "c9245672-de7f-4d0f-b627-c276177ea803",
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57",
     "shop-the-look",
