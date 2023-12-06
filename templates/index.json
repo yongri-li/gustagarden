@@ -142,6 +142,66 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "c9245672-de7f-4d0f-b627-c276177ea803": {
+      "type": "featured-collections",
+      "blocks": {
+        "20dd23fc-fd05-402f-a048-fded42900000": {
+          "type": "collection",
+          "settings": {
+            "collection": "chilipflanzen",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "73da5217-5283-4528-9dcd-b8fe84a96fa6": {
+          "type": "collection",
+          "settings": {
+            "collection": "pflanzkartoffeln",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "ec951d0b-38fc-4d68-b8df-b652c9ae61f2": {
+          "type": "collection",
+          "settings": {
+            "collection": "erdbeerpflanzen",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "14ade11a-4536-459c-a470-65a44ff13789": {
+          "type": "collection",
+          "settings": {
+            "collection": "tomatenpflanzen",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "20dd23fc-fd05-402f-a048-fded42900000",
+        "73da5217-5283-4528-9dcd-b8fe84a96fa6",
+        "ec951d0b-38fc-4d68-b8df-b652c9ae61f2",
+        "14ade11a-4536-459c-a470-65a44ff13789"
+      ],
+      "settings": {
+        "subheading": "Your title",
+        "title": "Collection",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "b69abf55-57d4-4ff0-b801-10b195ff3d44": {
       "type": "logo-list",
       "blocks": {
@@ -391,6 +451,7 @@
   "order": [
     "5a184dd5-83ca-4ad0-94cc-660f16773e6c",
     "slideshow",
+    "c9245672-de7f-4d0f-b627-c276177ea803",
     "b69abf55-57d4-4ff0-b801-10b195ff3d44",
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
