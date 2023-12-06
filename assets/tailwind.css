@@ -174,8 +174,17 @@
   grid-column: span 9 / span 9;
 }
 
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
+
 .\!m-0 {
   margin: 0px !important;
+}
+
+.\!my-0 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .mx-5 {
@@ -188,9 +197,14 @@
   margin-right: auto;
 }
 
-.\!my-0 {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+.-mx-12 {
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+
+.-mx-10 {
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
 }
 
 .mb-0 {
@@ -227,10 +241,6 @@
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.\!mt-4 {
-  margin-top: 1rem !important;
 }
 
 .block {
@@ -301,12 +311,12 @@
   height: 1.5rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[45vw\] {
   height: 45vw;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-1\/4 {
@@ -447,6 +457,10 @@
   gap: 2rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -572,6 +586,11 @@
   border-color: rgb(212 212 212 / var(--tw-border-opacity));
 }
 
+.\!bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -602,11 +621,6 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.\!bg-white {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -617,6 +631,11 @@
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-0 {
@@ -639,9 +658,23 @@
   padding: 1.5rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .\!px-4 {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+}
+
+.\!py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-5 {
@@ -649,9 +682,9 @@
   padding-right: 1.25rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-10 {
@@ -669,11 +702,6 @@
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -684,9 +712,12 @@
   padding-bottom: 2rem;
 }
 
-.\!py-0 {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+.\!pb-12 {
+  padding-bottom: 3rem !important;
+}
+
+.\!pt-4 {
+  padding-top: 1rem !important;
 }
 
 .pb-10 {
@@ -695,18 +726,6 @@
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.\!pb-6 {
-  padding-bottom: 1.5rem !important;
-}
-
-.\!pb-12 {
-  padding-bottom: 3rem !important;
-}
-
-.\!pt-4 {
-  padding-top: 1rem !important;
 }
 
 .text-left {
@@ -722,11 +741,17 @@
 }
 
 .text-3xl {
-  font-size: 2.153rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-\[14px\] {
   font-size: 14px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -735,15 +760,13 @@
 }
 
 .text-sm {
-  font-size: 1rem;
-}
-
-.text-xl {
-  font-size: 1.45rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs {
   font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -790,6 +813,11 @@
 .text-neutral-800 {
   --tw-text-opacity: 1;
   color: rgb(38 38 38 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(205 220 71 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -1017,7 +1045,8 @@ html {
 .remove-spacing p {
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
-  font-size: 1rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
   line-height: 1.25 !important;
 }
 
@@ -1103,8 +1132,25 @@ input:focus-within {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:\!grid {
     display: grid !important;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:hidden {
@@ -1131,13 +1177,36 @@ input:focus-within {
     flex-direction: row;
   }
 
+  .md\:rounded {
+    border-radius: 16px;
+  }
+
   .md\:border-r {
     border-right-width: 1px;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
