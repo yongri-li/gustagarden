@@ -376,53 +376,6 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
-    },
-    "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339": {
-      "type": "codext-feature-chart",
-      "blocks": {
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Stabilität",
-            "heading_2": "Wassertank",
-            "heading_3": "Langlebigkeit",
-            "heading_4": "UV Stabil",
-            "heading_5": ""
-          }
-        },
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
-          "type": "values",
-          "settings": {
-            "product": "tom-tomato",
-            "value_1": "<p>✔️<\/p>",
-            "value_2": "<p>✔️<\/p>",
-            "value_3": "<p>✔️<\/p>",
-            "value_4": "<p>✔️<\/p>",
-            "value_5": ""
-          }
-        },
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2": {
-          "type": "values",
-          "settings": {
-            "product": "fertigen-systeme",
-            "value_1": "<p>❌<\/p>",
-            "value_2": "<p>❌<\/p>",
-            "value_3": "<p>❌<\/p>",
-            "value_4": "<p>❌<\/p>",
-            "value_5": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1",
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1",
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "Darum ist TOM TOMATO die beste Wahl",
-        "content": ""
-      }
     }
   },
   "order": [
@@ -434,7 +387,6 @@
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",
-    "c1104d7d-0c9d-4394-ab24-0f86afeb3484",
-    "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339"
+    "c1104d7d-0c9d-4394-ab24-0f86afeb3484"
   ]
 }
