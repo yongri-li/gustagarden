@@ -545,7 +545,7 @@
         ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center; display: flex; flex-direction: column;}",
         ".h4 {font-size: 20px;}",
         ".article-item__content {flex-grow: 1;}",
-        ".article-item__title {padding: 0!important; display: flex; align-items: center; justify-content: center;}"
+        ".article-item__title, .article-item__content {padding: 0 !important; display: flex; align-items: center; justify-content: center;}"
       ],
       "settings": {
         "blog": "rezepte",
