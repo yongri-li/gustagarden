@@ -88,7 +88,7 @@
       "settings": {
         "background-color": "#f2f2f2",
         "max-show": 600,
-        "abgerundete_ecken": 50,
+        "abgerundete_ecken": 0,
         "schriftart": "sans-serif",
         "schriftfarbe": "#000000",
         "highlight-color": "#c4258d",
