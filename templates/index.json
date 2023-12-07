@@ -453,7 +453,7 @@
             "image_width": 100,
             "image_border": "#c8dd02",
             "title": "CURT CUCUMBER",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review<\/p>",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
