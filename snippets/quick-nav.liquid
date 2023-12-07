@@ -45,7 +45,8 @@
 
 {%- if menu != blank -%}
   <quick-nav
-    class="md:absolute right-20 bottom-1/4 bg-white z-10 self-center w-80 p-8 rounded-lg no-js-hidden"
+    style="z-index: 1"
+    class="md:absolute right-20 bottom-1/4 bg-white self-center w-80 p-8 rounded-lg no-js-hidden"
     {% if show_price == true %}
       data-show-price="true"
     {% endif -%}
