@@ -132,11 +132,11 @@
     <link
       rel="stylesheet"
       href="{{ 'theme.css' | asset_url }}">
-    
 
     {{ 'codext-theme.css' | asset_url | stylesheet_tag }}
     {{ 'tailwind.css' | asset_url | stylesheet_tag }}
 
+    {{ 'quick-nav.css' | asset_url | stylesheet_tag }}
     <script
       src="{{ 'vendor.js' | asset_url }}"
       defer></script>
@@ -150,9 +150,17 @@
       src="{{ 'codext-helper.js' | asset_url }}"
       defer></script>
 
+    <script
+      src="{{ 'quick-nav.js' | asset_url }}"
+      defer></script>
+
+    <script
+      src="{{ 'custom-select.js' | asset_url }}"
+      defer></script>
+
     {{ content_for_header }}
-  {% render 'gp-head' %}
-</head>
+    {% render 'gp-head' %}
+  </head>
 
   {%- assign feature_classes = '' -%}
 

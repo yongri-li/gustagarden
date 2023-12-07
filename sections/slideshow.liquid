@@ -209,6 +209,59 @@
         {%- endfor -%}
       </page-dots>
     {%- endif -%}
+
+    {%- if section.settings.quick_nav_menu != blank -%}
+      <div class="container container--quick-nav">
+        {%- liquid
+          if section.settings.menu_1_display contains 'small'
+            assign menu_1_boxed = false
+          else
+            assign menu_1_boxed = true
+          endif
+          assign menu_1_display = section.settings.menu_1_display | replace: 'small_', '' | replace: 'large_', ''
+
+          if section.settings.menu_2_display contains 'small'
+            assign menu_2_boxed = false
+          else
+            assign menu_2_boxed = true
+          endif
+          assign menu_2_display = section.settings.menu_2_display | replace: 'small_', '' | replace: 'large_', ''
+
+          if section.settings.menu_3_display contains 'small'
+            assign menu_3_boxed = false
+          else
+            assign menu_3_boxed = true
+          endif
+          assign menu_3_display = section.settings.menu_3_display | replace: 'small_', '' | replace: 'large_', ''
+
+          if settings.animations_enabled != 'disabled' and section.settings.prevent_animation == false
+            assign animate = true
+          else
+            assign animate = false
+          endif
+        -%}
+        {% render 'quick-nav',
+          component_id: block.id,
+          menu: section.settings.quick_nav_menu,
+          image_ratio: section.settings.quick_nav_image_ratio,
+          image_fit: section.settings.quick_nav_image_fit,
+          use_product_image: section.settings.quick_nav_use_product_image,
+          color_scheme: section.settings.quick_nav_color_scheme,
+          show_price: section.settings.quick_nav_show_price,
+          animate: animate,
+          title: section.settings.quick_nav_title,
+          menu_1_display: menu_1_display,
+          menu_1_boxed: menu_1_boxed,
+          menu_1_text: section.settings.menu_1_text,
+          menu_2_display: menu_2_display,
+          menu_2_boxed: menu_2_boxed,
+          menu_2_text: section.settings.menu_2_text,
+          menu_3_display: menu_3_display,
+          menu_3_boxed: menu_3_boxed,
+          menu_3_text: section.settings.menu_3_text
+        %}
+      </div>
+    {%- endif -%}
   </slide-show>
 </section>
 
@@ -221,6 +274,11 @@
   },
   "max_blocks": 5,
   "settings": [
+    {
+      "type": "link_list",
+      "id": "quick_nav_menu",
+      "label": "Quick navigation menu"
+    },
     {
       "type": "select",
       "id": "section_height",
@@ -292,6 +350,32 @@
       "label": "Background",
       "info": "Used while slideshow image is loading",
       "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "header",
+      "content": "Menu 1"
+    },
+    {
+      "type": "text",
+      "id": "menu_1_text",
+      "label": "Placeholder text",
+      "default": "Level 1 Navigation"
+    },
+    {
+      "type": "header",
+      "content": "Menu 2"
+    },
+    {
+      "type": "text",
+      "id": "menu_2_text",
+      "label": "Level 2 Navigation",
+      "default": "Navigation options"
+    },
+    {
+      "type": "text",
+      "id": "quick_nav_title",
+      "label": "Quick Nav Title",
+      "default": "Quick navigation"
     }
   ],
   "blocks": [
