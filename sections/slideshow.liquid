@@ -31,7 +31,7 @@
   {%- endfor -%}
 </style>
 
-<section class="section section--flush">
+<section class="section section--flush relative">
   <slide-show
     reveal-on-scroll
     {% if section.settings.autoplay %}
@@ -209,60 +209,60 @@
         {%- endfor -%}
       </page-dots>
     {%- endif -%}
-
-    {%- if section.settings.quick_nav_menu != blank -%}
-      <div class="container container--quick-nav">
-        {%- liquid
-          if section.settings.menu_1_display contains 'small'
-            assign menu_1_boxed = false
-          else
-            assign menu_1_boxed = true
-          endif
-          assign menu_1_display = section.settings.menu_1_display | replace: 'small_', '' | replace: 'large_', ''
-
-          if section.settings.menu_2_display contains 'small'
-            assign menu_2_boxed = false
-          else
-            assign menu_2_boxed = true
-          endif
-          assign menu_2_display = section.settings.menu_2_display | replace: 'small_', '' | replace: 'large_', ''
-
-          if section.settings.menu_3_display contains 'small'
-            assign menu_3_boxed = false
-          else
-            assign menu_3_boxed = true
-          endif
-          assign menu_3_display = section.settings.menu_3_display | replace: 'small_', '' | replace: 'large_', ''
-
-          if settings.animations_enabled != 'disabled' and section.settings.prevent_animation == false
-            assign animate = true
-          else
-            assign animate = false
-          endif
-        -%}
-        {% render 'quick-nav',
-          component_id: block.id,
-          menu: section.settings.quick_nav_menu,
-          image_ratio: section.settings.quick_nav_image_ratio,
-          image_fit: section.settings.quick_nav_image_fit,
-          use_product_image: section.settings.quick_nav_use_product_image,
-          color_scheme: section.settings.quick_nav_color_scheme,
-          show_price: section.settings.quick_nav_show_price,
-          animate: animate,
-          title: section.settings.quick_nav_title,
-          menu_1_display: menu_1_display,
-          menu_1_boxed: menu_1_boxed,
-          menu_1_text: section.settings.menu_1_text,
-          menu_2_display: menu_2_display,
-          menu_2_boxed: menu_2_boxed,
-          menu_2_text: section.settings.menu_2_text,
-          menu_3_display: menu_3_display,
-          menu_3_boxed: menu_3_boxed,
-          menu_3_text: section.settings.menu_3_text
-        %}
-      </div>
-    {%- endif -%}
   </slide-show>
+
+  {%- if section.settings.quick_nav_menu != blank -%}
+    <div class="container container--quick-nav md:py-0 py-8">
+      {%- liquid
+        if section.settings.menu_1_display contains 'small'
+          assign menu_1_boxed = false
+        else
+          assign menu_1_boxed = true
+        endif
+        assign menu_1_display = section.settings.menu_1_display | replace: 'small_', '' | replace: 'large_', ''
+
+        if section.settings.menu_2_display contains 'small'
+          assign menu_2_boxed = false
+        else
+          assign menu_2_boxed = true
+        endif
+        assign menu_2_display = section.settings.menu_2_display | replace: 'small_', '' | replace: 'large_', ''
+
+        if section.settings.menu_3_display contains 'small'
+          assign menu_3_boxed = false
+        else
+          assign menu_3_boxed = true
+        endif
+        assign menu_3_display = section.settings.menu_3_display | replace: 'small_', '' | replace: 'large_', ''
+
+        if settings.animations_enabled != 'disabled' and section.settings.prevent_animation == false
+          assign animate = true
+        else
+          assign animate = false
+        endif
+      -%}
+      {% render 'quick-nav',
+        component_id: block.id,
+        menu: section.settings.quick_nav_menu,
+        image_ratio: section.settings.quick_nav_image_ratio,
+        image_fit: section.settings.quick_nav_image_fit,
+        use_product_image: section.settings.quick_nav_use_product_image,
+        color_scheme: section.settings.quick_nav_color_scheme,
+        show_price: section.settings.quick_nav_show_price,
+        animate: animate,
+        title: section.settings.quick_nav_title,
+        menu_1_display: menu_1_display,
+        menu_1_boxed: menu_1_boxed,
+        menu_1_text: section.settings.menu_1_text,
+        menu_2_display: menu_2_display,
+        menu_2_boxed: menu_2_boxed,
+        menu_2_text: section.settings.menu_2_text,
+        menu_3_display: menu_3_display,
+        menu_3_boxed: menu_3_boxed,
+        menu_3_text: section.settings.menu_3_text
+      %}
+    </div>
+  {%- endif -%}
 </section>
 
 {% schema %}

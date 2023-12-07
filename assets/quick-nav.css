@@ -16,7 +16,6 @@
 }
 
 .quick-nav__btn {
-  width: 220px;
   text-align: start;
 }
 .quick-nav__btn[aria-expanded='true'] {
@@ -70,6 +69,10 @@
 }
 
 @media (min-width: 769px) {
+  .quick-nav__btn {
+    width: 220px;
+  }
+
   .custom-select--boxed,
   .custom-select--boxed .custom-select {
     position: static;
@@ -82,7 +85,7 @@
     bottom: auto;
     left: auto;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 200px;
+    width: 300px;
     max-height: 100%;
     transform: translateX(30px);
     transition:
