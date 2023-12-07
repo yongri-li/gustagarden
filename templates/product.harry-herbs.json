@@ -62,7 +62,7 @@
           "type": "save-in-set",
           "settings": {
             "btn_label": "Zum Set",
-            "background_color": "#F5F5F5"
+            "background_color": "#f5f5f5"
           }
         }
       },
@@ -189,7 +189,7 @@
           "settings": {
             "icon": "picto-box",
             "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_fd341798-51ea-4113-ad7d-5060b9a9d7d5.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 60,
             "title": "ideal für Indoorund Outdoor",
             "content": ""
           }
@@ -199,7 +199,7 @@
           "settings": {
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f_82950946-1ae6-4c94-a857-bd0b89b5b67e.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 60,
             "title": "kinderleichter Aufbau",
             "content": ""
           }
@@ -209,7 +209,7 @@
           "settings": {
             "icon": "picto-lock",
             "custom_icon": "shopify:\/\/shop_images\/Icon_wicking_1_70d01dc8-a337-4be7-8b90-d431d4d053ad.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 40,
             "title": "einfache Bewässerung",
             "content": ""
           }
@@ -219,7 +219,7 @@
           "settings": {
             "icon": "picto-email",
             "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU_07f9d8fb-0197-4274-b601-e0f3b0f43b5b.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 80,
             "title": "designed in Austriamade in the EU",
             "content": ""
           }
