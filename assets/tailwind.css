@@ -182,6 +182,14 @@
   bottom: 25%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -1414,6 +1422,14 @@ input:focus-within {
     position: absolute;
   }
 
+  .md\:bottom-1\/4 {
+    bottom: 25%;
+  }
+
+  .md\:right-20 {
+    right: 5rem;
+  }
+
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -1453,6 +1469,10 @@ input:focus-within {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
   }
 
   .md\:grid-cols-12 {
