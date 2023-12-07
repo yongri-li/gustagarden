@@ -135,11 +135,15 @@
         "slide-2"
       ],
       "settings": {
+        "quick_nav_menu": "product-finder",
         "section_height": "small",
         "transition_type": "sweep",
         "autoplay": true,
         "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
+        "background": "rgba(0,0,0,0)",
+        "menu_1_text": "Was willst du anpflanzen?",
+        "menu_2_text": "Ganzjährig?",
+        "quick_nav_title": "Produkt-Finder"
       }
     },
     "b69abf55-57d4-4ff0-b801-10b195ff3d44": {
