@@ -533,7 +533,7 @@
         "look-1"
       ],
       "custom_css": [
-        "{color: #fff;}"
+
       ],
       "settings": {
         "reveal_on_scroll": true,
