@@ -97,13 +97,13 @@
                           {%- if sub_link.url == '#' -%}
                             <span class="mega-menu__title heading heading--small">
                               {%- if mega_menu_block.settings.top_lead_image -%}
-                                <div>
+                                <div class="text-center">
                                   <img
                                     src="{{ mega_menu_block.settings.top_lead_image | img_url: 'master' }}"
                                     alt=""
                                     height="240"
                                     width="120"
-                                    class="object-contain h-60 object-left"
+                                    class="object-center aspect-video"
                                     loading="lazy">
                                 </div>
                               {%- endif -%}
@@ -112,13 +112,13 @@
                             </span>
                           {%- else -%}
                             {%- if mega_menu_block.settings.top_lead_image -%}
-                              <div>
+                              <div class="text-center">
                                 <img
                                   src="{{ mega_menu_block.settings.top_lead_image | img_url: 'master' }}"
                                   alt=""
                                   height="240"
                                   width="120"
-                                  class="object-contain h-60 object-left"
+                                  class="object-center aspect-video"
                                   loading="lazy">
                               </div>
                             {%- endif -%}

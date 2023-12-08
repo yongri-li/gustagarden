@@ -274,6 +274,10 @@
   aspect-ratio: 1 / 1;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .\!h-8 {
   height: 2rem !important;
 }
@@ -735,6 +739,11 @@
 .object-left {
   -o-object-position: left;
      object-position: left;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-0 {
