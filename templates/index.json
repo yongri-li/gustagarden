@@ -533,7 +533,7 @@
         "look-1"
       ],
       "custom_css": [
-        ".shop-the-look__dot {background: #ffca20!important; box-shadow: 0 0 0 8px rgb(255,255,255) inset, 0 1px 5px #00000026;}"
+        ".shop-the-look__dot {background: #C8DD02 !important; box-shadow: 0 0 0 8px rgb(255, 255, 255) inset, 0 1px 5px #00000026;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
