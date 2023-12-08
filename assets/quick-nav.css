@@ -121,7 +121,7 @@
   .quick-nav__listbox--boxed
     .custom-select__option:not(.quick-nav__default-option) {
     transition: border-color 0.3s;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding-top: 25px;
     padding-bottom: 25px;
     border-radius: 4px;

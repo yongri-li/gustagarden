@@ -529,6 +529,12 @@
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .self-center {
   align-self: center;
 }
@@ -852,6 +858,18 @@
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-left {
@@ -1447,6 +1465,12 @@ input:focus-within {
     align-items: flex-start;
   }
 
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
   .md\:rounded {
     border-radius: 16px;
   }
@@ -1457,6 +1481,10 @@ input:focus-within {
 
   .md\:border-r {
     border-right-width: 1px;
+  }
+
+  .md\:border-none {
+    border-style: none;
   }
 
   .md\:p-10 {
