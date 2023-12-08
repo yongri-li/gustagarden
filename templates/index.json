@@ -533,7 +533,7 @@
         "look-1"
       ],
       "custom_css": [
-        ".shop-the-look__dot {background-color: #fff; border-color: #fff;}"
+        ".shop-the-look__dot {--section-dot-background: #fff; background-color: #fff; border-color: #fff;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
