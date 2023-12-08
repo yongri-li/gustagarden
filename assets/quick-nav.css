@@ -121,10 +121,14 @@
   .quick-nav__listbox--boxed
     .custom-select__option:not(.quick-nav__default-option) {
     transition: border-color 0.3s;
-    border: 1px solid rgba(var(--input-text-color) / 0.2);
-    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 4px;
   }
-  .quick-nav__listbox--boxed
+
+  .custom-s
+    .quick-nav__listbox--boxed
     .custom-select__option:not(
       .quick-nav__default-option
     )[aria-selected='true'] {
@@ -190,6 +194,7 @@
     background-color: transparent;
   }
 }
+
 @media (min-width: 900px) {
   .custom-select--boxed,
   .custom-select--boxed .custom-select {
