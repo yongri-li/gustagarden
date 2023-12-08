@@ -200,6 +200,7 @@
         "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-5",
         "template--16337048141997__b69abf55-57d4-4ff0-b801-10b195ff3d44-logo-6"
       ],
+      "disabled": true,
       "custom_css": [
         "h3 {color: #484b42; text-transform: uppercase;}",
         "@media only screen and (min-width: 750px) {{margin-top: -50px; }}"
@@ -508,7 +509,7 @@
       ],
       "custom_css": [
         ".h5 {font-weight: bold; font-size: 20px; background-color: #c8dd02; color: #000000; padding: 5px;}",
-        ".multi-column__image-wrapper {border: 20px solid #eaeaea; border-radius: 250px;}"
+        ".multi-column__image-wrapper {border: 0px solid #eaeaea; border-radius: 250px;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
