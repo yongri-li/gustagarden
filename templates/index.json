@@ -451,48 +451,6 @@
             "text_alignment": "center",
             "vertical_alignment": "start"
           }
-        },
-        "0346930e-e3d5-40dc-a23f-a2c7cb7cfcb0": {
-          "type": "item",
-          "settings": {
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "CURT CUCUMBER",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "0516837d-f9d2-4212-96d7-fc91d6c9d941": {
-          "type": "item",
-          "settings": {
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "HERBS BUDDY",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "cbb9bf79-2511-41a7-a838-f172cc2b7d9d": {
-          "type": "item",
-          "settings": {
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "BERRY BUDDY",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
         }
       },
       "block_order": [
@@ -502,10 +460,7 @@
         "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-4",
         "cbb188c3-7772-4348-90c2-acfe42f66288",
         "05a5ddea-c16e-48c2-9146-498e64049130",
-        "4c48c664-8632-4f5c-ae55-5fae386d66ed",
-        "0346930e-e3d5-40dc-a23f-a2c7cb7cfcb0",
-        "0516837d-f9d2-4212-96d7-fc91d6c9d941",
-        "cbb9bf79-2511-41a7-a838-f172cc2b7d9d"
+        "4c48c664-8632-4f5c-ae55-5fae386d66ed"
       ],
       "custom_css": [
         ".h5 {font-weight: bold; font-size: 20px; background-color: #c8dd02; color: #000000; padding: 5px;}",
