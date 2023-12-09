@@ -318,10 +318,6 @@
   height: 1.5rem;
 }
 
-.h-60 {
-  height: 15rem;
-}
-
 .h-\[45vw\] {
   height: 45vw;
 }
@@ -736,11 +732,6 @@
      object-fit: contain;
 }
 
-.object-left {
-  -o-object-position: left;
-     object-position: left;
-}
-
 .object-center {
   -o-object-position: center;
      object-position: center;
@@ -861,24 +852,20 @@
   padding-bottom: 2.5rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
 }
 
 .pl-4 {
   padding-left: 1rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -1337,11 +1324,6 @@ input:focus-within {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
-}
-
-.hover\:bg-green-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-neutral-100:hover {
