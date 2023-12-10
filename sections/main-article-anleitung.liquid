@@ -209,6 +209,15 @@
             </div>
           {%- endif -%}
 
+          {%- if section.settings.show_steps != blank -%}
+            aaa
+            {% for schritt in article.metafields.custom.schritte_1.value %}
+              bbb
+              {{ schritt | json }}
+              
+            {% endfor %}
+         {% endif %}
+
           <div class="flex flex-col gap-8">
             <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
               {%- if article.metafields.custom.uebersicht != blank -%}
@@ -269,7 +278,7 @@
 
 {% schema %}
 {
-  "name": "Blog post - Rezept",
+  "name": "Blog post - Anleitung",
   "class": "shopify-section--main-article",
   "settings": [
     {
@@ -306,6 +315,12 @@
       "type": "checkbox",
       "id": "show_content",
       "label": "Show content",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_steps",
+      "label": "Show steps",
       "default": true
     }
   ]
