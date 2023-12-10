@@ -73,7 +73,7 @@
       <a
         href="{{ blog.url }}/tagged/{{ article.tags.first | handle }}"
         class="article__category heading heading--small">
-        {{- article.tags.first -}}
+        {{- article.tags.first | replace: 'Category_', '' -}}
       </a>
     {%- endif -%}
 
