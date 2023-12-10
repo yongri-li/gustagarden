@@ -676,59 +676,6 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
-    },
-    "d76fb9de-a217-4d2f-a0be-781f0394da76": {
-      "type": "codext-c-Product-Cards",
-      "blocks": {
-        "99fa5798-b4b5-4fe8-a25e-43ebf8c35aef": {
-          "type": "product_card",
-          "settings": {
-            "title": "",
-            "description": "",
-            "usp_1": "",
-            "usp_2": "",
-            "usp_3": "",
-            "usp_4": "",
-            "link": "",
-            "button_text": ""
-          }
-        },
-        "9a1929d5-b073-4b0c-8a42-f09869fee741": {
-          "type": "product_card",
-          "settings": {
-            "title": "",
-            "description": "",
-            "usp_1": "",
-            "usp_2": "",
-            "usp_3": "",
-            "usp_4": "",
-            "link": "",
-            "button_text": ""
-          }
-        },
-        "b5f057fa-716c-4ee1-a48d-0e6b694eb769": {
-          "type": "product_card",
-          "settings": {
-            "title": "",
-            "description": "",
-            "usp_1": "",
-            "usp_2": "",
-            "usp_3": "",
-            "usp_4": "",
-            "link": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "99fa5798-b4b5-4fe8-a25e-43ebf8c35aef",
-        "9a1929d5-b073-4b0c-8a42-f09869fee741",
-        "b5f057fa-716c-4ee1-a48d-0e6b694eb769"
-      ],
-      "settings": {
-        "background_color": "#ffffff",
-        "title": "test"
-      }
     }
   },
   "order": [
@@ -746,7 +693,6 @@
     "c9245672-de7f-4d0f-b627-c276177ea803",
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57",
     "1700268763cea3d046",
-    "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72",
-    "d76fb9de-a217-4d2f-a0be-781f0394da76"
+    "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72"
   ]
 }
