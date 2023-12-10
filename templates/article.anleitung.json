@@ -12,14 +12,15 @@
       }
     },
     "main": {
-      "type": "main-article-rezept",
+      "type": "main-article-anleitung",
       "settings": {
         "show_on_scroll_navigation": true,
         "show_author": false,
         "show_tags": true,
         "show_date": false,
         "show_share_buttons": false,
-        "show_content": false
+        "show_content": false,
+        "show_steps": true
       }
     },
     "27d37aa7-7f41-47aa-9f84-2247a792667a": {
