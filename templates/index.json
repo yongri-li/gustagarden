@@ -312,7 +312,7 @@
         "title": "Anleitungen zu unseren Produkten",
         "content": "<p>Egal, ob du gerade erst mit dem Gärtnern beginnst oder bereits ein erfahrener Gärtner bist, unsere Anleitungen sind hier, um dir zu helfen, das Beste aus unseren Produkten herauszuholen. In unseren Anleitungen findest du detaillierte Schritt-für-Schritt-Erklärungen, Tipps und Tricks zur effektiven Nutzung unserer Produkte, um deinen Garten in ein blühendes Paradies zu verwandeln.<\/p>",
         "button_text": "ZU DEN ANLEITUNGEN",
-        "button_link": "shopify:\/\/blogs\/anleitungen-1",
+        "button_link": "shopify:\/\/blogs\/anleitungen",
         "background_type": "full_width",
         "text_position": "overlap_right",
         "text_alignment": "center",
