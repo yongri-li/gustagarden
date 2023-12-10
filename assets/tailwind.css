@@ -448,6 +448,10 @@
   width: 2.5rem;
 }
 
+.\!w-full {
+  width: 100% !important;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -462,6 +466,10 @@
 
 .max-w-screen-lg {
   max-width: 1024px;
+}
+
+.\!max-w-full {
+  max-width: 100% !important;
 }
 
 .flex-1 {

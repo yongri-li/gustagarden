@@ -258,8 +258,6 @@
             </div>
           </div>
 
-         
-
           <div class="flex flex-col gap-8">
             <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
               {%- if article.metafields.custom.uebersicht != blank -%}
@@ -306,40 +304,47 @@
             {%- if section.settings.show_faqs -%}
               <div class="flex flex-col gap-8">
                 <div
-                  class="article__content grid md:grid-cols-2 gap-12 mb-4 faq__wrapper"
-                  itemscope
-                  itemtype="https://schema.org/FAQPage">
-                  {% for faq in article.metafields.custom.faqs.value.faq.value %}
+                  class="article__content">
+                  <div class="rte">
+                    <header class="section__header text-container text-left mb-0">
+                      <h3 class="heading h2">FAQ</h3>
+                    </header>
                     <div
-                      class="faq__item"
                       itemscope
-                      itemprop="mainEntity"
-                      itemtype="https://schema.org/Question">
-                      <button
-                        is="toggle-button"
-                        class="collapsible-toggle text--strong"
-                        aria-controls="block-{{ section.id }}-{{ faq.frage | escape }}"
-                        aria-expanded="false"
-                        itemprop="name">
-                        {{- faq.frage -}}
-                        <span class="animated-plus"></span>
-                      </button>
-  
-                      <collapsible-content
-                        id="block-{{ section.id }}-{{ block.id }}"
-                        class="collapsible anchor"
-                        itemscope
-                        itemprop="acceptedAnswer"
-                        itemtype="https://schema.org/Answer"
-                        {{ block.shopify_attributes }}>
+                      itemtype="https://schema.org/FAQPage">
+                      {% for faq in article.metafields.custom.faqs.value.faqs.value %}
                         <div
-                          class="collapsible__content text-container"
-                          itemprop="text">
-                          {{ faq.answer | metafield_tag }}
+                          class="faq__item"
+                          itemscope
+                          itemprop="mainEntity"
+                          itemtype="https://schema.org/Question">
+                          <button
+                            is="toggle-button"
+                            class="collapsible-toggle text--strong"
+                            aria-controls="block-{{ section.id }}-{{ forloop.index }}"
+                            aria-expanded="false"
+                            itemprop="name">
+                            {{- faq.frage -}}
+                            <span class="animated-plus"></span>
+                          </button>
+
+                          <collapsible-content
+                            id="block-{{ section.id }}-{{ forloop.index }}"
+                            class="collapsible anchor"
+                            itemscope
+                            itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer"
+                            {{ block.shopify_attributes }}>
+                            <div
+                              class="collapsible__content text-container"
+                              itemprop="text">
+                              {{ faq.antwort | metafield_tag }}
+                            </div>
+                          </collapsible-content>
                         </div>
-                      </collapsible-content>
+                      {% endfor %}
                     </div>
-                  {% endfor %}
+                  </div>
                 </div>
               </div>
             {% endif %}
