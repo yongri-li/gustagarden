@@ -5,9 +5,9 @@
       "settings": {
         "reveal_on_scroll": true,
         "section_height": "small",
-        "image": "shopify:\/\/shop_images\/HH_lp_46a91ed8-4373-45cf-8e9b-70f9d10126fd.jpg",
+        "image": "shopify:\/\/shop_images\/Pommes-Kopie-2.jpg",
         "subheading": "",
-        "title": "Anleitungen",
+        "title": "REZEPTE",
         "content": "",
         "button_text": "",
         "button_link": "",
@@ -22,12 +22,12 @@
         "overlay_opacity": 30
       }
     },
-    "b14ddba5-2dcd-4b65-abe4-65e4fab7a897": {
+    "ef1964cf-b7f3-4641-9cdd-36dce15f90b0": {
       "type": "rich-text",
       "settings": {
         "subheading": "",
         "title": "",
-        "content": "<p>Hier findest du Schritt-für-Schritt-Anleitungen zu allen Gusta Garden Produkten. Du hast noch weitere Fragen? Viele hilfreiche Antworten findest du in unseren <a href=\"https:\/\/www.gustagarden.com\/faq\/\">FAQs<\/a>. Solltest du auch hier nicht fündig werden, zögere nicht, uns unter <a href=\"mailto:office@gustagarden.com\">office@gustagarden.com<\/a> zu kontaktieren.<\/p>",
+        "content": "<p>Deine Pflanzgefäße von <strong>Gusta Garden<\/strong> haben dir eine reichte Ernte beschert? Wir freuen uns für dich! Gerne möchten wir dich inspirieren, welche köstlichen Rezepte du mit deinen <strong>Kartoffeln, Erdbeeren<\/strong> und <strong>Tomaten<\/strong> ganz einfach nach kochen kannst.<\/p><p>Genieße die Früchte des Erfolgs in vielen Variationen<\/p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
@@ -47,7 +47,7 @@
         "show_tags": false,
         "show_category": false,
         "show_excerpt": true,
-        "articles_per_page": 9
+        "articles_per_page": 24
       }
     },
     "ff8f5d7c-20e5-4123-8150-26d7fe903827": {
@@ -158,7 +158,7 @@
   },
   "order": [
     "7271de26-ba74-415b-b75f-bffeb21f4c63",
-    "b14ddba5-2dcd-4b65-abe4-65e4fab7a897",
+    "ef1964cf-b7f3-4641-9cdd-36dce15f90b0",
     "main",
     "ff8f5d7c-20e5-4123-8150-26d7fe903827",
     "04314064-0967-4755-b0f1-a896ce24ccf8"
