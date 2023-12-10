@@ -169,15 +169,20 @@
           {%- endcapture -%}
 
           {%- if blog_post_info != blank -%}
-           
             <div class="article__info p-0 border-none hidden md:!grid">
               <div class="flex flex-col justify-center items-center gap-2">
                 <div class="rounded-full w-24 h-24 aspect-square overflow-hidden">
-                  {{ article.metafields.custom.author.value.bild  | image_url: width: 300 | image_tag: class: '!m-0' }}
+                  {{
+                    article.metafields.custom.author.value.bild
+                    | image_url: width: 300
+                    | image_tag: class: '!m-0'
+                  }}
                 </div>
                 <div class="flex flex-col gap-0">
-                  <div class="text-lg font-bold" >{{ article.metafields.custom.author.value.name }}</div>
-                </div>        
+                  <div class="text-lg font-bold">
+                    {{ article.metafields.custom.author.value.name }}
+                  </div>
+                </div>
               </div>
               <div>
                 <div class="flex flex-wrap gap-4">
@@ -185,18 +190,19 @@
                     <a
                       href="{{ file.url }}"
                       target="_blank"
-                      class="button 
-                      button--primary 
-                      !no-underline 
-                      flex items-center gap-4
-                      w-full
-                      !h-8
-                      !px-4
+                      class="
+                        button
+                        button--primary
+                        !no-underline
+                        flex items-center gap-4
+                        w-full
+                        !h-8
+                        !px-4
                       ">
                       {%- render 'heroicon-arrow-down-tray' -%}
                       <span class="no-underline normal-case text-xs whitespace-pre">
                         {%- if file.alt != blank -%}
-                          Rezept {%comment%}{{ file.alt }}{%endcomment%}
+                          Rezept {% comment %}{{ file.alt }}{% endcomment %}
                         {%- else -%}
                           Rezept
                         {%- endif -%}
@@ -209,14 +215,50 @@
             </div>
           {%- endif -%}
 
-          {%- if section.settings.show_steps != blank -%}
-            aaa
-            {% for schritt in article.metafields.custom.schritte_1.value %}
-              bbb
-              {{ schritt | json }}
-              
-            {% endfor %}
-         {% endif %}
+          <div class="flex flex-col gap-8">
+            <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
+              {%- if section.settings.show_steps != blank -%}
+                {% for schritt in article.metafields.custom.schritte_1.value.schritte.value %}
+                  <div class="rte">
+                    <div class="flex flex-col h-full p-4 pt-6 border rounded-lg shadow-md gap-4 relative border-solid border-gray-200">
+                      <div class="rounded-t-lg absolute top-0 right-0 object-cover w-full -z-10 !my-0 h-48 overflow-hidden">
+                        <img
+                          class="object-cover w-full !my-0 blur-md"
+                          alt="{{ schritt.bild.alt | escape }}"
+                          width="{{ schritt.bild.width }}"
+                          height="{{ schritt.bilda.height }}"
+                          loading="lazy"
+                          src="{{ schritt.bild | img_url: '210x' }}">
+
+                        <div
+                          class="
+                            absolute top-0 right-0 z-10 block
+                            w-full h-full bg-gradient-to-t from-white to-transparent
+                          "></div>
+                      </div>
+
+                      <div class="flex gap-4 items-center">
+                        <div
+                          class="
+                            absolute shadow-xl -top-4 -left-4 font-bold
+                            text-2xl inline-flex items-center justify-center
+                            h-14 w-14 rounded-full bg-[#c8d30e] text-white
+                          ">
+                          {{ schritt.nummer }}
+                        </div>
+                        <div class="text-2xl font-semibold ml-12">
+                          {{ schritt.titel }}
+                        </div>
+                      </div>
+                      <div>{{ schritt.beschreibung | metafield_tag }}</div>
+                    </div>
+                  </div>
+                {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+
+         
 
           <div class="flex flex-col gap-8">
             <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
@@ -254,14 +296,53 @@
                       target="_blank"
                       class="button button--primary !no-underline flex justify-center items-center gap-4">
                       {%- render 'heroicon-arrow-down-tray' -%}
-                      <span class="no-underline">
-                        Rezept
-                      </span>
+                      <span class="no-underline"> Rezept </span>
                     </a>
                   {% endfor %}
                 </div>
               </div>
             </div>
+
+            {%- if section.settings.show_faqs -%}
+              <div class="flex flex-col gap-8">
+                <div
+                  class="article__content grid md:grid-cols-2 gap-12 mb-4 faq__wrapper"
+                  itemscope
+                  itemtype="https://schema.org/FAQPage">
+                  {% for faq in article.metafields.custom.faqs.value.faq.value %}
+                    <div
+                      class="faq__item"
+                      itemscope
+                      itemprop="mainEntity"
+                      itemtype="https://schema.org/Question">
+                      <button
+                        is="toggle-button"
+                        class="collapsible-toggle text--strong"
+                        aria-controls="block-{{ section.id }}-{{ faq.frage | escape }}"
+                        aria-expanded="false"
+                        itemprop="name">
+                        {{- faq.frage -}}
+                        <span class="animated-plus"></span>
+                      </button>
+  
+                      <collapsible-content
+                        id="block-{{ section.id }}-{{ block.id }}"
+                        class="collapsible anchor"
+                        itemscope
+                        itemprop="acceptedAnswer"
+                        itemtype="https://schema.org/Answer"
+                        {{ block.shopify_attributes }}>
+                        <div
+                          class="collapsible__content text-container"
+                          itemprop="text">
+                          {{ faq.answer | metafield_tag }}
+                        </div>
+                      </collapsible-content>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -270,10 +351,10 @@
 </section>
 
 {% style %}
-.article__content h3 {
-  color: #c7d31c;
-  font-weight: 700;
-}
+  .article__content h3 {
+    color: #c7d31c;
+    font-weight: 700;
+  }
 {% endstyle %}
 
 {% schema %}
@@ -321,6 +402,12 @@
       "type": "checkbox",
       "id": "show_steps",
       "label": "Show steps",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_faqs",
+      "label": "Show FAQs",
       "default": true
     }
   ]
