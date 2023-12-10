@@ -48,7 +48,6 @@
           "type": "mega_menu",
           "settings": {
             "menu_item": "SHOP",
-            "top_lead_image": "shopify:\/\/shop_images\/WKO.svg",
             "images_position": "right",
             "image_1_heading": "BESTSELLER",
             "image_1_text": "",

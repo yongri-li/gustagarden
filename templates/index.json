@@ -693,11 +693,41 @@
             "link": "shopify:\/\/collections\/anzucht-amp-samen",
             "button_text": "awe"
           }
+        },
+        "e9db8e1b-39f7-48fe-87d4-c105e911bece": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Komplettseit-Startersteel_fa57b53a-d2aa-401a-957b-bf14cf7c0fbc.png",
+            "title": "tzjzj",
+            "description": "tzjtzj",
+            "usp_1": "tzjtzj",
+            "usp_2": "tzjtzj",
+            "usp_3": "tzjtzj",
+            "usp_4": "tzjtzj",
+            "link": "shopify:\/\/pages\/faq",
+            "button_text": "tjz"
+          }
+        },
+        "eb1bcb6f-e947-4008-921a-6b55f9f9dd14": {
+          "type": "product_card",
+          "settings": {
+            "title": "",
+            "description": "",
+            "usp_1": "",
+            "usp_2": "",
+            "usp_3": "",
+            "usp_4": "",
+            "link": "",
+            "button_text": ""
+          }
         }
       },
       "block_order": [
-        "a752f679-7601-4698-a699-870282da305a"
+        "a752f679-7601-4698-a699-870282da305a",
+        "e9db8e1b-39f7-48fe-87d4-c105e911bece",
+        "eb1bcb6f-e947-4008-921a-6b55f9f9dd14"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#ffffff",
         "title": ""
