@@ -20,7 +20,8 @@
         "show_date": false,
         "show_share_buttons": false,
         "show_content": false,
-        "show_steps": true
+        "show_steps": true,
+        "show_faqs": true
       }
     },
     "27d37aa7-7f41-47aa-9f84-2247a792667a": {
@@ -29,12 +30,29 @@
         "18dd4370-4084-4d0e-9011-44e6968a1f77": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Spargel_1-Kopie-2_a80533ac-203e-4e47-a2e6-574ea2b17311.jpg",
+            "caption": ""
+          }
+        },
+        "a5634616-6b53-4998-a64c-d0914bcd0158": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spargel-Nudelsalat_2_953075f2-7ede-4ec2-963f-88f2be17794d.jpg",
+            "caption": ""
+          }
+        },
+        "93f9644f-5080-45da-8895-eeff48603374": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shrub_4-scaled_3919a687-faf2-48a4-bccc-2473cfe411c8.jpg",
             "caption": ""
           }
         }
       },
       "block_order": [
-        "18dd4370-4084-4d0e-9011-44e6968a1f77"
+        "18dd4370-4084-4d0e-9011-44e6968a1f77",
+        "a5634616-6b53-4998-a64c-d0914bcd0158",
+        "93f9644f-5080-45da-8895-eeff48603374"
       ],
       "settings": {
         "subheading": "",
@@ -50,7 +68,7 @@
         "e63cfaf2-986f-4e77-a706-fc231879b6c7": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "harry-herbs",
             "label": "",
             "button_text": "",
             "button_url": ""
@@ -84,37 +102,6 @@
       "settings": {
       }
     },
-    "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--16337048666285__b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "paul-potato",
-            "label": "",
-            "button_text": "",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16337048666285__b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1-collection-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "title": "Produkte für dein Rezept",
-        "content": "",
-        "products_count": 4,
-        "products_per_row": 4,
-        "stack_products": true,
-        "show_cta": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
     "blog-post-comments": {
       "type": "blog-post-comments",
       "settings": {
@@ -129,7 +116,6 @@
     "62cb6170-fd1d-4b4b-bb0b-95ecdad69121",
     "blog-post-prev-next",
     "46382bc0-a5c0-428d-a85d-70532faa0095",
-    "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1",
     "blog-post-comments"
   ]
 }
