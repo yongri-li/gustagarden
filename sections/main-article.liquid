@@ -90,18 +90,20 @@
               {%- endif -%}
             </div>
 
-            {%- if article.tags.size > 0 -%}
-              <div class="article__tags">
-                <span class="article__tags-label heading heading--small">{{ 'article.general.tags' | t }}</span>
+            {%- if section.settings.show_tags? -%}
+              {%- if article.tags.size > 0 -%}
+                <div class="article__tags">
+                  <span class="article__tags-label heading heading--small">{{ 'article.general.tags' | t }}</span>
 
-                <ul class="article__tags-list list--unstyled" role="list">
-                  {%- for tag in article.tags -%}
-                    <li class="article__tags-item" role="listitem">
-                      <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="text--subdued link">{{ tag }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              </div>
+                  <ul class="article__tags-list list--unstyled" role="list">
+                    {%- for tag in article.tags -%}
+                      <li class="article__tags-item" role="listitem">
+                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="text--subdued link">{{ tag }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endif -%}
             {%- endif -%}
 
             {%- if section.settings.show_share_buttons -%}
@@ -167,24 +169,198 @@
           {%- endcapture -%}
 
           {%- if blog_post_info != blank -%}
-            <div class="article__info">
+            <div class="article__info p-0 border-none hidden md:!grid">
+              <div class="flex flex-col justify-center items-center gap-2">
+                <div class="rounded-full w-24 h-24 aspect-square overflow-hidden">
+                  {{
+                    article.metafields.custom.author.value.bild
+                    | image_url: width: 300
+                    | image_tag: class: '!m-0'
+                  }}
+                </div>
+                <div class="flex flex-col gap-0">
+                  <div class="text-lg font-bold">
+                    {{ article.metafields.custom.author.value.name }}
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex flex-wrap gap-4">
+                  {% for file in article.metafields.custom.downloads.value %}
+                    <a
+                      href="{{ file.url }}"
+                      target="_blank"
+                      class="
+                        button
+                        button--primary
+                        !no-underline
+                        flex items-center gap-4
+                        w-full
+                        !h-8
+                        !px-4
+                      ">
+                      {%- render 'heroicon-arrow-down-tray' -%}
+                      <span class="no-underline normal-case text-xs whitespace-pre">
+                        {%- if file.alt != blank -%}
+                          Rezept {% comment %}{{ file.alt }}{% endcomment %}
+                        {%- else -%}
+                          Rezept
+                        {%- endif -%}
+                      </span>
+                    </a>
+                  {% endfor %}
+                </div>
+              </div>
               {{- blog_post_info -}}
             </div>
           {%- endif -%}
 
+          <div class="flex flex-col gap-8">
+            <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
+              {%- if section.settings.show_steps != blank -%}
+                {% for schritt in article.metafields.custom.schritte_1.value.schritte.value %}
+                  <div class="rte">
+                    <div class="flex flex-col h-full p-4 pt-6 border rounded-lg shadow-md gap-4 relative border-solid border-gray-200">
+                      <div class="rounded-t-lg absolute top-0 right-0 object-cover w-full -z-10 !my-0 h-48 overflow-hidden">
+                        <img
+                          class="object-cover w-full !my-0 blur-md"
+                          alt="{{ schritt.bild.alt | escape }}"
+                          width="{{ schritt.bild.width }}"
+                          height="{{ schritt.bilda.height }}"
+                          loading="lazy"
+                          src="{{ schritt.bild | img_url: '210x' }}">
 
-          <div class="article__content">
-            <div
-              class="rte"
-              {{ block.shopify_attributes }}>
-              {{ article.content }}
+                        <div
+                          class="
+                            absolute top-0 right-0 z-10 block
+                            w-full h-full bg-gradient-to-t from-white to-transparent
+                          "></div>
+                      </div>
+
+                      <div class="flex gap-4 items-center">
+                        <div
+                          class="
+                            absolute shadow-xl -top-4 -left-4 font-bold
+                            text-2xl inline-flex items-center justify-center
+                            h-14 w-14 rounded-full bg-[#c8d30e] text-white
+                          ">
+                          {{ schritt.nummer }}
+                        </div>
+                        <div class="text-2xl font-semibold ml-12">
+                          {{ schritt.titel }}
+                        </div>
+                      </div>
+                      <div>{{ schritt.beschreibung | metafield_tag }}</div>
+                    </div>
+                  </div>
+                {% endfor %}
+              {% endif %}
             </div>
+          </div>
+
+          <div class="flex flex-col gap-8">
+            <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
+              {%- if article.metafields.custom.uebersicht != blank -%}
+                <div class="rte flex flex-col gap-3 border-l-0 border-t-0 border-b-0 border-r-0 md:border-r border-gray-400 border-solid">
+                  <h3>Übersicht</h3>
+                  {{ article.metafields.custom.uebersicht | metafield_tag }}
+                </div>
+              {%- endif -%}
+              {%- if article.metafields.custom.zutaten != blank -%}
+                <div class="rte flex flex-col gap-3">
+                  <h3>Zutaten</h3>
+                  {{ article.metafields.custom.zutaten | metafield_tag }}
+                </div>
+              {%- endif -%}
+            </div>
+
+            <div class="article__content">
+              <div
+                class="rte"
+                {{ block.shopify_attributes }}>
+                {{ article.content }}
+              </div>
+            </div>
+
+            <div class="article__content block md:hidden">
+              <div
+                class="rte"
+                {{ block.shopify_attributes }}>
+                <h3>Downloads</h3>
+                <div class="flex flex-wrap gap-4">
+                  {% for file in article.metafields.custom.downloads.value %}
+                    <a
+                      href="{{ file.url }}"
+                      target="_blank"
+                      class="button button--primary !no-underline flex justify-center items-center gap-4">
+                      {%- render 'heroicon-arrow-down-tray' -%}
+                      <span class="no-underline"> Rezept </span>
+                    </a>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+
+            {%- if section.settings.show_faqs -%}
+              <div class="flex flex-col gap-8">
+                <div
+                  class="article__content">
+                  <div class="rte">
+                    <header class="section__header text-container text-left mb-0">
+                      <h3 class="heading h2">FAQ</h3>
+                    </header>
+                    <div
+                      itemscope
+                      itemtype="https://schema.org/FAQPage">
+                      {% for faq in article.metafields.custom.faqs.value.faqs.value %}
+                        <div
+                          class="faq__item"
+                          itemscope
+                          itemprop="mainEntity"
+                          itemtype="https://schema.org/Question">
+                          <button
+                            is="toggle-button"
+                            class="collapsible-toggle text--strong"
+                            aria-controls="block-{{ section.id }}-{{ forloop.index }}"
+                            aria-expanded="false"
+                            itemprop="name">
+                            {{- faq.frage -}}
+                            <span class="animated-plus"></span>
+                          </button>
+
+                          <collapsible-content
+                            id="block-{{ section.id }}-{{ forloop.index }}"
+                            class="collapsible anchor"
+                            itemscope
+                            itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer"
+                            {{ block.shopify_attributes }}>
+                            <div
+                              class="collapsible__content text-container"
+                              itemprop="text">
+                              {{ faq.antwort | metafield_tag }}
+                            </div>
+                          </collapsible-content>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+{% style %}
+  .article__content h3 {
+    color: #c7d31c;
+    font-weight: 700;
+  }
+{% endstyle %}
 
 {% schema %}
 {
@@ -205,6 +381,12 @@
     },
     {
       "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show Tags",
+      "default": true
+    },
+    {
+      "type": "checkbox",
       "id": "show_date",
       "label": "Show date",
       "default": true
@@ -219,6 +401,18 @@
       "type": "checkbox",
       "id": "show_content",
       "label": "Show content",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_steps",
+      "label": "Show steps",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_faqs",
+      "label": "Show FAQs",
       "default": true
     }
   ]
