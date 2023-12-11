@@ -427,56 +427,6 @@
         "logo_background": "#f5f5f5"
       }
     },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "2ce60ba1-2511-4adb-bf34-fbdb77475ebf": {
-          "type": "collection",
-          "settings": {
-            "collection": "harry-herbs",
-            "label": "",
-            "button_text": "",
-            "button_url": ""
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "charly-chili",
-            "label": "",
-            "button_text": "",
-            "button_url": ""
-          }
-        },
-        "0974623b-9195-4374-a8ef-bd00104ac8f3": {
-          "type": "collection",
-          "settings": {
-            "collection": "paul-potato",
-            "label": "",
-            "button_text": "",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "2ce60ba1-2511-4adb-bf34-fbdb77475ebf",
-        "collection-1",
-        "0974623b-9195-4374-a8ef-bd00104ac8f3"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "BESTSELLER",
-        "content": "",
-        "products_count": 8,
-        "products_per_row": 4,
-        "stack_products": false,
-        "show_cta": true,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
     "fe533a39-048e-4fa1-813f-b0bb91bc1a92": {
       "type": "custom-liquid",
       "settings": {
@@ -528,50 +478,6 @@
         "text_color": "#ffffff",
         "button_background": "#c8dd02",
         "button_text_color": "#ffffff"
-      }
-    },
-    "8b8ebb48-c7c6-43f1-a3bf-073a73b013a8": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "reveal_on_scroll": false,
-        "section_height": "auto",
-        "image": "shopify:\/\/shop_images\/GustaGarden-Team-2048x683.jpg",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "button_text": "",
-        "button_link": "",
-        "link_style": "link",
-        "background_type": "full_width",
-        "text_width": "medium",
-        "text_position": "top_center",
-        "text_color": "#484b42",
-        "button_background": "#ffffff",
-        "button_text_color": "#000000",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "7fac1597-2b40-477a-bf0c-84f7dd53345d": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "reveal_on_scroll": true,
-        "section_height": "auto",
-        "image": "shopify:\/\/shop_images\/soft-verlauf_d7da9589-2112-49f0-8cd1-c068db8b2d38.png",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "button_text": "",
-        "button_link": "",
-        "link_style": "link",
-        "background_type": "full_width",
-        "text_width": "medium",
-        "text_position": "middle_center",
-        "text_color": "#ffffff",
-        "button_background": "#ffffff",
-        "button_text_color": "#000000",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
       }
     },
     "shop-the-look": {
@@ -730,6 +636,56 @@
         "include_vertical_margins": true
       }
     },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "2ce60ba1-2511-4adb-bf34-fbdb77475ebf": {
+          "type": "collection",
+          "settings": {
+            "collection": "harry-herbs",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "charly-chili",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "0974623b-9195-4374-a8ef-bd00104ac8f3": {
+          "type": "collection",
+          "settings": {
+            "collection": "paul-potato",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "2ce60ba1-2511-4adb-bf34-fbdb77475ebf",
+        "collection-1",
+        "0974623b-9195-4374-a8ef-bd00104ac8f3"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "UNSERE BESTSELLER",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72": {
       "type": "image-with-text-block",
       "settings": {
@@ -756,16 +712,14 @@
     "58200523-183d-475c-a897-96929dd07c75",
     "7228d659-8353-4918-8a23-d598fbc9e8a3",
     "b69abf55-57d4-4ff0-b801-10b195ff3d44",
-    "featured-collections",
     "fe533a39-048e-4fa1-813f-b0bb91bc1a92",
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
-    "8b8ebb48-c7c6-43f1-a3bf-073a73b013a8",
-    "7fac1597-2b40-477a-bf0c-84f7dd53345d",
     "shop-the-look",
     "c9245672-de7f-4d0f-b627-c276177ea803",
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57",
     "1700268763cea3d046",
+    "featured-collections",
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72"
   ]
 }
