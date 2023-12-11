@@ -26,7 +26,7 @@
         "template--16367855829165__423a06c5-fe40-448f-a08a-8644d3924ea8-image-1"
       ],
       "custom_css": [
-        "h3 {background-color: #c8dd02; padding: 20px; color: #fff;}"
+        "h3 {background-color: #c8dd02; padding: 20px; color: #fff; font-weight: 800;}"
       ],
       "settings": {
         "quick_nav_menu": "",
