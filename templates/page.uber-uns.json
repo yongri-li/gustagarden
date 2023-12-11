@@ -6,9 +6,10 @@
         "template--16367855829165__423a06c5-fe40-448f-a08a-8644d3924ea8-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/L9J7jvA.jpg",
             "text_position": "middle_center",
-            "subheading": "Tell your story",
-            "title": "Slide 1",
+            "subheading": "",
+            "title": "ÜBER UNS",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -17,7 +18,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
@@ -26,9 +27,9 @@
       ],
       "settings": {
         "quick_nav_menu": "",
-        "section_height": "auto",
+        "section_height": "medium",
         "transition_type": "sweep",
-        "autoplay": true,
+        "autoplay": false,
         "cycle_speed": 5,
         "background": "rgba(0,0,0,0)",
         "menu_1_text": "Level 1 Navigation",
@@ -48,16 +49,17 @@
       "type": "image-with-text-block",
       "settings": {
         "reveal_on_scroll": true,
-        "subheading": "Subheading",
-        "title": "Image with text block",
-        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
-        "button_text": "",
-        "button_link": "",
+        "image": "shopify:\/\/shop_images\/banner2.webp",
+        "subheading": "Gusta Garden. So schmeckt dein Garten.",
+        "title": "ÜBER UNS",
+        "content": "<p><strong>Im Jahr 2017 wurde Gusta Garden, ein junges österreichisches Unternehmen, mit der Vision gegründet, innovative Urban-Gardening Produkte zu kreieren.<\/strong><\/p><p>Unsere Produkte sollen den Anbau von Obst & Gemüse für jeden so einfach wie möglich machen. Sie sind speziell für den kleinen Stadtbalkon, die Terrasse und den Garten konzipiert und selbst auf kleinstem Raum anwendbar.<\/p><p>Mit PAUL POTATO wurde erfolgreich der Grundstein für ein umfangreiches und ständig wachsendes Produktsortiment geschaffen. Abgerundet werden die Produkte durch ein breites Zusatzangebot an biologischen Düngern, Substraten und einer großen Auswahl an Saatgut.<\/p><p>Wir legen enorm viel Wert auf Regionalität, daher werden unsere Produkte liebevoll im Alpe-Adria-Raum designed und hergestellt. Gusta Garden interpretiert das biologische Anbauen von Lebensmittel auf eine moderne und urbane Art und Weise und ist somit die Marke für das Lifestyle-orientierte Gärtnern!<\/p>",
+        "button_text": "Jetzt einkaufen",
+        "button_link": "shopify:\/\/collections\/all",
         "background_type": "full_width",
         "text_position": "overlap_left",
         "text_alignment": "center",
-        "text_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
+        "text_background": "#484b42",
+        "text_color": "#ffffff",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
