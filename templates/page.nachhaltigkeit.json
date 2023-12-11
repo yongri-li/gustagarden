@@ -11,7 +11,7 @@
     "2a4e70eb-243f-48a1-8cfa-0be26d9c3b09": {
       "type": "image-with-text-block",
       "custom_css": [
-        "h3 {color: #c8dd02;}"
+        "h3 {color: #c8dd02; font-weight: 800;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -33,7 +33,8 @@
     "e430fa2e-a292-474f-b33f-0faeb89eac98": {
       "type": "image-with-text-block",
       "custom_css": [
-        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}"
+        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}",
+        "h3 {color: #fff; font-weight: 800;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -56,14 +57,14 @@
       "type": "image-with-text-block",
       "custom_css": [
         "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}",
-        " h3 {color: #c8dd02; }"
+        "h3 {color: #c8dd02; font-weight: 800;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
         "image": "shopify:\/\/shop_images\/200910-GustaGarden-227.jpg",
         "subheading": "",
         "title": "MATERIALIEN",
-        "content": "<p>Es ist uns ein großes Anliegen, für unsere Pflanzprodukte möglichst keinen neuen Kunststoff zu erzeugen. Deshalb sind wir schon lange auf der Suche nach recycelten Materialien für PAUL POTATO, SISSI STRAWBERRY und Co. Momentan bestehen unsere Pflanzgefäße ganzheitlich aus hochwertigem, <strong>lebensmittelechtem, <\/strong>UV- und temperaturbeständigem Polypropylen und die Rankhilfen aus Aluminium. Somit ist jedes Gusta Garden Produkt für eine lange Lebensdauer bestimmt und zu <strong>100% recycelbar<\/strong>.<br\/>Leider ist es aktuell für die Herstellung unserer Produkte aber noch sehr schwierig, recycelten Kunststoff aus Post-Consumer-Abfällen zu finden, welcher zu 100% unseren Ansprüchen entspricht. Der Kunststoff muss einerseits lebensmittelecht (darf also keine Schadstoffe an Obst und Gemüse abgeben), sowie temperaturbeständig sein und andererseits auch über eine lange Lebensdauer verfügen. Immerhin sind unsere Produkte stets Wasser, Wind, Sonne, Regen, Hitze, Kälte, etc. ausgesetzt. Aber keine Sorge, da uns das Thema Nachhaltigkeit sehr am Herzen liegt, arbeiten wir intensiv mit unseren Lieferanten an alternativen Materialien, um für dich auch in Zukunft wirklich sichere, lebensmittelechte Produkte herstellen zu können.<\/p>",
+        "content": "<p>Es ist uns ein großes Anliegen, für unsere Pflanzprodukte möglichst keinen neuen Kunststoff zu erzeugen. Deshalb sind wir schon lange auf der Suche nach recycelten Materialien für PAUL POTATO, SISSI STRAWBERRY und Co. Momentan bestehen unsere Pflanzgefäße ganzheitlich aus hochwertigem, <strong>lebensmittelechtem, <br\/><\/strong>UV- und temperaturbeständigem Polypropylen und die Rankhilfen aus Aluminium. Somit ist jedes Gusta Garden Produkt für eine lange Lebensdauer bestimmt und zu <strong>100% recycelbar<\/strong>.<br\/>Leider ist es aktuell für die Herstellung unserer Produkte aber noch sehr schwierig, recycelten Kunststoff aus Post-Consumer-Abfällen zu finden, welcher zu 100% unseren Ansprüchen entspricht. Der Kunststoff muss einerseits lebensmittelecht (darf also keine Schadstoffe an Obst und Gemüse abgeben), sowie temperaturbeständig sein und andererseits auch über eine lange Lebensdauer verfügen. Immerhin sind unsere Produkte stets Wasser, Wind, Sonne, Regen, Hitze, Kälte, etc. ausgesetzt. Aber keine Sorge, da uns das Thema Nachhaltigkeit sehr am Herzen liegt, arbeiten wir intensiv mit unseren Lieferanten an alternativen Materialien, um für dich auch in Zukunft wirklich sichere, lebensmittelechte Produkte herstellen zu können.<\/p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
@@ -78,7 +79,8 @@
     "406e7cd9-007b-4e6c-81fd-05d13a41c3a1": {
       "type": "image-with-text-block",
       "custom_css": [
-        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}"
+        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}",
+        "h3 {color: #c8dd02; font-weight: 800;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
