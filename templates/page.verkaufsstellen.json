@@ -128,9 +128,9 @@
       ],
       "settings": {
         "show_navigation": false,
-        "title": "FAQ",
+        "title": "",
         "content": "<p>Natürlich kannst du Gusta Garden Produkte nicht nur bei uns einkaufen.<br\/>Bei diesen Händlern sind PAUL POTATO, SISSI STRAWBERRY, TOM TOMATO und Co. außerdem noch erhältlich:<\/p>",
-        "background": "rgba(0,0,0,0)",
+        "background": "#f7f7f7",
         "text_color": "rgba(0,0,0,0)"
       }
     }
