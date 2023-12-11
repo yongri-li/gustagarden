@@ -34,7 +34,7 @@
         "template--16367855927469__8b9b270c-2308-4720-ae31-0d0957142e5a-image-1"
       ],
       "custom_css": [
-
+        "h3 {background-color: #c8dd02; padding: 20px; color: #fff; font-weight: 800;}"
       ],
       "settings": {
         "quick_nav_menu": "",
@@ -47,10 +47,97 @@
         "menu_2_text": "Navigation options",
         "quick_nav_title": "Quick navigation"
       }
+    },
+    "c6b1901e-ba49-4a93-a545-c09c8672a60f": {
+      "type": "faq",
+      "blocks": {
+        "template--16367855927469__c6b1901e-ba49-4a93-a545-c09c8672a60f-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Österreich",
+            "answer": "<p>Gusta Garden <a href=\"https:\/\/www.gustagarden.com\/\" target=\"_self\">www.gustagarden.com<\/a><\/p><p>Bloomling <a href=\"https:\/\/www.bloomling.at\/\" target=\"_blank\">www.bloomling.at<\/a><\/p><p>Hornbach <a href=\"https:\/\/www.hornbach.at\/\" target=\"_blank\">www.hornbach.at<\/a><\/p><p>Fromaustria <a href=\"https:\/\/www.fromaustria.com\/\" target=\"_blank\">www.fromaustria.com<\/a><\/p><p>Interismo <a href=\"https:\/\/www.interismo.at\/\" target=\"_blank\">www.interismo.at<\/a><\/p><p>Hochbeet.com <a href=\"https:\/\/www.hochbeet.com\/\" target=\"_blank\">www.hochbeet.com<\/a><\/p><p>Radbag <a href=\"https:\/\/www.radbag.at\/\" target=\"_blank\">www.radbag.at<\/a><\/p><p>Lagerhaus <a href=\"https:\/\/lagerhaus.at\/\" target=\"_blank\">www.lagerhaus.at<\/a><\/p><p>Bellaflora <a href=\"https:\/\/www.bellaflora.at\/\" target=\"_blank\">www.bellaflora.at<\/a><\/p><p>Gartenwelt Kropfitsch <a href=\"https:\/\/www.gartenwelt-kropfitsch.at\/\" target=\"_blank\">www.gartenwelt-kropfitsch.at<\/a><\/p>"
+          }
+        },
+        "e7a2a670-42a6-4251-961c-eab5ebe21300": {
+          "type": "question",
+          "settings": {
+            "title": "Deutschland",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "43e6285d-391b-495a-9b68-55d1e9269c03": {
+          "type": "question",
+          "settings": {
+            "title": "Großbritannien",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "e0ce56d5-8ee4-43e5-a197-e0182c79cf26": {
+          "type": "question",
+          "settings": {
+            "title": "Schweden",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "ef520e71-130a-4485-a293-f59984be3de9": {
+          "type": "question",
+          "settings": {
+            "title": "Frankreich",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "a9239b6d-89b3-4758-befc-af0fe88d12e1": {
+          "type": "question",
+          "settings": {
+            "title": "Tschechien",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "891cc56e-b78a-42ae-a640-4522b3b503c4": {
+          "type": "question",
+          "settings": {
+            "title": "Norwegen",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "60fdc9b4-e5f1-4f4f-bdae-e456bb0268c1": {
+          "type": "question",
+          "settings": {
+            "title": "Japan",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "dc47310e-ec78-4b15-adee-74371bc4ba38": {
+          "type": "question",
+          "settings": {
+            "title": "USA",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16367855927469__c6b1901e-ba49-4a93-a545-c09c8672a60f-question-1",
+        "e7a2a670-42a6-4251-961c-eab5ebe21300",
+        "43e6285d-391b-495a-9b68-55d1e9269c03",
+        "e0ce56d5-8ee4-43e5-a197-e0182c79cf26",
+        "ef520e71-130a-4485-a293-f59984be3de9",
+        "a9239b6d-89b3-4758-befc-af0fe88d12e1",
+        "891cc56e-b78a-42ae-a640-4522b3b503c4",
+        "60fdc9b4-e5f1-4f4f-bdae-e456bb0268c1",
+        "dc47310e-ec78-4b15-adee-74371bc4ba38"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "<p>Natürlich kannst du Gusta Garden Produkte nicht nur bei uns einkaufen.<br\/>Bei diesen Händlern sind PAUL POTATO, SISSI STRAWBERRY, TOM TOMATO und Co. außerdem noch erhältlich:<\/p>",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "main",
-    "8b9b270c-2308-4720-ae31-0d0957142e5a"
+    "8b9b270c-2308-4720-ae31-0d0957142e5a",
+    "c6b1901e-ba49-4a93-a545-c09c8672a60f"
   ]
 }
