@@ -131,12 +131,73 @@
         "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "4d8271a8-b386-4890-8a19-d4a60d2c5a4d": {
+      "type": "rich-text",
+      "custom_css": [
+        "@media (min-width: 768px) {{margin-bottom: -90px; }}",
+        "@media (max-width: 767px) {{margin-bottom: -40px; }}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Unser Team",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "299e1d2b-08bd-48cb-89db-20072ba5c174": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16367855829165__299e1d2b-08bd-48cb-89db-20072ba5c174-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GustaGarden-Team-2048x683.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16367855829165__299e1d2b-08bd-48cb-89db-20072ba5c174-image-1"
+      ],
+      "settings": {
+        "quick_nav_menu": "",
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "menu_1_text": "Level 1 Navigation",
+        "menu_2_text": "Navigation options",
+        "quick_nav_title": "Quick navigation"
+      }
     }
   },
   "order": [
     "423a06c5-fe40-448f-a08a-8644d3924ea8",
     "main",
     "0e8cecfc-8b7f-4fe6-94bb-096b471fbec4",
-    "a635d80e-f918-4c51-8912-897ac8e829fc"
+    "a635d80e-f918-4c51-8912-897ac8e829fc",
+    "4d8271a8-b386-4890-8a19-d4a60d2c5a4d",
+    "299e1d2b-08bd-48cb-89db-20072ba5c174"
   ]
 }
