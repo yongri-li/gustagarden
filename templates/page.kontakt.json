@@ -14,9 +14,11 @@
         "template--16367855993005__2a1452c5-48c0-4587-848b-fe378020214d-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/7Y4vbASQ.jpg",
+            "split_image": "shopify:\/\/shop_images\/bWJzglJg.jpg",
             "text_position": "middle_center",
-            "subheading": "Tell your story",
-            "title": "Slide 1",
+            "subheading": "",
+            "title": "KONTAKTIERE UNS",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -25,7 +27,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
