@@ -97,12 +97,12 @@
                           {%- if sub_link.url == '#' -%}
                             <span class="mega-menu__title heading heading--small">
                               {%- if mega_menu_block.settings.image_above_1 -%}
-                                <div class="text-center">
+                                <div class="text-center mb-5">
                                   <img
                                     src="{{ mega_menu_block.settings.image_above_1 | img_url: 'master' }}"
                                     alt=""
                                     height="240"
-                                    width="120"
+                                    width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
                                     class="object-center aspect-video"
                                     loading="lazy">
                                 </div>
@@ -113,45 +113,45 @@
                           {%- else -%}
 
                             {%- if forloop.index == 2 and mega_menu_block.settings.image_above_2 -%}
-                              <div class="text-center">
+                              <div class="text-center mb-5">
                                 <img
                                   src="{{ mega_menu_block.settings.image_above_2 | img_url: 'master' }}"
                                   alt=""
                                   height="240"
-                                  width="120"
+                                  width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
                                   class="object-center aspect-video"
                                   loading="lazy">
                               </div>
 
                                 {% elsif forloop.index == 3 and mega_menu_block.settings.image_above_3 %}
-                                <div class="text-center">
+                                <div class="text-center mb-5">
                                     <img
                                             src="{{ mega_menu_block.settings.image_above_3 | img_url: 'master' }}"
                                             alt=""
                                             height="240"
-                                            width="120"
+                                            width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
                                             class="object-center aspect-video"
                                             loading="lazy">
                                 </div>
 
                             {% elsif forloop.index == 4 and mega_menu_block.settings.image_above_4 %}
-                                <div class="text-center">
+                                <div class="text-center mb-5">
                                     <img
                                             src="{{ mega_menu_block.settings.image_above_4 | img_url: 'master' }}"
                                             alt=""
                                             height="240"
-                                            width="120"
+                                            width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
                                             class="object-center aspect-video"
                                             loading="lazy">
                                 </div>
 
                             {% elsif forloop.index == 5 and mega_menu_block.settings.image_above_5 %}
-                                <div class="text-center">
+                                <div class="text-center mb-5">
                                     <img
                                             src="{{ mega_menu_block.settings.image_above_5 | img_url: 'master' }}"
                                             alt=""
                                             height="240"
-                                            width="120"
+                                            width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
                                             class="object-center aspect-video"
                                             loading="lazy">
                                 </div>
