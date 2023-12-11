@@ -444,6 +444,9 @@
     },
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52": {
       "type": "image-with-text-block",
+      "custom_css": [
+        "h3 {font-weight: bold; color: #fff;}"
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "image": "shopify:\/\/shop_images\/200910-GustaGarden-092_1-scaled.jpg",
@@ -464,7 +467,8 @@
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898": {
       "type": "image-with-text-block",
       "custom_css": [
-        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}"
+        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}",
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -566,6 +570,9 @@
         "73da5217-5283-4528-9dcd-b8fe84a96fa6",
         "ec951d0b-38fc-4d68-b8df-b652c9ae61f2",
         "14ade11a-4536-459c-a470-65a44ff13789"
+      ],
+      "custom_css": [
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "subheading": "Qualität & Genuss",
