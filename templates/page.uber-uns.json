@@ -118,6 +118,9 @@
         "template--16367855829165__a635d80e-f918-4c51-8912-897ac8e829fc-item-2",
         "template--16367855829165__a635d80e-f918-4c51-8912-897ac8e829fc-item-3"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "stack_items": true,
@@ -152,7 +155,7 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Unser Team",
+        "title": "UNSER TEAM",
         "content": "",
         "button_text": "",
         "button_link": "",
