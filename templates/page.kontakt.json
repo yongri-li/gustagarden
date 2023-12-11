@@ -35,7 +35,7 @@
         "template--16367855993005__2a1452c5-48c0-4587-848b-fe378020214d-image-1"
       ],
       "custom_css": [
-        "h3 {background-color: #c8dd02; padding: 20px; color: #fff;}"
+        "h3 {background-color: #c8dd02; padding: 20px; color: #fff; font-weight: 800;}"
       ],
       "settings": {
         "quick_nav_menu": "",
