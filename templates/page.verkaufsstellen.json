@@ -97,21 +97,21 @@
           "type": "question",
           "settings": {
             "title": "Norwegen",
-            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+            "answer": "<p>Plukkselv.no <a href=\"https:\/\/plukkselv.no\/\" target=\"_blank\">www.plukkselv.no<\/a><\/p>"
           }
         },
         "60fdc9b4-e5f1-4f4f-bdae-e456bb0268c1": {
           "type": "question",
           "settings": {
             "title": "Japan",
-            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+            "answer": "<p>Kumade 熊手 <a href=\"https:\/\/paulpotato-jp.com\/\" target=\"_blank\">www.paulpotato-jp.com<\/a><\/p>"
           }
         },
         "dc47310e-ec78-4b15-adee-74371bc4ba38": {
           "type": "question",
           "settings": {
             "title": "USA",
-            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+            "answer": "<p>Hammacher Schlemmer <a href=\"https:\/\/www.hammacher.com\/home\" target=\"_blank\">www.hammacher.com<\/a><\/p><p>Gardeners Supply Company <a href=\"https:\/\/www.gardeners.com\/\" target=\"_blank\">www.gardeners.com<\/a><\/p>"
           }
         }
       },
