@@ -146,6 +146,214 @@
         "quick_nav_title": "Produkt-Finder"
       }
     },
+    "58200523-183d-475c-a897-96929dd07c75": {
+      "type": "codext-c-Product-Cards",
+      "blocks": {
+        "a752f679-7601-4698-a699-870282da305a": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.png",
+            "title": "Harry Herbs",
+            "description": "Pflanze dein eigenes Superfood\n\nMit Harry Herbs kannst du Superfood das ganze Jahr über anbauen, drinnen und draußen. Der moderne Kräutertopf bietet verschiedene Anbaumöglichkeiten und ist ideal für Urban Gardening.",
+            "usp_1": "Benefit",
+            "usp_2": "Benefit",
+            "usp_3": "Benefit",
+            "usp_4": "Benefit",
+            "link": "shopify:\/\/collections\/anzucht-amp-samen",
+            "button_text": "Jetzt kaufen"
+          }
+        },
+        "e9db8e1b-39f7-48fe-87d4-c105e911bece": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sammy-salad.png",
+            "title": "Sammy Salad",
+            "description": "Das Ganzjahres-Hochbeet. \nUnser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.",
+            "usp_1": "Benefit",
+            "usp_2": "Benefit",
+            "usp_3": "Benefit",
+            "usp_4": "Benefit",
+            "link": "shopify:\/\/pages\/faq",
+            "button_text": "Jetzt kaufen"
+          }
+        },
+        "eb1bcb6f-e947-4008-921a-6b55f9f9dd14": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit_e63cceda-1792-4458-8546-ca74fb095fce.png",
+            "title": "Paul Potato",
+            "description": "Der platzsparende Kartoffelturm Paul Potato ist ideal für platzsparenden Kartoffelanbau auf Balkon oder Terrasse. Vertikales Design macht es einfach und effizient.",
+            "usp_1": "Benefit",
+            "usp_2": "Benefit",
+            "usp_3": "Benefit",
+            "usp_4": "Benefit",
+            "link": "",
+            "button_text": "Jetzt kaufen"
+          }
+        },
+        "f3ebbb4c-7e98-4f04-8f52-d485aa049a23": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-starter_weiss-600x600_abf3af15-8873-4b5f-9cf8-a15320858e0a.png",
+            "title": "Sissi Strawberry",
+            "description": "Erdbeeren auf kleinem Raum. Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.",
+            "usp_1": "Benefit",
+            "usp_2": "Benefit",
+            "usp_3": "Benefit",
+            "usp_4": "Benefit",
+            "link": "",
+            "button_text": "Jetzt kaufen"
+          }
+        }
+      },
+      "block_order": [
+        "a752f679-7601-4698-a699-870282da305a",
+        "e9db8e1b-39f7-48fe-87d4-c105e911bece",
+        "eb1bcb6f-e947-4008-921a-6b55f9f9dd14",
+        "f3ebbb4c-7e98-4f04-8f52-d485aa049a23"
+      ],
+      "settings": {
+        "background_color": "#f7f7f7",
+        "title": "Unsere Produkte im Überblick"
+      }
+    },
+    "7228d659-8353-4918-8a23-d598fbc9e8a3": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.png",
+            "image_width": 100,
+            "image_border": "#c8dd02",
+            "title": "HARRY HERBS",
+            "content": "<p><strong>Pflanze dein eigenes Superfood<\/strong><\/p><p>Mit Harry Herbs kannst du Superfood das ganze Jahr über anbauen, drinnen und draußen. Der moderne Kräutertopf bietet verschiedene Anbaumöglichkeiten und ist ideal für Urban Gardening.<\/p>",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/products\/harry-herbs",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "center"
+          }
+        },
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sammy-salad.png",
+            "image_width": 100,
+            "image_border": "#c8dd02",
+            "title": "SAMMY SALAD",
+            "content": "<p><strong>Das Ganzjahres-Hochbeet<\/strong><\/p><p>Unser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.<\/p>",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/collections\/sammy-salad",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit.webp",
+            "image_width": 100,
+            "image_border": "#c8dd02",
+            "title": "PAUL POTATO",
+            "content": "<p><strong>Der platzsparende Kartoffelturm<\/strong><\/p><p>Paul Potato ist ideal für platzsparenden Kartoffelanbau auf Balkon oder Terrasse. Vertikales Design macht es einfach und effizient.<\/p>",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/collections\/paul-potato",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-classic_weiss.webp",
+            "image_width": 100,
+            "image_border": "#c8dd02",
+            "title": "SISSI STRAWBERRY",
+            "content": "<p><strong>Erdbeeren auf kleinem Raum<\/strong><\/p><p>Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.<\/p>",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/collections\/sissi-strawberry",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "cbb188c3-7772-4348-90c2-acfe42f66288": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-01-13_Tom_Tomato_grey_1000x1000_d07caf39-b606-4796-9a95-74c14f9997bb.webp",
+            "image_width": 100,
+            "image_border": "#c8dd02",
+            "title": "TOM TOMATO",
+            "content": "<p><strong>Rundum-sorglos-Paket für Tomaten<\/strong><\/p><p>Unser Tom Tomato System bietet einfaches und effizientes Tomatenwachstum auf Balkon, Garten oder Terrasse mit integriertem Bewässerungssystem und stabiler Rankhilfe.<\/p>",
+            "link_text": "JETZT KAUFEN",
+            "link_url": "shopify:\/\/collections\/tom-tomato",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "05a5ddea-c16e-48c2-9146-498e64049130": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/100620_TOMATO_BUDDY_1-scaled.webp",
+            "image_width": 100,
+            "image_border": "#c8dd02",
+            "title": "TOMATO BUDDY",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "4c48c664-8632-4f5c-ae55-5fae386d66ed": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-03-03_Charly_Chili_Studio_grau_farbangepasst_qu-1.webp",
+            "image_width": 100,
+            "image_border": "#c8dd02",
+            "title": "CHARLY CHILI",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-1",
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2",
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-3",
+        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-4",
+        "cbb188c3-7772-4348-90c2-acfe42f66288",
+        "05a5ddea-c16e-48c2-9146-498e64049130",
+        "4c48c664-8632-4f5c-ae55-5fae386d66ed"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h5 {font-weight: bold; font-size: 20px; background-color: #c8dd02; color: #000000; padding: 5px;}",
+        ".multi-column__image-wrapper {border: 0px solid #eaeaea; border-radius: 250px;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "Effizientes Pflanzen und gesundes Wachstum leicht gemacht",
+        "title": "Innovative Garten-Systeme von Gustagarden",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "large",
+        "desktop_item_size": "large",
+        "spacing": "normal",
+        "background": "#f3f3f4",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "b69abf55-57d4-4ff0-b801-10b195ff3d44": {
       "type": "logo-list",
       "blocks": {
@@ -342,213 +550,6 @@
         "button_text_color": "#000000",
         "overlay_color": "#000000",
         "overlay_opacity": 0
-      }
-    },
-    "7228d659-8353-4918-8a23-d598fbc9e8a3": {
-      "type": "multi-column",
-      "blocks": {
-        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-1": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.png",
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "HARRY HERBS",
-            "content": "<p><strong>Pflanze dein eigenes Superfood<\/strong><\/p><p>Mit Harry Herbs kannst du Superfood das ganze Jahr über anbauen, drinnen und draußen. Der moderne Kräutertopf bietet verschiedene Anbaumöglichkeiten und ist ideal für Urban Gardening.<\/p>",
-            "link_text": "JETZT KAUFEN",
-            "link_url": "shopify:\/\/products\/harry-herbs",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "center"
-          }
-        },
-        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sammy-salad.png",
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "SAMMY SALAD",
-            "content": "<p><strong>Das Ganzjahres-Hochbeet<\/strong><\/p><p>Unser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.<\/p>",
-            "link_text": "JETZT KAUFEN",
-            "link_url": "shopify:\/\/collections\/sammy-salad",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-3": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit.webp",
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "PAUL POTATO",
-            "content": "<p><strong>Der platzsparende Kartoffelturm<\/strong><\/p><p>Paul Potato ist ideal für platzsparenden Kartoffelanbau auf Balkon oder Terrasse. Vertikales Design macht es einfach und effizient.<\/p>",
-            "link_text": "JETZT KAUFEN",
-            "link_url": "shopify:\/\/collections\/paul-potato",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-4": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-classic_weiss.webp",
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "SISSI STRAWBERRY",
-            "content": "<p><strong>Erdbeeren auf kleinem Raum<\/strong><\/p><p>Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.<\/p>",
-            "link_text": "JETZT KAUFEN",
-            "link_url": "shopify:\/\/collections\/sissi-strawberry",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "cbb188c3-7772-4348-90c2-acfe42f66288": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2021-01-13_Tom_Tomato_grey_1000x1000_d07caf39-b606-4796-9a95-74c14f9997bb.webp",
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "TOM TOMATO",
-            "content": "<p><strong>Rundum-sorglos-Paket für Tomaten<\/strong><\/p><p>Unser Tom Tomato System bietet einfaches und effizientes Tomatenwachstum auf Balkon, Garten oder Terrasse mit integriertem Bewässerungssystem und stabiler Rankhilfe.<\/p>",
-            "link_text": "JETZT KAUFEN",
-            "link_url": "shopify:\/\/collections\/tom-tomato",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "05a5ddea-c16e-48c2-9146-498e64049130": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/100620_TOMATO_BUDDY_1-scaled.webp",
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "TOMATO BUDDY",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "4c48c664-8632-4f5c-ae55-5fae386d66ed": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2021-03-03_Charly_Chili_Studio_grau_farbangepasst_qu-1.webp",
-            "image_width": 100,
-            "image_border": "#c8dd02",
-            "title": "CHARLY CHILI",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        }
-      },
-      "block_order": [
-        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-1",
-        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-2",
-        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-3",
-        "template--16337048141997__7228d659-8353-4918-8a23-d598fbc9e8a3-item-4",
-        "cbb188c3-7772-4348-90c2-acfe42f66288",
-        "05a5ddea-c16e-48c2-9146-498e64049130",
-        "4c48c664-8632-4f5c-ae55-5fae386d66ed"
-      ],
-      "custom_css": [
-        ".h5 {font-weight: bold; font-size: 20px; background-color: #c8dd02; color: #000000; padding: 5px;}",
-        ".multi-column__image-wrapper {border: 0px solid #eaeaea; border-radius: 250px;}"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "stack_items": false,
-        "subheading": "Effizientes Pflanzen und gesundes Wachstum leicht gemacht",
-        "title": "Innovative Garten-Systeme von Gustagarden",
-        "content": "",
-        "column_alignment": "center",
-        "mobile_item_size": "large",
-        "desktop_item_size": "large",
-        "spacing": "normal",
-        "background": "#f3f3f4",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "58200523-183d-475c-a897-96929dd07c75": {
-      "type": "codext-c-Product-Cards",
-      "blocks": {
-        "a752f679-7601-4698-a699-870282da305a": {
-          "type": "product_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.png",
-            "title": "Harry Herbs",
-            "description": "Pflanze dein eigenes Superfood\n\nMit Harry Herbs kannst du Superfood das ganze Jahr über anbauen, drinnen und draußen. Der moderne Kräutertopf bietet verschiedene Anbaumöglichkeiten und ist ideal für Urban Gardening.",
-            "usp_1": "Benefit",
-            "usp_2": "Benefit",
-            "usp_3": "Benefit",
-            "usp_4": "Benefit",
-            "link": "shopify:\/\/collections\/anzucht-amp-samen",
-            "button_text": "Jetzt kaufen"
-          }
-        },
-        "e9db8e1b-39f7-48fe-87d4-c105e911bece": {
-          "type": "product_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sammy-salad.png",
-            "title": "Sammy Salad",
-            "description": "Das Ganzjahres-Hochbeet. \nUnser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.",
-            "usp_1": "Benefit",
-            "usp_2": "Benefit",
-            "usp_3": "Benefit",
-            "usp_4": "Benefit",
-            "link": "shopify:\/\/pages\/faq",
-            "button_text": "Jetzt kaufen"
-          }
-        },
-        "eb1bcb6f-e947-4008-921a-6b55f9f9dd14": {
-          "type": "product_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit_e63cceda-1792-4458-8546-ca74fb095fce.png",
-            "title": "Paul Potato",
-            "description": "Der platzsparende Kartoffelturm Paul Potato ist ideal für platzsparenden Kartoffelanbau auf Balkon oder Terrasse. Vertikales Design macht es einfach und effizient.",
-            "usp_1": "Benefit",
-            "usp_2": "Benefit",
-            "usp_3": "Benefit",
-            "usp_4": "Benefit",
-            "link": "",
-            "button_text": "Jetzt kaufen"
-          }
-        },
-        "f3ebbb4c-7e98-4f04-8f52-d485aa049a23": {
-          "type": "product_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-starter_weiss-600x600_abf3af15-8873-4b5f-9cf8-a15320858e0a.png",
-            "title": "Sissi Strawberry",
-            "description": "Erdbeeren auf kleinem Raum. Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.",
-            "usp_1": "Benefit",
-            "usp_2": "Benefit",
-            "usp_3": "Benefit",
-            "usp_4": "Benefit",
-            "link": "",
-            "button_text": "Jetzt kaufen"
-          }
-        }
-      },
-      "block_order": [
-        "a752f679-7601-4698-a699-870282da305a",
-        "e9db8e1b-39f7-48fe-87d4-c105e911bece",
-        "eb1bcb6f-e947-4008-921a-6b55f9f9dd14",
-        "f3ebbb4c-7e98-4f04-8f52-d485aa049a23"
-      ],
-      "settings": {
-        "background_color": "#ffffff",
-        "title": ""
       }
     },
     "7fac1597-2b40-477a-bf0c-84f7dd53345d": {
@@ -752,14 +753,14 @@
   "order": [
     "5a184dd5-83ca-4ad0-94cc-660f16773e6c",
     "slideshow",
+    "58200523-183d-475c-a897-96929dd07c75",
+    "7228d659-8353-4918-8a23-d598fbc9e8a3",
     "b69abf55-57d4-4ff0-b801-10b195ff3d44",
     "featured-collections",
     "fe533a39-048e-4fa1-813f-b0bb91bc1a92",
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52",
     "d7bf74ef-1988-4d84-ad1a-ade1ea23a898",
     "8b8ebb48-c7c6-43f1-a3bf-073a73b013a8",
-    "7228d659-8353-4918-8a23-d598fbc9e8a3",
-    "58200523-183d-475c-a897-96929dd07c75",
     "7fac1597-2b40-477a-bf0c-84f7dd53345d",
     "shop-the-look",
     "c9245672-de7f-4d0f-b627-c276177ea803",
