@@ -85,7 +85,7 @@
         "highlight-color": "#c4258d",
         "abstand_zwischen_blocken_desktop": 50,
         "abstand_zwischen_blocken_mobile": 30,
-        "hover-effekt-opacity": 0.8
+        "hover-effekt-opacity": 0.4
       }
     },
     "slideshow": {
