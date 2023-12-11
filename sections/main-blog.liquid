@@ -95,12 +95,14 @@
                         tag
                         | link_to_remove_tag: tag
                         | replace: 'title=', link_to_tag_replacement
+                        | replace: 'Category_', ''
                       }}
                     {%- else -%}
                       {{-
                         tag
                         | link_to_tag: tag
                         | replace: 'title=', link_to_tag_replacement
+                        | replace: 'Category_', ''
                       -}}
                     {%- endif -%}
                   </li>

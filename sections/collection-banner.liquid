@@ -155,7 +155,7 @@
                   <a
                     href="{{ link.url }}"
                     class="link-bar__link link--animated {% if link.active %}text--underlined{% endif %}">
-                    {{- link.title -}}
+                    {{- link.title | replace: 'Category_', '' -}}
                   </a>
                 </li>
               {%- endfor -%}
