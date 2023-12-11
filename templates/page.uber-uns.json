@@ -132,6 +132,18 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "d96f1e4d-d1df-4dd7-af7f-236fc347044c": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<div class=\"separator\" style=\"background-color: #ccc; height: 2px;\"><\/div>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "4d8271a8-b386-4890-8a19-d4a60d2c5a4d": {
       "type": "rich-text",
       "custom_css": [
@@ -179,6 +191,9 @@
       "block_order": [
         "template--16367855829165__299e1d2b-08bd-48cb-89db-20072ba5c174-image-1"
       ],
+      "custom_css": [
+        "{font-weight: bold;}"
+      ],
       "settings": {
         "quick_nav_menu": "",
         "section_height": "auto",
@@ -197,6 +212,7 @@
     "main",
     "0e8cecfc-8b7f-4fe6-94bb-096b471fbec4",
     "a635d80e-f918-4c51-8912-897ac8e829fc",
+    "d96f1e4d-d1df-4dd7-af7f-236fc347044c",
     "4d8271a8-b386-4890-8a19-d4a60d2c5a4d",
     "299e1d2b-08bd-48cb-89db-20072ba5c174"
   ]
