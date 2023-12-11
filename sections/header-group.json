@@ -134,7 +134,7 @@
         "766eca12-4f3f-41e3-b793-bdec24f151f1"
       ],
       "custom_css": [
-        ".text-center {margin-bottom: 50px; max-width: 500px; height: auto;}"
+
       ],
       "settings": {
         "enable_sticky_header": true,
