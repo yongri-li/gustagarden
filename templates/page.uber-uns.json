@@ -1,12 +1,140 @@
 {
   "sections": {
+    "423a06c5-fe40-448f-a08a-8644d3924ea8": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16367855829165__423a06c5-fe40-448f-a08a-8644d3924ea8-image-1": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle_center",
+            "subheading": "Tell your story",
+            "title": "Slide 1",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--16367855829165__423a06c5-fe40-448f-a08a-8644d3924ea8-image-1"
+      ],
+      "settings": {
+        "quick_nav_menu": "",
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "menu_1_text": "Level 1 Navigation",
+        "menu_2_text": "Navigation options",
+        "quick_nav_title": "Quick navigation"
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "0e8cecfc-8b7f-4fe6-94bb-096b471fbec4": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "Subheading",
+        "title": "Image with text block",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "overlap_left",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "a635d80e-f918-4c51-8912-897ac8e829fc": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16367855829165__a635d80e-f918-4c51-8912-897ac8e829fc-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lukas_Foto-150x150.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Lukas Bürger, MA",
+            "content": "<p>Mitgründer, Design & Entwicklung<\/p><p><em>Bei der Entwicklung von Gartenprodukten ist mir besonders wichtig, dass diese stylisch, selbsterklärend und einfach in der Anwendung sind, also intuitiv in das Umfeld passen<\/em>.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--16367855829165__a635d80e-f918-4c51-8912-897ac8e829fc-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fabian_Foto-150x150.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Dipl.-Ing. Fabian Pirker",
+            "content": "<p>Mitgründer, Geschäftsführer<\/p><p><em>Da ein nachhaltiger Lifestyle und gesunde Ernährung in jeder Altersschicht immer weiter in den Mittelpunkt rücken, möchten wir jedem den Anbau von eigenen Lebensmitteln ermöglichen.<\/em><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--16367855829165__a635d80e-f918-4c51-8912-897ac8e829fc-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/David_Foto-150x150.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Mag. David Dietrich",
+            "content": "<p>Mitgründer, Strategie<\/p><p><em>Als junges Unternehmen ist es entscheidend mit dem richtigen Businesskonzept in den Markt einzusteigen. Das erfordert auch ein ständiges Anpassen und Schärfen der Strategie.<\/em><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "template--16367855829165__a635d80e-f918-4c51-8912-897ac8e829fc-item-1",
+        "template--16367855829165__a635d80e-f918-4c51-8912-897ac8e829fc-item-2",
+        "template--16367855829165__a635d80e-f918-4c51-8912-897ac8e829fc-item-3"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": true,
+        "subheading": "",
+        "title": "UNSER MANAGEMENT",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "large",
+        "desktop_item_size": "large",
+        "spacing": "normal",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)"
       }
     }
   },
   "order": [
-    "main"
+    "423a06c5-fe40-448f-a08a-8644d3924ea8",
+    "main",
+    "0e8cecfc-8b7f-4fe6-94bb-096b471fbec4",
+    "a635d80e-f918-4c51-8912-897ac8e829fc"
   ]
 }
