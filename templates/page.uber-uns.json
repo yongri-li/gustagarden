@@ -47,6 +47,9 @@
     },
     "0e8cecfc-8b7f-4fe6-94bb-096b471fbec4": {
       "type": "image-with-text-block",
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "image": "shopify:\/\/shop_images\/banner2.webp",
@@ -55,7 +58,7 @@
         "content": "<p><strong>Im Jahr 2017 wurde Gusta Garden, ein junges österreichisches Unternehmen, mit der Vision gegründet, innovative Urban-Gardening Produkte zu kreieren.<\/strong><\/p><p>Unsere Produkte sollen den Anbau von Obst & Gemüse für jeden so einfach wie möglich machen. Sie sind speziell für den kleinen Stadtbalkon, die Terrasse und den Garten konzipiert und selbst auf kleinstem Raum anwendbar.<\/p><p>Mit PAUL POTATO wurde erfolgreich der Grundstein für ein umfangreiches und ständig wachsendes Produktsortiment geschaffen. Abgerundet werden die Produkte durch ein breites Zusatzangebot an biologischen Düngern, Substraten und einer großen Auswahl an Saatgut.<\/p><p>Wir legen enorm viel Wert auf Regionalität, daher werden unsere Produkte liebevoll im Alpe-Adria-Raum designed und hergestellt. Gusta Garden interpretiert das biologische Anbauen von Lebensmittel auf eine moderne und urbane Art und Weise und ist somit die Marke für das Lifestyle-orientierte Gärtnern!<\/p>",
         "button_text": "Jetzt einkaufen",
         "button_link": "shopify:\/\/collections\/all",
-        "background_type": "full_width",
+        "background_type": "boxed",
         "text_position": "overlap_left",
         "text_alignment": "center",
         "text_background": "#484b42",
@@ -208,6 +211,61 @@
         "menu_2_text": "Navigation options",
         "quick_nav_title": "Quick navigation"
       }
+    },
+    "a6cef498-adaa-40b6-a588-95e63a376018": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "UNSERE MEILENSTEINE",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "78e72494-8389-458a-948d-c62184bb063d": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16367855829165__78e72494-8389-458a-948d-c62184bb063d-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/milestone.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16367855829165__78e72494-8389-458a-948d-c62184bb063d-image-1"
+      ],
+      "settings": {
+        "quick_nav_menu": "",
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "menu_1_text": "Level 1 Navigation",
+        "menu_2_text": "Navigation options",
+        "quick_nav_title": "Quick navigation"
+      }
     }
   },
   "order": [
@@ -217,6 +275,8 @@
     "a635d80e-f918-4c51-8912-897ac8e829fc",
     "d96f1e4d-d1df-4dd7-af7f-236fc347044c",
     "4d8271a8-b386-4890-8a19-d4a60d2c5a4d",
-    "299e1d2b-08bd-48cb-89db-20072ba5c174"
+    "299e1d2b-08bd-48cb-89db-20072ba5c174",
+    "a6cef498-adaa-40b6-a588-95e63a376018",
+    "78e72494-8389-458a-948d-c62184bb063d"
   ]
 }
