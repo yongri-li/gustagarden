@@ -101,6 +101,7 @@
                     <div class="grid p-5 text-center shadow-xl rounded relative h-full gap-4 !pb-12 w-[400px]">
                         <img
                                 src="{{ block.settings.image | img_url: '400x' }}"
+                                alt="{{ block.settings.title }}"
                                 class="w-full rounded"
                                 loading="lazy">
                         <h3 class="mt-10 text-2xl font-bold !my-0">
@@ -109,11 +110,11 @@
                         <p class="text-sm text-gray-500 !my-0">
                             {{ block.settings.description }}
                         </p>
-                        <ul class="grid gap-4 p-5 text-sm font-bold text-green-800 !my-0 pt-0">
+                        <ul style="color: {{ section.settings.primary_color }}" class="grid gap-4 p-5 text-sm font-bold !my-0 pt-0">
                             <li class="flex items-center gap-2 text-lg">
                                 {% if section.settings.custom_check_icon %}
                                     <img
-                                            src="{{ section.settings.custom_check_icon | img_url: "100x" }}"
+                                            src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
                                             alt="Check Icon"
                                             style="color: {{ section.settings.primary_color }};"
                                             class="w-8 h-8"
@@ -122,7 +123,7 @@
                                     <svg
                                             viewBox="0 0 24 24"
                                             fill="{{ section.settings.primary_color }}"
-                                            class="h-8 w-8 text-green-700">
+                                            class="h-8 w-8">
                                         <path fill-rule="evenodd"
                                               d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                               clip-rule="evenodd" />
@@ -134,7 +135,7 @@
                             <li class="flex items-center gap-2 text-lg">
                                 {% if section.settings.custom_check_icon %}
                                     <img
-                                            src="{{ section.settings.custom_check_icon | img_url: "100x" }}"
+                                            src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
                                             alt="Check Icon"
                                             style="color: {{ section.settings.primary_color }};"
                                             class="w-8 h-8"
@@ -143,7 +144,7 @@
                                     <svg
                                             viewBox="0 0 24 24"
                                             fill="{{ section.settings.primary_color }}"
-                                            class="h-8 w-8 text-green-700">
+                                            class="h-8 w-8">
                                         <path fill-rule="evenodd"
                                               d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                               clip-rule="evenodd" />
@@ -154,7 +155,7 @@
                             <li class="flex items-center gap-2 text-lg">
                                 {% if section.settings.custom_check_icon %}
                                     <img
-                                            src="{{ section.settings.custom_check_icon | img_url: "100x" }}"
+                                            src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
                                             alt="Check Icon"
                                             style="color: {{ section.settings.primary_color }};"
                                             class="w-8 h-8"
@@ -163,7 +164,7 @@
                                     <svg
                                             viewBox="0 0 24 24"
                                             fill="{{ section.settings.primary_color }}"
-                                            class="h-8 w-8 text-green-700">
+                                            class="h-8 w-8">
                                         <path fill-rule="evenodd"
                                               d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                               clip-rule="evenodd" />
@@ -174,7 +175,7 @@
                             <li class="flex items-center gap-2 text-lg">
                                 {% if section.settings.custom_check_icon %}
                                     <img
-                                            src="{{ section.settings.custom_check_icon | img_url: "100x" }}"
+                                            src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
                                             alt="Check Icon"
                                             style="color: {{ section.settings.primary_color }};"
                                             class="w-8 h-8"
@@ -183,7 +184,7 @@
                                     <svg
                                             viewBox="0 0 24 24"
                                             fill="{{ section.settings.primary_color }}"
-                                            class="h-8 w-8 text-green-700">
+                                            class="h-8 w-8">
                                         <path fill-rule="evenodd"
                                               d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                               clip-rule="evenodd" />
