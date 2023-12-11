@@ -135,7 +135,7 @@
     "4d8271a8-b386-4890-8a19-d4a60d2c5a4d": {
       "type": "rich-text",
       "custom_css": [
-        "@media (min-width: 768px) {{margin-bottom: -90px; }}",
+        "@media (min-width: 768px) {{margin-bottom: -90px; margin-top: 50px; }}",
         "@media (max-width: 767px) {{margin-bottom: -40px; }}"
       ],
       "settings": {
