@@ -25,13 +25,16 @@
       "block_order": [
         "template--16367855829165__423a06c5-fe40-448f-a08a-8644d3924ea8-image-1"
       ],
+      "custom_css": [
+        "h3 {background-color: #c8dd02; padding: 20px; color: #fff;}"
+      ],
       "settings": {
         "quick_nav_menu": "",
         "section_height": "medium",
         "transition_type": "sweep",
         "autoplay": false,
         "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)",
+        "background": "#c8dd02",
         "menu_1_text": "Level 1 Navigation",
         "menu_2_text": "Navigation options",
         "quick_nav_title": "Quick navigation"
@@ -266,6 +269,18 @@
         "menu_2_text": "Navigation options",
         "quick_nav_title": "Quick navigation"
       }
+    },
+    "c04d1f30-6cfb-4bfd-b174-4e2ab3c3b389": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<div class=\"separator\" style=\"background-color: #ccc; height: 2px;\"><\/div>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -277,6 +292,7 @@
     "4d8271a8-b386-4890-8a19-d4a60d2c5a4d",
     "299e1d2b-08bd-48cb-89db-20072ba5c174",
     "a6cef498-adaa-40b6-a588-95e63a376018",
-    "78e72494-8389-458a-948d-c62184bb063d"
+    "78e72494-8389-458a-948d-c62184bb063d",
+    "c04d1f30-6cfb-4bfd-b174-4e2ab3c3b389"
   ]
 }
