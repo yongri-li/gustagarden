@@ -90,78 +90,113 @@
 {% endschema %}
 
 <section class="{{ section.settings.background_color }} my-10">
-  <div class="mb-5 mt-10 text-center">
-    <h2 class="text-2xl font-bold">{{ section.settings.title }}</h2>
-  </div>
+    <div class="mb-5 mt-10 text-center">
+        <h2 class="text-2xl font-bold">{{ section.settings.title }}</h2>
+    </div>
 
     <scrollable-content class="tabs-nav__scroller hide-scrollbar px-40">
-      <div class="tabs-nav__scroller-inner">
-        <div class="tabs-nav__item-list pb-20">
-          {% for block in section.blocks %}
-            <div class="grid p-5 text-center shadow-xl rounded relative h-full gap-4 !pb-12 w-[400px]">
-              <img
-                      src="{{ block.settings.image | img_url: '400x' }}"
-                      class="w-full rounded"
-                      loading="lazy">
-              <h3 class="mt-10 text-2xl font-bold !my-0">
-                {{ block.settings.title }}
-              </h3>
-              <p class="text-sm text-gray-500 !my-0">
-                {{ block.settings.description }}
-              </p>
-              <ul class="grid gap-4 p-5 text-sm font-bold text-green-800 !my-0 pt-0">
-                <li class="flex items-center gap-2 text-lg">
-                  {% if block.settings.custom_check_icon != empty %}
-                    <img
-                            src="{{ block.settings.custom_check_icon | img_url: "100x100" }}"
-                            alt="Check Icon"
-                            style="color: {{ section.settings.primary_color }};"
-                            class="w-8 h-8"
-                            loading="lazy">
-                  {% else %}
-                    <svg
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                            class="h-8 w-8 text-green-700">
-                      <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                    </svg>
-                  {% endif %}
+        <div class="tabs-nav__scroller-inner">
+            <div class="tabs-nav__item-list pb-20">
+                {% for block in section.blocks %}
+                    <div class="grid p-5 text-center shadow-xl rounded relative h-full gap-4 !pb-12 w-[400px]">
+                        <img
+                                src="{{ block.settings.image | img_url: '400x' }}"
+                                class="w-full rounded"
+                                loading="lazy">
+                        <h3 class="mt-10 text-2xl font-bold !my-0">
+                            {{ block.settings.title }}
+                        </h3>
+                        <p class="text-sm text-gray-500 !my-0">
+                            {{ block.settings.description }}
+                        </p>
+                        <ul class="grid gap-4 p-5 text-sm font-bold text-green-800 !my-0 pt-0">
+                            <li class="flex items-center gap-2 text-lg">
+                                {% if section.settings.custom_check_icon %}
+                                    <img
+                                            src="{{ section.settings.custom_check_icon | img_url: "100x" }}"
+                                            alt="Check Icon"
+                                            style="color: {{ section.settings.primary_color }};"
+                                            class="w-8 h-8"
+                                            loading="lazy">
+                                {% else %}
+                                    <svg
+                                            viewBox="0 0 24 24"
+                                            fill="{{ section.settings.primary_color }}"
+                                            class="h-8 w-8 text-green-700">
+                                        <path fill-rule="evenodd"
+                                              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                              clip-rule="evenodd" />
+                                    </svg>
+                                {% endif %}
 
-                  {{ block.settings.usp_1 }}
-                </li>
-                <li class="flex items-center gap-2 text-lg">
-                  <svg
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          class="h-8 w-8 text-green-700">
-                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                  </svg>
-                  {{ block.settings.usp_2 }}
-                </li>
-                <li class="flex items-center gap-2 text-lg">
-                  <svg
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          class="h-8 w-8 text-green-700">
-                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                  </svg>
-                  {{ block.settings.usp_3 }}
-                </li>
-                <li class="flex items-center gap-2 text-lg">
-                  <svg
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          class="h-8 w-8 text-green-700">
-                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                  </svg>
-                  {{ block.settings.usp_4 }}
-                </li>
-              </ul>
+                                {{ block.settings.usp_1 }}
+                            </li>
+                            <li class="flex items-center gap-2 text-lg">
+                                {% if section.settings.custom_check_icon %}
+                                    <img
+                                            src="{{ section.settings.custom_check_icon | img_url: "100x" }}"
+                                            alt="Check Icon"
+                                            style="color: {{ section.settings.primary_color }};"
+                                            class="w-8 h-8"
+                                            loading="lazy">
+                                {% else %}
+                                    <svg
+                                            viewBox="0 0 24 24"
+                                            fill="{{ section.settings.primary_color }}"
+                                            class="h-8 w-8 text-green-700">
+                                        <path fill-rule="evenodd"
+                                              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                              clip-rule="evenodd" />
+                                    </svg>
+                                {% endif %}
+                                {{ block.settings.usp_2 }}
+                            </li>
+                            <li class="flex items-center gap-2 text-lg">
+                                {% if section.settings.custom_check_icon %}
+                                    <img
+                                            src="{{ section.settings.custom_check_icon | img_url: "100x" }}"
+                                            alt="Check Icon"
+                                            style="color: {{ section.settings.primary_color }};"
+                                            class="w-8 h-8"
+                                            loading="lazy">
+                                {% else %}
+                                    <svg
+                                            viewBox="0 0 24 24"
+                                            fill="{{ section.settings.primary_color }}"
+                                            class="h-8 w-8 text-green-700">
+                                        <path fill-rule="evenodd"
+                                              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                              clip-rule="evenodd" />
+                                    </svg>
+                                {% endif %}
+                                {{ block.settings.usp_3 }}
+                            </li>
+                            <li class="flex items-center gap-2 text-lg">
+                                {% if section.settings.custom_check_icon %}
+                                    <img
+                                            src="{{ section.settings.custom_check_icon | img_url: "100x" }}"
+                                            alt="Check Icon"
+                                            style="color: {{ section.settings.primary_color }};"
+                                            class="w-8 h-8"
+                                            loading="lazy">
+                                {% else %}
+                                    <svg
+                                            viewBox="0 0 24 24"
+                                            fill="{{ section.settings.primary_color }}"
+                                            class="h-8 w-8 text-green-700">
+                                        <path fill-rule="evenodd"
+                                              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                              clip-rule="evenodd" />
+                                    </svg>
+                                {% endif %}
+                                {{ block.settings.usp_4 }}
+                            </li>
+                        </ul>
 
-              <a
-                      href="{{ block.settings.link }}"
-                      style="background-color: {{ section.settings.primary_color }};"
-                      class="
+                        <a
+                                href="{{ block.settings.link }}"
+                                style="background-color: {{ section.settings.primary_color }};"
+                                class="
             absolute
             -bottom-6
             left-1/2
@@ -172,12 +207,14 @@
             font-bold text-white shadow-xl transition
             duration-200 ease-in-out hover:opacity-90
           ">
-                {{- block.settings.button_text -}}
-              </a>
+                            {{- block.settings.button_text -}}
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
-          {% endfor %}
         </div>
-      </div>
+
+
     </scrollable-content>
-  </div>
+    </div>
 </section>
