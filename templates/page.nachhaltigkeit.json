@@ -10,6 +10,9 @@
     },
     "2a4e70eb-243f-48a1-8cfa-0be26d9c3b09": {
       "type": "image-with-text-block",
+      "custom_css": [
+        "h3 {color: #c8dd02;}"
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "image": "shopify:\/\/shop_images\/hands-plant-a-seedling-into-a-white-bowl.jpg",
@@ -21,8 +24,8 @@
         "background_type": "full_width",
         "text_position": "overlap_left",
         "text_alignment": "left",
-        "text_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
+        "text_background": "#484b42",
+        "text_color": "#ffffff",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
@@ -43,8 +46,8 @@
         "background_type": "full_width",
         "text_position": "overlap_right",
         "text_alignment": "left",
-        "text_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
+        "text_background": "#c8dd02",
+        "text_color": "#484b42",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
@@ -52,7 +55,8 @@
     "34c7dfea-a5ad-40a1-9380-57843864e4e8": {
       "type": "image-with-text-block",
       "custom_css": [
-        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}"
+        "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}",
+        " h3 {color: #c8dd02; }"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -65,7 +69,7 @@
         "background_type": "full_width",
         "text_position": "overlap_left",
         "text_alignment": "left",
-        "text_background": "rgba(0,0,0,0)",
+        "text_background": "#f7f7f7",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
@@ -87,8 +91,8 @@
         "background_type": "full_width",
         "text_position": "overlap_right",
         "text_alignment": "left",
-        "text_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
+        "text_background": "#484b42",
+        "text_color": "#ffffff",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
