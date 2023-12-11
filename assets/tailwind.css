@@ -985,6 +985,11 @@
   padding-bottom: 2rem;
 }
 
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
 .\!pb-12 {
   padding-bottom: 3rem !important;
 }
