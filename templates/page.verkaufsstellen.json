@@ -7,9 +7,50 @@
         "show_title": true,
         "page_width": "medium"
       }
+    },
+    "8b9b270c-2308-4720-ae31-0d0957142e5a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16367855927469__8b9b270c-2308-4720-ae31-0d0957142e5a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/worldmap.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "VERKAUFSSTELLEN",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16367855927469__8b9b270c-2308-4720-ae31-0d0957142e5a-image-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "quick_nav_menu": "",
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#f7f7f7",
+        "menu_1_text": "Level 1 Navigation",
+        "menu_2_text": "Navigation options",
+        "quick_nav_title": "Quick navigation"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "8b9b270c-2308-4720-ae31-0d0957142e5a"
   ]
 }
