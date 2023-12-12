@@ -1,0 +1,382 @@
+<link
+  rel="stylesheet"
+  href="{{ 'cookieconsent.css' | asset_url }}"
+>
+<script
+  defer
+  src="{{ 'cookieconsent.js' | asset_url }}"
+></script>
+<style>
+  :root{
+      --cc-font-family: {{ settings.cc_font_family }};
+      --cc-font-size: {{ settings.cc_font_size }};
+      --cc-bg: {{ settings.cc_bg }};
+      --cc-z-index: {{ settings.cc_z_index }};
+      --cc-text: {{ settings.cc_text }};
+      --cc-border-radius: {{ settings.cc_border_radius }};
+      --cc-btn-primary-bg: {{ settings.cc_btn_primary_bg }};
+      --cc-btn-primary-text: {{ settings.cc_btn_primary_text }};
+      --cc-btn-primary-hover-bg: {{ settings.cc_btn_primary_hover_bg }};
+      --cc-btn-primary-hover-text: {{ settings.cc_btn_primary_hover_text }};
+      --cc-btn-secondary-bg: {{ settings.cc_btn_secondary_bg }};
+      --cc-btn-secondary-text: {{ settings.cc_btn_secondary_text }};
+      --cc-btn-secondary-hover-bg: {{ settings.cc_btn_secondary_hover_bg }};
+      --cc-btn-secondary-hover-text: {{ settings.cc_btn_secondary_hover_text }};
+      --cc-btn-border-radius: {{ settings.cc_btn_border_radius }};
+      --cc-toggle-bg-off: {{ settings.cc_toggle_bg_off }};
+      --cc-toggle-bg-on: {{ settings.cc_toggle_bg_on }};
+      --cc-toggle-bg-readonly: {{ settings.cc_toggle_bg_readonly }};
+      --cc-toggle-knob-bg: {{ settings.cc_toggle_knob_bg }};
+      --cc-toggle-knob-icon-color: {{ settings.cc_toggle_knob_icon_color }};
+      --cc-block-text: {{ settings.cc_block_text }};
+      --cc-cookie-category-block-bg: {{ settings.cc_cookie_category_block_bg }};
+      --cc-cookie-category-block-bg-hover: {{ settings.cc_cookie_category_block_bg_hover }};
+      --cc-section-border: {{ settings.cc_section_border }};
+      --cc-cookie-table-border: {{ settings.cc_cookie_table_border }};
+      --cc-overlay-bg: {{ settings.cc_overlay_bg }};
+      --cc-overlay-opacity: {{ settings.cc_overlay_opacity }};
+      --cc-consent-modal-box-shadow: {{ settings.cc_consent_modal_box_shadow }};
+      --cc-webkit-scrollbar-bg: {{ settings.cc_webkit_scrollbar_bg }};
+      --cc-webkit-scrollbar-bg-hover: {{ settings.cc_webkit_scrollbar_bg_hover }};
+  }
+  </style>
+
+<script>
+  window.addEventListener('load', function () {
+    // obtain plugin
+    var cc = initCookieConsent();
+
+    cc.run({
+      current_lang: '{{ settings.current_lang | default: "de" }}',
+      autoclear_cookies: true, 
+      page_scripts: true, 
+      onFirstAction: function (user_preferences, cookie) {
+        // callback triggered only once on the first accept/reject action
+      },
+
+      onAccept: function (cookie) {
+        // callback triggered on the first accept/reject action, and after each page load
+      },
+
+      onChange: function (cookie, changed_categories) {
+        // callback triggered when user changes preferences after consent has already been given
+      },
+
+      languages: {
+        en: {
+          consent_modal: {
+            title: 'We use cookies!',
+            description:
+              'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+            primary_btn: {
+              text: 'Accept all',
+              role: 'accept_all', // 'accept_selected' or 'accept_all'
+            },
+            secondary_btn: {
+              text: 'Reject all',
+              role: 'accept_necessary', // 'settings' or 'accept_necessary'
+            },
+          },
+          settings_modal: {
+            title: 'Cookie preferences',
+            save_settings_btn: 'Save settings',
+            accept_all_btn: 'Accept all',
+            reject_all_btn: 'Reject all',
+            close_btn_label: 'Close',
+            // cookie_table_caption: 'Cookie list',
+            cookie_table_headers: [
+              { col1: 'Name' },
+              { col2: 'Domain' },
+              { col3: 'Expiration' },
+              { col4: 'Description' },
+            ],
+            blocks: [
+              {
+                title: 'Cookie usage 📢',
+                description:
+                  'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.',
+              },
+              {
+                title: 'Strictly necessary cookies',
+                description:
+                  'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
+                toggle: {
+                  value: 'necessary',
+                  enabled: true,
+                  readonly: true, // cookie categories with readonly=true are all treated as "necessary cookies"
+                },
+              },
+              {
+                title: 'Performance and Analytics cookies',
+                description: 'These cookies allow the website to remember the choices you have made in the past',
+                toggle: {
+                  value: 'analytics', // your cookie category
+                  enabled: false,
+                  readonly: false,
+                },
+                cookie_table: [
+                  // list of all expected cookies
+                  {
+                    col1: '^_ga', // match all cookies starting with "_ga"
+                    col2: 'google.com',
+                    col3: '2 years',
+                    col4: 'description ...',
+                    is_regex: true,
+                  },
+                  {
+                    col1: '_gid',
+                    col2: 'google.com',
+                    col3: '1 day',
+                    col4: 'description ...',
+                  },
+                ],
+              },
+              {
+                title: 'Advertisement and Targeting cookies',
+                description:
+                  'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you',
+                toggle: {
+                  value: 'targeting',
+                  enabled: false,
+                  readonly: false,
+                },
+              },
+              {
+                title: 'More information',
+                description:
+                  'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+              },
+            ],
+          },
+        },
+        de: {
+          consent_modal: {
+            title: 'Wir verwenden Cookies!',
+            description:
+              'Hallo, diese Webseite verwendet notwendige Cookies, um ihre ordnungsgemäße Funktion sicherzustellen, und Tracking-Cookies, um zu verstehen, wie Sie mit ihr interagieren. Letztere werden erst nach Zustimmung gesetzt. <button type="button" data-cc="c-settings" class="cc-link">Lassen Sie mich auswählen</button>',
+            primary_btn: {
+              text: 'Alle akzeptieren',
+              role: 'accept_all',
+            },
+            secondary_btn: {
+              text: 'Alle ablehnen',
+              role: 'accept_necessary',
+            },
+          },
+          settings_modal: {
+            title: 'Cookie-Einstellungen',
+            save_settings_btn: 'Einstellungen speichern',
+            accept_all_btn: 'Alle akzeptieren',
+            reject_all_btn: 'Alle ablehnen',
+            close_btn_label: 'Schließen',
+            cookie_table_headers: [
+              { col1: 'Name' },
+              { col2: 'Domain' },
+              { col3: 'Ablaufdatum' },
+              { col4: 'Beschreibung' },
+            ],
+            blocks: [
+              {
+                title: 'Verwendung von Cookies 📢',
+                description:
+                  'Wir verwenden Cookies, um die grundlegenden Funktionen der Website sicherzustellen und Ihr Online-Erlebnis zu verbessern. Sie können für jede Kategorie entscheiden, ob Sie sie aktivieren/deaktivieren möchten. Weitere Informationen zu Cookies und anderen sensiblen Daten finden Sie in der vollständigen <a href="#" class="cc-link">Datenschutzerklärung</a>.',
+              },
+              {
+                title: 'Unbedingt erforderliche Cookies',
+                description:
+                  'Diese Cookies sind für das ordnungsgemäße Funktionieren meiner Webseite unerlässlich. Ohne diese Cookies würde die Webseite nicht ordnungsgemäß funktionieren.',
+                toggle: {
+                  value: 'necessary',
+                  enabled: true,
+                  readonly: true,
+                },
+              },
+              {
+                title: 'Leistungs- und Analyse-Cookies',
+                description:
+                  'Diese Cookies ermöglichen es der Webseite, sich an die von Ihnen in der Vergangenheit getroffenen Entscheidungen zu erinnern.',
+                toggle: {
+                  value: 'analytics',
+                  enabled: false,
+                  readonly: false,
+                },
+                cookie_table: [
+                  {
+                    col1: '^_ga',
+                    col2: 'google.com',
+                    col3: '2 Jahre',
+                    col4: 'Beschreibung ...',
+                    is_regex: true,
+                  },
+                  {
+                    col1: '_gid',
+                    col2: 'google.com',
+                    col3: '1 Tag',
+                    col4: 'Beschreibung ...',
+                  },
+                ],
+              },
+              {
+                title: 'Werbe- und Ziel-Cookies',
+                description:
+                  'Diese Cookies sammeln Informationen darüber, wie Sie die Webseite nutzen, welche Seiten Sie besucht haben und auf welche Links Sie geklickt haben. Alle Daten sind anonymisiert und können nicht zur Identifikation verwendet werden.',
+                toggle: {
+                  value: 'targeting',
+                  enabled: false,
+                  readonly: false,
+                },
+              },
+              {
+                title: 'Weitere Informationen',
+                description:
+                  'Bei Fragen zu unserer Cookie-Richtlinie und Ihren Wahlmöglichkeiten, <a class="cc-link" href="#yourcontactpage">kontaktieren Sie uns</a> bitte.',
+              },
+            ],
+          },
+        },
+      },
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "c/ Cookie Banner",
+  "presets": [
+    {
+      "name": "c/ Cookie Banner"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "label": "Background Color",
+      "id": "cc_bg",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Text Color",
+      "id": "cc_text",
+      "default": "#2d4156"
+    },
+    {
+      "type": "color",
+      "label": "Button Primary Background",
+      "id": "cc_btn_primary_bg",
+      "default": "#2d4156"
+    },
+    {
+      "type": "color",
+      "label": "Button Primary Text",
+      "id": "cc_btn_primary_text",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Button Primary Hover Background",
+      "id": "cc_btn_primary_hover_bg",
+      "default": "#1d2e38"
+    },
+    {
+      "type": "color",
+      "label": "Button Secondary Background",
+      "id": "cc_btn_secondary_bg",
+      "default": "#eaeff2"
+    },
+    {
+      "type": "color",
+      "label": "Button Secondary Text",
+      "id": "cc_btn_secondary_text",
+      "default": "#2d4156"
+    },
+    {
+      "type": "color",
+      "label": "Button Secondary Hover Background",
+      "id": "cc_btn_secondary_hover_bg",
+      "default": "#d8e0e6"
+    },
+    {
+      "type": "color",
+      "label": "Toggle Background OFF",
+      "id": "cc_toggle_bg_off",
+      "default": "#919ea6"
+    },
+    {
+      "type": "color",
+      "label": "Toggle Background ON",
+      "id": "cc_toggle_bg_on",
+      "default": "#2d4156"
+    },
+    {
+      "type": "color",
+      "label": "Toggle Background Read-Only",
+      "id": "cc_toggle_bg_readonly",
+      "default": "#d5dee2"
+    },
+    {
+      "type": "color",
+      "label": "Toggle Knob Background",
+      "id": "cc_toggle_knob_bg",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "label": "Toggle Knob Icon Color",
+      "id": "cc_toggle_knob_icon_color",
+      "default": "#ecf2fa"
+    },
+    {
+      "type": "color",
+      "label": "Block Text Color",
+      "id": "cc_block_text",
+      "default": "#2d4156"
+    },
+    {
+      "type": "color",
+      "label": "Cookie Category Block Background",
+      "id": "cc_cookie_category_block_bg",
+      "default": "#f0f4f7"
+    },
+    {
+      "type": "color",
+      "label": "Cookie Category Block Hover Background",
+      "id": "cc_cookie_category_block_bg_hover",
+      "default": "#e9eff4"
+    },
+    {
+      "type": "color",
+      "label": "Section Border",
+      "id": "cc_section_border",
+      "default": "#f1f3f5"
+    },
+    {
+      "type": "color",
+      "label": "Cookie Table Border",
+      "id": "cc_cookie_table_border",
+      "default": "#e9edf2"
+    },
+    {
+      "type": "color",
+      "label": "Overlay Background",
+      "id": "cc_overlay_bg",
+      "default": "rgb(4, 6, 8)"
+    },
+    {
+      "type": "text",
+      "label": "Overlay Opacity",
+      "id": "cc_overlay_opacity",
+      "default": "0.85"
+    },
+    {
+      "type": "select",
+      "label": "Default Language",
+      "id": "current_lang",
+      "options": [
+        {"value": "en", "label": "English"},
+        {"value": "de", "label": "German"}
+      ],
+      "default": "de"
+    }
+  ]
+}
+{% endschema %}
