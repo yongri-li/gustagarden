@@ -156,7 +156,7 @@
           "type": "product_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.png",
-            "title": "Harry Herbs",
+            "title": "HERRY HERBS",
             "description": "Pflanze dein eigenes Superfood\n\nMit Harry Herbs kannst du Superfood das ganze Jahr über anbauen, drinnen und draußen. Der moderne Kräutertopf bietet verschiedene Anbaumöglichkeiten und ist ideal für Urban Gardening.",
             "usp_1": "Benefit",
             "usp_2": "Benefit",
@@ -170,7 +170,7 @@
           "type": "product_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/sammy-salad.png",
-            "title": "Sammy Salad",
+            "title": "SAMMY SALAD",
             "description": "Das Ganzjahres-Hochbeet. \nUnser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.",
             "usp_1": "Benefit",
             "usp_2": "Benefit",
@@ -184,7 +184,7 @@
           "type": "product_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit_e63cceda-1792-4458-8546-ca74fb095fce.png",
-            "title": "Paul Potato",
+            "title": "PAUL POTATO",
             "description": "Der platzsparende Kartoffelturm Paul Potato ist ideal für platzsparenden Kartoffelanbau auf Balkon oder Terrasse. Vertikales Design macht es einfach und effizient.",
             "usp_1": "Benefit",
             "usp_2": "Benefit",
@@ -198,7 +198,7 @@
           "type": "product_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-starter_weiss-600x600_abf3af15-8873-4b5f-9cf8-a15320858e0a.png",
-            "title": "Sissi Strawberry",
+            "title": "SISSI STRAWBERRY",
             "description": "Erdbeeren auf kleinem Raum. Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.",
             "usp_1": "Benefit",
             "usp_2": "Benefit",
@@ -207,15 +207,31 @@
             "link": "",
             "button_text": "Jetzt kaufen"
           }
+        },
+        "27368957-e663-411e-9fb7-45cb8fa6efe2": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-01-13_Tom_Tomato_grey_1000x1000-768x768_41e6cef8-951a-4690-a27f-64c92a248c3c.png",
+            "title": "TOM TOMATO",
+            "description": "Rundum-sorglos-Paket für TomatenUnser Tom Tomato System bietet einfaches und effizientes Tomatenwachstum auf Balkon, Garten oder Terrasse mit integriertem Bewässerungssystem und stabiler Rankhilfe.",
+            "usp_1": "",
+            "usp_2": "",
+            "usp_3": "",
+            "usp_4": "",
+            "link": "",
+            "button_text": ""
+          }
         }
       },
       "block_order": [
         "a752f679-7601-4698-a699-870282da305a",
         "e9db8e1b-39f7-48fe-87d4-c105e911bece",
         "eb1bcb6f-e947-4008-921a-6b55f9f9dd14",
-        "f3ebbb4c-7e98-4f04-8f52-d485aa049a23"
+        "f3ebbb4c-7e98-4f04-8f52-d485aa049a23",
+        "27368957-e663-411e-9fb7-45cb8fa6efe2"
       ],
       "settings": {
+        "primary_color": "#166534",
         "background_color": "#f7f7f7",
         "title": "Unsere Produkte im Überblick"
       }
