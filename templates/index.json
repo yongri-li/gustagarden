@@ -154,11 +154,11 @@
       "settings": {
         "subheading": "SO SCHMECKT DEIN GARTEN",
         "title": "Produkte von Gusta Garden",
-        "content": "",
+        "content": "<p>Bei Gusta Garden vereinen wir Innovation mit Leidenschaft, um herausragende Gartenprodukte zu entwickeln. Unser engagiertes Team investiert unzählige Stunden in Forschung und Design, um die Bedürfnisse unserer Kunden zu übertreffen. Jedes Produkt ist ein Meisterwerk des Urban-Gardenings, geprägt von Liebe zum Detail und Nachhaltigkeit. Wir streben kontinuierlich nach Verbesserung und Erweiterung unseres Sortiments, um das Gärtnern für jeden zu einer Freude zu machen.<\/p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
-        "text_width": "medium",
+        "text_width": "large",
         "text_position": "center",
         "text_alignment": "center",
         "background": "rgba(0,0,0,0)",
