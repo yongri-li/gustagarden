@@ -279,7 +279,7 @@
         "fefe08e3-6e80-4486-9f18-ff914244d273"
       ],
       "custom_css": [
-        ".text-left {color: #484b42;}"
+        ".text-left {color: gray;}"
       ],
       "settings": {
         "primary_color": "#c8dd02",
