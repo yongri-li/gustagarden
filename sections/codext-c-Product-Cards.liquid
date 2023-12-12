@@ -94,6 +94,22 @@
         grid-auto-columns: calc(27.5% - 4rem);
     }
 
+    .scroll-wrapper::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .scroll-wrapper::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Track color */
+    }
+
+    .scroll-wrapper::-webkit-scrollbar-thumb {
+        background: rgba(73, 75, 67, 0.6); /* Thumb color */
+    }
+
+    .scroll-wrapper::-webkit-scrollbar-thumb:hover {
+        background: rgba(73, 75, 67, 1);; /* Thumb color on hover */
+    }
+
     @media screen and (max-width: 1400px) {
         .scroll-wrapper {
             grid-auto-columns: calc(50% - 4rem);
@@ -108,7 +124,6 @@
 </style>
 
 <script>
-
   let currentScroll = 0;
 
   function scrollHorizontalBy(scrollByLeft) {
@@ -174,27 +189,30 @@
                         {{ block.settings.description }}
                     </p>
                     <ul style="color: {{ section.settings.primary_color }}"
-                        class="grid gap-4 p-5 text-sm font-bold !my-0 pt-0">
+                        class="flex flex-col justify-start space-y-4 p-5 text-sm font-bold !my-0 pt-0">
                         <li class="flex items-center gap-2 text-lg">
                             {% if section.settings.custom_check_icon %}
                                 <img
                                         src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
                                         alt="Check Icon"
                                         style="color: {{ section.settings.primary_color }};"
-                                        class="w-8 h-8"
+                                        class="w-8 h-8 flex-shrink-0"
                                         loading="lazy">
                             {% else %}
                                 <svg
                                         viewBox="0 0 24 24"
                                         fill="{{ section.settings.primary_color }}"
-                                        class="h-8 w-8">
+                                        class="h-8 w-8 flex-shrink-0">
                                     <path fill-rule="evenodd"
                                           d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                           clip-rule="evenodd" />
                                 </svg>
                             {% endif %}
 
-                            {{ block.settings.usp_1 }}
+                            <div class="text-left">
+                                {{ block.settings.usp_1 }}
+                            </div>
+
                         </li>
                         <li class="flex items-center gap-2 text-lg">
                             {% if section.settings.custom_check_icon %}
@@ -202,19 +220,21 @@
                                         src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
                                         alt="Check Icon"
                                         style="color: {{ section.settings.primary_color }};"
-                                        class="w-8 h-8"
+                                        class="w-8 h-8 flex-shrink-0"
                                         loading="lazy">
                             {% else %}
                                 <svg
                                         viewBox="0 0 24 24"
                                         fill="{{ section.settings.primary_color }}"
-                                        class="h-8 w-8">
+                                        class="h-8 w-8 flex-shrink-0">
                                     <path fill-rule="evenodd"
                                           d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                           clip-rule="evenodd" />
                                 </svg>
                             {% endif %}
-                            {{ block.settings.usp_2 }}
+                            <div class="text-left">
+                                {{ block.settings.usp_2 }}
+                            </div>
                         </li>
                         <li class="flex items-center gap-2 text-lg">
                             {% if section.settings.custom_check_icon %}
@@ -222,19 +242,21 @@
                                         src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
                                         alt="Check Icon"
                                         style="color: {{ section.settings.primary_color }};"
-                                        class="w-8 h-8"
+                                        class="w-8 h-8 flex-shrink-0"
                                         loading="lazy">
                             {% else %}
                                 <svg
                                         viewBox="0 0 24 24"
                                         fill="{{ section.settings.primary_color }}"
-                                        class="h-8 w-8">
+                                        class="h-8 w-8 flex-shrink-0">
                                     <path fill-rule="evenodd"
                                           d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                           clip-rule="evenodd" />
                                 </svg>
                             {% endif %}
-                            {{ block.settings.usp_3 }}
+                            <div class="text-left">
+                                {{ block.settings.usp_3 }}
+                            </div>
                         </li>
                         <li class="flex items-center gap-2 text-lg">
                             {% if section.settings.custom_check_icon %}
@@ -242,19 +264,21 @@
                                         src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
                                         alt="Check Icon"
                                         style="color: {{ section.settings.primary_color }};"
-                                        class="w-8 h-8"
+                                        class="w-8 h-8 flex-shrink-0"
                                         loading="lazy">
                             {% else %}
                                 <svg
                                         viewBox="0 0 24 24"
                                         fill="{{ section.settings.primary_color }}"
-                                        class="h-8 w-8">
+                                        class="h-8 w-8 flex-shrink-0">
                                     <path fill-rule="evenodd"
                                           d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                           clip-rule="evenodd" />
                                 </svg>
                             {% endif %}
-                            {{ block.settings.usp_4 }}
+                            <div class="text-left">
+                                {{ block.settings.usp_4 }}
+                            </div>
                         </li>
                     </ul>
 
@@ -278,13 +302,13 @@
             {% endfor %}
         </div>
 
-        <button class="absolute transition-opacity opacity-0 top-1/2 left-8 border prev-next-button bg-white" id="scroll-button-prev" onclick="scrollHorizontalBy(-400)">
+        <button class="absolute transition-opacity opacity-0 top-1/2 left-8 border prev-next-button bg-white hidden sm:block" id="scroll-button-prev" onclick="scrollHorizontalBy(-400)">
             <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
             {%- include 'icon' with 'nav-arrow-left', direction_aware: true -%}
         </button>
 
 
-        <button class="absolute top-1/2 transition-opacity opacity-0 right-8 border prev-next-button bg-white" id="scroll-button-next" onclick="scrollHorizontalBy(400)">
+        <button class="absolute top-1/2 transition-opacity opacity-0 right-8 border prev-next-button bg-white hidden sm:block" id="scroll-button-next" onclick="scrollHorizontalBy(400)">
             <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
             {%- include 'icon' with 'nav-arrow-right', direction_aware: true -%}
         </button>
