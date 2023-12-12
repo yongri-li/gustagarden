@@ -56,7 +56,7 @@
       "mini-cart": {
         "type": "mini-cart",
         "settings": {
-          "show_order_note": true,
+          "show_order_note": false,
           "show_checkout_button": true,
           "empty_button_link": "shopify:\/\/collections\/all",
           "show_recommendations": true,
