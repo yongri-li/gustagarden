@@ -208,6 +208,20 @@
             "button_text": "Jetzt kaufen"
           }
         },
+        "5699887a-7d92-415f-9d74-6224e1c9a390": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-03-03_Charly_Chili_Studio_grau_farbangepasst_qu-1.webp",
+            "title": "CHARLY CHILI",
+            "description": "Jetzt wird's scharf! Das Ziehen deiner eigenen Chilis war noch nie so einfach.\nMit integriertem Wasservorrat, ausgeklügelter Bewässerung über Bewässerungsbänder und stabilem Ranksystem wird der Anbau von Jalapeños, Piri-Piri und vielen weiteren feurigen oder auch milden Chilis so simpel und komfortabel wie nie zuvor. Entdecke deinen rot-grünen Daumen und verleihe deinem Balkon, Terrasse oder Garten mehr Schärfe mit CHARLY CHILI.",
+            "usp_1": "Benefit",
+            "usp_2": "Benefit",
+            "usp_3": "Benefit",
+            "usp_4": "Benefit",
+            "link": "shopify:\/\/collections\/charly-chili",
+            "button_text": "Jetzt kaufen"
+          }
+        },
         "27368957-e663-411e-9fb7-45cb8fa6efe2": {
           "type": "product_card",
           "settings": {
@@ -242,6 +256,7 @@
         "e9db8e1b-39f7-48fe-87d4-c105e911bece",
         "eb1bcb6f-e947-4008-921a-6b55f9f9dd14",
         "f3ebbb4c-7e98-4f04-8f52-d485aa049a23",
+        "5699887a-7d92-415f-9d74-6224e1c9a390",
         "27368957-e663-411e-9fb7-45cb8fa6efe2",
         "fefe08e3-6e80-4486-9f18-ff914244d273"
       ],
