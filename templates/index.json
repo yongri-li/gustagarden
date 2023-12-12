@@ -221,6 +221,19 @@
             "link": "",
             "button_text": ""
           }
+        },
+        "2b1a7eb7-c5fb-4563-a990-d2be3f2f295d": {
+          "type": "product_card",
+          "settings": {
+            "title": "TOMATO BUDDY",
+            "description": "",
+            "usp_1": "",
+            "usp_2": "",
+            "usp_3": "",
+            "usp_4": "",
+            "link": "",
+            "button_text": ""
+          }
         }
       },
       "block_order": [
@@ -228,7 +241,8 @@
         "e9db8e1b-39f7-48fe-87d4-c105e911bece",
         "eb1bcb6f-e947-4008-921a-6b55f9f9dd14",
         "f3ebbb4c-7e98-4f04-8f52-d485aa049a23",
-        "27368957-e663-411e-9fb7-45cb8fa6efe2"
+        "27368957-e663-411e-9fb7-45cb8fa6efe2",
+        "2b1a7eb7-c5fb-4563-a990-d2be3f2f295d"
       ],
       "settings": {
         "primary_color": "#166534",
@@ -317,11 +331,11 @@
         "05a5ddea-c16e-48c2-9146-498e64049130": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/100620_TOMATO_BUDDY_1-scaled.webp",
+            "image": "shopify:\/\/shop_images\/TOMATO-BUDDY_Schnitt_64b166cf-1a20-4f83-a57b-24dabb6b70be.png",
             "image_width": 100,
             "image_border": "#c8dd02",
             "title": "TOMATO BUDDY",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "<p>Die universelle Rankhilfe für Tomaten & anderes Klettergemüse.<br\/>TOMATO BUDDY ist die ideale Ergänzung für deinen Pflanztopf<br\/>und wertet diesen perfekt auf.<\/p>",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
