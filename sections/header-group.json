@@ -25,12 +25,20 @@
             "text": "Mehr als 500.000 verkaufte Produkte",
             "icon": "check"
           }
+        },
+        "ac25f835-b70f-454e-a8e1-75f8cd630661": {
+          "type": "message",
+          "settings": {
+            "text": "designed in Austria 🇦🇹",
+            "icon": "check"
+          }
         }
       },
       "block_order": [
         "debef115-cac6-4fec-a496-4b94895f9d4b",
         "6b3c7712-e06a-40f3-a95c-181ad874235a",
-        "144baaf4-e57d-4ebb-970d-b2c392692484"
+        "144baaf4-e57d-4ebb-970d-b2c392692484",
+        "ac25f835-b70f-454e-a8e1-75f8cd630661"
       ],
       "custom_css": [
         "p {color: #fff;}"
