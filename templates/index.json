@@ -513,9 +513,7 @@
     "db41b1c8-3ba6-49c7-9f9a-101378ea5e52": {
       "type": "image-with-text-block",
       "custom_css": [
-        "h3 {font-weight: bold; color: #fff;}",
-        ".image-with-text-block__content {border-radius: 20px;}",
-        ".image-with-text-block__image-wrapper {border-radius: 20px;}"
+        "h3 {font-weight: bold; color: #fff;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -538,9 +536,7 @@
       "type": "image-with-text-block",
       "custom_css": [
         "@media only screen and (min-width: 750px) {.image-with-text-block {margin-top: -110px; }}",
-        "h3 {font-weight: bold;}",
-        ".image-with-text-block__content {border-radius: 20px;}",
-        ".image-with-text-block__image-wrapper {border-radius: 20px;}"
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -775,8 +771,7 @@
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72": {
       "type": "image-with-text-block",
       "custom_css": [
-        ".image-with-text-block__content {border-radius: 20px;}",
-        ".image-with-text-block__image-wrapper {border-radius: 20px;}"
+
       ],
       "settings": {
         "reveal_on_scroll": true,
