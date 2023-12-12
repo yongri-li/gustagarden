@@ -42,7 +42,7 @@
         "ac25f835-b70f-454e-a8e1-75f8cd630661"
       ],
       "custom_css": [
-        ".announcement-bar {background-color: #c8dd02 !important; }"
+        ".announcement-bar {background-color: #c8dd02 !important;}"
       ],
       "settings": {
         "announcement_bar_position": "non_sticky",
@@ -137,10 +137,37 @@
         "transparent_header_text_color": "#ffffff",
         "search_menu": ""
       }
+    },
+    "92dcabbd-0e87-4a10-93e3-e12324a05a6f": {
+      "type": "codext-c-Cookie-Banner",
+      "settings": {
+        "cc_bg": "#fff",
+        "cc_text": "#2d4156",
+        "cc_btn_primary_bg": "#2d4156",
+        "cc_btn_primary_text": "#fff",
+        "cc_btn_primary_hover_bg": "#1d2e38",
+        "cc_btn_secondary_bg": "#eaeff2",
+        "cc_btn_secondary_text": "#2d4156",
+        "cc_btn_secondary_hover_bg": "#d8e0e6",
+        "cc_toggle_bg_off": "#919ea6",
+        "cc_toggle_bg_on": "#2d4156",
+        "cc_toggle_bg_readonly": "#d5dee2",
+        "cc_toggle_knob_bg": "#fff",
+        "cc_toggle_knob_icon_color": "#ecf2fa",
+        "cc_block_text": "#2d4156",
+        "cc_cookie_category_block_bg": "#f0f4f7",
+        "cc_cookie_category_block_bg_hover": "#e9eff4",
+        "cc_section_border": "#f1f3f5",
+        "cc_cookie_table_border": "#e9edf2",
+        "cc_overlay_bg": "rgb(4, 6, 8)",
+        "cc_overlay_opacity": "0.85",
+        "current_lang": "de"
+      }
     }
   },
   "order": [
     "7a770b41-856d-41ac-b442-8880908a1e5c",
-    "header"
+    "header",
+    "92dcabbd-0e87-4a10-93e3-e12324a05a6f"
   ]
 }
