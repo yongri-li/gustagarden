@@ -98,7 +98,9 @@
           "type": "general_list",
           "settings": {
             "title_1": "Wir versenden mit",
-            "title_2": "Zertifiziert durch"
+            "image_1": "shopify:\/\/shop_images\/delivery.webp",
+            "title_2": "Zertifiziert durch",
+            "image_2": "shopify:\/\/shop_images\/efk.webp"
           }
         },
         "social_media": {
