@@ -149,6 +149,24 @@
         "quick_nav_title": "Produkt-Finder"
       }
     },
+    "e02be595-5d32-4979-97c7-b576402a059f": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "SO SCHMECKT DEIN GARTEN",
+        "title": "Produkte von Gusta Garden",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "58200523-183d-475c-a897-96929dd07c75": {
       "type": "codext-c-Product-Cards",
       "blocks": {
@@ -261,12 +279,12 @@
         "fefe08e3-6e80-4486-9f18-ff914244d273"
       ],
       "custom_css": [
-        ".text-left {color: #484B42;}"
+        ".text-left {color: #484b42;}"
       ],
       "settings": {
         "primary_color": "#c8dd02",
         "background_color": "#ffffff",
-        "title": "Unsere Produkte im Überblick"
+        "title": ""
       }
     },
     "7228d659-8353-4918-8a23-d598fbc9e8a3": {
@@ -481,6 +499,7 @@
     },
     "fe533a39-048e-4fa1-813f-b0bb91bc1a92": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -772,6 +791,7 @@
   "order": [
     "5a184dd5-83ca-4ad0-94cc-660f16773e6c",
     "slideshow",
+    "e02be595-5d32-4979-97c7-b576402a059f",
     "58200523-183d-475c-a897-96929dd07c75",
     "7228d659-8353-4918-8a23-d598fbc9e8a3",
     "b69abf55-57d4-4ff0-b801-10b195ff3d44",
