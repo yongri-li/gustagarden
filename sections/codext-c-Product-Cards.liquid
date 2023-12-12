@@ -89,115 +89,179 @@
 }
 {% endschema %}
 
+<style>
+    .scroll-wrapper {
+        grid-auto-columns: calc(27.5% - 4rem);
+    }
+
+    @media screen and (max-width: 1400px) {
+        .scroll-wrapper {
+            grid-auto-columns: calc(50% - 4rem);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .scroll-wrapper {
+            grid-auto-columns: calc(100% - 4rem);
+        }
+    }
+</style>
+
+<script>
+
+  let currentScroll = 0;
+
+  function scrollHorizontalBy(scrollByLeft) {
+    const scrollWrapper = document.querySelector('.scroll-wrapper');
+
+    console.log(scrollByLeft);
+
+    scrollWrapper.scrollBy({
+      top: 0,
+      left: scrollByLeft,
+      behavior: 'smooth',
+    });
+
+    currentScroll = scrollWrapper.scrollLeft;
+  }
+
+  function scrollListener() {
+    const scrollWrapper = document.querySelector('.scroll-wrapper');
+    const scrollButtonPrev = document.querySelector('#scroll-button-prev');
+    const scrollButtonNext = document.querySelector('#scroll-button-next');
+
+    if (scrollWrapper.scrollLeft === 0) {
+      scrollButtonPrev.classList.add('opacity-0');
+    } else {
+      scrollButtonPrev.classList.remove('opacity-0');
+    }
+
+    if (scrollWrapper.scrollLeft === scrollWrapper.scrollWidth - scrollWrapper.clientWidth) {
+      scrollButtonNext.classList.add('opacity-0');
+    } else {
+      scrollButtonNext.classList.remove('opacity-0');
+    }
+  }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const scrollWrapper = document.querySelector('.scroll-wrapper');
+        scrollWrapper.addEventListener('scroll', scrollListener);
+
+        scrollListener();
+    });
+
+</script>
 <section class="{{ section.settings.background_color }} my-10">
     <div class="mb-5 mt-10 text-center">
         <h2 class="text-2xl font-bold">{{ section.settings.title }}</h2>
     </div>
 
-    <scrollable-content class="tabs-nav__scroller hide-scrollbar px-40">
-        <div class="tabs-nav__scroller-inner">
-            <div class="tabs-nav__item-list pb-20">
-                {% for block in section.blocks %}
-                    <div class="grid p-5 text-center shadow-xl rounded relative h-full gap-4 !pb-12 w-[400px]">
-                        <img
-                                src="{{ block.settings.image | img_url: '400x' }}"
-                                alt="{{ block.settings.title }}"
-                                class="w-full rounded"
-                                loading="lazy">
-                        <h3 class="mt-10 text-2xl font-bold !my-0">
-                            {{ block.settings.title }}
-                        </h3>
-                        <p class="text-sm text-gray-500 !my-0">
-                            {{ block.settings.description }}
-                        </p>
-                        <ul style="color: {{ section.settings.primary_color }}" class="grid gap-4 p-5 text-sm font-bold !my-0 pt-0">
-                            <li class="flex items-center gap-2 text-lg">
-                                {% if section.settings.custom_check_icon %}
-                                    <img
-                                            src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
-                                            alt="Check Icon"
-                                            style="color: {{ section.settings.primary_color }};"
-                                            class="w-8 h-8"
-                                            loading="lazy">
-                                {% else %}
-                                    <svg
-                                            viewBox="0 0 24 24"
-                                            fill="{{ section.settings.primary_color }}"
-                                            class="h-8 w-8">
-                                        <path fill-rule="evenodd"
-                                              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                              clip-rule="evenodd" />
-                                    </svg>
-                                {% endif %}
 
-                                {{ block.settings.usp_1 }}
-                            </li>
-                            <li class="flex items-center gap-2 text-lg">
-                                {% if section.settings.custom_check_icon %}
-                                    <img
-                                            src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
-                                            alt="Check Icon"
-                                            style="color: {{ section.settings.primary_color }};"
-                                            class="w-8 h-8"
-                                            loading="lazy">
-                                {% else %}
-                                    <svg
-                                            viewBox="0 0 24 24"
-                                            fill="{{ section.settings.primary_color }}"
-                                            class="h-8 w-8">
-                                        <path fill-rule="evenodd"
-                                              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                              clip-rule="evenodd" />
-                                    </svg>
-                                {% endif %}
-                                {{ block.settings.usp_2 }}
-                            </li>
-                            <li class="flex items-center gap-2 text-lg">
-                                {% if section.settings.custom_check_icon %}
-                                    <img
-                                            src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
-                                            alt="Check Icon"
-                                            style="color: {{ section.settings.primary_color }};"
-                                            class="w-8 h-8"
-                                            loading="lazy">
-                                {% else %}
-                                    <svg
-                                            viewBox="0 0 24 24"
-                                            fill="{{ section.settings.primary_color }}"
-                                            class="h-8 w-8">
-                                        <path fill-rule="evenodd"
-                                              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                              clip-rule="evenodd" />
-                                    </svg>
-                                {% endif %}
-                                {{ block.settings.usp_3 }}
-                            </li>
-                            <li class="flex items-center gap-2 text-lg">
-                                {% if section.settings.custom_check_icon %}
-                                    <img
-                                            src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
-                                            alt="Check Icon"
-                                            style="color: {{ section.settings.primary_color }};"
-                                            class="w-8 h-8"
-                                            loading="lazy">
-                                {% else %}
-                                    <svg
-                                            viewBox="0 0 24 24"
-                                            fill="{{ section.settings.primary_color }}"
-                                            class="h-8 w-8">
-                                        <path fill-rule="evenodd"
-                                              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                              clip-rule="evenodd" />
-                                    </svg>
-                                {% endif %}
-                                {{ block.settings.usp_4 }}
-                            </li>
-                        </ul>
+    <div class="relative">
 
-                        <a
-                                href="{{ block.settings.link }}"
-                                style="background-color: {{ section.settings.primary_color }};"
-                                class="
+        <div class="scroll-wrapper grid grid-flow-col gap-10 overflow-x-auto sm:px-20 px-4 pb-10">
+            {% for block in section.blocks %}
+                <div class="flex flex-col p-5 text-center shadow-xl rounded relative h-full gap-4">
+                    <img
+                            src="{{ block.settings.image | img_url: '400x' }}"
+                            alt="{{ block.settings.title }}"
+                            class="w-full rounded"
+                            loading="lazy">
+                    <h3 class="mt-10 text-2xl font-bold !my-0">
+                        {{ block.settings.title }}
+                    </h3>
+                    <p class="text-sm text-gray-500 !my-0">
+                        {{ block.settings.description }}
+                    </p>
+                    <ul style="color: {{ section.settings.primary_color }}"
+                        class="grid gap-4 p-5 text-sm font-bold !my-0 pt-0">
+                        <li class="flex items-center gap-2 text-lg">
+                            {% if section.settings.custom_check_icon %}
+                                <img
+                                        src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
+                                        alt="Check Icon"
+                                        style="color: {{ section.settings.primary_color }};"
+                                        class="w-8 h-8"
+                                        loading="lazy">
+                            {% else %}
+                                <svg
+                                        viewBox="0 0 24 24"
+                                        fill="{{ section.settings.primary_color }}"
+                                        class="h-8 w-8">
+                                    <path fill-rule="evenodd"
+                                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                          clip-rule="evenodd" />
+                                </svg>
+                            {% endif %}
+
+                            {{ block.settings.usp_1 }}
+                        </li>
+                        <li class="flex items-center gap-2 text-lg">
+                            {% if section.settings.custom_check_icon %}
+                                <img
+                                        src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
+                                        alt="Check Icon"
+                                        style="color: {{ section.settings.primary_color }};"
+                                        class="w-8 h-8"
+                                        loading="lazy">
+                            {% else %}
+                                <svg
+                                        viewBox="0 0 24 24"
+                                        fill="{{ section.settings.primary_color }}"
+                                        class="h-8 w-8">
+                                    <path fill-rule="evenodd"
+                                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                          clip-rule="evenodd" />
+                                </svg>
+                            {% endif %}
+                            {{ block.settings.usp_2 }}
+                        </li>
+                        <li class="flex items-center gap-2 text-lg">
+                            {% if section.settings.custom_check_icon %}
+                                <img
+                                        src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
+                                        alt="Check Icon"
+                                        style="color: {{ section.settings.primary_color }};"
+                                        class="w-8 h-8"
+                                        loading="lazy">
+                            {% else %}
+                                <svg
+                                        viewBox="0 0 24 24"
+                                        fill="{{ section.settings.primary_color }}"
+                                        class="h-8 w-8">
+                                    <path fill-rule="evenodd"
+                                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                          clip-rule="evenodd" />
+                                </svg>
+                            {% endif %}
+                            {{ block.settings.usp_3 }}
+                        </li>
+                        <li class="flex items-center gap-2 text-lg">
+                            {% if section.settings.custom_check_icon %}
+                                <img
+                                        src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
+                                        alt="Check Icon"
+                                        style="color: {{ section.settings.primary_color }};"
+                                        class="w-8 h-8"
+                                        loading="lazy">
+                            {% else %}
+                                <svg
+                                        viewBox="0 0 24 24"
+                                        fill="{{ section.settings.primary_color }}"
+                                        class="h-8 w-8">
+                                    <path fill-rule="evenodd"
+                                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                          clip-rule="evenodd" />
+                                </svg>
+                            {% endif %}
+                            {{ block.settings.usp_4 }}
+                        </li>
+                    </ul>
+
+                    <a
+                            href="{{ block.settings.link }}"
+                            style="background-color: {{ section.settings.primary_color }};"
+                            class="
             absolute
             -bottom-6
             left-1/2
@@ -208,14 +272,24 @@
             font-bold text-white shadow-xl transition
             duration-200 ease-in-out hover:opacity-90
           ">
-                            {{- block.settings.button_text -}}
-                        </a>
-                    </div>
-                {% endfor %}
-            </div>
+                        {{- block.settings.button_text -}}
+                    </a>
+                </div>
+            {% endfor %}
         </div>
 
+        <button class="absolute transition-opacity opacity-0 top-1/2 left-8 border prev-next-button bg-white" id="scroll-button-prev" onclick="scrollHorizontalBy(-400)">
+            <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
+            {%- include 'icon' with 'nav-arrow-left', direction_aware: true -%}
+        </button>
 
-    </scrollable-content>
+
+        <button class="absolute top-1/2 transition-opacity opacity-0 right-8 border prev-next-button bg-white" id="scroll-button-next" onclick="scrollHorizontalBy(400)">
+            <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
+            {%- include 'icon' with 'nav-arrow-right', direction_aware: true -%}
+        </button>
+
     </div>
+
+
 </section>
