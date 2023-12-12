@@ -416,6 +416,10 @@
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }

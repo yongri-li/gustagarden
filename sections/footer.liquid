@@ -127,7 +127,7 @@
             <div>
               <p class="footer__item-title heading heading--small !mb-1">{{ block.settings.title_1 | escape }}</p>
               <div class="footer__item-content">
-                <img src="{{ block.settings.image_1 | img_url: '200x200' }}" width="200" alt="{{ block.settings.title_1 | escape }}">
+                <img src="{{ block.settings.image_1 | img_url: '200x200' }}" width="{{ block.settings.image_width_1 }}" alt="{{ block.settings.title_1 | escape }}">
               </div>
             </div>
 
@@ -135,7 +135,7 @@
 
               <p class="footer__item-title heading heading--small !mb-1">{{ block.settings.title_2 | escape }}</p>
               <div class="footer__item-content">
-                <img src="{{ block.settings.image_2 | img_url: '200x200' }}" width="200" alt="{{ block.settings.title_2 | escape }}">
+                <img src="{{ block.settings.image_2 | img_url: '200x200' }}" width="{{ block.settings.image_width_2 }}"  alt="{{ block.settings.title_2 | escape }}">
               </div>
             </div>
           </div>
@@ -419,6 +419,15 @@
             "label": "Image 1"
         },
         {
+          "type": "range",
+          "id": "image_width_1",
+          "label": "Image 1 Size",
+            "min": 50,
+            "max": 300,
+            "step": 10,
+          "default": 100
+        },
+        {
           "type": "text",
           "id": "title_2",
           "label": "Heading 2",
@@ -428,6 +437,15 @@
           "type": "image_picker",
           "id": "image_2",
           "label": "Image 2"
+        },
+        {
+          "type": "range",
+          "id": "image_width_2",
+            "label": "Image 2 Size",
+          "min": 50,
+          "max": 300,
+          "step": 10,
+          "default": 100
         }
         ]
     },
