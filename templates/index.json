@@ -149,6 +149,24 @@
         "quick_nav_title": "Produkt-Finder"
       }
     },
+    "e02be595-5d32-4979-97c7-b576402a059f": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "SO SCHMECKT DEIN GARTEN",
+        "title": "Produkte von Gusta Garden",
+        "content": "<p>Bei Gusta Garden vereinen wir Innovation mit Leidenschaft, um herausragende Gartenprodukte zu entwickeln. Unser engagiertes Team investiert unzählige Stunden in Forschung und Design, um die Bedürfnisse unserer Kunden zu übertreffen. Jedes Produkt ist ein Meisterwerk des Urban-Gardenings, geprägt von Liebe zum Detail und Nachhaltigkeit. Wir streben kontinuierlich nach Verbesserung und Erweiterung unseres Sortiments, um das Gärtnern für jeden zu einer Freude zu machen.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "58200523-183d-475c-a897-96929dd07c75": {
       "type": "codext-c-Product-Cards",
       "blocks": {
@@ -260,10 +278,13 @@
         "27368957-e663-411e-9fb7-45cb8fa6efe2",
         "fefe08e3-6e80-4486-9f18-ff914244d273"
       ],
+      "custom_css": [
+        ".text-left {color: gray;}"
+      ],
       "settings": {
-        "primary_color": "#166534",
-        "background_color": "#f7f7f7",
-        "title": "Unsere Produkte im Überblick"
+        "primary_color": "#c8dd02",
+        "background_color": "#ffffff",
+        "title": ""
       }
     },
     "7228d659-8353-4918-8a23-d598fbc9e8a3": {
@@ -478,6 +499,7 @@
     },
     "fe533a39-048e-4fa1-813f-b0bb91bc1a92": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -748,6 +770,9 @@
     },
     "1a99116a-6314-4b9b-ad4d-9dfe1f99bf72": {
       "type": "image-with-text-block",
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "image": "shopify:\/\/shop_images\/PP_Team_ZH2_7338.jpg",
@@ -769,6 +794,7 @@
   "order": [
     "5a184dd5-83ca-4ad0-94cc-660f16773e6c",
     "slideshow",
+    "e02be595-5d32-4979-97c7-b576402a059f",
     "58200523-183d-475c-a897-96929dd07c75",
     "7228d659-8353-4918-8a23-d598fbc9e8a3",
     "b69abf55-57d4-4ff0-b801-10b195ff3d44",
