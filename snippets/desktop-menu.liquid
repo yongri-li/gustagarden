@@ -36,43 +36,44 @@
           {%- assign images_count = 0 -%}
 
           {%- capture mega_menu_images -%}
-            {%- for i in (1..6) -%}
-              {%- capture image_setting -%}image_{{ i }}{%- endcapture -%}
+                        {%- for i in (1..6) -%}
+                            {%- capture image_setting -%}image_{{ i }}{%- endcapture -%}
 
-              {%- if mega_menu_block.settings[image_setting] != blank -%}
-                {%- assign images_count = images_count | plus: 1 -%}
+                            {%- if mega_menu_block.settings[image_setting] != blank -%}
+                                {%- assign images_count = images_count | plus: 1 -%}
 
-                {%- capture image_heading_setting -%}image_{{ i }}_heading{%- endcapture -%}
-                {%- capture image_text_setting -%}image_{{ i }}_text{%- endcapture -%}
-                {%- capture image_link_setting -%}image_{{ i }}_link{%- endcapture -%}
+                                {%- capture image_heading_setting -%}image_{{ i }}_heading{%- endcapture -%}
+                                {%- capture image_text_setting -%}image_{{ i }}_text{%- endcapture -%}
+                                {%- capture image_link_setting -%}image_{{ i }}_link{%- endcapture -%}
 
-                {%- capture image_push -%}
-                  <div class="mega-menu__image-wrapper">
-                    {%- assign menu_image = mega_menu_block.settings[image_setting] -%}
-                    {{ menu_image | image_url: width: menu_image.width | image_tag: loading: 'lazy', sizes: '240px', sizes: '240,480,720', class: 'mega-menu__image' }}
-                  </div>
+                                {%- capture image_push -%}
+                                    <div class="mega-menu__image-wrapper">
+                                        {%- assign menu_image = mega_menu_block.settings[image_setting] -%}
+                                        {{ menu_image | image_url: width: menu_image.width | image_tag: loading: 'lazy', sizes: '240px', sizes: '240,480,720', class: 'mega-menu__image' }}
+                                    </div>
 
-                  {%- if mega_menu_block.settings[image_heading_setting] != '' -%}
-                    <p class="mega-menu__heading heading heading--small">{{ mega_menu_block.settings[image_heading_setting] }}</p>
-                  {%- endif -%}
+                                    {%- if mega_menu_block.settings[image_heading_setting] != '' -%}
+                                        <p class="mega-menu__heading heading heading--small">{{ mega_menu_block.settings[image_heading_setting] }}</p>
+                                    {%- endif -%}
 
-                  {%- if mega_menu_block.settings[image_text_setting] != '' -%}
-                    <span class="mega-menu__text">{{ mega_menu_block.settings[image_text_setting] }}</span>
-                  {%- endif -%}
-                {%- endcapture -%}
+                                    {%- if mega_menu_block.settings[image_text_setting] != '' -%}
+                                        <span class="mega-menu__text">{{ mega_menu_block.settings[image_text_setting] }}</span>
+                                    {%- endif -%}
+                                {%- endcapture -%}
 
-                {%- if mega_menu_block.settings[image_link_setting] != blank -%}
-                  <a href="{{ mega_menu_block.settings[image_link_setting] }}" class="mega-menu__image-push image-zoom">
-                    {{- image_push -}}
-                  </a>
-                {%- else -%}
-                  <div class="mega-menu__image-push image-zoom">
-                    {{- image_push -}}
-                  </div>
-                {%- endif -%}
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endcapture -%}
+                                {%- if mega_menu_block.settings[image_link_setting] != blank -%}
+                                    <a href="{{ mega_menu_block.settings[image_link_setting] }}"
+                                       class="mega-menu__image-push image-zoom">
+                                        {{- image_push -}}
+                                    </a>
+                                {%- else -%}
+                                    <div class="mega-menu__image-push image-zoom">
+                                        {{- image_push -}}
+                                    </div>
+                                {%- endif -%}
+                            {%- endif -%}
+                        {%- endfor -%}
+                    {%- endcapture -%}
 
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
             <div
@@ -102,7 +103,7 @@
                                     src="{{ mega_menu_block.settings.image_above_1 | img_url: 'master' }}"
                                     alt=""
                                     height="240"
-                                    width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
+                                    width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
                                     class="object-center aspect-video"
                                     loading="lazy">
                                 </div>
@@ -111,52 +112,70 @@
                               {{- sub_link.title -}}
                             </span>
                           {%- else -%}
+                            {%- if forloop.index == 1
+                              and mega_menu_block.settings.image_above_1
+                            %}
+                              <div class="text-center mb-5">
+                                <img
+                                  src="{{ mega_menu_block.settings.image_above_1 | img_url: 'master' }}"
+                                  alt=""
+                                  height="240"
+                                  width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
+                                  class="object-center aspect-video"
+                                  loading="lazy">
+                              </div>
 
-                            {%- if forloop.index == 2 and mega_menu_block.settings.image_above_2 -%}
+                            {%- elsif forloop.index == 2
+                              and mega_menu_block.settings.image_above_2
+                            -%}
                               <div class="text-center mb-5">
                                 <img
                                   src="{{ mega_menu_block.settings.image_above_2 | img_url: 'master' }}"
                                   alt=""
                                   height="240"
-                                  width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
+                                  width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
                                   class="object-center aspect-video"
                                   loading="lazy">
                               </div>
 
-                                {% elsif forloop.index == 3 and mega_menu_block.settings.image_above_3 %}
-                                <div class="text-center mb-5">
-                                    <img
-                                            src="{{ mega_menu_block.settings.image_above_3 | img_url: 'master' }}"
-                                            alt=""
-                                            height="240"
-                                            width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
-                                            class="object-center aspect-video"
-                                            loading="lazy">
-                                </div>
+                            {% elsif forloop.index == 3
+                              and mega_menu_block.settings.image_above_3
+                            %}
+                              <div class="text-center mb-5">
+                                <img
+                                  src="{{ mega_menu_block.settings.image_above_3 | img_url: 'master' }}"
+                                  alt=""
+                                  height="240"
+                                  width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
+                                  class="object-center aspect-video"
+                                  loading="lazy">
+                              </div>
 
-                            {% elsif forloop.index == 4 and mega_menu_block.settings.image_above_4 %}
-                                <div class="text-center mb-5">
-                                    <img
-                                            src="{{ mega_menu_block.settings.image_above_4 | img_url: 'master' }}"
-                                            alt=""
-                                            height="240"
-                                            width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
-                                            class="object-center aspect-video"
-                                            loading="lazy">
-                                </div>
+                            {% elsif forloop.index == 4
+                              and mega_menu_block.settings.image_above_4
+                            %}
+                              <div class="text-center mb-5">
+                                <img
+                                  src="{{ mega_menu_block.settings.image_above_4 | img_url: 'master' }}"
+                                  alt=""
+                                  height="240"
+                                  width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
+                                  class="object-center aspect-video"
+                                  loading="lazy">
+                              </div>
 
-                            {% elsif forloop.index == 5 and mega_menu_block.settings.image_above_5 %}
-                                <div class="text-center mb-5">
-                                    <img
-                                            src="{{ mega_menu_block.settings.image_above_5 | img_url: 'master' }}"
-                                            alt=""
-                                            height="240"
-                                            width="{{  mega_menu_block.settings.above_image_size | default : '180' }}"
-                                            class="object-center aspect-video"
-                                            loading="lazy">
-                                </div>
-
-
+                            {% elsif forloop.index == 5
+                              and mega_menu_block.settings.image_above_5
+                            %}
+                              <div class="text-center mb-5">
+                                <img
+                                  src="{{ mega_menu_block.settings.image_above_5 | img_url: 'master' }}"
+                                  alt=""
+                                  height="240"
+                                  width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
+                                  class="object-center aspect-video"
+                                  loading="lazy">
+                              </div>
                             {%- endif -%}
                             <a
                               href="{{ sub_link.url }}"
