@@ -222,17 +222,18 @@
             "button_text": ""
           }
         },
-        "2b1a7eb7-c5fb-4563-a990-d2be3f2f295d": {
+        "fefe08e3-6e80-4486-9f18-ff914244d273": {
           "type": "product_card",
           "settings": {
+            "image": "shopify:\/\/shop_images\/TOMATO-BUDDY_Schnitt_64b166cf-1a20-4f83-a57b-24dabb6b70be.png",
             "title": "TOMATO BUDDY",
-            "description": "",
-            "usp_1": "",
-            "usp_2": "",
-            "usp_3": "",
-            "usp_4": "",
-            "link": "",
-            "button_text": ""
+            "description": "Die universelle Rankhilfe für Tomaten & anderes Klettergemüse.\nTOMATO BUDDY ist die ideale Ergänzung für deinen Pflanztopf\nund wertet diesen perfekt auf.",
+            "usp_1": "Benefit",
+            "usp_2": "Benefit",
+            "usp_3": "Benefit",
+            "usp_4": "Benefit",
+            "link": "shopify:\/\/products\/tomato-buddy",
+            "button_text": "Jetzt kaufen"
           }
         }
       },
@@ -242,7 +243,7 @@
         "eb1bcb6f-e947-4008-921a-6b55f9f9dd14",
         "f3ebbb4c-7e98-4f04-8f52-d485aa049a23",
         "27368957-e663-411e-9fb7-45cb8fa6efe2",
-        "2b1a7eb7-c5fb-4563-a990-d2be3f2f295d"
+        "fefe08e3-6e80-4486-9f18-ff914244d273"
       ],
       "settings": {
         "primary_color": "#166534",
