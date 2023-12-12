@@ -42,7 +42,7 @@
         "ac25f835-b70f-454e-a8e1-75f8cd630661"
       ],
       "custom_css": [
-        "p {color: #fff;}"
+        ".announcement-bar {background-color: #c8dd02 !important; }"
       ],
       "settings": {
         "announcement_bar_position": "non_sticky",
