@@ -1,11 +1,4 @@
-<link
-  rel="stylesheet"
-  href="{{ 'codext-cookieconsent.css' | asset_url }}"
->
-<script
-  defer
-  src="{{ 'codext-cookieconsent.js' | asset_url }}"
-></script>
+
 <style>
   :root{
       --cc-font-family: {{ settings.cc_font_family }};
@@ -40,6 +33,14 @@
       --cc-webkit-scrollbar-bg-hover: {{ settings.cc_webkit_scrollbar_bg_hover }};
   }
   </style>
+<link
+  rel="stylesheet"
+  href="{{ 'codext-cookieconsent.css' | asset_url }}"
+>
+<script
+  defer
+  src="{{ 'codext-cookieconsent.js' | asset_url }}"
+></script>
 
 <script>
   window.addEventListener('load', function () {
