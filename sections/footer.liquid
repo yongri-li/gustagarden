@@ -58,6 +58,7 @@
                 {%- endif -%}
 
               {%- when 'social_media' -%}
+
                 {%- if block.settings.title != blank -%}
                                     <img src="https://cdn.shopify.com/s/files/1/0632/3139/3965/files/gusta_garden_logo.png?v=1699254624" alt="Gusta Garden Logo">
                       <script src="https://widget.reviews.io/badge-modern/dist.js"></script>
@@ -119,6 +120,31 @@
                     {%- endif -%}
                   {%- endform -%}
                 </div>
+
+
+           {% when 'general_list' %}
+          <div class="flex flex-col gap-y-8">
+            <div>
+              <p class="footer__item-title heading heading--small !mb-1">{{ block.settings.title_1 | escape }}</p>
+              <div class="footer__item-content">
+                <img src="{{ block.settings.image_1 | img_url: '200x200' }}" width="200" alt="{{ block.settings.title_1 | escape }}">
+              </div>
+            </div>
+
+            <div>
+
+              <p class="footer__item-title heading heading--small !mb-1">{{ block.settings.title_2 | escape }}</p>
+              <div class="footer__item-content">
+                <img src="{{ block.settings.image_2 | img_url: '200x200' }}" width="200" alt="{{ block.settings.title_2 | escape }}">
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
             {%- endcase -%}
           {%- endcapture -%}
 
@@ -377,6 +403,34 @@
     }
   ],
   "blocks": [
+    {
+      "type": "general_list",
+      "name": "General list",
+      "settings": [
+          {
+            "type": "text",
+            "id": "title_1",
+            "label": "Heading 1",
+            "default": "Wir versenden mit"
+          },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+            "label": "Image 1"
+        },
+        {
+          "type": "text",
+          "id": "title_2",
+          "label": "Heading 2",
+          "default": "Zertifiziert durch"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        }
+        ]
+    },
     {
       "type": "image",
       "name": "Image",
