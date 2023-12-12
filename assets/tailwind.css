@@ -1621,6 +1621,10 @@ input:focus-within {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+  .sm\:text-center {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
