@@ -28,6 +28,7 @@
         },
         "ac25f835-b70f-454e-a8e1-75f8cd630661": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "designed in Austria 🇦🇹",
             "icon": "check"
