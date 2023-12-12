@@ -260,9 +260,12 @@
         "27368957-e663-411e-9fb7-45cb8fa6efe2",
         "fefe08e3-6e80-4486-9f18-ff914244d273"
       ],
+      "custom_css": [
+        ".text-left {color: #484B42;}"
+      ],
       "settings": {
-        "primary_color": "#166534",
-        "background_color": "#f7f7f7",
+        "primary_color": "#c8dd02",
+        "background_color": "#ffffff",
         "title": "Unsere Produkte im Überblick"
       }
     },
