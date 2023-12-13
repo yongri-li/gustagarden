@@ -386,7 +386,8 @@
       "queries": "Suggestions",
       "articles": "Journal",
       "pages": "Pages",
-      "collections": "Collections"
+      "collections": "Collections",
+      "suggestions": "Suggestions"
     }
   },
   "contact": {
