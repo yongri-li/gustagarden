@@ -175,9 +175,16 @@
                 <div class="rounded-full w-24 h-24 aspect-square overflow-hidden">
                   {{ article.metafields.custom.author.value.bild  | image_url: width: 300 | image_tag: class: '!m-0' }}
                 </div>
-                <div class="flex flex-col gap-0">
-                  <div class="text-lg font-bold" >{{ article.metafields.custom.author.value.name }}</div>
-                </div>        
+                {% if article.metafields.custom.author.value.logo %}
+                  <div class="w-24 h-24 aspect-square overflow-hidden">
+                    {{ article.metafields.custom.author.value.logo  | image_url: width: 300 | image_tag: class: '!m-0' }}
+                  </div>
+                {%  else %}  
+                  <div class="flex flex-col gap-0">
+                    <div class="text-lg font-bold" >{{ article.metafields.custom.author.value.name }}</div>
+                  </div> 
+                {% endif %}              
+                       
               </div>
               <div>
                 <div class="flex flex-wrap gap-4">
