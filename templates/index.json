@@ -39,15 +39,6 @@
             "highlight": false
           }
         },
-        "4d5c1c3f-6709-4725-9a77-814ee320efff": {
-          "type": "block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/tomato-buddy.png",
-            "heading": "Tomato Buddy",
-            "url": "https:\/\/gustagarden.myshopify.com\/products\/tomato-buddy",
-            "highlight": false
-          }
-        },
         "72c2367a-6d36-4652-9231-3bd839481fc6": {
           "type": "block",
           "settings": {
@@ -72,7 +63,6 @@
         "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-2",
         "template--16336610558125__5a184dd5-83ca-4ad0-94cc-660f16773e6c-block-3",
         "1e4d24a3-ea7e-4f73-898e-0393dd19fa73",
-        "4d5c1c3f-6709-4725-9a77-814ee320efff",
         "72c2367a-6d36-4652-9231-3bd839481fc6",
         "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42"
       ],
@@ -231,7 +221,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2021-03-03_Charly_Chili_Studio_grau_farbangepasst_qu-1-768x768.png",
             "title": "CHARLY CHILI",
-            "description": "Jetzt wird's scharf! Das Ziehen deiner eigenen Chilis war noch nie so einfach.\nEntdecke deinen rot-grünen Daumen und verleihe deinem Balkon, Terrasse oder Garten mehr Schärfe mit CHARLY CHILI.",
+            "description": "Jetzt wird's scharf! Das Ziehen deiner eigenen Chilis war noch nie so einfach.\nEntdecke deinen rot-grünen Daumen und verleihe deinem Balkon, Terrasse oder Garten mehr Schärfe mit CHARLY CHILI.",
             "usp_1": "ideal für den Balkon oder Terrasse",
             "usp_2": "stabiles Ranksystem",
             "usp_3": "kinderleichter Aufbau",
@@ -259,7 +249,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/TOMATO-BUDDY_Schnitt_64b166cf-1a20-4f83-a57b-24dabb6b70be.png",
             "title": "TOMATO BUDDY",
-            "description": "Die universelle Rankhilfe für Tomaten & anderes Klettergemüse.\nTOMATO BUDDY ist die ideale Ergänzung für deinen Pflanztopf\nund wertet diesen perfekt auf.",
+            "description": "Die universelle Rankhilfe für Tomaten & anderes Klettergemüse.\nTOMATO BUDDY ist die ideale Ergänzung für deinen Pflanztopf\nund wertet diesen perfekt auf.",
             "usp_1": "ideal für den Balkon oder Terrasse",
             "usp_2": "stabile Rankhilfe",
             "usp_3": "kinderleichter Aufbau",
@@ -373,7 +363,7 @@
             "image_width": 100,
             "image_border": "#c8dd02",
             "title": "TOMATO BUDDY",
-            "content": "<p>Die universelle Rankhilfe für Tomaten & anderes Klettergemüse.<br\/>TOMATO BUDDY ist die ideale Ergänzung für deinen Pflanztopf<br\/>und wertet diesen perfekt auf.<\/p>",
+            "content": "<p>Die universelle Rankhilfe für Tomaten & anderes Klettergemüse.<br\/>TOMATO BUDDY ist die ideale Ergänzung für deinen Pflanztopf<br\/>und wertet diesen perfekt auf.<\/p>",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
