@@ -363,6 +363,9 @@
         "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-3",
         "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-4"
       ],
+      "custom_css": [
+        "{margin-top: 50px;}"
+      ],
       "settings": {
         "background": "#f3f3f4",
         "text_color": "#000000",
