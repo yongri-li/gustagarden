@@ -146,7 +146,7 @@
             "tab_label": "Item",
             "subheading": "",
             "title": "Nur noch 1x pro Woche gießen",
-            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.\u2028\u2028Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -277,9 +277,9 @@
     "21236dfa-d553-4250-b4d6-d2d01535dc19": {
       "type": "blog-posts",
       "settings": {
-        "blog": "news",
-        "subheading": "Stay up-to-date",
-        "title": "Blog",
+        "blog": "ratgeber",
+        "subheading": "TIPPS & TRICKS RUND UM DAS THEMA URBAN GARDENING GEBEN.",
+        "title": "UNSER RATGEBER",
         "articles_count": 3,
         "stack_mobile": false,
         "show_category": false,
