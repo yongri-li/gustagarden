@@ -133,6 +133,7 @@
         "description",
         "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -155,7 +156,7 @@
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431.png",
             "custom_icon_width": 40,
-            "title": "stabileRankhilfe",
+            "title": "stabile Rankhilfe",
             "content": ""
           }
         },
@@ -175,7 +176,7 @@
             "icon": "picto-email",
             "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU.png",
             "custom_icon_width": 55,
-            "title": "designed in Austriamade in the EU",
+            "title": "designed in Austria. Made in the EU",
             "content": ""
           }
         }
@@ -204,7 +205,7 @@
             "tab_label": "Item",
             "subheading": "",
             "title": "Nur noch 1x pro Woche gießen",
-            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.\u2028\u2028Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
             "button_text": "",
             "button_link": ""
           }

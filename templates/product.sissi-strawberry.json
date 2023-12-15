@@ -132,6 +132,7 @@
         "description",
         "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -210,7 +211,7 @@
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-150x150-square-51e0dda996cb7180f9d27eca0733cf85-5fda2b83153eb.png",
             "custom_icon_width": 50,
-            "title": "kinderleichterAufbau",
+            "title": "kinderleichter Aufbau",
             "content": ""
           }
         },
