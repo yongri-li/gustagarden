@@ -220,7 +220,7 @@
             "icon": "picto-email",
             "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU_07f9d8fb-0197-4274-b601-e0f3b0f43b5b.png",
             "custom_icon_width": 80,
-            "title": "designed in Austriamade in the EU",
+            "title": "designed in Austria. made in the EU",
             "content": ""
           }
         }
@@ -233,7 +233,7 @@
       ],
       "custom_css": [
         "@media screen and (min-width: 768px) {{margin-top: -60px; }}",
-        "{margin-bottom: 50px;}"
+        " {margin-bottom: 50px;}"
       ],
       "settings": {
         "background": "#c8dd02",
