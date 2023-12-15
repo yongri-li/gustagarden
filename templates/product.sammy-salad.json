@@ -339,6 +339,9 @@
     },
     "72b105f6-5697-49c9-898f-fd111a4512ce": {
       "type": "video",
+      "custom_css": [
+        "{margin-top: 50px;}"
+      ],
       "settings": {
         "subheading": "",
         "title": "",
