@@ -186,6 +186,10 @@
         "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-3",
         "template--16409074991277__879b3239-f3e7-47a2-98db-5c05eaedfac9-item-4"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {{margin-top: -60px; }}",
+        " {margin-bottom: 50px;}"
+      ],
       "settings": {
         "background": "#c8dd02",
         "text_color": "#ffffff",
