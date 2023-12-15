@@ -69,6 +69,9 @@
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
         "723850fb-7702-4722-abf6-463a8b4acbb7"
       ],
+      "custom_css": [
+        "h1 {font-weight: bold;}"
+      ],
       "settings": {
         "show_vendor": false,
         "show_sku": false,
@@ -215,7 +218,8 @@
       ],
       "custom_css": [
         "{margin: 0 !important; --vertical-breather: 0;}",
-        ".image-with-text__wrapper {padding: 0 !important;}"
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "reveal_on_scroll": false,
@@ -251,7 +255,8 @@
       ],
       "custom_css": [
         "{margin: 0 !important; --vertical-breather: 0;}",
-        ".image-with-text__wrapper {padding: 0 !important;}"
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -286,7 +291,8 @@
       ],
       "custom_css": [
         "{margin: 0 !important; --vertical-breather: 0;}",
-        ".image-with-text__wrapper {padding: 0 !important;}"
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -322,7 +328,8 @@
       ],
       "custom_css": [
         "{margin: 0 !important; --vertical-breather: 0;}",
-        ".image-with-text__wrapper {padding: 0 !important;}"
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -369,6 +376,9 @@
       },
       "block_order": [
         "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1"
+      ],
+      "custom_css": [
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "subheading": "ALLES FÜR DEINEN SAMMY SALAD",
