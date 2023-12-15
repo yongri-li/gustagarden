@@ -389,10 +389,13 @@
     },
     "21236dfa-d553-4250-b4d6-d2d01535dc19": {
       "type": "blog-posts",
+      "custom_css": [
+        "h3 {font-weight: bold;}"
+      ],
       "settings": {
-        "blog": "news",
-        "subheading": "Stay up-to-date",
-        "title": "Blog",
+        "blog": "ratgeber",
+        "subheading": "TIPPS & TRICKS RUND UM DAS THEMA URBAN GARDENING GEBEN.",
+        "title": "UNSER RATGEBER",
         "articles_count": 3,
         "stack_mobile": false,
         "show_category": false,
