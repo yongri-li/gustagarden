@@ -322,6 +322,10 @@
       "block_order": [
         "template--16409074958509__711c94e0-9e67-4cc5-8ce5-a7acc7d0d384-item-1"
       ],
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}"
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
