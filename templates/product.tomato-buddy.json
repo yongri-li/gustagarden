@@ -69,6 +69,9 @@
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
         "723850fb-7702-4722-abf6-463a8b4acbb7"
       ],
+      "custom_css": [
+        "h1 {font-weight: bold;}"
+      ],
       "settings": {
         "show_vendor": false,
         "show_sku": false,
