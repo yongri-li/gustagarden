@@ -3,13 +3,38 @@
     "main": {
       "type": "main-cart",
       "blocks": {
-        "totals": { "type": "totals", "settings": {} },
-        "order_note": { "type": "order_note", "settings": {} }
+        "totals": {
+          "type": "totals",
+          "settings": {
+          }
+        },
+        "order_note": {
+          "type": "order_note",
+          "settings": {
+            "open_by_default": false
+          }
+        }
       },
-      "block_order": ["totals", "order_note"],
-      "settings": {}
+      "block_order": [
+        "totals",
+        "order_note"
+      ],
+      "settings": {
+        "show_payment_methods": true,
+        "show_shipping_estimator": true,
+        "shipping_estimator_default_country": "United States",
+        "empty_button_link": "shopify:\/\/collections\/all"
+      }
     },
-    "cart-recommendations": { "type": "cart-recommendations", "settings": {} }
+    "cart-recommendations": {
+      "type": "cart-recommendations",
+      "settings": {
+        "title": "Kunden kaufen auch:"
+      }
+    }
   },
-  "order": ["main", "cart-recommendations"]
+  "order": [
+    "main",
+    "cart-recommendations"
+  ]
 }
