@@ -241,6 +241,10 @@
         "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-3",
         "template--16409074892973__1fb2a724-d606-4972-8d55-62c349b8c12e-item-4"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {{margin-top: -60px; }}",
+        " {margin-bottom: 50px;}"
+      ],
       "settings": {
         "background": "#c8dd02",
         "text_color": "#ffffff",
