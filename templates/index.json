@@ -67,7 +67,7 @@
         "c8b9fe29-8c21-45a1-a6ca-36ff04ec8b42"
       ],
       "custom_css": [
-
+        "{text-transform: uppercase;}"
       ],
       "settings": {
         "background-color": "#f5f5f5",
