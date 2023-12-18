@@ -1,46 +1,45 @@
+<link
+  rel="stylesheet"
+  href="{{ 'codext-cookieconsent.css' | asset_url }}">
 
 <style>
   :root{
-      --cc-font-family: {{ settings.cc_font_family }};
-      --cc-font-size: {{ settings.cc_font_size }};
-      --cc-bg: {{ settings.cc_bg }};
-      --cc-z-index: {{ settings.cc_z_index }};
-      --cc-text: {{ settings.cc_text }};
-      --cc-border-radius: {{ settings.cc_border_radius }};
-      --cc-btn-primary-bg: {{ settings.cc_btn_primary_bg }};
-      --cc-btn-primary-text: {{ settings.cc_btn_primary_text }};
-      --cc-btn-primary-hover-bg: {{ settings.cc_btn_primary_hover_bg }};
-      --cc-btn-primary-hover-text: {{ settings.cc_btn_primary_hover_text }};
-      --cc-btn-secondary-bg: {{ settings.cc_btn_secondary_bg }};
-      --cc-btn-secondary-text: {{ settings.cc_btn_secondary_text }};
-      --cc-btn-secondary-hover-bg: {{ settings.cc_btn_secondary_hover_bg }};
-      --cc-btn-secondary-hover-text: {{ settings.cc_btn_secondary_hover_text }};
-      --cc-btn-border-radius: {{ settings.cc_btn_border_radius }};
-      --cc-toggle-bg-off: {{ settings.cc_toggle_bg_off }};
-      --cc-toggle-bg-on: {{ settings.cc_toggle_bg_on }};
-      --cc-toggle-bg-readonly: {{ settings.cc_toggle_bg_readonly }};
-      --cc-toggle-knob-bg: {{ settings.cc_toggle_knob_bg }};
-      --cc-toggle-knob-icon-color: {{ settings.cc_toggle_knob_icon_color }};
-      --cc-block-text: {{ settings.cc_block_text }};
-      --cc-cookie-category-block-bg: {{ settings.cc_cookie_category_block_bg }};
-      --cc-cookie-category-block-bg-hover: {{ settings.cc_cookie_category_block_bg_hover }};
-      --cc-section-border: {{ settings.cc_section_border }};
-      --cc-cookie-table-border: {{ settings.cc_cookie_table_border }};
-      --cc-overlay-bg: {{ settings.cc_overlay_bg }};
-      --cc-overlay-opacity: {{ settings.cc_overlay_opacity }};
-      --cc-consent-modal-box-shadow: {{ settings.cc_consent_modal_box_shadow }};
-      --cc-webkit-scrollbar-bg: {{ settings.cc_webkit_scrollbar_bg }};
-      --cc-webkit-scrollbar-bg-hover: {{ settings.cc_webkit_scrollbar_bg_hover }};
+    --cc-bg: {{ section.settings.cc_bg }};
+    --cc-text: {{ section.settings.cc_text }};
+    --cc-btn-primary-bg: {{ section.settings.cc_btn_primary_bg }};
+    --cc-btn-primary-text: {{ section.settings.cc_btn_primary_text }};
+    --cc-btn-primary-hover-bg: {{ section.settings.cc_btn_primary_hover_bg }};
+    --cc-btn-secondary-bg: {{ section.settings.cc_btn_secondary_bg }};
+    --cc-btn-secondary-text: {{ section.settings.cc_btn_secondary_text }};
+    --cc-btn-secondary-hover-bg: {{ section.settings.cc_btn_secondary_hover_bg }};
+    --cc-toggle-bg-off: {{ section.settings.cc_toggle_bg_off }};
+    --cc-toggle-bg-on: {{ section.settings.cc_toggle_bg_on }};
+    --cc-toggle-bg-readonly: {{ section.settings.cc_toggle_bg_readonly }};
+    --cc-toggle-knob-bg: {{ section.settings.cc_toggle_knob_bg }};
+    --cc-toggle-knob-icon-color: {{ section.settings.cc_toggle_knob_icon_color }};
+    --cc-block-text: {{ section.settings.cc_block_text }};
+    --cc-cookie-category-block-bg: {{ section.settings.cc_cookie_category_block_bg }};
+    --cc-cookie-category-block-bg-hover: {{ section.settings.cc_cookie_category_block_bg_hover }};
+    --cc-section-border: {{ section.settings.cc_section_border }};
+    --cc-cookie-table-border: {{ section.settings.cc_cookie_table_border }};
+    --cc-overlay-bg: {{ section.settings.cc_overlay_bg }};
+    --cc-overlay-opacity: {{ section.settings.cc_overlay_opacity }};
+
+      /* --cc-font-family: {{ section.settings.cc_font_family }}; */
+      /* --cc-font-size: {{ section.settings.cc_font_size }}; */
+      /* --cc-z-index: {{ section.settings.cc_z_index }}; */
+      /* --cc-border-radius: {{ section.settings.cc_border_radius }}; */
+      /* --cc-btn-primary-hover-text: {{ section.settings.cc_btn_primary_hover_text }}; */
+      /* --cc-btn-secondary-hover-text: {{ section.settings.cc_btn_secondary_hover_text }}; */
+      /* --cc-btn-border-radius: {{ section.settings.cc_btn_border_radius }}; */
+      /* --cc-consent-modal-box-shadow: {{ section.settings.cc_consent_modal_box_shadow }}; */
+      /* --cc-webkit-scrollbar-bg: {{ section.settings.cc_webkit_scrollbar_bg }}; */
+      /* --cc-webkit-scrollbar-bg-hover: {{ section.settings.cc_webkit_scrollbar_bg_hover }}; */
   }
-  </style>
-<link
-  rel="stylesheet"
-  href="{{ 'codext-cookieconsent.css' | asset_url }}"
->
+</style>
 <script
   defer
-  src="{{ 'codext-cookieconsent.js' | asset_url }}"
-></script>
+  src="{{ 'codext-cookieconsent.js' | asset_url }}"></script>
 
 <script>
   window.addEventListener('load', function () {
@@ -48,9 +47,9 @@
     var cc = initCookieConsent();
 
     cc.run({
-      current_lang: '{{ settings.current_lang | default: "de" }}',
-      autoclear_cookies: true, 
-      page_scripts: true, 
+      current_lang: '{{ section.settings.current_lang | default: "de" }}',
+      autoclear_cookies: true,
+      page_scripts: true,
       onFirstAction: function (user_preferences, cookie) {
         // callback triggered only once on the first accept/reject action
       },
@@ -109,7 +108,8 @@
               },
               {
                 title: 'Performance and Analytics cookies',
-                description: 'These cookies allow the website to remember the choices you have made in the past',
+                description:
+                  'These cookies allow the website to remember the choices you have made in the past',
                 toggle: {
                   value: 'analytics', // your cookie category
                   enabled: false,
@@ -373,8 +373,8 @@
       "label": "Default Language",
       "id": "current_lang",
       "options": [
-        {"value": "en", "label": "English"},
-        {"value": "de", "label": "German"}
+        { "value": "en", "label": "English" },
+        { "value": "de", "label": "German" }
       ],
       "default": "de"
     }
