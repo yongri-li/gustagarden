@@ -42,6 +42,9 @@
     },
     "main": {
       "type": "main-blog",
+      "custom_css": [
+        ".h4 {margin-top: 10px;}"
+      ],
       "settings": {
         "show_blog_title": false,
         "show_tags": false,
