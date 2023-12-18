@@ -31,7 +31,7 @@
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
-        "text_width": "large",
+        "text_width": "fill",
         "text_position": "left",
         "text_alignment": "left",
         "background": "rgba(0,0,0,0)",
@@ -86,6 +86,7 @@
         "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-image-2",
         "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-quote-1"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -146,6 +147,7 @@
         "template--16337047978157__04314064-0967-4755-b0f1-a896ce24ccf8-collection-3",
         "template--16337047978157__04314064-0967-4755-b0f1-a896ce24ccf8-collection-1"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "layout": "grid",
