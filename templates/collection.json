@@ -16,6 +16,9 @@
     },
     "main": {
       "type": "main-collection",
+      "custom_css": [
+        "{width: 200px; \/* Breite deines Elements *\/ height: 200px; \/* Höhe deines Elements *\/ background-color: #ffffff; \/* Hintergrundfarbe deines Elements *\/ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); \/* Horizontale Verschiebung, vertikale Ve"
+      ],
       "settings": {
         "show_sort_by": true,
         "products_per_page": 24,
