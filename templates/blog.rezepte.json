@@ -43,7 +43,7 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
-        ".h4 {margin-top: 10px; font-size: 20px;}"
+        ".h4 {margin-top: 10px; font-size: 20px; text-align: center;}"
       ],
       "settings": {
         "show_blog_title": false,
