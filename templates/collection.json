@@ -27,7 +27,7 @@
         "open_first_filter_group": false,
         "filter_position": "always_visible",
         "promotion_position": "top",
-        "promotion_height": "large"
+        "promotion_height": "small"
       }
     }
   },
