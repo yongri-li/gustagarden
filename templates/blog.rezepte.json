@@ -46,7 +46,7 @@
         "show_blog_title": false,
         "show_tags": false,
         "show_category": false,
-        "show_excerpt": true,
+        "show_excerpt": false,
         "articles_per_page": 24
       }
     },
