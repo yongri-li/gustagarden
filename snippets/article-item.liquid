@@ -50,7 +50,7 @@
       <a
         href="{{ blog_url | remove_first: '/' }}/tagged/{{ article.tags.first | handle }}"
         class="article-item__category heading heading--xsmall">
-        {{- article.tags.first -}}
+        {{- article.tags.first | replace: 'Category_', '' -}}
       </a>
     {%- endif -%}
 
