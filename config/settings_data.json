@@ -39,6 +39,7 @@
     "product_image_size": "natural",
     "cart_type": "message",
     "cart_show_free_shipping_threshold": true,
+    "cart_free_shipping_threshold": "100",
     "social_facebook": "https:\/\/www.facebook.com\/gustagarden\/",
     "social_pinterest": "https:\/\/www.pinterest.at\/gustagarden\/",
     "social_instagram": "https:\/\/www.instagram.com\/gustagarden\/",
