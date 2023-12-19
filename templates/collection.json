@@ -1,19 +1,5 @@
 {
   "sections": {
-    "collection-banner": {
-      "type": "collection-banner",
-      "settings": {
-        "show_collection_image": true,
-        "show_collection_title": true,
-        "show_collection_description": true,
-        "section_height": "small",
-        "text_width": "fill",
-        "image_text_color": "#ffffff",
-        "image_overlay_color": "#000000",
-        "image_overlay_opacity": 13,
-        "quick_links": ""
-      }
-    },
     "641919ad-8e55-4633-9146-581c86bfafda": {
       "type": "lb-storie-slider",
       "blocks": {
@@ -73,6 +59,7 @@
         },
         "adcbbc90-918d-4850-aa91-9c0431a7a33f": {
           "type": "block",
+          "disabled": true,
           "settings": {
             "heading": "CURT CUCUMBER",
             "url": "",
@@ -81,6 +68,7 @@
         },
         "7e8cc023-c7d5-4f81-9f15-9b26429cd5ad": {
           "type": "block",
+          "disabled": true,
           "settings": {
             "heading": "HERBS BUDDY",
             "url": "",
@@ -89,6 +77,7 @@
         },
         "5137acca-13d5-4355-bce7-27e5eab16f3b": {
           "type": "block",
+          "disabled": true,
           "settings": {
             "heading": "BERRY BUDDY",
             "url": "",
@@ -122,6 +111,20 @@
         "hover-effekt-opacity": 0.6
       }
     },
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "show_collection_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "section_height": "small",
+        "text_width": "fill",
+        "image_text_color": "#ffffff",
+        "image_overlay_color": "#000000",
+        "image_overlay_opacity": 13,
+        "quick_links": ""
+      }
+    },
     "main": {
       "type": "main-collection",
       "custom_css": [
@@ -143,8 +146,8 @@
     }
   },
   "order": [
-    "collection-banner",
     "641919ad-8e55-4633-9146-581c86bfafda",
+    "collection-banner",
     "main"
   ]
 }
