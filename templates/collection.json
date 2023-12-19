@@ -108,12 +108,12 @@
         "background-color": "#f2f2f2",
         "max-show": 600,
         "abgerundete_ecken": 0,
-        "schriftart": "sans-serif",
+        "schriftart": "poppins_n4",
         "schriftfarbe": "#000000",
         "highlight-color": "#c4258d",
-        "abstand_zwischen_blocken_desktop": 25,
-        "abstand_zwischen_blocken_mobile": 25,
-        "hover-effekt-opacity": 0.8
+        "abstand_zwischen_blocken_desktop": 40,
+        "abstand_zwischen_blocken_mobile": 36,
+        "hover-effekt-opacity": 0.6
       }
     },
     "main": {
