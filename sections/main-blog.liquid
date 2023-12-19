@@ -78,6 +78,8 @@
               <ul
                 class="link-bar__linklist list--unstyled"
                 role="list">
+                
+                {%- if section.settings.show_all -%}
                 <li class="link-bar__link-item {% if current_tags == blank %}link-bar__link-item--selected{% endif %}">
                   <a
                     href="{{ blog.url }}"
@@ -85,6 +87,7 @@
                     {{- 'blog.general.all_posts' | t -}}
                   </a>
                 </li>
+                {%- endif -%}
 
                 {%- for tag in blog.all_tags -%}
                   <li class="link-bar__link-item {% if current_tags contains tag %}link-bar__link-item--selected{% endif %}">
@@ -142,6 +145,12 @@
   "name": "Blog",
   "class": "shopify-section--main-blog",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_all",
+      "label": "Show all blog posts button",
+      "default": true
+    },
     {
       "type": "checkbox",
       "id": "show_blog_title",

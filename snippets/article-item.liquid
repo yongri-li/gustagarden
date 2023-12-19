@@ -6,7 +6,7 @@
   {%- if article.image -%}
     <a
       href="{{ article.url }}"
-      class="article-item__image-container mb-0">
+      class="article-item__image-container mb-1">
       {{-
         article.image
         | image_url: width: article.image.width
@@ -49,7 +49,7 @@
 
       <a
         href="{{ blog_url | remove_first: '/' }}/tagged/{{ article.tags.first | handle }}"
-        class="article-item__category heading heading--xsmall">
+        class="article-item__category heading heading--xsmall mb-0">
         {{- article.tags.first | replace: 'Category_', '' -}}
       </a>
     {%- endif -%}
