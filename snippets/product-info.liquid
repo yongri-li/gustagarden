@@ -21,13 +21,7 @@
       </h2>
     {%- endif -%}
 
-    <div class="flex flex-wrap gap-4">
-      {% for badge in product.metafields.custom.badges.value %}
-        <div class="bg-[#c7dd16] text-green-800 text-xs me-2 px-2.5 py-0.5 font-bold">
-          {{ badge }}
-        </div>
-      {% endfor %}
-    </div>
+    
 
     {% unless featured %}
       <h1 class="product-meta__title heading h3">{{ product.title }}</h1>
@@ -151,6 +145,10 @@
             {{- 'collection.product.discount_html' | t: savings: savings -}}
           </span>
         {%- endunless -%}
+
+        {% for badge in product.metafields.custom.badges.value %}
+          <span class="label label--custom">{{ badge }}</span>
+        {% endfor %}
       </div>
     </div>
 
