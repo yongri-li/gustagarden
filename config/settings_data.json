@@ -18,6 +18,7 @@
     "secondary_button_text_color": "#484b42",
     "product_rating_color": "#c8dd02",
     "product_on_sale_accent": "#d2545a",
+    "product_sold_out_accent": "#484b42",
     "product_custom_label_background": "#c8dd02",
     "product_custom_label_2_background": "#f3ff34",
     "product_in_stock_text_color": "#2e9e7b",
@@ -294,7 +295,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".restock-rocket-button {text-transform: uppercase; font-family: \"Poppins\", poppins; text-align: center; line-height: inherit; }"
+      ".restock-rocket-button {text-transform: uppercase; font-family: \"Poppins\", poppins; text-align: center; line-height: inherit;}"
     ]
   }
 }
