@@ -7,7 +7,7 @@
         "section_height": "small",
         "image": "shopify:\/\/shop_images\/HH_lp_46a91ed8-4373-45cf-8e9b-70f9d10126fd.jpg",
         "subheading": "",
-        "title": "Anleitungen",
+        "title": "Anleitungen1",
         "content": "<p>Hier findest du Schritt-für-Schritt-Anleitungen zu allen Gusta Garden Produkten. Du hast noch weitere Fragen? Viele hilfreiche Antworten findest du in unseren <a href=\"https:\/\/www.gustagarden.com\/faq\/\">FAQs<\/a>. Solltest du auch hier nicht fündig werden, zögere nicht, uns unter <a href=\"mailto:office@gustagarden.com\">office@gustagarden.com<\/a> zu kontaktieren.<\/p>",
         "button_text": "",
         "button_link": "",
@@ -25,7 +25,7 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
-        ".link-bar__linklist li:first-of-type{display: none!important;}"
+        ".link-bar__linklist li:first-of-type {display: none !important;}"
       ],
       "settings": {
         "show_all": false,
