@@ -170,6 +170,7 @@
 
           {%- if blog_post_info != blank -%}
             <div class="article__info p-0 border-none hidden md:!grid">
+              {%- if section.settings.show_author -%}
               <div class="flex flex-col justify-center items-center gap-2">
                 <div class="rounded-full w-24 h-24 aspect-square overflow-hidden">
                   {{
@@ -184,6 +185,7 @@
                   </div>
                 </div>
               </div>
+              {%- endif -%}
               <div>
                 <div class="flex flex-wrap gap-4">
                   {% for file in article.metafields.custom.downloads.value %}
