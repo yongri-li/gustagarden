@@ -20,6 +20,7 @@
         "template--16337048010925__641919ad-8e55-4633-9146-581c86bfafda-block-1": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.png",
             "heading": "HARRY HERBS",
             "url": "",
             "highlight": false
@@ -28,6 +29,7 @@
         "template--16337048010925__641919ad-8e55-4633-9146-581c86bfafda-block-2": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/sammy-salad.png",
             "heading": "SAMMY SALAD",
             "url": "",
             "highlight": false
@@ -36,6 +38,7 @@
         "template--16337048010925__641919ad-8e55-4633-9146-581c86bfafda-block-3": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit_e63cceda-1792-4458-8546-ca74fb095fce.png",
             "heading": "PAUL POTATO",
             "url": "",
             "highlight": false
