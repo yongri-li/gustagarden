@@ -26,6 +26,20 @@
     },
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f": {
       "type": "codext-rezept-products",
+      "blocks": {
+        "a2250dd5-ef52-458c-9fee-d8962dd02b62": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "a2250dd5-ef52-458c-9fee-d8962dd02b62"
+      ],
       "settings": {
         "subheading": "",
         "title": "RELEVANTE PRODUKTE",
