@@ -47,6 +47,7 @@
         "d1e1bca4-0978-4c26-bb12-47d51a55bbf6": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-hanging_weiss_7faf8466-d80a-4379-9915-83c89385ade9.png",
             "heading": "SISSI STRAWBERRY",
             "url": "",
             "highlight": false
@@ -55,6 +56,7 @@
         "a7ff31a6-00d2-4c88-a4fd-54a68ef68e41": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/TOM_TOMATO_cut_2.png",
             "heading": "TOM TOMATO",
             "url": "",
             "highlight": false
@@ -63,6 +65,7 @@
         "02a2e911-1d30-4537-8d1b-b7978f16c4f1": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/100710_CHARLYCHILI_lightgray.png",
             "heading": "CHARLY CHILI",
             "url": "",
             "highlight": false
