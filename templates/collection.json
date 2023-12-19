@@ -30,15 +30,6 @@
             "highlight": false
           }
         },
-        "d1e1bca4-0978-4c26-bb12-47d51a55bbf6": {
-          "type": "block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-hanging_weiss_7faf8466-d80a-4379-9915-83c89385ade9.png",
-            "heading": "SISSI STRAWBERRY",
-            "url": "",
-            "highlight": false
-          }
-        },
         "a7ff31a6-00d2-4c88-a4fd-54a68ef68e41": {
           "type": "block",
           "settings": {
@@ -53,6 +44,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/100710_CHARLYCHILI_lightgray.png",
             "heading": "CHARLY CHILI",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "d1e1bca4-0978-4c26-bb12-47d51a55bbf6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-hanging_weiss_7faf8466-d80a-4379-9915-83c89385ade9.png",
+            "heading": "SISSI STRAWBERRY",
             "url": "",
             "highlight": false
           }
@@ -89,9 +89,9 @@
         "template--16337048010925__641919ad-8e55-4633-9146-581c86bfafda-block-1",
         "template--16337048010925__641919ad-8e55-4633-9146-581c86bfafda-block-2",
         "template--16337048010925__641919ad-8e55-4633-9146-581c86bfafda-block-3",
-        "d1e1bca4-0978-4c26-bb12-47d51a55bbf6",
         "a7ff31a6-00d2-4c88-a4fd-54a68ef68e41",
         "02a2e911-1d30-4537-8d1b-b7978f16c4f1",
+        "d1e1bca4-0978-4c26-bb12-47d51a55bbf6",
         "adcbbc90-918d-4850-aa91-9c0431a7a33f",
         "7e8cc023-c7d5-4f81-9f15-9b26429cd5ad",
         "5137acca-13d5-4355-bce7-27e5eab16f3b"
