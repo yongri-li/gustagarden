@@ -294,7 +294,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".restock-rocket-button-container {text-align: center; text-transform: uppercase;}"
+      ".restock-rocket-button-container {text-align: center; text-transform: uppercase !important;}"
     ]
   }
 }
