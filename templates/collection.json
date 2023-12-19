@@ -101,6 +101,9 @@
         "7e8cc023-c7d5-4f81-9f15-9b26429cd5ad",
         "5137acca-13d5-4355-bce7-27e5eab16f3b"
       ],
+      "custom_css": [
+        "{text-transform: uppercase;}"
+      ],
       "settings": {
         "background-color": "#f2f2f2",
         "max-show": 600,
