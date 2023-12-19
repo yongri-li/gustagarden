@@ -52,6 +52,14 @@
       </div>
     {%- endif -%}
 
+    <div class="flex flex-wrap gap-4 absolute top-2 left-2">
+      {% for badge in product.metafields.custom.badges.value %}
+        <div class="bg-[#c7dd16] text-green-800 text-xs me-2 px-2.5 py-0.5 font-bold">
+          {{ badge }}
+        </div>
+      {% endfor %}
+    </div>
+
     <a
       href="{{ product.url }}"
       data-instant
