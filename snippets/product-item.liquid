@@ -17,7 +17,8 @@
 {%- endif -%}
 
 <product-item
-  class="product-item {% unless product.available %}product-item--sold-out{% endunless %}"
+  style="background-color: #F5F5F5;"
+  class="product-item shadow-lg pb-2 {% unless product.available %}product-item--sold-out{% endunless %}"
   {% if reveal %}
     reveal
   {% endif %}>
