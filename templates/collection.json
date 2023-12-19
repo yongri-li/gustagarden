@@ -104,12 +104,12 @@
       "settings": {
         "background-color": "#f2f2f2",
         "max-show": 600,
-        "abgerundete_ecken": 50,
+        "abgerundete_ecken": 0,
         "schriftart": "sans-serif",
         "schriftfarbe": "#000000",
         "highlight-color": "#c4258d",
-        "abstand_zwischen_blocken_desktop": 18,
-        "abstand_zwischen_blocken_mobile": 18,
+        "abstand_zwischen_blocken_desktop": 25,
+        "abstand_zwischen_blocken_mobile": 25,
         "hover-effekt-opacity": 0.8
       }
     },
