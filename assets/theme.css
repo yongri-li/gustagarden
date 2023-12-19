@@ -17037,8 +17037,8 @@ shopify-payment-terms {
     0 0 0 8px rgb(var(--section-dot-background)) inset,
     0 1px 5px #00000026;
   border-radius: 100%;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   display: block;
   position: relative;
 }
@@ -17046,7 +17046,7 @@ shopify-payment-terms {
 @keyframes shopTheLookDotKeyframe {
   0% {
     opacity: 1;
-    transform: scale(0.4);
+    transform: scale(0.6);
   }
 
   100% {
@@ -17059,12 +17059,12 @@ shopify-payment-terms {
   content: '';
   border: 2px solid rgba(var(--section-dot-background), 0.6);
   border-radius: 100%;
-  width: 32px;
-  height: 32px;
+  width: 54px;
+  height: 54px;
   animation: 2s ease-in-out infinite shopTheLookDotKeyframe;
   position: absolute;
-  top: -4px;
-  left: -4px;
+  top: -7px;
+  left: -7px;
 }
 
 .shop-the-look__product-wrapper {
