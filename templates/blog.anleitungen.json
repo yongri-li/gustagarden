@@ -8,7 +8,7 @@
         "image": "shopify:\/\/shop_images\/HH_lp_46a91ed8-4373-45cf-8e9b-70f9d10126fd.jpg",
         "subheading": "",
         "title": "Anleitungen",
-        "content": "",
+        "content": "<p>Hier findest du Schritt-für-Schritt-Anleitungen zu allen Gusta Garden Produkten. Du hast noch weitere Fragen? Viele hilfreiche Antworten findest du in unseren <a href=\"https:\/\/www.gustagarden.com\/faq\/\">FAQs<\/a>. Solltest du auch hier nicht fündig werden, zögere nicht, uns unter <a href=\"mailto:office@gustagarden.com\">office@gustagarden.com<\/a> zu kontaktieren.<\/p>",
         "button_text": "",
         "button_link": "",
         "link_style": "link",
@@ -22,30 +22,13 @@
         "overlay_opacity": 30
       }
     },
-    "b14ddba5-2dcd-4b65-abe4-65e4fab7a897": {
-      "type": "rich-text",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "content": "<p>Hier findest du Schritt-für-Schritt-Anleitungen zu allen Gusta Garden Produkten. Du hast noch weitere Fragen? Viele hilfreiche Antworten findest du in unseren <a href=\"https:\/\/www.gustagarden.com\/faq\/\">FAQs<\/a>. Solltest du auch hier nicht fündig werden, zögere nicht, uns unter <a href=\"mailto:office@gustagarden.com\">office@gustagarden.com<\/a> zu kontaktieren.<\/p>",
-        "button_text": "",
-        "button_link": "",
-        "background_type": "full_width",
-        "text_width": "large",
-        "text_position": "left",
-        "text_alignment": "left",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
     "main": {
       "type": "main-blog",
       "settings": {
+        "show_all": false,
         "show_blog_title": false,
-        "show_tags": false,
-        "show_category": false,
+        "show_tags": true,
+        "show_category": true,
         "show_excerpt": true,
         "articles_per_page": 9
       }
@@ -158,7 +141,6 @@
   },
   "order": [
     "7271de26-ba74-415b-b75f-bffeb21f4c63",
-    "b14ddba5-2dcd-4b65-abe4-65e4fab7a897",
     "main",
     "ff8f5d7c-20e5-4123-8150-26d7fe903827",
     "04314064-0967-4755-b0f1-a896ce24ccf8"
