@@ -25,6 +25,7 @@
     "main": {
       "type": "main-blog",
       "settings": {
+        "show_all": false,
         "show_blog_title": false,
         "show_tags": true,
         "show_category": true,
