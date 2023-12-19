@@ -20,7 +20,7 @@
         "template--16337048010925__641919ad-8e55-4633-9146-581c86bfafda-block-1": {
           "type": "block",
           "settings": {
-            "heading": "Linkname",
+            "heading": "HARRY HERBS",
             "url": "",
             "highlight": false
           }
@@ -28,7 +28,7 @@
         "template--16337048010925__641919ad-8e55-4633-9146-581c86bfafda-block-2": {
           "type": "block",
           "settings": {
-            "heading": "Linkname",
+            "heading": "SAMMY SALAD",
             "url": "",
             "highlight": false
           }
@@ -106,7 +106,7 @@
         "max-show": 600,
         "abgerundete_ecken": 50,
         "schriftart": "sans-serif",
-        "schriftfarbe": "#000",
+        "schriftfarbe": "#000000",
         "highlight-color": "#c4258d",
         "abstand_zwischen_blocken_desktop": 18,
         "abstand_zwischen_blocken_mobile": 18,
