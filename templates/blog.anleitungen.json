@@ -32,7 +32,7 @@
         "show_all": false,
         "show_blog_title": false,
         "show_tags": true,
-        "show_category": true,
+        "show_category": false,
         "show_excerpt": true,
         "articles_per_page": 9
       }
