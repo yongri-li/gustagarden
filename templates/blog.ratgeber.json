@@ -38,51 +38,6 @@
         "articles_per_page": 9
       }
     },
-    "ff8f5d7c-20e5-4123-8150-26d7fe903827": {
-      "type": "promotion-blocks",
-      "blocks": {
-        "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-image-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_20191014_161504_1000x730_d6dbbb76-6742-4228-a40b-16bc0e9629f4.jpg",
-            "highlight": false,
-            "subheading": "",
-            "title": "",
-            "link_text": "REad our story",
-            "link_url": "",
-            "link_style": "button",
-            "text_position": "middle_center",
-            "background": "#000000",
-            "text_color": "#000000",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000"
-          }
-        },
-        "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-quote-1": {
-          "type": "quote",
-          "settings": {
-            "highlight": false,
-            "subheading": "Subheading",
-            "content": "Use this text to share information about your brand with your customers.",
-            "author": "John S.",
-            "background": "#c8dd02",
-            "text_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-image-2",
-        "template--16337047978157__ff8f5d7c-20e5-4123-8150-26d7fe903827-quote-1"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "section_size": "small",
-        "stack_on_mobile": true,
-        "background": "#c8dd02",
-        "text_color": "#ffffff"
-      }
-    },
     "04314064-0967-4755-b0f1-a896ce24ccf8": {
       "type": "collection-list",
       "blocks": {
@@ -147,7 +102,6 @@
   "order": [
     "7271de26-ba74-415b-b75f-bffeb21f4c63",
     "main",
-    "ff8f5d7c-20e5-4123-8150-26d7fe903827",
     "04314064-0967-4755-b0f1-a896ce24ccf8"
   ]
 }
