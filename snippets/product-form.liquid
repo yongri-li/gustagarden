@@ -494,6 +494,11 @@
           -%}
         </div>
 
+      {%- when 'save-in-set-static' %}
+        <div>
+          {%- render 'save-in-set-static', settings: block.settings -%}
+        </div>
+
         {%- comment -%}
           ----------------------------------------------------------------------------------------------------------------
           QUANTITY SELECTOR
