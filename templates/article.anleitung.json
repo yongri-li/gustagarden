@@ -1,7 +1,30 @@
 {
   "sections": {
+    "b5c5a4e2-fab3-48cb-b8db-67ecdf79971e": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "medium",
+        "image": "{{ article.image }}",
+        "subheading": "",
+        "title": "{{ article.title }}",
+        "content": "<p>{{ shop.brand.short_description }}<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "bottom_left",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "blog-post-banner": {
       "type": "blog-post-banner",
+      "disabled": true,
       "custom_css": [
         "img {max-height: 500px;}"
       ],
@@ -19,7 +42,9 @@
         "show_tags": true,
         "show_date": false,
         "show_share_buttons": false,
-        "show_content": false
+        "show_content": false,
+        "show_steps": true,
+        "show_faqs": true
       }
     },
     "27d37aa7-7f41-47aa-9f84-2247a792667a": {
@@ -122,6 +147,7 @@
     }
   },
   "order": [
+    "b5c5a4e2-fab3-48cb-b8db-67ecdf79971e",
     "blog-post-banner",
     "main",
     "27d37aa7-7f41-47aa-9f84-2247a792667a",
