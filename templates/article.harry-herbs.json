@@ -1,7 +1,30 @@
 {
   "sections": {
+    "b5c5a4e2-fab3-48cb-b8db-67ecdf79971e": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "medium",
+        "image": "{{ article.image }}",
+        "subheading": "",
+        "title": "{{ article.title }}",
+        "content": "<p>{{ shop.brand.short_description }}<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "bottom_left",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "blog-post-banner": {
       "type": "blog-post-banner",
+      "disabled": true,
       "custom_css": [
         "img {max-height: 500px;}"
       ],
@@ -9,23 +32,6 @@
         "show_category": true,
         "blog_header_background": "#f5f5f5",
         "blog_header_text_color": "#282828"
-      }
-    },
-    "1703150347954dc458": {
-      "type": "apps",
-      "blocks": {
-        "eaab3f65-e1b6-45d7-b24d-4319d4ef8c9c": {
-          "type": "shopify:\/\/apps\/table-of-contents\/blocks\/theme-extension\/d06f5754-affb-4dc7-a2a9-18d74d225f70",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "eaab3f65-e1b6-45d7-b24d-4319d4ef8c9c"
-      ],
-      "settings": {
-        "include_horizontal_margins": true,
-        "include_vertical_margins": true
       }
     },
     "main": {
@@ -37,14 +43,35 @@
         "show_date": false,
         "show_share_buttons": false,
         "show_content": false,
-        "show_steps": false,
-        "show_faqs": false
+        "show_steps": true,
+        "show_faqs": true
       }
     },
-    "24af79c8-88e8-4c2b-8351-5ca652fd1b1f": {
+    "27d37aa7-7f41-47aa-9f84-2247a792667a": {
+      "type": "codext-gallery-metafield",
+      "blocks": {
+        "18dd4370-4084-4d0e-9011-44e6968a1f77": {
+          "type": "image",
+          "settings": {
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "18dd4370-4084-4d0e-9011-44e6968a1f77"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Bilder",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "62cb6170-fd1d-4b4b-bb0b-95ecdad69121": {
       "type": "codext-rezept-products",
       "blocks": {
-        "a2250dd5-ef52-458c-9fee-d8962dd02b62": {
+        "e63cfaf2-986f-4e77-a706-fc231879b6c7": {
           "type": "collection",
           "settings": {
             "collection": "",
@@ -55,15 +82,15 @@
         }
       },
       "block_order": [
-        "a2250dd5-ef52-458c-9fee-d8962dd02b62"
+        "e63cfaf2-986f-4e77-a706-fc231879b6c7"
       ],
       "settings": {
         "subheading": "",
-        "title": "RELEVANTE PRODUKTE",
+        "title": "Produkte für dein Rezept",
         "content": "",
-        "products_count": 8,
-        "products_per_row": 4,
-        "stack_products": true,
+        "products_count": 4,
+        "products_per_row": 3,
+        "stack_products": false,
         "show_cta": false,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
@@ -76,6 +103,42 @@
       "settings": {
       }
     },
+    "46382bc0-a5c0-428d-a85d-70532faa0095": {
+      "type": "codext-blog-author",
+      "settings": {
+      }
+    },
+    "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16337048666285__b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "paul-potato",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048666285__b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1-collection-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Produkte für dein Rezept",
+        "content": "",
+        "products_count": 4,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "blog-post-comments": {
       "type": "blog-post-comments",
       "settings": {
@@ -84,11 +147,14 @@
     }
   },
   "order": [
+    "b5c5a4e2-fab3-48cb-b8db-67ecdf79971e",
     "blog-post-banner",
-    "1703150347954dc458",
     "main",
-    "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
+    "27d37aa7-7f41-47aa-9f84-2247a792667a",
+    "62cb6170-fd1d-4b4b-bb0b-95ecdad69121",
     "blog-post-prev-next",
+    "46382bc0-a5c0-428d-a85d-70532faa0095",
+    "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1",
     "blog-post-comments"
   ]
 }
