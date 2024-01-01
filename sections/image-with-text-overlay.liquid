@@ -127,6 +127,11 @@
                 {%- if section.settings.content != blank-%}
                   {{- section.settings.content -}}
                 {%- endif -%}
+                {%- if article.excerpt != blank -%}
+                  <div class="article__excerpt">
+                    {{- article.excerpt -}}
+                  </div>
+                {%- endif -%}
 
                 {%- if section.settings.button_text != blank -%}
                   {%- if section.settings.link_style == 'link' -%}
