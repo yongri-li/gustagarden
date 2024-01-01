@@ -46,6 +46,7 @@
 
 {%- assign size =  article.metafields.custom.bilder | split: ',' | uniq -%}
 
+{% if article.metafields.custom.bilder.value != blank %}
 <section class="article section {% unless blends_with_background %}section--flush{% endunless %}">
   <div class="section__color-wrapper container {% unless blends_with_background %}vertical-breather{% endunless %}">
     <div class="article__inner">
@@ -157,7 +158,7 @@
     </div>
   </div>
 </section>
-
+{% endif %}
 {% schema %}
 {
   "name": "c/ Gallery Metafield",
