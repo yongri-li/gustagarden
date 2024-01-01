@@ -1,5 +1,27 @@
 {
   "sections": {
+    "ada6c36e-1960-47cf-85bf-c77e2734c0ed": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "small",
+        "image": "{{ article.image }}",
+        "subheading": "",
+        "title": "{{ article.title }}",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "bottom_left",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "blog-post-banner": {
       "type": "blog-post-banner",
       "custom_css": [
@@ -84,6 +106,7 @@
     }
   },
   "order": [
+    "ada6c36e-1960-47cf-85bf-c77e2734c0ed",
     "blog-post-banner",
     "1703150347954dc458",
     "main",
