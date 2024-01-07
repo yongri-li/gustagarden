@@ -11,7 +11,7 @@
         "fff5100c-5ff6-462e-9771-01ed6285b80f": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"lb-pdp-benefits\">\n  {% if product.metafields.custom.usp1 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp1 }}<\/p>\n  <\/div>\n  {% endif %}\n  {% if product.metafields.custom.usp2 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp2 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp3 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp3 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp4 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp4 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp5 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp5 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp6 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp6 }}<\/p>\n  <\/div>\n  {% endif %}\n<\/div>\n\n<style>\n  .lb-pdp-benefits {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n    margin-left: 0px !important;\n    margin-right: 0px !important;\n  }\n  .lb-pdp-benefits div {\n    font-size: 14px !important; \/* Change font size *\/\n    line-height: 18px !important;\n    margin-bottom: 9px !important;\n    display: flex !important;\n    align-items: center !important;\n    overflow: hidden !important;\n  }\n  .lb-pdp-benefits img {\n    max-width: 24px !important;\n    margin-right: 9px !important;\n  }\n  .lb-pdp-benefits p {\n    width: 100% !important;\n    display: block !important;\n    margin: 0px !important;\n  }\n<\/style>"
+            "liquid": "{% render 'codext-pdp-usp', product: product %}"
           }
         },
         "variant_picker": {
@@ -63,7 +63,7 @@
           "settings": {
             "product": "charly-chili-samen-mix",
             "btn_label": "PASSEND DAZU",
-            "background_color": "#F5F5F5"
+            "background_color": "#f5f5f5"
           }
         }
       },
