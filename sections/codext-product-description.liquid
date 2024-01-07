@@ -1,12 +1,35 @@
 {%- if product.description -%}
-  <div class="container mx-auto">
+  <div class="container mx-auto py-8">
     {{- product.description -}}
   </div>
+  <style>
+    .codext-product-description img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .codext-product-description table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .codext-product-description table th, .codext-product-description table td {
+        text-align: left;
+        padding: 5px;
+    }
+    .codext-product-description table a {
+        color: #c7dd16;
+    }
+    
+  </style>
 {%- endif -%}
+
+
 
 {% schema %}
   {
     "name": "c/ Product description",
+    "class": "codext-product-description",
     "tag": "section",
     "disabled_on": {
       "groups": ["header"]
