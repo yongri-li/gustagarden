@@ -77,7 +77,7 @@
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": true,
-        "show_product_rating": true,
+        "show_product_rating": false,
         "show_sticky_add_to_cart": true,
         "show_share_buttons": false,
         "help_page": "contact",
@@ -103,6 +103,45 @@
     },
     "8871f57c-0dc2-4eb2-8f67-407633af680c": {
       "type": "codext-product-description",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "KUNDEN KAUFTEN AUCH"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a": {
+          "type": "trust",
+          "disabled": true,
+          "settings": {
+            "icon_1": "picto-customer-support",
+            "title_1": "Shipping & Returns",
+            "content_1": "<p>Add text about your shipping policy<\/p>",
+            "icon_2": "picto-warranty",
+            "title_2": "Warranty",
+            "content_2": "<p>Add text about your product warranty<\/p>",
+            "icon_3": "picto-secure-payment",
+            "title_3": "Secure Payment",
+            "content_3": "<p>Add text about your payment<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd",
+        "description",
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
+      ],
       "settings": {
       }
     },
@@ -160,46 +199,6 @@
         "background": "#c8dd02",
         "text_color": "#ffffff",
         "stack_on_mobile": false
-      }
-    },
-    "product-content": {
-      "type": "product-content",
-      "blocks": {
-        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd": {
-          "type": "complementary_products",
-          "settings": {
-            "title": "Spare im Set!"
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "0e38ad27-e55b-480b-86a5-4fbad5113a4a": {
-          "type": "trust",
-          "disabled": true,
-          "settings": {
-            "icon_1": "picto-customer-support",
-            "title_1": "Shipping & Returns",
-            "content_1": "<p>Add text about your shipping policy<\/p>",
-            "icon_2": "picto-warranty",
-            "title_2": "Warranty",
-            "content_2": "<p>Add text about your product warranty<\/p>",
-            "icon_3": "picto-secure-payment",
-            "title_3": "Secure Payment",
-            "content_3": "<p>Add text about your payment<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd",
-        "description",
-        "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
-      ],
-      "disabled": true,
-      "settings": {
       }
     },
     "520562c2-a265-4177-9598-fab3a8b9bb6e": {
@@ -434,8 +433,8 @@
   "order": [
     "main",
     "8871f57c-0dc2-4eb2-8f67-407633af680c",
-    "fa904b10-27d1-443c-94fe-c2665f356d34",
     "product-content",
+    "fa904b10-27d1-443c-94fe-c2665f356d34",
     "520562c2-a265-4177-9598-fab3a8b9bb6e",
     "170008645861baa2bc",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
