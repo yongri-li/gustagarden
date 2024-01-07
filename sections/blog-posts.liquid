@@ -1,15 +1,3 @@
-{% comment %}codext{% endcomment %}
-{% paginate blogs['Ratgeber'].articles by 1000 %}
-  {% assign tag_to_filter = "Category_HARRY HERBS" | downcase %}
-  {% for article in blogs['Ratgeber'].articles %}
-    {% assign lowercase_tags = article.tags | join: "," | downcase | split: "," %}
-    {% if lowercase_tags contains tag_to_filter %}
-      {{ article | json }}
-    {% endif %}
-  {% endfor %}
-{% endpaginate %}
-{% comment %}endcodext{% endcomment %}
-
 {%- assign blog = section.settings.blog -%}
 
 
