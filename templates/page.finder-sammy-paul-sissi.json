@@ -76,8 +76,12 @@
         "626d46f0-5e0d-4c47-a709-9d5124f56134",
         "5303b379-939c-4ce5-8bab-e858dc7785e2"
       ],
+      "custom_css": [
+        ".text-left {color: gray;}",
+        ".rounded {border-radius: 0px;}"
+      ],
       "settings": {
-        "primary_color": "#166534",
+        "primary_color": "#c8dd02",
         "background_color": "#ffffff",
         "title": ""
       }
