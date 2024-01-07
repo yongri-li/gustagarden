@@ -14,6 +14,8 @@
         "template--16541079109805__2c374c87-7c3d-4310-a674-6e9b13135990-image-1": {
           "type": "image",
           "settings": {
+            "image": "{{ page.metafields.custom.finder_desktop_image.value }}",
+            "mobile_image": "{{ page.metafields.custom.finder_mobile_image.value }}",
             "text_position": "middle_center",
             "subheading": "",
             "title": "{{ page.metafields.custom.finder_titel.value }}",
