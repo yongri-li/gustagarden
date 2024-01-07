@@ -39,7 +39,7 @@
       ],
       "settings": {
         "quick_nav_menu": "",
-        "section_height": "auto",
+        "section_height": "small",
         "transition_type": "sweep",
         "autoplay": true,
         "cycle_speed": 5,
