@@ -58,11 +58,12 @@
             "liquid": "{% assign current_handle = request.path | split: '\/' | last %}\n{% assign desired_product_handle = '7427791225005' %}\n{% assign upsell_product_handle = '7427791290541' %}\n\n{% if current_handle == desired_product_handle %}\n  {% assign upsell_product = all_products[upsell_product_handle] %}\n\n  <div class=\"upsell\">\n    <h3>Empfohlene Produkte<\/h3>\n    \n    {% if upsell_product.available %}\n      <div class=\"upsell-product\">\n        <a href=\"{{ upsell_product.url }}\">\n          <img src=\"{{ upsell_product.featured_image | img_url: '300x300' }}\" alt=\"{{ upsell_product.title }}\">\n          <p>{{ upsell_product.title }}<\/p>\n          <p>{{ upsell_product.price | money }}<\/p>\n        <\/a>\n      <\/div>\n    {% else %}\n      <p>Dieses Produkt ist derzeit nicht verfügbar.<\/p>\n    {% endif %}\n  <\/div>\n{% endif %}"
           }
         },
-        "24a105e1-a9d6-4ced-99db-87924cf74d49": {
-          "type": "save-in-set",
+        "2a6555a2-b12d-4a09-9e57-21a82d47f76e": {
+          "type": "save-in-set-static",
           "settings": {
-            "btn_label": "Zum Set",
-            "background_color": "#f5f5f5"
+            "product": "microgreens-nachfuellset",
+            "btn_label": "PASSEND DAZU",
+            "background_color": "#F5F5F5"
           }
         }
       },
@@ -75,12 +76,13 @@
         "buy_buttons",
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
         "723850fb-7702-4722-abf6-463a8b4acbb7",
-        "24a105e1-a9d6-4ced-99db-87924cf74d49"
+        "2a6555a2-b12d-4a09-9e57-21a82d47f76e"
       ],
       "custom_css": [
         "h1 {font-weight: bold;}"
       ],
       "settings": {
+        "show_metafield_badges": true,
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": true,
