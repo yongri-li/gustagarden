@@ -428,7 +428,7 @@
       }
     },
     "21236dfa-d553-4250-b4d6-d2d01535dc19": {
-      "type": "blog-posts",
+      "type": "codext-blog-posts",
       "custom_css": [
         ".article-item {background-color: #484b42; color: #fff; text-align: center; align-items: center; display: flex; flex-direction: column; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);}",
         "a {font-size: 18px; font-weight: 100; color: ;}",
@@ -437,6 +437,7 @@
         "h3 {font-weight: bold;}"
       ],
       "settings": {
+        "filter_tag": "Category_SISSI STRAWBERRY",
         "blog": "ratgeber",
         "subheading": "TIPPS & TRICKS RUND UM DAS THEMA URBAN GARDENING GEBEN.",
         "title": "UNSER RATGEBER",

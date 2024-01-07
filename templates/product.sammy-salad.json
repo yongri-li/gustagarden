@@ -405,11 +405,12 @@
       }
     },
     "21236dfa-d553-4250-b4d6-d2d01535dc19": {
-      "type": "blog-posts",
+      "type": "codext-blog-posts",
       "custom_css": [
         "h3 {font-weight: bold;}"
       ],
       "settings": {
+        "filter_tag": "Category_SAMMY SALAD",
         "blog": "ratgeber",
         "subheading": "TIPPS & TRICKS RUND UM DAS THEMA URBAN GARDENING GEBEN.",
         "title": "UNSER RATGEBER",
