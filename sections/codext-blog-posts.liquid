@@ -77,27 +77,17 @@
 
         {%- capture section_content -%}
           <article-list {% if settings.stagger_blog_posts_apparition %}stagger-apparition{% endif %} class="article-list article-list--section {% if use_featured_layout %}article-list--has-four{% endif %} {% unless section.settings.stack_mobile -%}article-list--scrollable{% else %}article-list--stacked{% endunless %} {% if use_featured_layout %}hidden-lap-and-up{% endif %}">
-            {%- for article in blog.articles limit: section.settings.articles_count -%}
-              {%- render 'article-item', article: article, heading_size: 'h4' -%}
-            {%- else -%}
-              {%- for i in (1..section.settings.articles_count) -%}
-                <div {% if settings.stagger_blog_posts_apparition %}reveal{% endif %} class="article-item">
-                  <div class="article-item__image-container">
-                    <div class="placeholder-image" style="padding-bottom: 75%">
-                      {{ 'image' | placeholder_svg_tag }}
-                    </div>
-                  </div>
-
-                  <div class="article-item__content">
-                    {%- if section.settings.show_category -%}
-                      <p class="article-item__category heading heading--xsmall">{{ 'general.onboarding.blog_post_category' | t }}</p>
-                    {%- endif -%}
-
-                    <h3 class="article-item__title heading h4 pt-2">{{ 'general.onboarding.blog_post_title' | t }}</h3>
-                  </div>
-                </div>
-              {%- endfor -%}
-            {%- endfor -%}
+            {% comment %}codext{% endcomment %}
+              {% paginate section.settings.blog.articles by 50 %}
+                {% assign tag_to_filter = section.settings.filter_tag | downcase %}
+                {% for article in blogs['Ratgeber'].articles %}
+                  {% assign lowercase_tags = article.tags | join: "," | downcase | split: "," %}
+                  {% if lowercase_tags contains tag_to_filter %}
+                    {%- render 'article-item', article: article, heading_size: 'h4' -%}
+                  {% endif %}
+                {% endfor %}
+              {% endpaginate %}
+            {% comment %}endcodext{% endcomment %}
           </article-list>
 
           {%- comment -%}
@@ -183,6 +173,12 @@
       "type": "blog",
       "id": "blog",
       "label": "Blog"
+    },
+    {
+      "type": "text",
+      "id": "filter_tag",
+      "label": "Filter Tag",
+      "info": "Put Tag: 'Category_HARRY HERBS' to Blog Posts"
     },
     {
       "type": "text",
