@@ -189,12 +189,13 @@
                               class="linklist list--unstyled"
                               role="list">
                               {%- for sub_sub_link in sub_link.links -%}
-                                <li class="linklist__item">
+                                <li class="codext-header__linklist-item linklist__item flex flex-col">
                                   <a
                                     href="{{ sub_sub_link.url }}"
                                     class="link--faded">
                                     {{- sub_sub_link.title -}}
                                   </a>
+                                  <span class="text-xs "></span>
                                 </li>
                               {%- endfor -%}
                             </ul>

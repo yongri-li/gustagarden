@@ -581,6 +581,31 @@
   }
 </script>
 
+<script>
+  function updateDescriptions(input) {
+      const lines = input.split('\n');
+      const entries = lines.map(line => {
+          const [name, desc] = line.split(',');
+          return { name: name.trim(), description: desc.trim() };
+      });
+
+      const items = document.querySelectorAll('.codext-header__linklist-item');
+
+      items.forEach(item => {
+          entries.forEach(entry => {
+              if (item.textContent.includes(entry.name)) {
+                  const span = item.querySelector('span');
+                  if (span) {
+                      span.textContent = entry.description;
+                  }
+              }
+          });
+      });
+  }
+
+  updateDescriptions(`{{ section.settings.item_description }}`);
+</script>
+
 {% schema %}
 {
   "name": "Header",
