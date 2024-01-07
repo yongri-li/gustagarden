@@ -2,11 +2,90 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "a9084708-ee25-4ca4-b40e-36c6c35b174d": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "{{ page.metafields.custom.finder_titel.value }}",
+        "content": "{{ page.metafields.custom.finder_beschreibung | metafield_tag }}",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#c8dd02",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "46d81fd3-a47b-4713-ab37-56d6aa4d55a7": {
+      "type": "codext-c-Product-Cards",
+      "blocks": {
+        "ab3769e8-6af2-4542-becc-14edc53ba7dc": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sammy-salad.png",
+            "title": "SAMMY SALAD",
+            "description": "Das Ganzjahres-Hochbeet. Unser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.",
+            "usp_1": "indoor & outdoor",
+            "usp_2": "inklusive Abdeckhaube",
+            "usp_3": "Beine aus Lärchenholz",
+            "usp_4": "Bewässerung mit Wassertank",
+            "link": "",
+            "button_text": ""
+          }
+        },
+        "626d46f0-5e0d-4c47-a709-9d5124f56134": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit_e63cceda-1792-4458-8546-ca74fb095fce.png",
+            "title": "PAUL POTATO",
+            "description": "Der platzsparende Kartoffelturm Paul Potato ist ideal für platzsparenden Kartoffelanbau auf Balkon oder Terrasse. Vertikales Design macht es einfach und effizient.",
+            "usp_1": "indoor & outdoor",
+            "usp_2": "kinderleichter Aufbau",
+            "usp_3": "Schutz vor Schädlingen",
+            "usp_4": "einfache Bewässerung",
+            "link": "",
+            "button_text": ""
+          }
+        },
+        "5303b379-939c-4ce5-8bab-e858dc7785e2": {
+          "type": "product_card",
+          "settings": {
+            "title": "SISSI STRAWBERRY",
+            "description": "Erdbeeren auf kleinem Raum. Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.",
+            "usp_1": "indoor & outdoor",
+            "usp_2": "kinderleichter Aufbau",
+            "usp_3": "Schutz vor Schädlingen",
+            "usp_4": "einfache Bewässerung",
+            "link": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "ab3769e8-6af2-4542-becc-14edc53ba7dc",
+        "626d46f0-5e0d-4c47-a709-9d5124f56134",
+        "5303b379-939c-4ce5-8bab-e858dc7785e2"
+      ],
+      "settings": {
+        "primary_color": "#166534",
+        "background_color": "#ffffff",
+        "title": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "a9084708-ee25-4ca4-b40e-36c6c35b174d",
+    "46d81fd3-a47b-4713-ab37-56d6aa4d55a7"
   ]
 }
