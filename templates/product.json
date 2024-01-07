@@ -101,6 +101,62 @@
         "product_slideshow_tooltip_6": ""
       }
     },
+    "fa904b10-27d1-443c-94fe-c2665f356d34": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/badge-bg.png",
+            "custom_icon_width": 65,
+            "title": "20.000+ ZUFRIEDENE KUNDEN",
+            "content": ""
+          }
+        },
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/return-bg.png",
+            "custom_icon_width": 65,
+            "title": "30 TAGE RÜCKGABERECHT",
+            "content": ""
+          }
+        },
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/versand-bg.png",
+            "custom_icon_width": 65,
+            "title": "VERSANDKOSTENFREI AB 70€",
+            "content": ""
+          }
+        },
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/efk.webp",
+            "custom_icon_width": 65,
+            "title": "EFK ZERTIFIZIERT",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-1",
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-2",
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-3",
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-4"
+      ],
+      "settings": {
+        "background": "#c8dd02",
+        "text_color": "#ffffff",
+        "stack_on_mobile": false
+      }
+    },
     "product-content": {
       "type": "product-content",
       "blocks": {
@@ -137,6 +193,7 @@
         "description",
         "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -371,6 +428,7 @@
   },
   "order": [
     "main",
+    "fa904b10-27d1-443c-94fe-c2665f356d34",
     "product-content",
     "520562c2-a265-4177-9598-fab3a8b9bb6e",
     "170008645861baa2bc",
