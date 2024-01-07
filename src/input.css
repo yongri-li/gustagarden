@@ -153,3 +153,6 @@ input:focus-within {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+.product-item-meta__title {
+  font-weight: bold;
+}

@@ -1533,6 +1533,10 @@ input:focus-within {
   visibility: visible;
 }
 
+.product-item-meta__title {
+  font-weight: bold;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
