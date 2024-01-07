@@ -95,7 +95,7 @@
             "image": "shopify:\/\/shop_images\/sammy-salad.png",
             "title": "SAMMY SALAD",
             "description": "Das Ganzjahres-Hochbeet. Unser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.",
-            "usp_1": "indoor & outdoor",
+            "usp_1": "ideal für den Balkon oder Terrasse",
             "usp_2": "inklusive Abdeckhaube",
             "usp_3": "Beine aus Lärchenholz",
             "usp_4": "Bewässerung mit Wassertank",
@@ -109,7 +109,7 @@
             "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit_e63cceda-1792-4458-8546-ca74fb095fce.png",
             "title": "PAUL POTATO",
             "description": "Der platzsparende Kartoffelturm Paul Potato ist ideal für platzsparenden Kartoffelanbau auf Balkon oder Terrasse. Vertikales Design macht es einfach und effizient.",
-            "usp_1": "indoor & outdoor",
+            "usp_1": "ideal für den Balkon oder Terrasse",
             "usp_2": "kinderleichter Aufbau",
             "usp_3": "Schutz vor Schädlingen",
             "usp_4": "einfache Bewässerung",
@@ -119,6 +119,7 @@
         },
         "5303b379-939c-4ce5-8bab-e858dc7785e2": {
           "type": "product_card",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-hanging_weiss_7faf8466-d80a-4379-9915-83c89385ade9.png",
             "title": "SISSI STRAWBERRY",
