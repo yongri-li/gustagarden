@@ -8,8 +8,30 @@
         "page_width": "medium"
       }
     },
+    "70ffc619-0f84-47c8-b2b6-4928e2503f41": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "subheading": "",
+        "title": "{{ page.metafields.custom.finder_titel.value }}",
+        "content": "{{ page.metafields.custom.finder_beschreibung | metafield_tag }}",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "a9084708-ee25-4ca4-b40e-36c6c35b174d": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "{{ page.metafields.custom.finder_titel.value }}",
@@ -89,6 +111,7 @@
   },
   "order": [
     "main",
+    "70ffc619-0f84-47c8-b2b6-4928e2503f41",
     "a9084708-ee25-4ca4-b40e-36c6c35b174d",
     "46d81fd3-a47b-4713-ab37-56d6aa4d55a7"
   ]
