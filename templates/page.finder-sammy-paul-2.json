@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "2c374c87-7c3d-4310-a674-6e9b13135990": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16541079109805__2c374c87-7c3d-4310-a674-6e9b13135990-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "{{ page.metafields.custom.finder_desktop_image.value }}",
+            "mobile_image": "{{ page.metafields.custom.finder_mobile_image.value }}",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "{{ page.metafields.custom.finder_titel.value }}",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--16541079109805__2c374c87-7c3d-4310-a674-6e9b13135990-image-1"
+      ],
+      "custom_css": [
+        "h3 {background-color: #c8dd02; padding: 20px; color: #fff; font-weight: 800;}"
+      ],
+      "settings": {
+        "quick_nav_menu": "",
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "menu_1_text": "",
+        "menu_2_text": "",
+        "quick_nav_title": ""
+      }
+    },
+    "3e9e9b8f-5b35-4741-b928-e78befdcf9ed": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "SO SCHMECKT DEIN GARTEN",
+        "content": "{{ page.metafields.custom.finder_beschreibung | metafield_tag }}",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "boxed",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "a9084708-ee25-4ca4-b40e-36c6c35b174d": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "{{ page.metafields.custom.finder_titel.value }}",
+        "content": "{{ page.metafields.custom.finder_beschreibung | metafield_tag }}",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#c8dd02",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "46d81fd3-a47b-4713-ab37-56d6aa4d55a7": {
+      "type": "codext-c-Product-Cards",
+      "blocks": {
+        "ab3769e8-6af2-4542-becc-14edc53ba7dc": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sammy-salad.png",
+            "title": "SAMMY SALAD",
+            "description": "Das Ganzjahres-Hochbeet. Unser Hochbeet Sammy Salad ermöglicht ganzjährigen Salatanbau auf kleinem Raum. Mit integriertem Wassertank und praktischer Wasserstandsanzeige.",
+            "usp_1": "indoor & outdoor",
+            "usp_2": "inklusive Abdeckhaube",
+            "usp_3": "Beine aus Lärchenholz",
+            "usp_4": "Bewässerung mit Wassertank",
+            "link": "shopify:\/\/collections\/sammy-salad",
+            "button_text": "Jetzt kaufen"
+          }
+        },
+        "626d46f0-5e0d-4c47-a709-9d5124f56134": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PAUL-POTATO-Starter_4Etagen_anthrazit_e63cceda-1792-4458-8546-ca74fb095fce.png",
+            "title": "PAUL POTATO",
+            "description": "Der platzsparende Kartoffelturm Paul Potato ist ideal für platzsparenden Kartoffelanbau auf Balkon oder Terrasse. Vertikales Design macht es einfach und effizient.",
+            "usp_1": "indoor & outdoor",
+            "usp_2": "kinderleichter Aufbau",
+            "usp_3": "Schutz vor Schädlingen",
+            "usp_4": "einfache Bewässerung",
+            "link": "shopify:\/\/collections\/paul-potato",
+            "button_text": "Jetzt kaufen"
+          }
+        },
+        "5303b379-939c-4ce5-8bab-e858dc7785e2": {
+          "type": "product_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-hanging_weiss_7faf8466-d80a-4379-9915-83c89385ade9.png",
+            "title": "SISSI STRAWBERRY",
+            "description": "Erdbeeren auf kleinem Raum. Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.",
+            "usp_1": "indoor & outdoor",
+            "usp_2": "kinderleichter Aufbau",
+            "usp_3": "Schutz vor Schädlingen",
+            "usp_4": "einfache Bewässerung",
+            "link": "shopify:\/\/collections\/sissi-strawberry",
+            "button_text": "Jetzt kaufen"
+          }
+        }
+      },
+      "block_order": [
+        "ab3769e8-6af2-4542-becc-14edc53ba7dc",
+        "626d46f0-5e0d-4c47-a709-9d5124f56134",
+        "5303b379-939c-4ce5-8bab-e858dc7785e2"
+      ],
+      "custom_css": [
+        ".text-left {color: gray;}",
+        ".rounded {border-radius: 0px;}"
+      ],
+      "settings": {
+        "primary_color": "#c8dd02",
+        "background_color": "#ffffff",
+        "title": ""
+      }
+    },
+    "e3b8fcd6-488b-4f8e-b453-e081c495fcbc": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16541079109805__e3b8fcd6-488b-4f8e-b453-e081c495fcbc-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "anzucht-amp-samen",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16541079109805__e3b8fcd6-488b-4f8e-b453-e081c495fcbc-collection-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "PASSEND DAZU:",
+        "content": "",
+        "products_count": 50,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "2c374c87-7c3d-4310-a674-6e9b13135990",
+    "3e9e9b8f-5b35-4741-b928-e78befdcf9ed",
+    "a9084708-ee25-4ca4-b40e-36c6c35b174d",
+    "46d81fd3-a47b-4713-ab37-56d6aa4d55a7",
+    "e3b8fcd6-488b-4f8e-b453-e081c495fcbc"
+  ]
+}
