@@ -61,7 +61,7 @@
         "3254d5b8-abf9-40c0-98e0-83965eec4ee7": {
           "type": "save-in-set",
           "settings": {
-            "btn_label": "Zum Set",
+            "btn_label": "Empfehlung",
             "background_color": "#F5F5F5"
           }
         }
