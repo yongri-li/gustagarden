@@ -80,12 +80,11 @@
       "block_order": [
         "a2250dd5-ef52-458c-9fee-d8962dd02b62"
       ],
-      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "RELEVANTE PRODUKTE",
         "content": "",
-        "products_count": 8,
+        "products_count": 4,
         "products_per_row": 4,
         "stack_products": true,
         "show_cta": false,
