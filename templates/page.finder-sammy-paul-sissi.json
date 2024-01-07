@@ -49,6 +49,24 @@
         "quick_nav_title": ""
       }
     },
+    "3e9e9b8f-5b35-4741-b928-e78befdcf9ed": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "SO SCHMECKT DEIN GARTEN",
+        "content": "{{ page.metafields.custom.finder_beschreibung | metafield_tag }}",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "boxed",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "a9084708-ee25-4ca4-b40e-36c6c35b174d": {
       "type": "rich-text",
       "disabled": true,
@@ -129,19 +147,31 @@
         "title": ""
       }
     },
-    "3e9e9b8f-5b35-4741-b928-e78befdcf9ed": {
-      "type": "rich-text",
+    "e3b8fcd6-488b-4f8e-b453-e081c495fcbc": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16541079109805__e3b8fcd6-488b-4f8e-b453-e081c495fcbc-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "anzucht-amp-samen",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16541079109805__e3b8fcd6-488b-4f8e-b453-e081c495fcbc-collection-1"
+      ],
       "settings": {
         "subheading": "",
-        "title": "SO SCHMECKT DEIN GARTEN",
-        "content": "{{ page.metafields.custom.finder_beschreibung | metafield_tag }}",
-        "button_text": "",
-        "button_link": "",
-        "background_type": "boxed",
-        "text_width": "large",
-        "text_position": "center",
-        "text_alignment": "center",
-        "background": "rgba(0,0,0,0)",
+        "title": "PASSEND DAZU:",
+        "content": "",
+        "products_count": 50,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "#ffffff",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
@@ -151,8 +181,9 @@
   "order": [
     "main",
     "2c374c87-7c3d-4310-a674-6e9b13135990",
+    "3e9e9b8f-5b35-4741-b928-e78befdcf9ed",
     "a9084708-ee25-4ca4-b40e-36c6c35b174d",
     "46d81fd3-a47b-4713-ab37-56d6aa4d55a7",
-    "3e9e9b8f-5b35-4741-b928-e78befdcf9ed"
+    "e3b8fcd6-488b-4f8e-b453-e081c495fcbc"
   ]
 }
