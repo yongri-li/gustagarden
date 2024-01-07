@@ -81,8 +81,8 @@
             "usp_2": "inklusive Abdeckhaube",
             "usp_3": "Beine aus Lärchenholz",
             "usp_4": "Bewässerung mit Wassertank",
-            "link": "",
-            "button_text": ""
+            "link": "shopify:\/\/collections\/sammy-salad",
+            "button_text": "Jetzt kaufen"
           }
         },
         "626d46f0-5e0d-4c47-a709-9d5124f56134": {
@@ -95,21 +95,22 @@
             "usp_2": "kinderleichter Aufbau",
             "usp_3": "Schutz vor Schädlingen",
             "usp_4": "einfache Bewässerung",
-            "link": "",
-            "button_text": ""
+            "link": "shopify:\/\/collections\/paul-potato",
+            "button_text": "Jetzt kaufen"
           }
         },
         "5303b379-939c-4ce5-8bab-e858dc7785e2": {
           "type": "product_card",
           "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-hanging_weiss_7faf8466-d80a-4379-9915-83c89385ade9.png",
             "title": "SISSI STRAWBERRY",
             "description": "Erdbeeren auf kleinem Raum. Mit Sissi Strawberry kannst du leckere Erdbeeren auf kleinem Raum anbauen, perfekt für Balkon oder Terrasse.",
             "usp_1": "indoor & outdoor",
             "usp_2": "kinderleichter Aufbau",
             "usp_3": "Schutz vor Schädlingen",
             "usp_4": "einfache Bewässerung",
-            "link": "",
-            "button_text": ""
+            "link": "shopify:\/\/collections\/sissi-strawberry",
+            "button_text": "Jetzt kaufen"
           }
         }
       },
