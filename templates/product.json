@@ -101,6 +101,11 @@
         "product_slideshow_tooltip_6": ""
       }
     },
+    "8871f57c-0dc2-4eb2-8f67-407633af680c": {
+      "type": "codext-product-description",
+      "settings": {
+      }
+    },
     "fa904b10-27d1-443c-94fe-c2665f356d34": {
       "type": "codext-Text-with-Icons",
       "blocks": {
@@ -428,6 +433,7 @@
   },
   "order": [
     "main",
+    "8871f57c-0dc2-4eb2-8f67-407633af680c",
     "fa904b10-27d1-443c-94fe-c2665f356d34",
     "product-content",
     "520562c2-a265-4177-9598-fab3a8b9bb6e",
