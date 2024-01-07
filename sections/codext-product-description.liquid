@@ -4,14 +4,16 @@
   </div>
   <style>
     .codext-product-description img {
-        max-width: 400px;
+        max-width: 80%;
         margin: 0 auto;
+        display: block;
     }
     .codext-product-description table {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
-        width: 100%;
+        width: fit-content;
+        margin: 0 auto;
     }
     .codext-product-description table th, .codext-product-description table td {
         text-align: left;
@@ -19,6 +21,12 @@
     }
     .codext-product-description table a {
         color: #c7dd16;
+    }
+
+    @media (max-width: 767px) {
+        .codext-product-description table {
+            width: 100%;
+        }
     }
     
   </style>
