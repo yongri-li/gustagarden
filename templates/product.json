@@ -77,7 +77,7 @@
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": true,
-        "show_product_rating": true,
+        "show_product_rating": false,
         "show_sticky_add_to_cart": true,
         "show_share_buttons": false,
         "help_page": "contact",
