@@ -57,6 +57,14 @@
           "settings": {
             "liquid": "{% assign current_handle = request.path | split: '\/' | last %}\n{% assign desired_product_handle = '7427791225005' %}\n{% assign upsell_product_handle = '7427791290541' %}\n\n{% if current_handle == desired_product_handle %}\n  {% assign upsell_product = all_products[upsell_product_handle] %}\n\n  <div class=\"upsell\">\n    <h3>Empfohlene Produkte<\/h3>\n    \n    {% if upsell_product.available %}\n      <div class=\"upsell-product\">\n        <a href=\"{{ upsell_product.url }}\">\n          <img src=\"{{ upsell_product.featured_image | img_url: '300x300' }}\" alt=\"{{ upsell_product.title }}\">\n          <p>{{ upsell_product.title }}<\/p>\n          <p>{{ upsell_product.price | money }}<\/p>\n        <\/a>\n      <\/div>\n    {% else %}\n      <p>Dieses Produkt ist derzeit nicht verfügbar.<\/p>\n    {% endif %}\n  <\/div>\n{% endif %}"
           }
+        },
+        "88b3297a-ae20-4b43-ae2b-6426901b13c7": {
+          "type": "save-in-set-static",
+          "settings": {
+            "product": "",
+            "btn_label": "Zum Set",
+            "background_color": "#F5F5F5"
+          }
         }
       },
       "block_order": [
@@ -67,12 +75,14 @@
         "38a03175-609a-40b5-9e4e-055fec879e76",
         "buy_buttons",
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
-        "723850fb-7702-4722-abf6-463a8b4acbb7"
+        "723850fb-7702-4722-abf6-463a8b4acbb7",
+        "88b3297a-ae20-4b43-ae2b-6426901b13c7"
       ],
       "custom_css": [
         "h1 {font-weight: bold;}"
       ],
       "settings": {
+        "show_metafield_badges": true,
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": true,
