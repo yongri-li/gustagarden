@@ -24,6 +24,7 @@
     },
     "blog-post-banner": {
       "type": "blog-post-banner",
+      "disabled": true,
       "custom_css": [
         "img {max-height: 500px;}"
       ],
@@ -79,6 +80,7 @@
       "block_order": [
         "a2250dd5-ef52-458c-9fee-d8962dd02b62"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "RELEVANTE PRODUKTE",
