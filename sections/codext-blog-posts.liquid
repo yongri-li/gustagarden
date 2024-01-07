@@ -71,6 +71,7 @@
               {% paginate blog.articles by 50 %}
                 {% assign tag_to_filter = section.settings.filter_tag | downcase %}
                 {% for article in blog.articles %}
+                  {% assign post_count = post_count | plus: 1 %}
                   {% assign lowercase_tags = article.tags | join: "," | downcase | split: "," %}
                   {% if lowercase_tags contains tag_to_filter %}
                     {%- render 'article-item', article: article, heading_size: 'h4' -%}
