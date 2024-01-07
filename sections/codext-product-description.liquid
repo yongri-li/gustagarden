@@ -1,0 +1,21 @@
+{%- if product.description -%}
+  <div class="container mx-auto">
+    {{- product.description -}}
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "c/ Product description",
+    "tag": "section",
+    "disabled_on": {
+      "groups": ["header"]
+    },
+    "presets": [
+      {
+        "name": "c/ Product description"
+
+      }
+    ]
+  }
+{% endschema %}
