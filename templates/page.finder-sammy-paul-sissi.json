@@ -8,25 +8,43 @@
         "page_width": "medium"
       }
     },
-    "70ffc619-0f84-47c8-b2b6-4928e2503f41": {
-      "type": "image-with-text-overlay",
+    "2c374c87-7c3d-4310-a674-6e9b13135990": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16541079109805__2c374c87-7c3d-4310-a674-6e9b13135990-image-1": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "{{ page.metafields.custom.finder_titel.value }}",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "template--16541079109805__2c374c87-7c3d-4310-a674-6e9b13135990-image-1"
+      ],
+      "custom_css": [
+        "h3 {background-color: #c8dd02; padding: 20px; color: #fff; font-weight: 800;}"
+      ],
       "settings": {
-        "reveal_on_scroll": true,
+        "quick_nav_menu": "",
         "section_height": "auto",
-        "subheading": "",
-        "title": "{{ page.metafields.custom.finder_titel.value }}",
-        "content": "{{ page.metafields.custom.finder_beschreibung | metafield_tag }}",
-        "button_text": "",
-        "button_link": "",
-        "link_style": "link",
-        "background_type": "full_width",
-        "text_width": "fill",
-        "text_position": "middle_center",
-        "text_color": "#ffffff",
-        "button_background": "#ffffff",
-        "button_text_color": "#000000",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "menu_1_text": "",
+        "menu_2_text": "",
+        "quick_nav_title": ""
       }
     },
     "a9084708-ee25-4ca4-b40e-36c6c35b174d": {
@@ -107,12 +125,31 @@
         "background_color": "#ffffff",
         "title": ""
       }
+    },
+    "3e9e9b8f-5b35-4741-b928-e78befdcf9ed": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "SO SCHMECKT DEIN GARTEN",
+        "content": "{{ page.metafields.custom.finder_beschreibung | metafield_tag }}",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "boxed",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "main",
-    "70ffc619-0f84-47c8-b2b6-4928e2503f41",
+    "2c374c87-7c3d-4310-a674-6e9b13135990",
     "a9084708-ee25-4ca4-b40e-36c6c35b174d",
-    "46d81fd3-a47b-4713-ab37-56d6aa4d55a7"
+    "46d81fd3-a47b-4713-ab37-56d6aa4d55a7",
+    "3e9e9b8f-5b35-4741-b928-e78befdcf9ed"
   ]
 }
