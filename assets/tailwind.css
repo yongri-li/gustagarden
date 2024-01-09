@@ -1586,7 +1586,7 @@ section div.article {
 }
 
 a.list-collections__item {
-  max-height: 500px !important;
+  max-height: 400px !important;
 }
 
 .hover\:cursor-pointer:hover {
