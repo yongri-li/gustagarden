@@ -415,6 +415,10 @@
   min-height: 100vh;
 }
 
+.\!w-auto {
+  width: auto !important;
+}
+
 .w-1\/4 {
   width: 25%;
 }

@@ -136,14 +136,14 @@
                             role="list">
                             {%- for sub_sub_link in sub_link.links -%}
                               <li
-                                class="codext-header__linklist-item mobile-nav__item flex flex-col"
+                                class="codext-header__linklist-item mobile-nav__item flex gap-2 items-center"
                                 data-level="3">
                                 <a
                                   href="{{ sub_sub_link.url }}"
-                                  class="mobile-nav__link">
+                                  class="mobile-nav__link !w-auto font-bold">
                                   {{- sub_sub_link.title -}}
                                 </a>
-                                <span class="text-xs "></span>
+                                <span class="inner-text"></span>
                               </li>
                             {%- endfor -%}
                           </ul>

@@ -594,7 +594,7 @@
       items.forEach(item => {
           entries.forEach(entry => {
               if (item.textContent.includes(entry.name)) {
-                  const span = item.querySelector('span');
+                  const span = item.querySelector('.inner-text');
                   if (span) {
                       span.textContent = entry.description;
                   }
