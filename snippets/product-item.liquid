@@ -389,6 +389,8 @@
         </div>
       </div>
 
+      <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
+
       {%- if settings.show_product_rating and reduced_content != true -%}
         <a
           class="product-item-meta__reviews-badge text--small"
