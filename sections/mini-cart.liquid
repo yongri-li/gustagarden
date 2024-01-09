@@ -541,6 +541,14 @@
           {{- 'cart.general.go_to_cart' | t -}}
         </a>
       {%- endif -%}
+
+      {%- if shop.enabled_payment_types.size > 0 -%}
+        <div class="flex justify-around pt-4">
+          {%- for type in shop.enabled_payment_types -%}
+            {{- type | payment_type_svg_tag -}}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
     </footer>
   {%- endif -%}
 

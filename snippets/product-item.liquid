@@ -17,8 +17,7 @@
 {%- endif -%}
 
 <product-item
-  style="background-color: #F5F5F5;"
-  class="product-item shadow-lg pb-2 {% unless product.available %}product-item--sold-out{% endunless %}"
+  class="product-item pb-2 {% unless product.available %}product-item--sold-out{% endunless %}"
   {% if reveal %}
     reveal
   {% endif %}>
@@ -239,6 +238,12 @@
         class="product-item-meta__title">
         {{- product.title -}}
       </a>
+
+      {% if product.metafields.custom.kurzbeschreibung != blank %}
+        <div class="text-sm text-left px-3">
+          {{product.metafields.custom.kurzbeschreibung  |  metafield_tag}}
+        </div>
+      {% endif %}
 
       <div class="product-item-meta__price-list-container">
         <div class="price-list price-list--centered">
