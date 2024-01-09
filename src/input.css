@@ -169,6 +169,6 @@ section div.article {
 .product-list__inner {
   @apply p-3
 }
-div.list-collections__item {
-  @apply max-h-[500px];
+a.list-collections__item {
+  max-height: 500px !important;
 }

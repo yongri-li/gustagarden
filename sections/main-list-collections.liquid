@@ -32,11 +32,13 @@
         </div>
       </div>
     {%- else -%}
-      <header class="page-header">
-        <div class="page-header__text-wrapper">
-          <h1 class="heading h1">{{ 'list_collections.general.title' | t }}</h1>
-        </div>
-      </header>
+      {%- if section.settings.show_title -%}
+        <header class="page-header">
+          <div class="page-header__text-wrapper">
+            <h1 class="heading h1">{{ 'list_collections.general.title' | t }}</h1>
+          </div>
+        </header>
+      {%- endif -%}
 
       {%- paginate collections by 48 -%}
         <div class="list-collections list-collections--grid page-content page-content--fluid">
@@ -138,6 +140,12 @@
         }
       ],
       "default": "all"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show title",
+      "default": false
     },
     {
       "type": "checkbox",
