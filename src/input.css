@@ -170,5 +170,5 @@ section div.article {
   @apply p-3
 }
 a.list-collections__item {
-  max-height: 500px !important;
+  max-height: 400px !important;
 }
