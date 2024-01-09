@@ -28,7 +28,7 @@
         ".link-bar__linklist li:first-of-type{display: none!important;}"
       ],
       "settings": {
-        "show_all": false,
+        "show_all": true,
         "show_blog_title": false,
         "show_tags": true,
         "show_category": true,

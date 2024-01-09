@@ -30,7 +30,7 @@
         "img {padding-bottom: 20px;}"
       ],
       "settings": {
-        "show_all": false,
+        "show_all": true,
         "show_blog_title": false,
         "show_tags": true,
         "show_category": true,
