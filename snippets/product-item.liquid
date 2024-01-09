@@ -239,11 +239,7 @@
         {{- product.title -}}
       </a>
 
-      {% if product.metafields.custom.kurzbeschreibung != blank %}
-        <div class="text-sm text-left px-3">
-          {{product.metafields.custom.kurzbeschreibung  |  metafield_tag}}
-        </div>
-      {% endif %}
+      
 
       <div class="product-item-meta__price-list-container">
         <div class="price-list price-list--centered">
@@ -389,6 +385,8 @@
         </div>
       </div>
 
+      
+
       <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
 
       {%- if settings.show_product_rating and reduced_content != true -%}
@@ -399,6 +397,12 @@
           {%- render 'product-rating', product: product -%}
         </a>
       {%- endif -%}
+
+      {% if product.metafields.custom.kurzbeschreibung != blank %}
+        <div class="text-sm text-left px-3">
+          {{product.metafields.custom.kurzbeschreibung  |  metafield_tag}}
+        </div>
+      {% endif %}
 
       {%- if settings.product_color_display != 'hide'
         and reduced_content != true
