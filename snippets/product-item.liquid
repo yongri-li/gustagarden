@@ -222,8 +222,7 @@
             data-instant>
             {{- product.vendor -}}
           </a>
-              <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
-
+        {%- else -%}
           <a
             class="product-item-meta__vendor heading heading--xsmall"
             href="{{ product.vendor | url_for_vendor }}"
