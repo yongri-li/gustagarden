@@ -25,7 +25,6 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
-        ".link-bar__linklist li:first-of-type{display: none!important;}"
       ],
       "settings": {
         "show_all": true,
