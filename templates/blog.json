@@ -25,6 +25,7 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
+
       ],
       "settings": {
         "show_all": true,
