@@ -1,4 +1,38 @@
 {
-  "sections": { "main": { "type": "main-list-collections", "settings": {} } },
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "0062880a-be8d-4742-8478-e4b62114f9cb": {
+          "type": "collection",
+          "settings": {
+            "collection": "berry-buddy",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "a5e8d30c-d3bf-4a19-bd16-54c72c0756e4": {
+          "type": "collection",
+          "settings": {
+            "collection": "charly-chili",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "0062880a-be8d-4742-8478-e4b62114f9cb",
+        "a5e8d30c-d3bf-4a19-bd16-54c72c0756e4"
+      ],
+      "settings": {
+        "collections_to_show": "selected",
+        "show_collection_title": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
