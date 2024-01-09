@@ -125,6 +125,53 @@
         "quick_links": ""
       }
     },
+    "351c2837-133e-4af4-a0da-8543e7b95590": {
+      "type": "lb-tag-slider",
+      "blocks": {
+        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-1": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": ""
+          }
+        },
+        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-2": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": ""
+          }
+        },
+        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-3": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": ""
+          }
+        },
+        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-4": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-1",
+        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-2",
+        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-3",
+        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-4"
+      ],
+      "settings": {
+        "background-color": "#f2f2f2",
+        "headline": "Unsere Kategorien",
+        "tag-background-color": "#f2f2f2",
+        "text-color": "#000",
+        "border-color": "#D5D5D5",
+        "max-show": 2000
+      }
+    },
     "main": {
       "type": "main-collection",
       "custom_css": [
@@ -148,6 +195,7 @@
   "order": [
     "641919ad-8e55-4633-9146-581c86bfafda",
     "collection-banner",
+    "351c2837-133e-4af4-a0da-8543e7b95590",
     "main"
   ]
 }
