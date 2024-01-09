@@ -1,7 +1,7 @@
 {% assign recommended_product = settings.product %}
 
 <div
-  class="flex p-2 space-x-4 max-w-sm"
+  class="flex p-3 space-x-4 max-w-sm"
   style="background-color: {{ settings.background_color }};">
   <div>
     <img
@@ -17,8 +17,8 @@
       {{ recommended_product.title }}
     </div>
 
-    <div class="text-neutral-600">
-      {{ recommended_product.price | money }}
+    <div class="text-neutral-600 flex gap-2">
+     <span>ab {{ recommended_product.price | money }}</span>
 
       {% if recommended_product.compare_at_price %}
         <div class="line-through text-primary-400">
