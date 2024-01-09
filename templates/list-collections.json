@@ -30,9 +30,43 @@
         "collections_to_show": "selected",
         "show_collection_title": true
       }
+    },
+    "405d663f-6306-43dd-adc4-ebf75649c997": {
+      "type": "codext-link-list",
+      "blocks": {
+        "8de9c841-6a0d-46f5-99e9-2a930308020a": {
+          "type": "button",
+          "settings": {
+            "button_text": "Alle Produkte",
+            "button_link": "shopify:\/\/collections\/alle-produkte"
+          }
+        },
+        "27abed28-9fef-49a2-9f38-44c5ded80f6e": {
+          "type": "button",
+          "settings": {
+            "button_text": "Harry Herbs",
+            "button_link": "shopify:\/\/collections\/harry-herbs"
+          }
+        },
+        "1b151fda-3d6d-4382-90e4-59ab61bc9ec0": {
+          "type": "button",
+          "settings": {
+            "button_text": "Button Text",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "8de9c841-6a0d-46f5-99e9-2a930308020a",
+        "27abed28-9fef-49a2-9f38-44c5ded80f6e",
+        "1b151fda-3d6d-4382-90e4-59ab61bc9ec0"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "405d663f-6306-43dd-adc4-ebf75649c997"
   ]
 }
