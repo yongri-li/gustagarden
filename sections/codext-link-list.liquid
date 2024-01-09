@@ -1,0 +1,37 @@
+{% schema %}
+  {
+    "name": "c/ Link List",
+    "blocks": [
+      {
+        "type": "button",
+        "name": "Button",
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Button Text"
+          }, {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link",
+            "default": "#"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "c/ Link List"
+      }
+    ]
+  }
+{% endschema %}
+
+<div class="flex flex-col space-y-2">
+  {% for block in section.blocks %}
+    <a href="{{ block.settings.button_link }}" class="bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded">
+      {{ block.settings.button_text }}
+    </a>
+  {% endfor %}
+</div>
