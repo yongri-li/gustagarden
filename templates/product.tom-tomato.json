@@ -61,9 +61,9 @@
         "3a891ea4-0bef-456f-9c59-74ec642a5447": {
           "type": "save-in-set-static",
           "settings": {
-            "product": "tom-tomato-samen-mix",
-            "btn_label": "PASSEND DAZU",
-            "background_color": "#F5F5F5"
+            "product": "tom-tomato-komplett-set",
+            "btn_label": "machs zum Set!",
+            "background_color": "#f5f5f5"
           }
         }
       },
