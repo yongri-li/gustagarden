@@ -315,6 +315,10 @@
   margin-top: 1.5rem;
 }
 
+.-mt-3 {
+  margin-top: -0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1715,6 +1719,10 @@ a.list-collections__item {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:max-w-sm {
+    max-width: 24rem;
   }
 
   .md\:grid-cols-12 {

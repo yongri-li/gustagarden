@@ -89,13 +89,12 @@
                 </li>
                 {%- endif -%}
 
-                {% assign excluded_tags = section.settings.tags_to_hide | split: "," %}
+                {% assign excluded_tags = section.settings.tags_to_hide %}
 
                 {%- for tag in blog.all_tags -%}
                   {% unless excluded_tags contains tag %}
                     <li class="link-bar__link-item {% if current_tags contains tag %}link-bar__link-item--selected{% endif %}">
                       {%- capture link_to_tag_replacement -%}class="link-bar__link link--animated {% if current_tags contains tag %}text--underlined{% endif %}" title={%- endcapture -%}
-
                       {%- if current_tags contains tag -%}
                         {{
                           tag

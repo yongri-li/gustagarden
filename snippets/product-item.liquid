@@ -239,7 +239,11 @@
         {{- product.title -}}
       </a>
 
-      
+      {% if product.metafields.custom.kurzbeschreibung != blank %}
+        <div class="text-sm text-left px-3">
+          {{product.metafields.custom.kurzbeschreibung  |  metafield_tag}}
+        </div>
+      {% endif %}
 
       <div class="product-item-meta__price-list-container">
         <div class="price-list price-list--centered">
@@ -398,11 +402,7 @@
         </a>
       {%- endif -%}
 
-      {% if product.metafields.custom.kurzbeschreibung != blank %}
-        <div class="text-sm text-left px-3">
-          {{product.metafields.custom.kurzbeschreibung  |  metafield_tag}}
-        </div>
-      {% endif %}
+     
 
       {%- if settings.product_color_display != 'hide'
         and reduced_content != true
