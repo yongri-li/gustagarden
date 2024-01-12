@@ -243,6 +243,10 @@
   margin-bottom: 0.25rem !important;
 }
 
+.-mt-3 {
+  margin-top: -0.75rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -313,10 +317,6 @@
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.-mt-3 {
-  margin-top: -0.75rem;
 }
 
 .block {
@@ -1591,6 +1591,11 @@ section div.article {
 
 a.list-collections__item {
   max-height: 400px !important;
+}
+
+.mini-cart__recommendations-inner .product-item {
+  border: 1px solid #c5bebe;
+  padding: 10px;
 }
 
 .hover\:cursor-pointer:hover {

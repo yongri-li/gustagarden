@@ -242,6 +242,7 @@
               </div>
             </div>
 
+            {% if article.metafields.custom.downloads.value != blank %}
             <div class="article__content block md:hidden">
               <div
                 class="rte"
@@ -262,6 +263,7 @@
                 </div>
               </div>
             </div>
+            {% endif %}
           </div>
         </div>
       </div>
