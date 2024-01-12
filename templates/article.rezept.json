@@ -36,6 +36,9 @@
     },
     "main": {
       "type": "main-article-rezept",
+      "custom_css": [
+        ".article__main-part {padding: 30px 0;}"
+      ],
       "settings": {
         "show_on_scroll_navigation": true,
         "show_author": false,
