@@ -60,20 +60,20 @@
               {%- when 'social_media' -%}
 
                 {%- if block.settings.title != blank -%}
-                                    <img src="https://cdn.shopify.com/s/files/1/0632/3139/3965/files/gusta_garden_logo.png?v=1699254624" alt="Gusta Garden Logo">
-                      <script src="https://widget.reviews.io/badge-modern/dist.js"></script>
-                      <div id="badge-160" style="max-width:160px; margin-top: 15px; margin-bottom: 40px;"></div>
-                      <script>
-                            reviewsBadgeModern('badge-160', {
+                    <img loading="lazy" src="//gustagarden.myshopify.com/cdn/shop/files/gustagarden-logo_600x.svg" alt="Gusta Garden Logo">
+                    <script src="https://widget.reviews.io/badge-modern/dist.js"></script>
+                    <div id="badge-160" style="max-width:160px; margin-top: 15px; margin-bottom: 40px;"></div>
+                    <script>
+                          reviewsBadgeModern('badge-160', {
                             store: 'www.gustagarden.com',
                             primaryClr: '#1D1D1D',
                             starsClr: '#C8DD02',
                             translateReviews:" Bewertungen",
                             translateAverage:" Durchschnitt",
                             translateDecimal:"."
-                                  });
+                          });
                     </script>
-                  <p class="footer__item-title heading heading--small">{{ block.settings.title | escape }}</p>
+                    <p class="footer__item-title heading heading--small">{{ block.settings.title | escape }}</p>
 
                 {%- endif -%}
 
