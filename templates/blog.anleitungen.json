@@ -29,7 +29,7 @@
         "img {padding-bottom: 20px;}"
       ],
       "settings": {
-        "tags_to_hide": "Anleitungen",
+        "tags_to_hide": "Category_Anleitungen",
         "show_all": true,
         "show_blog_title": false,
         "show_tags": true,
