@@ -141,6 +141,7 @@
     },
     "612effd5-1377-450f-9a71-e2a3c3dab639": {
       "type": "codext-c-Cookie-Banner",
+      "disabled": true,
       "settings": {
         "cc_bg": "#ffffff",
         "cc_text": "#484b42",
