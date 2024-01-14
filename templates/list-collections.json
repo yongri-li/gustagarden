@@ -51,6 +51,13 @@
             "button_text": "TOMATO BUDDY",
             "button_link": "shopify:\/\/collections\/tomato-buddy"
           }
+        },
+        "button_NxPmeK": {
+          "type": "button",
+          "settings": {
+            "button_text": "CHARLY CHILI",
+            "button_link": "shopify:\/\/collections\/charly-chili"
+          }
         }
       },
       "block_order": [
@@ -60,7 +67,8 @@
         "button_LqzDza",
         "button_EHLeDm",
         "button_Q4ffcP",
-        "button_NRbyi7"
+        "button_NRbyi7",
+        "button_NxPmeK"
       ],
       "settings": {
       }
