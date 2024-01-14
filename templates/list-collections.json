@@ -122,6 +122,37 @@
           "type": "collection",
           "settings": {
             "collection": "charly-chili",
+            "image": "shopify:\/\/shop_images\/210530GustaGarden-20_qu-300x300.jpg",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_wy3xty": {
+          "type": "collection",
+          "settings": {
+            "collection": "sammy-salad",
+            "image": "shopify:\/\/shop_images\/220630-Reifnitz-23_qu-600x600.jpg",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_p7cV96": {
+          "type": "collection",
+          "settings": {
+            "collection": "paul-potato",
+            "image": "shopify:\/\/shop_images\/180921-GG-19-Kopie-600x600_bf91b86e-52fc-4812-af4d-bedfb3e43791.jpg",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_88yiGk": {
+          "type": "collection",
+          "settings": {
+            "collection": "sissi-strawberry",
+            "image": "shopify:\/\/shop_images\/200910-GustaGarden-194_Easy-Resize.com-2-300x300.jpg",
             "text_color": "rgba(0,0,0,0)",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -130,7 +161,10 @@
       },
       "block_order": [
         "0062880a-be8d-4742-8478-e4b62114f9cb",
-        "a5e8d30c-d3bf-4a19-bd16-54c72c0756e4"
+        "a5e8d30c-d3bf-4a19-bd16-54c72c0756e4",
+        "collection_wy3xty",
+        "collection_p7cV96",
+        "collection_88yiGk"
       ],
       "settings": {
         "collections_to_show": "selected",
