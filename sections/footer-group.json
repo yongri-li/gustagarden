@@ -76,10 +76,16 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "c420f209-c679-48bd-bf6b-ee7064be5316": {
+          "type": "links",
+          "settings": {
+            "menu": "gusta-garden"
+          }
+        },
         "links": {
           "type": "links",
           "settings": {
-            "menu": "footer"
+            "menu": "rechtliches"
           }
         },
         "eae72dad-69b9-47c3-b9ab-86483058c3d5": {
@@ -88,19 +94,15 @@
             "menu": "service"
           }
         },
-        "c420f209-c679-48bd-bf6b-ee7064be5316": {
-          "type": "links",
-          "settings": {
-            "menu": "gusta-garden"
-          }
-        },
         "ab7a4bea-7707-44aa-947f-f1f3f627bbb3": {
           "type": "general_list",
           "settings": {
             "title_1": "Wir versenden mit",
             "image_1": "shopify:\/\/shop_images\/delivery.webp",
+            "image_width_1": 100,
             "title_2": "Zertifiziert durch",
-            "image_2": "shopify:\/\/shop_images\/efk.webp"
+            "image_2": "shopify:\/\/shop_images\/efk.webp",
+            "image_width_2": 100
           }
         },
         "social_media": {
@@ -112,9 +114,9 @@
         }
       },
       "block_order": [
+        "c420f209-c679-48bd-bf6b-ee7064be5316",
         "links",
         "eae72dad-69b9-47c3-b9ab-86483058c3d5",
-        "c420f209-c679-48bd-bf6b-ee7064be5316",
         "ab7a4bea-7707-44aa-947f-f1f3f627bbb3",
         "social_media"
       ],
