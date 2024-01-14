@@ -16,11 +16,27 @@
             "button_text": "Harry Herbs",
             "button_link": "shopify:\/\/collections\/harry-herbs"
           }
+        },
+        "button_h9fb7m": {
+          "type": "button",
+          "settings": {
+            "button_text": "SAMMY SALAD",
+            "button_link": "shopify:\/\/collections\/sammy-salad"
+          }
+        },
+        "button_LqzDza": {
+          "type": "button",
+          "settings": {
+            "button_text": "PAUL POTATO",
+            "button_link": "shopify:\/\/collections\/paul-potato"
+          }
         }
       },
       "block_order": [
         "8de9c841-6a0d-46f5-99e9-2a930308020a",
-        "27abed28-9fef-49a2-9f38-44c5ded80f6e"
+        "27abed28-9fef-49a2-9f38-44c5ded80f6e",
+        "button_h9fb7m",
+        "button_LqzDza"
       ],
       "settings": {
       }
@@ -53,6 +69,7 @@
       ],
       "settings": {
         "collections_to_show": "selected",
+        "show_title": false,
         "show_collection_title": true
       }
     }
