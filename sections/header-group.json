@@ -120,7 +120,7 @@
             "images_position": "right",
             "image_1": "shopify:\/\/shop_images\/HARRY-HERBS-Achatgrau_118_b.webp",
             "image_1_heading": "HARRY HERBS",
-            "image_1_text": "4 in 1 Kräutertop",
+            "image_1_text": "4 in 1 Kräutertopf",
             "image_1_link": "#",
             "image_2": "shopify:\/\/shop_images\/SAMMY-SALAD_mit-Schnalle_2hellgrau-1.webp",
             "image_2_heading": "SAMMY SALAD",
@@ -152,7 +152,11 @@
         "mega_menu_HUJx4f"
       ],
       "custom_css": [
-
+        ".mega-menu__text {display: inline-block; width: 100%; padding: 10px 30px; background-color: #484b42; color: #fff; text-align: center; text-decoration: none; border: none; cursor: pointer; border-radius: 0px; font-weight: 600; margin-top: -7px;}",
+        ".mega-menu__text:hover {background-color: #c8dd02;}",
+        ".heading--small {font-weight: 600; font-size: 15px; background-color: #f5f5f5; padding: 10px 30px;}",
+        ".header__linklist-item:first-child {background-color: #c8dd02; padding: 10px; color: white;}",
+        ".header__linklist-item {padding: 10px; font-weight: 700;}"
       ],
       "settings": {
         "item_description": "HARRY HERBS,4 in 1 Kräutertopf\nSAMMY SALAD,Hochbeet\nTOM TOMATO,Tomatentopf\nPAUL POTATO,Kartoffelturm\nCHARLY CHILI,Chilitopf\nSISSI STRAWBERRY,Erdbeerturm\nCURT CUCUMBER,Gurkentopf\nHERBS BUDDY,Kräutertopf\nBERRY BUDDY,Beerenrankhilfe",
