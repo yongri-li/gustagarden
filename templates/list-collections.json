@@ -207,6 +207,16 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "collection_4RJELN": {
+          "type": "collection",
+          "settings": {
+            "collection": "zubehor-amp-dunger",
+            "image": "shopify:\/\/shop_images\/Zubehor_s-2_b0eb768a-0028-4b43-9bdb-00948e321e2d.jpg",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
@@ -219,7 +229,8 @@
         "collection_3yYwk9",
         "collection_RL3Eie",
         "collection_KNqkMm",
-        "collection_p6X4rY"
+        "collection_p6X4rY",
+        "collection_4RJELN"
       ],
       "settings": {
         "collections_to_show": "selected",
