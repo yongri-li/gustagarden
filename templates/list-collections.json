@@ -79,6 +79,13 @@
             "button_text": "Anzucht & Samen",
             "button_link": "shopify:\/\/collections\/anzucht-amp-samen"
           }
+        },
+        "button_REHCe9": {
+          "type": "button",
+          "settings": {
+            "button_text": "Zubehör & Dünger",
+            "button_link": "shopify:\/\/collections\/zubehor-amp-dunger"
+          }
         }
       },
       "block_order": [
@@ -92,7 +99,8 @@
         "button_NxPmeK",
         "button_DYMVMR",
         "button_wbYJwR",
-        "button_EG6g9p"
+        "button_EG6g9p",
+        "button_REHCe9"
       ],
       "settings": {
       }
