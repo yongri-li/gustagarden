@@ -72,6 +72,13 @@
             "button_text": "Pflanzen & Pflanzkartoffeln",
             "button_link": "shopify:\/\/collections\/pflanzen-amp-pflanzkartoffeln"
           }
+        },
+        "button_EG6g9p": {
+          "type": "button",
+          "settings": {
+            "button_text": "Anzucht & Samen",
+            "button_link": "shopify:\/\/collections\/anzucht-amp-samen"
+          }
         }
       },
       "block_order": [
@@ -84,7 +91,8 @@
         "button_NRbyi7",
         "button_NxPmeK",
         "button_DYMVMR",
-        "button_wbYJwR"
+        "button_wbYJwR",
+        "button_EG6g9p"
       ],
       "settings": {
       }
