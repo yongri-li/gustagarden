@@ -65,6 +65,13 @@
             "button_text": "Starter-Sets",
             "button_link": "shopify:\/\/collections\/starter-sets"
           }
+        },
+        "button_wbYJwR": {
+          "type": "button",
+          "settings": {
+            "button_text": "Pflanzen & Pflanzkartoffeln",
+            "button_link": "shopify:\/\/collections\/pflanzen-amp-pflanzkartoffeln"
+          }
         }
       },
       "block_order": [
@@ -76,7 +83,8 @@
         "button_Q4ffcP",
         "button_NRbyi7",
         "button_NxPmeK",
-        "button_DYMVMR"
+        "button_DYMVMR",
+        "button_wbYJwR"
       ],
       "settings": {
       }
