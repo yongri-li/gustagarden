@@ -152,7 +152,7 @@
         "mega_menu_HUJx4f"
       ],
       "custom_css": [
-        ".mega-menu__text {display: inline-block; width: 100%; padding: 10px 30px; background-color: #c8dd02; color: #fff; text-decoration: none; border: none; cursor: pointer; border-radius: 0px; font-weight: 600; margin-top: -7px;}",
+        ".mega-menu__text {display: inline-block; width: 100%; padding: 10px 30px; background-color: #c8dd02; color: #fff; text-decoration: none; border: none; cursor: pointer; border-radius: 0px; font-weight: 600; margin-bottom: 10px;}",
         ".mega-menu__text:hover {background-color: #484b42;}",
         ".header__linklist-item:first-child {background-color: #c8dd02; padding: 10px; color: white;}",
         ".header__linklist-item {padding: 10px; font-weight: 700;}"
