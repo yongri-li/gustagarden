@@ -180,7 +180,7 @@
       "size_chart": "Größentabelle",
       "need_help": "Brauchst Du Hilfe?",
       "view_details": "Details ansehen",
-      "include_taxes": "inkl. MwSt, zzgl. Versand",
+      "include_taxes": "inkl. MwSt, zzgl. ",
       "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\">Versand<\/a>",
       "reviews_count": {
         "zero": "Noch keine Bewertungen",
