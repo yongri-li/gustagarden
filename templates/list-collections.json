@@ -37,6 +37,13 @@
             "button_text": "SISSI STRAWBERRY",
             "button_link": "shopify:\/\/collections\/sissi-strawberry"
           }
+        },
+        "button_Q4ffcP": {
+          "type": "button",
+          "settings": {
+            "button_text": "TOM TOMATO",
+            "button_link": "shopify:\/\/collections\/tom-tomato"
+          }
         }
       },
       "block_order": [
@@ -44,7 +51,8 @@
         "27abed28-9fef-49a2-9f38-44c5ded80f6e",
         "button_h9fb7m",
         "button_LqzDza",
-        "button_EHLeDm"
+        "button_EHLeDm",
+        "button_Q4ffcP"
       ],
       "settings": {
       }
