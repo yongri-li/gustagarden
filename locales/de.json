@@ -92,7 +92,7 @@
       "free_shipping_remaining_html": "Noch {{ remaining_amount }} fehlen zum kostenlosen Versand!",
       "free": "Kostenlos!",
       "no_more_stock": "Nicht mehr auf Lager",
-      "shipping_tax_note": "inkl. MwSt, zzgl. ",
+      "shipping_tax_note": "inkl. MwSt, zzgl. Versand",
       "product": "Produkt",
       "quantity": "Menge",
       "decrease_quantity": "Menge verringern",
@@ -180,7 +180,7 @@
       "size_chart": "Größentabelle",
       "need_help": "Brauchst Du Hilfe?",
       "view_details": "Details ansehen",
-      "include_taxes": "inkl. MwSt, zzgl. ",
+      "include_taxes": "inkl. MwSt, zzgl. Versand",
       "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\">Versand<\/a>",
       "reviews_count": {
         "zero": "Noch keine Bewertungen",
