@@ -58,6 +58,13 @@
             "button_text": "CHARLY CHILI",
             "button_link": "shopify:\/\/collections\/charly-chili"
           }
+        },
+        "button_DYMVMR": {
+          "type": "button",
+          "settings": {
+            "button_text": "Starter-Sets",
+            "button_link": "shopify:\/\/collections\/starter-sets"
+          }
         }
       },
       "block_order": [
@@ -68,7 +75,8 @@
         "button_EHLeDm",
         "button_Q4ffcP",
         "button_NRbyi7",
-        "button_NxPmeK"
+        "button_NxPmeK",
+        "button_DYMVMR"
       ],
       "settings": {
       }
