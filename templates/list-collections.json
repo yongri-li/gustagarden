@@ -44,6 +44,13 @@
             "button_text": "TOM TOMATO",
             "button_link": "shopify:\/\/collections\/tom-tomato"
           }
+        },
+        "button_NRbyi7": {
+          "type": "button",
+          "settings": {
+            "button_text": "TOMATO BUDDY",
+            "button_link": "shopify:\/\/collections\/tomato-buddy"
+          }
         }
       },
       "block_order": [
@@ -52,7 +59,8 @@
         "button_h9fb7m",
         "button_LqzDza",
         "button_EHLeDm",
-        "button_Q4ffcP"
+        "button_Q4ffcP",
+        "button_NRbyi7"
       ],
       "settings": {
       }
