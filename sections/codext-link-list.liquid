@@ -30,7 +30,9 @@
 <div class="container mx-auto overflow-x-auto flex py-12 gap-6">
   {% for block in section.blocks %}
     <a href="{{ block.settings.button_link }}" 
-    class="w-fit bg-gray-200 hover:bg-gray-300 text-black font-bold py-2 px-4 rounded-full">
+    class="min-w-fit w-fit bg-gray-200 
+    hover:bg-gray-300 text-black 
+    font-bold py-2 px-4 rounded text-nowrap">
       {{ block.settings.button_text }}
     </a>
   {% endfor %}
