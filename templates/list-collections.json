@@ -105,53 +105,6 @@
       "settings": {
       }
     },
-    "lb_tag_slider_BCwFeD": {
-      "type": "lb-tag-slider",
-      "blocks": {
-        "block_jFM8tk": {
-          "type": "block",
-          "settings": {
-            "heading": "Alle Produkte",
-            "url": ""
-          }
-        },
-        "block_FrtNni": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": ""
-          }
-        },
-        "block_pqz8f4": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": ""
-          }
-        },
-        "block_Ki6X8N": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "block_jFM8tk",
-        "block_FrtNni",
-        "block_pqz8f4",
-        "block_Ki6X8N"
-      ],
-      "settings": {
-        "background-color": "#f2f2f2",
-        "headline": "Unsere Kategorien",
-        "tag-background-color": "#f2f2f2",
-        "text-color": "#000",
-        "border-color": "#D5D5D5",
-        "max-show": 2000
-      }
-    },
     "main": {
       "type": "main-list-collections",
       "blocks": {
@@ -187,7 +140,6 @@
   },
   "order": [
     "405d663f-6306-43dd-adc4-ebf75649c997",
-    "lb_tag_slider_BCwFeD",
     "main"
   ]
 }
