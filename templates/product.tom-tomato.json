@@ -62,7 +62,7 @@
           "type": "save-in-set-static",
           "settings": {
             "product": "tom-tomato-komplett-set",
-            "btn_label": "MACH'S ZUM SET!",
+            "btn_label": "mach's zum Set!",
             "background_color": "#f5f5f5"
           }
         }
