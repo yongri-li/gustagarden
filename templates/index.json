@@ -736,12 +736,22 @@
             "button_text": "",
             "button_url": ""
           }
+        },
+        "collection_qE3qwV": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "label": "TOM TOMATO",
+            "button_text": "",
+            "button_url": "shopify:\/\/collections\/tom-tomato"
+          }
         }
       },
       "block_order": [
         "2ce60ba1-2511-4adb-bf34-fbdb77475ebf",
         "collection-1",
-        "0974623b-9195-4374-a8ef-bd00104ac8f3"
+        "0974623b-9195-4374-a8ef-bd00104ac8f3",
+        "collection_qE3qwV"
       ],
       "custom_css": [
         "h3 {font-weight: bold;}"
