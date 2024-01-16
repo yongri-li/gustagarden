@@ -96,17 +96,17 @@
         "show_thumbnails_on_mobile": false,
         "desktop_thumbnails_position": "left",
         "transition_effect": "slide",
-        "product_slideshow_title_1": "nur noch 1x pro Woche gießen",
+        "product_slideshow_title_1": "{{ product.metafields.custom.product_slideshow_title_1.value }}",
         "product_slideshow_tooltip_1": "Das Rundum-sorglos-Paket für den Anbau von Tomaten bestichtdurch seinen Wassertank, das integrierte Bewässerungssystem und die stabile Rankhilfe. Mit TOM TOMATO haben wir unsere Vision des perfekten Pflanzgefäßes umgesetzt, um dir den erfolgreichen Tomatenanbau zu Hause so einfach wie möglich zu machen.",
-        "product_slideshow_title_2": "",
+        "product_slideshow_title_2": "{{ product.metafields.custom.product_slideshow_title_2.value }}",
         "product_slideshow_tooltip_2": "",
-        "product_slideshow_title_3": "",
+        "product_slideshow_title_3": "{{ product.metafields.custom.product_slideshow_title_3.value }}",
         "product_slideshow_tooltip_3": "",
-        "product_slideshow_title_4": "",
+        "product_slideshow_title_4": "{{ product.metafields.custom.product_slideshow_title_4.value }}",
         "product_slideshow_tooltip_4": "",
-        "product_slideshow_title_5": "",
+        "product_slideshow_title_5": "{{ product.metafields.custom.product_slideshow_title_5.value }}",
         "product_slideshow_tooltip_5": "",
-        "product_slideshow_title_6": "",
+        "product_slideshow_title_6": "{{ product.metafields.custom.product_slideshow_title_6.value }}",
         "product_slideshow_tooltip_6": ""
       }
     },
@@ -377,7 +377,7 @@
         ".article-item {background-color: #f5f5f5; padding: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);}",
         "a {font-size: 18px; font-weight: 100;}",
         ".article-item__content {flex-grow: 1;}",
-        ".article-item__title, .article-item__content {padding: 10px !important; display: flex; align-items: center; justify-content: center;}"
+        ".article-item__title,.article-item__content {padding: 10px !important; display: flex; align-items: center; justify-content: center;}"
       ],
       "settings": {
         "blog": "ratgeber",
