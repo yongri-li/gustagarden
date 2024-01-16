@@ -31,6 +31,7 @@
         },
         "38a03175-609a-40b5-9e4e-055fec879e76": {
           "type": "inventory",
+          "disabled": true,
           "settings": {
             "low_inventory_threshold": 58
           }
