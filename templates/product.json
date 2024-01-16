@@ -25,7 +25,6 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "disabled": true,
           "settings": {
           }
         },
@@ -33,7 +32,7 @@
           "type": "inventory",
           "disabled": true,
           "settings": {
-            "low_inventory_threshold": 58
+            "low_inventory_threshold": 0
           }
         },
         "buy_buttons": {
