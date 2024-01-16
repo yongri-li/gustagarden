@@ -121,18 +121,11 @@
             "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
             "caption": ""
           }
-        },
-        "image_qf79FN": {
-          "type": "image",
-          "settings": {
-            "caption": ""
-          }
         }
       },
       "block_order": [
         "image_4Vpt8e",
-        "image_dEBqVx",
-        "image_qf79FN"
+        "image_dEBqVx"
       ],
       "settings": {
         "subheading": "Mikrowurzeln",
@@ -148,26 +141,21 @@
         "image_y9ecqd": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Schimmel-01.jpg",
             "caption": ""
           }
         },
         "image_rXHAWb": {
           "type": "image",
           "settings": {
-            "caption": ""
-          }
-        },
-        "image_wmg33j": {
-          "type": "image",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/Schimmel-02.jpg",
             "caption": ""
           }
         }
       },
       "block_order": [
         "image_y9ecqd",
-        "image_rXHAWb",
-        "image_wmg33j"
+        "image_rXHAWb"
       ],
       "settings": {
         "subheading": "Schimmel",
