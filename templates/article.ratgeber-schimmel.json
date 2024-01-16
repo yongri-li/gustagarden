@@ -197,8 +197,30 @@
             "text_alignment": "center",
             "vertical_alignment": "start"
           }
-        },
-        "item_tLm49y": {
+        }
+      },
+      "block_order": [
+        "item_n8mXkD",
+        "item_nqciCU"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "Subheading",
+        "title": "Multi-column",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "multi_column_ggTdwC": {
+      "type": "multi-column",
+      "blocks": {
+        "item_qKMkyb": {
           "type": "item",
           "settings": {
             "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
@@ -213,7 +235,7 @@
             "vertical_alignment": "start"
           }
         },
-        "item_qjXJDg": {
+        "item_fKTi8N": {
           "type": "item",
           "settings": {
             "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
@@ -230,10 +252,8 @@
         }
       },
       "block_order": [
-        "item_n8mXkD",
-        "item_nqciCU",
-        "item_tLm49y",
-        "item_qjXJDg"
+        "item_qKMkyb",
+        "item_fKTi8N"
       ],
       "settings": {
         "reveal_on_scroll": true,
@@ -260,6 +280,7 @@
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
     "blog-post-prev-next",
     "blog-post-comments",
-    "multi_column_ff6836"
+    "multi_column_ff6836",
+    "multi_column_ggTdwC"
   ]
 }
