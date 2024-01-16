@@ -64,36 +64,6 @@
         "show_faqs": false
       }
     },
-    "codext_gallery_metafield_jEfa7F": {
-      "type": "codext-gallery-metafield",
-      "blocks": {
-        "image_RakDe8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
-            "caption": ""
-          }
-        },
-        "image_QEEtFz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
-            "caption": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_RakDe8",
-        "image_QEEtFz"
-      ],
-      "settings": {
-        "subheading": "Subheading",
-        "title": "Gallery",
-        "show_arrows": true,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "gallery_xa7qhe": {
       "type": "gallery",
       "blocks": {
@@ -194,6 +164,50 @@
       "settings": {
         "show_gravatar": true
       }
+    },
+    "lb_kategorie_slider_D8hdkL": {
+      "type": "lb-kategorie-slider",
+      "blocks": {
+        "block_dg3kGP": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schimmel-01.jpg",
+            "heading": "Schimmel",
+            "url": ""
+          }
+        },
+        "block_kmMTkG": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": ""
+          }
+        },
+        "block_6g6gFy": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": ""
+          }
+        },
+        "block_wMjtmG": {
+          "type": "block",
+          "settings": {
+            "heading": "Linkname",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_dg3kGP",
+        "block_kmMTkG",
+        "block_6g6gFy",
+        "block_wMjtmG"
+      ],
+      "settings": {
+        "background-color": "#f2f2f2",
+        "max-show": 2000
+      }
     }
   },
   "order": [
@@ -201,11 +215,11 @@
     "blog-post-banner",
     "1703150347954dc458",
     "main",
-    "codext_gallery_metafield_jEfa7F",
     "gallery_xa7qhe",
     "gallery_QaMRBD",
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
     "blog-post-prev-next",
-    "blog-post-comments"
+    "blog-post-comments",
+    "lb_kategorie_slider_D8hdkL"
   ]
 }

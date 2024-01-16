@@ -614,12 +614,12 @@
                       -}}
                     </span>
                   {%- else -%}
-                    <span class="inventory inventory--low">
+                    <span class="inventory inventory--low" style="color: green;">
                       {{- 'product.form.oversell_stock' | t -}}
                     </span>
                   {%- endif -%}
                 {%- else -%}
-                  <span class="inventory inventory--high">
+                  <span class="inventory inventory--high" style="color: green;">
                     {{- 'product.form.in_stock' | t -}}
                   </span>
                 {%- endif -%}
