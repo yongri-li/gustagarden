@@ -104,6 +104,43 @@
       "settings": {
         "show_gravatar": true
       }
+    },
+    "gallery_QaMRBD": {
+      "type": "gallery",
+      "blocks": {
+        "image_4Vpt8e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
+            "caption": ""
+          }
+        },
+        "image_dEBqVx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
+            "caption": ""
+          }
+        },
+        "image_qf79FN": {
+          "type": "image",
+          "settings": {
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_4Vpt8e",
+        "image_dEBqVx",
+        "image_qf79FN"
+      ],
+      "settings": {
+        "subheading": "Mikrowurzeln",
+        "title": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -113,6 +150,7 @@
     "main",
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
     "blog-post-prev-next",
-    "blog-post-comments"
+    "blog-post-comments",
+    "gallery_QaMRBD"
   ]
 }
