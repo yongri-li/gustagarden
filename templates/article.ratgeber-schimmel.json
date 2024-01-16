@@ -64,6 +64,66 @@
         "show_faqs": false
       }
     },
+    "gallery_xa7qhe": {
+      "type": "gallery",
+      "blocks": {
+        "image_y9ecqd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schimmel-01.jpg",
+            "caption": ""
+          }
+        },
+        "image_rXHAWb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schimmel-02.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_y9ecqd",
+        "image_rXHAWb"
+      ],
+      "settings": {
+        "subheading": "Schimmel",
+        "title": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "gallery_QaMRBD": {
+      "type": "gallery",
+      "blocks": {
+        "image_4Vpt8e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
+            "caption": ""
+          }
+        },
+        "image_dEBqVx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_4Vpt8e",
+        "image_dEBqVx"
+      ],
+      "settings": {
+        "subheading": "Mikrowurzeln",
+        "title": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f": {
       "type": "codext-rezept-products",
       "blocks": {
@@ -104,66 +164,6 @@
       "settings": {
         "show_gravatar": true
       }
-    },
-    "gallery_QaMRBD": {
-      "type": "gallery",
-      "blocks": {
-        "image_4Vpt8e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
-            "caption": ""
-          }
-        },
-        "image_dEBqVx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
-            "caption": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_4Vpt8e",
-        "image_dEBqVx"
-      ],
-      "settings": {
-        "subheading": "Mikrowurzeln",
-        "title": "",
-        "show_arrows": true,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "gallery_xa7qhe": {
-      "type": "gallery",
-      "blocks": {
-        "image_y9ecqd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Schimmel-01.jpg",
-            "caption": ""
-          }
-        },
-        "image_rXHAWb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Schimmel-02.jpg",
-            "caption": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_y9ecqd",
-        "image_rXHAWb"
-      ],
-      "settings": {
-        "subheading": "Schimmel",
-        "title": "",
-        "show_arrows": true,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -171,10 +171,10 @@
     "blog-post-banner",
     "1703150347954dc458",
     "main",
+    "gallery_xa7qhe",
+    "gallery_QaMRBD",
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
     "blog-post-prev-next",
-    "blog-post-comments",
-    "gallery_QaMRBD",
-    "gallery_xa7qhe"
+    "blog-post-comments"
   ]
 }
