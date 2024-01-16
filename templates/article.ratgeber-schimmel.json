@@ -141,6 +141,41 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
+    },
+    "gallery_xa7qhe": {
+      "type": "gallery",
+      "blocks": {
+        "image_y9ecqd": {
+          "type": "image",
+          "settings": {
+            "caption": ""
+          }
+        },
+        "image_rXHAWb": {
+          "type": "image",
+          "settings": {
+            "caption": ""
+          }
+        },
+        "image_wmg33j": {
+          "type": "image",
+          "settings": {
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_y9ecqd",
+        "image_rXHAWb",
+        "image_wmg33j"
+      ],
+      "settings": {
+        "subheading": "Schimmel",
+        "title": "",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -151,6 +186,7 @@
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
     "blog-post-prev-next",
     "blog-post-comments",
-    "gallery_QaMRBD"
+    "gallery_QaMRBD",
+    "gallery_xa7qhe"
   ]
 }
