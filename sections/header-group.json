@@ -183,7 +183,9 @@
       ],
       "custom_css": [
         ".font-bold {font-weight: 100;}",
-        ".mega-menu__title {font-size: 13px; font-weight: 800; color: black; text-transform: none; margin-top: -10px;}"
+        ".mega-menu__title {font-size: 13px; font-weight: 800; color: black; text-transform: none; margin-top: -10px;}",
+        ".mega-menu__heading {font-size: 16px; font-weight: 800; color: #c8dd02; text-transform: none; margin-top: -10px;}",
+        "mega-menu__text {margin-top: -10px;}"
       ],
       "settings": {
         "item_description": "HARRY HERBS,4 in 1 Kräutertopf\nSAMMY SALAD,Hochbeet\nTOM TOMATO,Tomatentopf\nPAUL POTATO,Kartoffelturm\nCHARLY CHILI,Chilitopf\nSISSI STRAWBERRY,Erdbeerturm\nCURT CUCUMBER,Gurkentopf\nHERBS BUDDY,Kräutertopf\nBERRY BUDDY,Beerenrankhilfe",
