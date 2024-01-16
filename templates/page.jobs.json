@@ -84,11 +84,45 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
+    },
+    "faq_bXAbNe": {
+      "type": "faq",
+      "blocks": {
+        "question_VQTjMt": {
+          "type": "question",
+          "settings": {
+            "title": "Customer Happiness Manager (m\/w\/d)",
+            "answer": "<p>Wir suchen DICH, zum sofortigen Eintritt<\/p><h1><strong>CUSTOMER HAPPINESS MANAGER (w\/m\/d)<\/strong><\/h1><p>in 9551 Bodensdorf, Vollzeit bzw. 30h\/ Woche<\/p>"
+          }
+        },
+        "question_JHY8LD": {
+          "type": "question",
+          "settings": {
+            "title": "How long will it take to get my order?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_VQTjMt",
+        "question_JHY8LD"
+      ],
+      "custom_css": [
+        "h1 {color: #C8DD02; font-weight: bold;}"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "JOBS",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "main",
     "slideshow_nCCmjM",
-    "image_with_text_NmjDRB"
+    "image_with_text_NmjDRB",
+    "faq_bXAbNe"
   ]
 }
