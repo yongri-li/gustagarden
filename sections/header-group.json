@@ -110,6 +110,7 @@
             "image_5_heading": "",
             "image_5_text": "",
             "image_5_link": "",
+            "image_above_6": "shopify:\/\/shop_images\/Kind-macht-Smoothie-16_9.jpg",
             "image_6_heading": "",
             "image_6_text": "",
             "image_6_link": "",
@@ -183,7 +184,7 @@
       ],
       "custom_css": [
         ".font-bold {font-weight: 100;}",
-        ".mega-menu__title {font-size: 13px; font-weight: 800; color: black; text-transform: none;}"
+        ".mega-menu__title {font-size: 13px; font-weight: 800; color: black; text-transform: none; text-align: center; background-color: #f5f5f5; padding: 10px; margin-top: 0px;}"
       ],
       "settings": {
         "item_description": "HARRY HERBS,4 in 1 Kräutertopf\nSAMMY SALAD,Hochbeet\nTOM TOMATO,Tomatentopf\nPAUL POTATO,Kartoffelturm\nCHARLY CHILI,Chilitopf\nSISSI STRAWBERRY,Erdbeerturm\nCURT CUCUMBER,Gurkentopf\nHERBS BUDDY,Kräutertopf\nBERRY BUDDY,Beerenrankhilfe",
