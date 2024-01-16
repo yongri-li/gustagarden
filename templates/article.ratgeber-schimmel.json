@@ -165,48 +165,88 @@
         "show_gravatar": true
       }
     },
-    "lb_kategorie_slider_D8hdkL": {
-      "type": "lb-kategorie-slider",
+    "multi_column_ff6836": {
+      "type": "multi-column",
       "blocks": {
-        "block_dg3kGP": {
-          "type": "block",
+        "item_n8mXkD": {
+          "type": "item",
           "settings": {
             "image": "shopify:\/\/shop_images\/Schimmel-01.jpg",
-            "heading": "Schimmel",
-            "url": ""
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
           }
         },
-        "block_kmMTkG": {
-          "type": "block",
+        "item_nqciCU": {
+          "type": "item",
           "settings": {
-            "heading": "Linkname",
-            "url": ""
+            "image": "shopify:\/\/shop_images\/Schimmel-02.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
           }
         },
-        "block_6g6gFy": {
-          "type": "block",
+        "item_tLm49y": {
+          "type": "item",
           "settings": {
-            "heading": "Linkname",
-            "url": ""
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
           }
         },
-        "block_wMjtmG": {
-          "type": "block",
+        "item_qjXJDg": {
+          "type": "item",
           "settings": {
-            "heading": "Linkname",
-            "url": ""
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Column 1",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
           }
         }
       },
       "block_order": [
-        "block_dg3kGP",
-        "block_kmMTkG",
-        "block_6g6gFy",
-        "block_wMjtmG"
+        "item_n8mXkD",
+        "item_nqciCU",
+        "item_tLm49y",
+        "item_qjXJDg"
       ],
       "settings": {
-        "background-color": "#f2f2f2",
-        "max-show": 2000
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "Subheading",
+        "title": "Multi-column",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
       }
     }
   },
@@ -220,6 +260,6 @@
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
     "blog-post-prev-next",
     "blog-post-comments",
-    "lb_kategorie_slider_D8hdkL"
+    "multi_column_ff6836"
   ]
 }
