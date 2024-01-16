@@ -71,20 +71,36 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Schimmel-01.jpg",
-            "caption": ""
+            "caption": "<p><strong>Schimmel<\/strong><\/p>"
           }
         },
         "image_rXHAWb": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Schimmel-02.jpg",
-            "caption": ""
+            "caption": "<p><strong>Schimmel<\/strong><\/p>"
+          }
+        },
+        "image_yHf3df": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
+            "caption": "<p><strong>Mikrowurzeln<\/strong><\/p>"
+          }
+        },
+        "image_PjrPtj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
+            "caption": "<p><strong>Mikrowurzeln<\/strong><\/p>"
           }
         }
       },
       "block_order": [
         "image_y9ecqd",
-        "image_rXHAWb"
+        "image_rXHAWb",
+        "image_yHf3df",
+        "image_PjrPtj"
       ],
       "settings": {
         "subheading": "",
@@ -97,6 +113,13 @@
     "gallery_QaMRBD": {
       "type": "gallery",
       "blocks": {
+        "image_9grkEH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
+            "caption": "<p><strong>Mikrowurzeln<\/strong><\/p>"
+          }
+        },
         "image_4Vpt8e": {
           "type": "image",
           "settings": {
@@ -110,11 +133,20 @@
             "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
             "caption": ""
           }
+        },
+        "image_f9rkWd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
+            "caption": "<p><strong>Mikrowurzeln<\/strong><\/p>"
+          }
         }
       },
       "block_order": [
+        "image_9grkEH",
         "image_4Vpt8e",
-        "image_dEBqVx"
+        "image_dEBqVx",
+        "image_f9rkWd"
       ],
       "settings": {
         "subheading": "",
