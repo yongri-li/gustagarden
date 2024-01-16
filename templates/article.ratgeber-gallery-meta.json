@@ -67,8 +67,8 @@
     "codext_gallery_metafield_drjDVC": {
       "type": "codext-gallery-metafield",
       "settings": {
-        "subheading": "Subheading",
-        "title": "Gallery",
+        "subheading": "",
+        "title": "Bilder",
         "show_arrows": true,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
