@@ -650,8 +650,9 @@
     "a1d506df-5cf7-43fd-bc66-cbf11398ba57": {
       "type": "codext-blog-posts",
       "custom_css": [
-        ".article-item {background-color: #c8dd02; color: #c8dd02; text-align: center; align-items: center; display: flex; flex-direction: column;}",
-        ".h4 {font-size: 18px; font-weight: bold;}",
+        ".article-item {background-color: #f5f5f5; padding: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);}",
+        "img {padding-bottom: 20px;}",
+        "}a {font-size: 18px; font-weight: 100; color: ;}",
         ".article-item__content {flex-grow: 1;}",
         ".article-item__title,.article-item__content {padding: 10px !important; display: flex; align-items: center; justify-content: center;}",
         "h3 {font-weight: bold;}"
@@ -665,7 +666,7 @@
         "stack_mobile": false,
         "show_category": false,
         "show_excerpt": false,
-        "background": "#f5f5f5",
+        "background": "#ffffff",
         "text_color": "#484b42"
       }
     },
