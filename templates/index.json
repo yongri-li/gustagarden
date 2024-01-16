@@ -658,7 +658,7 @@
       ],
       "settings": {
         "blog": "rezepte",
-        "filter_tag": "",
+        "filter_tag": "Rezepte",
         "subheading": "FRISCH AUS DEINEM GARTEN. LECKER KOMBINIERT.",
         "title": "UNSERE LECKEREN REZEPTE",
         "articles_count": 3,
