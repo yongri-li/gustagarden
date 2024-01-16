@@ -8,6 +8,14 @@
           "settings": {
           }
         },
+        "image_fJmQt3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/e-book.png",
+            "image_alignment": "left",
+            "image_width": 330
+          }
+        },
         "fff5100c-5ff6-462e-9771-01ed6285b80f": {
           "type": "liquid",
           "settings": {
@@ -69,6 +77,7 @@
       },
       "block_order": [
         "b3e6ce87-1409-4648-a0ad-7dbc015879b0",
+        "image_fJmQt3",
         "fff5100c-5ff6-462e-9771-01ed6285b80f",
         "variant_picker",
         "quantity_selector",
