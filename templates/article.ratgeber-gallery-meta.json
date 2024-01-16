@@ -64,6 +64,16 @@
         "show_faqs": false
       }
     },
+    "codext_gallery_metafield_drjDVC": {
+      "type": "codext-gallery-metafield",
+      "settings": {
+        "subheading": "Subheading",
+        "title": "Gallery",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f": {
       "type": "codext-rezept-products",
       "blocks": {
@@ -111,6 +121,7 @@
     "blog-post-banner",
     "1703150347954dc458",
     "main",
+    "codext_gallery_metafield_drjDVC",
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
     "blog-post-prev-next",
     "blog-post-comments"
