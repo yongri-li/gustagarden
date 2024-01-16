@@ -307,7 +307,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".restock-rocket-button {text-transform: uppercase; font-family: \"Poppins\", poppins; text-align: center; line-height: inherit;}"
+      ".restock-rocket-button {text-transform: uppercase; font-family: \"Poppins\", poppins; text-align: center; line-height: inherit;}",
+      ".md\\:rounded {border-radius: 0px !important;}"
     ]
   }
 }
