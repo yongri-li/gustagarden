@@ -120,6 +120,9 @@
     },
     "rich_text_YrLM7w": {
       "type": "rich-text",
+      "custom_css": [
+        "h3 {font-weight: bold;}"
+      ],
       "settings": {
         "subheading": "",
         "title": "BEWIRB DICH JETZT!",
