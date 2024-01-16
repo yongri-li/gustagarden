@@ -63,7 +63,7 @@
           "settings": {
             "product": "sissi-strawberry-samen-mix",
             "btn_label": "PASSEND DAZU",
-            "background_color": "#F5F5F5"
+            "background_color": "#f5f5f5"
           }
         }
       },
@@ -385,11 +385,11 @@
         "subheading": "",
         "title": "",
         "video_url": "https:\/\/youtu.be\/v9EaaEZEs-Y",
-        "image": "shopify:\/\/shop_images\/200903-GustaGarden-092_mirror_2400x1600_0aec3d19-5bbe-4cb8-8611-7724f02026fe.jpg",
-        "background_type": "full_width",
-        "video_size": "medium",
-        "autoplay": true,
-        "show_video_controls": false,
+        "image": "shopify:\/\/shop_images\/sissi.png",
+        "background_type": "boxed",
+        "video_size": "large",
+        "autoplay": false,
+        "show_video_controls": true,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
