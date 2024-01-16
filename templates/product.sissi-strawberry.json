@@ -430,8 +430,9 @@
     "21236dfa-d553-4250-b4d6-d2d01535dc19": {
       "type": "codext-blog-posts",
       "custom_css": [
-        ".article-item {background-color: #484b42; color: #fff; text-align: center; align-items: center; display: flex; flex-direction: column; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);}",
-        "a {font-size: 18px; font-weight: 100; color: ;}",
+        ".article-item {background-color: #f5f5f5; padding: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);}",
+        "img {padding-bottom: 20px;}",
+        "}a {font-size: 18px; font-weight: 100; color: ;}",
         ".article-item__content {flex-grow: 1;}",
         ".article-item__title,.article-item__content {padding: 10px !important; display: flex; align-items: center; justify-content: center;}",
         "h3 {font-weight: bold;}"
@@ -445,8 +446,8 @@
         "stack_mobile": false,
         "show_category": false,
         "show_excerpt": false,
-        "background": "#c8dd02",
-        "text_color": "#ffffff"
+        "background": "#ffffff",
+        "text_color": "#484b42"
       }
     },
     "170008645861baa2bc": {
