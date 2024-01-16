@@ -34,6 +34,10 @@
       "block_order": [
         "image_TQQeqD"
       ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
         "quick_nav_menu": "",
         "section_height": "auto",
@@ -52,7 +56,7 @@
         "item_QzBA4m": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TomTomato_Schnitt_2.57_cut.png",
+            "image": "shopify:\/\/shop_images\/jobs-mobile.png",
             "tab_label": "",
             "subheading": "",
             "title": "KARRIERE BEI GUSTA GARDEN",
@@ -65,6 +69,9 @@
       "block_order": [
         "item_QzBA4m"
       ],
+      "custom_css": [
+        "h3 {color: #c8dd02; font-weight: bold; font-size: 30px;}"
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "full_width",
@@ -72,7 +79,7 @@
         "image_position": "left",
         "text_alignment": "center",
         "cycle_speed": 8,
-        "accent_background": "rgba(0,0,0,0)",
+        "accent_background": "#f7f7f7",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
