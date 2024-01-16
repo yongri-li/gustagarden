@@ -56,7 +56,7 @@
         "6e4c9176-42a3-4599-8734-b7b8fa4ed08b": {
           "type": "mega_menu",
           "settings": {
-            "menu_item": "SHOP",
+            "menu_item": "weitere Produkte",
             "images_position": "right",
             "image_above_1": "shopify:\/\/shop_images\/banner1.webp",
             "image_1_heading": "BESTSELLER",
@@ -82,6 +82,38 @@
             "image_6_text": "",
             "image_6_link": "",
             "above_image_size": 190
+          }
+        },
+        "mega_menu_HUJx4f": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Hauptprodukte",
+            "images_position": "right",
+            "image_1": "shopify:\/\/shop_images\/HARRY-HERBS-colors-300x300.jpg",
+            "image_1_heading": "4 in 1 Kräutertopf",
+            "image_1_text": "HARRY HERBS",
+            "image_1_link": "#",
+            "image_2": "shopify:\/\/shop_images\/sammy2_c0df1d74-5928-455d-a0de-0113f967adbc.png",
+            "image_2_heading": "HOCHBEET",
+            "image_2_text": "SAMMY SALAD",
+            "image_2_link": "#",
+            "image_3": "shopify:\/\/shop_images\/paul.png",
+            "image_3_heading": "Kartoffelturm",
+            "image_3_text": "PAUL POTATO",
+            "image_3_link": "#",
+            "image_4": "shopify:\/\/shop_images\/sissi.png",
+            "image_4_heading": "ERDBEERTURM",
+            "image_4_text": "SISSI STRAWBERRY",
+            "image_4_link": "#",
+            "image_5": "shopify:\/\/shop_images\/100610_TOM_TOMATO_lightgray_2.jpg",
+            "image_5_heading": "Tomatentopf",
+            "image_5_text": "TOM TOMATO",
+            "image_5_link": "#",
+            "image_6": "shopify:\/\/shop_images\/100710_CHARLY-CHILI_light-gray_blue.jpg",
+            "image_6_heading": "Chilitopf",
+            "image_6_text": "CHARLY CHILI",
+            "image_6_link": "#",
+            "above_image_size": 180
           }
         },
         "d290e4e5-66ec-4afd-a6cb-51edf8829bfb": {
@@ -113,43 +145,38 @@
             "above_image_size": 180
           }
         },
-        "mega_menu_HUJx4f": {
+        "mega_menu_e9KYzD": {
           "type": "mega_menu",
           "settings": {
-            "menu_item": "Produkte",
+            "menu_item": "über uns",
             "images_position": "right",
-            "image_1": "shopify:\/\/shop_images\/HARRY-HERBS-colors-300x300.jpg",
-            "image_1_heading": "4 in 1 Kräutertopf",
-            "image_1_text": "HARRY HERBS",
-            "image_1_link": "#",
-            "image_2": "shopify:\/\/shop_images\/sammy2_c0df1d74-5928-455d-a0de-0113f967adbc.png",
-            "image_2_heading": "HOCHBEET",
-            "image_2_text": "SAMMY SALAD",
-            "image_2_link": "#",
-            "image_3": "shopify:\/\/shop_images\/paul.png",
-            "image_3_heading": "Kartoffelturm",
-            "image_3_text": "PAUL POTATO",
-            "image_3_link": "#",
-            "image_4": "shopify:\/\/shop_images\/sissi.png",
-            "image_4_heading": "ERDBEERTURM",
-            "image_4_text": "SISSI STRAWBERRY",
-            "image_4_link": "#",
-            "image_5": "shopify:\/\/shop_images\/100610_TOM_TOMATO_lightgray_2.jpg",
-            "image_5_heading": "Tomatentopf",
-            "image_5_text": "TOM TOMATO",
-            "image_5_link": "#",
-            "image_6": "shopify:\/\/shop_images\/100710_CHARLY-CHILI_light-gray_blue.jpg",
-            "image_6_heading": "Chilitopf",
-            "image_6_text": "CHARLY CHILI",
-            "image_6_link": "#",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": "",
+            "image_3_heading": "",
+            "image_3_text": "",
+            "image_3_link": "",
+            "image_4_heading": "",
+            "image_4_text": "",
+            "image_4_link": "",
+            "image_5_heading": "",
+            "image_5_text": "",
+            "image_5_link": "",
+            "image_6_heading": "",
+            "image_6_text": "",
+            "image_6_link": "",
             "above_image_size": 180
           }
         }
       },
       "block_order": [
         "6e4c9176-42a3-4599-8734-b7b8fa4ed08b",
+        "mega_menu_HUJx4f",
         "d290e4e5-66ec-4afd-a6cb-51edf8829bfb",
-        "mega_menu_HUJx4f"
+        "mega_menu_e9KYzD"
       ],
       "custom_css": [
 
