@@ -2,11 +2,86 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "slideshow_nCCmjM": {
+      "type": "slideshow",
+      "blocks": {
+        "image_TQQeqD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jobs-banner.png",
+            "mobile_image": "shopify:\/\/shop_images\/jobs-mobile.png",
+            "text_position": "middle_left",
+            "subheading": "",
+            "title": "Jobs",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_TQQeqD"
+      ],
+      "settings": {
+        "quick_nav_menu": "",
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "menu_1_text": "Level 1 Navigation",
+        "menu_2_text": "Navigation options",
+        "quick_nav_title": "Quick navigation"
+      }
+    },
+    "image_with_text_NmjDRB": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_QzBA4m": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TomTomato_Schnitt_2.57_cut.png",
+            "tab_label": "",
+            "subheading": "",
+            "title": "KARRIERE BEI GUSTA GARDEN",
+            "content": "<p>Wir sind ein junges und motiviertes Team, das die Welt ein bisschen grüner und gesünder machen will. Wir stürzen uns mit Begeisterung in die Arbeit und wollen gemeinsam etwas Neues schaffen. Wir schätzen eigene Ideen, selbständiges Arbeiten und Teamgeist.<\/p><h4>Wir suchen dich!<\/h4><p>Du möchtest dich täglich mit außergewöhnlichen und innovativen Produkten beschäftigen? Bist eigenverantwortlich, kreativ, zuverlässig und motiviert? Du schätzt ein ausgezeichnetes, familiäres Betriebsklima mit flachen Hierarchien?<\/p><h4>Dann werde auch du ein Teil von Gusta Garden!<\/h4>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_QzBA4m"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "slideshow_nCCmjM",
+    "image_with_text_NmjDRB"
   ]
 }
