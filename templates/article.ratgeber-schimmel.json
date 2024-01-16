@@ -164,6 +164,90 @@
       "settings": {
         "show_gravatar": true
       }
+    },
+    "slideshow_7MfnHp": {
+      "type": "slideshow",
+      "blocks": {
+        "image_JWg8aR": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle_center",
+            "subheading": "Tell your story",
+            "title": "Slide 1",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "image_3hYXgq": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle_center",
+            "subheading": "Tell your story",
+            "title": "Slide 2",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_JWg8aR",
+        "image_3hYXgq"
+      ],
+      "settings": {
+        "quick_nav_menu": "",
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "menu_1_text": "Level 1 Navigation",
+        "menu_2_text": "Navigation options",
+        "quick_nav_title": "Quick navigation"
+      }
+    },
+    "codext_gallery_metafield_jEfa7F": {
+      "type": "codext-gallery-metafield",
+      "blocks": {
+        "image_RakDe8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-14.jpg",
+            "caption": ""
+          }
+        },
+        "image_QEEtFz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-11.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RakDe8",
+        "image_QEEtFz"
+      ],
+      "settings": {
+        "subheading": "Subheading",
+        "title": "Gallery",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -175,6 +259,8 @@
     "gallery_QaMRBD",
     "24af79c8-88e8-4c2b-8351-5ca652fd1b1f",
     "blog-post-prev-next",
-    "blog-post-comments"
+    "blog-post-comments",
+    "slideshow_7MfnHp",
+    "codext_gallery_metafield_jEfa7F"
   ]
 }
