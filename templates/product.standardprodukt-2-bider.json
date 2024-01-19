@@ -8,22 +8,6 @@
           "settings": {
           }
         },
-        "image_fJmQt3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/e-book.png",
-            "image_alignment": "left",
-            "image_width": 330
-          }
-        },
-        "image_t6P49p": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/button.png",
-            "image_alignment": "left",
-            "image_width": 150
-          }
-        },
         "fff5100c-5ff6-462e-9771-01ed6285b80f": {
           "type": "liquid",
           "settings": {
@@ -85,8 +69,6 @@
       },
       "block_order": [
         "b3e6ce87-1409-4648-a0ad-7dbc015879b0",
-        "image_fJmQt3",
-        "image_t6P49p",
         "fff5100c-5ff6-462e-9771-01ed6285b80f",
         "variant_picker",
         "quantity_selector",
