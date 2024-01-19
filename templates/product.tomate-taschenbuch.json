@@ -289,7 +289,7 @@
         "collection_tjFEYA": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "tom-tomato",
             "label": "",
             "button_text": "",
             "button_url": ""
@@ -298,6 +298,9 @@
       },
       "block_order": [
         "collection_tjFEYA"
+      ],
+      "custom_css": [
+        "h3 {font-weight: bold;}"
       ],
       "settings": {
         "subheading": "ALLES FÜR DEINEN TOM TOMATO",
