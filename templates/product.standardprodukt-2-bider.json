@@ -218,7 +218,7 @@
             "image": "shopify:\/\/shop_images\/BuchTomateInhalt01.png",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Dein Leitfaden für den Anbau, Pflege, ...",
+            "title": "Dein Leitfaden für den Anbau, Pflege...",
             "content": "<p>Schritt für Schritt zu deinen eigenen Tomaten. Dieses Buch bietet dir einen leicht verständlichen Leitfaden, um aus kleinen Samen prächtige, schmackhafte Früchte heranzuziehen - egal ob im Garten oder am kleinen Stadtbalkon. Erfahre alles über das richtige Ansähen, die wichtigsten Sorten und darüber, wie du deine Pflanzen pflegst und gesund hältst.<\/p>",
             "button_text": "",
             "button_link": ""
@@ -279,43 +279,6 @@
         "cycle_speed": 8,
         "accent_background": "rgba(0,0,0,0)",
         "text_color": "#000000",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "d4209e3c-7dcf-4f51-889f-b541d7fbf05d": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T230124.609.png",
-            "tab_label": "Item",
-            "subheading": "",
-            "title": "Erdvolumen exakt abgestimmt",
-            "content": "<p>Der Pflanztopf wurde perfekt auf das Erdvolumen für eine Tomatenpflanze abgestimmt und garantiert somit eine ideale Versorgung mit Nährstoffen.<\/p>",
-            "button_text": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1"
-      ],
-      "custom_css": [
-        "{margin: 0 !important; --vertical-breather: 0;}",
-        ".image-with-text__wrapper {padding: 0 !important;}",
-        "h3 {font-weight: bold;}"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "background_type": "full_width",
-        "background_overlap": "text",
-        "image_position": "left",
-        "text_alignment": "left",
-        "cycle_speed": 8,
-        "accent_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
@@ -386,7 +349,6 @@
     "c1d0c0d1-d94d-41bd-8d4a-cb7fb28099a9",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
-    "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc"
   ]
