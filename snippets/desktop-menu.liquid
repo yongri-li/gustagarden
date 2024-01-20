@@ -177,6 +177,42 @@
                                     class="object-center aspect-video"
                                     loading="lazy">
                                 </div>
+                              {% elsif forloop.index == 6
+                                and mega_menu_block.settings.image_above_6
+                              %}
+                                <div class="text-center mb-5 flex">
+                                  <img
+                                    src="{{ mega_menu_block.settings.image_above_6 | img_url: 'master' }}"
+                                    alt=""
+                                    height="240"
+                                    width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
+                                    class="object-center aspect-video"
+                                    loading="lazy">
+                                </div>
+                              {% elsif forloop.index == 7
+                                and mega_menu_block.settings.image_above_7
+                              %}
+                                <div class="text-center mb-5 flex">
+                                  <img
+                                    src="{{ mega_menu_block.settings.image_above_7 | img_url: 'master' }}"
+                                    alt=""
+                                    height="240"
+                                    width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
+                                    class="object-center aspect-video"
+                                    loading="lazy">
+                                </div>
+                                {% elsif forloop.index == 8
+                                  and mega_menu_block.settings.image_above_8
+                                %}
+                                  <div class="text-center mb-5 flex">
+                                    <img
+                                      src="{{ mega_menu_block.settings.image_above_8 | img_url: 'master' }}"
+                                      alt=""
+                                      height="240"
+                                      width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
+                                      class="object-center aspect-video"
+                                      loading="lazy">
+                                  </div>
                               {%- endif -%}
                             </a>
                             <a
