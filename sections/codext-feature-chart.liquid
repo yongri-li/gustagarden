@@ -17,7 +17,11 @@
                 <th class="text-center w-80 pb-5">
                   <div class="flex flex-col items-center">
                     <img
+                      {% if  block.settings.product_image != blank %}
+                      src="{{ block.settings.product_image | img_url: '200x200' }}"
+                      {% else %}
                       src="{{ block.settings.product | img_url: '200x200' }}"
+                      {% endif %}
                       alt=""
                       loading="lazy"
                       height="200"
@@ -94,7 +98,7 @@
 
 {% schema %}
 {
-  "name": "Codext - Feature chart",
+  "name": "c/ Feature chart",
   "class": "shopify-section--feature-chart",
   "tag": "section",
   "disabled_on": {
@@ -163,6 +167,11 @@
       "limit": 3,
       "settings": [
         {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        },
+        {
           "type": "product",
           "id": "product",
           "label": "Product",
@@ -198,7 +207,7 @@
   ],
   "presets": [
     {
-      "name": "Feature chart",
+      "name": "c/ Feature chart",
       "blocks": [
         {
           "type": "headings",
