@@ -176,3 +176,9 @@ a.list-collections__item {
   background: #fff;
   padding: 10px;
 }
+div.article-item {
+  @apply !p-0;
+}
+div.article-item .article-item__content {
+  padding: 0 10px 10px;
+}

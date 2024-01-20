@@ -275,10 +275,6 @@
   margin-bottom: 1.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .ml-12 {
   margin-left: 3rem;
 }
@@ -1601,6 +1597,14 @@ a.list-collections__item {
 .mini-cart__recommendations-inner .product-item {
   background: #fff;
   padding: 10px;
+}
+
+div.article-item {
+  padding: 0px !important;
+}
+
+div.article-item .article-item__content {
+  padding: 0 10px 10px;
 }
 
 .hover\:cursor-pointer:hover {
