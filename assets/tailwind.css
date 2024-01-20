@@ -1599,7 +1599,7 @@ a.list-collections__item {
 }
 
 .mini-cart__recommendations-inner .product-item {
-  border: 1px solid #c5bebe;
+  background: #fff;
   padding: 10px;
 }
 
@@ -1729,10 +1729,6 @@ a.list-collections__item {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:max-w-sm {
-    max-width: 24rem;
   }
 
   .md\:grid-cols-12 {

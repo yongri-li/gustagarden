@@ -173,6 +173,6 @@ a.list-collections__item {
   max-height: 400px !important;
 }
 .mini-cart__recommendations-inner .product-item {
-  border: 1px solid #c5bebe;
+  background: #fff;
   padding: 10px;
 }
