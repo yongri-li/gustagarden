@@ -116,8 +116,10 @@
               </h2>
             {%- endif -%}
 
+            {% render 'codext-breadcrumb' %}
+
             {%- if section.settings.title != blank -%}
-              <h3 class="heading h2">
+              <h3 class="heading h2 !mt-0">
                 <split-lines {% if section.settings.reveal_on_scroll %}reveal{% endif %}>{{ section.settings.title | escape }}</split-lines>
               </h3>
             {%- endif -%}

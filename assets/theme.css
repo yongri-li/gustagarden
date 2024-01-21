@@ -6095,6 +6095,7 @@ select:focus,
 
   .content-box--left {
     margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 
   .content-box--right {
