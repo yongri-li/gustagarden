@@ -68,6 +68,14 @@
             </a>
           </li>
 
+          <li class="breadcrumb__item">
+            <a
+              class="breadcrumb__link"
+              href="/collections/">
+              Shop
+            </a>
+          </li>
+
           {%- if collection -%}
             <li class="breadcrumb__item">
               <a
@@ -604,6 +612,11 @@
     }
   ],
   "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection (Breadcrumb)"
+    },
     {
       "type": "checkbox",
       "id": "show_metafield_badges",
