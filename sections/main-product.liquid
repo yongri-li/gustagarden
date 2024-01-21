@@ -76,12 +76,12 @@
             </a>
           </li>
 
-          {%- if collection -%}
+          {%- if section.settings.collection != blank -%}
             <li class="breadcrumb__item">
               <a
                 class="breadcrumb__link"
-                href="{{ collection.url }}">
-                {{- collection.title -}}
+                href="{{ section.settings.collection.url }}">
+                {{- section.settings.collection.title -}}
               </a>
             </li>
           {%- endif -%}
