@@ -98,8 +98,22 @@
     <product-facet
       section-id="{{ section.id }}"
       class="product-facet">
+      {% if section.settings.custom_menu != blank %}
+        <nav class="bg-white py-3">
+          <ul class="list-none m-0 p-0">
+            {% for link in menus[section.settings.custom_menu].links %}
+              <li class="inline-block">
+                <a href="{{ link.url }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium" aria-current="page">
+                  {{ link.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      {% else %}
       {%- if section.settings.show_filters and collection.filters != empty -%}
         {%- if section.settings.filter_position == 'always_visible' -%}
+
           <div class="product-facet__aside">
             <safe-sticky
               offset="30"
@@ -366,6 +380,7 @@
           </div>
         {%- endif -%}
       </div>
+      {% endif %}
     </product-facet>
   </div>
 </section>
@@ -497,6 +512,11 @@
     }
   ],
   "settings": [
+    {
+      "type": "link_list",
+      "id": "custom_menu",
+      "label": "Menu"
+    },
     {
       "type": "checkbox",
       "id": "show_sort_by",
