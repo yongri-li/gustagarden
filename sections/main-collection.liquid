@@ -97,18 +97,35 @@
   <div class="container">
     <product-facet
       section-id="{{ section.id }}"
-      class="product-facet">
+      class="product-facet gap-6 flex flex-col-reverse  md:!flex-row">
       {% if section.settings.custom_menu != blank %}
-        <nav class="bg-white py-3">
-          <ul class="list-none m-0 p-0">
-            {% for link in menus[section.settings.custom_menu].links %}
-              <li class="inline-block">
-                <a href="{{ link.url }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium" aria-current="page">
-                  {{ link.title }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
+        <nav class=" p-5 bg-[#f5f5f5] drop-shadow-md mb-4 md:mb-0">
+          <div class="sticky top-32">
+            <h3>Kategorien</h3>
+            <ul class="list-none m-0 p-0 flex flex-col gap-2">
+              {% for link in menus[section.settings.custom_menu].links %}
+                <li>
+                  <a class="text-[#99aa01]" href="{{ link.url }}">{{ link.title }}</a>
+                  {% if link.links != blank %}
+                    <ul class="child">
+                      {% for child_link in link.links %}  
+                      <li>
+                        <a class="text-[#99aa01]"  href= "{{ child_link.url }}">{{ child_link.title }}</a>
+                        {% if child_link.links != blank %}
+                          <ul class="grandchild">
+                          {% for grandchild_link in child_link.links %}  
+                            <li><a class="text-[#99aa01]"  href= "{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>
+                          {% endfor %}
+                          </ul>
+                        {% endif %}   
+                      </li>
+                      {% endfor %}
+                    </ul> 
+                  {% endif %} 
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
         </nav>
       {% else %}
       {%- if section.settings.show_filters and collection.filters != empty -%}
@@ -137,6 +154,9 @@
           -%}
         {%- endif -%}
       {%- endif -%}
+      {% endif %}
+
+      
 
       <div
         id="facet-main"
@@ -380,7 +400,6 @@
           </div>
         {%- endif -%}
       </div>
-      {% endif %}
     </product-facet>
   </div>
 </section>
