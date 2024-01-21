@@ -125,68 +125,20 @@
         "quick_links": ""
       }
     },
-    "351c2837-133e-4af4-a0da-8543e7b95590": {
-      "type": "lb-tag-slider",
-      "blocks": {
-        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-1": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": ""
-          }
-        },
-        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-2": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": ""
-          }
-        },
-        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-3": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": ""
-          }
-        },
-        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-4": {
-          "type": "block",
-          "settings": {
-            "heading": "Linkname",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-1",
-        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-2",
-        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-3",
-        "template--16337048010925__351c2837-133e-4af4-a0da-8543e7b95590-block-4"
-      ],
-      "disabled": true,
-      "settings": {
-        "background-color": "#f2f2f2",
-        "headline": "Unsere Kategorien",
-        "tag-background-color": "#f2f2f2",
-        "text-color": "#000000",
-        "border-color": "#d5d5d5",
-        "max-show": 2000
-      }
-    },
     "main": {
       "type": "main-collection",
       "custom_css": [
-        "{width: 200px; \/* Breite deines Elements *\/ height: 200px; \/* Höhe deines Elements *\/ background-color: #ffffff; \/* Hintergrundfarbe deines Elements *\/ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); \/* Horizontale Verschiebung, vertikale Ve"
+
       ],
       "settings": {
         "show_sort_by": true,
         "products_per_page": 24,
         "mobile_products_per_row": "2",
         "desktop_products_per_row": 4,
-        "show_filters": false,
+        "show_filters": true,
         "show_filter_group_name": false,
         "show_color_swatch": true,
-        "open_first_filter_group": false,
+        "open_first_filter_group": true,
         "filter_position": "always_visible",
         "promotion_position": "top",
         "promotion_height": "small"
@@ -196,7 +148,6 @@
   "order": [
     "641919ad-8e55-4633-9146-581c86bfafda",
     "collection-banner",
-    "351c2837-133e-4af4-a0da-8543e7b95590",
     "main"
   ]
 }
