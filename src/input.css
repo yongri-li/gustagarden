@@ -182,3 +182,24 @@ div.article-item {
 div.article-item .article-item__content {
   padding: 0 10px 10px;
 }
+
+body div.image-with-text__image-wrapper {
+  margin: 0;
+  width: 100%;
+}
+body img.image-with-text__image {
+  max-height: 400px;
+  object-fit: cover;
+}
+body .image-with-text__wrapper {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4 mb-4;
+}
+body .image-with-text--reverse .image-with-text__wrapper {
+  direction: rtl;
+}
+body .image-with-text--reverse .image-with-text__wrapper .image-with-text__content-wrapper {
+  direction: ltr;
+}
+body .image-with-text__content-wrapper {
+  @apply p-4;
+}
