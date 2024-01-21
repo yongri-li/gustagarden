@@ -82,6 +82,7 @@
         "h1 {font-weight: bold;}"
       ],
       "settings": {
+        "collection": "harry-herbs",
         "show_metafield_badges": true,
         "show_vendor": false,
         "show_sku": false,
