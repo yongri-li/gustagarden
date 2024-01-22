@@ -82,13 +82,19 @@
             "image_6_heading": "CHARLY CHILI",
             "image_6_text": "Chilitopf",
             "image_6_link": "shopify:\/\/products\/charly-chili",
+            "image_7_heading": "",
+            "image_7_text": "",
+            "image_7_link": "",
+            "image_8_heading": "",
+            "image_8_text": "",
+            "image_8_link": "",
             "above_image_size": 180
           }
         },
         "6e4c9176-42a3-4599-8734-b7b8fa4ed08b": {
           "type": "mega_menu",
           "settings": {
-            "menu_item": "weitere Produkte",
+            "menu_item": "Zubehörprodukte",
             "images_position": "right",
             "image_above_1": "shopify:\/\/shop_images\/banner1.webp",
             "image_1_heading": "BESTSELLER",
@@ -113,6 +119,12 @@
             "image_6_heading": "",
             "image_6_text": "",
             "image_6_link": "",
+            "image_7_heading": "",
+            "image_7_text": "",
+            "image_7_link": "",
+            "image_8_heading": "",
+            "image_8_text": "",
+            "image_8_link": "",
             "above_image_size": 190
           }
         },
@@ -142,6 +154,12 @@
             "image_6_heading": "",
             "image_6_text": "",
             "image_6_link": "",
+            "image_7_heading": "",
+            "image_7_text": "",
+            "image_7_link": "",
+            "image_8_heading": "",
+            "image_8_text": "",
+            "image_8_link": "",
             "above_image_size": 180
           }
         },
@@ -171,6 +189,12 @@
             "image_6_heading": "",
             "image_6_text": "",
             "image_6_link": "",
+            "image_7_heading": "",
+            "image_7_text": "",
+            "image_7_link": "",
+            "image_8_heading": "",
+            "image_8_text": "",
+            "image_8_link": "",
             "above_image_size": 180
           }
         }
