@@ -3,6 +3,14 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "image_gpVnWJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/e-book.png",
+            "image_alignment": "left",
+            "image_width": 500
+          }
+        },
         "b3e6ce87-1409-4648-a0ad-7dbc015879b0": {
           "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
@@ -68,6 +76,7 @@
         }
       },
       "block_order": [
+        "image_gpVnWJ",
         "b3e6ce87-1409-4648-a0ad-7dbc015879b0",
         "fff5100c-5ff6-462e-9771-01ed6285b80f",
         "variant_picker",
@@ -458,12 +467,13 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2": {
           "type": "values",
           "settings": {
+            "product_image": "shopify:\/\/shop_images\/Gusta-Garden_tequila-sunrise.png",
             "product": "fertigen-systeme",
             "value_1": "<p>❌<\/p>",
             "value_2": "<p>❌<\/p>",
             "value_3": "<p>❌<\/p>",
             "value_4": "<p>❌<\/p>",
-            "value_5": ""
+            "value_5": "<p>❌<\/p>"
           }
         }
       },
