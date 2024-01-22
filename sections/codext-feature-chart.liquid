@@ -17,7 +17,7 @@
                 <th class="text-center w-80 pb-5">
                   <div class="flex flex-col items-center">
                     <img
-                      {% if  block.settings.product_image != blank %}
+                      {% if block.settings.product_image != blank %}
                       src="{{ block.settings.product_image | img_url: '200x200' }}"
                       {% else %}
                       src="{{ block.settings.product | img_url: '200x200' }}"
@@ -28,7 +28,11 @@
                       width="200"
                       class="w-40 h-40 mb-2 object-contain">
                     <div class="text-base md:text-xl">
-                      {{ block.settings.product.title }}
+                      {% if block.settings.product_title != blank %}
+                        {{ block.settings.product_title }}
+                      {% else %}
+                        {{ block.settings.product.title }}
+                      {% endif %}
                     </div>
                     <div class="text-neutral-800 font-normal text-lg hidden">
                       {{ block.settings.product.price | money }}
@@ -97,147 +101,141 @@
 </section>
 
 {% schema %}
-{
-  "name": "c/ Feature chart",
-  "class": "shopify-section--feature-chart",
-  "tag": "section",
-  "disabled_on": {
-    "groups": ["header"]
-  },
-  "settings": [
-    {
-      "type": "text",
-      "id": "subheading",
-      "label": "Subheading",
-      "default": "Compare"
+  {
+    "name": "c/ Feature chart",
+    "class": "shopify-section--feature-chart",
+    "tag": "section",
+    "disabled_on": {
+      "groups": ["header"]
     },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "Product specification"
-    },
-    {
-      "type": "richtext",
-      "id": "content",
-      "label": "Content",
-      "default": "<p>Give your customers useful information about your products and showcase differences between them.</p>"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Headings column",
-      "type": "headings",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "A heading without values is hidden automatically."
-        },
-        {
-          "type": "text",
-          "id": "heading_1",
-          "label": "Heading 1"
-        },
-        {
-          "type": "text",
-          "id": "heading_2",
-          "label": "Heading 2"
-        },
-        {
-          "type": "text",
-          "id": "heading_3",
-          "label": "Heading 3"
-        },
-        {
-          "type": "text",
-          "id": "heading_4",
-          "label": "Heading 4"
-        },
-        {
-          "type": "text",
-          "id": "heading_5",
-          "label": "Heading 5"
-        }
-      ]
-    },
-    {
-      "name": "Values column",
-      "type": "values",
-      "limit": 3,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "product_image",
-          "label": "Product Image"
-        },
-        {
-          "type": "product",
-          "id": "product",
-          "label": "Product",
-          "info": "Select an optional product to connect metafields or to show product information."
-        },
-        {
-          "type": "richtext",
-          "id": "value_1",
-          "label": "Value 1"
-        },
-        {
-          "type": "richtext",
-          "id": "value_2",
-          "label": "Value 2"
-        },
-        {
-          "type": "richtext",
-          "id": "value_3",
-          "label": "Value 3"
-        },
-        {
-          "type": "richtext",
-          "id": "value_4",
-          "label": "Value 4"
-        },
-        {
-          "type": "richtext",
-          "id": "value_5",
-          "label": "Value 5"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "c/ Feature chart",
-      "blocks": [
-        {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Heading 1",
-            "heading_2": "Heading 2",
-            "heading_3": "Heading 3",
-            "heading_4": "Heading 4"
+    "settings": [
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "Compare"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Product specification"
+      }, {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default": "<p>Give your customers useful information about your products and showcase differences between them.</p>"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Headings column",
+        "type": "headings",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "A heading without values is hidden automatically."
+          },
+          {
+            "type": "text",
+            "id": "heading_1",
+            "label": "Heading 1"
+          },
+          {
+            "type": "text",
+            "id": "heading_2",
+            "label": "Heading 2"
+          },
+          {
+            "type": "text",
+            "id": "heading_3",
+            "label": "Heading 3"
+          }, {
+            "type": "text",
+            "id": "heading_4",
+            "label": "Heading 4"
+          }, {
+            "type": "text",
+            "id": "heading_5",
+            "label": "Heading 5"
           }
-        },
-        {
-          "type": "values",
-          "settings": {
-            "value_1": "<p>Yes</p>",
-            "value_2": "<p>Yes</p>",
-            "value_3": "<p>No</p>",
-            "value_4": "<p>No</p>"
+        ]
+      }, {
+        "name": "Values column",
+        "type": "values",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "product_image",
+            "label": "Product Image"
+          },
+          {
+            "type": "text",
+            "id": "product_title",
+            "label": "Product Title"
+          },
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product",
+            "info": "Select an optional product to connect metafields or to show product information."
+          },
+          {
+            "type": "richtext",
+            "id": "value_1",
+            "label": "Value 1"
+          }, {
+            "type": "richtext",
+            "id": "value_2",
+            "label": "Value 2"
+          }, {
+            "type": "richtext",
+            "id": "value_3",
+            "label": "Value 3"
+          }, {
+            "type": "richtext",
+            "id": "value_4",
+            "label": "Value 4"
+          }, {
+            "type": "richtext",
+            "id": "value_5",
+            "label": "Value 5"
           }
-        },
-        {
-          "type": "values",
-          "settings": {
-            "value_1": "<p>No</p>",
-            "value_2": "<p>Yes</p>",
-            "value_3": "<p>Yes</p>",
-            "value_4": "<p>No</p>"
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "c/ Feature chart",
+        "blocks": [
+          {
+            "type": "headings",
+            "settings": {
+              "heading_1": "Heading 1",
+              "heading_2": "Heading 2",
+              "heading_3": "Heading 3",
+              "heading_4": "Heading 4"
+            }
+          }, {
+            "type": "values",
+            "settings": {
+              "value_1": "<p>Yes</p>",
+              "value_2": "<p>Yes</p>",
+              "value_3": "<p>No</p>",
+              "value_4": "<p>No</p>"
+            }
+          }, {
+            "type": "values",
+            "settings": {
+              "value_1": "<p>No</p>",
+              "value_2": "<p>Yes</p>",
+              "value_3": "<p>Yes</p>",
+              "value_4": "<p>No</p>"
+            }
           }
-        }
-      ]
-    }
-  ]
-}
+        ]
+      }
+    ]
+  }
 {% endschema %}
