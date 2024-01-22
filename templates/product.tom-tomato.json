@@ -68,6 +68,7 @@
         },
         "3a891ea4-0bef-456f-9c59-74ec642a5447": {
           "type": "save-in-set-static",
+          "disabled": true,
           "settings": {
             "product": "tom-tomato-komplett-set",
             "btn_label": "mach's zum Set!",
