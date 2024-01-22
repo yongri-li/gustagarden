@@ -64,6 +64,16 @@
           "show_recommendations": true,
           "recommendations_title": "KUNDEN KAUFTEN AUCH"
         }
+      },
+      "main-gift-card": {
+        "type": "main-gift-card",
+        "settings": {
+          "logo_max_width": 140,
+          "mobile_logo_max_width": 100,
+          "background": "#c8dd02",
+          "content_background": "#ffffff",
+          "text_color": "#484b42"
+        }
       }
     },
     "content_for_index": [
