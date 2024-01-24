@@ -151,7 +151,7 @@
         "subheading": "",
         "title": "",
         "video_url": "https:\/\/www.youtube.com\/watch?v=rHwjgEK0ZGQ",
-        "background_type": "full_width",
+        "background_type": "boxed",
         "video_size": "auto",
         "autoplay": false,
         "show_video_controls": false,
