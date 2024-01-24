@@ -170,8 +170,8 @@
     "custom_liquid_zMehPj": {
       "type": "custom-liquid",
       "settings": {
-        "subheading": "Your subheading",
-        "title": "Your title",
+        "subheading": "",
+        "title": "",
         "liquid": "{{ product.metafield.custom.video.value }}",
         "add_vertical_spacing": true,
         "background_type": "full_width",
