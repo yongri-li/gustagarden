@@ -135,20 +135,12 @@
             "title_3": "Secure Payment",
             "content_3": "<p>Add text about your payment<\/p>"
           }
-        },
-        "liquid_dVVhGy": {
-          "type": "liquid",
-          "settings": {
-            "title": "",
-            "liquid": ""
-          }
         }
       },
       "block_order": [
         "9dd3e950-9235-4ff1-aeaa-5145a1a479cd",
         "description",
-        "0e38ad27-e55b-480b-86a5-4fbad5113a4a",
-        "liquid_dVVhGy"
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
       ],
       "settings": {
       }
@@ -163,18 +155,6 @@
         "video_size": "auto",
         "autoplay": false,
         "show_video_controls": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "custom_liquid_zMehPj": {
-      "type": "custom-liquid",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "liquid": "<div class=\"page-width\" style=\"max-width: 1100px;\" >{{ product.metafields.custom.video.value }}<\/div>",
-        "add_vertical_spacing": true,
-        "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -468,7 +448,6 @@
     "8871f57c-0dc2-4eb2-8f67-407633af680c",
     "product-content",
     "video_FCmBFQ",
-    "custom_liquid_zMehPj",
     "fa904b10-27d1-443c-94fe-c2665f356d34",
     "520562c2-a265-4177-9598-fab3a8b9bb6e",
     "170008645861baa2bc",
