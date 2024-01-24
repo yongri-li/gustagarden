@@ -172,7 +172,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "liquid": "{{ product.metafields.custom.video.value }}",
+        "liquid": "<div class=\"page-width\" style=\"max-width: 1100px;\" >{{ product.metafields.custom.video.value }}<\/div>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
