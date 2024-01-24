@@ -655,7 +655,9 @@
         "}a {font-size: 18px; font-weight: 100; color: ;}",
         ".article-item__content {flex-grow: 1;}",
         ".article-item__title,.article-item__content {padding: 10px !important; display: flex; align-items: center; justify-content: center;}",
-        "h3 {font-weight: bold;}"
+        "h3 {font-weight: bold;}",
+        "h2 {font-size: 30px !important; text-align: center;}",
+        "h3 {font-size: 18px !important;}"
       ],
       "settings": {
         "blog": "rezepte",
