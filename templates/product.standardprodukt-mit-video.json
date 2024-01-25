@@ -150,8 +150,8 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "liquid": "{% assign product_video_url = product.metafields.custom.product_video %} \n \n{% if product_video_url == blank %} \n  <style> \n    #shopify-section-{{ section.id }} { \n      display: none; \n    } \n  <\/style> \n{% else %} \n  {% assign video_params = product_video_url | split: 'v=' %} \n  {% if video_params.size > 1 %} \n    {% assign video_id = video_params[1] | split: '&' | first %} \n    {% assign embed_url = \"https:\/\/www.youtube.com\/embed\/\" | append: video_id %} \n    <div class=\"youtube-videowrapper\"> \n      <iframe class=\"w-full\" src=\"{{ embed_url }}\" allowfullscreen=\"\" frameborder=\"0\"><\/iframe> \n    <\/div> \n  {% endif %} \n{% endif %}",
-        "add_vertical_spacing": false,
+        "liquid": "{% assign product_video_url = product.metafields.custom.product_video %}\n\n{% if product_video_url == blank %}\n  <style>\n    #shopify-section-{{ section.id }} {\n      display: none;\n    }\n  <\/style>\n{% else %}\n  {% assign video_params = product_video_url | split: 'v=' %}\n  {% if video_params.size > 1 %}\n    {% assign video_id = video_params[1] | split: '&' | first %}\n    {% assign embed_url = \"https:\/\/www.youtube.com\/embed\/\" | append: video_id %}\n    <div class=\"youtube-videowrapper\" style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\">\n      <iframe style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\" src=\"{{ embed_url }}\" allowfullscreen=\"\" frameborder=\"0\"><\/iframe>\n    <\/div>\n  {% endif %}\n{% endif %}",
+        "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
