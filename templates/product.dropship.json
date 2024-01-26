@@ -38,7 +38,7 @@
         "text_8NcLdT": {
           "type": "text",
           "settings": {
-            "text": "<p>Ware wird direkt vom Hersteller geliefert<\/p>"
+            "text": "<p>Ware wird direkt vom Hersteller geliefert!<\/p>"
           }
         },
         "buy_buttons": {
@@ -77,7 +77,8 @@
         "723850fb-7702-4722-abf6-463a8b4acbb7"
       ],
       "custom_css": [
-        "h1 {font-weight: bold;}"
+        "h1 {font-weight: bold;}",
+        ".product-form__text {font-size: 15px; font-weight: bold;}"
       ],
       "settings": {
         "collection": "",
