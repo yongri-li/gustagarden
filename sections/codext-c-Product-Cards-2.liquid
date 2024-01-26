@@ -1,0 +1,111 @@
+{% schema %}
+  {
+    "name": "c/ Product Cards - 2",
+    "class": "product-cards-section",
+    "max_blocks": 3,
+    "blocks": [
+      {
+        "type": "product-card",
+        "name": "Product Card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "product_image",
+            "label": "Product Image"
+          },
+          {
+            "type": "text",
+            "id": "product_title",
+            "label": "Product Title",
+            "default": "Socks in a bundle"
+          },
+          {
+            "type": "text",
+            "id": "product_description",
+            "label": "Product Description",
+            "default": "up to 30% discount"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Save now"
+          },
+          {
+            "type": "color",
+            "id": "button_color",
+            "label": "Button Color",
+            "default": "#f1f1f1"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "c/ Product Cards - 2"
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Wird oft zusammen gekauft"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Section Description",
+        "default": "Wird oft zusammen gekauft"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#f1f1f1"
+      }
+    ]
+  }
+{% endschema %}
+
+<div class="p-4 py-12" style="background-color: {{ section.settings.background_color }}">
+  <div class="container mx-auto ">
+    <p class="text-lg">{{ section.settings.description }}</p>
+    <h3 class="text-2xl font-bold">{{ section.settings.title }}</h3>
+    <div class="grid gap-2 md:grid-cols-3">
+      {% for block in section.blocks %}
+        <div class="mt-2 bg-white p-2 py-6 text-center">
+          <div class="flex items-center justify-center gap-2 text-center">
+            <div>
+              <img
+                src="{{ block.settings.product_image | img_url: '200x' }}"
+                class="w-full"
+                loading="lazy" />
+            </div>
+            <div class="w-7 h-7">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-h-7 h-7">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <img
+                src="{{ block.settings.product_image | img_url: '200x' }}"
+                class="w-full"
+                loading="lazy" />
+            </div>
+          </div>
+          <h1 class="text-2xl font-bold">{{ block.settings.product_title }}</h1>
+          <p>{{ block.settings.product_description }}</p>
+          <button style="background-color: {{ section.settings.button_color }}" class="mt-2 rounded-lg bg-yellow-400 px-5 py-2 btn button">{{ block.settings.button_text }}</button>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
