@@ -30,8 +30,15 @@
         },
         "38a03175-609a-40b5-9e4e-055fec879e76": {
           "type": "inventory",
+          "disabled": true,
           "settings": {
             "low_inventory_threshold": 0
+          }
+        },
+        "text_8NcLdT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ware wird direkt vom Hersteller geliefert<\/p>"
           }
         },
         "buy_buttons": {
@@ -64,6 +71,7 @@
         "variant_picker",
         "quantity_selector",
         "38a03175-609a-40b5-9e4e-055fec879e76",
+        "text_8NcLdT",
         "buy_buttons",
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
         "723850fb-7702-4722-abf6-463a8b4acbb7"
@@ -72,6 +80,7 @@
         "h1 {font-weight: bold;}"
       ],
       "settings": {
+        "collection": "",
         "show_metafield_badges": true,
         "show_vendor": false,
         "show_sku": false,
