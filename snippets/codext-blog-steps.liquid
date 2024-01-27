@@ -26,6 +26,7 @@
                 </div>
               {% endcomment %}
               <div class="flex gap-4 items-center">
+                {% comment %}
                 <div
                   class="
                     absolute shadow-xl -top-4 -left-4 font-bold
@@ -34,7 +35,8 @@
                   ">
                   {{ schritt.nummer }}
                 </div>
-                <div class="text-2xl font-semibold ml-12">
+                {% endcomment %}
+                <div class="text-2xl font-semibold ml-2">
                   {{ schritt.titel }}
                 </div>
               </div>

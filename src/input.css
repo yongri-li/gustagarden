@@ -156,6 +156,7 @@ input:focus-within {
 }
 .product-item-meta__title {
   font-weight: bold;
+  text-decoration: none!important;
 }
 
 section div.article {
