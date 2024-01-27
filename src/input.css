@@ -189,8 +189,8 @@ body div.image-with-text__image-wrapper {
   width: 100%;
 }
 body img.image-with-text__image {
-  max-height: 400px;
-  object-fit: cover;
+  /*max-height: 400px;*/
+  object-fit: contain;
 }
 body .image-with-text__wrapper {
   @apply grid grid-cols-1 md:grid-cols-2 gap-4 mb-4;

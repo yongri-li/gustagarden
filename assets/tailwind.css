@@ -1669,9 +1669,9 @@ body div.image-with-text__image-wrapper {
 }
 
 body img.image-with-text__image {
-  max-height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /*max-height: 400px;*/
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 body .image-with-text__wrapper {
