@@ -1700,6 +1700,10 @@ body .image-with-text__content-wrapper {
   padding: 1rem;
 }
 
+body .mega-menu__inner {
+  justify-content: flex-start !important;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }

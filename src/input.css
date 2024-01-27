@@ -205,3 +205,7 @@ body .image-with-text--reverse .image-with-text__wrapper .image-with-text__conte
 body .image-with-text__content-wrapper {
   @apply p-4;
 }
+
+body .mega-menu__inner {
+  @apply !justify-start;
+}
