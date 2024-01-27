@@ -194,10 +194,6 @@
   top: 50%;
 }
 
-.top-32 {
-  top: 8rem;
-}
-
 .top-\[var\(--top\)\] {
   top: var(--top);
 }
@@ -854,11 +850,6 @@
   background-color: rgb(200 211 14 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#f5f5f5\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-}
-
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1377,11 +1368,6 @@
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.drop-shadow-md {
-  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .invert {
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1594,9 +1580,10 @@ html {
   line-height: 1.25 !important;
 }
 
+/*
 .image-hotspots {
-  overflow: hidden !important;
-}
+  @apply !overflow-hidden;
+}*/
 
 input:focus-within {
   outline: 2px solid transparent !important;
@@ -1653,8 +1640,6 @@ section div.article {
 .product-list__inner product-item {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .product-list__inner {
@@ -1808,10 +1793,6 @@ body .image-with-text__content-wrapper {
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:mt-52 {
