@@ -1,0 +1,28 @@
+{% if section.settings.custom_menu != blank %}
+    <nav class=" p-5 mb-2">
+        <h3>Kategorien</h3>
+        <ul class="list-none m-0 p-0 flex flex-col gap-2">
+          {% for link in menus[section.settings.custom_menu].links %}
+            <li>
+              <a class="text-[#99aa01]" href="{{ link.url }}">{{ link.title }}</a>
+              {% if link.links != blank %}
+                <ul class="child">
+                  {% for child_link in link.links %}  
+                  <li>
+                    <a class="text-[#99aa01]"  href= "{{ child_link.url }}">{{ child_link.title }}</a>
+                    {% if child_link.links != blank %}
+                      <ul class="grandchild">
+                      {% for grandchild_link in child_link.links %}  
+                        <li><a class="text-[#99aa01]"  href= "{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}   
+                  </li>
+                  {% endfor %}
+                </ul> 
+              {% endif %} 
+            </li>
+          {% endfor %}
+        </ul>
+    </nav>
+  {% endif %}

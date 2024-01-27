@@ -98,48 +98,22 @@
     <product-facet
       section-id="{{ section.id }}"
       class="product-facet gap-6 flex flex-col-reverse  md:!flex-row">
-      {% if section.settings.custom_menu != blank %}
-        <nav class=" p-5 bg-[#f5f5f5] drop-shadow-md mb-4 md:mb-0">
-          <div class="sticky top-32">
-            <h3>Kategorien</h3>
-            <ul class="list-none m-0 p-0 flex flex-col gap-2">
-              {% for link in menus[section.settings.custom_menu].links %}
-                <li>
-                  <a class="text-[#99aa01]" href="{{ link.url }}">{{ link.title }}</a>
-                  {% if link.links != blank %}
-                    <ul class="child">
-                      {% for child_link in link.links %}  
-                      <li>
-                        <a class="text-[#99aa01]"  href= "{{ child_link.url }}">{{ child_link.title }}</a>
-                        {% if child_link.links != blank %}
-                          <ul class="grandchild">
-                          {% for grandchild_link in child_link.links %}  
-                            <li><a class="text-[#99aa01]"  href= "{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>
-                          {% endfor %}
-                          </ul>
-                        {% endif %}   
-                      </li>
-                      {% endfor %}
-                    </ul> 
-                  {% endif %} 
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </nav>
-      {% else %}
+      
       {%- if section.settings.show_filters and collection.filters != empty -%}
         {%- if section.settings.filter_position == 'always_visible' -%}
-
           <div class="product-facet__aside">
             <safe-sticky
               offset="30"
               class="product-facet__aside-inner">
-              <div class="product-facet__filters-header hidden-pocket">
-                <p class="heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">
-                  {{ 'collection.general.filters' | t }}
-                </p>
-              </div>
+              {%- render 'codext-side-menu' -%}
+              
+              {% comment %}
+                <div class="product-facet__filters-header hidden-pocket">
+                  <p class="heading {% if settings.heading_text_transform == 'uppercase' %}h6{% else %}h5{% endif %}">
+                    {{ 'collection.general.filters' | t }}
+                  </p>
+                </div>
+              {% endcomment %}
 
               {%- render 'facet-filters',
                 filters: collection.filters,
@@ -154,7 +128,6 @@
           -%}
         {%- endif -%}
       {%- endif -%}
-      {% endif %}
 
       
 

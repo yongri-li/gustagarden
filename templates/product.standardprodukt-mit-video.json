@@ -1,0 +1,475 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "b3e6ce87-1409-4648-a0ad-7dbc015879b0": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+          }
+        },
+        "fff5100c-5ff6-462e-9771-01ed6285b80f": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"lb-pdp-benefits\">\n  {% if product.metafields.custom.usp1 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp1 }}<\/p>\n  <\/div>\n  {% endif %}\n  {% if product.metafields.custom.usp2 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp2 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp3 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp3 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp4 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp4 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp5 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp5 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp6 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp6 }}<\/p>\n  <\/div>\n  {% endif %}\n<\/div>\n\n<style>\n  .lb-pdp-benefits {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n    margin-left: 0px !important;\n    margin-right: 0px !important;\n  }\n  .lb-pdp-benefits div {\n    font-size: 14px !important; \/* Change font size *\/\n    line-height: 18px !important;\n    margin-bottom: 9px !important;\n    display: flex !important;\n    align-items: center !important;\n    overflow: hidden !important;\n  }\n  .lb-pdp-benefits img {\n    max-width: 24px !important;\n    margin-right: 9px !important;\n  }\n  .lb-pdp-benefits p {\n    width: 100% !important;\n    display: block !important;\n    margin: 0px !important;\n  }\n<\/style>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "38a03175-609a-40b5-9e4e-055fec879e76": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"footer__payment-icons h-stack wrap gap-2\" style=\"margin-bottom: 20px; display: flex; flex-wrap: wrap;\">\n  {% assign enabled_payment_types = 'visa,master,american_express,paypal,klarna-pay-later,apple_pay,google_pay,unionpay,amazon,sofort' | remove: ' ' | split: ',' %}\n  {% for type in enabled_payment_types %}\n    <img src=\"{{ type | payment_type_img_url }}\" style=\"margin-right: 0,5px;\" \/>\n  {% endfor %}\n<\/div>"
+          }
+        },
+        "723850fb-7702-4722-abf6-463a8b4acbb7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% assign current_handle = request.path | split: '\/' | last %}\n{% assign desired_product_handle = '7427791225005' %}\n{% assign upsell_product_handle = '7427791290541' %}\n\n{% if current_handle == desired_product_handle %}\n  {% assign upsell_product = all_products[upsell_product_handle] %}\n\n  <div class=\"upsell\">\n    <h3>Empfohlene Produkte<\/h3>\n    \n    {% if upsell_product.available %}\n      <div class=\"upsell-product\">\n        <a href=\"{{ upsell_product.url }}\">\n          <img src=\"{{ upsell_product.featured_image | img_url: '300x300' }}\" alt=\"{{ upsell_product.title }}\">\n          <p>{{ upsell_product.title }}<\/p>\n          <p>{{ upsell_product.price | money }}<\/p>\n        <\/a>\n      <\/div>\n    {% else %}\n      <p>Dieses Produkt ist derzeit nicht verfügbar.<\/p>\n    {% endif %}\n  <\/div>\n{% endif %}"
+          }
+        }
+      },
+      "block_order": [
+        "b3e6ce87-1409-4648-a0ad-7dbc015879b0",
+        "fff5100c-5ff6-462e-9771-01ed6285b80f",
+        "variant_picker",
+        "quantity_selector",
+        "38a03175-609a-40b5-9e4e-055fec879e76",
+        "buy_buttons",
+        "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
+        "723850fb-7702-4722-abf6-463a8b4acbb7"
+      ],
+      "custom_css": [
+        "h1 {font-weight: bold;}"
+      ],
+      "settings": {
+        "collection": "",
+        "show_metafield_badges": true,
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": true,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "help_page": "contact",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide",
+        "product_slideshow_title_1": "{{ product.metafields.custom.product_slideshow_title_1.value }}",
+        "product_slideshow_tooltip_1": "",
+        "product_slideshow_title_2": "{{ product.metafields.custom.product_slideshow_title_2.value }}",
+        "product_slideshow_tooltip_2": "",
+        "product_slideshow_title_3": "{{ product.metafields.custom.product_slideshow_title_3.value }}",
+        "product_slideshow_tooltip_3": "",
+        "product_slideshow_title_4": "{{ product.metafields.custom.product_slideshow_title_4.value }}",
+        "product_slideshow_tooltip_4": "",
+        "product_slideshow_title_5": "{{ product.metafields.custom.product_slideshow_title_5.value }}",
+        "product_slideshow_tooltip_5": "",
+        "product_slideshow_title_6": "{{ product.metafields.custom.product_slideshow_title_6.value }}",
+        "product_slideshow_tooltip_6": ""
+      }
+    },
+    "8871f57c-0dc2-4eb2-8f67-407633af680c": {
+      "type": "codext-product-description",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "KUNDEN KAUFTEN AUCH"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a": {
+          "type": "trust",
+          "disabled": true,
+          "settings": {
+            "icon_1": "picto-customer-support",
+            "title_1": "Shipping & Returns",
+            "content_1": "<p>Add text about your shipping policy<\/p>",
+            "icon_2": "picto-warranty",
+            "title_2": "Warranty",
+            "content_2": "<p>Add text about your product warranty<\/p>",
+            "icon_3": "picto-secure-payment",
+            "title_3": "Secure Payment",
+            "content_3": "<p>Add text about your payment<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd",
+        "description",
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
+      ],
+      "settings": {
+      }
+    },
+    "custom_liquid_qpBNUx": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "{% assign product_video_url = product.metafields.custom.product_video %}\n\n{% if product_video_url != blank %}\n  {% assign video_params = product_video_url | split: 'v=' %}\n  {% if video_params.size > 1 %}\n    {% assign video_id = video_params[1] | split: '&' | first %}\n    {% assign embed_url = \"https:\/\/www.youtube.com\/embed\/\" | append: video_id %}\n    <div class=\"video-container\" style=\"max-width: 1280px; margin: 0 auto; position: relative; overflow: hidden;\">\n      <div style=\"padding-top: 56.25%;\"> <!-- 16:9 Aspect Ratio -->\n        <iframe style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\" src=\"{{ embed_url }}\" allowfullscreen=\"\" frameborder=\"0\"><\/iframe>\n      <\/div>\n    <\/div>\n  {% endif %}\n{% endif %}",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "video_FCmBFQ": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=rHwjgEK0ZGQ",
+        "background_type": "boxed",
+        "video_size": "large",
+        "autoplay": false,
+        "show_video_controls": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "fa904b10-27d1-443c-94fe-c2665f356d34": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/badge-bg.png",
+            "custom_icon_width": 65,
+            "title": "20.000+ ZUFRIEDENE KUNDEN",
+            "content": ""
+          }
+        },
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/return-bg.png",
+            "custom_icon_width": 65,
+            "title": "30 TAGE RÜCKGABERECHT",
+            "content": ""
+          }
+        },
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/versand-bg.png",
+            "custom_icon_width": 65,
+            "title": "VERSANDKOSTENFREI AB 75€",
+            "content": ""
+          }
+        },
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/efk.webp",
+            "custom_icon_width": 65,
+            "title": "EFK ZERTIFIZIERT",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-1",
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-2",
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-3",
+        "template--16337048633517__fa904b10-27d1-443c-94fe-c2665f356d34-item-4"
+      ],
+      "settings": {
+        "background": "#c8dd02",
+        "text_color": "#ffffff",
+        "stack_on_mobile": false
+      }
+    },
+    "520562c2-a265-4177-9598-fab3a8b9bb6e": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "KUNDEN KAUFTEN AUCH",
+        "recommendations_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "170008645861baa2bc": {
+      "type": "apps",
+      "blocks": {
+        "95516f64-80de-44ca-a78c-62098b89477f": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#c8dd02",
+            "review_type": "product_current",
+            "reviews_shown": 20,
+            "header_bg_colour": "#4f5358",
+            "header_colour": "#ffffff",
+            "header_star_colour": "#c8dd02",
+            "heading_text_colour": "#0e1311",
+            "heading_font": "poppins_n4",
+            "body_text_colour": "#0e1311",
+            "badge_icon_colour": "#0e1311",
+            "badge_text_colour": "#0e1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "#000000",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#000000",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
+          }
+        }
+      },
+      "block_order": [
+        "95516f64-80de-44ca-a78c-62098b89477f"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "93e61ce0-1e10-47b1-a69a-07361399d8ef": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/200903-GustaGarden-127_Easy-Resize.com.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Nur noch 1x pro Woche gießen",
+            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.\u2028\u2028Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "boxed",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1ba95599-fa75-44f7-914b-f9705c642b65": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T224818.265.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Stabile Rankhilfe",
+            "content": "<p>Hochwertige Aluminium-Rohre:<br\/>Die Rankhilfe für Tomatenpflanzen ist in der Höhe variabel und simpel im Aufbau. Die hochwertigen Aluminium Rohre bieten Stabilität und wachsen quasi mit der Pflanze mit.<br\/><br\/>Integrierte Befestigungshaken:<br\/>Hänge einfach von Zeit zu Zeit den Haupttrieb in die integrierten Befestigungshaken ein. So wächst deine Pflanze immer gleichmäßig der Sonne entgegen!<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d4209e3c-7dcf-4f51-889f-b541d7fbf05d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-11-15T230124.609.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Erdvolumen exakt abgestimmt",
+            "content": "<p>Der Pflanztopf wurde perfekt auf das Erdvolumen für eine Tomatenpflanze abgestimmt und garantiert somit eine ideale Versorgung mit Nährstoffen.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__d4209e3c-7dcf-4f51-889f-b541d7fbf05d-item-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c418a397-5659-4b49-890b-a93e490c9842": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "tom-tomato",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-weight: bold;}"
+      ],
+      "settings": {
+        "subheading": "ALLES FÜR DEINEN TOM TOMATO",
+        "title": "HILFREICHES ZUBEHÖR",
+        "content": "",
+        "products_count": 4,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "21236dfa-d553-4250-b4d6-d2d01535dc19": {
+      "type": "blog-posts",
+      "custom_css": [
+        ".article-item {background-color: #f5f5f5; padding: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);}",
+        "a {font-size: 18px; font-weight: 100;}",
+        ".article-item__content {flex-grow: 1;}",
+        ".article-item__title,.article-item__content {padding: 10px !important; display: flex; align-items: center; justify-content: center;}"
+      ],
+      "settings": {
+        "blog": "ratgeber",
+        "subheading": "TIPPS & TRICKS RUND UM DAS THEMA URBAN GARDENING GEBEN.",
+        "title": "UNSER RATGEBER",
+        "articles_count": 3,
+        "stack_mobile": false,
+        "show_category": false,
+        "show_excerpt": false,
+        "background": "#ffffff",
+        "text_color": "#484b42"
+      }
+    },
+    "05bec5d7-04ac-4cad-8ff6-5cff5886a9e3": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "subheading": "",
+        "title": "ZULETZT ANGESEHEN",
+        "products_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8871f57c-0dc2-4eb2-8f67-407633af680c",
+    "product-content",
+    "custom_liquid_qpBNUx",
+    "video_FCmBFQ",
+    "fa904b10-27d1-443c-94fe-c2665f356d34",
+    "520562c2-a265-4177-9598-fab3a8b9bb6e",
+    "170008645861baa2bc",
+    "93e61ce0-1e10-47b1-a69a-07361399d8ef",
+    "1ba95599-fa75-44f7-914b-f9705c642b65",
+    "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
+    "c418a397-5659-4b49-890b-a93e490c9842",
+    "21236dfa-d553-4250-b4d6-d2d01535dc19",
+    "05bec5d7-04ac-4cad-8ff6-5cff5886a9e3"
+  ]
+}

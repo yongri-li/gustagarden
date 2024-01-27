@@ -233,15 +233,29 @@
         "collection_p6X4rY",
         "collection_4RJELN"
       ],
+      "disabled": true,
       "settings": {
         "collections_to_show": "selected",
         "show_title": false,
         "show_collection_title": true
       }
+    },
+    "custom_liquid_F7dKqm": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<script>\nwindow.location.href = \"\/collections\/alle-produkte\";\n<\/script>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "405d663f-6306-43dd-adc4-ebf75649c997",
-    "main"
+    "main",
+    "custom_liquid_F7dKqm"
   ]
 }
