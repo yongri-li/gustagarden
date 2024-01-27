@@ -1,7 +1,5 @@
 <desktop-navigation>
-  <ul
-    class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}"
-    role="list">
+  <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
     {%- for link in menu.links -%}
       {%- assign link_title_downcase = link.title | strip | downcase -%}
       {%- assign mega_menu_block = '' -%}
@@ -9,8 +7,8 @@
 
       {%- for block in section.blocks -%}
         {%- assign menu_item_downcase = block.settings.menu_item
-          | strip
-          | downcase
+ | strip
+ | downcase
         -%}
 
         {%- if menu_item_downcase == link_title_downcase -%}
@@ -19,15 +17,13 @@
         {%- endif -%}
       {%- endfor -%}
 
-      <li
-        class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}"
-        data-item-title="{{ link.title | escape }}">
+      <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
         <a
           class="header__linklist-link link--animated"
           href="{{ link.url }}"
           {% if link.links.size > 0 or mega_menu_block != '' %}
-            aria-controls="desktop-menu-{{ forloop.index }}"
-            aria-expanded="false"
+          aria-controls="desktop-menu-{{ forloop.index }}"
+          aria-expanded="false"
           {% endif %}>
           {{- link.title -}}
         </a>
@@ -82,10 +78,11 @@
               class="mega-menu"
               {{ mega_menu_block.shopify_attributes }}>
               <div class="container">
-                <div class="mega-menu__inner">
-                  {%- if mega_menu_block.settings.images_position == 'left'
-                    and mega_menu_images != blank
-                  -%}
+                <a href="/collections/alle-produkte" class="button button--primary my-6">
+                  Alle Produkte
+                </a>
+                <div class="mega-menu__inner !pt-0">
+                  {%- if mega_menu_block.settings.images_position == 'left' and mega_menu_images != blank -%}
                     <div class="mega-menu__images-wrapper {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}">
                       {{- mega_menu_images -}}
                     </div>
@@ -114,7 +111,7 @@
                           {%- else -%}
                             <a href="{{ sub_link.url }}">
                               {%- if forloop.index == 1
-                                and mega_menu_block.settings.image_above_1
+ and mega_menu_block.settings.image_above_1
                               %}
                                 <div class="text-center mb-5 flex">
                                   <img
@@ -125,9 +122,9 @@
                                     class="object-center aspect-video object-cover"
                                     loading="lazy">
                                 </div>
-  
+
                               {%- elsif forloop.index == 2
-                                and mega_menu_block.settings.image_above_2
+ and mega_menu_block.settings.image_above_2
                               -%}
                                 <div class="text-center mb-5 flex">
                                   <img
@@ -138,9 +135,9 @@
                                     class="object-center aspect-video object-cover"
                                     loading="lazy">
                                 </div>
-  
+
                               {% elsif forloop.index == 3
-                                and mega_menu_block.settings.image_above_3
+ and mega_menu_block.settings.image_above_3
                               %}
                                 <div class="text-center mb-5 flex">
                                   <img
@@ -151,9 +148,9 @@
                                     class="object-center aspect-video object-cover"
                                     loading="lazy">
                                 </div>
-  
+
                               {% elsif forloop.index == 4
-                                and mega_menu_block.settings.image_above_4
+ and mega_menu_block.settings.image_above_4
                               %}
                                 <div class="text-center mb-5 flex">
                                   <img
@@ -164,9 +161,9 @@
                                     class="object-center aspect-video object-cover"
                                     loading="lazy">
                                 </div>
-  
+
                               {% elsif forloop.index == 5
-                                and mega_menu_block.settings.image_above_5
+ and mega_menu_block.settings.image_above_5
                               %}
                                 <div class="text-center mb-5 flex">
                                   <img
@@ -178,7 +175,7 @@
                                     loading="lazy">
                                 </div>
                               {% elsif forloop.index == 6
-                                and mega_menu_block.settings.image_above_6
+ and mega_menu_block.settings.image_above_6
                               %}
                                 <div class="text-center mb-5 flex">
                                   <img
@@ -190,7 +187,7 @@
                                     loading="lazy">
                                 </div>
                               {% elsif forloop.index == 7
-                                and mega_menu_block.settings.image_above_7
+ and mega_menu_block.settings.image_above_7
                               %}
                                 <div class="text-center mb-5 flex">
                                   <img
@@ -201,36 +198,30 @@
                                     class="object-center aspect-video object-cover"
                                     loading="lazy">
                                 </div>
-                                {% elsif forloop.index == 8
-                                  and mega_menu_block.settings.image_above_8
-                                %}
-                                  <div class="text-center mb-5 flex">
-                                    <img
-                                      src="{{ mega_menu_block.settings.image_above_8 | img_url: 'master' }}"
-                                      alt=""
-                                      height="240"
-                                      width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
-                                      class="object-center aspect-video object-cover"
-                                      loading="lazy">
-                                  </div>
+                              {% elsif forloop.index == 8
+ and mega_menu_block.settings.image_above_8
+                              %}
+                                <div class="text-center mb-5 flex">
+                                  <img
+                                    src="{{ mega_menu_block.settings.image_above_8 | img_url: 'master' }}"
+                                    alt=""
+                                    height="240"
+                                    width="{{ mega_menu_block.settings.above_image_size | default: '180' }}"
+                                    class="object-center aspect-video object-cover"
+                                    loading="lazy">
+                                </div>
                               {%- endif -%}
                             </a>
-                            <a
-                              href="{{ sub_link.url }}"
-                              class="mega-menu__title heading heading--small">
+                            <a href="{{ sub_link.url }}" class="mega-menu__title heading heading--small">
                               {{- sub_link.title -}}
                             </a>
                           {%- endif -%}
 
                           {%- if sub_link.links.size > 0 -%}
-                            <ul
-                              class="linklist list--unstyled"
-                              role="list">
+                            <ul class="linklist list--unstyled" role="list">
                               {%- for sub_sub_link in sub_link.links -%}
                                 <li class="codext-header__linklist-item linklist__item flex flex-col">
-                                  <a
-                                    href="{{ sub_sub_link.url }}"
-                                    class="link--faded font-bold">
+                                  <a href="{{ sub_sub_link.url }}" class="link--faded font-bold">
                                     {{- sub_sub_link.title -}}
                                   </a>
                                   <span class="inner-text text-base"></span>
@@ -244,7 +235,7 @@
                   {%- endif -%}
 
                   {%- if mega_menu_block.settings.images_position == 'right'
-                    and mega_menu_images != blank
+ and mega_menu_images != blank
                   -%}
                     <div class="mega-menu__images-wrapper {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}">
                       {{- mega_menu_images -}}
@@ -266,14 +257,15 @@
                   class="nav-dropdown__link link--faded"
                   href="{{ sub_link.url }}"
                   {% if sub_link.links.size > 0 %}
-                    aria-controls="desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}"
-                    aria-expanded="false"
+                  aria-controls="desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                  aria-expanded="false"
                   {% endif %}>
                   {{- sub_link.title -}}
 
                   {%- if sub_link.links.size > 0 -%}
-                    {% render 'icon' with 'dropdown-arrow-right',
-                      direction_aware: true
+                    {% render 'icon' with 'dropdown-arrow-right'
+                      ,
+ direction_aware: true
                     %}
                   {%- endif -%}
                 </a>
@@ -286,9 +278,7 @@
                     role="list">
                     {%- for sub_sub_link in sub_link.links -%}
                       <li class="nav-dropdown__item">
-                        <a
-                          class="nav-dropdown__link link--faded"
-                          href="{{ sub_sub_link.url }}">
+                        <a class="nav-dropdown__link link--faded" href="{{ sub_sub_link.url }}">
                           {{- sub_sub_link.title -}}
                         </a>
                       </li>

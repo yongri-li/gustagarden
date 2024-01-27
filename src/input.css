@@ -203,3 +203,7 @@ body .image-with-text--reverse .image-with-text__wrapper .image-with-text__conte
 body .image-with-text__content-wrapper {
   @apply p-4;
 }
+body .button {
+  background: #c7dd16;
+  color: #4e5518;
+}

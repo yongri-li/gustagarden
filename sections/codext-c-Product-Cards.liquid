@@ -1,319 +1,325 @@
 {% schema %}
-{
-  "name": "c/ Product Cards",
-  "class": "mt-10 mb-10",
-  "max_blocks": 12,
-  "blocks": [
-    {
-      "type": "product_card",
-      "name": "Product Card",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Card Image"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Description"
-        },
-        {
-          "type": "text",
-          "id": "usp_1",
-          "label": "USP 1"
-        },
-        {
-          "type": "text",
-          "id": "usp_2",
-          "label": "USP 2"
-        },
-        {
-          "type": "text",
-          "id": "usp_3",
-          "label": "USP 3"
-        },
-        {
-          "type": "text",
-          "id": "usp_4",
-          "label": "USP 4"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link URL"
-        },
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "Link Text"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "c/ Product Cards",
-      "category": "Product"
-    }
-  ],
-  "settings": [
-    {
-      "type": "color",
-      "id": "primary_color",
-      "label": "Primary Color",
-      "default": "#166534"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background Color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Titel"
-    },
-    {
-      "type": "image_picker",
-      "id": "custom_check_icon",
-      "label": "Custom Check Icon"
-    }
-  ]
-}
+  {
+    "name": "c/ Product Cards",
+    "class": "mt-10 mb-10",
+    "max_blocks": 12,
+    "blocks": [
+      {
+        "type": "product_card",
+        "name": "Product Card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Card Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "text",
+            "id": "usp_1",
+            "label": "USP 1"
+          }, {
+            "type": "text",
+            "id": "usp_2",
+            "label": "USP 2"
+          }, {
+            "type": "text",
+            "id": "usp_3",
+            "label": "USP 3"
+          }, {
+            "type": "text",
+            "id": "usp_4",
+            "label": "USP 4"
+          }, {
+            "type": "url",
+            "id": "link",
+            "label": "Link URL"
+          }, {
+            "type": "text",
+            "id": "button_text",
+            "label": "Link Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "c/ Product Cards",
+        "category": "Product"
+      }
+    ],
+    "settings": [
+      {
+        "type": "color",
+        "id": "primary_color",
+        "label": "Primary Color",
+        "default": "#166534"
+      }, {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#ffffff"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Titel"
+      }, {
+        "type": "image_picker",
+        "id": "custom_check_icon",
+        "label": "Custom Check Icon"
+      }
+    ]
+  }
 {% endschema %}
 
 <style>
+  .scroll-wrapper {
+    grid-auto-columns: calc(27.5% - 4rem);
+  }
+
+  .scroll-wrapper::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .scroll-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Track color */
+  }
+
+  .scroll-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(73, 75, 67, 0.6);
+    /* Thumb color */
+  }
+
+  .scroll-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(73, 75, 67, 1);
+    /* Thumb color on hover */
+  }
+
+  @media screen and (max-width: 1400px) {
     .scroll-wrapper {
-        grid-auto-columns: calc(27.5% - 4rem);
+      grid-auto-columns: calc(50% - 4rem);
     }
+  }
 
-    .scroll-wrapper::-webkit-scrollbar {
-        height: 5px;
+  @media screen and (max-width: 768px) {
+    .scroll-wrapper {
+      grid-auto-columns: calc(100% - 4rem);
     }
-
-    .scroll-wrapper::-webkit-scrollbar-track {
-        background: #f1f1f1; /* Track color */
-    }
-
-    .scroll-wrapper::-webkit-scrollbar-thumb {
-        background: rgba(73, 75, 67, 0.6); /* Thumb color */
-    }
-
-    .scroll-wrapper::-webkit-scrollbar-thumb:hover {
-        background: rgba(73, 75, 67, 1);; /* Thumb color on hover */
-    }
-
-    @media screen and (max-width: 1400px) {
-        .scroll-wrapper {
-            grid-auto-columns: calc(50% - 4rem);
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        .scroll-wrapper {
-            grid-auto-columns: calc(100% - 4rem);
-        }
-    }
+  }
 </style>
 
 <script>
   let currentScroll = 0;
-
+  
   function scrollHorizontalBy(scrollByLeft) {
     const scrollWrapper = document.querySelector('.scroll-wrapper');
-
+  
     console.log(scrollByLeft);
-
+  
     scrollWrapper.scrollBy({
       top: 0,
       left: scrollByLeft,
       behavior: 'smooth',
     });
-
+  
     currentScroll = scrollWrapper.scrollLeft;
   }
-
+  
   function scrollListener() {
     const scrollWrapper = document.querySelector('.scroll-wrapper');
     const scrollButtonPrev = document.querySelector('#scroll-button-prev');
     const scrollButtonNext = document.querySelector('#scroll-button-next');
-
+  
     if (scrollWrapper.scrollLeft === 0) {
       scrollButtonPrev.classList.add('opacity-0');
     } else {
       scrollButtonPrev.classList.remove('opacity-0');
     }
-
+  
     if (scrollWrapper.scrollLeft === scrollWrapper.scrollWidth - scrollWrapper.clientWidth) {
       scrollButtonNext.classList.add('opacity-0');
     } else {
       scrollButtonNext.classList.remove('opacity-0');
     }
   }
-
+  
     document.addEventListener('DOMContentLoaded', () => {
         const scrollWrapper = document.querySelector('.scroll-wrapper');
         scrollWrapper.addEventListener('scroll', scrollListener);
-
+  
         scrollListener();
     });
-
 </script>
 <section class="{{ section.settings.background_color }} my-10">
-    <div class="mb-5 mt-10 text-center">
-        <h2 class="text-2xl font-bold">{{ section.settings.title }}</h2>
-    </div>
+  <div class="mb-5 mt-10 text-center">
+    <h2 class="text-2xl font-bold">{{ section.settings.title }}</h2>
+  </div>
 
 
-    <div class="relative">
+  <div class="relative">
 
-        <div class="scroll-wrapper grid grid-flow-col gap-10 overflow-x-auto sm:px-20 px-4 pb-10">
-            {% for block in section.blocks %}
-                <div class="flex flex-col p-5 text-center shadow-xl rounded relative h-full gap-4">
-                    <img
-                            src="{{ block.settings.image | img_url: '400x' }}"
-                            alt="{{ block.settings.title }}"
-                            class="w-full rounded"
-                            loading="lazy">
-                    <h3 class="mt-10 text-2xl font-bold !my-0">
-                        {{ block.settings.title }}
-                    </h3>
-                    <p class="text-sm text-gray-500 !my-0">
-                        {{ block.settings.description }}
-                    </p>
-                    <ul style="color: {{ section.settings.primary_color }}"
-                        class="flex flex-col justify-start space-y-4 p-5 text-sm font-bold !my-0 pt-0">
-                        <li class="flex items-center gap-2 text-lg">
-                            {% if section.settings.custom_check_icon %}
-                                <img
-                                        src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
-                                        alt="Check Icon"
-                                        style="color: {{ section.settings.primary_color }};"
-                                        class="w-8 h-8 flex-shrink-0"
-                                        loading="lazy">
-                            {% else %}
-                                <svg
-                                        viewBox="0 0 24 24"
-                                        fill="{{ section.settings.primary_color }}"
-                                        class="h-8 w-8 flex-shrink-0">
-                                    <path fill-rule="evenodd"
-                                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                          clip-rule="evenodd" />
-                                </svg>
-                            {% endif %}
+    <div class="scroll-wrapper grid grid-flow-col gap-10 overflow-x-auto sm:px-20 px-4 pb-10">
+      {% for block in section.blocks %}
+        <div class="flex flex-col p-5 text-center shadow-xl rounded relative h-full gap-4">
+          <img
+            src="{{ block.settings.image | img_url: '400x' }}"
+            alt="{{ block.settings.title }}"
+            class="w-full rounded"
+            loading="lazy">
+          <h3 class="mt-10 text-2xl font-bold !my-0">
+            {{ block.settings.title }}
+          </h3>
+          <p class="text-sm text-gray-500 !my-0">
+            {{ block.settings.description }}
+          </p>
+          <ul style="color: {{ section.settings.primary_color }}" class="flex flex-col justify-start space-y-4 p-5 text-sm font-bold !my-0 pt-0">
+            <li class="flex items-center gap-2 text-lg">
+              {% if section.settings.custom_check_icon %}
+                <img
+                  src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
+                  alt="Check Icon"
+                  style="color: {{ section.settings.primary_color }};"
+                  class="w-8 h-8 flex-shrink-0"
+                  loading="lazy">
+              {% else %}
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="{{ section.settings.primary_color }}"
+                  class="h-8 w-8 flex-shrink-0">
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd" />
+                </svg>
+              {% endif %}
 
-                            <div class="text-left">
-                                {{ block.settings.usp_1 }}
-                            </div>
+              <div class="text-left">
+                {{ block.settings.usp_1 }}
+              </div>
 
-                        </li>
-                        <li class="flex items-center gap-2 text-lg">
-                            {% if section.settings.custom_check_icon %}
-                                <img
-                                        src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
-                                        alt="Check Icon"
-                                        style="color: {{ section.settings.primary_color }};"
-                                        class="w-8 h-8 flex-shrink-0"
-                                        loading="lazy">
-                            {% else %}
-                                <svg
-                                        viewBox="0 0 24 24"
-                                        fill="{{ section.settings.primary_color }}"
-                                        class="h-8 w-8 flex-shrink-0">
-                                    <path fill-rule="evenodd"
-                                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                          clip-rule="evenodd" />
-                                </svg>
-                            {% endif %}
-                            <div class="text-left">
-                                {{ block.settings.usp_2 }}
-                            </div>
-                        </li>
-                        <li class="flex items-center gap-2 text-lg">
-                            {% if section.settings.custom_check_icon %}
-                                <img
-                                        src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
-                                        alt="Check Icon"
-                                        style="color: {{ section.settings.primary_color }};"
-                                        class="w-8 h-8 flex-shrink-0"
-                                        loading="lazy">
-                            {% else %}
-                                <svg
-                                        viewBox="0 0 24 24"
-                                        fill="{{ section.settings.primary_color }}"
-                                        class="h-8 w-8 flex-shrink-0">
-                                    <path fill-rule="evenodd"
-                                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                          clip-rule="evenodd" />
-                                </svg>
-                            {% endif %}
-                            <div class="text-left">
-                                {{ block.settings.usp_3 }}
-                            </div>
-                        </li>
-                        <li class="flex items-center gap-2 text-lg">
-                            {% if section.settings.custom_check_icon %}
-                                <img
-                                        src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
-                                        alt="Check Icon"
-                                        style="color: {{ section.settings.primary_color }};"
-                                        class="w-8 h-8 flex-shrink-0"
-                                        loading="lazy">
-                            {% else %}
-                                <svg
-                                        viewBox="0 0 24 24"
-                                        fill="{{ section.settings.primary_color }}"
-                                        class="h-8 w-8 flex-shrink-0">
-                                    <path fill-rule="evenodd"
-                                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                          clip-rule="evenodd" />
-                                </svg>
-                            {% endif %}
-                            <div class="text-left">
-                                {{ block.settings.usp_4 }}
-                            </div>
-                        </li>
-                    </ul>
+            </li>
+            <li class="flex items-center gap-2 text-lg">
+              {% if section.settings.custom_check_icon %}
+                <img
+                  src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
+                  alt="Check Icon"
+                  style="color: {{ section.settings.primary_color }};"
+                  class="w-8 h-8 flex-shrink-0"
+                  loading="lazy">
+              {% else %}
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="{{ section.settings.primary_color }}"
+                  class="h-8 w-8 flex-shrink-0">
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd" />
+                </svg>
+              {% endif %}
+              <div class="text-left">
+                {{ block.settings.usp_2 }}
+              </div>
+            </li>
+            <li class="flex items-center gap-2 text-lg">
+              {% if section.settings.custom_check_icon %}
+                <img
+                  src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
+                  alt="Check Icon"
+                  style="color: {{ section.settings.primary_color }};"
+                  class="w-8 h-8 flex-shrink-0"
+                  loading="lazy">
+              {% else %}
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="{{ section.settings.primary_color }}"
+                  class="h-8 w-8 flex-shrink-0">
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd" />
+                </svg>
+              {% endif %}
+              <div class="text-left">
+                {{ block.settings.usp_3 }}
+              </div>
+            </li>
+            <li class="flex items-center gap-2 text-lg">
+              {% if section.settings.custom_check_icon %}
+                <img
+                  src="{{ section.settings.custom_check_icon | img_url: "32x" }}"
+                  alt="Check Icon"
+                  style="color: {{ section.settings.primary_color }};"
+                  class="w-8 h-8 flex-shrink-0"
+                  loading="lazy">
+              {% else %}
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="{{ section.settings.primary_color }}"
+                  class="h-8 w-8 flex-shrink-0">
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                    clip-rule="evenodd" />
+                </svg>
+              {% endif %}
+              <div class="text-left">
+                {{ block.settings.usp_4 }}
+              </div>
+            </li>
+          </ul>
 
-                    <a
-                            href="{{ block.settings.link }}"
-                            style="background-color: {{ section.settings.primary_color }};"
-                            class="
+          <a
+            href="{{ block.settings.link }}"
+            style="background-color: {{ section.settings.primary_color }};"
+            class="
+            button button--primary
             absolute
             -bottom-6
             left-1/2
             -translate-x-1/2
             w-max
-            no-underline mx-auto inline-block
-             rounded-md bg-green-800 px-5 py-2
+            no-underline mx-auto inline-block bg-green-800 !px-5
             font-bold text-white shadow-xl transition
             duration-200 ease-in-out hover:opacity-90
+            
           ">
-                        {{- block.settings.button_text -}}
-                    </a>
-                </div>
-            {% endfor %}
+            {{- block.settings.button_text -}}
+          </a>
         </div>
-
-        <button class="absolute transition-opacity opacity-0 top-1/2 left-8 border prev-next-button bg-white hidden sm:block" id="scroll-button-prev" onclick="scrollHorizontalBy(-400)">
-            <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
-            {%- include 'icon' with 'nav-arrow-left', direction_aware: true -%}
-        </button>
-
-
-        <button class="absolute top-1/2 transition-opacity opacity-0 right-8 border prev-next-button bg-white hidden sm:block" id="scroll-button-next" onclick="scrollHorizontalBy(400)">
-            <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
-            {%- include 'icon' with 'nav-arrow-right', direction_aware: true -%}
-        </button>
-
+      {% endfor %}
     </div>
+
+    <button
+      class="absolute transition-opacity opacity-0 top-1/2 left-8 border prev-next-button bg-white hidden sm:block"
+      id="scroll-button-prev"
+      onclick="scrollHorizontalBy(-400)">
+      <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
+      {%- include 'icon' with 'nav-arrow-left'
+        , direction_aware: true -%}
+    </button>
+
+
+    <button
+      class="absolute top-1/2 transition-opacity opacity-0 right-8 border prev-next-button bg-white hidden sm:block"
+      id="scroll-button-next"
+      onclick="scrollHorizontalBy(400)">
+      <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
+      {%- include 'icon' with 'nav-arrow-right'
+        , direction_aware: true -%}
+    </button>
+
+  </div>
 
 
 </section>
