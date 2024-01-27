@@ -233,6 +233,7 @@
         "collection_p6X4rY",
         "collection_4RJELN"
       ],
+      "disabled": true,
       "settings": {
         "collections_to_show": "selected",
         "show_title": false,
