@@ -247,6 +247,11 @@
   margin-bottom: 2.5rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .\!mb-1 {
   margin-bottom: 0.25rem !important;
 }
@@ -750,10 +755,6 @@
   border-radius: 0.5rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-none {
   border-radius: 0;
 }
@@ -997,6 +998,11 @@
   padding-right: 1rem !important;
 }
 
+.\!px-5 {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
 .\!py-0 {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -1057,11 +1063,6 @@
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1084,6 +1085,10 @@
 
 .\!pb-12 {
   padding-bottom: 3rem !important;
+}
+
+.\!pt-0 {
+  padding-top: 0px !important;
 }
 
 .pb-10 {
@@ -1698,6 +1703,11 @@ body .image-with-text--reverse .image-with-text__wrapper .image-with-text__conte
 
 body .image-with-text__content-wrapper {
   padding: 1rem;
+}
+
+body .button {
+  background: #c7dd16;
+  color: #4e5518;
 }
 
 body .mega-menu__inner {
