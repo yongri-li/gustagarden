@@ -83,7 +83,7 @@
                     Alle Produkte
                   </a>
                 {%- endif -%}
-                <div class="mega-menu__inner {%- if mega_menu_block.settings.all_products -%}!pt-0{%- endif -%}">
+                <div class="mega-menu__inner {% if mega_menu_block.settings.all_products %} !pt-0{% endif %}">
                   {%- if mega_menu_block.settings.images_position == 'left' and mega_menu_images != blank -%}
                     <div class="mega-menu__images-wrapper {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}">
                       {{- mega_menu_images -}}
