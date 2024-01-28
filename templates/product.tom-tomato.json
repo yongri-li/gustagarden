@@ -89,7 +89,7 @@
         "liquid_ETXNVY": {
           "type": "liquid",
           "settings": {
-            "liquid": "<button onclick=\"addToCart('42700295307437')\">In den Warenkorb<\/button>\n\n<script>\nfunction addToCart(variantId) {\n  var quantity = 1; \/\/ Du kannst die gewünschte Anzahl hier anpassen\n  var xhr = new XMLHttpRequest();\n  xhr.open(\"POST\", \"\/cart\/add.js\");\n  xhr.setRequestHeader(\"Content-Type\", \"application\/x-www-form-urlencoded\");\n  xhr.onreadystatechange = function() {\n    if (xhr.readyState === 4 && xhr.status === 200) {\n      \/\/ Erfolgreich hinzugefügt\n      alert(\"Das Produkt wurde dem Warenkorb hinzugefügt.\");\n    }\n  };\n  xhr.send(\"id=\" + variantId + \"&quantity=\" + quantity);\n}\n<\/script>"
+            "liquid": "<button onclick=\"addToCart()\">In den Warenkorb legen<\/button>\n\n<script>\nfunction addToCart() {\n  var variantId = '42700295307437'; \/\/ Hier den Varianten-ID deines Produkts eintragen\n  var quantity = 1; \/\/ Die gewünschte Menge\n\n  Shopify.addItem(variantId, quantity, function(item) {\n    alert('Das Produkt wurde dem Warenkorb hinzugefügt.');\n  });\n}\n<\/script>"
           }
         }
       },
