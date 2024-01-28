@@ -89,7 +89,7 @@
         "liquid_ETXNVY": {
           "type": "liquid",
           "settings": {
-            "liquid": "<button onclick=\"addToCart()\">In den Warenkorb legen<\/button>\n\n<script>\nfunction addToCart() {\n  var variantId = '42700295307437'; \/\/ Hier den Varianten-ID deines Produkts eintragen\n  var quantity = 1; \/\/ Die gewünschte Menge\n\n  Shopify.addItem(variantId, quantity, function(item) {\n    alert('Das Produkt wurde dem Warenkorb hinzugefügt.');\n  });\n}\n<\/script>"
+            "liquid": "<button id=\"add-guide-to-cart\" type=\"button\">Leitfaden zum Warenkorb hinzufügen<\/button>\n\n\n<script>\ndocument.getElementById('add-guide-to-cart').addEventListener('click', function() {\n  fetch('\/cart\/add.js', {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application\/json'\n    },\n    body: JSON.stringify({\n      id: {{ section.settings.product_variant_id }}, \/\/ Varianten-ID von \"Tomate: Ein Leitfaden rund um die Tomate\"\n      quantity: 1\n    })\n  })\n  .then(response => {\n    if (response.ok) {\n      alert('Leitfaden wurde zum Warenkorb hinzugefügt!');\n    } else {\n      alert('Fehler beim Hinzufügen zum Warenkorb');\n    }\n  })\n  .catch((error) => {\n    console.error('Error:', error);\n  });\n});\n<\/script>"
           }
         }
       },
