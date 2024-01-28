@@ -48,7 +48,7 @@
     "social_linkedin": "https:\/\/www.linkedin.com\/company\/gustagarden\/",
     "favicon": "shopify:\/\/shop_images\/cropped-favicon_gusta-1-180x180.png",
     "invalid_gift_article": "",
-    "checkout_price_milestones": "EUR:50:60:100. CHF 50:75:100",
+    "checkout_price_milestones": "EUR:50:60:100,CHF 50:75:100",
     "gift_product_variant": "44007349453066",
     "coupons_add_article": false,
     "coupons_add_article_coupons": "TOMATO",
