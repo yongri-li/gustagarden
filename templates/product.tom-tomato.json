@@ -13,6 +13,7 @@
         },
         "button_GWwgHq": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "link": "https:\/\/gustagarden.myshopify.com\/cart\/add?id=42700295307437",
             "text": "Jetzt kostenlos sichern",
@@ -84,6 +85,12 @@
             "btn_label": "mach's zum Set!",
             "background_color": "#f5f5f5"
           }
+        },
+        "liquid_ETXNVY": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<button onclick=\"addToCart('42700295307437')\">In den Warenkorb<\/button>\n\n<script>\nfunction addToCart(variantId) {\n  var quantity = 1; \/\/ Du kannst die gewünschte Anzahl hier anpassen\n  var xhr = new XMLHttpRequest();\n  xhr.open(\"POST\", \"\/cart\/add.js\");\n  xhr.setRequestHeader(\"Content-Type\", \"application\/x-www-form-urlencoded\");\n  xhr.onreadystatechange = function() {\n    if (xhr.readyState === 4 && xhr.status === 200) {\n      \/\/ Erfolgreich hinzugefügt\n      alert(\"Das Produkt wurde dem Warenkorb hinzugefügt.\");\n    }\n  };\n  xhr.send(\"id=\" + variantId + \"&quantity=\" + quantity);\n}\n<\/script>"
+          }
         }
       },
       "block_order": [
@@ -97,7 +104,8 @@
         "buy_buttons",
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
         "723850fb-7702-4722-abf6-463a8b4acbb7",
-        "3a891ea4-0bef-456f-9c59-74ec642a5447"
+        "3a891ea4-0bef-456f-9c59-74ec642a5447",
+        "liquid_ETXNVY"
       ],
       "custom_css": [
         "h1 {font-weight: bold;}"
