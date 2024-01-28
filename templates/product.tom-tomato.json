@@ -14,7 +14,7 @@
         "button_GWwgHq": {
           "type": "button",
           "settings": {
-            "link": "https:\/\/gustagarden.myshopify.com\/cart\/add?variant=42700295307437",
+            "link": "https:\/\/gustagarden.myshopify.com\/cart\/add?id=42700295307437",
             "text": "Jetzt kostenlos sichern",
             "stretch": false,
             "background": "#484b42",
