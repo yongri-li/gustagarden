@@ -48,7 +48,7 @@
     "social_linkedin": "https:\/\/www.linkedin.com\/company\/gustagarden\/",
     "favicon": "shopify:\/\/shop_images\/cropped-favicon_gusta-1-180x180.png",
     "invalid_gift_article": "",
-    "checkout_price_milestones": "EUR:50:60:100,CHF 50:75:100",
+    "checkout_price_milestones": "EUR:50:85:100,CHF:50:90:120",
     "gift_product_variant": "44007349453066",
     "add_product_when_product": "42490709442733,42490709475501,42490709508269",
     "gift_product_image": "shopify:\/\/shop_images\/BuchTomateCover.png",
