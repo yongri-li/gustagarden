@@ -127,23 +127,6 @@
           "show_cart": true
         }
       },
-      "15316669992541710076": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
-        "settings": {
-          "star": "#c8dd02",
-          "text_color": "#333333",
-          "snippet_mode": "default",
-          "text": "Bewertungen",
-          "line_break": false,
-          "listen_for_changes": false,
-          "rating_without_brackets": false,
-          "format_review_count": false,
-          "show_popup": true,
-          "anchor_to_reviews_widget": false,
-          "show_empty_stars": false
-        }
-      },
       "6744518860797519131": {
         "type": "shopify:\/\/apps\/etranslate-translate\/blocks\/floating-selector\/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
         "disabled": false,
@@ -166,6 +149,23 @@
           "button_horizontal_position": "bottom_left",
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi, wenn du Fragen hast, lass es uns wissen. Wir sind gerne für dich da!"
+        }
+      },
+      "15316669992541710076": {
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "star": "#c8dd02",
+          "text_color": "#333333",
+          "snippet_mode": "default",
+          "text": "Bewertungen",
+          "line_break": false,
+          "listen_for_changes": false,
+          "rating_without_brackets": false,
+          "format_review_count": false,
+          "show_popup": true,
+          "anchor_to_reviews_widget": false,
+          "show_empty_stars": false
         }
       }
     }
