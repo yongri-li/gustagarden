@@ -456,6 +456,11 @@
     },
     "links": {
       "powered_by_shopify": "<\/span> <a href=\"https:\/\/codext.de\/\">Made with ❤ by Codext<\/a><\/span>"
+    },
+    "checkout": {
+      "general": {
+        "cart": "Dein Warenkorb"
+      }
     }
   }
 }
