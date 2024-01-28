@@ -1,6 +1,59 @@
+<div
+  class="text-12"
+  style="margin-top: 9px">
+  <span x-show="$store.cartDrawer.missingGoalOne > 0">
+    {{- 'cart.remaining_shipping_and_gift_html' | t -}}
+  </span>
+  <span x-show="$store.cartDrawer.missingGoalOne <= 0 && $store.cartDrawer.missingGoalTwo > 0">
+    {{- 'cart.free_shipping_remaining_gift_html' | t -}}
+  </span>
+  <span x-show="$store.cartDrawer.missingGoalOne <= 0 && $store.cartDrawer.missingGoalTwo <= 0">
+    {{- 'cart.free_shipping_and_gift_html' | t -}}
+  </span>
+</div>
 
-<div class="text-12" style="margin-top: 9px">
-    <span x-show="$store.cartDrawer.missingGoalOne > 0">{{ 'cart.remaining_shipping_and_gift_html' | t }}</span>
-    <span x-show="$store.cartDrawer.missingGoalOne <= 0 && $store.cartDrawer.missingGoalTwo > 0">{{ 'cart.free_shipping_remaining_gift_html' | t }}</span>
-    <span x-show="$store.cartDrawer.missingGoalOne <= 0 && $store.cartDrawer.missingGoalTwo <= 0">{{ 'cart.free_shipping_and_gift_html' | t }}</span>
+<div
+  class="w-full"
+  style="margin: 4px 0 8px; background:#EFEFEF; border-radius: 5px;">
+  <div
+    style="height: 5px; background: #464646; border-radius: 5px;"
+    :style="{ width: $store.cartDrawer.totalToGoal }"></div>
+</div>
+<div
+  class="flex justify-between text-12 font-bold"
+  style="margin-bottom: 14px;">
+  <div>
+    {% if locale == 'nl' -%}
+      {{- cart.currency.symbol }} 0
+    {%- else -%}
+      0{{ cart.currency.symbol -}}
+    {%- endif %}
   </div>
+  {{ currency.iso_code }}
+  {% liquid
+    assign checkout_price_milestones = settings.checkout_price_milestones | split: ','
+    for currency_milestone in checkout_price_milestones
+      if currency_milestone contains cart.currency.iso_code
+        assign current_currency_milestone = currency_milestone | split: ':'
+      endif
+    endfor
+  %}
+  <div>
+    {% if locale == 'nl' -%}
+      {{- cart.currency.symbol }}
+      {{ current_currency_milestone[1] -}}
+    {%- else -%}
+      {{- current_currency_milestone[1] -}}
+      {{- cart.currency.symbol }}
+    {% endif %}
+  </div>
+  <div>
+    {% if locale == 'nl' -%}
+      {{- cart.currency.symbol }}
+      {{ current_currency_milestone[2] -}}
+    {%- else -%}
+      {{- current_currency_milestone[2] -}}
+      {{- cart.currency.symbol }}
+    {% endif %}
+  </div>
+</div>
