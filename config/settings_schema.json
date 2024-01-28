@@ -643,5 +643,151 @@
         "info": "96 x 96px .png recommended"
       }
     ]
+  },
+  {
+    "name": "Gift",
+    "settings": [
+      {
+        "type": "text",
+        "id": "invalid_gift_article",
+        "label": "Invalid gift article",
+        "info": "Variant Ids seperated by comma. Gifts won't be added if these are the only variants in the cart."
+      },
+      {
+        "type": "text",
+        "id": "checkout_price_milestones",
+        "label": "Price milestones for checkout (e.g. free shipping, free gift)",
+        "default": "EUR:50:100",
+        "info": "Third milestone is optional. Format: CURRENCY:MILESTONE_1:MILESTONE_2:MILESTONE_3,CURRENCY_2:MILESTONE_1:MILESTONE_2,etc.."
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant",
+        "label": "Gift product",
+        "info": "This fields contains the variant id of the gift added to the cart on reaching the second milestone, multiple variants ids are separated by commas (,)"
+      },
+      {
+        "type": "text",
+        "id": "add_product_when_product",
+        "label": "Gift product when product",
+        "info": "Enter two variant ids seperated by comma (,). Second product will automaticly be added if first product is in cart."
+      },
+      {
+        "type": "checkbox",
+        "id": "choose_gift_size",
+        "label": "Show gift size modal on checkout",
+        "default": false,
+        "info": "This will disable the varaint chosen above and use the data provided underneath."
+      },
+      {
+        "type": "image_picker",
+        "id": "gift_product_image",
+        "label": "Gift product image"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_title",
+        "label": "Gift product title"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_subtext",
+        "label": "Gift product subtext"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_infotext",
+        "label": "Gift product infotext"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_1_id",
+        "label": "Gift product variant 1 ID"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_1_title",
+        "label": "Gift product variant 1 Title"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_2_id",
+        "label": "Gift product variant 2 ID"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_2_title",
+        "label": "Gift product variant 2 Title"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_3_id",
+        "label": "Gift product variant 3 ID"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_3_title",
+        "label": "Gift product variant 3 Title"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_4_id",
+        "label": "Gift product variant 4 ID"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_4_title",
+        "label": "Gift product variant 4 Title"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_5_id",
+        "label": "Gift product variant 5 ID"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_5_title",
+        "label": "Gift product variant 5 Title"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_6_id",
+        "label": "Gift product variant 6 ID"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_variant_6_title",
+        "label": "Gift product variant 6 Title"
+      }
+    ]
+  },
+  {
+    "name": "Gift with coupon",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "coupons_add_article",
+        "label": "Activate setting"
+      },
+      {
+        "type": "text",
+        "id": "coupons_add_article_coupons",
+        "label": "Coupon codes",
+        "info": "Coupon codes seperated by comma."
+      },
+      {
+        "type": "text",
+        "id": "coupons_add_article_mbw",
+        "label": "Minimum price",
+        "default": "EUR:80",
+        "info": "Format: CURRENCY:MILESTONE_1,CURRENCY_2:MILESTONE_1,etc.."
+      },
+      {
+        "type": "text",
+        "id": "coupons_add_article_gift",
+        "label": "Gift article",
+        "info": "Multiple variant ids are separated by commas (,)"
+      }
+    ]
   }
 ]

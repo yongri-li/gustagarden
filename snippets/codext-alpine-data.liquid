@@ -1,0 +1,119 @@
+{% liquid
+assign checkout_price_milestones = settings.checkout_price_milestones | split: ','
+for currency_milestone in checkout_price_milestones
+    if currency_milestone contains cart.currency.iso_code
+        assign current_currency_milestone = currency_milestone | split: ":"
+    endif
+endfor
+%}
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('cartDrawer', {
+            open: false,
+            setOpen(value) {
+                this.open = value
+            },
+            currency_iso: "{{ cart.currency.iso_code }}",
+            currency_symbol: "{{ cart.currency.symbol }}",
+            total: 0,
+            totalToGoal: 0,
+            totalPoints: 0,
+            uniqueItemCount: {{ cart.items.size }},
+            setUniqueItemCount(value) {
+                this.uniqueItemCount = value
+            },
+            uniqueItemIds: [{%- liquid
+                for item in cart.items
+                    echo item.id
+                    unless forloop.last
+                        echo ','
+                    endunless
+                endfor
+            -%}],
+            updateUniqueIds(cart) {
+                let tempArray = cart.map(item => { return item.id });
+                this.uniqueItemIds = [...new Set(tempArray)];
+                this.updateCrossSellLimit();
+            },
+            crossSellLimit: 3,
+            updateCrossSellLimit() {
+                let showAmount = 0;
+                this.crossSellLimit = 3;
+
+                let crossSellItems = document.querySelectorAll('.cart-slider-cross-seller .cart-slider-cross-seller-item');
+                crossSellItems.forEach( (crossSellItem) => {
+                    if(this.uniqueItemIds.includes(parseInt(crossSellItem.dataset.variantId))
+                    && showAmount <= 3) { 
+                        this.crossSellLimit++;
+                        showAmount++;
+                    }
+                });
+
+                {% comment %} window.crossSellSplide.destroy(true);
+                window.crossSellSplide.mount(); {% endcomment %}
+            },
+            goalOne: {{ current_currency_milestone[1] }},
+            goalTwo: {{ current_currency_milestone[2] }},
+            missingGoalOne: {{ current_currency_milestone[1] }},
+            missingGoalTwo: {{ current_currency_milestone[2] }},
+            setTotal(newTotal) {
+                let currency = this.currency_symbol;
+                let total = newTotal / 100;
+                {% if request.locale.iso_code == "nl" %}
+                    let newPrice = currency + ' ' + total.toFixed(2).replace('.', ',');
+                {% else %}
+                    let newPrice = total.toFixed(2).replace('.', ',') + ' ' + currency;
+                {% endif %}
+                this.total = newPrice;
+                this.totalPoints = total;
+
+                    if(total >= this.goalOne) {
+                this.totalToGoal = 50 + ((total - this.goalOne) / (this.goalTwo - this.goalOne) * 50);
+                } else {
+                    this.totalToGoal = total / this.goalOne * 50;
+                }
+
+                this.missingGoalOne = this.goalOne - total;
+                this.missingGoalTwo = this.goalTwo - total;
+
+                this.totalToGoal = (this.totalToGoal > 100 ? 100 : this.totalToGoal) + '%';
+            }
+        })
+        Alpine.store('cartDrawer').setTotal({{ cart.items_subtotal_price }});
+
+        
+        Alpine.store('predictiveSearch', {
+            searchTerm: null,
+            submitSearch() {
+                if (this.searchTerm != '') {
+                    if(this.searchTerm.toLowerCase() == 'newsletter') {
+                        window.location.href = '/pages/newsletter';
+                        return false;
+                    }
+
+                    let query = this.searchTerm + '*';
+                    window.location.href = '/search?product%2Carticle&q=' + query;
+                    return false;
+                }
+            },
+            show: false,
+            setShow(value) {
+                this.show = value;
+            },
+            searchData: {
+                pages: [],
+                articles: [],
+                products: []
+            },
+            predictSearch() {
+                let query = this.searchTerm + '*';                
+                fetch(window.Shopify.routes.root + "search/suggest.json?q=" + query  + "&resources[type]=product,article,page&[options][unavailable_products]=last&resources[options][fields]=title,product_type,variants.title,vendor&resources[limit]=4")
+                .then((response) => response.json())
+                .then((suggestions) => {
+                    this.searchData = suggestions.resources.results;
+                    this.setShow(true);
+                })
+            }
+        })
+    })
+</script>

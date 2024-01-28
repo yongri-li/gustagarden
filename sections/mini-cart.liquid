@@ -105,6 +105,8 @@
             | minus: total_cart_discount
           -%}
 
+          {% render 'codext-goals' %}
+
           <free-shipping-bar
             threshold="{{ threshold_in_cents }}"
             class="shipping-bar"
