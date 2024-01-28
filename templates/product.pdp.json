@@ -83,18 +83,18 @@
         "show_thumbnails_on_mobile": false,
         "desktop_thumbnails_position": "left",
         "transition_effect": "slide",
-        "product_slideshow_title_1": "nur noch 1x pro Woche gießen",
-        "product_slideshow_tooltip_1": "Das Rundum-sorglos-Paket für den Anbau von Tomaten bestichtdurch seinen Wassertank, das integrierte Bewässerungssystem und die stabile Rankhilfe. Mit TOM TOMATO haben wir unsere Vision des perfekten Pflanzgefäßes umgesetzt, um dir den erfolgreichen Tomatenanbau zu Hause so einfach wie möglich zu machen.",
-        "product_slideshow_title_2": "",
-        "product_slideshow_tooltip_2": "",
-        "product_slideshow_title_3": "",
-        "product_slideshow_tooltip_3": "",
-        "product_slideshow_title_4": "",
-        "product_slideshow_tooltip_4": "",
-        "product_slideshow_title_5": "",
-        "product_slideshow_tooltip_5": "",
-        "product_slideshow_title_6": "",
-        "product_slideshow_tooltip_6": ""
+        "product_slideshow_title_1": "{{ product.metafields.custom.product_slideshow_title_1.value }}",
+        "product_slideshow_tooltip_1": "<p>{{ product.metafields.custom.product_slideshow_tooltip_1 | metafield_tag }}<\/p>",
+        "product_slideshow_title_2": "{{ product.metafields.custom.product_slideshow_title_2.value }}",
+        "product_slideshow_tooltip_2": "<p>{{ product.metafields.custom.product_slideshow_tooltip_2 | metafield_tag }}<\/p>",
+        "product_slideshow_title_3": "{{ product.metafields.custom.product_slideshow_title_3.value }}",
+        "product_slideshow_tooltip_3": "<p>{{ product.metafields.custom.product_slideshow_tooltip_3 | metafield_tag }}<\/p>",
+        "product_slideshow_title_4": "{{ product.metafields.custom.product_slideshow_title_4.value }}",
+        "product_slideshow_tooltip_4": "<p>{{ product.metafields.custom.product_slideshow_tooltip_4 | metafield_tag }}<\/p>",
+        "product_slideshow_title_5": "{{ product.metafields.custom.product_slideshow_title_5.value }}",
+        "product_slideshow_tooltip_5": "<p>{{ product.metafields.custom.product_slideshow_tooltip_5 | metafield_tag }}<\/p>",
+        "product_slideshow_title_6": "{{ product.metafields.custom.product_slideshow_title_6.value }}",
+        "product_slideshow_tooltip_6": "<p>{{ product.metafields.custom.product_slideshow_tooltip_6 | metafield_tag }}<\/p>"
       }
     },
     "product-content": {
@@ -200,7 +200,7 @@
             "tab_label": "Item",
             "subheading": "",
             "title": "Nur noch 1x pro Woche gießen",
-            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.  Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
+            "content": "<p>Dank der optimalen Größe des Wassertanks muss dieser nur alle paar Tage über die seitliche Einfüllöffnung mit Wasser aufgefüllt werden. Zum Vergleich: Tomaten im normalen Blumentopf musst du 1-2 mal täglich gießen.\u2028\u2028Die Bewässerungsbänder verbinden Pflanztopf und Wassertank. Sie transportieren das Wasser gleichmäßig nach oben ins Erdreich und versorgen deine Pflanzen immer mit der richtigen Wassermenge – nie zu viel und nie zu wenig.<\/p>",
             "button_text": "",
             "button_link": ""
           }
