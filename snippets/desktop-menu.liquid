@@ -78,9 +78,11 @@
               class="mega-menu"
               {{ mega_menu_block.shopify_attributes }}>
               <div class="container">
-                <a href="/collections/alle-produkte" class="button button--primary my-6">
-                  Alle Produkte
-                </a>
+                {%- if mega_menu_block.settings.all_products -%}
+                  <a href="/collections/alle-produkte" class="button button--primary my-6">
+                    Alle Produkte
+                  </a>
+                {%- endif -%}
                 <div class="mega-menu__inner !pt-0">
                   {%- if mega_menu_block.settings.images_position == 'left' and mega_menu_images != blank -%}
                     <div class="mega-menu__images-wrapper {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}">

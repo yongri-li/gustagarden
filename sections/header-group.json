@@ -56,6 +56,7 @@
         "mega_menu_HUJx4f": {
           "type": "mega_menu",
           "settings": {
+            "all_products": true,
             "menu_item": "Hauptprodukte",
             "images_position": "right",
             "image_1": "shopify:\/\/shop_images\/HARRY-HERBS-colors-300x300.jpg",
