@@ -11,6 +11,12 @@
             "image_width": 350
           }
         },
+        "liquid_ETXNVY": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<button id=\"add-to-cart-guide\" type=\"button\">Leitfaden zur Tomate hinzufügen<\/button>\n\n\n<script>\ndocument.getElementById('add-to-cart-guide').addEventListener('click', function() {\n  fetch('\/cart\/add.js', {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application\/json'\n    },\n    body: JSON.stringify({\n      items: [{\n        id: 42700295307437, \/\/ Die Varianten-ID von \"Tomate: Ein Leitfaden rund um die Tomate\"\n        quantity: 1\n      }]\n    })\n  })\n  .then(response => {\n    if (response.ok) {\n      alert('Leitfaden zur Tomate wurde zum Warenkorb hinzugefügt!');\n      setTimeout(function(){ \n        location.reload(); \/\/ Aktualisiert die Seite\n      }, 2000); \/\/ Wartet 2 Sekunden, bevor die Seite aktualisiert wird\n    } else {\n      alert('Fehler beim Hinzufügen zum Warenkorb');\n    }\n  })\n  .catch((error) => {\n    console.error('Fehler:', error);\n  });\n});\n<\/script>"
+          }
+        },
         "button_GWwgHq": {
           "type": "button",
           "disabled": true,
@@ -85,16 +91,11 @@
             "btn_label": "mach's zum Set!",
             "background_color": "#f5f5f5"
           }
-        },
-        "liquid_ETXNVY": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<button id=\"add-to-cart-guide\" type=\"button\">Leitfaden zur Tomate hinzufügen<\/button>\n\n\n<script>\ndocument.getElementById('add-to-cart-guide').addEventListener('click', function() {\n  fetch('\/cart\/add.js', {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application\/json'\n    },\n    body: JSON.stringify({\n      items: [{\n        id: 42700295307437, \/\/ Die Varianten-ID von \"Tomate: Ein Leitfaden rund um die Tomate\"\n        quantity: 1\n      }]\n    })\n  })\n  .then(response => {\n    if (response.ok) {\n      alert('Leitfaden zur Tomate wurde zum Warenkorb hinzugefügt!');\n      setTimeout(function(){ \n        location.reload(); \/\/ Aktualisiert die Seite\n      }, 2000); \/\/ Wartet 2 Sekunden, bevor die Seite aktualisiert wird\n    } else {\n      alert('Fehler beim Hinzufügen zum Warenkorb');\n    }\n  })\n  .catch((error) => {\n    console.error('Fehler:', error);\n  });\n});\n<\/script>"
-          }
         }
       },
       "block_order": [
         "image_gpVnWJ",
+        "liquid_ETXNVY",
         "button_GWwgHq",
         "b3e6ce87-1409-4648-a0ad-7dbc015879b0",
         "fff5100c-5ff6-462e-9771-01ed6285b80f",
@@ -104,8 +105,7 @@
         "buy_buttons",
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
         "723850fb-7702-4722-abf6-463a8b4acbb7",
-        "3a891ea4-0bef-456f-9c59-74ec642a5447",
-        "liquid_ETXNVY"
+        "3a891ea4-0bef-456f-9c59-74ec642a5447"
       ],
       "custom_css": [
         "h1 {font-weight: bold;}"
