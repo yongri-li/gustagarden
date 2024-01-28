@@ -84,9 +84,9 @@
     }
   },
   "cart": {
-    "free_shipping_and_gift_html": "Du erhältst <b>kostenlosen Versand</b> und <b>das Einsteiger Probenset gratis</b>!*",
-    "free_shipping_remaining_gift_html": "Du erhältst <b>kostenlosen Versand</b>. Noch <span x-text=\"$store.cartDrawer.missingGoalTwo.toFixed(2)\"></span> € mehr für ein gratis Einsteiger Probenset!*",
-    "remaining_shipping_and_gift_html": "Nur noch <span x-text=\"$store.cartDrawer.missingGoalOne.toFixed(2)\"></span> € für kostenfreien Versand und <span x-text=\"$store.cartDrawer.missingGoalTwo.toFixed(2)\"></span> € für ein gratis Einsteiger Probenset!*",
+    "free_shipping_and_gift_html": "Du erhältst <b>kostenlosen Versand<\/b> und <b>das Einsteiger Probenset gratis<\/b>!*",
+    "free_shipping_remaining_gift_html": "Du erhältst <b>kostenlosen Versand<\/b>. Noch <span x-text=\"$store.cartDrawer.missingGoalTwo.toFixed(2)\"><\/span> € mehr für ein gratis Einsteiger Probenset!*",
+    "remaining_shipping_and_gift_html": "Nur noch <span x-text=\"$store.cartDrawer.missingGoalOne.toFixed(2)\"><\/span> € für kostenfreien Versand und <span x-text=\"$store.cartDrawer.missingGoalTwo.toFixed(2)\"><\/span> € für ein gratis Einsteiger Probenset!*",
     "general": {
       "title": "Warenkorb",
       "empty": "Dein Warenkorb ist leer",
