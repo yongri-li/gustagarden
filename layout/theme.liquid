@@ -160,6 +160,8 @@
 
     {{ content_for_header }}
     {% render 'gp-head' %}
+
+    <script src="{{ 'alpinejs@3.13.3.min.js' | asset_url }}" defer></script>
   </head>
 
   {%- assign feature_classes = '' -%}
