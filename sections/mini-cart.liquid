@@ -47,6 +47,7 @@
     </div>
   {%- else -%}
     <div class="drawer__content">
+      {% render 'codext-goals' %}
       {%- if settings.cart_show_free_shipping_threshold
         and settings.cart_free_shipping_threshold != ''
         and cart.requires_shipping
@@ -105,7 +106,7 @@
             | minus: total_cart_discount
           -%}
 
-          {% render 'codext-goals' %}
+          
 
           <free-shipping-bar
             threshold="{{ threshold_in_cents }}"
