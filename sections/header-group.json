@@ -95,6 +95,7 @@
         "6e4c9176-42a3-4599-8734-b7b8fa4ed08b": {
           "type": "mega_menu",
           "settings": {
+            "all_products": false,
             "menu_item": "Zubehör",
             "images_position": "right",
             "image_above_1": "shopify:\/\/shop_images\/banner1.webp",
@@ -132,6 +133,7 @@
         "d290e4e5-66ec-4afd-a6cb-51edf8829bfb": {
           "type": "mega_menu",
           "settings": {
+            "all_products": false,
             "menu_item": "Blog",
             "images_position": "right",
             "image_above_1": "shopify:\/\/shop_images\/banner-nav.webp",
@@ -167,6 +169,7 @@
         "mega_menu_e9KYzD": {
           "type": "mega_menu",
           "settings": {
+            "all_products": false,
             "menu_item": "über uns",
             "images_position": "right",
             "image_above_1": "shopify:\/\/shop_images\/Kinder-beim-Kochen-16_9.png",
