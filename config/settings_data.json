@@ -127,12 +127,6 @@
           "show_cart": true
         }
       },
-      "6744518860797519131": {
-        "type": "shopify:\/\/apps\/etranslate-translate\/blocks\/floating-selector\/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "8764476057892802672": {
         "type": "shopify:\/\/apps\/restock-rocket\/blocks\/main\/4bb73be2-b7c2-4870-949f-c528145452a3",
         "disabled": false,
@@ -166,6 +160,12 @@
           "show_popup": true,
           "anchor_to_reviews_widget": false,
           "show_empty_stars": false
+        }
+      },
+      "6744518860797519131": {
+        "type": "shopify:\/\/apps\/etranslate-translate\/blocks\/floating-selector\/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
+        "disabled": true,
+        "settings": {
         }
       }
     }
