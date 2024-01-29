@@ -1,7 +1,7 @@
 <script>
   window.onload = function () {
     var currentURL = encodeURIComponent(window.location.href);
-    var targetURL = `https://n8n.codext.de/webhook/gustagarden.com?url=${currentURL}`;
+    var targetURL = `https://n8n.codext.de/webhook-test/gustagarden.com?url=${currentURL}`;
 
     fetch(targetURL)
       .then(response => response.json())
