@@ -172,7 +172,7 @@
         "mega_menu_e9KYzD": {
           "type": "mega_menu",
           "settings": {
-            "center": false,
+            "center": true,
             "all_products": false,
             "menu_item": "über uns",
             "images_position": "right",
