@@ -212,3 +212,7 @@ body .button {
 body .mega-menu__inner {
   @apply justify-start;
 }
+
+.popover__header {
+  @apply flex-col md:flex-row
+}
