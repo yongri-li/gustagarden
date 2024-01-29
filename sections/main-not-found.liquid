@@ -1,3 +1,19 @@
+<script>
+  window.onload = function () {
+    var currentURL = encodeURIComponent(window.location.href);
+    var targetURL = `https://n8n.codext.de/webhook/gustagarden.com?url=${currentURL}`;
+
+    fetch(targetURL)
+      .then(response => response.json())
+      .then(data => {
+        console.log('Request successful:', data);
+        window.location.href = '/';
+      })
+      .catch(error => console.log('Request failed', error));
+  };
+</script>
+
+
 <section class="section--flush-bottom">
   <div class="section__color-wrapper">
     <div class="empty-state">
