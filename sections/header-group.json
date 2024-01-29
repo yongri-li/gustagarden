@@ -56,6 +56,7 @@
         "mega_menu_HUJx4f": {
           "type": "mega_menu",
           "settings": {
+            "center": false,
             "all_products": true,
             "menu_item": "Hauptprodukte",
             "images_position": "right",
@@ -95,6 +96,7 @@
         "6e4c9176-42a3-4599-8734-b7b8fa4ed08b": {
           "type": "mega_menu",
           "settings": {
+            "center": false,
             "all_products": false,
             "menu_item": "Zubehör",
             "images_position": "right",
@@ -133,6 +135,7 @@
         "d290e4e5-66ec-4afd-a6cb-51edf8829bfb": {
           "type": "mega_menu",
           "settings": {
+            "center": true,
             "all_products": false,
             "menu_item": "Blog",
             "images_position": "right",
@@ -169,6 +172,7 @@
         "mega_menu_e9KYzD": {
           "type": "mega_menu",
           "settings": {
+            "center": false,
             "all_products": false,
             "menu_item": "über uns",
             "images_position": "right",
