@@ -626,6 +626,10 @@
   justify-content: center;
 }
 
+.\!justify-center {
+  justify-content: center !important;
+}
+
 .justify-between {
   justify-content: space-between;
 }
