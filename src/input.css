@@ -210,5 +210,5 @@ body .button {
   color: #4e5518;
 }
 body .mega-menu__inner {
-  @apply !justify-start;
+  @apply justify-start;
 }

@@ -622,12 +622,12 @@
   justify-content: flex-start;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .\!justify-center {
   justify-content: center !important;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -1714,7 +1714,7 @@ body .button {
 }
 
 body .mega-menu__inner {
-  justify-content: flex-start !important;
+  justify-content: flex-start;
 }
 
 .hover\:cursor-pointer:hover {
