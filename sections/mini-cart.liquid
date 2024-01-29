@@ -47,7 +47,9 @@
     </div>
   {%- else -%}
     <div class="drawer__content">
-      {% render 'codext-goals' %}
+      {%comment%}  
+    {% render 'codext-goals' %}
+  {%endcomment%}  
       {%- if settings.cart_show_free_shipping_threshold
         and settings.cart_free_shipping_threshold != ''
         and cart.requires_shipping
