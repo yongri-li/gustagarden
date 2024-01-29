@@ -163,6 +163,16 @@
 
     <script src="{{ 'alpinejs@3.13.3.min.js' | asset_url }}" defer></script>
     {% render 'codext-alpine-data' %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPVJ80QVHF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MPVJ80QVHF');
+    </script>
   </head>
 
   {%- assign feature_classes = '' -%}
