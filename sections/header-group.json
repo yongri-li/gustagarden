@@ -96,7 +96,7 @@
         "6e4c9176-42a3-4599-8734-b7b8fa4ed08b": {
           "type": "mega_menu",
           "settings": {
-            "center": false,
+            "center": true,
             "all_products": false,
             "menu_item": "Zubehör",
             "images_position": "right",
