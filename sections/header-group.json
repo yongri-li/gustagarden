@@ -56,7 +56,7 @@
         "mega_menu_HUJx4f": {
           "type": "mega_menu",
           "settings": {
-            "center": true,
+            "center": false,
             "all_products": true,
             "menu_item": "Hauptprodukte",
             "images_position": "right",
