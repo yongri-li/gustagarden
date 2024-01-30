@@ -82,6 +82,7 @@
         "h1 {font-weight: bold;}"
       ],
       "settings": {
+        "collection": "",
         "show_metafield_badges": true,
         "show_vendor": false,
         "show_sku": false,
@@ -515,6 +516,7 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
           "type": "values",
           "settings": {
+            "product_title": "",
             "product": "tom-tomato",
             "value_1": "<p>✔️<\/p>",
             "value_2": "<p>✔️<\/p>",
@@ -526,6 +528,7 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2": {
           "type": "values",
           "settings": {
+            "product_title": "",
             "product": "fertigen-systeme",
             "value_1": "<p>❌<\/p>",
             "value_2": "<p>❌<\/p>",
@@ -540,6 +543,7 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1",
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "Darum ist PAUL POTATO die beste Wahl",
