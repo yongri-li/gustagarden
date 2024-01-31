@@ -2,55 +2,6 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "codext_feature_chart_tLJRT6": {
-      "type": "codext-feature-chart",
-      "blocks": {
-        "headings_KdEGeG": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Ganzjährig bepflanzbar",
-            "heading_2": "integrierter Wassertank",
-            "heading_3": "kinderleichte Pflege",
-            "heading_4": "abnehmbare Schutzhaube",
-            "heading_5": ""
-          }
-        },
-        "values_YAHCeD": {
-          "type": "values",
-          "settings": {
-            "product_title": "",
-            "product": "harry-herbs",
-            "value_1": "",
-            "value_2": "",
-            "value_3": "",
-            "value_4": "",
-            "value_5": ""
-          }
-        },
-        "values_ERqJxA": {
-          "type": "values",
-          "settings": {
-            "product_title": "",
-            "product": "",
-            "value_1": "",
-            "value_2": "",
-            "value_3": "",
-            "value_4": "",
-            "value_5": ""
-          }
-        }
-      },
-      "block_order": [
-        "headings_KdEGeG",
-        "values_YAHCeD",
-        "values_ERqJxA"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "Darum ist HARRY HERBS die richtige Wahl",
-        "content": ""
-      }
-    },
     "newsletter": {
       "type": "newsletter",
       "settings": {
@@ -188,7 +139,6 @@
     }
   },
   "order": [
-    "codext_feature_chart_tLJRT6",
     "newsletter",
     "d04bc233-9b21-408a-b0f0-9214911290ee",
     "footer",
