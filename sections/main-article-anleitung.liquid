@@ -245,6 +245,23 @@
               </div>
             {%- endif -%}
 
+            {%- if article.metafields.custom.youtube_video_id != blank -%}
+              <div>
+                <div class="flex flex-col ">
+                  <div class="article__content">
+                    <div class="rte">
+                        <iframe
+                          class="aspect-video w-full"
+                          src="https://www.youtube.com/embed/{{ article.metafields.custom.youtube_video_id }}?playsinline=1&autoplay=0&playlist={{ article.metafields.custom.youtube_video_id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}"
+                          allow="autoplay; encrypted-media"
+                          allowfullscreen="allowfullscreen">
+                        </iframe>
+                  </div>
+                </div>
+              </div>
+              
+            {%- endif -%}
+
             {% render 'codext-blog-steps' %}
 
 
