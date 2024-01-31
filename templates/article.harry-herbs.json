@@ -34,6 +34,23 @@
         "blog_header_text_color": "#282828"
       }
     },
+    "1706690094d11a3264": {
+      "type": "apps",
+      "blocks": {
+        "table_of_contents_theme_extension_GcdWef": {
+          "type": "shopify:\/\/apps\/table-of-contents\/blocks\/theme-extension\/d06f5754-affb-4dc7-a2a9-18d74d225f70",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "table_of_contents_theme_extension_GcdWef"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
     "main": {
       "type": "main-article-anleitung",
       "settings": {
@@ -198,6 +215,7 @@
   "order": [
     "b5c5a4e2-fab3-48cb-b8db-67ecdf79971e",
     "blog-post-banner",
+    "1706690094d11a3264",
     "main",
     "27d37aa7-7f41-47aa-9f84-2247a792667a",
     "62cb6170-fd1d-4b4b-bb0b-95ecdad69121",
