@@ -82,6 +82,7 @@
         "h1 {font-weight: bold;}"
       ],
       "settings": {
+        "collection": "",
         "show_metafield_badges": true,
         "show_vendor": false,
         "show_sku": false,
@@ -518,17 +519,18 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1": {
           "type": "headings",
           "settings": {
-            "heading_1": "Stabilität",
-            "heading_2": "Wassertank",
-            "heading_3": "Langlebigkeit",
-            "heading_4": "UV Stabil",
+            "heading_1": "universell und stabil",
+            "heading_2": "einfacher Aufbau",
+            "heading_3": "individuelle Höhenanpassung",
+            "heading_4": "ideal für Tomaten und Kletterpflanzen",
             "heading_5": ""
           }
         },
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
           "type": "values",
           "settings": {
-            "product": "tom-tomato",
+            "product_title": "",
+            "product": "tomato-buddy",
             "value_1": "<p>✔️<\/p>",
             "value_2": "<p>✔️<\/p>",
             "value_3": "<p>✔️<\/p>",
@@ -539,6 +541,7 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2": {
           "type": "values",
           "settings": {
+            "product_title": "",
             "product": "fertigen-systeme",
             "value_1": "<p>❌<\/p>",
             "value_2": "<p>❌<\/p>",
@@ -553,10 +556,9 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1",
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2"
       ],
-      "disabled": true,
       "settings": {
         "subheading": "",
-        "title": "Darum ist TOM TOMATO die beste Wahl",
+        "title": "Darum ist der TOMATO BUDDY die beste Wahl",
         "content": ""
       }
     }
