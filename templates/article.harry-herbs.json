@@ -162,11 +162,11 @@
           "type": "values",
           "settings": {
             "product_title": "",
-            "product": "",
-            "value_1": "<p>Yes<\/p>",
-            "value_2": "<p>Yes<\/p>",
-            "value_3": "<p>No<\/p>",
-            "value_4": "<p>No<\/p>",
+            "product": "harry-herbs",
+            "value_1": "",
+            "value_2": "",
+            "value_3": "",
+            "value_4": "",
             "value_5": ""
           }
         },
