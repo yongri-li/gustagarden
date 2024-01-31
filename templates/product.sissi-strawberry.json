@@ -214,7 +214,7 @@
           "settings": {
             "icon": "picto-box",
             "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5fda2bf0a8739.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 40,
             "title": "ideal für Balkon oder Terrasse",
             "content": ""
           }
@@ -224,7 +224,7 @@
           "settings": {
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-150x150-square-51e0dda996cb7180f9d27eca0733cf85-5fda2b83153eb.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 40,
             "title": "kinderleichter Aufbau",
             "content": ""
           }
@@ -234,7 +234,7 @@
           "settings": {
             "icon": "picto-lock",
             "custom_icon": "shopify:\/\/shop_images\/Icon_schutz-square-df6ff256902e165e4d1c8e18cbe1cfee-5fe0ce6413828_1.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 40,
             "title": "Schutz vorSchädlingen",
             "content": ""
           }
@@ -243,9 +243,9 @@
           "type": "item",
           "settings": {
             "icon": "picto-email",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-watering.png",
-            "custom_icon_width": 40,
-            "title": "einfache Bewässerung",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU_110x_778d681e-ab14-4b14-94a9-e2d666999c14.webp",
+            "custom_icon_width": 55,
+            "title": "Designed in Austria. Made in the EU",
             "content": ""
           }
         }
