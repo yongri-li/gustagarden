@@ -158,7 +158,7 @@
           "settings": {
             "icon": "picto-box",
             "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_4026cc4d-783a-45dc-a9b6-00774d72929b_1.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 40,
             "title": "IDEAL FÜR BALKON ODER TERRASSE",
             "content": ""
           }
@@ -168,7 +168,7 @@
           "settings": {
             "icon": "picto-phone",
             "custom_icon": "shopify:\/\/shop_images\/Icon_vine-square-7b35c060547ddafa650023a9f371fd47-5ff6b45a34431_cf9a64af-abe8-4ca2-b11e-895eb7480a6f.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 40,
             "title": "STABILE RANKHILFE",
             "content": ""
           }
@@ -178,7 +178,7 @@
           "settings": {
             "icon": "picto-lock",
             "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f_1.png",
-            "custom_icon_width": 50,
+            "custom_icon_width": 40,
             "title": "KINDERLEICHTER AUFBAU",
             "content": ""
           }
@@ -188,7 +188,7 @@
           "settings": {
             "icon": "picto-email",
             "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU_110x_778d681e-ab14-4b14-94a9-e2d666999c14.webp",
-            "custom_icon_width": 70,
+            "custom_icon_width": 55,
             "title": "designed in Austria. Made in the EU",
             "content": ""
           }
