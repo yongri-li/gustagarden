@@ -563,18 +563,18 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1": {
           "type": "headings",
           "settings": {
-            "heading_1": "Stabilität",
-            "heading_2": "Wassertank",
-            "heading_3": "Langlebigkeit",
+            "heading_1": "stabil und effizient",
+            "heading_2": "platzsparend",
+            "heading_3": "Schutz vor Schädlingen",
             "heading_4": "UV Stabil",
-            "heading_5": ""
+            "heading_5": "kinderleichter Aufbau"
           }
         },
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
           "type": "values",
           "settings": {
             "product_title": "",
-            "product": "tom-tomato",
+            "product": "sissi-strawberry",
             "value_1": "<p>✔️<\/p>",
             "value_2": "<p>✔️<\/p>",
             "value_3": "<p>✔️<\/p>",
@@ -600,7 +600,6 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1",
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2"
       ],
-      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "Darum ist SISSI STRAWBERRY die beste Wahl",
