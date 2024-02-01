@@ -4,6 +4,7 @@
   "sections": {
     "newsletter": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "image": "shopify:\/\/shop_images\/fresh-vegetables-flatlay.jpg",
