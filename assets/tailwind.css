@@ -1730,7 +1730,7 @@ body .mega-menu__inner {
 .button--notify-me {
   background: #484b42!important;
   color: #fff!important;
-  width: 100%;
+  width: 100%!important;
 }
 
 .hover\:cursor-pointer:hover {
