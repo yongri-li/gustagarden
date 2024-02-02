@@ -1,28 +1,39 @@
-{%- comment -%}
-  ------------------------------------------------------------------------------------------------------------------------
-  NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing this theme as much as we did for
-    developing it. We have put a lot of work to make this theme as developer friendly as possible by offering you
-    hooks to integrate into critical parts of the theme. You will find the complete technical documentation (including
-    all events, dependencies...) in the "custom.js" file, located in the Assets folder.
-  ------------------------------------------------------------------------------------------------------------------------
+{%- comment -%} 
+        ------------------------------------------------------------------------------------------------------------------------
+        NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing this theme as much as we did for 
+        developing it. We have put a lot of work to make this theme as developer friendly as possible by offering you 
+        hooks to integrate into critical parts of the theme. You will find the complete technical documentation (including 
+        all events, dependencies...) in the "custom.js" file, located in the Assets folder.
+        ------------------------------------------------------------------------------------------------------------------------ 
 {%- endcomment -%}
 
 <!doctype html>
 
 {%- assign direction = 'ltr' -%}
 {%- case request.locale.iso_code -%}
-  {%- when 'ar',
-    'arc',
-    'dv',
-    'fa',
-    'ha',
-    'he',
-    'kwh',
-    'ks',
-    'ku',
-    'ps',
-    'ur',
-    'yi'
+  {%- when 'ar'
+    ,
+ 'arc'
+    ,
+ 'dv'
+    ,
+ 'fa'
+    ,
+ 'ha'
+    ,
+ 'he'
+    ,
+ 'kwh'
+    ,
+ 'ks'
+    ,
+ 'ku'
+    ,
+ 'ps'
+    ,
+ 'ur'
+    ,
+ 'yi'
   -%}
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
@@ -33,12 +44,8 @@
   dir="{{ direction }}">
   <head>
     <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
-    <meta
-      name="theme-color"
-      content="{{ settings.header_background }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="{{ settings.header_background }}">
 
     <title>
       {% if page_title == blank -%}
@@ -52,14 +59,10 @@
     </title>
 
     {%- if page_description -%}
-      <meta
-        name="description"
-        content="{{ page_description | escape }}">
+      <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
 
-    <link
-      rel="canonical"
-      href="{{ canonical_url }}">
+    <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon -%}
       <link
@@ -69,15 +72,9 @@
     {%- endif -%}
 
     {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
-    <link
-      rel="preconnect"
-      href="https://cdn.shopify.com">
-    <link
-      rel="dns-prefetch"
-      href="https://productreviews.shopifycdn.com">
-    <link
-      rel="dns-prefetch"
-      href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
     {%- unless settings.heading_font.system? and settings.text_font.system? -%}
       <link
@@ -100,14 +97,14 @@
       as="script"
       href="{{ 'theme.js' | asset_url }}">
 
-    {%- comment -%}
-      IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
-      product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
-      libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
-    {%- endcomment -%}
+    {%- comment -%} 
+                        IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
+                        product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
+                        libraries (such as PhotoSwipe or Flickity) and only loads them on demand. 
+                {%- endcomment -%}
     {%- if request.page_type == 'product' -%}
       {%- assign selected_media = product.selected_variant.featured_media
-        | default: product.featured_media
+ | default: product.featured_media
       -%}
 
       <link
@@ -126,37 +123,25 @@
 
     {% render 'social-meta-tags' %}
     {% render 'microdata-schema' %}
-    {% render 'css-variables', direction: direction %}
-    {% render 'js-variables', direction: direction %}
+    {% render 'css-variables'
+      , direction: direction %}
+    {% render 'js-variables'
+      , direction: direction %}
 
-    <link
-      rel="stylesheet"
-      href="{{ 'theme.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
 
     {{ 'codext-theme.css' | asset_url | stylesheet_tag }}
     {{ 'tailwind.css' | asset_url | stylesheet_tag }}
 
     {{ 'quick-nav.css' | asset_url | stylesheet_tag }}
-    <script
-      src="{{ 'vendor.js' | asset_url }}"
-      defer></script>
-    <script
-      src="{{ 'theme.js' | asset_url }}"
-      defer></script>
-    <script
-      src="{{ 'custom.js' | asset_url }}"
-      defer></script>
-    <script
-      src="{{ 'codext-helper.js' | asset_url }}"
-      defer></script>
+    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+    <script src="{{ 'codext-helper.js' | asset_url }}" defer></script>
 
-    <script
-      src="{{ 'quick-nav.js' | asset_url }}"
-      defer></script>
+    <script src="{{ 'quick-nav.js' | asset_url }}" defer></script>
 
-    <script
-      src="{{ 'custom-select.js' | asset_url }}"
-      defer></script>
+    <script src="{{ 'custom-select.js' | asset_url }}" defer></script>
 
     {{ content_for_header }}
     {% render 'gp-head' %}
@@ -169,30 +154,29 @@
 
   {%- if settings.show_image_zoom -%}
     {% assign feature_classes = feature_classes
-      | append: ' features--image-zoom'
+ | append: ' features--image-zoom'
     %}
   {%- endif -%}
 
-  <body
-    class="no-focus-outline {{ feature_classes }}"
-    data-instant-allow-query-string>
+  <body class="no-focus-outline {{ feature_classes }}" data-instant-allow-query-string>
     {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
     <svg class="visually-hidden">
       <linearGradient id="rating-star-gradient-half">
         <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
-        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
+        <stop
+          offset="50%"
+          stop-color="rgb(var(--product-star-rating))"
+          stop-opacity="0.4" />
       </linearGradient>
     </svg>
 
-    <a
-      href="#main"
-      class="visually-hidden skip-to-content">
+    <a href="#main" class="visually-hidden skip-to-content">
       {{- 'general.accessibility.skip_to_content' | t -}}
     </a>
     <loading-bar class="loading-bar"></loading-bar>
 
     {%- if request.page_type != 'gift_card'
-      and request.page_type != 'password'
+ and request.page_type != 'password'
     -%}
       {%- sections 'header-group' -%}
       {%- sections 'overlay-group' -%}
@@ -206,13 +190,13 @@
       id="main"
       role="main"
       class="anchor">
-      {%- comment -%}
-        IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort
-          by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code
-          here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS
-      {%- endcomment -%}
+      {%- comment -%} 
+                                IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort 
+                                by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code 
+                                here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS 
+                        {%- endcomment -%}
       {%- if request.page_type == 'collection'
-        or request.page_type == 'search'
+ or request.page_type == 'search'
       -%}
         {%- assign active_filters_count = 0 -%}
 
@@ -225,11 +209,11 @@
         {%- for filter in filters -%}
           {%- if filter.type == 'list' -%}
             {%- assign active_filters_count = active_filters_count
-              | plus: filter.active_values.size
+ | plus: filter.active_values.size
             -%}
           {%- elsif filter.type == 'price_range'
-            and filter.min_value.value
-            or filter.max_value.value
+ and filter.min_value.value
+ or filter.max_value.value
           -%}
             {%- assign active_filters_count = active_filters_count | plus: 1 -%}
           {%- endif -%}
@@ -238,15 +222,13 @@
         {%- assign is_toolbar_collapsed = false -%}
 
         {%- if request.page_type == 'search'
-          and search.results.first.object_type != 'product'
-          and search.results_count > 0
+ and search.results.first.object_type != 'product'
+ and search.results_count > 0
         -%}
           {%- assign is_toolbar_collapsed = true -%}
         {%- endif -%}
 
-        <div
-          id="mobile-facet-toolbar"
-          class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
+        <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
           <button
             is="toggle-button"
             class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}"
@@ -277,45 +259,45 @@
     </div>
 
     {%- if request.page_type != 'gift_card'
-      and request.page_type != 'password'
+ and request.page_type != 'password'
     -%}
       {%- sections 'footer-group' -%}
     {%- endif -%}
-<script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
-<script>
-    var klaviyo = klaviyo || [];
-    klaviyo.init({
+    <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+    <script>
+          var klaviyo = klaviyo || [];
+          klaviyo.init({
       account: "Xy9V3R",
       platform: "shopify"
-    });
-    klaviyo.enable("backinstock",{ 
-    trigger: {
-      product_page_text: "Bei Verfügbarkeit benachrichtigen",
-      product_page_class: "btn",
-      product_page_text_align: "center",
-      product_page_margin: "0px",
-      replace_anchor: false
-    },
-    modal: {
-     headline: "{product_name}",
-     body_content: "Registriere dich, um eine Benachrichtigung zu erhalten, wenn dieser Artikel wieder auf Lager ist.",
-     email_field_label: "Email",
-     button_label: "Benachrichtigen mich, sobald verfügbar",
-     subscription_success_label: "Du bist dabei! Wir sagen dir Bescheid, wenn er wieder da ist..",
-     footer_content: '',
-     additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
-     drop_background_color: "#000",
-     background_color: "#fff",
-     text_color: "#222",
-     button_text_color: "#4f5418",
-     button_background_color: "#c7dd16",
-     close_button_color: "#ccc",
-     error_background_color: "#fcd6d7",
-     error_text_color: "#C72E2F",
-     success_background_color: "#d3efcd",
-     success_text_color: "#1B9500"
-    }
-  });
-</script>
+          });
+          klaviyo.enable("backinstock",{ 
+          trigger: {
+            product_page_text: "Bei Verfügbarkeit benachrichtigen",
+            product_page_class: "btn button button--primary",
+            product_page_text_align: "center",
+            product_page_margin: "0px",
+            replace_anchor: false
+          },
+          modal: {
+           headline: "{product_name}",
+           body_content: "Registriere dich, um eine Benachrichtigung zu erhalten, wenn dieser Artikel wieder auf Lager ist.",
+           email_field_label: "Email",
+           button_label: "Benachrichtigen mich, sobald verfügbar",
+           subscription_success_label: "Du bist dabei! Wir sagen dir Bescheid, wenn er wieder da ist..",
+           footer_content: '',
+           additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
+           drop_background_color: "#000",
+           background_color: "#fff",
+           text_color: "#222",
+           button_text_color: "#4f5418",
+           button_background_color: "#c7dd16",
+           close_button_color: "#ccc",
+           error_background_color: "#fcd6d7",
+           error_text_color: "#C72E2F",
+           success_background_color: "#d3efcd",
+           success_text_color: "#1B9500"
+          }
+        });
+    </script>
   </body>
 </html>
