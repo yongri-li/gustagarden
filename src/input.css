@@ -216,3 +216,9 @@ body .mega-menu__inner {
 .popover__header {
   @apply flex-col md:flex-row
 }
+
+.button--notify-me {
+  background: #484b42!important;
+  color: #fff!important;
+  width: 100%;
+}
