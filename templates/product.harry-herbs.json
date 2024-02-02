@@ -46,6 +46,12 @@
             "buy_now_button_text_color": "rgba(0,0,0,0)"
           }
         },
+        "liquid_ynmTij": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-bis-trigger\"><\/div>"
+          }
+        },
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c": {
           "type": "liquid",
           "settings": {
@@ -74,6 +80,7 @@
         "quantity_selector",
         "38a03175-609a-40b5-9e4e-055fec879e76",
         "buy_buttons",
+        "liquid_ynmTij",
         "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
         "723850fb-7702-4722-abf6-463a8b4acbb7",
         "2a6555a2-b12d-4a09-9e57-21a82d47f76e"
