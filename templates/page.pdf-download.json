@@ -17,7 +17,7 @@
         "button_text": "{{ page.metafields.custom.download_button_text.value }}",
         "button_link": "{{ page.metafields.custom.download_button_link.value }}",
         "background_type": "full_width",
-        "text_width": "medium",
+        "text_width": "large",
         "text_position": "center",
         "text_alignment": "center",
         "background": "rgba(0,0,0,0)",
