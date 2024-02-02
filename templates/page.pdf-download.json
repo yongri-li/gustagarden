@@ -13,7 +13,7 @@
       "settings": {
         "subheading": "",
         "title": "{{ page.metafields.custom.download_berschrift.value }}",
-        "content": "",
+        "content": "{{ page.metafields.custom.download_text_rich | metafield_tag }}",
         "button_text": "{{ page.metafields.custom.download_button_text.value }}",
         "button_link": "{{ page.metafields.custom.download_button_link.value }}",
         "background_type": "full_width",
