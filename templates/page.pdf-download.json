@@ -7,9 +7,28 @@
         "show_title": true,
         "page_width": "medium"
       }
+    },
+    "rich_text_HjdVEk": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Talk about your brand",
+        "content": "<p>conent<\/p>",
+        "button_text": "Button",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_HjdVEk"
   ]
 }
