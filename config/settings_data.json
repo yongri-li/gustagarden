@@ -127,12 +127,6 @@
           "show_cart": true
         }
       },
-      "8764476057892802672": {
-        "type": "shopify:\/\/apps\/restock-rocket\/blocks\/main\/4bb73be2-b7c2-4870-949f-c528145452a3",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "15683396631634586217": {
         "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
