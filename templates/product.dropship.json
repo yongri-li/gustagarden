@@ -38,7 +38,7 @@
         "text_8NcLdT": {
           "type": "text",
           "settings": {
-            "text": "<p>Ware wird direkt vom Hersteller geliefert! <br\/>Lieferzeit ca. 14 Tage<\/p>"
+            "text": "<p>Ware wird direkt vom Hersteller geliefert!<br\/>Lieferzeit {{ section.settings.collection.metafields.custom.dropship_lieferzeit.value }}<\/p>"
           }
         },
         "buy_buttons": {
