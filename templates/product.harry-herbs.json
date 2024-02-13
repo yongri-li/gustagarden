@@ -413,6 +413,74 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "multi_column_nNARhi": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9r3Tkz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-185.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Wandhalterung",
+            "content": "<p>Montiere deinen HARRY HERBS ganz einfach auf die Wand und nimm ihn jederzeit ganz einfach wieder ab.<\/p><p><a href=\"\/products\/wandhalterung\" title=\"Wandhalterung\">zum Produkt<\/a><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_wCh8ef": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/100B10_HARRY-HERBS_light-gray-6.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Balkonhalterung",
+            "content": "<p>Mit der Balkonhalterung kannst du deinen HARRY HERBS ganz einfach auf dein Geländer hängen. Verfügbar in 2 Größen.<\/p><p><a href=\"\/products\/balkonhalterung\" title=\"Balkonhalterung\">zum Produkt<\/a><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_GAgGMf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-10-04_HH-WoodenStand-01.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Senkrechtgarten",
+            "content": "<p>Der Senkrechtgarten aus Holz bietet Platz für <strong>3 HARRY HERBS<\/strong> und ist sowohl für <strong>Indoor als auch für Outdoor<\/strong> geeignet.<\/p><p><a href=\"\/products\/senkrechtgarten\" title=\"Senkrechtgarten für HARRY HERBS\">zum Produkt<\/a><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_9r3Tkz",
+        "item_wCh8ef",
+        "item_GAgGMf"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "Optional",
+        "title": "MONTAGE MÖGLICHKEITEN",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "9020341f-56b0-42f2-848e-1254c59e5c4d": {
       "type": "codext-Text-with-Icons",
       "blocks": {
@@ -463,6 +531,7 @@
         "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-3",
         "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-4"
       ],
+      "disabled": true,
       "custom_css": [
         "{margin-top: 50px;}"
       ],
@@ -643,74 +712,6 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
-    },
-    "multi_column_nNARhi": {
-      "type": "multi-column",
-      "blocks": {
-        "item_9r3Tkz": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-185.jpg",
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "Wandhalterung",
-            "content": "<p>Montiere deinen HARRY HERBS ganz einfach auf die Wand und nimm ihn jederzeit ganz einfach wieder ab.<\/p><p><a href=\"\/products\/wandhalterung\" title=\"Wandhalterung\">zum Produkt<\/a><\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "item_wCh8ef": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/100B10_HARRY-HERBS_light-gray-6.jpg",
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "Balkonhalterung",
-            "content": "<p>Mit der Balkonhalterung kannst du deinen HARRY HERBS ganz einfach auf dein Geländer hängen. Verfügbar in 2 Größen.<\/p><p><a href=\"\/products\/balkonhalterung\" title=\"Balkonhalterung\">zum Produkt<\/a><\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "item_GAgGMf": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2022-10-04_HH-WoodenStand-01.jpg",
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "Senkrechtgarten",
-            "content": "<p>Der Senkrechtgarten aus Holz bietet Platz für <strong>3 HARRY HERBS<\/strong> und ist sowohl für <strong>Indoor als auch für Outdoor<\/strong> geeignet.<\/p><p><a href=\"\/products\/senkrechtgarten\" title=\"Senkrechtgarten für HARRY HERBS\">zum Produkt<\/a><\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        }
-      },
-      "block_order": [
-        "item_9r3Tkz",
-        "item_wCh8ef",
-        "item_GAgGMf"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "stack_items": false,
-        "subheading": "Optional",
-        "title": "MONTAGE MÖGLICHKEITEN",
-        "content": "",
-        "column_alignment": "center",
-        "mobile_item_size": "medium",
-        "desktop_item_size": "medium",
-        "spacing": "normal",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -721,12 +722,12 @@
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "multi_column_8nqwUQ",
+    "multi_column_nNARhi",
     "9020341f-56b0-42f2-848e-1254c59e5c4d",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",
-    "c1104d7d-0c9d-4394-ab24-0f86afeb3484",
-    "multi_column_nNARhi"
+    "c1104d7d-0c9d-4394-ab24-0f86afeb3484"
   ]
 }
