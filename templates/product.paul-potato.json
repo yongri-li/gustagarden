@@ -423,6 +423,56 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339": {
+      "type": "codext-feature-chart",
+      "blocks": {
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "hohe Erträge",
+            "heading_2": "einfache Bewässerung",
+            "heading_3": "optimales Erdvolumen",
+            "heading_4": "UV Stabil",
+            "heading_5": "platzsparend"
+          }
+        },
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
+          "type": "values",
+          "settings": {
+            "product_title": "",
+            "product": "paul-potato-starter",
+            "value_1": "<p>✔️<\/p>",
+            "value_2": "<p>✔️<\/p>",
+            "value_3": "<p>✔️<\/p>",
+            "value_4": "<p>✔️<\/p>",
+            "value_5": "<p>✔️<\/p>"
+          }
+        },
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2": {
+          "type": "values",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/200903-GustaGarden-020.jpg",
+            "product_title": "herkömmlicher Topf",
+            "product": "fertigen-systeme",
+            "value_1": "<p>❌<\/p>",
+            "value_2": "<p>❌<\/p>",
+            "value_3": "<p>❌<\/p>",
+            "value_4": "<p>❌<\/p>",
+            "value_5": "<p>❌<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1",
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1",
+        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Darum ist PAUL POTATO die beste Wahl",
+        "content": ""
+      }
+    },
     "c418a397-5659-4b49-890b-a93e490c9842": {
       "type": "featured-collections",
       "blocks": {
@@ -515,56 +565,6 @@
         "include_vertical_margins": true
       }
     },
-    "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339": {
-      "type": "codext-feature-chart",
-      "blocks": {
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "hohe Erträge",
-            "heading_2": "einfache Bewässerung",
-            "heading_3": "optimales Erdvolumen",
-            "heading_4": "UV Stabil",
-            "heading_5": "platzsparend"
-          }
-        },
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
-          "type": "values",
-          "settings": {
-            "product_title": "",
-            "product": "paul-potato-starter",
-            "value_1": "<p>✔️<\/p>",
-            "value_2": "<p>✔️<\/p>",
-            "value_3": "<p>✔️<\/p>",
-            "value_4": "<p>✔️<\/p>",
-            "value_5": "<p>✔️<\/p>"
-          }
-        },
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2": {
-          "type": "values",
-          "settings": {
-            "product_image": "shopify:\/\/shop_images\/200903-GustaGarden-020.jpg",
-            "product_title": "herkömmlicher Topf",
-            "product": "fertigen-systeme",
-            "value_1": "<p>❌<\/p>",
-            "value_2": "<p>❌<\/p>",
-            "value_3": "<p>❌<\/p>",
-            "value_4": "<p>❌<\/p>",
-            "value_5": "<p>❌<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1",
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1",
-        "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "Darum ist PAUL POTATO die beste Wahl",
-        "content": ""
-      }
-    },
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
       "type": "faq",
       "blocks": {
@@ -645,10 +645,10 @@
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
     "multi_column_3qCaBY",
+    "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",
-    "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339",
     "c1104d7d-0c9d-4394-ab24-0f86afeb3484"
   ]
 }
