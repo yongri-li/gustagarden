@@ -251,7 +251,7 @@
       "settings": {
         "background": "#c8dd02",
         "text_color": "#ffffff",
-        "stack_on_mobile": true
+        "stack_on_mobile": false
       }
     },
     "93e61ce0-1e10-47b1-a69a-07361399d8ef": {
