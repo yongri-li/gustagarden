@@ -321,6 +321,43 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "image_with_text_3pPXyM": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_XDcKVV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/200910-GustaGarden-005_Easy-Resize.com_ccf8a5b5-7670-4ab1-8107-56aa5fdc4106.jpg",
+            "tab_label": "",
+            "subheading": "",
+            "title": "Stahl oder Polypropylen",
+            "content": "<p>PAUL POTATO ist sowohl in <strong>lebensmittelechtem sowie UV-stabilen Polypropylen<\/strong>, als auch in <strong>verzinktem Stah<\/strong>l erhältlich. <\/p><p>Beide Materialoptionen sind langlebig und werden dich jahrelang im Anbau begleiten.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_XDcKVV"
+      ],
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "72b105f6-5697-49c9-898f-fd111a4512ce": {
       "type": "video",
       "custom_css": [
@@ -643,6 +680,7 @@
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
+    "image_with_text_3pPXyM",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
     "multi_column_3qCaBY",
     "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339",
