@@ -60,6 +60,7 @@
         },
         "4062f908-a676-40a6-b569-5f9ec47274ac": {
           "type": "save-in-set-static",
+          "disabled": true,
           "settings": {
             "product": "sissi-strawberry-samen-mix",
             "btn_label": "PASSEND DAZU",
@@ -405,7 +406,7 @@
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
             "title": "starter",
-            "content": "<p><strong>Inhalt<\/strong><br\/>4 Etagen<br\/>1 Standfuß<br\/>bis zu 9 Pflanzen<br\/><br\/><strong>Daten<\/strong><br\/>10L Erde<br\/>freistehend<br\/>Höhe: 77 cm<\/p>",
+            "content": "<p><strong>Inhalt<\/strong><br\/>4 Etagen<br\/>1 Standfuß<br\/><br\/><br\/><strong>Daten<\/strong><br\/>bis zu 9 Pflanzen<br\/>10L Erde<br\/>Höhe: 77 cm<\/p>",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
