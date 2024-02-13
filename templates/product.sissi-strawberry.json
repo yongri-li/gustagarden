@@ -395,6 +395,90 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "multi_column_Rpn73h": {
+      "type": "multi-column",
+      "blocks": {
+        "item_krVjPL": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-starter_weiss-768x768_0e828b13-23c6-4c2b-ab64-16c3e4d08747.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "starter",
+            "content": "<p>4 Etagen<br\/>1 Standfuß<br\/>bis zu 9 Pflanzen<br\/>10L Erde<br\/>freistehend<br\/>Höhe: 77 cm<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_WTLrUC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SS_classic_weiss.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "classic",
+            "content": "<p>6 Etagen<br\/>1 Standfuß<br\/>1 Wandhalterung<br\/>bis zu 13 Pflanzen<br\/>15L Erde<br\/>Höhe: 113 cm<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_xH38ML": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-infinity_weiss-768x768_97eaa1dd-6fba-45cc-8cc2-7d76a4860865.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "infinity",
+            "content": "<p>10 Etagen<br\/>1 Standfuß<br\/>2 Wandhalterungen<br\/>bis zu 21 Pflanzen<br\/>25L Erde<br\/>Höhe: 185 cm<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_zcQYAB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SISSI-STRAWBERRY-hanging_weiss-768x768_78d98296-1155-4235-8b6e-2acf5cac7fb1.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "hanging",
+            "content": "<p><strong>Inhalt<\/strong><br\/>4 Etagen<br\/>1 Hängeset<br\/>1 Wandhalterung<br\/><br\/><strong>Daten<\/strong><br\/>bis zu 9 Pflanzen<br\/>10L Erde<br\/>Höhe 77 cm<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_krVjPL",
+        "item_WTLrUC",
+        "item_xH38ML",
+        "item_zcQYAB"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "Unbegrenzte Möglichkeiten",
+        "title": "VARIANTEN",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "c418a397-5659-4b49-890b-a93e490c9842": {
       "type": "featured-collections",
       "blocks": {
@@ -618,6 +702,7 @@
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
+    "multi_column_Rpn73h",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",
