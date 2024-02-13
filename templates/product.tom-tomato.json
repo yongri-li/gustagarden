@@ -369,6 +369,42 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "multi_column_MxgJrY": {
+      "type": "multi-column",
+      "blocks": {
+        "item_YWUmmQ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-01-13_Tom_Tomato_grey_1000x1000-768x768_41e6cef8-951a-4690-a27f-64c92a248c3c.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "TOM TOMATO",
+            "content": "<p><strong>Inhalt<\/strong><br\/>1 Pflanztopf<br\/>1 Wassertank<br\/>1 Rankhilfe<br\/><br\/><strong>Daten<\/strong><br\/>20L Erde<br\/>5L Wasser<br\/>ideal für 1 Tomatenpflanze<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_YWUmmQ"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "",
+        "title": "DETAILS",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339": {
       "type": "codext-feature-chart",
       "blocks": {
@@ -628,6 +664,7 @@
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
+    "multi_column_MxgJrY",
     "d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
