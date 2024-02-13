@@ -60,6 +60,7 @@
         },
         "652df851-b5d2-425c-a36f-b80dd2df1af6": {
           "type": "save-in-set-static",
+          "disabled": true,
           "settings": {
             "product": "frueher-salat-samen-mix",
             "btn_label": "PASSEND DAZU",
@@ -376,6 +377,58 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "multi_column_Fqc8Di": {
+      "type": "multi-column",
+      "blocks": {
+        "item_qKnf4G": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SAMMY-SALAD_mit-Schnalle_2hellgrau-1.webp",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "mit Haube",
+            "content": "<p><strong>Inhalt<\/strong><br\/>1 Pflanzwanne<br\/>4 Beine aus Lärchenholz<br\/>1 Haube<br\/><br\/><strong>Daten<\/strong><br\/>40L Erde<br\/>15L Wasser<br\/>Höhe inkl. Haube: 95 cm<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_yMiDVV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sammy-salad.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "ohne Haube",
+            "content": "<p><strong>Inhalt<\/strong><br\/>1 Pflanzwanne<br\/>4 Beine aus Lärchenholz<br\/><br\/><strong>Daten<\/strong><br\/>40L Erde<br\/>15L Wasser<br\/>Höhe 75 cm<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_qKnf4G",
+        "item_yMiDVV"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "die passende Option für dich",
+        "title": "VARIANTEN",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "c418a397-5659-4b49-890b-a93e490c9842": {
       "type": "featured-collections",
       "blocks": {
@@ -598,6 +651,7 @@
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
     "708f220c-f99a-4af6-87f5-c3f8e32f4c8b",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
+    "multi_column_Fqc8Di",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",
