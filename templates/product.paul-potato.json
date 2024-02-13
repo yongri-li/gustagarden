@@ -478,11 +478,11 @@
           "settings": {
             "product_title": "",
             "product": "paul-potato-starter",
-            "value_1": "<p>✔️<\/p>",
-            "value_2": "<p>✔️<\/p>",
-            "value_3": "<p>✔️<\/p>",
-            "value_4": "<p>✔️<\/p>",
-            "value_5": "<p>✔️<\/p>"
+            "value_1": "<p>✅<\/p>",
+            "value_2": "<p>✅<\/p>",
+            "value_3": "<p>✅<\/p>",
+            "value_4": "<p>✅<\/p>",
+            "value_5": "<p>✅<\/p>"
           }
         },
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-2": {
