@@ -339,6 +339,42 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "multi_column_Ygzr9H": {
+      "type": "multi-column",
+      "blocks": {
+        "item_rjd7me": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-03-03_Charly_Chili_Studio_grau_farbangepasst_qu-1-2048x2048.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "CHARLY CHILI",
+            "content": "<p><strong>Inhalt<\/strong><br\/>1 Pflanztopf<br\/>1 Wassertank<br\/>1 Rankhilfe<br\/><br\/><strong>Daten<\/strong><br\/>10L Erde<br\/>5L Wasser<br\/>ideal für 2 Chilipflanzen<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_rjd7me"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "",
+        "title": "DETAILS",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "c418a397-5659-4b49-890b-a93e490c9842": {
       "type": "featured-collections",
       "blocks": {
@@ -553,6 +589,7 @@
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "d4209e3c-7dcf-4f51-889f-b541d7fbf05d",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
+    "multi_column_Ygzr9H",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",
