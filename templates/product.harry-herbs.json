@@ -328,6 +328,90 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "multi_column_8nqwUQ": {
+      "type": "multi-column",
+      "blocks": {
+        "item_NzdbCT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/herbs3.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Pflanztopf",
+            "content": "<p>Platziere <strong>herkömmliche Küchenkräuter<\/strong> in deinem HARRY HERBS - dazu wird keine zusätzliche Erde benötigt. <\/p><p>Der <strong>Wassertank sorgt immer für die passende Bewässerung<\/strong> und erspart dir häufiges Gießen.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_96V46N": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-118.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Anzucht",
+            "content": "<p><strong>Vom Samenkorn zur Pflanze<\/strong>: in HARRY HERBS kannst du mit Quelltabs oder Anzuchterde im Handumdrehen deine <strong>eigenen Pflanzen aus Samen ziehen<\/strong>.<\/p><p>Die optionale <strong>Anzuchthaube<\/strong> schafft dafür das <strong>passende Klima<\/strong> und die <strong>Bewässerungsbänder<\/strong> kümmern sich um die Wasserzufuhr.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_CLYNxJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-061.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Hydroponik",
+            "content": "<p>Schluss mit schmutzigen Händen im Gärtnern! In HARRY HERBS kannst du <strong>Gemüse ganz ohne Erde anbauen<\/strong>. Alles was du brauchst ist frische <strong>Luft & klares Wasser<\/strong>.<\/p><p>Die Anzuchttöpfe bieten deinen Wurzeln dabei <strong>optimalen Halt<\/strong> und eine <strong>ertragreiche Ernte<\/strong>.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_xwLng8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-24.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Microgreens",
+            "content": "<p>Microgreens, also <strong>Keimlinge und Sprossen<\/strong>, stecken voller wertvoller <strong>Vitamine und Nährstoffe<\/strong>. <\/p><p>In HARRY HERBS kannst du mithilfe der <strong>inkludierten Anzuchtmatte<\/strong> ganz unkompliziert dein eigenes Superfood sprießen lassen und bereits <strong>nach 3-4 Tagen ernten<\/strong>.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_NzdbCT",
+        "item_96V46N",
+        "item_CLYNxJ",
+        "item_xwLng8"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "4 Funktionen in 1 Produkt",
+        "title": "ANBAUOPTIONEN",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "9020341f-56b0-42f2-848e-1254c59e5c4d": {
       "type": "codext-Text-with-Icons",
       "blocks": {
@@ -567,6 +651,7 @@
     "27cb7d27-1b86-4380-9deb-c22a8ae260d5",
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
+    "multi_column_8nqwUQ",
     "9020341f-56b0-42f2-848e-1254c59e5c4d",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
     "c418a397-5659-4b49-890b-a93e490c9842",
