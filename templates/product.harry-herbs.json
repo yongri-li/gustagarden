@@ -66,6 +66,7 @@
         },
         "2a6555a2-b12d-4a09-9e57-21a82d47f76e": {
           "type": "save-in-set-static",
+          "disabled": true,
           "settings": {
             "product": "microgreens-nachfuellset",
             "btn_label": "PASSEND DAZU",
