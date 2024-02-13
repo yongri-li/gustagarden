@@ -60,6 +60,7 @@
         },
         "a75b0ab1-9303-4b47-81c3-e6160caef512": {
           "type": "save-in-set-static",
+          "disabled": true,
           "settings": {
             "product": "charly-chili-samen-mix",
             "btn_label": "PASSEND DAZU",
