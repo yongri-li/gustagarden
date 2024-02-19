@@ -148,6 +148,14 @@
 
     <script src="{{ 'alpinejs@3.13.3.min.js' | asset_url }}" defer></script>
     {% render 'codext-alpine-data' %}
+    <style>
+      a.anchor {
+          display: block;
+          position: relative;
+          top: -250px;
+          visibility: hidden;
+      }
+    </style>
   </head>
 
   {%- assign feature_classes = '' -%}
