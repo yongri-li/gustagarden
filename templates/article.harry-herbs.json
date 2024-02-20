@@ -34,23 +34,6 @@
         "blog_header_text_color": "#282828"
       }
     },
-    "1706690094d11a3264": {
-      "type": "apps",
-      "blocks": {
-        "table_of_contents_theme_extension_GcdWef": {
-          "type": "shopify:\/\/apps\/table-of-contents\/blocks\/theme-extension\/d06f5754-affb-4dc7-a2a9-18d74d225f70",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "table_of_contents_theme_extension_GcdWef"
-      ],
-      "settings": {
-        "include_horizontal_margins": true,
-        "include_vertical_margins": true
-      }
-    },
     "main": {
       "type": "main-article-anleitung",
       "settings": {
@@ -210,12 +193,28 @@
         "title": "Darum ist HARRY HERBS die richtige Wahl",
         "content": ""
       }
+    },
+    "1708439794f4255914": {
+      "type": "apps",
+      "blocks": {
+        "table_of_contents_theme_extension_MPnkgK": {
+          "type": "shopify:\/\/apps\/table-of-contents\/blocks\/theme-extension\/d06f5754-affb-4dc7-a2a9-18d74d225f70",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "table_of_contents_theme_extension_MPnkgK"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
     }
   },
   "order": [
     "b5c5a4e2-fab3-48cb-b8db-67ecdf79971e",
     "blog-post-banner",
-    "1706690094d11a3264",
     "main",
     "27d37aa7-7f41-47aa-9f84-2247a792667a",
     "62cb6170-fd1d-4b4b-bb0b-95ecdad69121",
@@ -223,6 +222,7 @@
     "46382bc0-a5c0-428d-a85d-70532faa0095",
     "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1",
     "blog-post-comments",
-    "codext_feature_chart_KY8AaV"
+    "codext_feature_chart_KY8AaV",
+    "1708439794f4255914"
   ]
 }
