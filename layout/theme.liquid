@@ -157,6 +157,12 @@
           visibility: hidden;
       }
     </style>
+    <script>
+      if(window.location.pathname == '/shop') {
+        window.location.href = '/collections/alle-produkte';
+      }
+    </script>
+
   </head>
 
   {%- assign feature_classes = '' -%}
