@@ -222,3 +222,7 @@ body .mega-menu__inner {
   color: #fff!important;
   width: 100%!important;
 }
+
+html {
+  scroll-behavior: unset!important;
+}
