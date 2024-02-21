@@ -72,7 +72,7 @@
         style="--btn-bg-color: var(--btn-bg-color-og); --btn-text-color: var(--btn-text-color-og)"
         {% endif %}
         aria-disabled="true">
-        Produkte suchen
+        {% if request.locale.iso_code == "de" %}Produkte suchen{% else %}search products{% endif %}
       </a>
     </div>
   </quick-nav>
