@@ -262,24 +262,11 @@
         "cc_overlay_opacity": "0.85",
         "current_lang": "de"
       }
-    },
-    "custom_liquid_YiPw9A": {
-      "type": "custom-liquid",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "liquid": "<style>\nhtml {\n scroll-behavior: unset;\n}\n<\/style>",
-        "add_vertical_spacing": false,
-        "background_type": "full_width",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
     "7a770b41-856d-41ac-b442-8880908a1e5c",
     "header",
-    "612effd5-1377-450f-9a71-e2a3c3dab639",
-    "custom_liquid_YiPw9A"
+    "612effd5-1377-450f-9a71-e2a3c3dab639"
   ]
 }
