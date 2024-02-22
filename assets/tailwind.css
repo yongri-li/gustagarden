@@ -1733,6 +1733,10 @@ body .mega-menu__inner {
   width: 100%!important;
 }
 
+html {
+  scroll-behavior: unset!important;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }

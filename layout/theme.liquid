@@ -143,11 +143,27 @@
 
     <script src="{{ 'custom-select.js' | asset_url }}" defer></script>
 
-    {{ content_for_header }}
+    
+<!-- START SCRIPT --><script id="wgs-scripttag-prod" type="text/javascript" async="async" src="/apps/ap/static/scripts/dist/wgs.bundle.js?shop=gustagarden.myshopify.com&app_proxy=true&cart_attr_disabled=false&enable_sps=false&line_items_disabled=false&wgs_config_id=2"></script> <style>#customerReferenceId { display: none; }</style> <!-- END SCRIPT -->
+{{ content_for_header }}
     {% render 'gp-head' %}
 
     <script src="{{ 'alpinejs@3.13.3.min.js' | asset_url }}" defer></script>
     {% render 'codext-alpine-data' %}
+    <style>
+      a.anchor {
+          display: block;
+          position: relative;
+          top: -250px;
+          visibility: hidden;
+      }
+    </style>
+    <script>
+      if(window.location.pathname == '/shop') {
+        window.location.href = '/collections/alle-produkte';
+      }
+    </script>
+
   </head>
 
   {%- assign feature_classes = '' -%}
