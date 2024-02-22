@@ -169,7 +169,7 @@
           {%- endcapture -%}
 
           {%- if blog_post_info != blank -%}
-           
+
             <div class="article__info p-0 border-none hidden md:!grid">
               <div class="flex flex-col justify-center items-center gap-2">
                 <div class="rounded-full w-24 h-24 aspect-square overflow-hidden">
@@ -179,12 +179,12 @@
                   <div class="w-24 h-24 aspect-square overflow-hidden">
                     {{ article.metafields.custom.author.value.logo  | image_url: width: 300 | image_tag: class: '!m-0' }}
                   </div>
-                {%  else %}  
+                {%  else %}
                   <div class="flex flex-col gap-0">
                     <div class="text-lg font-bold" >{{ article.metafields.custom.author.value.name }}</div>
-                  </div> 
-                {% endif %}              
-                       
+                  </div>
+                {% endif %}
+
               </div>
               <div>
                 <div class="flex flex-wrap gap-4">
@@ -192,9 +192,9 @@
                     <a
                       href="{{ file.url }}"
                       target="_blank"
-                      class="button 
-                      button--primary 
-                      !no-underline 
+                      class="button
+                      button--primary
+                      !no-underline
                       flex items-center gap-4
                       w-full
                       !h-8
@@ -216,19 +216,19 @@
             </div>
           {%- endif -%}
 
-         
+
 
           <div class="flex flex-col gap-8">
             <div class="article__content grid md:grid-cols-2 gap-12 mb-4">
               {%- if article.metafields.custom.uebersicht != blank -%}
                 <div class="rte flex flex-col gap-3 border-l-0 border-t-0 border-b-0 border-r-0 md:border-r border-gray-400 border-solid">
-                  <h3>Übersicht</h3>
+                  <h3>{{ 'article.general.overview' | t }}</h3>
                   {{ article.metafields.custom.uebersicht | metafield_tag }}
                 </div>
               {%- endif -%}
               {%- if article.metafields.custom.zutaten != blank -%}
                 <div class="rte flex flex-col gap-3">
-                  <h3>Zutaten</h3>
+                  <h3>{{ 'article.general.ingredients' | t }}</h3>
                   {{ article.metafields.custom.zutaten | metafield_tag }}
                 </div>
               {%- endif -%}
@@ -256,7 +256,7 @@
                       class="button button--primary !no-underline flex justify-center items-center gap-4">
                       {%- render 'heroicon-arrow-down-tray' -%}
                       <span class="no-underline">
-                        Rezept
+                        {{ 'article.general.recipe' | t }}
                       </span>
                     </a>
                   {% endfor %}

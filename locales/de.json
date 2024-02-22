@@ -247,6 +247,9 @@
       "reading": "Du liest",
       "tags": "Tags",
       "continue_reading": "Weiterlesen",
+      "overview": "Übersicht",
+      "ingredients": "Zutaten",
+      "recipe": "Rezept",
       "reading_time": {
         "zero": "{{ count }} Minuten",
         "one": "{{ count }} Minute",
