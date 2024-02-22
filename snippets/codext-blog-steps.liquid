@@ -1,6 +1,6 @@
 {%- if section.settings.show_steps != blank -%}
   {% for schritte in article.metafields.custom.schritte_mehrfach.value %}
-    <div class="flex flex-col gap-8 mt-4 mb-4">
+    <div class="flex flex-col gap-8 mt-4 mb-4 with-separator">
       <h2 class="mb-0">{{ schritte.titel }}</h2>
 
       {%- if schritte.youtube_video_id != blank -%}

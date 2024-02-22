@@ -18580,3 +18580,7 @@ shopify-payment-terms {
     scroll-snap-align: center;
   }
 }
+
+.with-separator {
+  border-bottom: 1px solid #ccc;
+}
