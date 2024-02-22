@@ -435,7 +435,7 @@
         "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "harry-herbs",
+            "collection": "tom-tomato",
             "label": "",
             "button_text": "",
             "button_url": ""
@@ -446,11 +446,11 @@
         "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1"
       ],
       "custom_css": [
-        "h3 {font-weight: bold;}"
+        "h3 {padding-top: 60px;}"
       ],
       "settings": {
-        "subheading": "ALLES FÜR DEINEN HARRY HERBS",
-        "title": "HILFREICHES ZUBEHÖR",
+        "subheading": "",
+        "title": "PASSENDE PRODUKTE",
         "content": "",
         "products_count": 4,
         "products_per_row": 4,
@@ -472,7 +472,7 @@
       ],
       "settings": {
         "blog": "ratgeber",
-        "filter_tag": "Category_HARRY HERBS",
+        "filter_tag": "Category_TOM TOMATO",
         "subheading": "TIPPS & TRICKS RUND UM DAS THEMA URBAN GARDENING GEBEN.",
         "title": "UNSER RATGEBER",
         "articles_count": 3,
@@ -575,6 +575,7 @@
         "480db0c1-1b26-4171-be3c-276353828da1",
         "c868942a-7321-454e-a600-f1a5b412575b"
       ],
+      "disabled": true,
       "settings": {
         "show_navigation": false,
         "title": "FAQ",
