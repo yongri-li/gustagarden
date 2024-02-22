@@ -222,9 +222,9 @@
           "type": "item",
           "settings": {
             "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Icon_wicking_1_70d01dc8-a337-4be7-8b90-d431d4d053ad.png",
-            "custom_icon_width": 40,
-            "title": "Bewässerung mit Wasserreservoir",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_Holz.png",
+            "custom_icon_width": 60,
+            "title": "hochwertiges holz",
             "content": ""
           }
         },
@@ -261,11 +261,11 @@
         "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2022_Giessen_b_5fd26c31-0372-43c1-b1aa-745b9f3ea098.jpg",
+            "image": "shopify:\/\/shop_images\/RollerBuddy.png",
             "tab_label": "",
             "subheading": "",
-            "title": "Integriertes Bewässerungssystem",
-            "content": "<p>Nie mehr vertrocknete Pflanzen! Dank dem integrierten Wasserspeicher und den Bewässerungsbändern werden deine Samen, Keimlinge und Pflanzen immer automatisch mit der richtigen Wassermenge versorgt.<\/p>",
+            "title": "Ab jetzt sind all deine Pflanzgefäße mobil",
+            "content": "<p>Es gibt viele Gründe, warum du deine Pflanzgefäße irgendwohin schieben musst: in die Sonne, unters Dach, damit du auch in die letzte Ecke deines Balkons kommst...<\/p><p>Und das alles geht jetzt ganz einfach mit dem Praktischen Pflanzenroller.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -298,11 +298,11 @@
         "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-04T163121.104.png",
+            "image": "shopify:\/\/shop_images\/RollerBuddy-Details-2.jpg",
             "tab_label": "Item",
             "subheading": "",
-            "title": "Praktische Einfüllöffnung mit Wasserstandsanzeige",
-            "content": "<p>Durch das Sichtfenster in der Seitenwand lässt sich der Wasserstand sofort erkennen. Über die darüberliegende Einfüllöffnung kann das Wasserreservoir ganz einfach befüllt werden.<\/p>",
+            "title": "Praktische Feststellbremsen",
+            "content": "<p>Damit dein Pflanzenroller nur dann fährt, wenn er auch fahren soll, haben wir dir zwei praktische Feststellbremsen eingebaut.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -335,11 +335,11 @@
         "item_NzdbCT": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/herbs3.png",
+            "image": "shopify:\/\/shop_images\/Rollerbuddy_TT.png",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "Pflanztopf",
-            "content": "<p>Platziere <strong>herkömmliche Küchenkräuter<\/strong> in deinem HARRY HERBS - dazu wird keine zusätzliche Erde benötigt. <\/p><p>Der <strong>Wassertank sorgt immer für die passende Bewässerung<\/strong> und erspart dir häufiges Gießen.<\/p>",
+            "title": "TOM TOMATO",
+            "content": "",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
@@ -350,11 +350,11 @@
         "item_96V46N": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-118.jpg",
+            "image": "shopify:\/\/shop_images\/Rollerbuddy_CC.png",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "Anzucht",
-            "content": "<p><strong>Vom Samenkorn zur Pflanze<\/strong>: in HARRY HERBS kannst du mit Quelltabs oder Anzuchterde im Handumdrehen deine <strong>eigenen Pflanzen aus Samen ziehen<\/strong>.<\/p><p>Die optionale <strong>Anzuchthaube<\/strong> schafft dafür das <strong>passende Klima<\/strong> und die <strong>Bewässerungsbänder<\/strong> kümmern sich um die Wasserzufuhr.<\/p>",
+            "title": "CHARLY CHILI",
+            "content": "",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
@@ -365,11 +365,11 @@
         "item_CLYNxJ": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-061.jpg",
+            "image": "shopify:\/\/shop_images\/Rollerbuddy_PP.png",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "Hydroponik",
-            "content": "<p>Schluss mit schmutzigen Händen beim Gärtnern! In HARRY HERBS kannst du <strong>Gemüse ganz ohne Erde anbauen<\/strong>. Alles was du brauchst ist frische <strong>Luft & klares Wasser<\/strong>.<\/p><p>Die Anzuchttöpfe bieten deinen Wurzeln dabei <strong>optimalen Halt<\/strong> und eine <strong>ertragreiche Ernte<\/strong>.<\/p>",
+            "title": "PAUL POTATO",
+            "content": "",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
@@ -380,11 +380,26 @@
         "item_xwLng8": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-24.jpg",
+            "image": "shopify:\/\/shop_images\/Rollerbuddy_SS.png",
             "image_width": 100,
             "image_border": "rgba(0,0,0,0)",
-            "title": "Microgreens",
-            "content": "<p>Microgreens, also <strong>Keimlinge und Sprossen<\/strong>, stecken voller wertvoller <strong>Vitamine und Nährstoffe<\/strong>. <\/p><p>In HARRY HERBS kannst du mithilfe der <strong>inkludierten Anzuchtmatte<\/strong> ganz unkompliziert dein eigenes Superfood sprießen lassen und bereits <strong>nach 3-4 Tagen ernten<\/strong>.<\/p>",
+            "title": "SAMMY SALAD (2x)",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_EWVJBX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RollerBuddy.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "und viele viele mehr!",
+            "content": "",
             "link_text": "",
             "link_url": "",
             "link_style": "link",
@@ -397,164 +412,19 @@
         "item_NzdbCT",
         "item_96V46N",
         "item_CLYNxJ",
-        "item_xwLng8"
+        "item_xwLng8",
+        "item_EWVJBX"
       ],
       "settings": {
         "reveal_on_scroll": true,
         "stack_items": false,
-        "subheading": "4 Funktionen in 1 Produkt",
-        "title": "ANBAUOPTIONEN",
+        "subheading": "praktisch und flexibel",
+        "title": "KOMPATIBEL MIT VIELEN PFLANZGEFÄSSEN",
         "content": "",
         "column_alignment": "center",
         "mobile_item_size": "medium",
         "desktop_item_size": "medium",
         "spacing": "normal",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "multi_column_nNARhi": {
-      "type": "multi-column",
-      "blocks": {
-        "item_9r3Tkz": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-185.jpg",
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "Wandhalterung",
-            "content": "<p>Montiere deinen HARRY HERBS ganz einfach an die Wand und nimm ihn jederzeit ganz einfach wieder ab.<\/p><p><a href=\"\/products\/wandhalterung\" title=\"Wandhalterung\">zum Produkt<\/a><\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "item_wCh8ef": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/100B10_HARRY-HERBS_light-gray-6.jpg",
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "Balkonhalterung",
-            "content": "<p>Mit der Balkonhalterung kannst du deinen HARRY HERBS ganz einfach auf dein Geländer hängen. Verfügbar in 2 Größen.<\/p><p><a href=\"\/products\/balkonhalterung\" title=\"Balkonhalterung\">zum Produkt<\/a><\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "item_GAgGMf": {
-          "type": "item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2022-10-04_HH-WoodenStand-02-quadratisch.jpg",
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "Senkrechtgarten",
-            "content": "<p>Der Senkrechtgarten aus Holz bietet Platz für <strong>3 HARRY HERBS<\/strong> und ist sowohl für <strong>Indoor als auch für Outdoor<\/strong> geeignet.<\/p><p><a href=\"\/products\/senkrechtgarten\" title=\"Senkrechtgarten für HARRY HERBS\">zum Produkt<\/a><\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        }
-      },
-      "block_order": [
-        "item_9r3Tkz",
-        "item_wCh8ef",
-        "item_GAgGMf"
-      ],
-      "settings": {
-        "reveal_on_scroll": true,
-        "stack_items": false,
-        "subheading": "Optional",
-        "title": "MONTAGE MÖGLICHKEITEN",
-        "content": "",
-        "column_alignment": "center",
-        "mobile_item_size": "medium",
-        "desktop_item_size": "medium",
-        "spacing": "normal",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "9020341f-56b0-42f2-848e-1254c59e5c4d": {
-      "type": "codext-Text-with-Icons",
-      "blocks": {
-        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-box",
-            "custom_icon": "shopify:\/\/shop_images\/Gruppe-444.png",
-            "custom_icon_width": 50,
-            "title": "Pflanztopf",
-            "content": ""
-          }
-        },
-        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "custom_icon": "shopify:\/\/shop_images\/Gruppe-443.png",
-            "custom_icon_width": 50,
-            "title": "Anzucht",
-            "content": ""
-          }
-        },
-        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-lock",
-            "custom_icon": "shopify:\/\/shop_images\/Gruppe-446.png",
-            "custom_icon_width": 50,
-            "title": "Hydroponik",
-            "content": ""
-          }
-        },
-        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-4": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-email",
-            "custom_icon": "shopify:\/\/shop_images\/Gruppe-447.png",
-            "custom_icon_width": 50,
-            "title": "Microgreens",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-1",
-        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-2",
-        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-3",
-        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-4"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "{margin-top: 50px;}"
-      ],
-      "settings": {
-        "background": "#f3f3f4",
-        "text_color": "#000000",
-        "stack_on_mobile": false
-      }
-    },
-    "72b105f6-5697-49c9-898f-fd111a4512ce": {
-      "type": "video",
-      "custom_css": [
-        "{margin-top: 50px;}"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=s3SwG2SuMDY",
-        "image": "shopify:\/\/shop_images\/HH_lp_6ce6f727-2d70-4bc8-8943-4956ac4f9c65.jpg",
-        "background_type": "boxed",
-        "video_size": "large",
-        "autoplay": false,
-        "show_video_controls": true,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
@@ -722,9 +592,6 @@
     "93e61ce0-1e10-47b1-a69a-07361399d8ef",
     "1ba95599-fa75-44f7-914b-f9705c642b65",
     "multi_column_8nqwUQ",
-    "multi_column_nNARhi",
-    "9020341f-56b0-42f2-848e-1254c59e5c4d",
-    "72b105f6-5697-49c9-898f-fd111a4512ce",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",

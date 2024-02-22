@@ -22,6 +22,87 @@
         "overlay_opacity": 30
       }
     },
+    "multi_column_rXpj7j": {
+      "type": "multi-column",
+      "blocks": {
+        "item_jzUGqx": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "HARRY HERBS Anzucht",
+            "content": "",
+            "link_text": "zur Anleitung",
+            "link_url": "#ruffruff-table-of-contents-item-2",
+            "link_style": "button",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_xYjMPc": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "HARRY HERBS Pflanztopf mit Erde",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_PQqapc": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "HARRY HERBS Hydroponik",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_QEfiMM": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "HARRY HERBS Microgreens",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_jzUGqx",
+        "item_xYjMPc",
+        "item_PQqapc",
+        "item_QEfiMM"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "zur passenden Anleitung",
+        "title": "Welches Produkt willst du aufbauen?",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "blog-post-banner": {
       "type": "blog-post-banner",
       "disabled": true,
@@ -162,91 +243,11 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
-    },
-    "multi_column_rXpj7j": {
-      "type": "multi-column",
-      "blocks": {
-        "item_jzUGqx": {
-          "type": "item",
-          "settings": {
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "HARRY HERBS Anzucht",
-            "content": "",
-            "link_text": "zur Anleitung",
-            "link_url": "#ruffruff-table-of-contents-item-2",
-            "link_style": "button",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "item_xYjMPc": {
-          "type": "item",
-          "settings": {
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "HARRY HERBS Pflanztopf mit Erde",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "item_PQqapc": {
-          "type": "item",
-          "settings": {
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "HARRY HERBS Hydroponik",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        },
-        "item_QEfiMM": {
-          "type": "item",
-          "settings": {
-            "image_width": 100,
-            "image_border": "rgba(0,0,0,0)",
-            "title": "HARRY HERBS Microgreens",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_alignment": "center",
-            "vertical_alignment": "start"
-          }
-        }
-      },
-      "block_order": [
-        "item_jzUGqx",
-        "item_xYjMPc",
-        "item_PQqapc",
-        "item_QEfiMM"
-      ],
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": true,
-        "stack_items": false,
-        "subheading": "zur passenden Anleitung",
-        "title": "Welches Produkt willst du aufbauen?",
-        "content": "",
-        "column_alignment": "center",
-        "mobile_item_size": "medium",
-        "desktop_item_size": "medium",
-        "spacing": "normal",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
     "b5c5a4e2-fab3-48cb-b8db-67ecdf79971e",
+    "multi_column_rXpj7j",
     "blog-post-banner",
     "main",
     "27d37aa7-7f41-47aa-9f84-2247a792667a",
@@ -255,7 +256,6 @@
     "46382bc0-a5c0-428d-a85d-70532faa0095",
     "b67b1ee3-bfd8-4e28-a764-4b33e5cc0de1",
     "blog-post-comments",
-    "1708439794f4255914",
-    "multi_column_rXpj7j"
+    "1708439794f4255914"
   ]
 }
