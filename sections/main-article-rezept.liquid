@@ -203,9 +203,9 @@
                       {%- render 'heroicon-arrow-down-tray' -%}
                       <span class="no-underline normal-case text-xs whitespace-pre">
                         {%- if file.alt != blank -%}
-                          Rezept {%comment%}{{ file.alt }}{%endcomment%}
+                          {{ 'article.general.recipe' | t }} {%comment%}{{ file.alt }}{%endcomment%}
                         {%- else -%}
-                          Rezept
+                          {{ 'article.general.recipe' | t }}
                         {%- endif -%}
                       </span>
                     </a>
