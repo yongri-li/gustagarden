@@ -1,0 +1,733 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "b3e6ce87-1409-4648-a0ad-7dbc015879b0": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+          }
+        },
+        "fff5100c-5ff6-462e-9771-01ed6285b80f": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"lb-pdp-benefits\">\n  {% if product.metafields.custom.usp1 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp1 }}<\/p>\n  <\/div>\n  {% endif %}\n  {% if product.metafields.custom.usp2 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp2 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp3 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp3 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp4 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp4 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp5 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp5 }}<\/p>\n  <\/div>\n  {% endif %} \n  {% if product.metafields.custom.usp6 %}\n  <div>\n    <img\n      src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0632\/3139\/3965\/files\/64e3d97d73aa2dbb4d685969_check-benefits.png?v=1700075283\"\n    \/>\n    <p>{{ product.metafields.custom.usp6 }}<\/p>\n  <\/div>\n  {% endif %}\n<\/div>\n\n<style>\n  .lb-pdp-benefits {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n    margin-left: 0px !important;\n    margin-right: 0px !important;\n  }\n  .lb-pdp-benefits div {\n    font-size: 14px !important; \/* Change font size *\/\n    line-height: 18px !important;\n    margin-bottom: 9px !important;\n    display: flex !important;\n    align-items: center !important;\n    overflow: hidden !important;\n  }\n  .lb-pdp-benefits img {\n    max-width: 24px !important;\n    margin-right: 9px !important;\n  }\n  .lb-pdp-benefits p {\n    width: 100% !important;\n    display: block !important;\n    margin: 0px !important;\n  }\n<\/style>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "38a03175-609a-40b5-9e4e-055fec879e76": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 58
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "liquid_ynmTij": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-bis-trigger\"><\/div>"
+          }
+        },
+        "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"footer__payment-icons h-stack wrap gap-2\" style=\"margin-bottom: 20px; display: flex; flex-wrap: wrap;\">\n  {% assign enabled_payment_types = 'visa,master,american_express,paypal,klarna-pay-later,apple_pay,google_pay,unionpay,amazon,sofort' | remove: ' ' | split: ',' %}\n  {% for type in enabled_payment_types %}\n    <img src=\"{{ type | payment_type_img_url }}\" style=\"margin-right: 0,5px;\" \/>\n  {% endfor %}\n<\/div>"
+          }
+        },
+        "723850fb-7702-4722-abf6-463a8b4acbb7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% assign current_handle = request.path | split: '\/' | last %}\n{% assign desired_product_handle = '7427791225005' %}\n{% assign upsell_product_handle = '7427791290541' %}\n\n{% if current_handle == desired_product_handle %}\n  {% assign upsell_product = all_products[upsell_product_handle] %}\n\n  <div class=\"upsell\">\n    <h3>Empfohlene Produkte<\/h3>\n    \n    {% if upsell_product.available %}\n      <div class=\"upsell-product\">\n        <a href=\"{{ upsell_product.url }}\">\n          <img src=\"{{ upsell_product.featured_image | img_url: '300x300' }}\" alt=\"{{ upsell_product.title }}\">\n          <p>{{ upsell_product.title }}<\/p>\n          <p>{{ upsell_product.price | money }}<\/p>\n        <\/a>\n      <\/div>\n    {% else %}\n      <p>Dieses Produkt ist derzeit nicht verfügbar.<\/p>\n    {% endif %}\n  <\/div>\n{% endif %}"
+          }
+        },
+        "2a6555a2-b12d-4a09-9e57-21a82d47f76e": {
+          "type": "save-in-set-static",
+          "disabled": true,
+          "settings": {
+            "product": "microgreens-nachfuellset",
+            "btn_label": "PASSEND DAZU",
+            "background_color": "#f5f5f5"
+          }
+        }
+      },
+      "block_order": [
+        "b3e6ce87-1409-4648-a0ad-7dbc015879b0",
+        "fff5100c-5ff6-462e-9771-01ed6285b80f",
+        "variant_picker",
+        "quantity_selector",
+        "38a03175-609a-40b5-9e4e-055fec879e76",
+        "buy_buttons",
+        "liquid_ynmTij",
+        "b5fd9170-a855-4ea0-b5db-3d1c360b3b5c",
+        "723850fb-7702-4722-abf6-463a8b4acbb7",
+        "2a6555a2-b12d-4a09-9e57-21a82d47f76e"
+      ],
+      "custom_css": [
+        "h1 {font-weight: bold;}"
+      ],
+      "settings": {
+        "collection": "harry-herbs",
+        "show_metafield_badges": true,
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": true,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "help_page": "contact",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide",
+        "product_slideshow_title_1": "{{ product.metafields.custom.product_slideshow_title_1.value }}",
+        "product_slideshow_tooltip_1": "<p>{{ product.metafields.custom.product_slideshow_tooltip_1 | metafield_tag }}<\/p>",
+        "product_slideshow_title_2": "{{ product.metafields.custom.product_slideshow_title_2.value }}",
+        "product_slideshow_tooltip_2": "<p>{{ product.metafields.custom.product_slideshow_tooltip_2 | metafield_tag }}<\/p>",
+        "product_slideshow_title_3": "{{ product.metafields.custom.product_slideshow_title_3.value }}",
+        "product_slideshow_tooltip_3": "<p>{{ product.metafields.custom.product_slideshow_tooltip_3 | metafield_tag }}<\/p>",
+        "product_slideshow_title_4": "{{ product.metafields.custom.product_slideshow_title_4.value }}",
+        "product_slideshow_tooltip_4": "<p>{{ product.metafields.custom.product_slideshow_tooltip_4 | metafield_tag }}<\/p>",
+        "product_slideshow_title_5": "{{ product.metafields.custom.product_slideshow_title_5.value }}",
+        "product_slideshow_tooltip_5": "<p>{{ product.metafields.custom.product_slideshow_tooltip_5 | metafield_tag }}<\/p>",
+        "product_slideshow_title_6": "{{ product.metafields.custom.product_slideshow_title_6.value }}",
+        "product_slideshow_tooltip_6": "<p>{{ product.metafields.custom.product_slideshow_tooltip_6 | metafield_tag }}<\/p>"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Spare im Set!"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a": {
+          "type": "trust",
+          "settings": {
+            "icon_1": "picto-customer-support",
+            "title_1": "Shipping & Returns",
+            "content_1": "<p>Add text about your shipping policy<\/p>",
+            "icon_2": "picto-warranty",
+            "title_2": "Warranty",
+            "content_2": "<p>Add text about your product warranty<\/p>",
+            "icon_3": "picto-secure-payment",
+            "title_3": "Secure Payment",
+            "content_3": "<p>Add text about your payment<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9dd3e950-9235-4ff1-aeaa-5145a1a479cd",
+        "description",
+        "0e38ad27-e55b-480b-86a5-4fbad5113a4a"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "6713bc99-49a0-4d7d-9f5b-15f3ab3199f6": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16409074827437__6713bc99-49a0-4d7d-9f5b-15f3ab3199f6-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-04T162347.893.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "HARRY HERBS",
+            "content": "<p>vereint 4 verschiedene Anbaumöglichkeiten von Gemüse, Kräuter, Salat und Microgreens in einem Produkt und kann sowohl Indoor als auch Outdoor verwendet werden.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409074827437__6713bc99-49a0-4d7d-9f5b-15f3ab3199f6-item-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "27cb7d27-1b86-4380-9deb-c22a8ae260d5": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_compact-150x150-square-015523ee5739b8bdc7f6a2b620d30595-5ff6b45a34433_1_fd341798-51ea-4113-ad7d-5060b9a9d7d5.png",
+            "custom_icon_width": 60,
+            "title": "ideal für Indoor und Outdoor",
+            "content": ""
+          }
+        },
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_easy-setup2-square-517c14656692e8be1eeb53c5f1dc3c38-5ff6b45a3444f_82950946-1ae6-4c94-a857-bd0b89b5b67e.png",
+            "custom_icon_width": 60,
+            "title": "kinderleichter Aufbau",
+            "content": ""
+          }
+        },
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_wicking_1_70d01dc8-a337-4be7-8b90-d431d4d053ad.png",
+            "custom_icon_width": 40,
+            "title": "Bewässerung mit Wasserreservoir",
+            "content": ""
+          }
+        },
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/Icon_AustriaEU_07f9d8fb-0197-4274-b601-e0f3b0f43b5b.png",
+            "custom_icon_width": 80,
+            "title": "designed in Austria. Made in the EU",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-1",
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-2",
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-3",
+        "template--16409074827437__27cb7d27-1b86-4380-9deb-c22a8ae260d5-item-4"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {{margin-top: -60px; }}",
+        " {margin-bottom: 50px;}"
+      ],
+      "settings": {
+        "background": "#c8dd02",
+        "text_color": "#ffffff",
+        "stack_on_mobile": false
+      }
+    },
+    "93e61ce0-1e10-47b1-a69a-07361399d8ef": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022_Giessen_b_5fd26c31-0372-43c1-b1aa-745b9f3ea098.jpg",
+            "tab_label": "",
+            "subheading": "",
+            "title": "Integriertes Bewässerungssystem",
+            "content": "<p>Nie mehr vertrocknete Pflanzen! Dank dem integrierten Wasserspeicher und den Bewässerungsbändern werden deine Samen, Keimlinge und Pflanzen immer automatisch mit der richtigen Wassermenge versorgt.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__93e61ce0-1e10-47b1-a69a-07361399d8ef-item-1"
+      ],
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "boxed",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1ba95599-fa75-44f7-914b-f9705c642b65": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2023-12-04T163121.104.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Praktische Einfüllöffnung mit Wasserstandsanzeige",
+            "content": "<p>Durch das Sichtfenster in der Seitenwand lässt sich der Wasserstand sofort erkennen. Über die darüberliegende Einfüllöffnung kann das Wasserreservoir ganz einfach befüllt werden.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__1ba95599-fa75-44f7-914b-f9705c642b65-item-1"
+      ],
+      "custom_css": [
+        "{margin: 0 !important; --vertical-breather: 0;}",
+        ".image-with-text__wrapper {padding: 0 !important;}",
+        "h3 {font-weight: bold;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "multi_column_8nqwUQ": {
+      "type": "multi-column",
+      "blocks": {
+        "item_NzdbCT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/herbs3.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Pflanztopf",
+            "content": "<p>Platziere <strong>herkömmliche Küchenkräuter<\/strong> in deinem HARRY HERBS - dazu wird keine zusätzliche Erde benötigt. <\/p><p>Der <strong>Wassertank sorgt immer für die passende Bewässerung<\/strong> und erspart dir häufiges Gießen.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_96V46N": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-118.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Anzucht",
+            "content": "<p><strong>Vom Samenkorn zur Pflanze<\/strong>: in HARRY HERBS kannst du mit Quelltabs oder Anzuchterde im Handumdrehen deine <strong>eigenen Pflanzen aus Samen ziehen<\/strong>.<\/p><p>Die optionale <strong>Anzuchthaube<\/strong> schafft dafür das <strong>passende Klima<\/strong> und die <strong>Bewässerungsbänder<\/strong> kümmern sich um die Wasserzufuhr.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_CLYNxJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-061.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Hydroponik",
+            "content": "<p>Schluss mit schmutzigen Händen beim Gärtnern! In HARRY HERBS kannst du <strong>Gemüse ganz ohne Erde anbauen<\/strong>. Alles was du brauchst ist frische <strong>Luft & klares Wasser<\/strong>.<\/p><p>Die Anzuchttöpfe bieten deinen Wurzeln dabei <strong>optimalen Halt<\/strong> und eine <strong>ertragreiche Ernte<\/strong>.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_xwLng8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HH-Microgreens-Wachstum-24.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Microgreens",
+            "content": "<p>Microgreens, also <strong>Keimlinge und Sprossen<\/strong>, stecken voller wertvoller <strong>Vitamine und Nährstoffe<\/strong>. <\/p><p>In HARRY HERBS kannst du mithilfe der <strong>inkludierten Anzuchtmatte<\/strong> ganz unkompliziert dein eigenes Superfood sprießen lassen und bereits <strong>nach 3-4 Tagen ernten<\/strong>.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_NzdbCT",
+        "item_96V46N",
+        "item_CLYNxJ",
+        "item_xwLng8"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "4 Funktionen in 1 Produkt",
+        "title": "ANBAUOPTIONEN",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "multi_column_nNARhi": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9r3Tkz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/200907-HH-Fotoshoot-185.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Wandhalterung",
+            "content": "<p>Montiere deinen HARRY HERBS ganz einfach an die Wand und nimm ihn jederzeit ganz einfach wieder ab.<\/p><p><a href=\"\/products\/wandhalterung\" title=\"Wandhalterung\">zum Produkt<\/a><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_wCh8ef": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/100B10_HARRY-HERBS_light-gray-6.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Balkonhalterung",
+            "content": "<p>Mit der Balkonhalterung kannst du deinen HARRY HERBS ganz einfach auf dein Geländer hängen. Verfügbar in 2 Größen.<\/p><p><a href=\"\/products\/balkonhalterung\" title=\"Balkonhalterung\">zum Produkt<\/a><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_GAgGMf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-10-04_HH-WoodenStand-02-quadratisch.jpg",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Senkrechtgarten",
+            "content": "<p>Der Senkrechtgarten aus Holz bietet Platz für <strong>3 HARRY HERBS<\/strong> und ist sowohl für <strong>Indoor als auch für Outdoor<\/strong> geeignet.<\/p><p><a href=\"\/products\/senkrechtgarten\" title=\"Senkrechtgarten für HARRY HERBS\">zum Produkt<\/a><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_9r3Tkz",
+        "item_wCh8ef",
+        "item_GAgGMf"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "Optional",
+        "title": "MONTAGE MÖGLICHKEITEN",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "9020341f-56b0-42f2-848e-1254c59e5c4d": {
+      "type": "codext-Text-with-Icons",
+      "blocks": {
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify:\/\/shop_images\/Gruppe-444.png",
+            "custom_icon_width": 50,
+            "title": "Pflanztopf",
+            "content": ""
+          }
+        },
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify:\/\/shop_images\/Gruppe-443.png",
+            "custom_icon_width": 50,
+            "title": "Anzucht",
+            "content": ""
+          }
+        },
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify:\/\/shop_images\/Gruppe-446.png",
+            "custom_icon_width": 50,
+            "title": "Hydroponik",
+            "content": ""
+          }
+        },
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon": "shopify:\/\/shop_images\/Gruppe-447.png",
+            "custom_icon_width": 50,
+            "title": "Microgreens",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-1",
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-2",
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-3",
+        "template--16409074827437__9020341f-56b0-42f2-848e-1254c59e5c4d-item-4"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{margin-top: 50px;}"
+      ],
+      "settings": {
+        "background": "#f3f3f4",
+        "text_color": "#000000",
+        "stack_on_mobile": false
+      }
+    },
+    "72b105f6-5697-49c9-898f-fd111a4512ce": {
+      "type": "video",
+      "custom_css": [
+        "{margin-top: 50px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=s3SwG2SuMDY",
+        "image": "shopify:\/\/shop_images\/HH_lp_6ce6f727-2d70-4bc8-8943-4956ac4f9c65.jpg",
+        "background_type": "boxed",
+        "video_size": "large",
+        "autoplay": false,
+        "show_video_controls": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c418a397-5659-4b49-890b-a93e490c9842": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "harry-herbs",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__c418a397-5659-4b49-890b-a93e490c9842-collection-1"
+      ],
+      "custom_css": [
+        "h3 {font-weight: bold;}"
+      ],
+      "settings": {
+        "subheading": "ALLES FÜR DEINEN HARRY HERBS",
+        "title": "HILFREICHES ZUBEHÖR",
+        "content": "",
+        "products_count": 4,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "21236dfa-d553-4250-b4d6-d2d01535dc19": {
+      "type": "codext-blog-posts",
+      "custom_css": [
+        ".article-item {background-color: #f5f5f5; padding: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);}",
+        "a {font-size: 18px; font-weight: 100;}",
+        ".article-item__content {flex-grow: 1;}",
+        ".article-item__title,.article-item__content {padding: 10px !important; display: flex; align-items: center; justify-content: center;}"
+      ],
+      "settings": {
+        "blog": "ratgeber",
+        "filter_tag": "Category_HARRY HERBS",
+        "subheading": "TIPPS & TRICKS RUND UM DAS THEMA URBAN GARDENING GEBEN.",
+        "title": "UNSER RATGEBER",
+        "articles_count": 3,
+        "stack_mobile": false,
+        "show_category": false,
+        "show_excerpt": false,
+        "background": "#ffffff",
+        "text_color": "#484b42"
+      }
+    },
+    "170008645861baa2bc": {
+      "type": "apps",
+      "blocks": {
+        "95516f64-80de-44ca-a78c-62098b89477f": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#c8dd02",
+            "review_type": "product_current",
+            "reviews_shown": 20,
+            "header_bg_colour": "#4f5358",
+            "header_colour": "#ffffff",
+            "header_star_colour": "#c8dd02",
+            "heading_text_colour": "#0e1311",
+            "heading_font": "poppins_n4",
+            "body_text_colour": "#0e1311",
+            "badge_icon_colour": "#0e1311",
+            "badge_text_colour": "#0e1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "#000000",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#000000",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
+          }
+        }
+      },
+      "block_order": [
+        "95516f64-80de-44ca-a78c-62098b89477f"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "c1104d7d-0c9d-4394-ab24-0f86afeb3484": {
+      "type": "faq",
+      "blocks": {
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert das Anpflanzen in HARRY HERBS?",
+            "answer": "<p>In <a href=\"https:\/\/www.gustagarden.com\/produkt\/harry-herbs\/\">HARRY HERBS<\/a> hast du insgesamt 4 verschiedene Anbaumöglichkeiten. Hier findest du zu jeweiligen Auf- und Anbau-Anleitungen:<\/p><p>1. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-anzucht-anleitung\/\">Anzucht (Zimmergewächshaus)<\/a><br\/>2. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-pflanztopf-anleitung\/\">Pflanztopf<\/a><br\/>3. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-hydroponik-anleitung\/\">Hydroponik (ohne Erde)<\/a><br\/>4. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-microgreens-anleitung\/\">Microgreens<\/a><\/p><p>Außerdem hast du auch 4 verschiedene Möglichkeiten, deinen HARRY HERBS indoor oder outdoor zu platzieren. Die Montage-Anleitungen zu den jeweiligen Möglichkeiten findest du hier:<\/p><p>1. einzeln oder stylisch als Gruppe mit der Wandhalterung an der Wand schweben lassen<br\/>2. praktisch auf jedem Geländer mithilfe der Balkonhalterung aufhängen<br\/>3. im 3er-Pack auf dem modernen Senkrechtgarten aus Lärchenholz dein Zuhause dekorieren<br\/>4. einfach auf dem Wohnzimmertisch, in der Küche, auf der Kommode oder der Fensterbank hinstellen<\/p>"
+          }
+        },
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Abmessung hat HARRY HERBS?",
+            "answer": "<p><a href=\"https:\/\/www.gustagarden.com\/produkt\/harry-herbs\/\">HARRY HERBS <\/a>hat mit und ohne Anzuchthaube folgende Maße:<br\/><\/p>"
+          }
+        },
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Wo ist der beste Standort für HARRY HERBS?",
+            "answer": "<p>Je nach Anbaumöglichkeit findest du den optimalen Standort hier:<\/p><p>1. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-anzucht-anleitung\/\">Anzucht (Zimmergewächshaus)<\/a><br\/>2. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-pflanztopf-anleitung\/\">Pflanztopf<\/a><br\/>3. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-hydroponik-anleitung\/\">Hydroponik (ohne Erde)<\/a><br\/>4. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-microgreens-anleitung\/\">Microgreens<\/a><\/p>"
+          }
+        },
+        "e0ea9fb3-85c9-454b-bbb6-d0a699bf6b17": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Erde soll ich verwenden?",
+            "answer": "<p>Je nach Anbaumöglichkeit gibt es auch eine unterschiedliche Basis für den Anbau. Um dir den Anbau in HARRY HERBS so einfach wie möglich zu machen, haben wir vorab viele Produkte getestet. Die Testsieger haben es in unsere Produktreihe für HARRY HERBS Zubehör geschafft:<\/p><p>1. Anzucht: <a href=\"https:\/\/www.gustagarden.com\/produkt\/kokos-quelltoepfe\/\">Kokos-Quelltöpfe<\/a> <br\/>2. Pflanztopf: <a href=\"https:\/\/www.gustagarden.com\/produkt\/kokoserde\/\">Kokoserde, 100% torffrei<\/a><br\/>3. Hydroponik: <a href=\"https:\/\/www.gustagarden.com\/produkt\/hydroponik-set\/\">Hydroponik-Set<\/a><br\/>4. Microgreens: <a href=\"https:\/\/www.gustagarden.com\/produkt\/microgreens-nachfuellset\/\">Microgreens-Set inkl. Samen<\/a><\/p>"
+          }
+        },
+        "480db0c1-1b26-4171-be3c-276353828da1": {
+          "type": "question",
+          "settings": {
+            "title": "Wann muss ich in HARRY HERBS anpflanzen?",
+            "answer": "<p>HARRY HERBS kannst du z.B. in deiner Küche das ganze Jahr lang durchgehend mit frischen Kräutern, Salat und Microgreens bepflanzen. <\/p><p>Falls du deinen HARRY HERBS lieber im Freien (z.B. am Balkon oder der Fensterbank) platzieren möchtest, achte auf die entsprechenden Temperaturen für dein Gemüse, das du angepflanzt hast. Sobald die Temperaturen im Frühling steigen, fühlen sich jede Menge Kräuter und Salatsorten draußen schon pudelwohl. Im Herbst, bevor es frostig wird, solltest du deinen HARRY dann wieder nach drinnen übersiedeln.<\/p>"
+          }
+        },
+        "c868942a-7321-454e-a600-f1a5b412575b": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert das Gießen?",
+            "answer": "<p>Abhängig von der Anbaumöglichkeit hat HARRY HERBS auch ein unterschiedlich großes Wasserreservoir. Alle Details und Tipps zum Thema Gießen findest du in der jeweiligen Anleitung:<\/p><p>1. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-anzucht-anleitung\/\">Anzucht (Zimmergewächshaus)<\/a><br\/>2. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-pflanztopf-anleitung\/\">Pflanztopf<\/a><br\/>3. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-hydroponik-anleitung\/\">Hydroponik (ohne Erde)<\/a><br\/>4. <a href=\"https:\/\/www.gustagarden.com\/harry-herbs-microgreens-anleitung\/\">Microgreens<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-1",
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-2",
+        "template--16336611082413__c1104d7d-0c9d-4394-ab24-0f86afeb3484-question-3",
+        "e0ea9fb3-85c9-454b-bbb6-d0a699bf6b17",
+        "480db0c1-1b26-4171-be3c-276353828da1",
+        "c868942a-7321-454e-a600-f1a5b412575b"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-content",
+    "6713bc99-49a0-4d7d-9f5b-15f3ab3199f6",
+    "27cb7d27-1b86-4380-9deb-c22a8ae260d5",
+    "93e61ce0-1e10-47b1-a69a-07361399d8ef",
+    "1ba95599-fa75-44f7-914b-f9705c642b65",
+    "multi_column_8nqwUQ",
+    "multi_column_nNARhi",
+    "9020341f-56b0-42f2-848e-1254c59e5c4d",
+    "72b105f6-5697-49c9-898f-fd111a4512ce",
+    "c418a397-5659-4b49-890b-a93e490c9842",
+    "21236dfa-d553-4250-b4d6-d2d01535dc19",
+    "170008645861baa2bc",
+    "c1104d7d-0c9d-4394-ab24-0f86afeb3484"
+  ]
+}

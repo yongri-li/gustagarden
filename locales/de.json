@@ -249,8 +249,7 @@
       "continue_reading": "Weiterlesen",
       "overview": "Übersicht",
       "ingredients": "Zutaten",
-      "recipe": "Rezept",,
-      "what_you_need": "Was du dafür brauchst",
+      "recipe": "Rezept",
       "reading_time": {
         "zero": "{{ count }} Minuten",
         "one": "{{ count }} Minute",
