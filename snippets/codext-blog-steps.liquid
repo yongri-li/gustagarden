@@ -35,7 +35,7 @@
           {%- endif -%}
           {%- if schritte.zutaten != blank -%}
             <div class="rte flex flex-col gap-3">
-              <h3>Was du dafür brauchst</h3>
+              <h3>{{ 'article.general.ingredients' | t }}</h3>
               {{ schritte.zutaten | metafield_tag }}
             </div>
           {%- endif -%}
