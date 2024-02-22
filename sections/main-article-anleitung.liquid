@@ -228,7 +228,7 @@
               {%- endif -%}
               {%- if article.metafields.custom.zutaten != blank -%}
                 <div class="rte flex flex-col gap-3">
-                  <h3>{{ 'article.general.what_you_need' | t }}</h3>
+                  <h3>{{ 'article.general.ingredients' | t }}</h3>
                   {{ article.metafields.custom.zutaten | metafield_tag }}
                 </div>
               {%- endif -%}
