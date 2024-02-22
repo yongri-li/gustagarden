@@ -229,6 +229,7 @@
         "item_PQqapc",
         "item_QEfiMM"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "stack_items": false,
