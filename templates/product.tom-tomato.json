@@ -411,11 +411,11 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1": {
           "type": "headings",
           "settings": {
-            "heading_1": "lebensmittelecht",
-            "heading_2": "regional produziert",
-            "heading_3": "E-Book inkludiert",
-            "heading_4": "kein Vorwissen nötig",
-            "heading_5": "mit ausführlicher Anleitung"
+            "heading_1": "<p>lebensmittelecht<\/p>",
+            "heading_2": "<p>regional produziert<\/p>",
+            "heading_3": "<p>E-Book inkludiert<\/p>",
+            "heading_4": "<p>kein Vorwissen nötig<\/p>",
+            "heading_5": "<p>mit ausführlicher Anleitung<\/p>"
           }
         },
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
