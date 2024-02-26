@@ -18585,3 +18585,8 @@ shopify-payment-terms {
   border-bottom: 1px solid #ccc;
   padding: 20px 0;
 }
+
+.product-item__secondary-image {
+  background: #F5F5F5;
+  margin: 0 !important;
+}
