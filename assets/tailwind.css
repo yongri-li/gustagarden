@@ -296,6 +296,10 @@
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-12 {
   margin-left: 3rem;
 }
@@ -741,6 +745,14 @@
 
 .whitespace-pre-wrap {
   white-space: pre-wrap;
+}
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
 }
 
 .break-words {
@@ -1818,14 +1830,6 @@ html {
 
   .md\:right-20 {
     right: 5rem;
-  }
-
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
-  .md\:col-span-9 {
-    grid-column: span 9 / span 9;
   }
 
   .md\:mx-0 {
