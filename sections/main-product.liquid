@@ -75,26 +75,18 @@
             <a
               class="breadcrumb__link"
               href="{{ routes.root_url }}/collections/{{ product.metafields.custom.parent_collection.value.handle }}">
-              Shop
+              {{ product.metafields.custom.parent_collection.value.title }}
             </a>
             {% else %}
             <a
               class="breadcrumb__link"
               href="{{ routes.root_url }}/collections/alle-produkte">
-              Shop
+              {{ 'collection.general.all_products' | t }}
             </a>
             {% endif %}
           </li>
 
-          {%- if section.settings.collection != blank -%}
-            <li class="breadcrumb__item">
-              <a
-                class="breadcrumb__link"
-                href="{{ section.settings.collection.url }}">
-                {{- section.settings.collection.title -}}
-              </a>
-            </li>
-          {%- endif -%}
+
 
           <li class="breadcrumb__item">
             <span
