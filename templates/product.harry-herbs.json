@@ -559,6 +559,57 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "codext_feature_chart_p7q7mb": {
+      "type": "codext-feature-chart",
+      "blocks": {
+        "headings_TQgXe4": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "<p><strong>4 Funktionen<br\/><\/strong>und deshalb das ganze Jahr verwendbar<\/p>",
+            "heading_2": "<p><strong>Wassertank<\/strong><br\/>um nur selten gegossen zu werden<\/p>",
+            "heading_3": "<p><strong>lebensmittelechtes Material<\/strong><br\/>für gesunde Pflanzen<\/p>",
+            "heading_4": "<p><strong>auch für Anfänger<\/strong><br\/>dank Anleitungen und Videos<\/p>",
+            "heading_5": "<p><strong>nachhaltig<\/strong><br\/>aus regionaler Produktion<\/p>"
+          }
+        },
+        "values_FiGa6q": {
+          "type": "values",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/220824-Harry-04-1.jpg",
+            "product_title": "",
+            "product": "",
+            "value_1": "<p>✅<\/p>",
+            "value_2": "<p>✅<\/p>",
+            "value_3": "<p>✅<\/p>",
+            "value_4": "<p>✅<\/p>",
+            "value_5": "<p>✅<\/p>"
+          }
+        },
+        "values_LzmQCm": {
+          "type": "values",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/pot.jpg",
+            "product_title": "",
+            "product": "",
+            "value_1": "<p>❌<\/p>",
+            "value_2": "<p>❌<\/p>",
+            "value_3": "<p>❌<\/p>",
+            "value_4": "<p>❌<\/p>",
+            "value_5": "<p>❌<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "headings_TQgXe4",
+        "values_FiGa6q",
+        "values_LzmQCm"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "WARUM HARRY HERBS?",
+        "content": ""
+      }
+    },
     "c418a397-5659-4b49-890b-a93e490c9842": {
       "type": "featured-collections",
       "blocks": {
@@ -712,57 +763,6 @@
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
       }
-    },
-    "codext_feature_chart_p7q7mb": {
-      "type": "codext-feature-chart",
-      "blocks": {
-        "headings_TQgXe4": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "<p><strong>4 Funktionen<br\/><\/strong>und deshalb das ganze Jahr verwendbar<\/p>",
-            "heading_2": "<p><strong>Wassertank<\/strong><br\/>um nur selten gegossen zu werden<\/p>",
-            "heading_3": "<p><strong>lebensmittelechtes Material<\/strong><br\/>für gesunde Pflanzen<\/p>",
-            "heading_4": "<p><strong>auch für Anfänger<\/strong><br\/>dank Anleitungen und Videos<\/p>",
-            "heading_5": "<p><strong>nachhaltig<\/strong><br\/>aus regionaler Produktion<\/p>"
-          }
-        },
-        "values_FiGa6q": {
-          "type": "values",
-          "settings": {
-            "product_image": "shopify:\/\/shop_images\/220824-Harry-04-1.jpg",
-            "product_title": "",
-            "product": "",
-            "value_1": "<p>✅<\/p>",
-            "value_2": "<p>✅<\/p>",
-            "value_3": "<p>✅<\/p>",
-            "value_4": "<p>✅<\/p>",
-            "value_5": "<p>✅<\/p>"
-          }
-        },
-        "values_LzmQCm": {
-          "type": "values",
-          "settings": {
-            "product_image": "shopify:\/\/shop_images\/pot.jpg",
-            "product_title": "",
-            "product": "",
-            "value_1": "<p>❌<\/p>",
-            "value_2": "<p>❌<\/p>",
-            "value_3": "<p>❌<\/p>",
-            "value_4": "<p>❌<\/p>",
-            "value_5": "<p>❌<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "headings_TQgXe4",
-        "values_FiGa6q",
-        "values_LzmQCm"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "DARUM IST TOM TOMATO DIE BESTE WAHL",
-        "content": ""
-      }
     }
   },
   "order": [
@@ -776,10 +776,10 @@
     "multi_column_nNARhi",
     "9020341f-56b0-42f2-848e-1254c59e5c4d",
     "72b105f6-5697-49c9-898f-fd111a4512ce",
+    "codext_feature_chart_p7q7mb",
     "c418a397-5659-4b49-890b-a93e490c9842",
     "21236dfa-d553-4250-b4d6-d2d01535dc19",
     "170008645861baa2bc",
-    "c1104d7d-0c9d-4394-ab24-0f86afeb3484",
-    "codext_feature_chart_p7q7mb"
+    "c1104d7d-0c9d-4394-ab24-0f86afeb3484"
   ]
 }
