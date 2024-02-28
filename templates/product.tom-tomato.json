@@ -391,6 +391,9 @@
       "block_order": [
         "item_YWUmmQ"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "reveal_on_scroll": true,
         "stack_items": false,
@@ -411,11 +414,11 @@
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-headings-1": {
           "type": "headings",
           "settings": {
-            "heading_1": "<p>lebensmittelecht<\/p>",
-            "heading_2": "<p>regional produziert<\/p>",
-            "heading_3": "<p>E-Book inkludiert<\/p>",
-            "heading_4": "<p>kein Vorwissen nötig<\/p>",
-            "heading_5": "<p>mit ausführlicher Anleitung<\/p>"
+            "heading_1": "<p><strong>lebensmittelechtes Material<br\/><\/strong>für gesunde Lebensmittel<\/p>",
+            "heading_2": "<p><strong>regional produziert<br\/><\/strong>im Herzen von Europa<\/p>",
+            "heading_3": "<p><strong>E-Book inkludiert<\/strong><br\/>mit allen Infos zum Tomatenanbau<\/p>",
+            "heading_4": "<p><strong>kein Vorwissen nötig<\/strong><br\/>dank Anleitungen und Videos<\/p>",
+            "heading_5": "<p><strong>seltener Gießen<\/strong><br\/>aufgrund des Wassertanks<\/p>"
           }
         },
         "template--16337048633517__d9836a3d-8d6a-4e8c-8d77-7dfaf0c42339-values-1": {
@@ -454,7 +457,7 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Darum ist TOM TOMATO die beste Wahl",
+        "title": "DARUM IST TOM TOMATO DIE BESTE WAHL",
         "content": ""
       }
     },
