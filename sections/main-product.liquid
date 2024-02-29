@@ -74,13 +74,13 @@
             {% if product.metafields.custom.parent_collection %}
             <a
               class="breadcrumb__link"
-              href="{{ routes.root_url }}/collections/{{ product.metafields.custom.parent_collection.value.handle }}">
+              href="https://{{ shop.domain }}{{ routes.root_url }}{% if routes.root_url != '/' %}/{% endif %}collections/{{ product.metafields.custom.parent_collection.value.handle }}">
               {{ product.metafields.custom.parent_collection.value.title }}
             </a>
             {% else %}
             <a
               class="breadcrumb__link"
-              href="{{ routes.root_url }}/collections/alle-produkte">
+              href="https://{{ shop.domain }}{{ routes.root_url }}{% if routes.root_url != '/' %}/{% endif %}collections/alle-produkte">
               {{ 'collection.general.all_products' | t }}
             </a>
             {% endif %}
