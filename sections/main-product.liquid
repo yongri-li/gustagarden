@@ -48,6 +48,8 @@
     }
   </style>
 
+
+
   <section>
     {%- if section.settings.show_sticky_add_to_cart and product.available -%}
       {%- render 'product-sticky-form', product: product -%}
@@ -69,22 +71,22 @@
           </li>
 
           <li class="breadcrumb__item">
+            {% if product.metafields.custom.parent_collection %}
             <a
               class="breadcrumb__link"
-              href="{{ routes.root_url }}/collections/alle-produkte">
-              Shop
+              href="https://{{ shop.domain }}{{ routes.root_url }}{% if routes.root_url != '/' %}/{% endif %}collections/{{ product.metafields.custom.parent_collection.value.handle }}">
+              {{ product.metafields.custom.parent_collection.value.title }}
             </a>
+            {% else %}
+            <a
+              class="breadcrumb__link"
+              href="https://{{ shop.domain }}{{ routes.root_url }}{% if routes.root_url != '/' %}/{% endif %}collections/alle-produkte">
+              {{ 'collection.general.all_products' | t }}
+            </a>
+            {% endif %}
           </li>
 
-          {%- if section.settings.collection != blank -%}
-            <li class="breadcrumb__item">
-              <a
-                class="breadcrumb__link"
-                href="{{ section.settings.collection.url }}">
-                {{- section.settings.collection.title -}}
-              </a>
-            </li>
-          {%- endif -%}
+
 
           <li class="breadcrumb__item">
             <span
